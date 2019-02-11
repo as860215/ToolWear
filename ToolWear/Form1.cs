@@ -303,7 +303,6 @@ namespace ToolWear{
         private void btn_Learn_Start_Click(object sender, EventArgs e){
             btn_Learn_Start.Enabled = false;
             btn_Learn_OK.Enabled = true;
-            btn_Learn_Cancel.Enabled = true;
             StreamWriter sw = new StreamWriter(path + @"\data\module.cp");
             sw.WriteLine();
             sw.Close();
@@ -315,7 +314,6 @@ namespace ToolWear{
             TaskStop();
             btn_Learn_Start.Enabled = true;
             btn_Learn_OK.Enabled = false;
-            btn_Learn_Cancel.Enabled = true;
             panel_ToolWearSetting.Visible = true;
             panel_Learn.Visible = false;
             chart_Learn.Series[0].Points.Clear();
@@ -325,7 +323,6 @@ namespace ToolWear{
             if (runningTask != null) TaskStop();
             btn_Learn_Start.Enabled = true;
             btn_Learn_OK.Enabled = false;
-            btn_Learn_Cancel.Enabled = true;
             panel_ToolWear.Visible = true;
             panel_Learn.Visible = false;
             btn_Learn.Enabled = true;
@@ -618,13 +615,23 @@ namespace ToolWear{
                     string tem = sr_set.ReadLine();
                     if (i == now_Compensate){
                         tb_Compensate_ip.Text = tem.Split(',')[1];
-                        tb_Compensate_Channel.Text = tem.Split(',')[2];
+                        //tb_Compensate_Channel.Text = tem.Split(',')[2];
+                        for(int j = 0; j < cb_Compensate_Channel.Items.Count; j++){
+                            cb_Compensate_Channel.SelectedIndex = j;
+                            if (cb_Compensate_Channel.Text.Equals(tem.Split(',')[2]))
+                                break;
+                            //當搜尋完所有選項後都沒有發現符合的文字(代表設定檔被修改過)
+                            if(j == cb_Compensate_Channel.Items.Count - 1){
+                                cb_Compensate_Channel.SelectedIndex = 0;
+                                MessageBox.Show("輸入訊號設定檔錯誤，請重新設定！", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
                     }
                 }
             }
             catch {
                 tb_Compensate_ip.Text = "";
-                tb_Compensate_Channel.Text = "";
+                cb_Compensate_Channel.SelectedIndex = 0;
             }
             sr_set.Close();
             sr_set.Dispose();
@@ -643,7 +650,7 @@ namespace ToolWear{
         private void btn_CompensateSet_save_Click(object sender, EventArgs e){
             DialogResult dialogResult = MessageBox.Show("確定儲存？", "存檔訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
-            string tem = pre_Compensate.Text + "," + tb_Compensate_ip.Text + "," + tb_Compensate_Channel.Text;
+            string tem = pre_Compensate.Text + "," + tb_Compensate_ip.Text + "," + cb_Compensate_Channel.Text;
             try{
                 RW_CompensateSet(tem);
                 MessageBox.Show("IP與訊號輸入設定完成！");
