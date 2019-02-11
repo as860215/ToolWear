@@ -63,10 +63,6 @@ namespace ToolWear{
             panel_Dissable();
             panel_Home.Visible = true;
             panel_Thermal.Visible = true;
-
-            //主畫面 > 設定預設選擇
-            cb_setting_brand.SelectedIndex = 0;
-            cb_setting_model.SelectedIndex = 0;
         }
         /// <summary>
         /// 隱藏所有panel(主畫面除外)
@@ -235,10 +231,17 @@ namespace ToolWear{
             panel_ToolWearSetting.Visible = true;
             panel_ViewModule.Visible = false;
         }
+        //主選單 > 刀庫
+        private void btn_ATCsetting_Click(object sender, EventArgs e){
+            panel_Dissable();
+            panel_ATCsetting.Visible = true;
+            btn_ATCSetting_Choose((object)btn_ATCsetting_01, null);
+        }
         //主選單 > 設定
         private void btn_setting_Click(object sender, EventArgs e){
             panel_Dissable();
             panel_setting.Visible = true;
+
         }
         #endregion
         #region 軸向設定 新增移除按鈕方法
@@ -637,7 +640,7 @@ namespace ToolWear{
         private void btn_CompensateSet_delete_Click(object sender, EventArgs e){
             DialogResult dialogResult = MessageBox.Show("確定要刪除此軸向之設定資料嗎？", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
-            string tem = ((Button)sender).Text + ", , ";
+            string tem = ((Button)pre_Compensate).Text + ", , ";
             try{
                 RW_CompensateSet(tem);
                 MessageBox.Show("IP與訊號輸入刪除成功！");
@@ -835,6 +838,83 @@ namespace ToolWear{
             //儲存完後執行初始化方法，重新載入文字
             Initialization();
             btn_Compensate_Choose((object)pre_Compensate, null);
+        }
+        #endregion
+        #region 刀庫設定
+        //刀庫設定
+        //現在要更改的設定檔
+        int now_ATCSetting = 0;
+        //上一個點到的button
+        Button pre_ATCSetting = null;
+        private void btn_ATCSetting_Choose(object sender, EventArgs e){
+            Button btn = (Button)sender;
+            //將上一個點到的button文字顏色改回白色
+            if (pre_ATCSetting != null)
+                pre_ATCSetting.ForeColor = Color.White;
+            //設定上一個點的button為現在的button
+            pre_ATCSetting = btn;
+            //設定現在的button文字顏色為黃色
+            btn.ForeColor = Color.Yellow;
+            //取得button的ID末位，01~20
+            string ID = btn.Name.Split('_')[2];
+            now_ATCSetting = int.Parse(ID) - 1;
+            StreamReader sr_ATC = new StreamReader(path + @"\data\ATC.cp");
+            try{
+                for (int i = 0; i < int.Parse(ID); i++){
+                    //初始化輸入框
+                    tb_ATCsetting_Name.Text = "";
+                    numeric_ATCsetting_Blade.Value = 4;
+                    //ex. tem = "1,test,6" or tem = "2,,"
+                    string tem = sr_ATC.ReadLine();
+                    if (i == int.Parse(ID) - 1){
+                        tb_ATCsetting_Name.Text = tem.Split(',')[1];
+                        numeric_ATCsetting_Blade.Value = decimal.Parse(tem.Split(',')[2]);
+                    }
+                }
+            }
+            catch{}
+            sr_ATC.Close();
+            sr_ATC.Dispose();
+        }
+        //刀庫設定 > 存檔
+        private void btn_ATCsetting_save_Click(object sender, EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("確定儲存？", "存檔訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Cancel) return;
+            string tem = pre_ATCSetting.Text + "," + tb_ATCsetting_Name.Text + "," + numeric_ATCsetting_Blade.Value;
+            try{
+                RW_TCsetting(tem);
+                MessageBox.Show("刀具名稱與刃數存檔成功！");
+            }
+            catch { }
+        }
+        //刀庫設定 > 刪除
+        private void btn_ATCsetting_delete_Click(object sender, EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("確定要刪除此刀具之設定資料嗎？", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            string tem = ((Button)pre_ATCSetting).Text + ",,";
+            try{
+                RW_TCsetting(tem);
+                MessageBox.Show("刀具名稱與刃數刪除成功！");
+            }
+            catch { }
+        }
+        //刀庫設定 > 讀檔+寫檔
+        private void RW_TCsetting(string s){
+            StreamReader sr_set = new StreamReader(path + @"\data\ATC.cp");
+            List<string> tem_read = new List<string>();
+            while (!sr_set.EndOfStream) tem_read.Add(sr_set.ReadLine());
+            sr_set.Close();
+            sr_set.Dispose();
+            //更改現在的條目
+            tem_read[now_ATCSetting] = s;
+            StreamWriter sw_set = new StreamWriter(path + @"\data\ATC.cp");
+            for (int i = 0; i < tem_read.Count; i++)
+                sw_set.WriteLine(tem_read[i]);
+            sw_set.Close();
+            sw_set.Dispose();
+            //儲存完後執行初始化方法，重新載入文字
+            Initialization();
+            btn_ATCSetting_Choose((object)pre_ATCSetting, null);
         }
         #endregion
         #endregion
