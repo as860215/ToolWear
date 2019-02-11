@@ -364,7 +364,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ViewModule.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>10</value>
   </data>
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -808,7 +808,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>11</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1567,7 +1567,55 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>12</value>
+  </data>
+  <data name="chart_warring_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>682, 526</value>
+  </data>
+  <data name="chart_warring_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 124</value>
+  </data>
+  <data name="chart_warring_2.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="chart_warring_2.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_2.Name" xml:space="preserve">
+    <value>chart_warring_2</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_2.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chart_warring_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>682, 389</value>
+  </data>
+  <data name="chart_warring_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 124</value>
+  </data>
+  <data name="chart_warring_1.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="chart_warring_1.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_1.Name" xml:space="preserve">
+    <value>chart_warring_1</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_1.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1860,6 +1908,342 @@
   <data name="panel_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="btn_Threshold_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Threshold_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_Threshold_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Threshold_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 612</value>
+  </data>
+  <data name="btn_Threshold_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>538, 40</value>
+  </data>
+  <data name="btn_Threshold_save.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.Name" xml:space="preserve">
+    <value>btn_Threshold_save</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_Threshold_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Threshold_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_Threshold_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Threshold_delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 560</value>
+  </data>
+  <data name="btn_Threshold_delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>538, 40</value>
+  </data>
+  <data name="btn_Threshold_delete.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.Name" xml:space="preserve">
+    <value>btn_Threshold_delete</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chart_Threshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 12</value>
+  </data>
+  <data name="chart_Threshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 328</value>
+  </data>
+  <data name="chart_Threshold.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chart_Threshold.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.Name" xml:space="preserve">
+    <value>chart_Threshold</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 93</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>616, 672</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Name" xml:space="preserve">
+    <value>tb_Threshold_14</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Name" xml:space="preserve">
+    <value>tb_Threshold_13</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Name" xml:space="preserve">
+    <value>tb_Threshold_12</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Name" xml:space="preserve">
+    <value>tb_Threshold_11</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Name" xml:space="preserve">
+    <value>tb_Threshold_10</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Name" xml:space="preserve">
+    <value>tb_Threshold_09</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Name" xml:space="preserve">
+    <value>tb_Threshold_08</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Name" xml:space="preserve">
+    <value>tb_Threshold_07</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Name" xml:space="preserve">
+    <value>tb_Threshold_06</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Name" xml:space="preserve">
+    <value>tb_Threshold_05</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Name" xml:space="preserve">
+    <value>tb_Threshold_04</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Name" xml:space="preserve">
+    <value>tb_Threshold_03</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Name" xml:space="preserve">
+    <value>tb_Threshold_02</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Name" xml:space="preserve">
+    <value>btn_Threshold_down</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Name" xml:space="preserve">
+    <value>btn_Threshold_up</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Name" xml:space="preserve">
+    <value>tb_Threshold_01</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 93</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 672</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_Threshold_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Threshold_Back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Threshold_Back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Threshold_Back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>884, 14</value>
+  </data>
+  <data name="btn_Threshold_Back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Threshold_Back.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
   <data name="&gt;&gt;btn_Threshold_Back.Name" xml:space="preserve">
     <value>btn_Threshold_Back</value>
   </data>
@@ -1870,52 +2254,7 @@
     <value>panel_Threshold</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_Back.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label22.Name" xml:space="preserve">
-    <value>label22</value>
-  </data>
-  <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;chart_Threshold.Name" xml:space="preserve">
-    <value>chart_Threshold</value>
-  </data>
-  <data name="&gt;&gt;chart_Threshold.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_Threshold.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;chart_Threshold.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="panel_Threshold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
-  </data>
-  <data name="panel_Threshold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
-  </data>
-  <data name="panel_Threshold.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.Name" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="label22.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1936,7 +2275,7 @@
     <value>17</value>
   </data>
   <data name="label22.Text" xml:space="preserve">
-    <value>磨耗偵測/設定臨界值</value>
+    <value>磨耗偵測/臨界值設定</value>
   </data>
   <data name="&gt;&gt;label22.Name" xml:space="preserve">
     <value>label22</value>
@@ -1948,31 +2287,28 @@
     <value>panel_Threshold</value>
   </data>
   <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="chart_Threshold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 124</value>
-  </data>
-  <data name="chart_Threshold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>606, 389</value>
-  </data>
-  <data name="chart_Threshold.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="chart_Threshold.Text" xml:space="preserve">
-    <value>chart2</value>
+  <data name="panel_Threshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
   </data>
-  <data name="&gt;&gt;chart_Threshold.Name" xml:space="preserve">
-    <value>chart_Threshold</value>
+  <data name="panel_Threshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
   </data>
-  <data name="&gt;&gt;chart_Threshold.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  <data name="panel_Threshold.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;chart_Threshold.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel_Threshold.Name" xml:space="preserve">
     <value>panel_Threshold</value>
   </data>
-  <data name="&gt;&gt;chart_Threshold.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;panel_Threshold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="panel_ThermalSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2368,7 +2704,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>6</value>
   </data>
   <data name="numeric_Compensate.Location" type="System.Drawing.Point, System.Drawing">
     <value>601, 276</value>
@@ -3406,7 +3742,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>7</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3468,27 +3804,6 @@
   <data name="panel_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="btn_Learn_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_20.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 179</value>
-  </data>
-  <data name="btn_Learn_20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_20.TabIndex" type="System.Int32, mscorlib">
-    <value>115</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_20.Name" xml:space="preserve">
     <value>btn_Learn_20</value>
   </data>
@@ -3500,27 +3815,6 @@
   </data>
   <data name="&gt;&gt;btn_Learn_20.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="btn_Learn_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_19.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 180</value>
-  </data>
-  <data name="btn_Learn_19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_19.TabIndex" type="System.Int32, mscorlib">
-    <value>114</value>
   </data>
   <data name="&gt;&gt;btn_Learn_19.Name" xml:space="preserve">
     <value>btn_Learn_19</value>
@@ -3534,27 +3828,6 @@
   <data name="&gt;&gt;btn_Learn_19.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btn_Learn_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_18.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 179</value>
-  </data>
-  <data name="btn_Learn_18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_18.TabIndex" type="System.Int32, mscorlib">
-    <value>113</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_18.Name" xml:space="preserve">
     <value>btn_Learn_18</value>
   </data>
@@ -3566,27 +3839,6 @@
   </data>
   <data name="&gt;&gt;btn_Learn_18.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="btn_Learn_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_17.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 179</value>
-  </data>
-  <data name="btn_Learn_17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_17.TabIndex" type="System.Int32, mscorlib">
-    <value>112</value>
   </data>
   <data name="&gt;&gt;btn_Learn_17.Name" xml:space="preserve">
     <value>btn_Learn_17</value>
@@ -3600,27 +3852,6 @@
   <data name="&gt;&gt;btn_Learn_17.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="btn_Learn_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_16.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 180</value>
-  </data>
-  <data name="btn_Learn_16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_16.TabIndex" type="System.Int32, mscorlib">
-    <value>111</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_16.Name" xml:space="preserve">
     <value>btn_Learn_16</value>
   </data>
@@ -3632,27 +3863,6 @@
   </data>
   <data name="&gt;&gt;btn_Learn_16.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="btn_Learn_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_15.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 180</value>
-  </data>
-  <data name="btn_Learn_15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_15.TabIndex" type="System.Int32, mscorlib">
-    <value>110</value>
   </data>
   <data name="&gt;&gt;btn_Learn_15.Name" xml:space="preserve">
     <value>btn_Learn_15</value>
@@ -3666,27 +3876,6 @@
   <data name="&gt;&gt;btn_Learn_15.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="btn_Learn_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_14.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 179</value>
-  </data>
-  <data name="btn_Learn_14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_14.TabIndex" type="System.Int32, mscorlib">
-    <value>109</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_14.Name" xml:space="preserve">
     <value>btn_Learn_14</value>
   </data>
@@ -3698,27 +3887,6 @@
   </data>
   <data name="&gt;&gt;btn_Learn_14.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="btn_Learn_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_13.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 179</value>
-  </data>
-  <data name="btn_Learn_13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_13.TabIndex" type="System.Int32, mscorlib">
-    <value>108</value>
   </data>
   <data name="&gt;&gt;btn_Learn_13.Name" xml:space="preserve">
     <value>btn_Learn_13</value>
@@ -3732,27 +3900,6 @@
   <data name="&gt;&gt;btn_Learn_13.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="btn_Learn_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_12.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 179</value>
-  </data>
-  <data name="btn_Learn_12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_12.TabIndex" type="System.Int32, mscorlib">
-    <value>107</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_12.Name" xml:space="preserve">
     <value>btn_Learn_12</value>
   </data>
@@ -3764,27 +3911,6 @@
   </data>
   <data name="&gt;&gt;btn_Learn_12.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="btn_Learn_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_11.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 179</value>
-  </data>
-  <data name="btn_Learn_11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_11.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
   </data>
   <data name="&gt;&gt;btn_Learn_11.Name" xml:space="preserve">
     <value>btn_Learn_11</value>
@@ -3798,27 +3924,6 @@
   <data name="&gt;&gt;btn_Learn_11.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="btn_Learn_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_10.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 93</value>
-  </data>
-  <data name="btn_Learn_10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_10.TabIndex" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_10.Name" xml:space="preserve">
     <value>btn_Learn_10</value>
   </data>
@@ -3830,27 +3935,6 @@
   </data>
   <data name="&gt;&gt;btn_Learn_10.ZOrder" xml:space="preserve">
     <value>10</value>
-  </data>
-  <data name="btn_Learn_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_09.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_09.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_09.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_09.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 94</value>
-  </data>
-  <data name="btn_Learn_09.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_09.TabIndex" type="System.Int32, mscorlib">
-    <value>104</value>
   </data>
   <data name="&gt;&gt;btn_Learn_09.Name" xml:space="preserve">
     <value>btn_Learn_09</value>
@@ -3864,27 +3948,6 @@
   <data name="&gt;&gt;btn_Learn_09.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="btn_Learn_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_08.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_08.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_08.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 93</value>
-  </data>
-  <data name="btn_Learn_08.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_08.TabIndex" type="System.Int32, mscorlib">
-    <value>103</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_08.Name" xml:space="preserve">
     <value>btn_Learn_08</value>
   </data>
@@ -3896,27 +3959,6 @@
   </data>
   <data name="&gt;&gt;btn_Learn_08.ZOrder" xml:space="preserve">
     <value>12</value>
-  </data>
-  <data name="btn_Learn_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_07.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_07.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_07.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_07.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 93</value>
-  </data>
-  <data name="btn_Learn_07.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_07.TabIndex" type="System.Int32, mscorlib">
-    <value>102</value>
   </data>
   <data name="&gt;&gt;btn_Learn_07.Name" xml:space="preserve">
     <value>btn_Learn_07</value>
@@ -3930,27 +3972,6 @@
   <data name="&gt;&gt;btn_Learn_07.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="btn_Learn_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_06.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_06.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_06.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_06.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 94</value>
-  </data>
-  <data name="btn_Learn_06.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_06.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_06.Name" xml:space="preserve">
     <value>btn_Learn_06</value>
   </data>
@@ -3962,27 +3983,6 @@
   </data>
   <data name="&gt;&gt;btn_Learn_06.ZOrder" xml:space="preserve">
     <value>14</value>
-  </data>
-  <data name="btn_Learn_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_05.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_05.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_05.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 94</value>
-  </data>
-  <data name="btn_Learn_05.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_05.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
   </data>
   <data name="&gt;&gt;btn_Learn_05.Name" xml:space="preserve">
     <value>btn_Learn_05</value>
@@ -3996,27 +3996,6 @@
   <data name="&gt;&gt;btn_Learn_05.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="btn_Learn_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_04.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_04.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_04.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_04.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 93</value>
-  </data>
-  <data name="btn_Learn_04.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_04.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_04.Name" xml:space="preserve">
     <value>btn_Learn_04</value>
   </data>
@@ -4028,27 +4007,6 @@
   </data>
   <data name="&gt;&gt;btn_Learn_04.ZOrder" xml:space="preserve">
     <value>16</value>
-  </data>
-  <data name="btn_Learn_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_03.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_03.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_03.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_03.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 93</value>
-  </data>
-  <data name="btn_Learn_03.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_03.TabIndex" type="System.Int32, mscorlib">
-    <value>98</value>
   </data>
   <data name="&gt;&gt;btn_Learn_03.Name" xml:space="preserve">
     <value>btn_Learn_03</value>
@@ -4062,27 +4020,6 @@
   <data name="&gt;&gt;btn_Learn_03.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="btn_Learn_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_02.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_02.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_02.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_02.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 93</value>
-  </data>
-  <data name="btn_Learn_02.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_02.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_02.Name" xml:space="preserve">
     <value>btn_Learn_02</value>
   </data>
@@ -4095,27 +4032,6 @@
   <data name="&gt;&gt;btn_Learn_02.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="btn_Learn_01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_01.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_01.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Learn_01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_01.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 93</value>
-  </data>
-  <data name="btn_Learn_01.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_01.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
   <data name="&gt;&gt;btn_Learn_01.Name" xml:space="preserve">
     <value>btn_Learn_01</value>
   </data>
@@ -4127,6 +4043,111 @@
   </data>
   <data name="&gt;&gt;btn_Learn_01.ZOrder" xml:space="preserve">
     <value>19</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.Name" xml:space="preserve">
+    <value>btn_Learn_Back</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.Name" xml:space="preserve">
+    <value>btn_Learn_OK</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.Name" xml:space="preserve">
+    <value>btn_Learn_Start</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_WorkName.Name" xml:space="preserve">
+    <value>lb_Learn_WorkName</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_WorkName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_WorkName.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_WorkName.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;chart_LeartFFT.Name" xml:space="preserve">
+    <value>chart_LeartFFT</value>
+  </data>
+  <data name="&gt;&gt;chart_LeartFFT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_LeartFFT.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;chart_LeartFFT.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.Name" xml:space="preserve">
+    <value>chart_Learn</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="panel_Learn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_Learn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_Learn.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel_Learn.Name" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;panel_Learn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Learn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4161,170 +4182,20 @@
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
-  <data name="btn_Learn_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_Back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Learn_Back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_Back.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 8</value>
-  </data>
-  <data name="btn_Learn_Back.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Learn_Back.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Back.Name" xml:space="preserve">
-    <value>btn_Learn_Back</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Back.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Back.Parent" xml:space="preserve">
-    <value>panel_Learn</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Back.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="btn_LearnChange.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_LearnChange.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_LearnChange.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_LearnChange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>797, 398</value>
-  </data>
-  <data name="btn_LearnChange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 40</value>
-  </data>
-  <data name="btn_LearnChange.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;btn_LearnChange.Name" xml:space="preserve">
-    <value>btn_LearnChange</value>
-  </data>
-  <data name="&gt;&gt;btn_LearnChange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_LearnChange.Parent" xml:space="preserve">
-    <value>panel_Learn</value>
-  </data>
-  <data name="&gt;&gt;btn_LearnChange.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="btn_Learn_Cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_Cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>705, 357</value>
-  </data>
-  <data name="btn_Learn_Cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 35</value>
-  </data>
-  <data name="btn_Learn_Cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btn_Learn_Cancel.Text" xml:space="preserve">
-    <value>取消</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Cancel.Name" xml:space="preserve">
-    <value>btn_Learn_Cancel</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Cancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Cancel.Parent" xml:space="preserve">
-    <value>panel_Learn</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Cancel.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="btn_Learn_OK.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_OK.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btn_Learn_OK.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_Learn_OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>831, 324</value>
-  </data>
-  <data name="btn_Learn_OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 41</value>
-  </data>
-  <data name="btn_Learn_OK.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_OK.Name" xml:space="preserve">
-    <value>btn_Learn_OK</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_OK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_OK.Parent" xml:space="preserve">
-    <value>panel_Learn</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_OK.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="btn_Learn_Start.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Learn_Start.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_Learn_Start.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Learn_Start.Location" type="System.Drawing.Point, System.Drawing">
-    <value>740, 295</value>
-  </data>
-  <data name="btn_Learn_Start.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 41</value>
-  </data>
-  <data name="btn_Learn_Start.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Start.Name" xml:space="preserve">
-    <value>btn_Learn_Start</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Start.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Start.Parent" xml:space="preserve">
-    <value>panel_Learn</value>
-  </data>
-  <data name="&gt;&gt;btn_Learn_Start.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
   <data name="lb_Learn_WorkName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lb_Learn_WorkName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
+    <value>微軟正黑體, 16.2pt</value>
   </data>
   <data name="lb_Learn_WorkName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_Learn_WorkName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>716, 252</value>
+    <value>677, 328</value>
   </data>
   <data name="lb_Learn_WorkName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 43</value>
+    <value>90, 35</value>
   </data>
   <data name="lb_Learn_WorkName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4342,7 +4213,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;lb_Learn_WorkName.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>24</value>
   </data>
   <data name="chart_LeartFFT.Location" type="System.Drawing.Point, System.Drawing">
     <value>686, 479</value>
@@ -4356,9 +4227,6 @@
   <data name="chart_LeartFFT.Text" xml:space="preserve">
     <value>chart2</value>
   </data>
-  <data name="chart_LeartFFT.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;chart_LeartFFT.Name" xml:space="preserve">
     <value>chart_LeartFFT</value>
   </data>
@@ -4369,7 +4237,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;chart_LeartFFT.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>25</value>
   </data>
   <data name="chart_Learn.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 272</value>
@@ -4393,28 +4261,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;chart_Learn.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="panel_Learn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
-  </data>
-  <data name="panel_Learn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
-  </data>
-  <data name="panel_Learn.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;panel_Learn.Name" xml:space="preserve">
-    <value>panel_Learn</value>
-  </data>
-  <data name="&gt;&gt;panel_Learn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_Learn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>26</value>
   </data>
   <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
     <value>textBox5</value>
@@ -4531,7 +4378,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>8</value>
   </data>
   <data name="textBox5.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.2000008pt</value>
@@ -4792,7 +4639,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btn_setting_save.Name" xml:space="preserve">
     <value>btn_setting_save</value>
@@ -5155,7 +5002,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5473,7 +5320,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btn_ATCsetting_save.Name" xml:space="preserve">
     <value>btn_ATCsetting_save</value>
@@ -5737,54 +5584,384 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tb_Threshold_01.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_01.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 12</value>
+  </data>
+  <data name="tb_Threshold_01.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_01.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="tb_Threshold_01.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Name" xml:space="preserve">
+    <value>tb_Threshold_01</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="tb_Threshold_02.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_02.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 59</value>
+  </data>
+  <data name="tb_Threshold_02.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_02.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="tb_Threshold_02.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Name" xml:space="preserve">
+    <value>tb_Threshold_02</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="tb_Threshold_04.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_04.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 153</value>
+  </data>
+  <data name="tb_Threshold_04.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_04.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="tb_Threshold_04.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Name" xml:space="preserve">
+    <value>tb_Threshold_04</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="tb_Threshold_03.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_03.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 106</value>
+  </data>
+  <data name="tb_Threshold_03.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_03.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="tb_Threshold_03.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Name" xml:space="preserve">
+    <value>tb_Threshold_03</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tb_Threshold_08.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_08.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 341</value>
+  </data>
+  <data name="tb_Threshold_08.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_08.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="tb_Threshold_08.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Name" xml:space="preserve">
+    <value>tb_Threshold_08</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tb_Threshold_07.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_07.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 294</value>
+  </data>
+  <data name="tb_Threshold_07.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_07.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="tb_Threshold_07.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Name" xml:space="preserve">
+    <value>tb_Threshold_07</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tb_Threshold_06.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_06.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 247</value>
+  </data>
+  <data name="tb_Threshold_06.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_06.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="tb_Threshold_06.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Name" xml:space="preserve">
+    <value>tb_Threshold_06</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="chart_warring_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>682, 389</value>
+  <data name="tb_Threshold_05.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
   </data>
-  <data name="chart_warring_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 124</value>
+  <data name="tb_Threshold_05.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 200</value>
   </data>
-  <data name="chart_warring_1.TabIndex" type="System.Int32, mscorlib">
-    <value>77</value>
+  <data name="tb_Threshold_05.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
   </data>
-  <data name="chart_warring_1.Text" xml:space="preserve">
-    <value>chart2</value>
+  <data name="tb_Threshold_05.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
   </data>
-  <data name="&gt;&gt;chart_warring_1.Name" xml:space="preserve">
-    <value>chart_warring_1</value>
+  <data name="tb_Threshold_05.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="&gt;&gt;chart_warring_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  <data name="&gt;&gt;tb_Threshold_05.Name" xml:space="preserve">
+    <value>tb_Threshold_05</value>
   </data>
-  <data name="&gt;&gt;chart_warring_1.Parent" xml:space="preserve">
-    <value>panel_ToolWear</value>
+  <data name="&gt;&gt;tb_Threshold_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chart_warring_1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tb_Threshold_05.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tb_Threshold_12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 529</value>
+  </data>
+  <data name="tb_Threshold_12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_12.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="tb_Threshold_12.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Name" xml:space="preserve">
+    <value>tb_Threshold_12</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="chart_warring_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>682, 526</value>
+  <data name="tb_Threshold_11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
   </data>
-  <data name="chart_warring_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 124</value>
+  <data name="tb_Threshold_11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 482</value>
   </data>
-  <data name="chart_warring_2.TabIndex" type="System.Int32, mscorlib">
-    <value>78</value>
+  <data name="tb_Threshold_11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
   </data>
-  <data name="chart_warring_2.Text" xml:space="preserve">
-    <value>chart2</value>
+  <data name="tb_Threshold_11.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
   </data>
-  <data name="&gt;&gt;chart_warring_2.Name" xml:space="preserve">
-    <value>chart_warring_2</value>
+  <data name="tb_Threshold_11.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="&gt;&gt;chart_warring_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  <data name="&gt;&gt;tb_Threshold_11.Name" xml:space="preserve">
+    <value>tb_Threshold_11</value>
   </data>
-  <data name="&gt;&gt;chart_warring_2.Parent" xml:space="preserve">
-    <value>panel_ToolWear</value>
+  <data name="&gt;&gt;tb_Threshold_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chart_warring_2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tb_Threshold_11.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tb_Threshold_10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 435</value>
+  </data>
+  <data name="tb_Threshold_10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_10.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="tb_Threshold_10.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Name" xml:space="preserve">
+    <value>tb_Threshold_10</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tb_Threshold_09.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_09.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 388</value>
+  </data>
+  <data name="tb_Threshold_09.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_09.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="tb_Threshold_09.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Name" xml:space="preserve">
+    <value>tb_Threshold_09</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tb_Threshold_14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 623</value>
+  </data>
+  <data name="tb_Threshold_14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_14.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="tb_Threshold_14.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Name" xml:space="preserve">
+    <value>tb_Threshold_14</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tb_Threshold_13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 576</value>
+  </data>
+  <data name="tb_Threshold_13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_13.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="tb_Threshold_13.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Name" xml:space="preserve">
+    <value>tb_Threshold_13</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="btn_shutdown.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -6162,725 +6339,131 @@
   <data name="&gt;&gt;btn_setting.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="btn_ToolWearSetting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btn_Threshold_down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="btn_ToolWearSetting_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_Threshold_down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btn_ToolWearSetting_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Threshold_down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_ToolWearSetting_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 699</value>
+  <data name="btn_Threshold_down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 624</value>
   </data>
-  <data name="btn_ToolWearSetting_save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>851, 40</value>
+  <data name="btn_Threshold_down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 40</value>
   </data>
-  <data name="btn_ToolWearSetting_save.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
+  <data name="btn_Threshold_down.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_save.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_save</value>
+  <data name="btn_Threshold_down.Text" xml:space="preserve">
+    <value> </value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_save.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Threshold_down.Name" xml:space="preserve">
+    <value>btn_Threshold_down</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_save.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
+  <data name="&gt;&gt;btn_Threshold_down.Parent" xml:space="preserve">
+    <value>panel3</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_save.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btn_ToolWearSetting_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_ToolWearSetting_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_delete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 645</value>
-  </data>
-  <data name="btn_ToolWearSetting_delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>851, 40</value>
-  </data>
-  <data name="btn_ToolWearSetting_delete.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_delete.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_delete</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_delete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_delete.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_delete.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btn_ToolWearSetting_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_20.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 179</value>
-  </data>
-  <data name="btn_ToolWearSetting_20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_20.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_20.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_20</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_20.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_20.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btn_ToolWearSetting_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_19.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 180</value>
-  </data>
-  <data name="btn_ToolWearSetting_19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_19.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_19.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_19</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_19.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_19.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btn_ToolWearSetting_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_18.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 179</value>
-  </data>
-  <data name="btn_ToolWearSetting_18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_18.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_18.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_18</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_18.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_18.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="btn_ToolWearSetting_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_17.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 179</value>
-  </data>
-  <data name="btn_ToolWearSetting_17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_17.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_17.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_17</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_17.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_17.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="btn_ToolWearSetting_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_16.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 180</value>
-  </data>
-  <data name="btn_ToolWearSetting_16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_16.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_16.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_16</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_16.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_16.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="btn_ToolWearSetting_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_15.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 180</value>
-  </data>
-  <data name="btn_ToolWearSetting_15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_15.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_15.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_15</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_15.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_15.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="btn_ToolWearSetting_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_14.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 179</value>
-  </data>
-  <data name="btn_ToolWearSetting_14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_14.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_14.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_14</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_14.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_14.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="btn_ToolWearSetting_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_13.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 179</value>
-  </data>
-  <data name="btn_ToolWearSetting_13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_13.TabIndex" type="System.Int32, mscorlib">
-    <value>88</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_13.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_13</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_13.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_13.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="btn_ToolWearSetting_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_12.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 179</value>
-  </data>
-  <data name="btn_ToolWearSetting_12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_12.TabIndex" type="System.Int32, mscorlib">
-    <value>87</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_12.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_12</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_12.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_12.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="btn_ToolWearSetting_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_11.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 179</value>
-  </data>
-  <data name="btn_ToolWearSetting_11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_11.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_11.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_11</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_11.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Threshold_down.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="btn_ToolWearSetting_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btn_Threshold_up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="btn_ToolWearSetting_10.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
+  <data name="btn_Threshold_up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="btn_ToolWearSetting_10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_Threshold_up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_ToolWearSetting_10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 93</value>
+  <data name="btn_Threshold_up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 12</value>
   </data>
-  <data name="btn_ToolWearSetting_10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
+  <data name="btn_Threshold_up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 40</value>
   </data>
-  <data name="btn_ToolWearSetting_10.TabIndex" type="System.Int32, mscorlib">
-    <value>85</value>
+  <data name="btn_Threshold_up.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_10.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_10</value>
+  <data name="btn_Threshold_up.Text" xml:space="preserve">
+    <value> </value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_10.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_Threshold_up.Name" xml:space="preserve">
+    <value>btn_Threshold_up</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_10.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
+  <data name="&gt;&gt;btn_Threshold_up.Parent" xml:space="preserve">
+    <value>panel3</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_10.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_Threshold_up.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="btn_ToolWearSetting_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btn_setting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="btn_ToolWearSetting_09.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
+  <data name="btn_setting_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="btn_ToolWearSetting_09.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_09.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_setting_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_ToolWearSetting_09.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 94</value>
+  <data name="btn_setting_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 582</value>
   </data>
-  <data name="btn_ToolWearSetting_09.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
+  <data name="btn_setting_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>851, 40</value>
   </data>
-  <data name="btn_ToolWearSetting_09.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
+  <data name="btn_setting_save.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_09.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_09</value>
+  <data name="&gt;&gt;btn_setting_save.Name" xml:space="preserve">
+    <value>btn_setting_save</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_09.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_setting_save.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_09.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
+  <data name="&gt;&gt;btn_setting_save.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_09.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="&gt;&gt;btn_setting_save.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="btn_ToolWearSetting_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btn_setting_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="btn_ToolWearSetting_08.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
+  <data name="btn_setting_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="btn_ToolWearSetting_08.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_setting_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_ToolWearSetting_08.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 93</value>
+  <data name="btn_setting_delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 528</value>
   </data>
-  <data name="btn_ToolWearSetting_08.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
+  <data name="btn_setting_delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>851, 40</value>
   </data>
-  <data name="btn_ToolWearSetting_08.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
+  <data name="btn_setting_delete.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_08.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_08</value>
+  <data name="&gt;&gt;btn_setting_delete.Name" xml:space="preserve">
+    <value>btn_setting_delete</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_08.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_setting_delete.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_08.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_08.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="btn_ToolWearSetting_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_07.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_07.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_07.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_07.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 93</value>
-  </data>
-  <data name="btn_ToolWearSetting_07.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_07.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_07.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_07</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_07.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_07.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_07.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="btn_ToolWearSetting_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_06.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_06.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_06.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_06.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 94</value>
-  </data>
-  <data name="btn_ToolWearSetting_06.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_06.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_06.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_06</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_06.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_06.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_06.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="btn_ToolWearSetting_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_05.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_05.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_05.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 94</value>
-  </data>
-  <data name="btn_ToolWearSetting_05.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_05.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_05.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_05</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_05.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_05.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_05.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="btn_ToolWearSetting_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_04.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_04.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_04.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_04.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 93</value>
-  </data>
-  <data name="btn_ToolWearSetting_04.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_04.TabIndex" type="System.Int32, mscorlib">
-    <value>79</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_04.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_04</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_04.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_04.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_04.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="btn_ToolWearSetting_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_03.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_03.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_03.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_03.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 93</value>
-  </data>
-  <data name="btn_ToolWearSetting_03.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_03.TabIndex" type="System.Int32, mscorlib">
-    <value>78</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_03.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_03</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_03.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_03.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_03.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="btn_ToolWearSetting_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_02.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_02.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_02.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_02.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 93</value>
-  </data>
-  <data name="btn_ToolWearSetting_02.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_02.TabIndex" type="System.Int32, mscorlib">
-    <value>77</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_02.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_02</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_02.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_02.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_02.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="btn_ToolWearSetting_01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_01.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ToolWearSetting_01.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_ToolWearSetting_01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_01.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 93</value>
-  </data>
-  <data name="btn_ToolWearSetting_01.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ToolWearSetting_01.TabIndex" type="System.Int32, mscorlib">
-    <value>76</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_01.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_01</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_01.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_01.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_01.ZOrder" xml:space="preserve">
-    <value>23</value>
+  <data name="&gt;&gt;btn_setting_delete.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_delete.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btn_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7722,95 +7305,725 @@
   <data name="&gt;&gt;btn_ToolWear_Start.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
-  <data name="btn_Threshold_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btn_ToolWearSetting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="btn_Threshold_Back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_ToolWearSetting_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_ToolWearSetting_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 699</value>
+  </data>
+  <data name="btn_ToolWearSetting_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>851, 40</value>
+  </data>
+  <data name="btn_ToolWearSetting_save.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_save.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_save</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_save.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_save.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_ToolWearSetting_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_ToolWearSetting_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 645</value>
+  </data>
+  <data name="btn_ToolWearSetting_delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>851, 40</value>
+  </data>
+  <data name="btn_ToolWearSetting_delete.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_delete.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_delete</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_delete.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_delete.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_ToolWearSetting_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="btn_Threshold_Back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_ToolWearSetting_20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_Threshold_Back.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 14</value>
+  <data name="btn_ToolWearSetting_20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 179</value>
   </data>
-  <data name="btn_Threshold_Back.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_ToolWearSetting_20.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 73</value>
   </data>
-  <data name="btn_Threshold_Back.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_ToolWearSetting_20.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_20.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_20</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_20.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_20.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_ToolWearSetting_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 180</value>
+  </data>
+  <data name="btn_ToolWearSetting_19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_19.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_19.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_19</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_19.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_19.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_ToolWearSetting_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_18.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 179</value>
+  </data>
+  <data name="btn_ToolWearSetting_18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_18.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_18.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_18</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_18.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_18.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btn_ToolWearSetting_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_17.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 179</value>
+  </data>
+  <data name="btn_ToolWearSetting_17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_17.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_17.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_17</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_17.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_17.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btn_ToolWearSetting_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_16.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 180</value>
+  </data>
+  <data name="btn_ToolWearSetting_16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_16.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_16.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_16</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_16.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_16.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btn_ToolWearSetting_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_15.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 180</value>
+  </data>
+  <data name="btn_ToolWearSetting_15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_15.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_15.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_15</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_15.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_15.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btn_ToolWearSetting_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_14.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 179</value>
+  </data>
+  <data name="btn_ToolWearSetting_14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_14.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_14.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_14</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_14.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_14.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btn_ToolWearSetting_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_13.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 179</value>
+  </data>
+  <data name="btn_ToolWearSetting_13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_13.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_13.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_13</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_13.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_13.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btn_ToolWearSetting_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_12.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 179</value>
+  </data>
+  <data name="btn_ToolWearSetting_12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_12.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_12.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_12</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_12.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_12.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btn_ToolWearSetting_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_11.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 179</value>
+  </data>
+  <data name="btn_ToolWearSetting_11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_11.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_11.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_11</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_11.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_11.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btn_ToolWearSetting_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_10.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 93</value>
+  </data>
+  <data name="btn_ToolWearSetting_10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_10.TabIndex" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_10.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_10</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_10.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_10.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btn_ToolWearSetting_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_09.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_09.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_09.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_09.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 94</value>
+  </data>
+  <data name="btn_ToolWearSetting_09.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_09.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_09.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_09</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_09.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_09.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btn_ToolWearSetting_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_08.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_08.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_08.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 93</value>
+  </data>
+  <data name="btn_ToolWearSetting_08.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_08.TabIndex" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_08.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_08</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_08.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_08.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;btn_Threshold_Back.Name" xml:space="preserve">
-    <value>btn_Threshold_Back</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btn_setting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btn_ToolWearSetting_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="btn_setting_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="btn_ToolWearSetting_07.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
   </data>
-  <data name="btn_setting_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_ToolWearSetting_07.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_07.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_setting_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 582</value>
+  <data name="btn_ToolWearSetting_07.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 93</value>
   </data>
-  <data name="btn_setting_save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>851, 40</value>
+  <data name="btn_ToolWearSetting_07.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
   </data>
-  <data name="btn_setting_save.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
+  <data name="btn_ToolWearSetting_07.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
   </data>
-  <data name="&gt;&gt;btn_setting_save.Name" xml:space="preserve">
-    <value>btn_setting_save</value>
+  <data name="&gt;&gt;btn_ToolWearSetting_07.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_07</value>
   </data>
-  <data name="&gt;&gt;btn_setting_save.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_ToolWearSetting_07.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_setting_save.Parent" xml:space="preserve">
-    <value>panel2</value>
+  <data name="&gt;&gt;btn_ToolWearSetting_07.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
   </data>
-  <data name="&gt;&gt;btn_setting_save.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;btn_ToolWearSetting_07.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
-  <data name="btn_setting_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btn_ToolWearSetting_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="btn_setting_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="btn_ToolWearSetting_06.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
   </data>
-  <data name="btn_setting_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_ToolWearSetting_06.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_06.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_setting_delete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 528</value>
+  <data name="btn_ToolWearSetting_06.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 94</value>
   </data>
-  <data name="btn_setting_delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>851, 40</value>
+  <data name="btn_ToolWearSetting_06.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
   </data>
-  <data name="btn_setting_delete.TabIndex" type="System.Int32, mscorlib">
-    <value>98</value>
+  <data name="btn_ToolWearSetting_06.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
   </data>
-  <data name="&gt;&gt;btn_setting_delete.Name" xml:space="preserve">
-    <value>btn_setting_delete</value>
+  <data name="&gt;&gt;btn_ToolWearSetting_06.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_06</value>
   </data>
-  <data name="&gt;&gt;btn_setting_delete.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_ToolWearSetting_06.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_setting_delete.Parent" xml:space="preserve">
-    <value>panel2</value>
+  <data name="&gt;&gt;btn_ToolWearSetting_06.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
   </data>
-  <data name="&gt;&gt;btn_setting_delete.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btn_ToolWearSetting_06.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="btn_ToolWearSetting_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_05.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_05.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_05.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 94</value>
+  </data>
+  <data name="btn_ToolWearSetting_05.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_05.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_05.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_05</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_05.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_05.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="btn_ToolWearSetting_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_04.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_04.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_04.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_04.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 93</value>
+  </data>
+  <data name="btn_ToolWearSetting_04.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_04.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_04.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_04</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_04.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_04.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="btn_ToolWearSetting_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_03.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_03.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_03.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_03.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 93</value>
+  </data>
+  <data name="btn_ToolWearSetting_03.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_03.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_03.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_03</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_03.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_03.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="btn_ToolWearSetting_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_02.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_02.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_02.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_02.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 93</value>
+  </data>
+  <data name="btn_ToolWearSetting_02.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_02.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_02.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_02</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_02.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_02.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="btn_ToolWearSetting_01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_01.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ToolWearSetting_01.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ToolWearSetting_01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_01.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 93</value>
+  </data>
+  <data name="btn_ToolWearSetting_01.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ToolWearSetting_01.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_01.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_01</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_01.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_01.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
   <data name="btn_ToolWearSetting_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9504,6 +9717,759 @@
   <data name="&gt;&gt;btn_Thermal_01.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
+  <data name="btn_Learn_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 179</value>
+  </data>
+  <data name="btn_Learn_20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_20.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_20.Name" xml:space="preserve">
+    <value>btn_Learn_20</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_20.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_20.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_Learn_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 180</value>
+  </data>
+  <data name="btn_Learn_19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_19.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_19.Name" xml:space="preserve">
+    <value>btn_Learn_19</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_19.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_19.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_Learn_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_18.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 179</value>
+  </data>
+  <data name="btn_Learn_18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_18.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_18.Name" xml:space="preserve">
+    <value>btn_Learn_18</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_18.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_18.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Learn_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_17.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 179</value>
+  </data>
+  <data name="btn_Learn_17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_17.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_17.Name" xml:space="preserve">
+    <value>btn_Learn_17</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_17.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_17.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_Learn_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_16.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 180</value>
+  </data>
+  <data name="btn_Learn_16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_16.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_16.Name" xml:space="preserve">
+    <value>btn_Learn_16</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_16.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_16.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_Learn_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_15.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 180</value>
+  </data>
+  <data name="btn_Learn_15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_15.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_15.Name" xml:space="preserve">
+    <value>btn_Learn_15</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_15.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_15.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_Learn_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_14.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 179</value>
+  </data>
+  <data name="btn_Learn_14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_14.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_14.Name" xml:space="preserve">
+    <value>btn_Learn_14</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_14.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_14.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btn_Learn_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_13.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 179</value>
+  </data>
+  <data name="btn_Learn_13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_13.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_13.Name" xml:space="preserve">
+    <value>btn_Learn_13</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_13.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_13.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btn_Learn_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_12.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 179</value>
+  </data>
+  <data name="btn_Learn_12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_12.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_12.Name" xml:space="preserve">
+    <value>btn_Learn_12</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_12.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_12.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btn_Learn_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_11.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 179</value>
+  </data>
+  <data name="btn_Learn_11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_11.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_11.Name" xml:space="preserve">
+    <value>btn_Learn_11</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_11.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_11.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btn_Learn_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_10.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 93</value>
+  </data>
+  <data name="btn_Learn_10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_10.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_10.Name" xml:space="preserve">
+    <value>btn_Learn_10</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_10.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_10.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btn_Learn_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_09.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_09.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_09.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_09.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 94</value>
+  </data>
+  <data name="btn_Learn_09.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_09.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_09.Name" xml:space="preserve">
+    <value>btn_Learn_09</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_09.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_09.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btn_Learn_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_08.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_08.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_08.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 93</value>
+  </data>
+  <data name="btn_Learn_08.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_08.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_08.Name" xml:space="preserve">
+    <value>btn_Learn_08</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_08.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_08.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btn_Learn_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_07.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_07.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_07.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_07.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 93</value>
+  </data>
+  <data name="btn_Learn_07.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_07.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_07.Name" xml:space="preserve">
+    <value>btn_Learn_07</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_07.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_07.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btn_Learn_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_06.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_06.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_06.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_06.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 94</value>
+  </data>
+  <data name="btn_Learn_06.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_06.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_06.Name" xml:space="preserve">
+    <value>btn_Learn_06</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_06.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_06.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btn_Learn_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_05.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_05.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_05.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 94</value>
+  </data>
+  <data name="btn_Learn_05.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_05.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_05.Name" xml:space="preserve">
+    <value>btn_Learn_05</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_05.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_05.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btn_Learn_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_04.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_04.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_04.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_04.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 93</value>
+  </data>
+  <data name="btn_Learn_04.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_04.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_04.Name" xml:space="preserve">
+    <value>btn_Learn_04</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_04.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_04.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btn_Learn_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_03.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_03.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_03.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_03.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 93</value>
+  </data>
+  <data name="btn_Learn_03.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_03.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_03.Name" xml:space="preserve">
+    <value>btn_Learn_03</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_03.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_03.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="btn_Learn_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_02.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_02.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_02.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_02.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 93</value>
+  </data>
+  <data name="btn_Learn_02.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_02.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_02.Name" xml:space="preserve">
+    <value>btn_Learn_02</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_02.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_02.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="btn_Learn_01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_01.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_01.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Learn_01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_01.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 93</value>
+  </data>
+  <data name="btn_Learn_01.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_01.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_01.Name" xml:space="preserve">
+    <value>btn_Learn_01</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_01.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_01.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="btn_Learn_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_Back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_Back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_Back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 8</value>
+  </data>
+  <data name="btn_Learn_Back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_Back.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.Name" xml:space="preserve">
+    <value>btn_Learn_Back</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="btn_Learn_OK.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_OK.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btn_Learn_OK.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 9</value>
+  </data>
+  <data name="btn_Learn_OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_OK.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.Name" xml:space="preserve">
+    <value>btn_Learn_OK</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="btn_Learn_Start.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Learn_Start.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Learn_Start.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Learn_Start.Location" type="System.Drawing.Point, System.Drawing">
+    <value>686, 9</value>
+  </data>
+  <data name="btn_Learn_Start.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Learn_Start.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.Name" xml:space="preserve">
+    <value>btn_Learn_Start</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
   <data name="btn_ATCsetting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -10294,10 +11260,13 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1262, 782</value>
+    <value>1274, 794</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>

@@ -181,9 +181,6 @@
     <None Include="Resources\tc_btn_stop.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wd_btn_chart.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\wd_btn_threshold.png" />
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +188,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wd_l_learn_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wd_btn_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wd_t_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wd_t_delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets" Condition="Exists('..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets')" />

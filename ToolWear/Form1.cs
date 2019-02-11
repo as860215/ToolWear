@@ -269,19 +269,6 @@ namespace ToolWear{
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.wd_l_learn_selected;
         }
         #endregion
-        #region 軸向設定 新增移除按鈕方法
-        //學習顯示圖切換
-        private void btn_LearnChange_Click(object sender, EventArgs e){
-            if (chart_Learn.Visible == true){
-                chart_Learn.Visible = false;
-                chart_LeartFFT.Visible = true;
-            }
-            else{
-                chart_Learn.Visible = true;
-                chart_LeartFFT.Visible = false;
-            }
-        }
-        #endregion
         #region 各項功能按鈕
         //FFT和原始數據折線圖轉換
         private bool ToolWearChange_FFT = false;    //紀錄現在折線圖顯示何者圖形

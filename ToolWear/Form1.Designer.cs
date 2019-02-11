@@ -29,68 +29,68 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series49 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series50 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series51 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series52 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series53 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series54 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series55 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series56 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series57 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series58 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series59 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series60 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series61 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series62 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series63 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series64 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series65 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series66 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series70 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series71 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series72 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series67 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series68 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series69 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea21 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend21 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series73 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series74 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series75 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series76 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea22 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend22 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series77 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series78 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series79 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series80 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea23 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend23 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series81 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea24 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend24 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series82 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series83 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series84 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series85 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series86 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series87 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series88 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series89 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series90 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series91 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea25 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend25 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series92 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series93 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series94 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea26 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend26 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series95 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series96 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series97 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series98 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea27 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend27 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series99 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series100 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series101 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series102 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea28 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend28 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series103 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series104 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series105 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series106 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea29 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend29 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series107 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series108 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series109 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea30 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend30 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series110 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series111 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series112 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea31 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend31 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series113 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series114 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea32 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend32 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series115 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series116 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series117 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea33 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend33 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series118 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series119 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series120 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel_ViewModule = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_Blade = new System.Windows.Forms.Button();
@@ -114,6 +114,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.physicalChannelComboBox = new System.Windows.Forms.ComboBox();
             this.panel_ToolWear = new System.Windows.Forms.Panel();
+            this.chart_warring_2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_warring_1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label18 = new System.Windows.Forms.Label();
             this.lb_ToolWear_Status = new System.Windows.Forms.Label();
             this.chart_ToolWear = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -146,13 +148,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.chart_Thermal = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel_Learn = new System.Windows.Forms.Panel();
-            this.btn_LearnChange = new System.Windows.Forms.Button();
-            this.btn_Learn_Cancel = new System.Windows.Forms.Button();
-            this.btn_Learn_OK = new System.Windows.Forms.Button();
-            this.btn_Learn_Start = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
             this.lb_Learn_WorkName = new System.Windows.Forms.Label();
-            this.chart_Learn = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_LeartFFT = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_Learn = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel_log = new System.Windows.Forms.Panel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -181,8 +180,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_Health = new System.Windows.Forms.Panel();
-            this.chart_warring_1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart_warring_2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.tb_Threshold_01 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_02 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_04 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_03 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_08 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_07 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_06 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_05 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_12 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_11 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_10 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_09 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_14 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_13 = new System.Windows.Forms.TextBox();
             this.btn_shutdown = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -195,28 +208,13 @@
             this.btn_Thermal = new System.Windows.Forms.Button();
             this.btn_ToolWear = new System.Windows.Forms.Button();
             this.btn_setting = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_save = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_delete = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_20 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_19 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_18 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_17 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_16 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_15 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_14 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_13 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_12 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_11 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_10 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_09 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_08 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_07 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_06 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_05 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_04 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_03 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_02 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_01 = new System.Windows.Forms.Button();
+            this.btn_Threshold_save = new System.Windows.Forms.Button();
+            this.btn_Threshold_delete = new System.Windows.Forms.Button();
+            this.btn_Threshold_down = new System.Windows.Forms.Button();
+            this.btn_Threshold_up = new System.Windows.Forms.Button();
+            this.btn_Threshold_Back = new System.Windows.Forms.Button();
+            this.btn_setting_save = new System.Windows.Forms.Button();
+            this.btn_setting_delete = new System.Windows.Forms.Button();
             this.btn_Threshold = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_ToolWear_20 = new System.Windows.Forms.Button();
@@ -243,9 +241,28 @@
             this.btn_ToolWear_Setting = new System.Windows.Forms.Button();
             this.btn_ToolWear_Stop = new System.Windows.Forms.Button();
             this.btn_ToolWear_Start = new System.Windows.Forms.Button();
-            this.btn_Threshold_Back = new System.Windows.Forms.Button();
-            this.btn_setting_save = new System.Windows.Forms.Button();
-            this.btn_setting_delete = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_save = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_delete = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_20 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_19 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_18 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_17 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_16 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_15 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_14 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_13 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_12 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_11 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_10 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_09 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_08 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_07 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_06 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_05 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_04 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_03 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_02 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_01 = new System.Windows.Forms.Button();
             this.btn_ToolWearSetting_Back = new System.Windows.Forms.Button();
             this.btn_CompensateSave = new System.Windows.Forms.Button();
             this.btn_Compensate_20 = new System.Windows.Forms.Button();
@@ -298,6 +315,29 @@
             this.btn_Thermal_03 = new System.Windows.Forms.Button();
             this.btn_Thermal_02 = new System.Windows.Forms.Button();
             this.btn_Thermal_01 = new System.Windows.Forms.Button();
+            this.btn_Learn_20 = new System.Windows.Forms.Button();
+            this.btn_Learn_19 = new System.Windows.Forms.Button();
+            this.btn_Learn_18 = new System.Windows.Forms.Button();
+            this.btn_Learn_17 = new System.Windows.Forms.Button();
+            this.btn_Learn_16 = new System.Windows.Forms.Button();
+            this.btn_Learn_15 = new System.Windows.Forms.Button();
+            this.btn_Learn_14 = new System.Windows.Forms.Button();
+            this.btn_Learn_13 = new System.Windows.Forms.Button();
+            this.btn_Learn_12 = new System.Windows.Forms.Button();
+            this.btn_Learn_11 = new System.Windows.Forms.Button();
+            this.btn_Learn_10 = new System.Windows.Forms.Button();
+            this.btn_Learn_09 = new System.Windows.Forms.Button();
+            this.btn_Learn_08 = new System.Windows.Forms.Button();
+            this.btn_Learn_07 = new System.Windows.Forms.Button();
+            this.btn_Learn_06 = new System.Windows.Forms.Button();
+            this.btn_Learn_05 = new System.Windows.Forms.Button();
+            this.btn_Learn_04 = new System.Windows.Forms.Button();
+            this.btn_Learn_03 = new System.Windows.Forms.Button();
+            this.btn_Learn_02 = new System.Windows.Forms.Button();
+            this.btn_Learn_01 = new System.Windows.Forms.Button();
+            this.btn_Learn_Back = new System.Windows.Forms.Button();
+            this.btn_Learn_OK = new System.Windows.Forms.Button();
+            this.btn_Learn_Start = new System.Windows.Forms.Button();
             this.btn_ATCsetting_save = new System.Windows.Forms.Button();
             this.btn_ATCsetting_delete = new System.Windows.Forms.Button();
             this.btn_ATCsetting_20 = new System.Windows.Forms.Button();
@@ -320,28 +360,6 @@
             this.btn_ATCsetting_03 = new System.Windows.Forms.Button();
             this.btn_ATCsetting_02 = new System.Windows.Forms.Button();
             this.btn_ATCsetting_01 = new System.Windows.Forms.Button();
-            this.btn_Learn_Back = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.btn_Learn_20 = new System.Windows.Forms.Button();
-            this.btn_Learn_19 = new System.Windows.Forms.Button();
-            this.btn_Learn_18 = new System.Windows.Forms.Button();
-            this.btn_Learn_17 = new System.Windows.Forms.Button();
-            this.btn_Learn_16 = new System.Windows.Forms.Button();
-            this.btn_Learn_15 = new System.Windows.Forms.Button();
-            this.btn_Learn_14 = new System.Windows.Forms.Button();
-            this.btn_Learn_13 = new System.Windows.Forms.Button();
-            this.btn_Learn_12 = new System.Windows.Forms.Button();
-            this.btn_Learn_11 = new System.Windows.Forms.Button();
-            this.btn_Learn_10 = new System.Windows.Forms.Button();
-            this.btn_Learn_09 = new System.Windows.Forms.Button();
-            this.btn_Learn_08 = new System.Windows.Forms.Button();
-            this.btn_Learn_07 = new System.Windows.Forms.Button();
-            this.btn_Learn_06 = new System.Windows.Forms.Button();
-            this.btn_Learn_05 = new System.Windows.Forms.Button();
-            this.btn_Learn_04 = new System.Windows.Forms.Button();
-            this.btn_Learn_03 = new System.Windows.Forms.Button();
-            this.btn_Learn_02 = new System.Windows.Forms.Button();
-            this.btn_Learn_01 = new System.Windows.Forms.Button();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Blade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
@@ -349,6 +367,8 @@
             this.panel_ToolWearSetting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_Blade)).BeginInit();
             this.panel_ToolWear.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_warring_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_warring_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ToolWear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_FFT)).BeginInit();
             this.panel_Home.SuspendLayout();
@@ -361,8 +381,8 @@
             this.panel_Thermal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Thermal)).BeginInit();
             this.panel_Learn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_Learn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_LeartFFT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_Learn)).BeginInit();
             this.panel_log.SuspendLayout();
             this.panel_setting.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -370,8 +390,8 @@
             this.panel_ATCsetting.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_ATCsetting_Blade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_warring_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_warring_2)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -430,222 +450,222 @@
             // 
             this.chart_Blade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(32)))), ((int)(((byte)(90)))));
             this.chart_Blade.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea12.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea12.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea12.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea12.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea12.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea12.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea12.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea12.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea12.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea12.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea12.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea12.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea12.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea12.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea12.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea12.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea12.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea12.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea12.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea12.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea12.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea12.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea12.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(32)))), ((int)(((byte)(90)))));
-            chartArea12.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea12.CursorX.IsUserEnabled = true;
-            chartArea12.CursorX.IsUserSelectionEnabled = true;
-            chartArea12.CursorY.IsUserEnabled = true;
-            chartArea12.CursorY.IsUserSelectionEnabled = true;
-            chartArea12.Name = "ChartArea1";
-            this.chart_Blade.ChartAreas.Add(chartArea12);
-            legend12.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend12.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend12.Name = "Legend1";
-            this.chart_Blade.Legends.Add(legend12);
+            chartArea23.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea23.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea23.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea23.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea23.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea23.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea23.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea23.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea23.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea23.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea23.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea23.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea23.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea23.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea23.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea23.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea23.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea23.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea23.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea23.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea23.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea23.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea23.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(32)))), ((int)(((byte)(90)))));
+            chartArea23.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea23.CursorX.IsUserEnabled = true;
+            chartArea23.CursorX.IsUserSelectionEnabled = true;
+            chartArea23.CursorY.IsUserEnabled = true;
+            chartArea23.CursorY.IsUserSelectionEnabled = true;
+            chartArea23.Name = "ChartArea1";
+            this.chart_Blade.ChartAreas.Add(chartArea23);
+            legend23.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend23.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend23.Name = "Legend1";
+            this.chart_Blade.Legends.Add(legend23);
             resources.ApplyResources(this.chart_Blade, "chart_Blade");
             this.chart_Blade.Name = "chart_Blade";
-            series41.BorderWidth = 2;
-            series41.ChartArea = "ChartArea1";
-            series41.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series41.Color = System.Drawing.Color.Lime;
-            series41.Legend = "Legend1";
-            series41.Name = "Series1";
-            this.chart_Blade.Series.Add(series41);
+            series81.BorderWidth = 2;
+            series81.ChartArea = "ChartArea1";
+            series81.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series81.Color = System.Drawing.Color.Lime;
+            series81.Legend = "Legend1";
+            series81.Name = "Series1";
+            this.chart_Blade.Series.Add(series81);
             // 
             // chart_ViewFFT
             // 
             this.chart_ViewFFT.BackColor = System.Drawing.Color.Black;
             this.chart_ViewFFT.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
             this.chart_ViewFFT.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea13.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea13.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea13.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea13.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea13.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea13.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea13.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea13.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea13.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea13.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea13.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea13.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea13.BackColor = System.Drawing.Color.Black;
-            chartArea13.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
-            chartArea13.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea13.CursorX.IsUserEnabled = true;
-            chartArea13.CursorX.IsUserSelectionEnabled = true;
-            chartArea13.CursorY.IsUserEnabled = true;
-            chartArea13.CursorY.IsUserSelectionEnabled = true;
-            chartArea13.Name = "ChartArea1";
-            this.chart_ViewFFT.ChartAreas.Add(chartArea13);
-            legend13.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend13.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend13.Name = "Legend1";
-            this.chart_ViewFFT.Legends.Add(legend13);
+            chartArea24.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea24.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea24.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea24.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea24.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea24.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea24.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea24.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea24.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea24.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea24.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea24.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea24.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea24.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea24.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea24.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea24.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea24.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea24.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea24.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea24.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea24.BackColor = System.Drawing.Color.Black;
+            chartArea24.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
+            chartArea24.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea24.CursorX.IsUserEnabled = true;
+            chartArea24.CursorX.IsUserSelectionEnabled = true;
+            chartArea24.CursorY.IsUserEnabled = true;
+            chartArea24.CursorY.IsUserSelectionEnabled = true;
+            chartArea24.Name = "ChartArea1";
+            this.chart_ViewFFT.ChartAreas.Add(chartArea24);
+            legend24.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend24.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend24.Name = "Legend1";
+            this.chart_ViewFFT.Legends.Add(legend24);
             resources.ApplyResources(this.chart_ViewFFT, "chart_ViewFFT");
             this.chart_ViewFFT.Name = "chart_ViewFFT";
-            series42.BorderWidth = 2;
-            series42.ChartArea = "ChartArea1";
-            series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series42.Color = System.Drawing.Color.LimeGreen;
-            series42.Legend = "Legend1";
-            series42.Name = "Series1";
-            series43.BorderWidth = 2;
-            series43.ChartArea = "ChartArea1";
-            series43.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series43.Color = System.Drawing.Color.Lime;
-            series43.Legend = "Legend1";
-            series43.Name = "Series2";
-            series44.BorderWidth = 2;
-            series44.ChartArea = "ChartArea1";
-            series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series44.Color = System.Drawing.Color.Lime;
-            series44.Legend = "Legend1";
-            series44.Name = "Series3";
-            series44.YValuesPerPoint = 2;
-            series45.BorderWidth = 2;
-            series45.ChartArea = "ChartArea1";
-            series45.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series45.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            series45.Legend = "Legend1";
-            series45.Name = "Series4";
-            series46.BorderWidth = 2;
-            series46.ChartArea = "ChartArea1";
-            series46.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series46.Color = System.Drawing.Color.SpringGreen;
-            series46.Legend = "Legend1";
-            series46.Name = "Series5";
-            series47.BorderWidth = 2;
-            series47.ChartArea = "ChartArea1";
-            series47.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series47.Color = System.Drawing.Color.OrangeRed;
-            series47.Legend = "Legend1";
-            series47.Name = "Series6";
-            series48.BorderWidth = 2;
-            series48.ChartArea = "ChartArea1";
-            series48.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series48.Color = System.Drawing.Color.Red;
-            series48.Legend = "Legend1";
-            series48.Name = "Series7";
-            series49.BorderWidth = 2;
-            series49.ChartArea = "ChartArea1";
-            series49.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series49.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            series49.Legend = "Legend1";
-            series49.Name = "Series8";
-            series50.BorderWidth = 2;
-            series50.ChartArea = "ChartArea1";
-            series50.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series50.Color = System.Drawing.Color.Coral;
-            series50.Legend = "Legend1";
-            series50.Name = "Series9";
-            series51.BorderWidth = 2;
-            series51.ChartArea = "ChartArea1";
-            series51.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series51.Color = System.Drawing.Color.Salmon;
-            series51.Legend = "Legend1";
-            series51.Name = "Series10";
-            this.chart_ViewFFT.Series.Add(series42);
-            this.chart_ViewFFT.Series.Add(series43);
-            this.chart_ViewFFT.Series.Add(series44);
-            this.chart_ViewFFT.Series.Add(series45);
-            this.chart_ViewFFT.Series.Add(series46);
-            this.chart_ViewFFT.Series.Add(series47);
-            this.chart_ViewFFT.Series.Add(series48);
-            this.chart_ViewFFT.Series.Add(series49);
-            this.chart_ViewFFT.Series.Add(series50);
-            this.chart_ViewFFT.Series.Add(series51);
+            series82.BorderWidth = 2;
+            series82.ChartArea = "ChartArea1";
+            series82.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series82.Color = System.Drawing.Color.LimeGreen;
+            series82.Legend = "Legend1";
+            series82.Name = "Series1";
+            series83.BorderWidth = 2;
+            series83.ChartArea = "ChartArea1";
+            series83.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series83.Color = System.Drawing.Color.Lime;
+            series83.Legend = "Legend1";
+            series83.Name = "Series2";
+            series84.BorderWidth = 2;
+            series84.ChartArea = "ChartArea1";
+            series84.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series84.Color = System.Drawing.Color.Lime;
+            series84.Legend = "Legend1";
+            series84.Name = "Series3";
+            series84.YValuesPerPoint = 2;
+            series85.BorderWidth = 2;
+            series85.ChartArea = "ChartArea1";
+            series85.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series85.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            series85.Legend = "Legend1";
+            series85.Name = "Series4";
+            series86.BorderWidth = 2;
+            series86.ChartArea = "ChartArea1";
+            series86.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series86.Color = System.Drawing.Color.SpringGreen;
+            series86.Legend = "Legend1";
+            series86.Name = "Series5";
+            series87.BorderWidth = 2;
+            series87.ChartArea = "ChartArea1";
+            series87.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series87.Color = System.Drawing.Color.OrangeRed;
+            series87.Legend = "Legend1";
+            series87.Name = "Series6";
+            series88.BorderWidth = 2;
+            series88.ChartArea = "ChartArea1";
+            series88.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series88.Color = System.Drawing.Color.Red;
+            series88.Legend = "Legend1";
+            series88.Name = "Series7";
+            series89.BorderWidth = 2;
+            series89.ChartArea = "ChartArea1";
+            series89.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series89.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            series89.Legend = "Legend1";
+            series89.Name = "Series8";
+            series90.BorderWidth = 2;
+            series90.ChartArea = "ChartArea1";
+            series90.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series90.Color = System.Drawing.Color.Coral;
+            series90.Legend = "Legend1";
+            series90.Name = "Series9";
+            series91.BorderWidth = 2;
+            series91.ChartArea = "ChartArea1";
+            series91.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series91.Color = System.Drawing.Color.Salmon;
+            series91.Legend = "Legend1";
+            series91.Name = "Series10";
+            this.chart_ViewFFT.Series.Add(series82);
+            this.chart_ViewFFT.Series.Add(series83);
+            this.chart_ViewFFT.Series.Add(series84);
+            this.chart_ViewFFT.Series.Add(series85);
+            this.chart_ViewFFT.Series.Add(series86);
+            this.chart_ViewFFT.Series.Add(series87);
+            this.chart_ViewFFT.Series.Add(series88);
+            this.chart_ViewFFT.Series.Add(series89);
+            this.chart_ViewFFT.Series.Add(series90);
+            this.chart_ViewFFT.Series.Add(series91);
             // 
             // chart_ViewModule
             // 
             this.chart_ViewModule.BackColor = System.Drawing.Color.Black;
             this.chart_ViewModule.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
             this.chart_ViewModule.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea14.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea14.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea14.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea14.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea14.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea14.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea14.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea14.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea14.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea14.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea14.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea14.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea14.BackColor = System.Drawing.Color.Black;
-            chartArea14.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
-            chartArea14.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea14.CursorX.IsUserEnabled = true;
-            chartArea14.CursorX.IsUserSelectionEnabled = true;
-            chartArea14.Name = "ChartArea1";
-            this.chart_ViewModule.ChartAreas.Add(chartArea14);
-            legend14.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend14.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend14.Name = "Legend1";
-            this.chart_ViewModule.Legends.Add(legend14);
+            chartArea25.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea25.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea25.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea25.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea25.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea25.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea25.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea25.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea25.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea25.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea25.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea25.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea25.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea25.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea25.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea25.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea25.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea25.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea25.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea25.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea25.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea25.BackColor = System.Drawing.Color.Black;
+            chartArea25.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
+            chartArea25.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea25.CursorX.IsUserEnabled = true;
+            chartArea25.CursorX.IsUserSelectionEnabled = true;
+            chartArea25.Name = "ChartArea1";
+            this.chart_ViewModule.ChartAreas.Add(chartArea25);
+            legend25.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend25.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend25.Name = "Legend1";
+            this.chart_ViewModule.Legends.Add(legend25);
             resources.ApplyResources(this.chart_ViewModule, "chart_ViewModule");
             this.chart_ViewModule.Name = "chart_ViewModule";
-            series52.BorderWidth = 2;
-            series52.ChartArea = "ChartArea1";
-            series52.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series52.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            series52.Legend = "Legend1";
-            series52.Name = "Series1";
-            series53.BorderWidth = 0;
-            series53.ChartArea = "ChartArea1";
-            series53.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series53.Legend = "Legend1";
-            series53.Name = "Series2";
-            series54.BorderWidth = 0;
-            series54.ChartArea = "ChartArea1";
-            series54.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series54.Legend = "Legend1";
-            series54.Name = "Series3";
-            this.chart_ViewModule.Series.Add(series52);
-            this.chart_ViewModule.Series.Add(series53);
-            this.chart_ViewModule.Series.Add(series54);
+            series92.BorderWidth = 2;
+            series92.ChartArea = "ChartArea1";
+            series92.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series92.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            series92.Legend = "Legend1";
+            series92.Name = "Series1";
+            series93.BorderWidth = 0;
+            series93.ChartArea = "ChartArea1";
+            series93.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series93.Legend = "Legend1";
+            series93.Name = "Series2";
+            series94.BorderWidth = 0;
+            series94.ChartArea = "ChartArea1";
+            series94.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series94.Legend = "Legend1";
+            series94.Name = "Series3";
+            this.chart_ViewModule.Series.Add(series92);
+            this.chart_ViewModule.Series.Add(series93);
+            this.chart_ViewModule.Series.Add(series94);
             // 
             // panel_ToolWearSetting
             // 
@@ -826,6 +846,138 @@
             this.panel_ToolWear.Controls.Add(this.chart_FFT);
             this.panel_ToolWear.Name = "panel_ToolWear";
             // 
+            // chart_warring_2
+            // 
+            this.chart_warring_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            this.chart_warring_2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea26.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea26.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea26.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisX.MajorGrid.Enabled = false;
+            chartArea26.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea26.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea26.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea26.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea26.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea26.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea26.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisY.MajorGrid.Enabled = false;
+            chartArea26.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea26.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea26.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea26.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea26.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            chartArea26.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea26.Name = "ChartArea1";
+            this.chart_warring_2.ChartAreas.Add(chartArea26);
+            legend26.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend26.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend26.Name = "Legend1";
+            this.chart_warring_2.Legends.Add(legend26);
+            resources.ApplyResources(this.chart_warring_2, "chart_warring_2");
+            this.chart_warring_2.Name = "chart_warring_2";
+            series95.BorderWidth = 2;
+            series95.ChartArea = "ChartArea1";
+            series95.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series95.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            series95.Legend = "Legend1";
+            series95.Name = "Series1";
+            series96.BorderWidth = 0;
+            series96.ChartArea = "ChartArea1";
+            series96.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series96.Legend = "Legend1";
+            series96.Name = "Series2";
+            series97.BorderWidth = 0;
+            series97.ChartArea = "ChartArea1";
+            series97.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series97.Legend = "Legend1";
+            series97.Name = "Series3";
+            series98.BorderWidth = 2;
+            series98.ChartArea = "ChartArea1";
+            series98.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series98.Color = System.Drawing.Color.Lime;
+            series98.Legend = "Legend1";
+            series98.Name = "Series4";
+            this.chart_warring_2.Series.Add(series95);
+            this.chart_warring_2.Series.Add(series96);
+            this.chart_warring_2.Series.Add(series97);
+            this.chart_warring_2.Series.Add(series98);
+            // 
+            // chart_warring_1
+            // 
+            this.chart_warring_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            this.chart_warring_1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea27.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea27.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea27.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisX.MajorGrid.Enabled = false;
+            chartArea27.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea27.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea27.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea27.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea27.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea27.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea27.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisY.MajorGrid.Enabled = false;
+            chartArea27.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea27.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea27.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea27.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea27.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            chartArea27.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea27.Name = "ChartArea1";
+            this.chart_warring_1.ChartAreas.Add(chartArea27);
+            legend27.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend27.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend27.Name = "Legend1";
+            this.chart_warring_1.Legends.Add(legend27);
+            resources.ApplyResources(this.chart_warring_1, "chart_warring_1");
+            this.chart_warring_1.Name = "chart_warring_1";
+            series99.BorderWidth = 2;
+            series99.ChartArea = "ChartArea1";
+            series99.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series99.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            series99.Legend = "Legend1";
+            series99.Name = "Series1";
+            series100.BorderWidth = 0;
+            series100.ChartArea = "ChartArea1";
+            series100.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series100.Legend = "Legend1";
+            series100.Name = "Series2";
+            series101.BorderWidth = 0;
+            series101.ChartArea = "ChartArea1";
+            series101.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series101.Legend = "Legend1";
+            series101.Name = "Series3";
+            series102.BorderWidth = 2;
+            series102.ChartArea = "ChartArea1";
+            series102.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series102.Color = System.Drawing.Color.Lime;
+            series102.Legend = "Legend1";
+            series102.Name = "Series4";
+            this.chart_warring_1.Series.Add(series99);
+            this.chart_warring_1.Series.Add(series100);
+            this.chart_warring_1.Series.Add(series101);
+            this.chart_warring_1.Series.Add(series102);
+            // 
             // label18
             // 
             resources.ApplyResources(this.label18, "label18");
@@ -844,128 +996,128 @@
             // 
             this.chart_ToolWear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             this.chart_ToolWear.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea15.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea15.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea15.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX.MajorGrid.Enabled = false;
-            chartArea15.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea15.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea15.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea15.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea15.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea15.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY.MajorGrid.Enabled = false;
-            chartArea15.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea15.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea15.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea15.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea15.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            chartArea15.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea15.Name = "ChartArea1";
-            this.chart_ToolWear.ChartAreas.Add(chartArea15);
-            legend15.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend15.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend15.Name = "Legend1";
-            this.chart_ToolWear.Legends.Add(legend15);
+            chartArea28.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea28.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea28.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisX.MajorGrid.Enabled = false;
+            chartArea28.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea28.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea28.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea28.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea28.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea28.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea28.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisY.MajorGrid.Enabled = false;
+            chartArea28.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea28.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea28.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea28.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea28.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            chartArea28.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea28.Name = "ChartArea1";
+            this.chart_ToolWear.ChartAreas.Add(chartArea28);
+            legend28.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend28.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend28.Name = "Legend1";
+            this.chart_ToolWear.Legends.Add(legend28);
             resources.ApplyResources(this.chart_ToolWear, "chart_ToolWear");
             this.chart_ToolWear.Name = "chart_ToolWear";
-            series55.BorderWidth = 2;
-            series55.ChartArea = "ChartArea1";
-            series55.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series55.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            series55.Legend = "Legend1";
-            series55.Name = "Series1";
-            series56.BorderWidth = 0;
-            series56.ChartArea = "ChartArea1";
-            series56.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series56.Legend = "Legend1";
-            series56.Name = "Series2";
-            series57.BorderWidth = 0;
-            series57.ChartArea = "ChartArea1";
-            series57.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series57.Legend = "Legend1";
-            series57.Name = "Series3";
-            series58.BorderWidth = 2;
-            series58.ChartArea = "ChartArea1";
-            series58.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series58.Color = System.Drawing.Color.Lime;
-            series58.Legend = "Legend1";
-            series58.Name = "Series4";
-            this.chart_ToolWear.Series.Add(series55);
-            this.chart_ToolWear.Series.Add(series56);
-            this.chart_ToolWear.Series.Add(series57);
-            this.chart_ToolWear.Series.Add(series58);
+            series103.BorderWidth = 2;
+            series103.ChartArea = "ChartArea1";
+            series103.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series103.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            series103.Legend = "Legend1";
+            series103.Name = "Series1";
+            series104.BorderWidth = 0;
+            series104.ChartArea = "ChartArea1";
+            series104.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series104.Legend = "Legend1";
+            series104.Name = "Series2";
+            series105.BorderWidth = 0;
+            series105.ChartArea = "ChartArea1";
+            series105.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series105.Legend = "Legend1";
+            series105.Name = "Series3";
+            series106.BorderWidth = 2;
+            series106.ChartArea = "ChartArea1";
+            series106.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series106.Color = System.Drawing.Color.Lime;
+            series106.Legend = "Legend1";
+            series106.Name = "Series4";
+            this.chart_ToolWear.Series.Add(series103);
+            this.chart_ToolWear.Series.Add(series104);
+            this.chart_ToolWear.Series.Add(series105);
+            this.chart_ToolWear.Series.Add(series106);
             // 
             // chart_FFT
             // 
             this.chart_FFT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             this.chart_FFT.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea16.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea16.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea16.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX.MajorGrid.Enabled = false;
-            chartArea16.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea16.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea16.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea16.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea16.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea16.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY.MajorGrid.Enabled = false;
-            chartArea16.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea16.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea16.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea16.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea16.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            chartArea16.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea16.CursorX.IsUserEnabled = true;
-            chartArea16.CursorX.IsUserSelectionEnabled = true;
-            chartArea16.Name = "ChartArea1";
-            this.chart_FFT.ChartAreas.Add(chartArea16);
-            legend16.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend16.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend16.Name = "Legend1";
-            this.chart_FFT.Legends.Add(legend16);
+            chartArea29.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea29.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea29.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisX.MajorGrid.Enabled = false;
+            chartArea29.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea29.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea29.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea29.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea29.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea29.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea29.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisY.MajorGrid.Enabled = false;
+            chartArea29.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea29.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea29.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea29.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea29.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            chartArea29.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea29.CursorX.IsUserEnabled = true;
+            chartArea29.CursorX.IsUserSelectionEnabled = true;
+            chartArea29.Name = "ChartArea1";
+            this.chart_FFT.ChartAreas.Add(chartArea29);
+            legend29.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend29.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend29.Name = "Legend1";
+            this.chart_FFT.Legends.Add(legend29);
             resources.ApplyResources(this.chart_FFT, "chart_FFT");
             this.chart_FFT.Name = "chart_FFT";
-            series59.BorderWidth = 2;
-            series59.ChartArea = "ChartArea1";
-            series59.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series59.Color = System.Drawing.Color.Aqua;
-            series59.Legend = "Legend1";
-            series59.Name = "Series1";
-            series60.BorderWidth = 0;
-            series60.ChartArea = "ChartArea1";
-            series60.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series60.Legend = "Legend1";
-            series60.Name = "Series2";
-            series61.BorderWidth = 0;
-            series61.ChartArea = "ChartArea1";
-            series61.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series61.Legend = "Legend1";
-            series61.Name = "Series3";
-            this.chart_FFT.Series.Add(series59);
-            this.chart_FFT.Series.Add(series60);
-            this.chart_FFT.Series.Add(series61);
+            series107.BorderWidth = 2;
+            series107.ChartArea = "ChartArea1";
+            series107.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series107.Color = System.Drawing.Color.Aqua;
+            series107.Legend = "Legend1";
+            series107.Name = "Series1";
+            series108.BorderWidth = 0;
+            series108.ChartArea = "ChartArea1";
+            series108.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series108.Legend = "Legend1";
+            series108.Name = "Series2";
+            series109.BorderWidth = 0;
+            series109.ChartArea = "ChartArea1";
+            series109.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series109.Legend = "Legend1";
+            series109.Name = "Series3";
+            this.chart_FFT.Series.Add(series107);
+            this.chart_FFT.Series.Add(series108);
+            this.chart_FFT.Series.Add(series109);
             this.chart_FFT.UseWaitCursor = true;
             // 
             // panel_Home
@@ -990,9 +1142,10 @@
             // 
             this.panel_Threshold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             resources.ApplyResources(this.panel_Threshold, "panel_Threshold");
+            this.panel_Threshold.Controls.Add(this.panel4);
+            this.panel_Threshold.Controls.Add(this.panel3);
             this.panel_Threshold.Controls.Add(this.btn_Threshold_Back);
             this.panel_Threshold.Controls.Add(this.label22);
-            this.panel_Threshold.Controls.Add(this.chart_Threshold);
             this.panel_Threshold.Name = "panel_Threshold";
             // 
             // label22
@@ -1004,62 +1157,62 @@
             // 
             // chart_Threshold
             // 
-            this.chart_Threshold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            this.chart_Threshold.BackColor = System.Drawing.Color.Transparent;
             this.chart_Threshold.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea17.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea17.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea17.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisX.MajorGrid.Enabled = false;
-            chartArea17.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea17.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea17.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea17.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea17.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea17.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea17.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisY.MajorGrid.Enabled = false;
-            chartArea17.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea17.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea17.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea17.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            chartArea17.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea17.Name = "ChartArea1";
-            this.chart_Threshold.ChartAreas.Add(chartArea17);
-            legend17.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend17.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend17.Name = "Legend1";
-            this.chart_Threshold.Legends.Add(legend17);
+            chartArea30.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea30.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea30.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisX.MajorGrid.Enabled = false;
+            chartArea30.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea30.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea30.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea30.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea30.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea30.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea30.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisY.MajorGrid.Enabled = false;
+            chartArea30.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea30.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea30.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea30.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea30.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea30.BackColor = System.Drawing.Color.Transparent;
+            chartArea30.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea30.Name = "ChartArea1";
+            this.chart_Threshold.ChartAreas.Add(chartArea30);
+            legend30.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend30.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend30.Name = "Legend1";
+            this.chart_Threshold.Legends.Add(legend30);
             resources.ApplyResources(this.chart_Threshold, "chart_Threshold");
             this.chart_Threshold.Name = "chart_Threshold";
-            series62.BorderWidth = 2;
-            series62.ChartArea = "ChartArea1";
-            series62.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series62.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            series62.Legend = "Legend1";
-            series62.Name = "Series1";
-            series63.BorderWidth = 0;
-            series63.ChartArea = "ChartArea1";
-            series63.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series63.Legend = "Legend1";
-            series63.Name = "Series2";
-            series64.BorderWidth = 0;
-            series64.ChartArea = "ChartArea1";
-            series64.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series64.Legend = "Legend1";
-            series64.Name = "Series3";
-            this.chart_Threshold.Series.Add(series62);
-            this.chart_Threshold.Series.Add(series63);
-            this.chart_Threshold.Series.Add(series64);
+            series110.BorderWidth = 2;
+            series110.ChartArea = "ChartArea1";
+            series110.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series110.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            series110.Legend = "Legend1";
+            series110.Name = "Series1";
+            series111.BorderWidth = 0;
+            series111.ChartArea = "ChartArea1";
+            series111.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series111.Legend = "Legend1";
+            series111.Name = "Series2";
+            series112.BorderWidth = 0;
+            series112.ChartArea = "ChartArea1";
+            series112.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series112.Legend = "Legend1";
+            series112.Name = "Series3";
+            this.chart_Threshold.Series.Add(series110);
+            this.chart_Threshold.Series.Add(series111);
+            this.chart_Threshold.Series.Add(series112);
             // 
             // panel_ThermalSetting
             // 
@@ -1320,55 +1473,55 @@
             // 
             this.chart_Thermal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             this.chart_Thermal.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea18.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea18.AxisX.IsMarginVisible = false;
-            chartArea18.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea18.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisX.MajorGrid.Enabled = false;
-            chartArea18.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea18.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea18.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea18.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea18.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea18.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea18.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisY.MajorGrid.Enabled = false;
-            chartArea18.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea18.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea18.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea18.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea18.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            chartArea18.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea18.Name = "ChartArea1";
-            this.chart_Thermal.ChartAreas.Add(chartArea18);
-            legend18.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend18.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend18.Name = "Legend1";
-            this.chart_Thermal.Legends.Add(legend18);
+            chartArea31.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea31.AxisX.IsMarginVisible = false;
+            chartArea31.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea31.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisX.MajorGrid.Enabled = false;
+            chartArea31.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea31.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea31.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea31.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea31.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea31.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea31.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisY.MajorGrid.Enabled = false;
+            chartArea31.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea31.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea31.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea31.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea31.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            chartArea31.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea31.Name = "ChartArea1";
+            this.chart_Thermal.ChartAreas.Add(chartArea31);
+            legend31.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend31.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend31.Name = "Legend1";
+            this.chart_Thermal.Legends.Add(legend31);
             resources.ApplyResources(this.chart_Thermal, "chart_Thermal");
             this.chart_Thermal.Name = "chart_Thermal";
-            series65.BorderWidth = 2;
-            series65.ChartArea = "ChartArea1";
-            series65.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series65.Color = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            series65.Legend = "Legend1";
-            series65.Name = "Series1";
-            series66.BorderWidth = 0;
-            series66.ChartArea = "ChartArea1";
-            series66.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series66.Legend = "Legend1";
-            series66.Name = "Series2";
-            this.chart_Thermal.Series.Add(series65);
-            this.chart_Thermal.Series.Add(series66);
+            series113.BorderWidth = 2;
+            series113.ChartArea = "ChartArea1";
+            series113.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series113.Color = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            series113.Legend = "Legend1";
+            series113.Name = "Series1";
+            series114.BorderWidth = 0;
+            series114.ChartArea = "ChartArea1";
+            series114.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series114.Legend = "Legend1";
+            series114.Name = "Series2";
+            this.chart_Thermal.Series.Add(series113);
+            this.chart_Thermal.Series.Add(series114);
             // 
             // panel_Learn
             // 
@@ -1396,8 +1549,6 @@
             this.panel_Learn.Controls.Add(this.btn_Learn_01);
             this.panel_Learn.Controls.Add(this.label19);
             this.panel_Learn.Controls.Add(this.btn_Learn_Back);
-            this.panel_Learn.Controls.Add(this.btn_LearnChange);
-            this.panel_Learn.Controls.Add(this.btn_Learn_Cancel);
             this.panel_Learn.Controls.Add(this.btn_Learn_OK);
             this.panel_Learn.Controls.Add(this.btn_Learn_Start);
             this.panel_Learn.Controls.Add(this.lb_Learn_WorkName);
@@ -1405,40 +1556,12 @@
             this.panel_Learn.Controls.Add(this.chart_Learn);
             this.panel_Learn.Name = "panel_Learn";
             // 
-            // btn_LearnChange
+            // label19
             // 
-            this.btn_LearnChange.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.btn_LearnChange, "btn_LearnChange");
-            this.btn_LearnChange.FlatAppearance.BorderSize = 0;
-            this.btn_LearnChange.Name = "btn_LearnChange";
-            this.btn_LearnChange.UseVisualStyleBackColor = false;
-            this.btn_LearnChange.Click += new System.EventHandler(this.btn_LearnChange_Click);
-            // 
-            // btn_Learn_Cancel
-            // 
-            this.btn_Learn_Cancel.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.btn_Learn_Cancel, "btn_Learn_Cancel");
-            this.btn_Learn_Cancel.Name = "btn_Learn_Cancel";
-            this.btn_Learn_Cancel.UseVisualStyleBackColor = false;
-            this.btn_Learn_Cancel.Click += new System.EventHandler(this.btn_Learn_Cancel_Click);
-            // 
-            // btn_Learn_OK
-            // 
-            this.btn_Learn_OK.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.btn_Learn_OK, "btn_Learn_OK");
-            this.btn_Learn_OK.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_OK.Name = "btn_Learn_OK";
-            this.btn_Learn_OK.UseVisualStyleBackColor = false;
-            this.btn_Learn_OK.Click += new System.EventHandler(this.btn_Learn_OK_Click);
-            // 
-            // btn_Learn_Start
-            // 
-            this.btn_Learn_Start.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.btn_Learn_Start, "btn_Learn_Start");
-            this.btn_Learn_Start.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_Start.Name = "btn_Learn_Start";
-            this.btn_Learn_Start.UseVisualStyleBackColor = false;
-            this.btn_Learn_Start.Click += new System.EventHandler(this.btn_Learn_Start_Click);
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Name = "label19";
             // 
             // lb_Learn_WorkName
             // 
@@ -1447,126 +1570,126 @@
             this.lb_Learn_WorkName.ForeColor = System.Drawing.Color.White;
             this.lb_Learn_WorkName.Name = "lb_Learn_WorkName";
             // 
-            // chart_Learn
-            // 
-            this.chart_Learn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            this.chart_Learn.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea20.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea20.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea20.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisX.MajorGrid.Enabled = false;
-            chartArea20.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea20.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea20.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea20.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea20.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea20.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea20.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisY.MajorGrid.Enabled = false;
-            chartArea20.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea20.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea20.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea20.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea20.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            chartArea20.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea20.Name = "ChartArea1";
-            this.chart_Learn.ChartAreas.Add(chartArea20);
-            legend20.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend20.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend20.Name = "Legend1";
-            this.chart_Learn.Legends.Add(legend20);
-            resources.ApplyResources(this.chart_Learn, "chart_Learn");
-            this.chart_Learn.Name = "chart_Learn";
-            series70.BorderWidth = 2;
-            series70.ChartArea = "ChartArea1";
-            series70.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series70.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            series70.Legend = "Legend1";
-            series70.Name = "Series1";
-            series71.BorderWidth = 0;
-            series71.ChartArea = "ChartArea1";
-            series71.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series71.Legend = "Legend1";
-            series71.Name = "Series2";
-            series72.BorderWidth = 0;
-            series72.ChartArea = "ChartArea1";
-            series72.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series72.Legend = "Legend1";
-            series72.Name = "Series3";
-            this.chart_Learn.Series.Add(series70);
-            this.chart_Learn.Series.Add(series71);
-            this.chart_Learn.Series.Add(series72);
-            // 
             // chart_LeartFFT
             // 
             this.chart_LeartFFT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             this.chart_LeartFFT.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea19.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea19.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea19.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisX.MajorGrid.Enabled = false;
-            chartArea19.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea19.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea19.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea19.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea19.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea19.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea19.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisY.MajorGrid.Enabled = false;
-            chartArea19.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea19.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea19.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea19.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea19.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            chartArea19.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea19.CursorX.IsUserEnabled = true;
-            chartArea19.CursorX.IsUserSelectionEnabled = true;
-            chartArea19.Name = "ChartArea1";
-            this.chart_LeartFFT.ChartAreas.Add(chartArea19);
-            legend19.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend19.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend19.Name = "Legend1";
-            this.chart_LeartFFT.Legends.Add(legend19);
+            chartArea32.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea32.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea32.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisX.MajorGrid.Enabled = false;
+            chartArea32.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea32.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea32.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea32.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea32.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea32.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea32.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisY.MajorGrid.Enabled = false;
+            chartArea32.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea32.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea32.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea32.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea32.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            chartArea32.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea32.CursorX.IsUserEnabled = true;
+            chartArea32.CursorX.IsUserSelectionEnabled = true;
+            chartArea32.Name = "ChartArea1";
+            this.chart_LeartFFT.ChartAreas.Add(chartArea32);
+            legend32.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend32.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend32.Name = "Legend1";
+            this.chart_LeartFFT.Legends.Add(legend32);
             resources.ApplyResources(this.chart_LeartFFT, "chart_LeartFFT");
             this.chart_LeartFFT.Name = "chart_LeartFFT";
-            series67.BorderWidth = 2;
-            series67.ChartArea = "ChartArea1";
-            series67.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series67.Color = System.Drawing.Color.Aqua;
-            series67.Legend = "Legend1";
-            series67.Name = "Series1";
-            series68.BorderWidth = 0;
-            series68.ChartArea = "ChartArea1";
-            series68.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series68.Legend = "Legend1";
-            series68.Name = "Series2";
-            series69.BorderWidth = 0;
-            series69.ChartArea = "ChartArea1";
-            series69.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series69.Legend = "Legend1";
-            series69.Name = "Series3";
-            this.chart_LeartFFT.Series.Add(series67);
-            this.chart_LeartFFT.Series.Add(series68);
-            this.chart_LeartFFT.Series.Add(series69);
+            series115.BorderWidth = 2;
+            series115.ChartArea = "ChartArea1";
+            series115.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series115.Color = System.Drawing.Color.Aqua;
+            series115.Legend = "Legend1";
+            series115.Name = "Series1";
+            series116.BorderWidth = 0;
+            series116.ChartArea = "ChartArea1";
+            series116.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series116.Legend = "Legend1";
+            series116.Name = "Series2";
+            series117.BorderWidth = 0;
+            series117.ChartArea = "ChartArea1";
+            series117.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series117.Legend = "Legend1";
+            series117.Name = "Series3";
+            this.chart_LeartFFT.Series.Add(series115);
+            this.chart_LeartFFT.Series.Add(series116);
+            this.chart_LeartFFT.Series.Add(series117);
             this.chart_LeartFFT.UseWaitCursor = true;
+            // 
+            // chart_Learn
+            // 
+            this.chart_Learn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            this.chart_Learn.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea33.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea33.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea33.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisX.MajorGrid.Enabled = false;
+            chartArea33.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea33.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea33.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea33.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea33.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea33.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea33.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisY.MajorGrid.Enabled = false;
+            chartArea33.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea33.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea33.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea33.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
+            chartArea33.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
+            chartArea33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            chartArea33.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea33.Name = "ChartArea1";
+            this.chart_Learn.ChartAreas.Add(chartArea33);
+            legend33.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend33.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend33.Name = "Legend1";
+            this.chart_Learn.Legends.Add(legend33);
+            resources.ApplyResources(this.chart_Learn, "chart_Learn");
+            this.chart_Learn.Name = "chart_Learn";
+            series118.BorderWidth = 2;
+            series118.ChartArea = "ChartArea1";
+            series118.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series118.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            series118.Legend = "Legend1";
+            series118.Name = "Series1";
+            series119.BorderWidth = 0;
+            series119.ChartArea = "ChartArea1";
+            series119.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series119.Legend = "Legend1";
+            series119.Name = "Series2";
+            series120.BorderWidth = 0;
+            series120.ChartArea = "ChartArea1";
+            series120.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series120.Legend = "Legend1";
+            series120.Name = "Series3";
+            this.chart_Learn.Series.Add(series118);
+            this.chart_Learn.Series.Add(series119);
+            this.chart_Learn.Series.Add(series120);
             // 
             // panel_log
             // 
@@ -1805,137 +1928,106 @@
             resources.ApplyResources(this.panel_Health, "panel_Health");
             this.panel_Health.Name = "panel_Health";
             // 
-            // chart_warring_1
+            // panel3
             // 
-            this.chart_warring_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            this.chart_warring_1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea21.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea21.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea21.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisX.MajorGrid.Enabled = false;
-            chartArea21.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea21.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea21.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea21.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea21.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea21.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea21.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisY.MajorGrid.Enabled = false;
-            chartArea21.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea21.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea21.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea21.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea21.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            chartArea21.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea21.Name = "ChartArea1";
-            this.chart_warring_1.ChartAreas.Add(chartArea21);
-            legend21.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend21.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend21.Name = "Legend1";
-            this.chart_warring_1.Legends.Add(legend21);
-            resources.ApplyResources(this.chart_warring_1, "chart_warring_1");
-            this.chart_warring_1.Name = "chart_warring_1";
-            series73.BorderWidth = 2;
-            series73.ChartArea = "ChartArea1";
-            series73.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series73.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            series73.Legend = "Legend1";
-            series73.Name = "Series1";
-            series74.BorderWidth = 0;
-            series74.ChartArea = "ChartArea1";
-            series74.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series74.Legend = "Legend1";
-            series74.Name = "Series2";
-            series75.BorderWidth = 0;
-            series75.ChartArea = "ChartArea1";
-            series75.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series75.Legend = "Legend1";
-            series75.Name = "Series3";
-            series76.BorderWidth = 2;
-            series76.ChartArea = "ChartArea1";
-            series76.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series76.Color = System.Drawing.Color.Lime;
-            series76.Legend = "Legend1";
-            series76.Name = "Series4";
-            this.chart_warring_1.Series.Add(series73);
-            this.chart_warring_1.Series.Add(series74);
-            this.chart_warring_1.Series.Add(series75);
-            this.chart_warring_1.Series.Add(series76);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel3.Controls.Add(this.tb_Threshold_14);
+            this.panel3.Controls.Add(this.tb_Threshold_13);
+            this.panel3.Controls.Add(this.tb_Threshold_12);
+            this.panel3.Controls.Add(this.tb_Threshold_11);
+            this.panel3.Controls.Add(this.tb_Threshold_10);
+            this.panel3.Controls.Add(this.tb_Threshold_09);
+            this.panel3.Controls.Add(this.tb_Threshold_08);
+            this.panel3.Controls.Add(this.tb_Threshold_07);
+            this.panel3.Controls.Add(this.tb_Threshold_06);
+            this.panel3.Controls.Add(this.tb_Threshold_05);
+            this.panel3.Controls.Add(this.tb_Threshold_04);
+            this.panel3.Controls.Add(this.tb_Threshold_03);
+            this.panel3.Controls.Add(this.tb_Threshold_02);
+            this.panel3.Controls.Add(this.btn_Threshold_down);
+            this.panel3.Controls.Add(this.btn_Threshold_up);
+            this.panel3.Controls.Add(this.tb_Threshold_01);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
             // 
-            // chart_warring_2
+            // panel4
             // 
-            this.chart_warring_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            this.chart_warring_2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea22.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea22.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea22.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisX.MajorGrid.Enabled = false;
-            chartArea22.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisX.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea22.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea22.AxisX.ScrollBar.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea22.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisX2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisX2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea22.AxisX2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea22.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea22.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisY.MajorGrid.Enabled = false;
-            chartArea22.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisY.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea22.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea22.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisY2.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea22.AxisY2.ScrollBar.BackColor = System.Drawing.Color.White;
-            chartArea22.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
-            chartArea22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            chartArea22.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea22.Name = "ChartArea1";
-            this.chart_warring_2.ChartAreas.Add(chartArea22);
-            legend22.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend22.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend22.Name = "Legend1";
-            this.chart_warring_2.Legends.Add(legend22);
-            resources.ApplyResources(this.chart_warring_2, "chart_warring_2");
-            this.chart_warring_2.Name = "chart_warring_2";
-            series77.BorderWidth = 2;
-            series77.ChartArea = "ChartArea1";
-            series77.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series77.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            series77.Legend = "Legend1";
-            series77.Name = "Series1";
-            series78.BorderWidth = 0;
-            series78.ChartArea = "ChartArea1";
-            series78.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series78.Legend = "Legend1";
-            series78.Name = "Series2";
-            series79.BorderWidth = 0;
-            series79.ChartArea = "ChartArea1";
-            series79.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series79.Legend = "Legend1";
-            series79.Name = "Series3";
-            series80.BorderWidth = 2;
-            series80.ChartArea = "ChartArea1";
-            series80.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series80.Color = System.Drawing.Color.Lime;
-            series80.Legend = "Legend1";
-            series80.Name = "Series4";
-            this.chart_warring_2.Series.Add(series77);
-            this.chart_warring_2.Series.Add(series78);
-            this.chart_warring_2.Series.Add(series79);
-            this.chart_warring_2.Series.Add(series80);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel4.Controls.Add(this.btn_Threshold_save);
+            this.panel4.Controls.Add(this.btn_Threshold_delete);
+            this.panel4.Controls.Add(this.chart_Threshold);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // tb_Threshold_01
+            // 
+            resources.ApplyResources(this.tb_Threshold_01, "tb_Threshold_01");
+            this.tb_Threshold_01.Name = "tb_Threshold_01";
+            // 
+            // tb_Threshold_02
+            // 
+            resources.ApplyResources(this.tb_Threshold_02, "tb_Threshold_02");
+            this.tb_Threshold_02.Name = "tb_Threshold_02";
+            // 
+            // tb_Threshold_04
+            // 
+            resources.ApplyResources(this.tb_Threshold_04, "tb_Threshold_04");
+            this.tb_Threshold_04.Name = "tb_Threshold_04";
+            // 
+            // tb_Threshold_03
+            // 
+            resources.ApplyResources(this.tb_Threshold_03, "tb_Threshold_03");
+            this.tb_Threshold_03.Name = "tb_Threshold_03";
+            // 
+            // tb_Threshold_08
+            // 
+            resources.ApplyResources(this.tb_Threshold_08, "tb_Threshold_08");
+            this.tb_Threshold_08.Name = "tb_Threshold_08";
+            // 
+            // tb_Threshold_07
+            // 
+            resources.ApplyResources(this.tb_Threshold_07, "tb_Threshold_07");
+            this.tb_Threshold_07.Name = "tb_Threshold_07";
+            // 
+            // tb_Threshold_06
+            // 
+            resources.ApplyResources(this.tb_Threshold_06, "tb_Threshold_06");
+            this.tb_Threshold_06.Name = "tb_Threshold_06";
+            // 
+            // tb_Threshold_05
+            // 
+            resources.ApplyResources(this.tb_Threshold_05, "tb_Threshold_05");
+            this.tb_Threshold_05.Name = "tb_Threshold_05";
+            // 
+            // tb_Threshold_12
+            // 
+            resources.ApplyResources(this.tb_Threshold_12, "tb_Threshold_12");
+            this.tb_Threshold_12.Name = "tb_Threshold_12";
+            // 
+            // tb_Threshold_11
+            // 
+            resources.ApplyResources(this.tb_Threshold_11, "tb_Threshold_11");
+            this.tb_Threshold_11.Name = "tb_Threshold_11";
+            // 
+            // tb_Threshold_10
+            // 
+            resources.ApplyResources(this.tb_Threshold_10, "tb_Threshold_10");
+            this.tb_Threshold_10.Name = "tb_Threshold_10";
+            // 
+            // tb_Threshold_09
+            // 
+            resources.ApplyResources(this.tb_Threshold_09, "tb_Threshold_09");
+            this.tb_Threshold_09.Name = "tb_Threshold_09";
+            // 
+            // tb_Threshold_14
+            // 
+            resources.ApplyResources(this.tb_Threshold_14, "tb_Threshold_14");
+            this.tb_Threshold_14.Name = "tb_Threshold_14";
+            // 
+            // tb_Threshold_13
+            // 
+            resources.ApplyResources(this.tb_Threshold_13, "tb_Threshold_13");
+            this.tb_Threshold_13.Name = "tb_Threshold_13";
             // 
             // btn_shutdown
             // 
@@ -2053,245 +2145,69 @@
             this.btn_setting.UseVisualStyleBackColor = false;
             this.btn_setting.Click += new System.EventHandler(this.btn_setting_Click);
             // 
-            // btn_ToolWearSetting_save
+            // btn_Threshold_save
             // 
-            this.btn_ToolWearSetting_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ToolWearSetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
-            resources.ApplyResources(this.btn_ToolWearSetting_save, "btn_ToolWearSetting_save");
-            this.btn_ToolWearSetting_save.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_save.Name = "btn_ToolWearSetting_save";
-            this.btn_ToolWearSetting_save.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_save.Click += new System.EventHandler(this.btn_ToolWearSetting_save_Click);
+            this.btn_Threshold_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Threshold_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_t_save;
+            resources.ApplyResources(this.btn_Threshold_save, "btn_Threshold_save");
+            this.btn_Threshold_save.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold_save.Name = "btn_Threshold_save";
+            this.btn_Threshold_save.UseVisualStyleBackColor = false;
             // 
-            // btn_ToolWearSetting_delete
+            // btn_Threshold_delete
             // 
-            this.btn_ToolWearSetting_delete.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
-            resources.ApplyResources(this.btn_ToolWearSetting_delete, "btn_ToolWearSetting_delete");
-            this.btn_ToolWearSetting_delete.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_delete.Name = "btn_ToolWearSetting_delete";
-            this.btn_ToolWearSetting_delete.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_delete.Click += new System.EventHandler(this.btn_ToolWearSetting_delete_Click);
+            this.btn_Threshold_delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Threshold_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_t_delete;
+            resources.ApplyResources(this.btn_Threshold_delete, "btn_Threshold_delete");
+            this.btn_Threshold_delete.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold_delete.Name = "btn_Threshold_delete";
+            this.btn_Threshold_delete.UseVisualStyleBackColor = false;
             // 
-            // btn_ToolWearSetting_20
+            // btn_Threshold_down
             // 
-            this.btn_ToolWearSetting_20.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_20, "btn_ToolWearSetting_20");
-            this.btn_ToolWearSetting_20.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_20.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_20.Name = "btn_ToolWearSetting_20";
-            this.btn_ToolWearSetting_20.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_20.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.btn_Threshold_down.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Threshold_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_Threshold_down, "btn_Threshold_down");
+            this.btn_Threshold_down.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold_down.Name = "btn_Threshold_down";
+            this.btn_Threshold_down.UseVisualStyleBackColor = false;
             // 
-            // btn_ToolWearSetting_19
+            // btn_Threshold_up
             // 
-            this.btn_ToolWearSetting_19.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_19, "btn_ToolWearSetting_19");
-            this.btn_ToolWearSetting_19.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_19.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_19.Name = "btn_ToolWearSetting_19";
-            this.btn_ToolWearSetting_19.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_19.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.btn_Threshold_up.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Threshold_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_Threshold_up, "btn_Threshold_up");
+            this.btn_Threshold_up.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold_up.Name = "btn_Threshold_up";
+            this.btn_Threshold_up.UseVisualStyleBackColor = false;
             // 
-            // btn_ToolWearSetting_18
+            // btn_Threshold_Back
             // 
-            this.btn_ToolWearSetting_18.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_18, "btn_ToolWearSetting_18");
-            this.btn_ToolWearSetting_18.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_18.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_18.Name = "btn_ToolWearSetting_18";
-            this.btn_ToolWearSetting_18.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_18.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.btn_Threshold_Back.BackColor = System.Drawing.Color.White;
+            this.btn_Threshold_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_Threshold_Back, "btn_Threshold_Back");
+            this.btn_Threshold_Back.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold_Back.Name = "btn_Threshold_Back";
+            this.btn_Threshold_Back.UseVisualStyleBackColor = false;
+            this.btn_Threshold_Back.Click += new System.EventHandler(this.btn_Threshold_Back_Click);
             // 
-            // btn_ToolWearSetting_17
+            // btn_setting_save
             // 
-            this.btn_ToolWearSetting_17.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_17, "btn_ToolWearSetting_17");
-            this.btn_ToolWearSetting_17.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_17.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_17.Name = "btn_ToolWearSetting_17";
-            this.btn_ToolWearSetting_17.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_17.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.btn_setting_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_setting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.btn_setting_save, "btn_setting_save");
+            this.btn_setting_save.FlatAppearance.BorderSize = 0;
+            this.btn_setting_save.Name = "btn_setting_save";
+            this.btn_setting_save.UseVisualStyleBackColor = false;
             // 
-            // btn_ToolWearSetting_16
+            // btn_setting_delete
             // 
-            this.btn_ToolWearSetting_16.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_16, "btn_ToolWearSetting_16");
-            this.btn_ToolWearSetting_16.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_16.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_16.Name = "btn_ToolWearSetting_16";
-            this.btn_ToolWearSetting_16.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_16.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_15
-            // 
-            this.btn_ToolWearSetting_15.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_15, "btn_ToolWearSetting_15");
-            this.btn_ToolWearSetting_15.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_15.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_15.Name = "btn_ToolWearSetting_15";
-            this.btn_ToolWearSetting_15.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_15.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_14
-            // 
-            this.btn_ToolWearSetting_14.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_14, "btn_ToolWearSetting_14");
-            this.btn_ToolWearSetting_14.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_14.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_14.Name = "btn_ToolWearSetting_14";
-            this.btn_ToolWearSetting_14.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_14.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_13
-            // 
-            this.btn_ToolWearSetting_13.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_13, "btn_ToolWearSetting_13");
-            this.btn_ToolWearSetting_13.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_13.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_13.Name = "btn_ToolWearSetting_13";
-            this.btn_ToolWearSetting_13.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_13.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_12
-            // 
-            this.btn_ToolWearSetting_12.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_12, "btn_ToolWearSetting_12");
-            this.btn_ToolWearSetting_12.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_12.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_12.Name = "btn_ToolWearSetting_12";
-            this.btn_ToolWearSetting_12.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_12.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_11
-            // 
-            this.btn_ToolWearSetting_11.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_11, "btn_ToolWearSetting_11");
-            this.btn_ToolWearSetting_11.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_11.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_11.Name = "btn_ToolWearSetting_11";
-            this.btn_ToolWearSetting_11.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_11.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_10
-            // 
-            this.btn_ToolWearSetting_10.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_10, "btn_ToolWearSetting_10");
-            this.btn_ToolWearSetting_10.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_10.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_10.Name = "btn_ToolWearSetting_10";
-            this.btn_ToolWearSetting_10.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_10.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_09
-            // 
-            this.btn_ToolWearSetting_09.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_09, "btn_ToolWearSetting_09");
-            this.btn_ToolWearSetting_09.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_09.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_09.Name = "btn_ToolWearSetting_09";
-            this.btn_ToolWearSetting_09.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_09.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_08
-            // 
-            this.btn_ToolWearSetting_08.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_08, "btn_ToolWearSetting_08");
-            this.btn_ToolWearSetting_08.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_08.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_08.Name = "btn_ToolWearSetting_08";
-            this.btn_ToolWearSetting_08.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_08.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_07
-            // 
-            this.btn_ToolWearSetting_07.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_07, "btn_ToolWearSetting_07");
-            this.btn_ToolWearSetting_07.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_07.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_07.Name = "btn_ToolWearSetting_07";
-            this.btn_ToolWearSetting_07.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_07.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_06
-            // 
-            this.btn_ToolWearSetting_06.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_06, "btn_ToolWearSetting_06");
-            this.btn_ToolWearSetting_06.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_06.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_06.Name = "btn_ToolWearSetting_06";
-            this.btn_ToolWearSetting_06.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_06.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_05
-            // 
-            this.btn_ToolWearSetting_05.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_05, "btn_ToolWearSetting_05");
-            this.btn_ToolWearSetting_05.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_05.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_05.Name = "btn_ToolWearSetting_05";
-            this.btn_ToolWearSetting_05.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_05.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_04
-            // 
-            this.btn_ToolWearSetting_04.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_04, "btn_ToolWearSetting_04");
-            this.btn_ToolWearSetting_04.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_04.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_04.Name = "btn_ToolWearSetting_04";
-            this.btn_ToolWearSetting_04.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_04.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_03
-            // 
-            this.btn_ToolWearSetting_03.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_03, "btn_ToolWearSetting_03");
-            this.btn_ToolWearSetting_03.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_03.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_03.Name = "btn_ToolWearSetting_03";
-            this.btn_ToolWearSetting_03.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_03.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_02
-            // 
-            this.btn_ToolWearSetting_02.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_02, "btn_ToolWearSetting_02");
-            this.btn_ToolWearSetting_02.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_02.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_02.Name = "btn_ToolWearSetting_02";
-            this.btn_ToolWearSetting_02.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_02.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_01
-            // 
-            this.btn_ToolWearSetting_01.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_01, "btn_ToolWearSetting_01");
-            this.btn_ToolWearSetting_01.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_01.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_01.Name = "btn_ToolWearSetting_01";
-            this.btn_ToolWearSetting_01.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_01.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.btn_setting_delete.BackColor = System.Drawing.Color.White;
+            this.btn_setting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
+            resources.ApplyResources(this.btn_setting_delete, "btn_setting_delete");
+            this.btn_setting_delete.FlatAppearance.BorderSize = 0;
+            this.btn_setting_delete.Name = "btn_setting_delete";
+            this.btn_setting_delete.UseVisualStyleBackColor = false;
             // 
             // btn_Threshold
             // 
@@ -2550,33 +2466,245 @@
             this.btn_ToolWear_Start.UseVisualStyleBackColor = false;
             this.btn_ToolWear_Start.Click += new System.EventHandler(this.btn_ToolWear_Start_Click);
             // 
-            // btn_Threshold_Back
+            // btn_ToolWearSetting_save
             // 
-            this.btn_Threshold_Back.BackColor = System.Drawing.Color.White;
-            this.btn_Threshold_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_Threshold_Back, "btn_Threshold_Back");
-            this.btn_Threshold_Back.FlatAppearance.BorderSize = 0;
-            this.btn_Threshold_Back.Name = "btn_Threshold_Back";
-            this.btn_Threshold_Back.UseVisualStyleBackColor = false;
-            this.btn_Threshold_Back.Click += new System.EventHandler(this.btn_Threshold_Back_Click);
+            this.btn_ToolWearSetting_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ToolWearSetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.btn_ToolWearSetting_save, "btn_ToolWearSetting_save");
+            this.btn_ToolWearSetting_save.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_save.Name = "btn_ToolWearSetting_save";
+            this.btn_ToolWearSetting_save.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_save.Click += new System.EventHandler(this.btn_ToolWearSetting_save_Click);
             // 
-            // btn_setting_save
+            // btn_ToolWearSetting_delete
             // 
-            this.btn_setting_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_setting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
-            resources.ApplyResources(this.btn_setting_save, "btn_setting_save");
-            this.btn_setting_save.FlatAppearance.BorderSize = 0;
-            this.btn_setting_save.Name = "btn_setting_save";
-            this.btn_setting_save.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_delete.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
+            resources.ApplyResources(this.btn_ToolWearSetting_delete, "btn_ToolWearSetting_delete");
+            this.btn_ToolWearSetting_delete.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_delete.Name = "btn_ToolWearSetting_delete";
+            this.btn_ToolWearSetting_delete.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_delete.Click += new System.EventHandler(this.btn_ToolWearSetting_delete_Click);
             // 
-            // btn_setting_delete
+            // btn_ToolWearSetting_20
             // 
-            this.btn_setting_delete.BackColor = System.Drawing.Color.White;
-            this.btn_setting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
-            resources.ApplyResources(this.btn_setting_delete, "btn_setting_delete");
-            this.btn_setting_delete.FlatAppearance.BorderSize = 0;
-            this.btn_setting_delete.Name = "btn_setting_delete";
-            this.btn_setting_delete.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_20.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_20, "btn_ToolWearSetting_20");
+            this.btn_ToolWearSetting_20.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_20.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_20.Name = "btn_ToolWearSetting_20";
+            this.btn_ToolWearSetting_20.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_20.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_19
+            // 
+            this.btn_ToolWearSetting_19.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_19, "btn_ToolWearSetting_19");
+            this.btn_ToolWearSetting_19.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_19.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_19.Name = "btn_ToolWearSetting_19";
+            this.btn_ToolWearSetting_19.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_19.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_18
+            // 
+            this.btn_ToolWearSetting_18.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_18, "btn_ToolWearSetting_18");
+            this.btn_ToolWearSetting_18.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_18.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_18.Name = "btn_ToolWearSetting_18";
+            this.btn_ToolWearSetting_18.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_18.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_17
+            // 
+            this.btn_ToolWearSetting_17.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_17, "btn_ToolWearSetting_17");
+            this.btn_ToolWearSetting_17.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_17.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_17.Name = "btn_ToolWearSetting_17";
+            this.btn_ToolWearSetting_17.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_17.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_16
+            // 
+            this.btn_ToolWearSetting_16.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_16, "btn_ToolWearSetting_16");
+            this.btn_ToolWearSetting_16.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_16.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_16.Name = "btn_ToolWearSetting_16";
+            this.btn_ToolWearSetting_16.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_16.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_15
+            // 
+            this.btn_ToolWearSetting_15.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_15, "btn_ToolWearSetting_15");
+            this.btn_ToolWearSetting_15.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_15.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_15.Name = "btn_ToolWearSetting_15";
+            this.btn_ToolWearSetting_15.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_15.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_14
+            // 
+            this.btn_ToolWearSetting_14.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_14, "btn_ToolWearSetting_14");
+            this.btn_ToolWearSetting_14.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_14.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_14.Name = "btn_ToolWearSetting_14";
+            this.btn_ToolWearSetting_14.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_14.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_13
+            // 
+            this.btn_ToolWearSetting_13.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_13, "btn_ToolWearSetting_13");
+            this.btn_ToolWearSetting_13.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_13.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_13.Name = "btn_ToolWearSetting_13";
+            this.btn_ToolWearSetting_13.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_13.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_12
+            // 
+            this.btn_ToolWearSetting_12.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_12, "btn_ToolWearSetting_12");
+            this.btn_ToolWearSetting_12.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_12.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_12.Name = "btn_ToolWearSetting_12";
+            this.btn_ToolWearSetting_12.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_12.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_11
+            // 
+            this.btn_ToolWearSetting_11.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_11, "btn_ToolWearSetting_11");
+            this.btn_ToolWearSetting_11.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_11.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_11.Name = "btn_ToolWearSetting_11";
+            this.btn_ToolWearSetting_11.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_11.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_10
+            // 
+            this.btn_ToolWearSetting_10.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_10, "btn_ToolWearSetting_10");
+            this.btn_ToolWearSetting_10.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_10.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_10.Name = "btn_ToolWearSetting_10";
+            this.btn_ToolWearSetting_10.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_10.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_09
+            // 
+            this.btn_ToolWearSetting_09.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_09, "btn_ToolWearSetting_09");
+            this.btn_ToolWearSetting_09.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_09.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_09.Name = "btn_ToolWearSetting_09";
+            this.btn_ToolWearSetting_09.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_09.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_08
+            // 
+            this.btn_ToolWearSetting_08.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_08, "btn_ToolWearSetting_08");
+            this.btn_ToolWearSetting_08.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_08.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_08.Name = "btn_ToolWearSetting_08";
+            this.btn_ToolWearSetting_08.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_08.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_07
+            // 
+            this.btn_ToolWearSetting_07.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_07, "btn_ToolWearSetting_07");
+            this.btn_ToolWearSetting_07.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_07.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_07.Name = "btn_ToolWearSetting_07";
+            this.btn_ToolWearSetting_07.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_07.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_06
+            // 
+            this.btn_ToolWearSetting_06.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_06, "btn_ToolWearSetting_06");
+            this.btn_ToolWearSetting_06.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_06.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_06.Name = "btn_ToolWearSetting_06";
+            this.btn_ToolWearSetting_06.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_06.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_05
+            // 
+            this.btn_ToolWearSetting_05.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_05, "btn_ToolWearSetting_05");
+            this.btn_ToolWearSetting_05.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_05.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_05.Name = "btn_ToolWearSetting_05";
+            this.btn_ToolWearSetting_05.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_05.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_04
+            // 
+            this.btn_ToolWearSetting_04.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_04, "btn_ToolWearSetting_04");
+            this.btn_ToolWearSetting_04.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_04.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_04.Name = "btn_ToolWearSetting_04";
+            this.btn_ToolWearSetting_04.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_04.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_03
+            // 
+            this.btn_ToolWearSetting_03.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_03, "btn_ToolWearSetting_03");
+            this.btn_ToolWearSetting_03.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_03.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_03.Name = "btn_ToolWearSetting_03";
+            this.btn_ToolWearSetting_03.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_03.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_02
+            // 
+            this.btn_ToolWearSetting_02.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_02, "btn_ToolWearSetting_02");
+            this.btn_ToolWearSetting_02.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_02.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_02.Name = "btn_ToolWearSetting_02";
+            this.btn_ToolWearSetting_02.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_02.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_01
+            // 
+            this.btn_ToolWearSetting_01.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_01, "btn_ToolWearSetting_01");
+            this.btn_ToolWearSetting_01.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_01.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_01.Name = "btn_ToolWearSetting_01";
+            this.btn_ToolWearSetting_01.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_01.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
             // 
             // btn_ToolWearSetting_Back
             // 
@@ -3116,6 +3244,236 @@
             this.btn_Thermal_01.Name = "btn_Thermal_01";
             this.btn_Thermal_01.UseVisualStyleBackColor = false;
             // 
+            // btn_Learn_20
+            // 
+            this.btn_Learn_20.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_20, "btn_Learn_20");
+            this.btn_Learn_20.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_20.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_20.Name = "btn_Learn_20";
+            this.btn_Learn_20.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_19
+            // 
+            this.btn_Learn_19.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_19, "btn_Learn_19");
+            this.btn_Learn_19.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_19.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_19.Name = "btn_Learn_19";
+            this.btn_Learn_19.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_18
+            // 
+            this.btn_Learn_18.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_18, "btn_Learn_18");
+            this.btn_Learn_18.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_18.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_18.Name = "btn_Learn_18";
+            this.btn_Learn_18.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_17
+            // 
+            this.btn_Learn_17.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_17, "btn_Learn_17");
+            this.btn_Learn_17.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_17.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_17.Name = "btn_Learn_17";
+            this.btn_Learn_17.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_16
+            // 
+            this.btn_Learn_16.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_16, "btn_Learn_16");
+            this.btn_Learn_16.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_16.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_16.Name = "btn_Learn_16";
+            this.btn_Learn_16.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_15
+            // 
+            this.btn_Learn_15.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_15, "btn_Learn_15");
+            this.btn_Learn_15.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_15.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_15.Name = "btn_Learn_15";
+            this.btn_Learn_15.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_14
+            // 
+            this.btn_Learn_14.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_14, "btn_Learn_14");
+            this.btn_Learn_14.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_14.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_14.Name = "btn_Learn_14";
+            this.btn_Learn_14.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_13
+            // 
+            this.btn_Learn_13.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_13, "btn_Learn_13");
+            this.btn_Learn_13.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_13.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_13.Name = "btn_Learn_13";
+            this.btn_Learn_13.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_12
+            // 
+            this.btn_Learn_12.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_12, "btn_Learn_12");
+            this.btn_Learn_12.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_12.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_12.Name = "btn_Learn_12";
+            this.btn_Learn_12.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_11
+            // 
+            this.btn_Learn_11.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_11, "btn_Learn_11");
+            this.btn_Learn_11.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_11.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_11.Name = "btn_Learn_11";
+            this.btn_Learn_11.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_10
+            // 
+            this.btn_Learn_10.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_10, "btn_Learn_10");
+            this.btn_Learn_10.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_10.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_10.Name = "btn_Learn_10";
+            this.btn_Learn_10.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_09
+            // 
+            this.btn_Learn_09.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_09, "btn_Learn_09");
+            this.btn_Learn_09.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_09.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_09.Name = "btn_Learn_09";
+            this.btn_Learn_09.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_08
+            // 
+            this.btn_Learn_08.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_08, "btn_Learn_08");
+            this.btn_Learn_08.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_08.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_08.Name = "btn_Learn_08";
+            this.btn_Learn_08.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_07
+            // 
+            this.btn_Learn_07.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_07, "btn_Learn_07");
+            this.btn_Learn_07.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_07.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_07.Name = "btn_Learn_07";
+            this.btn_Learn_07.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_06
+            // 
+            this.btn_Learn_06.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_06, "btn_Learn_06");
+            this.btn_Learn_06.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_06.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_06.Name = "btn_Learn_06";
+            this.btn_Learn_06.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_05
+            // 
+            this.btn_Learn_05.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_05, "btn_Learn_05");
+            this.btn_Learn_05.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_05.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_05.Name = "btn_Learn_05";
+            this.btn_Learn_05.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_04
+            // 
+            this.btn_Learn_04.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_04, "btn_Learn_04");
+            this.btn_Learn_04.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_04.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_04.Name = "btn_Learn_04";
+            this.btn_Learn_04.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_03
+            // 
+            this.btn_Learn_03.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_03, "btn_Learn_03");
+            this.btn_Learn_03.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_03.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_03.Name = "btn_Learn_03";
+            this.btn_Learn_03.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_02
+            // 
+            this.btn_Learn_02.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_02, "btn_Learn_02");
+            this.btn_Learn_02.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_02.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_02.Name = "btn_Learn_02";
+            this.btn_Learn_02.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_01
+            // 
+            this.btn_Learn_01.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_01, "btn_Learn_01");
+            this.btn_Learn_01.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_01.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_01.Name = "btn_Learn_01";
+            this.btn_Learn_01.UseVisualStyleBackColor = false;
+            // 
+            // btn_Learn_Back
+            // 
+            this.btn_Learn_Back.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_Learn_Back, "btn_Learn_Back");
+            this.btn_Learn_Back.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_Back.Name = "btn_Learn_Back";
+            this.btn_Learn_Back.UseVisualStyleBackColor = false;
+            this.btn_Learn_Back.Click += new System.EventHandler(this.btn_Learn_Cancel_Click);
+            // 
+            // btn_Learn_OK
+            // 
+            this.btn_Learn_OK.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_OK.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
+            resources.ApplyResources(this.btn_Learn_OK, "btn_Learn_OK");
+            this.btn_Learn_OK.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_OK.Name = "btn_Learn_OK";
+            this.btn_Learn_OK.UseVisualStyleBackColor = false;
+            this.btn_Learn_OK.Click += new System.EventHandler(this.btn_Learn_OK_Click);
+            // 
+            // btn_Learn_Start
+            // 
+            this.btn_Learn_Start.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_Start.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_ply;
+            resources.ApplyResources(this.btn_Learn_Start, "btn_Learn_Start");
+            this.btn_Learn_Start.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_Start.Name = "btn_Learn_Start";
+            this.btn_Learn_Start.UseVisualStyleBackColor = false;
+            this.btn_Learn_Start.Click += new System.EventHandler(this.btn_Learn_Start_Click);
+            // 
             // btn_ATCsetting_save
             // 
             this.btn_ATCsetting_save.BackColor = System.Drawing.Color.Transparent;
@@ -3356,223 +3714,6 @@
             this.btn_ATCsetting_01.UseVisualStyleBackColor = false;
             this.btn_ATCsetting_01.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
             // 
-            // btn_Learn_Back
-            // 
-            this.btn_Learn_Back.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_Learn_Back, "btn_Learn_Back");
-            this.btn_Learn_Back.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_Back.Name = "btn_Learn_Back";
-            this.btn_Learn_Back.UseVisualStyleBackColor = false;
-            this.btn_Learn_Back.Click += new System.EventHandler(this.btn_Learn_Cancel_Click);
-            // 
-            // label19
-            // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Name = "label19";
-            // 
-            // btn_Learn_20
-            // 
-            this.btn_Learn_20.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_20, "btn_Learn_20");
-            this.btn_Learn_20.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_20.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_20.Name = "btn_Learn_20";
-            this.btn_Learn_20.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_19
-            // 
-            this.btn_Learn_19.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_19, "btn_Learn_19");
-            this.btn_Learn_19.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_19.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_19.Name = "btn_Learn_19";
-            this.btn_Learn_19.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_18
-            // 
-            this.btn_Learn_18.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_18, "btn_Learn_18");
-            this.btn_Learn_18.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_18.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_18.Name = "btn_Learn_18";
-            this.btn_Learn_18.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_17
-            // 
-            this.btn_Learn_17.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_17, "btn_Learn_17");
-            this.btn_Learn_17.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_17.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_17.Name = "btn_Learn_17";
-            this.btn_Learn_17.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_16
-            // 
-            this.btn_Learn_16.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_16, "btn_Learn_16");
-            this.btn_Learn_16.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_16.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_16.Name = "btn_Learn_16";
-            this.btn_Learn_16.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_15
-            // 
-            this.btn_Learn_15.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_15, "btn_Learn_15");
-            this.btn_Learn_15.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_15.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_15.Name = "btn_Learn_15";
-            this.btn_Learn_15.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_14
-            // 
-            this.btn_Learn_14.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_14, "btn_Learn_14");
-            this.btn_Learn_14.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_14.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_14.Name = "btn_Learn_14";
-            this.btn_Learn_14.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_13
-            // 
-            this.btn_Learn_13.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_13, "btn_Learn_13");
-            this.btn_Learn_13.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_13.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_13.Name = "btn_Learn_13";
-            this.btn_Learn_13.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_12
-            // 
-            this.btn_Learn_12.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_12, "btn_Learn_12");
-            this.btn_Learn_12.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_12.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_12.Name = "btn_Learn_12";
-            this.btn_Learn_12.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_11
-            // 
-            this.btn_Learn_11.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_11, "btn_Learn_11");
-            this.btn_Learn_11.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_11.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_11.Name = "btn_Learn_11";
-            this.btn_Learn_11.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_10
-            // 
-            this.btn_Learn_10.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_10, "btn_Learn_10");
-            this.btn_Learn_10.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_10.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_10.Name = "btn_Learn_10";
-            this.btn_Learn_10.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_09
-            // 
-            this.btn_Learn_09.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_09, "btn_Learn_09");
-            this.btn_Learn_09.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_09.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_09.Name = "btn_Learn_09";
-            this.btn_Learn_09.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_08
-            // 
-            this.btn_Learn_08.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_08, "btn_Learn_08");
-            this.btn_Learn_08.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_08.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_08.Name = "btn_Learn_08";
-            this.btn_Learn_08.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_07
-            // 
-            this.btn_Learn_07.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_07, "btn_Learn_07");
-            this.btn_Learn_07.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_07.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_07.Name = "btn_Learn_07";
-            this.btn_Learn_07.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_06
-            // 
-            this.btn_Learn_06.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_06, "btn_Learn_06");
-            this.btn_Learn_06.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_06.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_06.Name = "btn_Learn_06";
-            this.btn_Learn_06.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_05
-            // 
-            this.btn_Learn_05.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_05, "btn_Learn_05");
-            this.btn_Learn_05.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_05.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_05.Name = "btn_Learn_05";
-            this.btn_Learn_05.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_04
-            // 
-            this.btn_Learn_04.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_04, "btn_Learn_04");
-            this.btn_Learn_04.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_04.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_04.Name = "btn_Learn_04";
-            this.btn_Learn_04.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_03
-            // 
-            this.btn_Learn_03.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_03, "btn_Learn_03");
-            this.btn_Learn_03.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_03.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_03.Name = "btn_Learn_03";
-            this.btn_Learn_03.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_02
-            // 
-            this.btn_Learn_02.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_02, "btn_Learn_02");
-            this.btn_Learn_02.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_02.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_02.Name = "btn_Learn_02";
-            this.btn_Learn_02.UseVisualStyleBackColor = false;
-            // 
-            // btn_Learn_01
-            // 
-            this.btn_Learn_01.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_01, "btn_Learn_01");
-            this.btn_Learn_01.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_01.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_01.Name = "btn_Learn_01";
-            this.btn_Learn_01.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -3580,10 +3721,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
             this.ControlBox = false;
             this.Controls.Add(this.panel_Home);
-            this.Controls.Add(this.panel_Learn);
-            this.Controls.Add(this.panel_ViewModule);
-            this.Controls.Add(this.panel_ToolWearSetting);
-            this.Controls.Add(this.panel_ToolWear);
             this.Controls.Add(this.panel_Threshold);
             this.Controls.Add(this.panel_Loading);
             this.Controls.Add(this.panel_setting);
@@ -3592,6 +3729,10 @@
             this.Controls.Add(this.panel_ThermalSetting);
             this.Controls.Add(this.panel_Thermal);
             this.Controls.Add(this.panel_log);
+            this.Controls.Add(this.panel_Learn);
+            this.Controls.Add(this.panel_ViewModule);
+            this.Controls.Add(this.panel_ToolWearSetting);
+            this.Controls.Add(this.panel_ToolWear);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.ShowIcon = false;
@@ -3606,6 +3747,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numeric_Blade)).EndInit();
             this.panel_ToolWear.ResumeLayout(false);
             this.panel_ToolWear.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_warring_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_warring_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ToolWear)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_FFT)).EndInit();
             this.panel_Home.ResumeLayout(false);
@@ -3623,8 +3766,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart_Thermal)).EndInit();
             this.panel_Learn.ResumeLayout(false);
             this.panel_Learn.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_Learn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_LeartFFT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_Learn)).EndInit();
             this.panel_log.ResumeLayout(false);
             this.panel_log.PerformLayout();
             this.panel_setting.ResumeLayout(false);
@@ -3638,8 +3781,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_ATCsetting_Blade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_warring_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_warring_2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -3677,7 +3821,6 @@
         private System.Windows.Forms.Button btn_Learn_Start;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_Learn;
         private System.Windows.Forms.Label lb_Learn_WorkName;
-        private System.Windows.Forms.Button btn_Learn_Cancel;
         private System.Windows.Forms.Button btn_Learn_OK;
         private System.Windows.Forms.Panel panel_Threshold;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_Threshold;
@@ -3700,7 +3843,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_LeartFFT;
-        private System.Windows.Forms.Button btn_LearnChange;
         private System.Windows.Forms.Button btn_Blade;
         private System.Windows.Forms.NumericUpDown numeric_Blade;
         private System.Windows.Forms.Label label4;
@@ -3898,6 +4040,26 @@
         private System.Windows.Forms.Button btn_Learn_03;
         private System.Windows.Forms.Button btn_Learn_02;
         private System.Windows.Forms.Button btn_Learn_01;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox tb_Threshold_01;
+        private System.Windows.Forms.Button btn_Threshold_up;
+        private System.Windows.Forms.TextBox tb_Threshold_14;
+        private System.Windows.Forms.TextBox tb_Threshold_13;
+        private System.Windows.Forms.TextBox tb_Threshold_12;
+        private System.Windows.Forms.TextBox tb_Threshold_11;
+        private System.Windows.Forms.TextBox tb_Threshold_10;
+        private System.Windows.Forms.TextBox tb_Threshold_09;
+        private System.Windows.Forms.TextBox tb_Threshold_08;
+        private System.Windows.Forms.TextBox tb_Threshold_07;
+        private System.Windows.Forms.TextBox tb_Threshold_06;
+        private System.Windows.Forms.TextBox tb_Threshold_05;
+        private System.Windows.Forms.TextBox tb_Threshold_04;
+        private System.Windows.Forms.TextBox tb_Threshold_03;
+        private System.Windows.Forms.TextBox tb_Threshold_02;
+        private System.Windows.Forms.Button btn_Threshold_down;
+        private System.Windows.Forms.Button btn_Threshold_save;
+        private System.Windows.Forms.Button btn_Threshold_delete;
     }
 }
 
