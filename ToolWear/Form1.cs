@@ -10,6 +10,7 @@ using System.IO;
 using System.Numerics;
 using System.Windows.Forms;
 using EZNCAUTLib;
+using System.Threading;
 
 namespace ToolWear{
     public partial class Form1 : Form{
@@ -56,8 +57,8 @@ namespace ToolWear{
                 chart_LeartFFT.Series[1].Points.AddXY(i + 1, 0.1);
             }
             //溫度折線圖
-            for (int i = 0; i <= 100; i += 5)
-                chart_Thermal.Series[1].Points.AddXY(i, Chart_PointMax);
+            for (int i = 1; i <= 30; i++)
+                chart_Thermal.Series[1].Points.AddXY(i, 25);
 
             //Panel
             panel_Dissable();
@@ -173,6 +174,7 @@ namespace ToolWear{
         private void btn_Thermal_Click(object sender, EventArgs e){
             panel_Dissable();
             panel_Thermal.Visible = true;
+            btn_Thermal_Axial_Click((object)btn_Thermal_01, null);
         }
         //磨耗偵測
         private void btn_ToolWear_Click(object sender, EventArgs e){
@@ -467,6 +469,123 @@ namespace ToolWear{
             }
             label5.Text = (sum / count).ToString();
         }
+        #region 熱補償
+        //現在選擇的熱補償軸向代號
+        int now_Thermal = 0;
+        //暫存剛剛點選的熱補償軸向按鈕
+        Button pre_Thermal = null;
+        //熱補償 > 按下軸向按鈕
+        private void btn_Thermal_Axial_Click(object sender, EventArgs e) {
+            pre_Thermal = (Button)sender;
+            now_Thermal = int.Parse(((Button)sender).Name.Split('_')[2]) - 1;
+            //判斷目前的軸向是否正在偵測
+            if(((Button)sender).ForeColor != Color.White){
+                btn_Thermal_start.Enabled = false;
+                btn_Thermal_stop.Enabled = true;
+                btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+                btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+            }
+            else{
+                btn_Thermal_start.Enabled = true;
+                btn_Thermal_stop.Enabled = false;
+                btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+                btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+            }
+        }
+        //熱補償 > 開始
+        private void btn_Thermal_start_Click(object sender, EventArgs e){
+            string axial = "";  //軸向
+            string ip = "";     //此軸向ip
+            string channel = "";
+            //先檢查此軸向設定檔是否完整
+            StreamReader sr_set = new StreamReader(path + @"\data\thermal.cp");
+            try{
+                for (int i = 0; i <= now_Thermal; i++){
+                    string tem = sr_set.ReadLine();
+                    if (i == now_Thermal){
+                        axial = tem.Split(',')[0];
+                        ip = tem.Split(',')[1];
+                        channel = tem.Split(',')[2];
+                    }
+                }
+            }
+            catch{
+                MessageBox.Show("此軸向設定檔不完全，請至設定頁面重新設定。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                sr_set.Close();
+                sr_set.Dispose();
+                return;
+            }
+            sr_set.Close();
+            sr_set.Dispose();
+
+            //開始偵測
+            pre_Thermal.ForeColor = Color.Yellow;
+            btn_Thermal_start.Enabled = false;
+            btn_Thermal_stop.Enabled = true;
+            btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+            btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+
+            //假資料
+            Thermal_bool[now_Thermal] = true;
+            timer_temperature.Enabled = true;
+        }
+        //熱補償 > 停止
+        private void btn_Thermal_stop_Click(object sender, EventArgs e){
+            pre_Thermal.ForeColor = Color.White;
+            btn_Thermal_start.Enabled = true;
+            btn_Thermal_stop.Enabled = false;
+            btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+            btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+            timer_temperature.Enabled = false;
+        }
+        //熱補償 > 顯示折線圖
+        //delegate void ChartDataDelegate();
+        //private void Thermal_ChartData(){
+        //    if (this.InvokeRequired){
+        //        ChartDataDelegate CDD = new ChartDataDelegate(Thermal_ChartData);
+        //        this.Invoke(CDD);
+        //    }
+        //    else{
+
+        //    }
+        //}
+        //====假資料專用變數====
+        bool[] Thermal_bool = new bool[20]; //該軸向是否開啟
+        int[] Thermal_count = new int[20];
+        float[] Thermal_temperature = new float[20];
+        List<string> tem_Thermal_chartData = new List<string>();
+        //====假資料專用變數====
+        //熱補償 > 產生假資料
+        delegate void FakeDataDelegate();
+        private void Thermal_FakeData(){
+            if (this.InvokeRequired){
+                FakeDataDelegate FDD = new FakeDataDelegate(Thermal_FakeData);
+                this.Invoke(FDD);
+            }
+            else{
+                for (int i = 0; i < 20; i++){
+                    if (Thermal_bool[i] == false) continue;
+                    Thermal_count[i]++;
+                    Random ran = new Random(Guid.NewGuid().GetHashCode());
+                    Thermal_temperature[i] = float.Parse((25 + ((float)ran.Next(-100, 100) * 0.01f)).ToString("00.00"));
+                    //顯示折線圖(目前只能單軸)
+                    if (tem_Thermal_chartData.Count >= 30){
+                        tem_Thermal_chartData.RemoveAt(0);
+                        chart_Thermal.Series[0].Points.Clear();
+                        chart_Thermal.Series[1].Points.Clear();
+                        for (int j = 0; j < tem_Thermal_chartData.Count; j++){
+                            chart_Thermal.Series[0].Points.AddXY(Thermal_count[i] - (30 - j), tem_Thermal_chartData[j]);
+                            chart_Thermal.Series[1].Points.AddXY(Thermal_count[i] - (30 - j), 25);
+                        }
+                    }
+                    chart_Thermal.Series[0].Points.AddXY(Thermal_count[i], Thermal_temperature[i]);
+                    tem_Thermal_chartData.Add(Thermal_temperature[i].ToString());
+                    break;
+                    //
+                }
+            }
+        }
+        #endregion
         #endregion
         #region 20顆按鈕事件
         #region 軸向設定
@@ -959,6 +1078,12 @@ namespace ToolWear{
             }
         }
         #endregion
+        #endregion
+        #region Timer事件
+        private void timer_temperature_Tick(object sender, EventArgs e){
+            Thread TD_FakeData = new Thread(Thermal_FakeData);
+            TD_FakeData.Start();
+        }
         #endregion
         #region DAQ資料讀取
         private NationalInstruments.DAQmx.Task runningTask;

@@ -83,6 +83,26 @@ namespace ToolWear.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap btn_start_selected {
+            get {
+                object obj = ResourceManager.GetObject("btn_start_selected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_stop_selected {
+            get {
+                object obj = ResourceManager.GetObject("btn_stop_selected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap btn_up {
             get {
                 object obj = ResourceManager.GetObject("btn_up", resourceCulture);

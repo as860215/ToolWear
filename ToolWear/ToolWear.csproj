@@ -198,6 +198,15 @@
   <ItemGroup>
     <None Include="Resources\wd_t_delete.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_start_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_stop_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets" Condition="Exists('..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
