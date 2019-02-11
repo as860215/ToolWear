@@ -1,0 +1,4 @@
+LIBRARY	"EZSocket2"
+EXPORTS
+GetPLCMemory @1
+SetPLCMemory @2
