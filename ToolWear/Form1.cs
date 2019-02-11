@@ -241,7 +241,12 @@ namespace ToolWear{
         private void btn_setting_Click(object sender, EventArgs e){
             panel_Dissable();
             panel_setting.Visible = true;
-
+        }
+        //主選單 > 關機
+        private void btn_shutdown_Click(object sender, EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("請先確認所有設定皆已儲存，否則將造成新設定遺失。", "關閉訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            this.Close();
         }
         #endregion
         #region 軸向設定 新增移除按鈕方法
@@ -791,12 +796,7 @@ namespace ToolWear{
         }
         //溫補 > 移除
         private void btn_CompensateRemove_Click(object sender, EventArgs e){
-            ////取得button後面編號
-            //string tem = "";
-            //try{
-            //    RW_Compensate(tem);
-            //}
-            //catch { }
+            //
         }
         //溫補 > 讀檔寫檔
         private void RW_Compensate(string s){
