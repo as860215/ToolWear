@@ -263,6 +263,36 @@ namespace ToolWear.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap wd_btn_threshold {
+            get {
+                object obj = ResourceManager.GetObject("wd_btn_threshold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap wd_img_blank {
+            get {
+                object obj = ResourceManager.GetObject("wd_img_blank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap wd_l_learn_selected {
+            get {
+                object obj = ResourceManager.GetObject("wd_l_learn_selected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap wd_s_btn_delete {
             get {
                 object obj = ResourceManager.GetObject("wd_s_btn_delete", resourceCulture);

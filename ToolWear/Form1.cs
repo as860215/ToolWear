@@ -68,6 +68,7 @@ namespace ToolWear{
         /// 隱藏所有panel(主畫面除外)
         /// </summary>
         private void panel_Dissable(){
+            //關閉所有panel
             panel_Thermal.Visible = false;
             panel_ThermalSetting.Visible = false;
             panel_Compensate.Visible = false;
@@ -80,6 +81,10 @@ namespace ToolWear{
             panel_Loading.Visible = false;
             panel_ATCsetting.Visible = false;
             panel_Health.Visible = false;
+            //關閉所有主選單副組件
+            btn_Learn.Enabled = false;
+            //重置所有主選單副組件顯示圖片
+            btn_Learn.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
         }
         /// <summary>
         /// 初始化資料
@@ -96,12 +101,18 @@ namespace ToolWear{
             btn_ToolWear_09,btn_ToolWear_10,btn_ToolWear_11,btn_ToolWear_12,btn_ToolWear_13,
             btn_ToolWear_14,btn_ToolWear_15,btn_ToolWear_16,btn_ToolWear_17,btn_ToolWear_18,
             btn_ToolWear_19,btn_ToolWear_20};
+            Button[] btn_Learn = new Button[20] { btn_Learn_01, btn_Learn_02, btn_Learn_03,
+            btn_Learn_04,btn_Learn_05,btn_Learn_06,btn_Learn_07,btn_Learn_08,
+            btn_Learn_09,btn_Learn_10,btn_Learn_11,btn_Learn_12,btn_Learn_13,
+            btn_Learn_14,btn_Learn_15,btn_Learn_16,btn_Learn_17,btn_Learn_18,
+            btn_Learn_19,btn_Learn_20};
             StreamReader sr_axial = new StreamReader(path + @"\data\axial.cp");
             int count = 0;
             while (!sr_axial.EndOfStream){
                 string axial = sr_axial.ReadLine().Split(',')[0];
                 btn_ToolWearSetting[count].Text = axial;
                 btn_ToolWear[count].Text = axial;
+                btn_Learn[count].Text = axial;
                 count++;
             }
             sr_axial.Close();
@@ -167,6 +178,9 @@ namespace ToolWear{
         private void btn_ToolWear_Click(object sender, EventArgs e){
             panel_Dissable();
             panel_ToolWear.Visible = true;
+            //學習按鈕啟動
+            btn_Learn.Enabled = true;
+            btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
             //if (string.IsNullOrEmpty(cb_ToolWearSetting_WorkName.Text)){
             //    lb_ToolWear_Status.Text = "目前工件：(尚未選取)";
             //    btn_ToolWear_Start.Enabled = false;
@@ -248,6 +262,12 @@ namespace ToolWear{
             if (dialogResult == DialogResult.Cancel) return;
             this.Close();
         }
+        //主選單 > 磨耗偵測 > 學習模式
+        private void btn_Learn_Click(object sender, EventArgs e){
+            panel_Dissable();
+            panel_Learn.Visible = true;
+            btn_Learn.BackgroundImage = ToolWear.Properties.Resources.wd_l_learn_selected;
+        }
         #endregion
         #region 軸向設定 新增移除按鈕方法
         //學習顯示圖切換
@@ -319,8 +339,10 @@ namespace ToolWear{
             btn_Learn_Start.Enabled = true;
             btn_Learn_OK.Enabled = false;
             btn_Learn_Cancel.Enabled = true;
-            panel_ToolWearSetting.Visible = true;
+            panel_ToolWear.Visible = true;
             panel_Learn.Visible = false;
+            btn_Learn.Enabled = true;
+            btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
         }
         //模型預覽
         private void btn_ToolWearSetting_ViewModule_Click(object sender, EventArgs e){

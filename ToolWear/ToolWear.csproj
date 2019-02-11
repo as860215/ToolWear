@@ -128,15 +128,6 @@
     <None Include="Resources\tc_btn_setting.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\tc_btn_ply.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tc_btn_stop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wd_btn_chart.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\wd_s_btn_delete.png" />
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +173,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tc_btn_ply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tc_btn_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wd_btn_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wd_btn_threshold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wd_img_blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wd_l_learn_selected.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets" Condition="Exists('..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets')" />
