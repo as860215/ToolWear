@@ -1521,5 +1521,13 @@ namespace ToolWear{
             MessageBox.Show(catch_log + "\n錯誤代碼：" + code + "\n資訊：" + detail);
         }
         #endregion
+        #region Log事件表
+        private void Write_Log(string Title, string Detial){
+
+        }
+        private void Read_Log(){
+
+        }
+        #endregion
     }
 }
