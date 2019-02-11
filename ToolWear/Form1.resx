@@ -6093,6 +6093,924 @@
   <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="btn_ATCsetting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_ATCsetting_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 424</value>
+  </data>
+  <data name="btn_ATCsetting_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>851, 40</value>
+  </data>
+  <data name="btn_ATCsetting_save.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_save.Name" xml:space="preserve">
+    <value>btn_ATCsetting_save</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_save.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_save.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_ATCsetting_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_ATCsetting_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 370</value>
+  </data>
+  <data name="btn_ATCsetting_delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>851, 40</value>
+  </data>
+  <data name="btn_ATCsetting_delete.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_delete.Name" xml:space="preserve">
+    <value>btn_ATCsetting_delete</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_delete.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_delete.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="numeric_ATCsetting_Blade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 198</value>
+  </data>
+  <data name="numeric_ATCsetting_Blade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 34</value>
+  </data>
+  <data name="numeric_ATCsetting_Blade.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="numeric_ATCsetting_Blade.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.Name" xml:space="preserve">
+    <value>numeric_ATCsetting_Blade</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label25.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 152</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 38</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>刃數</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tb_ATCsetting_Name.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="tb_ATCsetting_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 96</value>
+  </data>
+  <data name="tb_ATCsetting_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 43</value>
+  </data>
+  <data name="tb_ATCsetting_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="tb_ATCsetting_Name.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;tb_ATCsetting_Name.Name" xml:space="preserve">
+    <value>tb_ATCsetting_Name</value>
+  </data>
+  <data name="&gt;&gt;tb_ATCsetting_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_ATCsetting_Name.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;tb_ATCsetting_Name.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 46</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 38</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 281</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>932, 484</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_ATCsetting_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 179</value>
+  </data>
+  <data name="btn_ATCsetting_20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_20.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="btn_ATCsetting_20.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_20.Name" xml:space="preserve">
+    <value>btn_ATCsetting_20</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_20.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_20.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_ATCsetting_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 180</value>
+  </data>
+  <data name="btn_ATCsetting_19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_19.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="btn_ATCsetting_19.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_19.Name" xml:space="preserve">
+    <value>btn_ATCsetting_19</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_19.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_19.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_ATCsetting_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_18.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 179</value>
+  </data>
+  <data name="btn_ATCsetting_18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_18.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="btn_ATCsetting_18.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_18.Name" xml:space="preserve">
+    <value>btn_ATCsetting_18</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_18.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_18.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_ATCsetting_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_17.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 179</value>
+  </data>
+  <data name="btn_ATCsetting_17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_17.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="btn_ATCsetting_17.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_17.Name" xml:space="preserve">
+    <value>btn_ATCsetting_17</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_17.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_17.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_ATCsetting_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_16.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 180</value>
+  </data>
+  <data name="btn_ATCsetting_16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_16.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="btn_ATCsetting_16.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_16.Name" xml:space="preserve">
+    <value>btn_ATCsetting_16</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_16.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_16.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_ATCsetting_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_15.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 180</value>
+  </data>
+  <data name="btn_ATCsetting_15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_15.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="btn_ATCsetting_15.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_15.Name" xml:space="preserve">
+    <value>btn_ATCsetting_15</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_15.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_15.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btn_ATCsetting_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_14.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 179</value>
+  </data>
+  <data name="btn_ATCsetting_14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_14.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="btn_ATCsetting_14.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_14.Name" xml:space="preserve">
+    <value>btn_ATCsetting_14</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_14.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_14.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btn_ATCsetting_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_13.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 179</value>
+  </data>
+  <data name="btn_ATCsetting_13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_13.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="btn_ATCsetting_13.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_13.Name" xml:space="preserve">
+    <value>btn_ATCsetting_13</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_13.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_13.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btn_ATCsetting_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_12.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 179</value>
+  </data>
+  <data name="btn_ATCsetting_12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_12.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="btn_ATCsetting_12.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_12.Name" xml:space="preserve">
+    <value>btn_ATCsetting_12</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_12.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_12.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btn_ATCsetting_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_11.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 179</value>
+  </data>
+  <data name="btn_ATCsetting_11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_11.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="btn_ATCsetting_11.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_11.Name" xml:space="preserve">
+    <value>btn_ATCsetting_11</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_11.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_11.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btn_ATCsetting_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_10.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 93</value>
+  </data>
+  <data name="btn_ATCsetting_10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_10.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="btn_ATCsetting_10.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_10.Name" xml:space="preserve">
+    <value>btn_ATCsetting_10</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_10.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_10.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btn_ATCsetting_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_09.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_09.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_09.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_09.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 94</value>
+  </data>
+  <data name="btn_ATCsetting_09.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_09.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="btn_ATCsetting_09.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_09.Name" xml:space="preserve">
+    <value>btn_ATCsetting_09</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_09.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_09.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btn_ATCsetting_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_08.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_08.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_08.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 93</value>
+  </data>
+  <data name="btn_ATCsetting_08.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_08.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="btn_ATCsetting_08.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_08.Name" xml:space="preserve">
+    <value>btn_ATCsetting_08</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_08.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_08.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btn_ATCsetting_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_07.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_07.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_07.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_07.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 93</value>
+  </data>
+  <data name="btn_ATCsetting_07.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_07.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="btn_ATCsetting_07.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_07.Name" xml:space="preserve">
+    <value>btn_ATCsetting_07</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_07.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_07.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btn_ATCsetting_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_06.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_06.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_06.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_06.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 94</value>
+  </data>
+  <data name="btn_ATCsetting_06.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_06.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="btn_ATCsetting_06.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_06.Name" xml:space="preserve">
+    <value>btn_ATCsetting_06</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_06.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_06.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btn_ATCsetting_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_05.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_05.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_05.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 94</value>
+  </data>
+  <data name="btn_ATCsetting_05.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_05.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="btn_ATCsetting_05.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_05.Name" xml:space="preserve">
+    <value>btn_ATCsetting_05</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_05.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_05.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btn_ATCsetting_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_04.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_04.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_04.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_04.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 93</value>
+  </data>
+  <data name="btn_ATCsetting_04.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_04.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="btn_ATCsetting_04.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_04.Name" xml:space="preserve">
+    <value>btn_ATCsetting_04</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_04.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_04.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="btn_ATCsetting_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_03.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_03.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_03.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_03.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 93</value>
+  </data>
+  <data name="btn_ATCsetting_03.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_03.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="btn_ATCsetting_03.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_03.Name" xml:space="preserve">
+    <value>btn_ATCsetting_03</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_03.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_03.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="btn_ATCsetting_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_02.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_02.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_02.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_02.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 93</value>
+  </data>
+  <data name="btn_ATCsetting_02.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_02.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="btn_ATCsetting_02.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_02.Name" xml:space="preserve">
+    <value>btn_ATCsetting_02</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_02.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_02.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="btn_ATCsetting_01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ATCsetting_01.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ATCsetting_01.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_ATCsetting_01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ATCsetting_01.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 93</value>
+  </data>
+  <data name="btn_ATCsetting_01.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ATCsetting_01.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="btn_ATCsetting_01.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_01.Name" xml:space="preserve">
+    <value>btn_ATCsetting_01</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_01.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_01.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -6106,13 +7024,13 @@
     <value>7, 17</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 61</value>
+    <value>219, 61</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>刀庫</value>
+    <value>刀庫設定</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -6124,7 +7042,7 @@
     <value>panel_ATCsetting</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>21</value>
   </data>
   <data name="panel_ATCsetting.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 9</value>
@@ -6178,7 +7096,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1270, 790</value>
+    <value>1266, 786</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>

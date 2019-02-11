@@ -277,8 +277,35 @@
             this.panel_Loading = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.panel_ATCsetting = new System.Windows.Forms.Panel();
-            this.panel_Health = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel_Health = new System.Windows.Forms.Panel();
+            this.btn_ATCsetting_20 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_19 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_18 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_17 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_16 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_15 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_14 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_13 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_12 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_11 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_10 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_09 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_08 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_07 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_06 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_05 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_04 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_03 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_02 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_01 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tb_ATCsetting_Name = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.numeric_ATCsetting_Blade = new System.Windows.Forms.NumericUpDown();
+            this.btn_ATCsetting_save = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_delete = new System.Windows.Forms.Button();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Blade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
@@ -305,6 +332,8 @@
             this.panel2.SuspendLayout();
             this.panel_Loading.SuspendLayout();
             this.panel_ATCsetting.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_ATCsetting_Blade)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_ViewModule
@@ -2797,14 +2826,30 @@
             // 
             // panel_ATCsetting
             // 
+            this.panel_ATCsetting.Controls.Add(this.panel1);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_20);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_19);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_18);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_17);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_16);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_15);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_14);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_13);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_12);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_11);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_10);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_09);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_08);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_07);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_06);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_05);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_04);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_03);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_02);
+            this.panel_ATCsetting.Controls.Add(this.btn_ATCsetting_01);
             this.panel_ATCsetting.Controls.Add(this.label2);
             resources.ApplyResources(this.panel_ATCsetting, "panel_ATCsetting");
             this.panel_ATCsetting.Name = "panel_ATCsetting";
-            // 
-            // panel_Health
-            // 
-            resources.ApplyResources(this.panel_Health, "panel_Health");
-            this.panel_Health.Name = "panel_Health";
             // 
             // label2
             // 
@@ -2812,6 +2857,278 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Name = "label2";
+            // 
+            // panel_Health
+            // 
+            resources.ApplyResources(this.panel_Health, "panel_Health");
+            this.panel_Health.Name = "panel_Health";
+            // 
+            // btn_ATCsetting_20
+            // 
+            this.btn_ATCsetting_20.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_20, "btn_ATCsetting_20");
+            this.btn_ATCsetting_20.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_20.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_20.Name = "btn_ATCsetting_20";
+            this.btn_ATCsetting_20.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_19
+            // 
+            this.btn_ATCsetting_19.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_19, "btn_ATCsetting_19");
+            this.btn_ATCsetting_19.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_19.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_19.Name = "btn_ATCsetting_19";
+            this.btn_ATCsetting_19.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_18
+            // 
+            this.btn_ATCsetting_18.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_18, "btn_ATCsetting_18");
+            this.btn_ATCsetting_18.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_18.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_18.Name = "btn_ATCsetting_18";
+            this.btn_ATCsetting_18.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_17
+            // 
+            this.btn_ATCsetting_17.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_17, "btn_ATCsetting_17");
+            this.btn_ATCsetting_17.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_17.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_17.Name = "btn_ATCsetting_17";
+            this.btn_ATCsetting_17.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_16
+            // 
+            this.btn_ATCsetting_16.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_16, "btn_ATCsetting_16");
+            this.btn_ATCsetting_16.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_16.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_16.Name = "btn_ATCsetting_16";
+            this.btn_ATCsetting_16.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_15
+            // 
+            this.btn_ATCsetting_15.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_15, "btn_ATCsetting_15");
+            this.btn_ATCsetting_15.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_15.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_15.Name = "btn_ATCsetting_15";
+            this.btn_ATCsetting_15.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_14
+            // 
+            this.btn_ATCsetting_14.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_14, "btn_ATCsetting_14");
+            this.btn_ATCsetting_14.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_14.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_14.Name = "btn_ATCsetting_14";
+            this.btn_ATCsetting_14.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_13
+            // 
+            this.btn_ATCsetting_13.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_13, "btn_ATCsetting_13");
+            this.btn_ATCsetting_13.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_13.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_13.Name = "btn_ATCsetting_13";
+            this.btn_ATCsetting_13.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_12
+            // 
+            this.btn_ATCsetting_12.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_12, "btn_ATCsetting_12");
+            this.btn_ATCsetting_12.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_12.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_12.Name = "btn_ATCsetting_12";
+            this.btn_ATCsetting_12.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_11
+            // 
+            this.btn_ATCsetting_11.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_11, "btn_ATCsetting_11");
+            this.btn_ATCsetting_11.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_11.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_11.Name = "btn_ATCsetting_11";
+            this.btn_ATCsetting_11.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_10
+            // 
+            this.btn_ATCsetting_10.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_10, "btn_ATCsetting_10");
+            this.btn_ATCsetting_10.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_10.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_10.Name = "btn_ATCsetting_10";
+            this.btn_ATCsetting_10.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_09
+            // 
+            this.btn_ATCsetting_09.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_09, "btn_ATCsetting_09");
+            this.btn_ATCsetting_09.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_09.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_09.Name = "btn_ATCsetting_09";
+            this.btn_ATCsetting_09.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_08
+            // 
+            this.btn_ATCsetting_08.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_08, "btn_ATCsetting_08");
+            this.btn_ATCsetting_08.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_08.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_08.Name = "btn_ATCsetting_08";
+            this.btn_ATCsetting_08.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_07
+            // 
+            this.btn_ATCsetting_07.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_07, "btn_ATCsetting_07");
+            this.btn_ATCsetting_07.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_07.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_07.Name = "btn_ATCsetting_07";
+            this.btn_ATCsetting_07.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_06
+            // 
+            this.btn_ATCsetting_06.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_06, "btn_ATCsetting_06");
+            this.btn_ATCsetting_06.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_06.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_06.Name = "btn_ATCsetting_06";
+            this.btn_ATCsetting_06.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_05
+            // 
+            this.btn_ATCsetting_05.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_05, "btn_ATCsetting_05");
+            this.btn_ATCsetting_05.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_05.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_05.Name = "btn_ATCsetting_05";
+            this.btn_ATCsetting_05.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_04
+            // 
+            this.btn_ATCsetting_04.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_04, "btn_ATCsetting_04");
+            this.btn_ATCsetting_04.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_04.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_04.Name = "btn_ATCsetting_04";
+            this.btn_ATCsetting_04.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_03
+            // 
+            this.btn_ATCsetting_03.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_03, "btn_ATCsetting_03");
+            this.btn_ATCsetting_03.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_03.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_03.Name = "btn_ATCsetting_03";
+            this.btn_ATCsetting_03.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_02
+            // 
+            this.btn_ATCsetting_02.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_02, "btn_ATCsetting_02");
+            this.btn_ATCsetting_02.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_02.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_02.Name = "btn_ATCsetting_02";
+            this.btn_ATCsetting_02.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_01
+            // 
+            this.btn_ATCsetting_01.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_01, "btn_ATCsetting_01");
+            this.btn_ATCsetting_01.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_01.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_01.Name = "btn_ATCsetting_01";
+            this.btn_ATCsetting_01.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel1.Controls.Add(this.btn_ATCsetting_save);
+            this.panel1.Controls.Add(this.btn_ATCsetting_delete);
+            this.panel1.Controls.Add(this.numeric_ATCsetting_Blade);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.tb_ATCsetting_Name);
+            this.panel1.Controls.Add(this.label3);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Name = "label3";
+            // 
+            // tb_ATCsetting_Name
+            // 
+            resources.ApplyResources(this.tb_ATCsetting_Name, "tb_ATCsetting_Name");
+            this.tb_ATCsetting_Name.Name = "tb_ATCsetting_Name";
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Name = "label25";
+            // 
+            // numeric_ATCsetting_Blade
+            // 
+            resources.ApplyResources(this.numeric_ATCsetting_Blade, "numeric_ATCsetting_Blade");
+            this.numeric_ATCsetting_Blade.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numeric_ATCsetting_Blade.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numeric_ATCsetting_Blade.Name = "numeric_ATCsetting_Blade";
+            this.numeric_ATCsetting_Blade.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            // 
+            // btn_ATCsetting_save
+            // 
+            this.btn_ATCsetting_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ATCsetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.btn_ATCsetting_save, "btn_ATCsetting_save");
+            this.btn_ATCsetting_save.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_save.Name = "btn_ATCsetting_save";
+            this.btn_ATCsetting_save.UseVisualStyleBackColor = false;
+            // 
+            // btn_ATCsetting_delete
+            // 
+            this.btn_ATCsetting_delete.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
+            resources.ApplyResources(this.btn_ATCsetting_delete, "btn_ATCsetting_delete");
+            this.btn_ATCsetting_delete.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_delete.Name = "btn_ATCsetting_delete";
+            this.btn_ATCsetting_delete.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -2875,6 +3192,9 @@
             this.panel_Loading.PerformLayout();
             this.panel_ATCsetting.ResumeLayout(false);
             this.panel_ATCsetting.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_ATCsetting_Blade)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3081,6 +3401,33 @@
         private System.Windows.Forms.Button btn_Compensate_down;
         private System.Windows.Forms.Label lb_Compensate_page;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_ATCsetting_20;
+        private System.Windows.Forms.Button btn_ATCsetting_19;
+        private System.Windows.Forms.Button btn_ATCsetting_18;
+        private System.Windows.Forms.Button btn_ATCsetting_17;
+        private System.Windows.Forms.Button btn_ATCsetting_16;
+        private System.Windows.Forms.Button btn_ATCsetting_15;
+        private System.Windows.Forms.Button btn_ATCsetting_14;
+        private System.Windows.Forms.Button btn_ATCsetting_13;
+        private System.Windows.Forms.Button btn_ATCsetting_12;
+        private System.Windows.Forms.Button btn_ATCsetting_11;
+        private System.Windows.Forms.Button btn_ATCsetting_10;
+        private System.Windows.Forms.Button btn_ATCsetting_09;
+        private System.Windows.Forms.Button btn_ATCsetting_08;
+        private System.Windows.Forms.Button btn_ATCsetting_07;
+        private System.Windows.Forms.Button btn_ATCsetting_06;
+        private System.Windows.Forms.Button btn_ATCsetting_05;
+        private System.Windows.Forms.Button btn_ATCsetting_04;
+        private System.Windows.Forms.Button btn_ATCsetting_03;
+        private System.Windows.Forms.Button btn_ATCsetting_02;
+        private System.Windows.Forms.Button btn_ATCsetting_01;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_ATCsetting_save;
+        private System.Windows.Forms.Button btn_ATCsetting_delete;
+        private System.Windows.Forms.NumericUpDown numeric_ATCsetting_Blade;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox tb_ATCsetting_Name;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -22,7 +22,6 @@ namespace ToolWear{
             DAQPhysicalChannels();
             Initialization();
             Setting();
-            //github
         }
         #region 初始化程式
         private float Chart_PointMax = 0.5f, Chart_PointMin = -0.5f;  //折線圖預設上下限
