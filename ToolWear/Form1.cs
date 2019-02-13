@@ -532,9 +532,22 @@ namespace ToolWear{
             btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
             lb_Thermal_Now.Text = pre_Thermal.Text;
 
+            //清除原先折線圖資訊
+            chart_Thermal.Series[0].Points.Clear();
+
+            //重置初始資料
+            Thermal_count[now_Thermal] = 0;
+
+            //清除原先暫存溫度DATA資料
+            StreamWriter sw_axial = new StreamWriter(path + @"\data\Temperature\Axial" + now_Thermal.ToString("00") + ".cp");
+            sw_axial.Write("");
+            sw_axial.Close();
+            sw_axial.Dispose();
+
             //假資料
             Thermal_bool[now_Thermal] = true;
             timer_temperature.Enabled = true;
+            
         }
         //熱補償 > 停止
         private void btn_Thermal_stop_Click(object sender, EventArgs e){
@@ -544,6 +557,7 @@ namespace ToolWear{
             btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
             btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
             timer_temperature.Enabled = false;
+            Thermal_bool[now_Thermal] = false;
         }
         //熱補償 > 顯示折線圖
         //delegate void ChartDataDelegate();
@@ -560,7 +574,7 @@ namespace ToolWear{
         bool[] Thermal_bool = new bool[20]; //該軸向是否開啟
         int[] Thermal_count = new int[20];
         float[] Thermal_temperature = new float[20];
-        List<string> tem_Thermal_chartData = new List<string>();
+        //List<string> tem_Thermal_chartData = new List<string>();
         //====假資料專用變數====
         //熱補償 > 產生假資料
         delegate void FakeDataDelegate();
@@ -579,24 +593,40 @@ namespace ToolWear{
                 //如果跑完之後single = 0 : 沒有任何啟動
                 //single = 1 : 啟動單軸
                 //single > 1 : 啟動好幾軸
-                if(single == 1){
+                if (single == 1){
                     for (int i = 0; i < 20; i++){
                         if (Thermal_bool[i] == false) continue;
                         Thermal_count[i]++;
                         Random ran = new Random(Guid.NewGuid().GetHashCode());
                         Thermal_temperature[i] = float.Parse((25 + ((float)ran.Next(-100, 100) * 0.01f)).ToString("00.00"));
+                        List<string> tem_read = new List<string>();
+                        try{
+                            StreamReader sr_axial = new StreamReader(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
+                            while (!sr_axial.EndOfStream) tem_read.Add(sr_axial.ReadLine());
+                            sr_axial.Close();
+                            sr_axial.Dispose();
+                        }
+                        catch {
+                        }
                         //顯示折線圖(目前只能單軸)
-                        if (tem_Thermal_chartData.Count >= 30){
-                            tem_Thermal_chartData.RemoveAt(0);
+                        if (tem_read.Count >= 30){
+                            tem_read.RemoveAt(0);
                             chart_Thermal.Series[0].Points.Clear();
                             chart_Thermal.Series[1].Points.Clear();
-                            for (int j = 0; j < tem_Thermal_chartData.Count; j++){
-                                chart_Thermal.Series[0].Points.AddXY(Thermal_count[i] - (30 - j), tem_Thermal_chartData[j]);
+                            for (int j = 0; j < tem_read.Count; j++){
+                                chart_Thermal.Series[0].Points.AddXY(Thermal_count[i] - (30 - j), tem_read[j]);
                                 chart_Thermal.Series[1].Points.AddXY(Thermal_count[i] - (30 - j), 25);
                             }
                         }
                         chart_Thermal.Series[0].Points.AddXY(Thermal_count[i], Thermal_temperature[i]);
-                        tem_Thermal_chartData.Add(Thermal_temperature[i].ToString());
+                        //tem_Thermal_chartData.Add(Thermal_temperature[i].ToString());
+
+                        tem_read.Add(Thermal_temperature[i].ToString());
+                        StreamWriter sw_axial = new StreamWriter(path + @"\data\Temperature\Axial"+i.ToString("00")+".cp");
+                        for (int j = 0; j < tem_read.Count; j++)
+                            sw_axial.WriteLine(tem_read[j]);
+                        sw_axial.Close();
+                        sw_axial.Dispose();
                         break;
                     }
                 }
