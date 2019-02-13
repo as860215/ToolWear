@@ -23,6 +23,8 @@ namespace ToolWear{
             DAQPhysicalChannels();
             Initialization();
             Setting();
+            //Write_Log("系統", "1323");
+            Read_Log("20190213");
         }
         #region 初始化程式
         private float Chart_PointMax = 0.5f, Chart_PointMin = -0.5f;  //折線圖預設上下限
@@ -688,6 +690,8 @@ namespace ToolWear{
                     Thermal_count[i]++;
                     Random ran = new Random(Guid.NewGuid().GetHashCode());
                     Thermal_temperature[i] = float.Parse((25 + ((float)ran.Next(-100, 100) * 0.01f)).ToString("00.00"));
+                    //if (Thermal_temperature[i] > 25.9f) Write_Log("緊急", lb_Thermal_Now.Text + "軸目前溫度已上升至 " + Thermal_temperature[i] + "℃");
+                    //else if (Thermal_temperature[i] > 25.7f) Write_Log("警告", lb_Thermal_Now.Text + "軸目前溫度已上升至 " + Thermal_temperature[i] + "℃");
                     List<string> tem_read = new List<string>();
                     try{
                         StreamReader sr_axial = new StreamReader(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
@@ -1720,6 +1724,7 @@ namespace ToolWear{
             EZNcCom = null;
             return "";
         }
+
         private double Mitsubishi_GetFeedSpeed(){
             Mitsubishi_Initialization();
             int lFeedType = 0;
@@ -1758,13 +1763,16 @@ namespace ToolWear{
         }
         #endregion
         #region Log事件表
+        //寫入新的Log
         private void Write_Log(string Title, string Detial){
             FileStream File_module = File.Open(path + @"\data\Log\" + DateTime.Now.ToString("yyyyMMdd") + ".cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
             StreamWriter sw = new StreamWriter(File_module);
-            sw.WriteLine(DateTime.Now.ToString("HH:mm:ss") + " - " + Title + "," + Detial);
+            sw.WriteLine(DateTime.Now.ToString("HH:mm:ss") + "-" + Title + "," + Detial);
             sw.Close();
             sw.Dispose();
+            Read_Log(DateTime.Now.ToString("yyyyMMdd"));
         }
+        //讀取帶入日期的Log事件表
         private List<string> Read_Log(string date){
             List<string> tem_read = new List<string>();
             StreamReader sr_log = new StreamReader(path + @"\data\Log\" + date + ".cp");
@@ -1776,7 +1784,60 @@ namespace ToolWear{
             catch {
                 MessageBox.Show("Log檔案讀取失敗", "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            //顯示LOG資料
+            try{
+                TextBox[] TB_LogTitle = new TextBox[4] { tb_logTitle_01 , tb_logTitle_02 , tb_logTitle_03 , tb_logTitle_04 };
+                TextBox[] TB_LogDetial = new TextBox[4] { tb_logDetail_01 , tb_logDetail_02 , tb_logDetail_03 , tb_logDetail_04 };
+                //讀取資料範例 18:29:36-警告,溫度上升至40度
+                //如果LOG超過4筆，取最後4筆
+                if (tem_read.Count >= 4){
+                    for(int i = tem_read.Count - 1; i >= 0; i--){
+                        if (i == tem_read.Count - 5) break; //表示已經讀取完四筆最新LOG訊息
+                        TB_LogTitle[tem_read.Count - i - 1].Text = tem_read[i].Split('-')[1].Split(',')[0];
+                        TB_LogDetial[tem_read.Count - i - 1].Text = "  " + tem_read[i].Split('-')[0] + "  " + tem_read[i].Split('-')[1].Split(',')[1];
+                    }
+                }
+                else{
+                    for(int i = 0; i < tem_read.Count; i++){
+                        TB_LogTitle[tem_read.Count - i - 1].Text = tem_read[i].Split('-')[1].Split(',')[0];
+                        TB_LogDetial[tem_read.Count - i - 1].Text = "  " + tem_read[i].Split('-')[0] + "  " + tem_read[i].Split('-')[1].Split(',')[1];
+                    }
+                }
+            }
+            catch {
+                MessageBox.Show("Log顯示錯誤", "顯示錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            sr_log.Close();
+            sr_log.Dispose();
             return tem_read;
+        }
+        //視窗底部Log TextBox事件
+        private void tb_logTitle_TextChanged(object sender, EventArgs e){
+            //暫存現在文字被修改的TextBox
+            TextBox ThisTB = ((TextBox)sender);
+            //取得此TextBox的ID是多少
+            int TB_ID = int.Parse(ThisTB.Name.Split('_')[2]);
+            TextBox[] TB_Detial = new TextBox[4] { tb_logDetail_01, tb_logDetail_02, tb_logDetail_03, tb_logDetail_04 };
+            //暫存跟隨此Title的Detail TextBox是哪一個
+            TextBox DetialTB = TB_Detial[TB_ID - 1];
+            switch (ThisTB.Text){
+                case "緊急":
+                    ThisTB.BackColor = Color.FromArgb(227, 70, 70);
+                    DetialTB.BackColor = Color.FromArgb(227, 70, 70);
+                    break;
+                case "警告":
+                    ThisTB.BackColor = Color.FromArgb(255, 187, 0);
+                    DetialTB.BackColor = Color.FromArgb(255, 187, 0);
+                    break;
+                case "系統":
+                    ThisTB.BackColor = Color.White;
+                    DetialTB.BackColor = Color.White;
+                    break;
+                default:
+                    ThisTB.BackColor = Color.FromArgb(15, 60, 96);
+                    DetialTB.BackColor = Color.FromArgb(15, 60, 96);
+                    break;
+            }
         }
         #endregion
     }
