@@ -482,13 +482,13 @@ namespace ToolWear{
             if(((Button)sender).ForeColor != Color.White){
                 btn_Thermal_start.Enabled = false;
                 btn_Thermal_stop.Enabled = true;
-                btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+                btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
                 btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
             }
             else{
                 btn_Thermal_start.Enabled = true;
                 btn_Thermal_stop.Enabled = false;
-                btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+                btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
                 btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
             }
         }
@@ -522,7 +522,7 @@ namespace ToolWear{
             pre_Thermal.ForeColor = Color.Yellow;
             btn_Thermal_start.Enabled = false;
             btn_Thermal_stop.Enabled = true;
-            btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+            btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
 
             //假資料
@@ -534,7 +534,7 @@ namespace ToolWear{
             pre_Thermal.ForeColor = Color.White;
             btn_Thermal_start.Enabled = true;
             btn_Thermal_stop.Enabled = false;
-            btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+            btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
             btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
             timer_temperature.Enabled = false;
         }
@@ -925,16 +925,37 @@ namespace ToolWear{
             string tem = (int.Parse(pre_Compensate.Name.Split('_')[2]) - 1).ToString() + "," +
                 numeric_Temperature.Value + "," + numeric_Compensate.Value;
             try{
-                RW_Compensate(tem);
+                RW_Compensate(tem,false);
             }
             catch { }
         }
         //溫補 > 移除
         private void btn_CompensateRemove_Click(object sender, EventArgs e){
-            //
+            if (tb_Compensate_Select == -1){
+                string output = "";
+                if (pre_Compensate_tb.Text.Equals(""))
+                    output = "您正準備刪除尚未擁有初始值的項目。";
+                else
+                    output = "尚未選擇要刪除的項目，請點選下方空格。";
+                MessageBox.Show(output, "刪除失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            DialogResult dialogResult = MessageBox.Show("確定刪除？\n注意！此動作不可復原，請確認後再繼續。", "刪除訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            //取得button後面編號
+            string tem = "";
+            try
+            {
+                RW_Compensate(tem, true);
+            }
+            catch { }
         }
-        //溫補 > 讀檔寫檔
-        private void RW_Compensate(string s){
+        /// <summary>
+        /// 溫補 > 讀檔寫檔
+        /// </summary>
+        /// <param name="s">要修改的字串</param>
+        /// <param name="remove">是否為移除模式</param>
+        private void RW_Compensate(string s,bool remove){
             StreamReader sr_set = new StreamReader(path + @"\data\compensate.cp");
             List<string> tem_read = new List<string>();
             while (!sr_set.EndOfStream) tem_read.Add(sr_set.ReadLine());
@@ -952,8 +973,12 @@ namespace ToolWear{
                     //判斷是否已查詢到要修改的項次資料
                     if (count + tb_Compensate_Select > (int.Parse(lb_Compensate_page.Text) - 1) * tb_Compensate.Length){
                         if (count % tb_Compensate.Length == tb_Compensate_Select - 1){
-                            tem_read[i] = (int.Parse(pre_Compensate.Name.Split('_')[2]) - 1).ToString() + "," +
+                            //判斷是否位於移除模式
+                            if(remove == false)
+                                tem_read[i] = (int.Parse(pre_Compensate.Name.Split('_')[2]) - 1).ToString() + "," +
                                         numeric_Temperature.Value + "," + numeric_Compensate.Value;
+                            else
+                                tem_read.RemoveAt(i);
                             break;
                         }
                         else

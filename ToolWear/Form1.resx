@@ -364,7 +364,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ViewModule.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -784,7 +784,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1492,7 +1492,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="chart_warring_2.Location" type="System.Drawing.Point, System.Drawing">
     <value>682, 526</value>
@@ -1900,7 +1900,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="label22.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2353,7 +2353,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="numeric_Compensate.Location" type="System.Drawing.Point, System.Drawing">
     <value>601, 276</value>
@@ -3364,7 +3364,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3781,7 +3781,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3896,6 +3896,123 @@
   </data>
   <data name="&gt;&gt;chart_Learn.ZOrder" xml:space="preserve">
     <value>26</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_04.Name" xml:space="preserve">
+    <value>tb_logTitle_04</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_04.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_04.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_03.Name" xml:space="preserve">
+    <value>tb_logTitle_03</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_03.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_03.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_02.Name" xml:space="preserve">
+    <value>tb_logTitle_02</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_02.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_02.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_01.Name" xml:space="preserve">
+    <value>tb_logTitle_01</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_01.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_01.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_04.Name" xml:space="preserve">
+    <value>tb_logDetail_04</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_04.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_04.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_03.Name" xml:space="preserve">
+    <value>tb_logDetail_03</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_03.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_03.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_02.Name" xml:space="preserve">
+    <value>tb_logDetail_02</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_02.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_02.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_01.Name" xml:space="preserve">
+    <value>tb_logDetail_01</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_01.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_01.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panel_log.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 664</value>
+  </data>
+  <data name="panel_log.Size" type="System.Drawing.Size, System.Drawing">
+    <value>968, 135</value>
+  </data>
+  <data name="panel_log.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;panel_log.Name" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;panel_log.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_log.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="tb_logTitle_04.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.2000008pt</value>
@@ -4113,27 +4230,6 @@
   <data name="&gt;&gt;tb_logDetail_01.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="panel_log.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 664</value>
-  </data>
-  <data name="panel_log.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 135</value>
-  </data>
-  <data name="panel_log.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;panel_log.Name" xml:space="preserve">
-    <value>panel_log</value>
-  </data>
-  <data name="&gt;&gt;panel_log.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_log.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;panel2.Name" xml:space="preserve">
     <value>panel2</value>
   </data>
@@ -4177,7 +4273,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;btn_setting_save.Name" xml:space="preserve">
     <value>btn_setting_save</value>
@@ -4540,7 +4636,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4858,7 +4954,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;btn_ATCsetting_save.Name" xml:space="preserve">
     <value>btn_ATCsetting_save</value>
@@ -5122,7 +5218,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;tb_Threshold_14.Name" xml:space="preserve">
     <value>tb_Threshold_14</value>
