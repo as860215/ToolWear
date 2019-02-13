@@ -153,6 +153,16 @@ namespace ToolWear.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap tc_btn_axiabtn_selected {
+            get {
+                object obj = ResourceManager.GetObject("tc_btn_axiabtn_selected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap tc_btn_ply {
             get {
                 object obj = ResourceManager.GetObject("tc_btn_ply", resourceCulture);

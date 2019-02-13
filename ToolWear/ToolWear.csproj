@@ -207,6 +207,9 @@
   <ItemGroup>
     <None Include="Resources\giphy.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tc_btn_axiabtn_selected.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets" Condition="Exists('..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

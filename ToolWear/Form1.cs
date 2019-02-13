@@ -61,9 +61,9 @@ namespace ToolWear{
                 chart_Thermal.Series[1].Points.AddXY(i, 25);
 
             //Panel
-            panel_Dissable();
             panel_Home.Visible = true;
-            panel_Thermal.Visible = true;
+            //預設開啟熱補償介面
+            btn_Thermal_Click(null,null);
         }
         /// <summary>
         /// 隱藏所有panel(主畫面除外)
@@ -476,7 +476,11 @@ namespace ToolWear{
         Button pre_Thermal = null;
         //熱補償 > 按下軸向按鈕
         private void btn_Thermal_Axial_Click(object sender, EventArgs e) {
+            //先重置上次選到的按鈕
+            if (pre_Thermal != null)
+                pre_Thermal.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn;
             pre_Thermal = (Button)sender;
+            pre_Thermal.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn_selected;
             now_Thermal = int.Parse(((Button)sender).Name.Split('_')[2]) - 1;
             //判斷目前的軸向是否正在偵測
             if(((Button)sender).ForeColor != Color.White){
@@ -484,12 +488,14 @@ namespace ToolWear{
                 btn_Thermal_stop.Enabled = true;
                 btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
                 btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+                btn_Thermal_stop.Focus();
             }
             else{
                 btn_Thermal_start.Enabled = true;
                 btn_Thermal_stop.Enabled = false;
                 btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
                 btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+                btn_Thermal_start.Focus();
             }
         }
         //熱補償 > 開始
@@ -519,11 +525,12 @@ namespace ToolWear{
             sr_set.Dispose();
 
             //開始偵測
-            pre_Thermal.ForeColor = Color.Yellow;
+            pre_Thermal.ForeColor = Color.FromArgb(255, 187, 0);
             btn_Thermal_start.Enabled = false;
             btn_Thermal_stop.Enabled = true;
             btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+            lb_Thermal_Now.Text = pre_Thermal.Text;
 
             //假資料
             Thermal_bool[now_Thermal] = true;
@@ -563,26 +570,40 @@ namespace ToolWear{
                 this.Invoke(FDD);
             }
             else{
-                for (int i = 0; i < 20; i++){
-                    if (Thermal_bool[i] == false) continue;
-                    Thermal_count[i]++;
-                    Random ran = new Random(Guid.NewGuid().GetHashCode());
-                    Thermal_temperature[i] = float.Parse((25 + ((float)ran.Next(-100, 100) * 0.01f)).ToString("00.00"));
-                    //顯示折線圖(目前只能單軸)
-                    if (tem_Thermal_chartData.Count >= 30){
-                        tem_Thermal_chartData.RemoveAt(0);
-                        chart_Thermal.Series[0].Points.Clear();
-                        chart_Thermal.Series[1].Points.Clear();
-                        for (int j = 0; j < tem_Thermal_chartData.Count; j++){
-                            chart_Thermal.Series[0].Points.AddXY(Thermal_count[i] - (30 - j), tem_Thermal_chartData[j]);
-                            chart_Thermal.Series[1].Points.AddXY(Thermal_count[i] - (30 - j), 25);
-                        }
-                    }
-                    chart_Thermal.Series[0].Points.AddXY(Thermal_count[i], Thermal_temperature[i]);
-                    tem_Thermal_chartData.Add(Thermal_temperature[i].ToString());
-                    break;
-                    //
+                //先判斷幾個軸向正在運行
+                int single = 0;
+                for(int i = 0; i < 20; i++){
+                    if (Thermal_bool[i] == true)
+                        single++;
                 }
+                //如果跑完之後single = 0 : 沒有任何啟動
+                //single = 1 : 啟動單軸
+                //single > 1 : 啟動好幾軸
+                if(single == 1){
+                    for (int i = 0; i < 20; i++){
+                        if (Thermal_bool[i] == false) continue;
+                        Thermal_count[i]++;
+                        Random ran = new Random(Guid.NewGuid().GetHashCode());
+                        Thermal_temperature[i] = float.Parse((25 + ((float)ran.Next(-100, 100) * 0.01f)).ToString("00.00"));
+                        //顯示折線圖(目前只能單軸)
+                        if (tem_Thermal_chartData.Count >= 30){
+                            tem_Thermal_chartData.RemoveAt(0);
+                            chart_Thermal.Series[0].Points.Clear();
+                            chart_Thermal.Series[1].Points.Clear();
+                            for (int j = 0; j < tem_Thermal_chartData.Count; j++){
+                                chart_Thermal.Series[0].Points.AddXY(Thermal_count[i] - (30 - j), tem_Thermal_chartData[j]);
+                                chart_Thermal.Series[1].Points.AddXY(Thermal_count[i] - (30 - j), 25);
+                            }
+                        }
+                        chart_Thermal.Series[0].Points.AddXY(Thermal_count[i], Thermal_temperature[i]);
+                        tem_Thermal_chartData.Add(Thermal_temperature[i].ToString());
+                        break;
+                    }
+                }
+                else if(single > 1){
+
+                }
+                
             }
         }
         #endregion
@@ -601,8 +622,8 @@ namespace ToolWear{
                 pre_ToolWearSetting.ForeColor = Color.White;
             //設定上一個點的button為現在的button
             pre_ToolWearSetting = btn;
-            //設定現在的button文字顏色為黃色
-            btn.ForeColor = Color.Yellow;
+            //設定現在的button文字顏色為橘色
+            btn.ForeColor = Color.FromArgb(255, 187, 0);
             //取得button的ID末位，01~20
             string ID = btn.Name.Split('_')[2];
             now_ToolWearSetting = int.Parse(ID) - 1;
@@ -700,8 +721,8 @@ namespace ToolWear{
                 pre_Compensate.ForeColor = Color.White;
             //設定上一個點的button為現在的button
             pre_Compensate = btn;
-            //設定現在的button文字顏色為黃色
-            btn.ForeColor = Color.Yellow;
+            //設定現在的button文字顏色為橘色
+            btn.ForeColor = Color.FromArgb(255, 187, 0);
             //取得button的ID末位，01~20
             string ID = btn.Name.Split('_')[2];
             now_Compensate = int.Parse(ID) - 1;
@@ -1013,8 +1034,8 @@ namespace ToolWear{
                 pre_ATCSetting.ForeColor = Color.White;
             //設定上一個點的button為現在的button
             pre_ATCSetting = btn;
-            //設定現在的button文字顏色為黃色
-            btn.ForeColor = Color.Yellow;
+            //設定現在的button文字顏色為橘色
+            btn.ForeColor = Color.FromArgb(255, 187, 0); ;
             //取得button的ID末位，01~20
             string ID = btn.Name.Split('_')[2];
             now_ATCSetting = int.Parse(ID) - 1;
