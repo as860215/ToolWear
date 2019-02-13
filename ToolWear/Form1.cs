@@ -87,6 +87,7 @@ namespace ToolWear{
             panel_Loading.Visible = false;
             panel_ATCsetting.Visible = false;
             panel_Health.Visible = false;
+            panel_SelectParts.Visible = false;
             //關閉所有主選單副組件
             btn_Learn.Enabled = false;
             //重置所有主選單副組件顯示圖片
@@ -220,6 +221,16 @@ namespace ToolWear{
         private void btn_Threshold_Back_Click(object sender, EventArgs e){
             panel_ToolWearSetting.Visible = true;
             panel_Threshold.Visible = false;
+        }
+        //磨耗偵測 > 選擇工件 > 回上一頁
+        private void btn_SelectParts_Back_Click(object sender,EventArgs e){
+            panel_ToolWear.Visible = true;
+            panel_SelectParts.Visible = false;
+        }
+        //磨耗偵測 > 選擇工件
+        private void pb_ToolWear_Click(object sender,EventArgs e){
+            panel_ToolWear.Visible = false;
+            panel_SelectParts.Visible = true;
         }
         private void btn_ToolWear_Setting_Click(object sender, EventArgs e){
             panel_ToolWearSetting.Visible = true;
