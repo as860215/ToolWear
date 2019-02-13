@@ -39,6 +39,8 @@ namespace ToolWear{
             chart_ToolWear.Legends.Clear();
             chart_FFT.Legends.Clear();
             chart_LeartFFT.Legends.Clear();
+            chart_Thermal_M1.Legends.Clear();
+            chart_Thermal_M2.Legends.Clear();
             //折線圖上下限與x軸最大值預覽
             //chart_FFT.Series[2].Points.AddXY(1, -0.5);
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
@@ -57,8 +59,11 @@ namespace ToolWear{
                 chart_LeartFFT.Series[1].Points.AddXY(i + 1, 0.1);
             }
             //溫度折線圖
-            for (int i = 1; i <= 30; i++)
+            for (int i = 1; i <= 30; i++){
                 chart_Thermal.Series[1].Points.AddXY(i, 25);
+                chart_Thermal_M1.Series[1].Points.AddXY(i, 25);
+                chart_Thermal_M2.Series[1].Points.AddXY(i, 25);
+            }
 
             //Panel
             panel_Home.Visible = true;
@@ -474,11 +479,16 @@ namespace ToolWear{
         int now_Thermal = 0;
         //暫存剛剛點選的熱補償軸向按鈕
         Button pre_Thermal = null;
+        //幾個軸向正在運行
+        int Thermal_single = 0;
+        //是否正在選取尚未執行的軸向
+        bool Thermal_SelectAnother = false;
         //熱補償 > 按下軸向按鈕
         private void btn_Thermal_Axial_Click(object sender, EventArgs e) {
             //先重置上次選到的按鈕
-            if (pre_Thermal != null)
+            if (pre_Thermal != null){
                 pre_Thermal.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn;
+            }
             pre_Thermal = (Button)sender;
             pre_Thermal.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn_selected;
             now_Thermal = int.Parse(((Button)sender).Name.Split('_')[2]) - 1;
@@ -496,6 +506,38 @@ namespace ToolWear{
                 btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
                 btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
                 btn_Thermal_start.Focus();
+            }
+            //判斷是否有其他軸向正在啟動
+            if(Thermal_single > 0 && Thermal_bool[now_Thermal] != true){
+                //表示有其他軸向正在啟動，且不是目前選到的這一軸(代表這是第2個或以上選取的軸向)
+                panel_Thermal_single.Visible = false;
+                panel_Thermal_Mutile.Visible = true;
+                Thermal_SelectAnother = true;
+                //如果是點同一個按鈕才清空
+                if (lb_Thermal_M2_Now.Text.Equals(pre_Thermal.Text)){
+                    chart_Thermal_M2.Series[0].Points.Clear();
+                    chart_Thermal_M2.Series[1].Points.Clear();
+                    for (int i = 1; i <= 30; i++)
+                        chart_Thermal_M2.Series[1].Points.AddXY(i, 25);
+                }
+            }
+            else if(Thermal_single > 1){
+                panel_Thermal_single.Visible = false;
+                panel_Thermal_Mutile.Visible = true;
+                Thermal_SelectAnother = false;
+            }
+            else{
+                panel_Thermal_single.Visible = true;
+                panel_Thermal_Mutile.Visible = false;
+                Thermal_SelectAnother = false;
+                chart_Thermal.Series[0].Points.Clear();
+                chart_Thermal.Series[1].Points.Clear();
+                chart_Thermal_M1.Series[0].Points.Clear();
+                chart_Thermal_M1.Series[1].Points.Clear();
+                for (int i = 1; i <= 30; i++){
+                    chart_Thermal.Series[1].Points.AddXY(i, 25);
+                    chart_Thermal_M1.Series[1].Points.AddXY(i, 25);
+                }
             }
         }
         //熱補償 > 開始
@@ -530,10 +572,28 @@ namespace ToolWear{
             btn_Thermal_stop.Enabled = true;
             btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
-            lb_Thermal_Now.Text = pre_Thermal.Text;
+            if(Thermal_single == 0) lb_Thermal_Now.Text = pre_Thermal.Text;
 
             //清除原先折線圖資訊
-            chart_Thermal.Series[0].Points.Clear();
+            if (Thermal_single == 0){
+                chart_Thermal.Series[0].Points.Clear();
+                chart_Thermal.Series[1].Points.Clear();
+                chart_Thermal_M1.Series[0].Points.Clear();
+                chart_Thermal_M1.Series[1].Points.Clear();
+                for (int i = 1; i <= 30; i++)
+                {
+                    chart_Thermal.Series[1].Points.AddXY(i, 25);
+                    chart_Thermal_M1.Series[1].Points.AddXY(i, 25);
+                }
+            }
+            else if (Thermal_single == 1){
+                chart_Thermal_M2.Series[0].Points.Clear();
+                chart_Thermal_M2.Series[1].Points.Clear();
+                for (int i = 1; i <= 30; i++)
+                {
+                    chart_Thermal_M2.Series[1].Points.AddXY(i, 25);
+                }
+            }
 
             //重置初始資料
             Thermal_count[now_Thermal] = 0;
@@ -547,6 +607,9 @@ namespace ToolWear{
             //假資料
             Thermal_bool[now_Thermal] = true;
             timer_temperature.Enabled = true;
+
+            //軸向啟動
+            Thermal_single++;
             
         }
         //熱補償 > 停止
@@ -556,8 +619,13 @@ namespace ToolWear{
             btn_Thermal_stop.Enabled = false;
             btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
             btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
-            timer_temperature.Enabled = false;
             Thermal_bool[now_Thermal] = false;
+            Thermal_single--;
+            //當都已經沒有任何軸向在啟動的時候
+            if(Thermal_single == 0)
+                timer_temperature.Enabled = false;
+            else if(Thermal_single > 0)
+                Thermal_SelectAnother = true;
         }
         //熱補償 > 顯示折線圖
         //delegate void ChartDataDelegate();
@@ -584,56 +652,131 @@ namespace ToolWear{
                 this.Invoke(FDD);
             }
             else{
-                //先判斷幾個軸向正在運行
-                int single = 0;
-                for(int i = 0; i < 20; i++){
-                    if (Thermal_bool[i] == true)
-                        single++;
+                //Thermal_single = 0 : 沒有任何啟動
+                //Thermal_single = 1 : 啟動單軸
+                //Thermal_single > 1 : 啟動好幾軸
+                //if (single == 1){
+                if (Thermal_single == 1 && Thermal_SelectAnother == false){
+                    panel_Thermal_single.Visible = true;
+                    panel_Thermal_Mutile.Visible = false;
+                    lb_Thermal_M1_Now.Text = lb_Thermal_Now.Text;
                 }
-                //如果跑完之後single = 0 : 沒有任何啟動
-                //single = 1 : 啟動單軸
-                //single > 1 : 啟動好幾軸
-                if (single == 1){
-                    for (int i = 0; i < 20; i++){
-                        if (Thermal_bool[i] == false) continue;
-                        Thermal_count[i]++;
-                        Random ran = new Random(Guid.NewGuid().GetHashCode());
-                        Thermal_temperature[i] = float.Parse((25 + ((float)ran.Next(-100, 100) * 0.01f)).ToString("00.00"));
-                        List<string> tem_read = new List<string>();
-                        try{
-                            StreamReader sr_axial = new StreamReader(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
-                            while (!sr_axial.EndOfStream) tem_read.Add(sr_axial.ReadLine());
-                            sr_axial.Close();
-                            sr_axial.Dispose();
+                else if(Thermal_single == 1 && Thermal_SelectAnother == true){
+                    panel_Thermal_single.Visible = false;
+                    panel_Thermal_Mutile.Visible = true;
+                    lb_Thermal_M2_Now.Text = pre_Thermal.Text;
+                }
+                for (int i = 0; i < 20; i++){
+                    if (Thermal_bool[i] == false) continue;
+                    Thermal_count[i]++;
+                    Random ran = new Random(Guid.NewGuid().GetHashCode());
+                    Thermal_temperature[i] = float.Parse((25 + ((float)ran.Next(-100, 100) * 0.01f)).ToString("00.00"));
+                    List<string> tem_read = new List<string>();
+                    try{
+                        StreamReader sr_axial = new StreamReader(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
+                        while (!sr_axial.EndOfStream) tem_read.Add(sr_axial.ReadLine());
+                        sr_axial.Close();
+                        sr_axial.Dispose();
+                    }
+                    catch{}
+                    //顯示折線圖(單軸)
+                    if (tem_read.Count >= 30){
+                        tem_read.RemoveAt(0);
+                        chart_Thermal.Series[0].Points.Clear();
+                        chart_Thermal.Series[1].Points.Clear();
+                        chart_Thermal_M1.Series[0].Points.Clear();
+                        chart_Thermal_M1.Series[1].Points.Clear();
+                        //tem_read 讀取範例 : 10,25.93
+                        for (int j = 0; j < tem_read.Count; j++){
+                            int tem_count = int.Parse(tem_read[j].Split(',')[0]);
+                            chart_Thermal.Series[0].Points.AddXY(tem_count, tem_read[j].Split(',')[1]);
+                            chart_Thermal.Series[1].Points.AddXY(tem_count, 25);
+                            chart_Thermal_M1.Series[0].Points.AddXY(tem_count, tem_read[j].Split(',')[1]);
+                            chart_Thermal_M1.Series[1].Points.AddXY(tem_count, 25);
                         }
-                        catch {
-                        }
-                        //顯示折線圖(目前只能單軸)
-                        if (tem_read.Count >= 30){
-                            tem_read.RemoveAt(0);
-                            chart_Thermal.Series[0].Points.Clear();
-                            chart_Thermal.Series[1].Points.Clear();
-                            for (int j = 0; j < tem_read.Count; j++){
-                                chart_Thermal.Series[0].Points.AddXY(Thermal_count[i] - (30 - j), tem_read[j]);
-                                chart_Thermal.Series[1].Points.AddXY(Thermal_count[i] - (30 - j), 25);
-                            }
-                        }
-                        chart_Thermal.Series[0].Points.AddXY(Thermal_count[i], Thermal_temperature[i]);
-                        //tem_Thermal_chartData.Add(Thermal_temperature[i].ToString());
+                    }
+                    chart_Thermal.Series[0].Points.AddXY(Thermal_count[i], Thermal_temperature[i]);
+                    chart_Thermal_M1.Series[0].Points.AddXY(Thermal_count[i], Thermal_temperature[i]);
+                    //tem_Thermal_chartData.Add(Thermal_temperature[i].ToString());
 
-                        tem_read.Add(Thermal_temperature[i].ToString());
-                        StreamWriter sw_axial = new StreamWriter(path + @"\data\Temperature\Axial"+i.ToString("00")+".cp");
-                        for (int j = 0; j < tem_read.Count; j++)
-                            sw_axial.WriteLine(tem_read[j]);
-                        sw_axial.Close();
-                        sw_axial.Dispose();
-                        break;
+                    tem_read.Add(Thermal_temperature[i].ToString());
+                    StreamWriter sw_axial = new StreamWriter(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
+                    for (int j = 0; j < tem_read.Count; j++){
+                        if (tem_read.Count >= 30)
+                            //判斷是不是新加入的值
+                            if (j == tem_read.Count - 1)
+                                sw_axial.WriteLine(Thermal_count[i] + "," + Thermal_temperature[i].ToString());
+                            else
+                                sw_axial.WriteLine((Thermal_count[i] - (30 - j)).ToString() + "," + tem_read[j].Split(',')[1]);
+                        else{
+                            //判斷是不是新加入的值
+                            if (j == tem_read.Count - 1)
+                                sw_axial.WriteLine(j + "," + Thermal_temperature[i].ToString());
+                            else
+                                sw_axial.WriteLine(j + "," + tem_read[j].Split(',')[1]);
+                        }
+                    }
+                    sw_axial.Close();
+                    sw_axial.Dispose();
+                    break;
+                }
+                //雙軸啟動
+                if (Thermal_single > 1){
+                    int num_count = 0;
+                    for (int i = 0; i < 20; i++){
+                        if (Thermal_bool[i] == true)
+                            num_count++;
+                        //搜尋到第二軸的時候
+                        if(num_count == 2){
+                            Thermal_count[i]++;
+                            Random ran = new Random(Guid.NewGuid().GetHashCode());
+                            Thermal_temperature[i] = float.Parse((25 + ((float)ran.Next(-100, 100) * 0.01f)).ToString("00.00"));
+                            List<string> tem_read = new List<string>();
+                            try{
+                                StreamReader sr_axial = new StreamReader(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
+                                while (!sr_axial.EndOfStream) tem_read.Add(sr_axial.ReadLine());
+                                sr_axial.Close();
+                                sr_axial.Dispose();
+                            }
+                            catch { }
+                            //顯示折線圖(第二軸)
+                            if (tem_read.Count >= 30){
+                                tem_read.RemoveAt(0);
+                                chart_Thermal_M2.Series[0].Points.Clear();
+                                chart_Thermal_M2.Series[1].Points.Clear();
+                                //tem_read 讀取範例 : 10,25.93
+                                for (int j = 0; j < tem_read.Count; j++){
+                                    int tem_count = int.Parse(tem_read[j].Split(',')[0]);
+                                    chart_Thermal_M2.Series[0].Points.AddXY(tem_count, tem_read[j].Split(',')[1]);
+                                    chart_Thermal_M2.Series[1].Points.AddXY(tem_count, 25);
+                                }
+                            }
+                            chart_Thermal_M2.Series[0].Points.AddXY(Thermal_count[i], Thermal_temperature[i]);
+
+                            tem_read.Add(Thermal_temperature[i].ToString());
+                            StreamWriter sw_axial = new StreamWriter(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
+                            for (int j = 0; j < tem_read.Count; j++){
+                                if (tem_read.Count >= 30)
+                                    //判斷是不是新加入的值
+                                    if (j == tem_read.Count - 1)
+                                        sw_axial.WriteLine(Thermal_count[i] + "," + Thermal_temperature[i].ToString());
+                                    else
+                                        sw_axial.WriteLine((Thermal_count[i] - (30 - j)).ToString() + "," + tem_read[j].Split(',')[1]);
+                                else{
+                                    //判斷是不是新加入的值
+                                    if (j == tem_read.Count - 1)
+                                        sw_axial.WriteLine(j + "," + Thermal_temperature[i].ToString());
+                                    else
+                                        sw_axial.WriteLine(j + "," + tem_read[j].Split(',')[1]);
+                                }
+                            }
+                            sw_axial.Close();
+                            sw_axial.Dispose();
+                            break;
+                        }
                     }
                 }
-                else if(single > 1){
-
-                }
-                
+                //}
             }
         }
         #endregion

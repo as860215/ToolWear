@@ -369,6 +369,423 @@
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tb_ToolWearSetting_name.Name" xml:space="preserve">
+    <value>tb_ToolWearSetting_name</value>
+  </data>
+  <data name="&gt;&gt;tb_ToolWearSetting_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_ToolWearSetting_name.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;tb_ToolWearSetting_name.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_save.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_save</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_save.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_save.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_delete.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_delete</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_delete.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_delete.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_20.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_20</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_20.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_20.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_19.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_19</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_19.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_19.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_18.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_18</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_18.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_18.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_17.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_17</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_17.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_17.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_16.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_16</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_16.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_16.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_15.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_15</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_15.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_15.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_14.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_14</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_14.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_14.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_13.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_13</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_13.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_13.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_12.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_12</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_12.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_12.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_11.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_11</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_11.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_11.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_10.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_10</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_10.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_10.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_09.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_09</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_09.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_09.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_08.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_08</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_08.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_08.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_07.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_07</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_07.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_07.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_06.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_06</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_06.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_06.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_05.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_05</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_05.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_05.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_04.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_04</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_04.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_04.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_03.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_03</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_03.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_03.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_02.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_02</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_02.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_02.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_01.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_01</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_01.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_01.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.Name" xml:space="preserve">
+    <value>cb_ToolWearSetting_accelerometer</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_Axial.Name" xml:space="preserve">
+    <value>cb_ToolWearSetting_Axial</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_Axial.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_Axial.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_Axial.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_ViewModule</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;physicalChannelComboBox.Name" xml:space="preserve">
+    <value>physicalChannelComboBox</value>
+  </data>
+  <data name="&gt;&gt;physicalChannelComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;physicalChannelComboBox.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;physicalChannelComboBox.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_Back.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_Back</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_Back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_Back.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_Back.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="panel_ToolWearSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_ToolWearSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_ToolWearSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panel_ToolWearSetting.Name" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;panel_ToolWearSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_ToolWearSetting.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1419,29 +1836,413 @@
   <data name="&gt;&gt;btn_ToolWearSetting_Back.ZOrder" xml:space="preserve">
     <value>32</value>
   </data>
-  <data name="panel_ToolWearSetting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
-  </data>
-  <data name="panel_ToolWearSetting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
-  </data>
-  <data name="panel_ToolWearSetting.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;panel_ToolWearSetting.Name" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;panel_ToolWearSetting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_ToolWearSetting.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="panel_ToolWear.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold.Name" xml:space="preserve">
+    <value>btn_Threshold</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_2.Name" xml:space="preserve">
+    <value>chart_warring_2</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_2.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_1.Name" xml:space="preserve">
+    <value>chart_warring_1</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_1.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_warring_1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pb_ToolWear.Name" xml:space="preserve">
+    <value>pb_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;pb_ToolWear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_ToolWear.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;pb_ToolWear.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_20.Name" xml:space="preserve">
+    <value>btn_ToolWear_20</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_20.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_20.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_19.Name" xml:space="preserve">
+    <value>btn_ToolWear_19</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_19.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_19.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_18.Name" xml:space="preserve">
+    <value>btn_ToolWear_18</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_18.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_18.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_17.Name" xml:space="preserve">
+    <value>btn_ToolWear_17</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_17.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_17.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_16.Name" xml:space="preserve">
+    <value>btn_ToolWear_16</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_16.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_16.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_15.Name" xml:space="preserve">
+    <value>btn_ToolWear_15</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_15.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_15.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_14.Name" xml:space="preserve">
+    <value>btn_ToolWear_14</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_14.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_14.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_13.Name" xml:space="preserve">
+    <value>btn_ToolWear_13</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_13.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_13.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_12.Name" xml:space="preserve">
+    <value>btn_ToolWear_12</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_12.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_12.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_11.Name" xml:space="preserve">
+    <value>btn_ToolWear_11</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_11.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_11.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_10.Name" xml:space="preserve">
+    <value>btn_ToolWear_10</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_10.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_10.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_09.Name" xml:space="preserve">
+    <value>btn_ToolWear_09</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_09.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_09.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_08.Name" xml:space="preserve">
+    <value>btn_ToolWear_08</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_08.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_08.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_07.Name" xml:space="preserve">
+    <value>btn_ToolWear_07</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_07.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_07.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_06.Name" xml:space="preserve">
+    <value>btn_ToolWear_06</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_06.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_06.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_05.Name" xml:space="preserve">
+    <value>btn_ToolWear_05</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_05.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_05.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_04.Name" xml:space="preserve">
+    <value>btn_ToolWear_04</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_04.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_04.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_03.Name" xml:space="preserve">
+    <value>btn_ToolWear_03</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_03.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_03.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_02.Name" xml:space="preserve">
+    <value>btn_ToolWear_02</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_02.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_02.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_01.Name" xml:space="preserve">
+    <value>btn_ToolWear_01</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_01.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_01.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Change.Name" xml:space="preserve">
+    <value>btn_ToolWear_Change</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Change.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Change.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Change.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Setting.Name" xml:space="preserve">
+    <value>btn_ToolWear_Setting</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Setting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Setting.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Setting.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Stop.Name" xml:space="preserve">
+    <value>btn_ToolWear_Stop</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Stop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Stop.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Stop.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Start.Name" xml:space="preserve">
+    <value>btn_ToolWear_Start</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Start.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Start.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear_Start.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;lb_ToolWear_Status.Name" xml:space="preserve">
+    <value>lb_ToolWear_Status</value>
+  </data>
+  <data name="&gt;&gt;lb_ToolWear_Status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ToolWear_Status.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;lb_ToolWear_Status.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;chart_ToolWear.Name" xml:space="preserve">
+    <value>chart_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_ToolWear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_ToolWear.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_ToolWear.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;chart_FFT.Name" xml:space="preserve">
+    <value>chart_FFT</value>
+  </data>
+  <data name="&gt;&gt;chart_FFT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_FFT.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_FFT.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="panel_ToolWear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_ToolWear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 655</value>
+  </data>
+  <data name="panel_ToolWear.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel_ToolWear.Name" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;panel_ToolWear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_ToolWear.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="btn_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2451,29 +3252,173 @@
   <data name="&gt;&gt;chart_FFT.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
-  <data name="panel_ToolWear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
-  </data>
-  <data name="panel_ToolWear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 655</value>
-  </data>
-  <data name="panel_ToolWear.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel_ToolWear.Name" xml:space="preserve">
-    <value>panel_ToolWear</value>
-  </data>
-  <data name="&gt;&gt;panel_ToolWear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_ToolWear.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="panel_Home.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;btn_shutdown.Name" xml:space="preserve">
+    <value>btn_shutdown</value>
+  </data>
+  <data name="&gt;&gt;btn_shutdown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_shutdown.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;btn_shutdown.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button8.Name" xml:space="preserve">
+    <value>button8</value>
+  </data>
+  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button7.Name" xml:space="preserve">
+    <value>button7</value>
+  </data>
+  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn.Name" xml:space="preserve">
+    <value>btn_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btn_logo.Name" xml:space="preserve">
+    <value>btn_logo</value>
+  </data>
+  <data name="&gt;&gt;btn_logo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_logo.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;btn_logo.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting.Name" xml:space="preserve">
+    <value>btn_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btn_Health.Name" xml:space="preserve">
+    <value>btn_Health</value>
+  </data>
+  <data name="&gt;&gt;btn_Health.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Health.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;btn_Health.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal.Name" xml:space="preserve">
+    <value>btn_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear.Name" xml:space="preserve">
+    <value>btn_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWear.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btn_setting.Name" xml:space="preserve">
+    <value>btn_setting</value>
+  </data>
+  <data name="&gt;&gt;btn_setting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_setting.Parent" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;btn_setting.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="panel_Home.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel_Home.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 789</value>
+  </data>
+  <data name="panel_Home.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel_Home.Name" xml:space="preserve">
+    <value>panel_Home</value>
+  </data>
+  <data name="&gt;&gt;panel_Home.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Home.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Home.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btn_shutdown.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2850,29 +3795,134 @@
   <data name="&gt;&gt;btn_setting.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="panel_Home.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel_Home.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 789</value>
-  </data>
-  <data name="panel_Home.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel_Home.Name" xml:space="preserve">
-    <value>panel_Home</value>
-  </data>
-  <data name="&gt;&gt;panel_Home.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_Home.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Home.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="panel_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.Name" xml:space="preserve">
+    <value>btn_Threshold_Back</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel_Threshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_Threshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_Threshold.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.Name" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.Name" xml:space="preserve">
+    <value>btn_Threshold_save</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.Name" xml:space="preserve">
+    <value>btn_Threshold_delete</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.Name" xml:space="preserve">
+    <value>chart_Threshold</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 93</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>616, 672</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btn_Threshold_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2958,26 +4008,218 @@
   <data name="&gt;&gt;chart_Threshold.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 93</value>
+  <data name="&gt;&gt;tb_Threshold_14.Name" xml:space="preserve">
+    <value>tb_Threshold_14</value>
   </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>616, 672</value>
+  <data name="&gt;&gt;tb_Threshold_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="&gt;&gt;tb_Threshold_14.Parent" xml:space="preserve">
+    <value>panel3</value>
   </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
+  <data name="&gt;&gt;tb_Threshold_14.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+  <data name="&gt;&gt;tb_Threshold_13.Name" xml:space="preserve">
+    <value>tb_Threshold_13</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Name" xml:space="preserve">
+    <value>tb_Threshold_12</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Name" xml:space="preserve">
+    <value>tb_Threshold_11</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Name" xml:space="preserve">
+    <value>tb_Threshold_10</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Name" xml:space="preserve">
+    <value>tb_Threshold_09</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Name" xml:space="preserve">
+    <value>tb_Threshold_08</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Name" xml:space="preserve">
+    <value>tb_Threshold_07</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Name" xml:space="preserve">
+    <value>tb_Threshold_06</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Name" xml:space="preserve">
+    <value>tb_Threshold_05</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Name" xml:space="preserve">
+    <value>tb_Threshold_04</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Name" xml:space="preserve">
+    <value>tb_Threshold_03</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Name" xml:space="preserve">
+    <value>tb_Threshold_02</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Name" xml:space="preserve">
+    <value>btn_Threshold_down</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Name" xml:space="preserve">
+    <value>btn_Threshold_up</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Name" xml:space="preserve">
+    <value>tb_Threshold_01</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 93</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 672</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
     <value>panel_Threshold</value>
   </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="tb_Threshold_14.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 15pt</value>
@@ -3423,27 +4665,6 @@
   <data name="&gt;&gt;tb_Threshold_01.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 93</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 672</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="btn_Threshold_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -3507,29 +4728,401 @@
   <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="panel_Threshold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
-  </data>
-  <data name="panel_Threshold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
-  </data>
-  <data name="panel_Threshold.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.Name" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="panel_ThermalSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSave.Name" xml:space="preserve">
+    <value>btn_CompensateSave</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSave.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSave.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_20.Name" xml:space="preserve">
+    <value>btn_Compensate_20</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_20.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_20.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_19.Name" xml:space="preserve">
+    <value>btn_Compensate_19</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_19.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_19.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_18.Name" xml:space="preserve">
+    <value>btn_Compensate_18</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_18.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_18.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_17.Name" xml:space="preserve">
+    <value>btn_Compensate_17</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_17.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_17.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_16.Name" xml:space="preserve">
+    <value>btn_Compensate_16</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_16.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_16.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_15.Name" xml:space="preserve">
+    <value>btn_Compensate_15</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_15.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_15.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_14.Name" xml:space="preserve">
+    <value>btn_Compensate_14</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_14.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_14.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_13.Name" xml:space="preserve">
+    <value>btn_Compensate_13</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_13.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_13.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_12.Name" xml:space="preserve">
+    <value>btn_Compensate_12</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_12.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_12.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_11.Name" xml:space="preserve">
+    <value>btn_Compensate_11</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_11.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_11.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_10.Name" xml:space="preserve">
+    <value>btn_Compensate_10</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_10.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_10.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_09.Name" xml:space="preserve">
+    <value>btn_Compensate_09</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_09.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_09.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_08.Name" xml:space="preserve">
+    <value>btn_Compensate_08</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_08.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_08.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateRemove.Name" xml:space="preserve">
+    <value>btn_CompensateRemove</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateRemove.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateRemove.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_07.Name" xml:space="preserve">
+    <value>btn_Compensate_07</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_07.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_07.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateAdd.Name" xml:space="preserve">
+    <value>btn_CompensateAdd</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateAdd.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateAdd.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_06.Name" xml:space="preserve">
+    <value>btn_Compensate_06</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_06.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_06.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.Name" xml:space="preserve">
+    <value>numeric_Compensate</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_05.Name" xml:space="preserve">
+    <value>btn_Compensate_05</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_05.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_05.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.Name" xml:space="preserve">
+    <value>numeric_Temperature</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_04.Name" xml:space="preserve">
+    <value>btn_Compensate_04</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_04.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_04.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_03.Name" xml:space="preserve">
+    <value>btn_Compensate_03</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_03.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_03.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_02.Name" xml:space="preserve">
+    <value>btn_Compensate_02</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_02.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_02.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_01.Name" xml:space="preserve">
+    <value>btn_Compensate_01</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_01.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_01.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting_Back.Name" xml:space="preserve">
+    <value>btn_ThermalSetting_Back</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting_Back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting_Back.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting_Back.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;panel_Compensate.Name" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;panel_Compensate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Compensate.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;panel_Compensate.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="panel_ThermalSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_ThermalSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_ThermalSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel_ThermalSetting.Name" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;panel_ThermalSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_ThermalSetting.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="btn_CompensateSave.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4497,6 +6090,219 @@
   <data name="&gt;&gt;btn_ThermalSetting_Back.ZOrder" xml:space="preserve">
     <value>29</value>
   </data>
+  <data name="&gt;&gt;cb_Compensate_Channel.Name" xml:space="preserve">
+    <value>cb_Compensate_Channel</value>
+  </data>
+  <data name="&gt;&gt;cb_Compensate_Channel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_Compensate_Channel.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;cb_Compensate_Channel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lb_Compensate_page.Name" xml:space="preserve">
+    <value>lb_Compensate_page</value>
+  </data>
+  <data name="&gt;&gt;lb_Compensate_page.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Compensate_page.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;lb_Compensate_page.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_down.Name" xml:space="preserve">
+    <value>btn_Compensate_down</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_down.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_down.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_up.Name" xml:space="preserve">
+    <value>btn_Compensate_up</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_up.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_up.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSet_delete.Name" xml:space="preserve">
+    <value>btn_CompensateSet_delete</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSet_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSet_delete.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSet_delete.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSet_save.Name" xml:space="preserve">
+    <value>btn_CompensateSet_save</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSet_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSet_save.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSet_save.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_ip.Name" xml:space="preserve">
+    <value>tb_Compensate_ip</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_ip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_ip.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_ip.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_07.Name" xml:space="preserve">
+    <value>tb_Compensate_07</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_07.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_07.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_06.Name" xml:space="preserve">
+    <value>tb_Compensate_06</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_06.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_06.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_05.Name" xml:space="preserve">
+    <value>tb_Compensate_05</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_05.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_05.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_04.Name" xml:space="preserve">
+    <value>tb_Compensate_04</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_04.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_04.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_03.Name" xml:space="preserve">
+    <value>tb_Compensate_03</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_03.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_03.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_02.Name" xml:space="preserve">
+    <value>tb_Compensate_02</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_02.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_02.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_01.Name" xml:space="preserve">
+    <value>tb_Compensate_01</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_01.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_01.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="panel_Compensate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 334</value>
+  </data>
+  <data name="panel_Compensate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>932, 430</value>
+  </data>
+  <data name="panel_Compensate.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;panel_Compensate.Name" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;panel_Compensate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Compensate.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;panel_Compensate.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
   <data name="cb_Compensate_Channel.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
   </data>
@@ -4971,50 +6777,341 @@
   <data name="&gt;&gt;tb_Compensate_01.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="panel_Compensate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 334</value>
-  </data>
-  <data name="panel_Compensate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>932, 430</value>
-  </data>
-  <data name="panel_Compensate.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;panel_Compensate.Name" xml:space="preserve">
-    <value>panel_Compensate</value>
-  </data>
-  <data name="&gt;&gt;panel_Compensate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_Compensate.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;panel_Compensate.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="panel_ThermalSetting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
-  </data>
-  <data name="panel_ThermalSetting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
-  </data>
-  <data name="panel_ThermalSetting.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel_ThermalSetting.Name" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;panel_ThermalSetting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_ThermalSetting.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
   <data name="panel_Thermal.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_stop.Name" xml:space="preserve">
+    <value>btn_Thermal_stop</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_stop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_stop.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_stop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_start.Name" xml:space="preserve">
+    <value>btn_Thermal_start</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_start.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_start.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_start.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_20.Name" xml:space="preserve">
+    <value>btn_Thermal_20</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_20.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_20.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_19.Name" xml:space="preserve">
+    <value>btn_Thermal_19</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_19.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_19.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_18.Name" xml:space="preserve">
+    <value>btn_Thermal_18</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_18.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_18.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_17.Name" xml:space="preserve">
+    <value>btn_Thermal_17</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_17.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_17.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_16.Name" xml:space="preserve">
+    <value>btn_Thermal_16</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_16.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_16.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_15.Name" xml:space="preserve">
+    <value>btn_Thermal_15</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_15.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_15.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_14.Name" xml:space="preserve">
+    <value>btn_Thermal_14</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_14.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_14.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_13.Name" xml:space="preserve">
+    <value>btn_Thermal_13</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_13.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_13.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_12.Name" xml:space="preserve">
+    <value>btn_Thermal_12</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_12.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_12.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_11.Name" xml:space="preserve">
+    <value>btn_Thermal_11</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_11.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_11.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_10.Name" xml:space="preserve">
+    <value>btn_Thermal_10</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_10.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_10.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_09.Name" xml:space="preserve">
+    <value>btn_Thermal_09</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_09.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_09.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_08.Name" xml:space="preserve">
+    <value>btn_Thermal_08</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_08.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_08.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_07.Name" xml:space="preserve">
+    <value>btn_Thermal_07</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_07.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_07.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_06.Name" xml:space="preserve">
+    <value>btn_Thermal_06</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_06.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_06.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_05.Name" xml:space="preserve">
+    <value>btn_Thermal_05</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_05.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_05.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_04.Name" xml:space="preserve">
+    <value>btn_Thermal_04</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_04.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_04.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting.Name" xml:space="preserve">
+    <value>btn_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_03.Name" xml:space="preserve">
+    <value>btn_Thermal_03</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_03.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_03.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_02.Name" xml:space="preserve">
+    <value>btn_Thermal_02</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_02.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_02.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_01.Name" xml:space="preserve">
+    <value>btn_Thermal_01</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_01.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_01.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.Name" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.Name" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="panel_Thermal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_Thermal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 645</value>
+  </data>
+  <data name="panel_Thermal.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal.Name" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btn_Thermal_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -5802,6 +7899,432 @@
   <data name="&gt;&gt;btn_Thermal_01.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.Name" xml:space="preserve">
+    <value>lb_Thermal_M2_Now</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.Name" xml:space="preserve">
+    <value>chart_Thermal_M2</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.Name" xml:space="preserve">
+    <value>lb_Thermal_M1_Now</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.Name" xml:space="preserve">
+    <value>chart_Thermal_M1</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panel_Thermal_Mutile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 263</value>
+  </data>
+  <data name="panel_Thermal_Mutile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>963, 376</value>
+  </data>
+  <data name="panel_Thermal_Mutile.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.Name" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 22.2pt</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 242</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 48</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.Name" xml:space="preserve">
+    <value>lb_Thermal_M2_Now</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label31.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>863, 306</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="label31.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label32.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 192</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="label32.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>℃</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chart_Thermal_M2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 184</value>
+  </data>
+  <data name="chart_Thermal_M2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 187</value>
+  </data>
+  <data name="chart_Thermal_M2.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="chart_Thermal_M2.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.Name" xml:space="preserve">
+    <value>chart_Thermal_M2</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 22.2pt</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 60</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 48</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.Name" xml:space="preserve">
+    <value>lb_Thermal_M1_Now</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label28.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>865, 132</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label29.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 10</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>℃</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="chart_Thermal_M1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 2</value>
+  </data>
+  <data name="chart_Thermal_M1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 187</value>
+  </data>
+  <data name="chart_Thermal_M1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chart_Thermal_M1.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.Name" xml:space="preserve">
+    <value>chart_Thermal_M1</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_Now.Name" xml:space="preserve">
+    <value>lb_Thermal_Now</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_Now.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_Now.Parent" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_Now.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal.Name" xml:space="preserve">
+    <value>chart_Thermal</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal.Parent" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel_Thermal_single.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 263</value>
+  </data>
+  <data name="panel_Thermal_single.Size" type="System.Drawing.Size, System.Drawing">
+    <value>963, 376</value>
+  </data>
+  <data name="panel_Thermal_single.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.Name" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
   <data name="lb_Thermal_Now.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -5827,7 +8350,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lb_Thermal_Now.Parent" xml:space="preserve">
-    <value>panel5</value>
+    <value>panel_Thermal_single</value>
   </data>
   <data name="&gt;&gt;lb_Thermal_Now.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -5860,7 +8383,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panel5</value>
+    <value>panel_Thermal_single</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -5893,7 +8416,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label26.Parent" xml:space="preserve">
-    <value>panel5</value>
+    <value>panel_Thermal_single</value>
   </data>
   <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -5917,55 +8440,370 @@
     <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
   <data name="&gt;&gt;chart_Thermal.Parent" xml:space="preserve">
-    <value>panel5</value>
+    <value>panel_Thermal_single</value>
   </data>
   <data name="&gt;&gt;chart_Thermal.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 263</value>
-  </data>
-  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>963, 376</value>
-  </data>
-  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
-    <value>panel_Thermal</value>
-  </data>
-  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="panel_Thermal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
-  </data>
-  <data name="panel_Thermal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 645</value>
-  </data>
-  <data name="panel_Thermal.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel_Thermal.Name" xml:space="preserve">
-    <value>panel_Thermal</value>
-  </data>
-  <data name="&gt;&gt;panel_Thermal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_Thermal.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="panel_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;pb_Learn.Name" xml:space="preserve">
+    <value>pb_Learn</value>
+  </data>
+  <data name="&gt;&gt;pb_Learn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_Learn.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;pb_Learn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_20.Name" xml:space="preserve">
+    <value>btn_Learn_20</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_20.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_20.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_19.Name" xml:space="preserve">
+    <value>btn_Learn_19</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_19.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_19.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_18.Name" xml:space="preserve">
+    <value>btn_Learn_18</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_18.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_18.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_17.Name" xml:space="preserve">
+    <value>btn_Learn_17</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_17.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_17.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_16.Name" xml:space="preserve">
+    <value>btn_Learn_16</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_16.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_16.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_15.Name" xml:space="preserve">
+    <value>btn_Learn_15</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_15.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_15.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_14.Name" xml:space="preserve">
+    <value>btn_Learn_14</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_14.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_14.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_13.Name" xml:space="preserve">
+    <value>btn_Learn_13</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_13.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_13.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_12.Name" xml:space="preserve">
+    <value>btn_Learn_12</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_12.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_12.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_11.Name" xml:space="preserve">
+    <value>btn_Learn_11</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_11.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_11.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_10.Name" xml:space="preserve">
+    <value>btn_Learn_10</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_10.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_10.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_09.Name" xml:space="preserve">
+    <value>btn_Learn_09</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_09.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_09.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_08.Name" xml:space="preserve">
+    <value>btn_Learn_08</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_08.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_08.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_07.Name" xml:space="preserve">
+    <value>btn_Learn_07</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_07.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_07.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_06.Name" xml:space="preserve">
+    <value>btn_Learn_06</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_06.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_06.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_05.Name" xml:space="preserve">
+    <value>btn_Learn_05</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_05.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_05.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_04.Name" xml:space="preserve">
+    <value>btn_Learn_04</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_04.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_04.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_03.Name" xml:space="preserve">
+    <value>btn_Learn_03</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_03.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_03.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_02.Name" xml:space="preserve">
+    <value>btn_Learn_02</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_02.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_02.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_01.Name" xml:space="preserve">
+    <value>btn_Learn_01</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_01.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_01.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.Name" xml:space="preserve">
+    <value>btn_Learn_Back</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Back.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.Name" xml:space="preserve">
+    <value>btn_Learn_OK</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_OK.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.Name" xml:space="preserve">
+    <value>btn_Learn_Start</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;btn_Learn_Start.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_WorkName.Name" xml:space="preserve">
+    <value>lb_Learn_WorkName</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_WorkName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_WorkName.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_WorkName.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.Name" xml:space="preserve">
+    <value>chart_Learn</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;chart_LeartFFT.Name" xml:space="preserve">
+    <value>chart_LeartFFT</value>
+  </data>
+  <data name="&gt;&gt;chart_LeartFFT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_LeartFFT.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;chart_LeartFFT.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="panel_Learn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_Learn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_Learn.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel_Learn.Name" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;panel_Learn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Learn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="pb_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -6861,26 +9699,122 @@
   <data name="&gt;&gt;chart_LeartFFT.ZOrder" xml:space="preserve">
     <value>27</value>
   </data>
-  <data name="panel_Learn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
+  <data name="&gt;&gt;tb_logTitle_04.Name" xml:space="preserve">
+    <value>tb_logTitle_04</value>
   </data>
-  <data name="panel_Learn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
+  <data name="&gt;&gt;tb_logTitle_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panel_Learn.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;tb_logTitle_04.Parent" xml:space="preserve">
+    <value>panel_log</value>
   </data>
-  <data name="&gt;&gt;panel_Learn.Name" xml:space="preserve">
-    <value>panel_Learn</value>
+  <data name="&gt;&gt;tb_logTitle_04.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;panel_Learn.Type" xml:space="preserve">
+  <data name="&gt;&gt;tb_logTitle_03.Name" xml:space="preserve">
+    <value>tb_logTitle_03</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_03.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_03.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_02.Name" xml:space="preserve">
+    <value>tb_logTitle_02</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_02.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_02.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_01.Name" xml:space="preserve">
+    <value>tb_logTitle_01</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_01.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logTitle_01.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_04.Name" xml:space="preserve">
+    <value>tb_logDetail_04</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_04.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_04.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_03.Name" xml:space="preserve">
+    <value>tb_logDetail_03</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_03.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_03.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_02.Name" xml:space="preserve">
+    <value>tb_logDetail_02</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_02.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_02.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_01.Name" xml:space="preserve">
+    <value>tb_logDetail_01</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_01.Parent" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;tb_logDetail_01.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panel_log.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 664</value>
+  </data>
+  <data name="panel_log.Size" type="System.Drawing.Size, System.Drawing">
+    <value>968, 135</value>
+  </data>
+  <data name="panel_log.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;panel_log.Name" xml:space="preserve">
+    <value>panel_log</value>
+  </data>
+  <data name="&gt;&gt;panel_log.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel_Learn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel_log.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="tb_logTitle_04.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.2000008pt</value>
@@ -7098,26 +10032,167 @@
   <data name="&gt;&gt;tb_logDetail_01.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="panel_log.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 664</value>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="panel_log.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 135</value>
-  </data>
-  <data name="panel_log.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;panel_log.Name" xml:space="preserve">
-    <value>panel_log</value>
-  </data>
-  <data name="&gt;&gt;panel_log.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel_log.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel_setting</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>panel_setting</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_setting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_setting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_setting.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;panel_setting.Name" xml:space="preserve">
+    <value>panel_setting</value>
+  </data>
+  <data name="&gt;&gt;panel_setting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_setting.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_save.Name" xml:space="preserve">
+    <value>btn_setting_save</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_save.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_save.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_delete.Name" xml:space="preserve">
+    <value>btn_setting_delete</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_delete.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_delete.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tb_setting_ip.Name" xml:space="preserve">
+    <value>tb_setting_ip</value>
+  </data>
+  <data name="&gt;&gt;tb_setting_ip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_setting_ip.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;tb_setting_ip.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cb_setting_model.Name" xml:space="preserve">
+    <value>cb_setting_model</value>
+  </data>
+  <data name="&gt;&gt;cb_setting_model.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_setting_model.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;cb_setting_model.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cb_setting_brand.Name" xml:space="preserve">
+    <value>cb_setting_brand</value>
+  </data>
+  <data name="&gt;&gt;cb_setting_brand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_setting_brand.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;cb_setting_brand.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 117</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>916, 645</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel_setting</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btn_setting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7359,27 +10434,6 @@
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 117</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>916, 645</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>panel_setting</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -7413,26 +10467,38 @@
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel_setting.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>panel_Loading</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel_Loading.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 9</value>
   </data>
-  <data name="panel_setting.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="panel_Loading.Size" type="System.Drawing.Size, System.Drawing">
     <value>974, 780</value>
   </data>
-  <data name="panel_setting.TabIndex" type="System.Int32, mscorlib">
+  <data name="panel_Loading.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;panel_setting.Name" xml:space="preserve">
-    <value>panel_setting</value>
+  <data name="&gt;&gt;panel_Loading.Name" xml:space="preserve">
+    <value>panel_Loading</value>
   </data>
-  <data name="&gt;&gt;panel_setting.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel_Loading.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel_setting.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel_Loading.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7467,26 +10533,383 @@
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="panel_Loading.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="panel_Loading.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
-  </data>
-  <data name="panel_Loading.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;panel_Loading.Name" xml:space="preserve">
-    <value>panel_Loading</value>
-  </data>
-  <data name="&gt;&gt;panel_Loading.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel_Loading.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_20.Name" xml:space="preserve">
+    <value>btn_ATCsetting_20</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_20.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_20.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_19.Name" xml:space="preserve">
+    <value>btn_ATCsetting_19</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_19.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_19.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_18.Name" xml:space="preserve">
+    <value>btn_ATCsetting_18</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_18.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_18.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_17.Name" xml:space="preserve">
+    <value>btn_ATCsetting_17</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_17.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_17.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_16.Name" xml:space="preserve">
+    <value>btn_ATCsetting_16</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_16.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_16.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_15.Name" xml:space="preserve">
+    <value>btn_ATCsetting_15</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_15.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_15.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_14.Name" xml:space="preserve">
+    <value>btn_ATCsetting_14</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_14.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_14.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_13.Name" xml:space="preserve">
+    <value>btn_ATCsetting_13</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_13.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_13.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_12.Name" xml:space="preserve">
+    <value>btn_ATCsetting_12</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_12.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_12.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_11.Name" xml:space="preserve">
+    <value>btn_ATCsetting_11</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_11.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_11.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_10.Name" xml:space="preserve">
+    <value>btn_ATCsetting_10</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_10.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_10.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_09.Name" xml:space="preserve">
+    <value>btn_ATCsetting_09</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_09.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_09.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_08.Name" xml:space="preserve">
+    <value>btn_ATCsetting_08</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_08.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_08.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_07.Name" xml:space="preserve">
+    <value>btn_ATCsetting_07</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_07.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_07.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_06.Name" xml:space="preserve">
+    <value>btn_ATCsetting_06</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_06.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_06.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_05.Name" xml:space="preserve">
+    <value>btn_ATCsetting_05</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_05.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_05.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_04.Name" xml:space="preserve">
+    <value>btn_ATCsetting_04</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_04.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_04.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_03.Name" xml:space="preserve">
+    <value>btn_ATCsetting_03</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_03.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_03.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_02.Name" xml:space="preserve">
+    <value>btn_ATCsetting_02</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_02.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_02.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_01.Name" xml:space="preserve">
+    <value>btn_ATCsetting_01</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_01.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_01.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="panel_ATCsetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_ATCsetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_ATCsetting.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;panel_ATCsetting.Name" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;panel_ATCsetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_ATCsetting.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_save.Name" xml:space="preserve">
+    <value>btn_ATCsetting_save</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_save.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_save.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_delete.Name" xml:space="preserve">
+    <value>btn_ATCsetting_delete</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_delete.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btn_ATCsetting_delete.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.Name" xml:space="preserve">
+    <value>numeric_ATCsetting_Blade</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tb_ATCsetting_Name.Name" xml:space="preserve">
+    <value>tb_ATCsetting_Name</value>
+  </data>
+  <data name="&gt;&gt;tb_ATCsetting_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_ATCsetting_Name.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;tb_ATCsetting_Name.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 281</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>932, 484</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btn_ATCsetting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7664,27 +11087,6 @@
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 281</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>932, 484</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>76</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btn_ATCsetting_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -8439,27 +11841,6 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
-  <data name="panel_ATCsetting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
-  </data>
-  <data name="panel_ATCsetting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
-  </data>
-  <data name="panel_ATCsetting.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;panel_ATCsetting.Name" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;panel_ATCsetting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_ATCsetting.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
   <data name="panel_Health.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 9</value>
   </data>
@@ -8494,7 +11875,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1274, 794</value>
+    <value>1266, 786</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
