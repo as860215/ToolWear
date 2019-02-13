@@ -1823,18 +1823,26 @@ namespace ToolWear{
             TextBox DetialTB = TB_Detial[TB_ID - 1];
             switch (ThisTB.Text){
                 case "緊急":
+                    ThisTB.ForeColor = Color.White;
+                    DetialTB.ForeColor = Color.White;
                     ThisTB.BackColor = Color.FromArgb(227, 70, 70);
                     DetialTB.BackColor = Color.FromArgb(227, 70, 70);
                     break;
                 case "警告":
+                    ThisTB.ForeColor = Color.Black;
+                    DetialTB.ForeColor = Color.Black;
                     ThisTB.BackColor = Color.FromArgb(255, 187, 0);
                     DetialTB.BackColor = Color.FromArgb(255, 187, 0);
                     break;
                 case "系統":
+                    ThisTB.ForeColor = Color.Black;
+                    DetialTB.ForeColor = Color.Black;
                     ThisTB.BackColor = Color.White;
                     DetialTB.BackColor = Color.White;
                     break;
                 default:
+                    ThisTB.ForeColor = Color.White;
+                    DetialTB.ForeColor = Color.White;
                     ThisTB.BackColor = Color.FromArgb(15, 60, 96);
                     DetialTB.BackColor = Color.FromArgb(15, 60, 96);
                     break;
