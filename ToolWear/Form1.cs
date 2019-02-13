@@ -23,8 +23,6 @@ namespace ToolWear{
             DAQPhysicalChannels();
             Initialization();
             Setting();
-            //Write_Log("系統", "1323");
-            Read_Log("20190213");
         }
         #region 初始化程式
         private float Chart_PointMax = 0.5f, Chart_PointMin = -0.5f;  //折線圖預設上下限
@@ -174,6 +172,9 @@ namespace ToolWear{
             tb_setting_ip.Text = set.Split(',')[2];
             sr_setting.Close();
             sr_setting.Dispose();
+
+            //讀取今日Log事件表
+            Read_Log(DateTime.Now.ToString("yyyyMMdd"));
         }
         #endregion
         #region 按鈕方法
