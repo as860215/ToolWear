@@ -483,6 +483,9 @@ namespace ToolWear{
         int Thermal_single = 0;
         //是否正在選取尚未執行的軸向
         bool Thermal_SelectAnother = false;
+        //設計兩個變數存放M1和M2的熱補償
+        //List<float> Compensate_M1 = new List<float>();
+        //List<float> Compensate_M2 = new List<float>();
         //熱補償 > 按下軸向按鈕
         private void btn_Thermal_Axial_Click(object sender, EventArgs e) {
             //先重置上次選到的按鈕
@@ -540,6 +543,17 @@ namespace ToolWear{
                 }
             }
         }
+        //熱補償 > 取得此軸向的補償資料
+        private void Thermal_GetCompensate(int axial){
+            //取得該軸向的次序
+            //StreamReader sr_get = new StreamReader(path + @"\data\compensate.cp");
+            //List<string> tem_read = new List<string>();
+            //while (!sr_get.EndOfStream){
+            //    string tem = sr_get.ReadLine();
+            //    if (tem.Split(',')[0].Equals(now_Thermal.ToString()))
+            //        tem_read.Add(tem);
+            //}
+        }
         //熱補償 > 開始
         private void btn_Thermal_start_Click(object sender, EventArgs e){
             string axial = "";  //軸向
@@ -565,6 +579,9 @@ namespace ToolWear{
             }
             sr_set.Close();
             sr_set.Dispose();
+
+            //取得熱補償資料
+            Thermal_GetCompensate(now_Thermal);
 
             //開始偵測
             pre_Thermal.ForeColor = Color.FromArgb(255, 187, 0);
@@ -1742,10 +1759,24 @@ namespace ToolWear{
         #endregion
         #region Log事件表
         private void Write_Log(string Title, string Detial){
-
+            FileStream File_module = File.Open(path + @"\data\Log\" + DateTime.Now.ToString("yyyyMMdd") + ".cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+            StreamWriter sw = new StreamWriter(File_module);
+            sw.WriteLine(DateTime.Now.ToString("HH:mm:ss") + " - " + Title + "," + Detial);
+            sw.Close();
+            sw.Dispose();
         }
-        private void Read_Log(){
-
+        private List<string> Read_Log(string date){
+            List<string> tem_read = new List<string>();
+            StreamReader sr_log = new StreamReader(path + @"\data\Log\" + date + ".cp");
+            try{
+                while (!sr_log.EndOfStream){
+                    tem_read.Add(sr_log.ReadLine());
+                }
+            }
+            catch {
+                MessageBox.Show("Log檔案讀取失敗", "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return tem_read;
         }
         #endregion
     }
