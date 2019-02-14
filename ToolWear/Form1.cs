@@ -199,16 +199,8 @@ namespace ToolWear{
             //學習按鈕啟動
             btn_Learn.Enabled = true;
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
-            //if (string.IsNullOrEmpty(cb_ToolWearSetting_WorkName.Text)){
-            //    lb_ToolWear_Status.Text = "目前工件：(尚未選取)";
-            //    btn_ToolWear_Start.Enabled = false;
-            //    btn_ToolWear_Change.Enabled = false;
-            //}
-            //else{
-            //    lb_ToolWear_Status.Text = "目前工件：" + cb_ToolWearSetting_WorkName.Text;
-            //    btn_ToolWear_Start.Enabled = true;
-            //    btn_ToolWear_Change.Enabled = true;
-            //}
+            //預設選擇第一個按鈕
+            btn_ToolWear_Choose((object)btn_ToolWear_01, null);
         }
         private void btn_BackHome(object sender, EventArgs e){
             panel_Home.Visible = true;
@@ -306,7 +298,7 @@ namespace ToolWear{
                 btn_Learn.BackgroundImage = ToolWear.Properties.Resources.wd_l_learn_selected;
                 btn_Learn.Enabled = true;
             }
-            //目前再學習模式
+            //目前在學習模式
             else if (panel_Learn.Visible == true){
                 panel_Dissable();
                 panel_ToolWear.Visible = true;
@@ -319,9 +311,18 @@ namespace ToolWear{
         #region 磨耗偵測
         //開始偵測
         private void btn_ToolWear_Start_Click(object sender, EventArgs e){
+            if (lb_ToolWear_Parts.Text.Equals("(未選擇)")){
+                MessageBox.Show("尚未選擇工件，無法進行磨耗偵測。\n請點選下方工件預覽圖或是文字，進入頁面選取此次偵測的工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             btn_ToolWear_Start.Enabled = false;
             btn_ToolWear_Stop.Enabled = true;
             chart_ToolWear.Series[0].Points.Clear();
+            //修改開始與停止按鈕
+            btn_ToolWear_Start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+            btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+            //修改偵測軸向的文字顏色
+            pre_ToolWear.ForeColor = Color.FromArgb(255, 187, 0);
             //timer1.Enabled = true;
             DAQInitialize("Match");
         }
@@ -330,6 +331,9 @@ namespace ToolWear{
             TaskStop();
             btn_ToolWear_Start.Enabled = true;
             btn_ToolWear_Stop.Enabled = false;
+            //修改開始與停止按鈕
+            btn_ToolWear_Start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+            btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
         }
         //FFT和原始數據折線圖轉換
         private bool ToolWearChange_FFT = false;    //紀錄現在折線圖顯示何者圖形
@@ -1031,6 +1035,33 @@ namespace ToolWear{
         #endregion
         #endregion
         #region 20顆按鈕事件
+        #region 磨耗偵測
+        //磨耗偵測
+        //現在點選到的按鈕
+        int now_ToolWear = 0;
+        //上一個點到的button
+        Button pre_ToolWear = null;
+        private void btn_ToolWear_Choose(object sender,EventArgs e){
+            //先重置上次選到的按鈕
+            if (pre_ToolWear != null){
+                pre_ToolWear.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn;
+            }
+            pre_ToolWear = (Button)sender;
+            pre_ToolWear.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn_selected;
+            now_ToolWear = int.Parse(((Button)sender).Name.Split('_')[2]) - 1;
+            //背景處理選擇設定介面的該軸向
+            Button[] btn_ToolWearSetting = new Button[20] { btn_ToolWearSetting_01, btn_ToolWearSetting_02, btn_ToolWearSetting_03,
+            btn_ToolWearSetting_04,btn_ToolWearSetting_05,btn_ToolWearSetting_06,btn_ToolWearSetting_07,btn_ToolWearSetting_08,
+            btn_ToolWearSetting_09,btn_ToolWearSetting_10,btn_ToolWearSetting_11,btn_ToolWearSetting_12,btn_ToolWearSetting_13,
+            btn_ToolWearSetting_14,btn_ToolWearSetting_15,btn_ToolWearSetting_16,btn_ToolWearSetting_17,btn_ToolWearSetting_18,
+            btn_ToolWearSetting_19,btn_ToolWearSetting_20};
+            btn_ToolWearSetting_Choose((object)btn_ToolWearSetting[now_ToolWear], null);
+            //轉移焦點
+            btn_ToolWear_Start.Focus();
+            //判斷是否選擇的軸向已經在偵測狀態中(待)
+
+        }
+        #endregion
         #region 軸向設定
         //軸向設定
         //現在要更改的設定檔
