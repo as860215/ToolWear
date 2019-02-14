@@ -233,6 +233,11 @@ namespace ToolWear{
             panel_ToolWear.Visible = false;
             panel_SelectParts.Visible = true;
         }
+        //磨耗偵測 > 選擇工件 > 新增工件
+        private void btn_SelectParts_Add_Click(object sender,EventArgs e){
+            panel_Dissable();
+            panel_AddParts.Visible = true;
+        }
         private void btn_ToolWear_Setting_Click(object sender, EventArgs e){
             panel_ToolWearSetting.Visible = true;
             panel_ToolWear.Visible = false;
@@ -817,6 +822,59 @@ namespace ToolWear{
                     }
                 }
                 //}
+            }
+        }
+        #endregion
+        #region 選擇工件/新增工件
+        //磨耗偵測 > 選擇工件 > 新增工件 > 取消新增
+        private void btn_AddParts_delete_Click(object sender, EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("確定要放棄此次新增嗎？", "放棄新增", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            tb_AddParts_Name.Text = "";
+            tb_AddParts_Path.Text = "";
+            pb_AddParts.BackgroundImage = ToolWear.Properties.Resources.wdpsn_img_blank;
+            panel_Dissable();
+            panel_SelectParts.Visible = true;
+        }
+        //磨耗偵測 > 選擇工件 > 新增工件 > 搜尋
+        private void btn_AddParts_Path_Click(object sender, EventArgs e){
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Title = "選擇工件圖片";
+            dialog.InitialDirectory = @"C:\";
+            dialog.Filter = "圖片檔案(*.jpg,*.gif,*.bmp)|*.jpg;*.gif;*.bmp";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                tb_AddParts_Path.Text = dialog.FileName;
+                path_AddFile_name = dialog.SafeFileName;
+                pb_AddParts.BackgroundImage = Image.FromFile(dialog.FileName);
+            }
+        }
+        //選擇的檔案名稱
+        private string path_AddFile_name = "";
+        //磨耗偵測 > 選擇工件 > 新增工件 > 儲存
+        private void btn_AddParts_save_Click(object sender, EventArgs e){
+            if (string.IsNullOrWhiteSpace(tb_AddParts_Name.Text) || string.IsNullOrEmpty(tb_AddParts_Name.Text)){
+                MessageBox.Show("請輸入工件名稱！", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(tb_AddParts_Path.Text)){
+                DialogResult dialogResult1 = MessageBox.Show("您尚未選擇工件圖片來源\n確定不要加入圖片嗎？", "圖片未選取", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (dialogResult1 == DialogResult.Cancel) return;
+            }
+            DialogResult dialogResult = MessageBox.Show("確定要新增此工件嗎？", "確認訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Cancel) return;
+            try{
+                FileStream File_module = File.Open(path + @"\data\parts.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+                StreamWriter sw = new StreamWriter(File_module);
+                sw.WriteLine(tb_AddParts_Name.Text + "," + (path + @"data\Image\" + path_AddFile_name));
+                sw.Close();
+                sw.Dispose();
+                File.Copy(tb_AddParts_Path.Text, path + @"\data\Image\" + path_AddFile_name);
+                MessageBox.Show(tb_AddParts_Name.Text + "\n已儲存成功。", "儲存成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                pb_ToolWear_Click(null, null);
+            }
+            catch{
+                MessageBox.Show("在儲存時發生不可測意外。\n\nThis problem is from btn_AddParts_save.", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion
@@ -1759,7 +1817,13 @@ namespace ToolWear{
             EZNcCom = null;
             return 0;
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
         #endregion
+
         #endregion
         #region 例外事件
         private void CatchLog(int code,string detail){
