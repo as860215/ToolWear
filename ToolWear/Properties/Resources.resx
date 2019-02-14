@@ -220,4 +220,7 @@
   <data name="tc_btn_tc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tc_btn_tc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="wdps_icon_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wdps_icon_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

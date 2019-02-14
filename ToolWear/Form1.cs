@@ -837,6 +837,8 @@ namespace ToolWear{
             PictureBox[] pb_Parts = new PictureBox[8] { pb_SelectParts_01, pb_SelectParts_02, pb_SelectParts_03, pb_SelectParts_04,
                                                         pb_SelectParts_05, pb_SelectParts_06, pb_SelectParts_07, pb_SelectParts_08};
             StreamReader sr = new StreamReader(path + @"\data\parts.cp");
+            //先隱藏全部panel
+            for (int i = 0; i < panel_Parts.Length; i++) panel_Parts[i].Visible = false;
             int read_count = 0;
             while (!sr.EndOfStream){
                 //tem讀取範例：名稱,C:\Users\user\Desktop\Campro\ToolWear\ToolWear\bin\Debug\data\Image\IMG_3494.JPG
@@ -890,8 +892,36 @@ namespace ToolWear{
         //磨耗偵測 > 選擇工件 > 移除工件
         private void btn_SelectParts_remove_Click(object sender,EventArgs e){
             Button btn_Select = (Button)sender;
-
+            Label[] lb_SelectParts = new Label[8] { lb_SelectParts_01 , lb_SelectParts_02 , lb_SelectParts_03 , lb_SelectParts_04 ,
+                                                    lb_SelectParts_05 , lb_SelectParts_06 , lb_SelectParts_07 , lb_SelectParts_08};
+            //因為btn_Select.Name會得到btn_SelectParts_remove??，所以在切除底線後再對remove??進行切割取得數字
+            int Select_count = int.Parse(btn_Select.Name.Split('_')[2].Split('e')[2]);
+            string Parts_Name = lb_SelectParts[Select_count - 1].Text;
+            DialogResult dialogResult = MessageBox.Show("您即將刪除 " + Parts_Name + "此項工件。\n此操作將不可復原，請檢查後再按下確定鍵。", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            //暫存讀取的字串資料
+            List<string> tem_Read = new List<string>();
+            StreamReader sr = new StreamReader(path + @"\data\parts.cp");
+            while (!sr.EndOfStream){
+                string tem = sr.ReadLine();
+                //如果資料檔內的工件名稱 = 本次要刪除的名稱 > 不暫存此資料(意即等等要重新改寫cp檔的時候會忽略之)
+                if (!tem.Split(',')[0].Equals(Parts_Name)) tem_Read.Add(tem);
+            }
+            sr.Close();
+            sr.Close();
+            StreamWriter sw = new StreamWriter(path + @"\data\parts.cp");
+            for(int i = 0; i < tem_Read.Count; i++)
+                    sw.WriteLine(tem_Read[i]);
+            sw.Close();
+            sw.Dispose();
+            //初始化該項目的pictureBox和TextBox，避免不必要的例外事件發生
+            PictureBox[] pb_SelectParts = new PictureBox[8] { pb_SelectParts_01, pb_SelectParts_02, pb_SelectParts_03, pb_SelectParts_04,
+                                                              pb_SelectParts_05, pb_SelectParts_06, pb_SelectParts_07, pb_SelectParts_08};
+            lb_SelectParts[Select_count - 1].Text = "工件A";
+            pb_SelectParts[Select_count - 1].BackgroundImage = ToolWear.Properties.Resources.wd_img_blank;
+            //重新整理頁面
             pb_ToolWear_Click(null, null);
+            MessageBox.Show("工件刪除成功！", "刪除訊息", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         //磨耗偵測 > 選擇工件 > select按鈕
         private void btn_SelectParts(object sender,EventArgs e){
@@ -960,6 +990,9 @@ namespace ToolWear{
                 sw.Close();
                 sw.Dispose();
                 MessageBox.Show(tb_AddParts_Name.Text + "\n已儲存成功。", "儲存成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tb_AddParts_Name.Text = "";
+                tb_AddParts_Path.Text = "";
+                pb_AddParts.BackgroundImage = ToolWear.Properties.Resources.wdpsn_img_blank;
                 pb_ToolWear_Click(null, null);
             }
             catch(Exception ex){
