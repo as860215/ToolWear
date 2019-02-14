@@ -231,6 +231,9 @@
   <ItemGroup>
     <None Include="Resources\wdpsn_img_blank.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_3494.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets" Condition="Exists('..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

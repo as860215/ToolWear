@@ -118,38 +118,71 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tc_s_icon_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_s_icon_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wd_btn_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wd_btn_chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tc_btn_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_btn_stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tc_s_icon_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_s_icon_new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tc_menubtn_shutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_menubtn_shutdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tc_s_icon_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_s_icon_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tc_btn_axiabtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_btn_axiabtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wd_t_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wd_t_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tc_menubtn_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tc_menubtn_blank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tc_btn_tc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_btn_tc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wd_s_btn_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wd_s_btn_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tc_menubtn_camprologo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_menubtn_camprologo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wd_t_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wd_t_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tc_btn_ply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_btn_ply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wd_l_btn_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wd_l_btn_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tc_btn_axiabtn_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_btn_axiabtn_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wd_btn_threshold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wd_btn_threshold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wdpsn_img_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wdpsn_img_blank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wd_img_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wd_img_blank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wd_s_btn_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wd_s_btn_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tc_btn_setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_btn_setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tc_s_icon_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_s_icon_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menubtn_health" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menubtn_health.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tc_menubtn_shutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_menubtn_shutdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wd_btn_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wd_btn_chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wdps_btn_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wdps_btn_select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wdpsn_btn_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wdpsn_btn_search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tc_btn_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_btn_stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tc_btn_axiabtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_btn_axiabtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tc_btn_wd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tc_btn_wd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,67 +190,34 @@
   <data name="menubtn_learn_default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menubtn_learn_default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tc_menubtn_camprologo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_menubtn_camprologo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tc_menubtn_setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_menubtn_setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menubtn_health" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menubtn_health.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tc_btn_ply" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_btn_ply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wd_s_btn_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wd_s_btn_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menubtn_th" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menubtn_th.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tc_btn_setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_btn_setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wd_btn_threshold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wd_btn_threshold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wd_img_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wd_img_blank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wd_l_learn_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wd_l_learn_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wd_t_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wd_t_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wd_t_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wd_t_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_start_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_start_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tc_s_icon_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_s_icon_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_stop_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_stop_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tc_btn_axiabtn_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tc_btn_axiabtn_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wd_l_learn_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wd_l_learn_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wdps_btn_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wdps_btn_select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_start_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_start_selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wd_l_btn_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wd_l_btn_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tc_s_icon_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_s_icon_new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wdpsn_btn_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wdpsn_btn_search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wdpsn_img_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wdpsn_img_blank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menubtn_th" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menubtn_th.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tc_menubtn_setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_menubtn_setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wd_s_btn_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wd_s_btn_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tc_btn_tc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc_btn_tc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -232,6 +232,28 @@ namespace ToolWear{
         private void pb_ToolWear_Click(object sender,EventArgs e){
             panel_ToolWear.Visible = false;
             panel_SelectParts.Visible = true;
+            Panel[] panel_Parts = new Panel[8] { panel_SelectParts_01, panel_SelectParts_02, panel_SelectParts_03, panel_SelectParts_04,
+                                                 panel_SelectParts_05, panel_SelectParts_06, panel_SelectParts_07, panel_SelectParts_08 };
+            Label[] lb_Parts = new Label[8] { lb_SelectParts_01, lb_SelectParts_02, lb_SelectParts_03, lb_SelectParts_04,
+                                              lb_SelectParts_05, lb_SelectParts_06, lb_SelectParts_07, lb_SelectParts_08 };
+            PictureBox[] pb_Parts = new PictureBox[8] { pb_SelectParts_01, pb_SelectParts_02, pb_SelectParts_03, pb_SelectParts_04,
+                                                        pb_SelectParts_05, pb_SelectParts_06, pb_SelectParts_07, pb_SelectParts_08};
+            StreamReader sr = new StreamReader(path + @"\data\parts.cp");
+            int read_count = 0;
+            while (!sr.EndOfStream){
+                //tem讀取範例：名稱,C:\Users\user\Desktop\Campro\ToolWear\ToolWear\bin\Debug\data\Image\IMG_3494.JPG
+                string tem = sr.ReadLine();
+                try{
+                    panel_Parts[read_count].Visible = true;
+                    lb_Parts[read_count].Text = tem.Split(',')[0];
+                    pb_Parts[read_count].BackgroundImage = Image.FromFile(tem.Split(',')[1]);
+                    read_count++;
+                    if (read_count >= 8) break;
+                }
+                catch {
+                    MessageBox.Show("讀取工件資料時出現不可測意外。\n可能是設定檔或是圖片檔遺失，請重新檢查。", "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
         //磨耗偵測 > 選擇工件 > 新增工件
         private void btn_SelectParts_Add_Click(object sender,EventArgs e){
@@ -1817,13 +1839,7 @@ namespace ToolWear{
             EZNcCom = null;
             return 0;
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         #endregion
-
         #endregion
         #region 例外事件
         private void CatchLog(int code,string detail){
