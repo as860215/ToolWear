@@ -88,6 +88,7 @@ namespace ToolWear{
             panel_ATCsetting.Visible = false;
             panel_Health.Visible = false;
             panel_SelectParts.Visible = false;
+            panel_AddParts.Visible = false;
             //關閉所有主選單副組件
             btn_Learn.Enabled = false;
             //重置所有主選單副組件顯示圖片
