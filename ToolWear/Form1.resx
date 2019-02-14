@@ -364,7 +364,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ViewModule.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -784,7 +784,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2242,7 +2242,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="btn_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3865,7 +3865,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_save.Name" xml:space="preserve">
     <value>btn_Threshold_save</value>
@@ -5122,7 +5122,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="btn_CompensateSave.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -6633,6 +6633,30 @@
   <data name="&gt;&gt;tb_Compensate_07.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="tb_Compensate_06.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="tb_Compensate_06.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 268</value>
+  </data>
+  <data name="tb_Compensate_06.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 43</value>
+  </data>
+  <data name="tb_Compensate_06.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_06.Name" xml:space="preserve">
+    <value>tb_Compensate_06</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_06.Parent" xml:space="preserve">
+    <value>panel_Compensate</value>
+  </data>
+  <data name="&gt;&gt;tb_Compensate_06.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="tb_Compensate_05.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
   </data>
@@ -7087,7 +7111,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="btn_Thermal_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -8779,7 +8803,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="pb_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -9790,7 +9814,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>13</value>
   </data>
   <data name="tb_logTitle_04.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.2000008pt</value>
@@ -10063,7 +10087,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btn_setting_save.Name" xml:space="preserve">
     <value>btn_setting_save</value>
@@ -10486,7 +10510,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -10804,7 +10828,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;btn_ATCsetting_save.Name" xml:space="preserve">
     <value>btn_ATCsetting_save</value>
@@ -11848,34 +11872,178 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <metadata name="timer_temperature.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="tb_Compensate_06.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
+  <data name="panel_SelectParts_08.Location" type="System.Drawing.Point, System.Drawing">
+    <value>697, 350</value>
   </data>
-  <data name="tb_Compensate_06.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 268</value>
+  <data name="panel_SelectParts_08.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 245</value>
   </data>
-  <data name="tb_Compensate_06.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 43</value>
+  <data name="panel_SelectParts_08.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
-  <data name="tb_Compensate_06.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
+  <data name="&gt;&gt;panel_SelectParts_08.Name" xml:space="preserve">
+    <value>panel_SelectParts_08</value>
   </data>
-  <data name="&gt;&gt;tb_Compensate_06.Name" xml:space="preserve">
-    <value>tb_Compensate_06</value>
+  <data name="&gt;&gt;panel_SelectParts_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tb_Compensate_06.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;panel_SelectParts_08.Parent" xml:space="preserve">
+    <value>panel_SelectParts</value>
   </data>
-  <data name="&gt;&gt;tb_Compensate_06.Parent" xml:space="preserve">
-    <value>panel_Compensate</value>
+  <data name="&gt;&gt;panel_SelectParts_08.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;tb_Compensate_06.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="panel_SelectParts_04.Location" type="System.Drawing.Point, System.Drawing">
+    <value>697, 93</value>
+  </data>
+  <data name="panel_SelectParts_04.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 245</value>
+  </data>
+  <data name="panel_SelectParts_04.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_04.Name" xml:space="preserve">
+    <value>panel_SelectParts_04</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_04.Parent" xml:space="preserve">
+    <value>panel_SelectParts</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_04.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_SelectParts_07.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 350</value>
+  </data>
+  <data name="panel_SelectParts_07.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 245</value>
+  </data>
+  <data name="panel_SelectParts_07.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_07.Name" xml:space="preserve">
+    <value>panel_SelectParts_07</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_07.Parent" xml:space="preserve">
+    <value>panel_SelectParts</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_07.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_SelectParts_03.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 93</value>
+  </data>
+  <data name="panel_SelectParts_03.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 245</value>
+  </data>
+  <data name="panel_SelectParts_03.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_03.Name" xml:space="preserve">
+    <value>panel_SelectParts_03</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_03.Parent" xml:space="preserve">
+    <value>panel_SelectParts</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_03.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel_SelectParts_06.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 350</value>
+  </data>
+  <data name="panel_SelectParts_06.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 245</value>
+  </data>
+  <data name="panel_SelectParts_06.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_06.Name" xml:space="preserve">
+    <value>panel_SelectParts_06</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_06.Parent" xml:space="preserve">
+    <value>panel_SelectParts</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_06.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panel_SelectParts_02.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 93</value>
+  </data>
+  <data name="panel_SelectParts_02.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 245</value>
+  </data>
+  <data name="panel_SelectParts_02.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_02.Name" xml:space="preserve">
+    <value>panel_SelectParts_02</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_02.Parent" xml:space="preserve">
+    <value>panel_SelectParts</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_02.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel_SelectParts_05.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 350</value>
+  </data>
+  <data name="panel_SelectParts_05.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 245</value>
+  </data>
+  <data name="panel_SelectParts_05.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_05.Name" xml:space="preserve">
+    <value>panel_SelectParts_05</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_05.Parent" xml:space="preserve">
+    <value>panel_SelectParts</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_05.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel_SelectParts_01.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 93</value>
+  </data>
+  <data name="panel_SelectParts_01.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 245</value>
+  </data>
+  <data name="panel_SelectParts_01.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_01.Name" xml:space="preserve">
+    <value>panel_SelectParts_01</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_01.Parent" xml:space="preserve">
+    <value>panel_SelectParts</value>
+  </data>
+  <data name="&gt;&gt;panel_SelectParts_01.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="btn_SelectParts_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -11905,7 +12073,7 @@
     <value>panel_SelectParts</value>
   </data>
   <data name="&gt;&gt;btn_SelectParts_Back.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>8</value>
   </data>
   <data name="label27.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -11938,7 +12106,7 @@
     <value>panel_SelectParts</value>
   </data>
   <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>9</value>
   </data>
   <data name="panel_SelectParts.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 9</value>
@@ -11959,7 +12127,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_SelectParts.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -11971,7 +12139,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1266, 786</value>
+    <value>1270, 790</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>

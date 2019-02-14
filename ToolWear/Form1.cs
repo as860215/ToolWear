@@ -291,6 +291,7 @@ namespace ToolWear{
         }
         #endregion
         #region 各項功能按鈕
+        #region FFT與原始數據折線圖轉換
         //FFT和原始數據折線圖轉換
         private bool ToolWearChange_FFT = false;    //紀錄現在折線圖顯示何者圖形
         private void btn_ToolWear_Change_Click(object sender, EventArgs e){
@@ -305,6 +306,8 @@ namespace ToolWear{
                 ToolWearChange_FFT = false;
             }
         }
+        #endregion
+        #region 磨耗偵測
         //開始偵測
         private void btn_ToolWear_Start_Click(object sender, EventArgs e){
             btn_ToolWear_Start.Enabled = false;
@@ -320,6 +323,8 @@ namespace ToolWear{
             btn_ToolWear_Start.Enabled = true;
             btn_ToolWear_Stop.Enabled = false;
         }
+        #endregion
+        #region 學習模式
         //模型學習開始
         private void btn_Learn_Start_Click(object sender, EventArgs e){
             btn_Learn_Start.Enabled = false;
@@ -349,6 +354,8 @@ namespace ToolWear{
             btn_Learn.Enabled = true;
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
         }
+        #endregion
+        #region 模型預覽
         //模型預覽
         private void btn_ToolWearSetting_ViewModule_Click(object sender, EventArgs e){
             panel_ToolWearSetting.Visible = false;
@@ -403,23 +410,6 @@ namespace ToolWear{
             }
             #endregion
         }
-        //新增工件
-        private void btn_ToolWearSetting_Add_Click(object sender, EventArgs e){
-            //if (string.IsNullOrEmpty(tb_ToolWearSetting_Add.Text)){
-            //    MessageBox.Show("請輸入新工件的名稱！", "輸入格式錯誤", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            //    return;
-            //}
-            //FileStream File_module = File.Open(path + @"\data\workname.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-            //StreamWriter sw = new StreamWriter(File_module);
-            //sw.WriteLine(tb_ToolWearSetting_Add.Text);
-            //sw.Close();
-            //sw.Dispose();
-
-            //MessageBox.Show("儲存成功。","",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            //tb_ToolWearSetting_Add.Text = "";
-            //btn_ToolWear_Setting_Click(null, null);
-            //cb_ToolWearSetting_WorkName.SelectedIndex = cb_ToolWearSetting_WorkName.Items.Count - 1;
-        }
         //重置縮放
         private void btn_ViewModule_ChartReset_Click(object sender, EventArgs e){
             chart_Blade.ChartAreas[0].AxisX.ScaleView.ZoomReset(0);
@@ -441,6 +431,8 @@ namespace ToolWear{
                 chart_Blade.Visible = false;
             }
         }
+        #endregion
+        #region 刃數比對
         //刃數比對
         private void btn_Blade_Click(object sender, EventArgs e){
             chart_Blade.Visible = true;
@@ -488,6 +480,7 @@ namespace ToolWear{
             }
             label5.Text = (sum / count).ToString();
         }
+        #endregion
         #region 熱補償
         //現在選擇的熱補償軸向代號
         int now_Thermal = 0;
@@ -641,7 +634,9 @@ namespace ToolWear{
 
             //軸向啟動
             Thermal_single++;
-            
+
+            //Log推播
+            Write_Log("系統", "已啟動熱補償偵測 ： " + pre_Thermal.Text + " 軸。");
         }
         //熱補償 > 停止
         private void btn_Thermal_stop_Click(object sender, EventArgs e){
@@ -657,6 +652,8 @@ namespace ToolWear{
                 timer_temperature.Enabled = false;
             else if(Thermal_single > 0)
                 Thermal_SelectAnother = true;
+            //Log推播
+            Write_Log("系統", "已關閉熱補償偵測 ： " + pre_Thermal.Text + " 軸。");
         }
         //熱補償 > 顯示折線圖
         //delegate void ChartDataDelegate();
@@ -669,6 +666,11 @@ namespace ToolWear{
 
         //    }
         //}
+        //判定是否產生Log訊息
+        private void Thermal_Log(float temperature, Label WriteWhere){
+            if (temperature > 25.85f) Write_Log("緊急", WriteWhere.Text + "軸目前溫度已上升至 " + temperature + "℃");
+            else if (temperature > 25.7f) Write_Log("警告", WriteWhere.Text + "軸目前溫度已上升至 " + temperature + "℃");
+        }
         //====假資料專用變數====
         bool[] Thermal_bool = new bool[20]; //該軸向是否開啟
         int[] Thermal_count = new int[20];
@@ -702,8 +704,9 @@ namespace ToolWear{
                     Thermal_count[i]++;
                     Random ran = new Random(Guid.NewGuid().GetHashCode());
                     Thermal_temperature[i] = float.Parse((25 + ((float)ran.Next(-100, 100) * 0.01f)).ToString("00.00"));
-                    //if (Thermal_temperature[i] > 25.9f) Write_Log("緊急", lb_Thermal_Now.Text + "軸目前溫度已上升至 " + Thermal_temperature[i] + "℃");
-                    //else if (Thermal_temperature[i] > 25.7f) Write_Log("警告", lb_Thermal_Now.Text + "軸目前溫度已上升至 " + Thermal_temperature[i] + "℃");
+                    //寫log
+                    Thermal_Log(Thermal_temperature[i], lb_Thermal_Now);
+
                     List<string> tem_read = new List<string>();
                     try{
                         StreamReader sr_axial = new StreamReader(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
@@ -764,6 +767,9 @@ namespace ToolWear{
                             Thermal_count[i]++;
                             Random ran = new Random(Guid.NewGuid().GetHashCode());
                             Thermal_temperature[i] = float.Parse((25 + ((float)ran.Next(-100, 100) * 0.01f)).ToString("00.00"));
+                            //寫log
+                            Thermal_Log(Thermal_temperature[i], lb_Thermal_M2_Now);
+
                             List<string> tem_read = new List<string>();
                             try{
                                 StreamReader sr_axial = new StreamReader(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
@@ -1491,10 +1497,10 @@ namespace ToolWear{
         }
         private List<string> tem_DT = new List<string>();
         private List<string> tem_Match_DT = new List<string>();
-        private int Match_count = 1;
-        private double range = 3; //可接受範圍 (倍率)
-        private int match_1 = 0;    //於可接受範圍內的點位數量
-        private int match_Read1 = 0; //比對數值讀取到的筆數
+        //private int Match_count = 1;
+        //private double range = 3; //可接受範圍 (倍率)
+        //private int match_1 = 0;    //於可接受範圍內的點位數量
+        //private int match_Read1 = 0; //比對數值讀取到的筆數
         private void dataToDataTable(AnalogWaveform<double>[] sourceArray, ref DataTable dataTable){
             // Iterate over channels
             int currentLineIndex = 0;
@@ -1610,7 +1616,7 @@ namespace ToolWear{
         #endregion
         #region 傅立葉變換
         private List<string> List_FFT_Max = new List<string>();
-        private int FFT_Length = 2000;
+        //private int FFT_Length = 2000;
         private void FFT_Reset(){
             if (List_FFT_Max.Count != 0) return;
             for (int i = 0; i < samplesPerChannelNumeric_base / 2; i++){
@@ -1787,14 +1793,20 @@ namespace ToolWear{
         //讀取帶入日期的Log事件表
         private List<string> Read_Log(string date){
             List<string> tem_read = new List<string>();
-            StreamReader sr_log = new StreamReader(path + @"\data\Log\" + date + ".cp");
             try{
+                StreamReader sr_log = new StreamReader(path + @"\data\Log\" + date + ".cp");
                 while (!sr_log.EndOfStream){
                     tem_read.Add(sr_log.ReadLine());
                 }
+                sr_log.Close();
+                sr_log.Dispose();
             }
             catch {
-                MessageBox.Show("Log檔案讀取失敗", "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //會產生例外表示沒有檔案，直接生成一個
+                StreamWriter sw = new StreamWriter(path + @"\data\Log\" + DateTime.Now.ToString("yyyyMMdd") + ".cp");
+                sw.Write("");
+                sw.Close();
+                sw.Dispose();
             }
             //顯示LOG資料
             try{
@@ -1819,8 +1831,6 @@ namespace ToolWear{
             catch {
                 MessageBox.Show("Log顯示錯誤", "顯示錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            sr_log.Close();
-            sr_log.Dispose();
             return tem_read;
         }
         //視窗底部Log TextBox事件
