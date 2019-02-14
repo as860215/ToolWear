@@ -38,25 +38,31 @@ namespace ToolWear{
             chart_Threshold.Legends.Clear();
             chart_ToolWear.Legends.Clear();
             chart_FFT.Legends.Clear();
-            chart_LeartFFT.Legends.Clear();
+            chart_LearnFFT.Legends.Clear();
             chart_Thermal_M1.Legends.Clear();
             chart_Thermal_M2.Legends.Clear();
+            chart_warring_1.Legends.Clear();
+            chart_warring_2.Legends.Clear();
             //折線圖上下限與x軸最大值預覽
             //chart_FFT.Series[2].Points.AddXY(1, -0.5);
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_Threshold.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_ToolWear.Series[1].Points.AddXY(1, Chart_PointMax);
+            chart_warring_1.Series[1].Points.AddXY(1, Chart_PointMax);
+            chart_warring_2.Series[1].Points.AddXY(1, Chart_PointMax);
             //震動偵測折線圖
             for (int i = 0; i < Chart_max; i++){
                 chart_Learn.Series[2].Points.AddXY(i + 1, Chart_PointMin);
                 chart_Threshold.Series[2].Points.AddXY(i + 1, Chart_PointMin);
                 chart_ToolWear.Series[2].Points.AddXY(i + 1, Chart_PointMin);
+                chart_warring_1.Series[1].Points.AddXY(i + 1, Chart_PointMin);
+                chart_warring_2.Series[1].Points.AddXY(i + 1, Chart_PointMin);
             }
             //FFT折線圖
             for (int i = 0; i < 100; i++)
             {
                 chart_FFT.Series[1].Points.AddXY(i + 1, 0.1);
-                chart_LeartFFT.Series[1].Points.AddXY(i + 1, 0.1);
+                chart_LearnFFT.Series[1].Points.AddXY(i + 1, 0.1);
             }
             //溫度折線圖
             for (int i = 1; i <= 30; i++){
@@ -293,13 +299,38 @@ namespace ToolWear{
         }
         //主選單 > 磨耗偵測 > 學習模式
         private void btn_Learn_Click(object sender, EventArgs e){
-            panel_Dissable();
-            panel_Learn.Visible = true;
-            btn_Learn.BackgroundImage = ToolWear.Properties.Resources.wd_l_learn_selected;
+            //目前在偵測模式
+            if(panel_ToolWear.Visible == true){
+                panel_Dissable();
+                panel_Learn.Visible = true;
+                btn_Learn.BackgroundImage = ToolWear.Properties.Resources.wd_l_learn_selected;
+                btn_Learn.Enabled = true;
+            }
+            //目前再學習模式
+            else if (panel_Learn.Visible == true){
+                panel_Dissable();
+                panel_ToolWear.Visible = true;
+                btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
+                btn_Learn.Enabled = true;
+            }
         }
         #endregion
         #region 各項功能按鈕
-        #region FFT與原始數據折線圖轉換
+        #region 磨耗偵測
+        //開始偵測
+        private void btn_ToolWear_Start_Click(object sender, EventArgs e){
+            btn_ToolWear_Start.Enabled = false;
+            btn_ToolWear_Stop.Enabled = true;
+            chart_ToolWear.Series[0].Points.Clear();
+            //timer1.Enabled = true;
+            DAQInitialize("Match");
+        }
+        //停止偵測
+        private void btn_ToolWear_Stop_Click(object sender, EventArgs e){
+            TaskStop();
+            btn_ToolWear_Start.Enabled = true;
+            btn_ToolWear_Stop.Enabled = false;
+        }
         //FFT和原始數據折線圖轉換
         private bool ToolWearChange_FFT = false;    //紀錄現在折線圖顯示何者圖形
         private void btn_ToolWear_Change_Click(object sender, EventArgs e){
@@ -314,22 +345,15 @@ namespace ToolWear{
                 ToolWearChange_FFT = false;
             }
         }
-        #endregion
-        #region 磨耗偵測
-        //開始偵測
-        private void btn_ToolWear_Start_Click(object sender, EventArgs e){
-            btn_ToolWear_Start.Enabled = false;
-            btn_ToolWear_Stop.Enabled = true;
-            chart_ToolWear.Series[0].Points.Clear();
-            //timer1.Enabled = true;
-            DAQInitialize("Match");
-            
+        //顯示臨界值
+        private void btn_ToolWear_Threshold_Click(object sender,EventArgs e){
+            panel_Dissable();
+            panel_Threshold.Visible = true;
         }
-        //停止偵測
-        private void btn_ToolWear_Stop_Click(object sender, EventArgs e){
-            TaskStop();
-            btn_ToolWear_Start.Enabled = true;
-            btn_ToolWear_Stop.Enabled = false;
+        //磨耗偵測 > 設定 > DAQ訊號重新整理
+        private void btn_ToolWearSetting_Research_Click(object sender,EventArgs e){
+            DAQPhysicalChannels();
+            btn_ToolWearSetting_Choose(pre_ToolWearSetting, null);
         }
         #endregion
         #region 學習模式
@@ -362,6 +386,9 @@ namespace ToolWear{
             btn_Learn.Enabled = true;
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
         }
+        #endregion
+        #region 臨界值設定
+
         #endregion
         #region 模型預覽
         //模型預覽
@@ -548,17 +575,19 @@ namespace ToolWear{
                 panel_Thermal_single.Visible = true;
                 panel_Thermal_Mutile.Visible = false;
                 Thermal_SelectAnother = false;
-                chart_Thermal.Series[0].Points.Clear();
-                chart_Thermal.Series[1].Points.Clear();
-                chart_Thermal_M1.Series[0].Points.Clear();
-                chart_Thermal_M1.Series[1].Points.Clear();
-                for (int i = 1; i <= 30; i++){
-                    chart_Thermal.Series[1].Points.AddXY(i, 25);
-                    chart_Thermal_M1.Series[1].Points.AddXY(i, 25);
+                if(Thermal_single == 0){
+                    chart_Thermal.Series[0].Points.Clear();
+                    chart_Thermal.Series[1].Points.Clear();
+                    chart_Thermal_M1.Series[0].Points.Clear();
+                    chart_Thermal_M1.Series[1].Points.Clear();
+                    for (int i = 1; i <= 30; i++){
+                        chart_Thermal.Series[1].Points.AddXY(i, 25);
+                        chart_Thermal_M1.Series[1].Points.AddXY(i, 25);
+                    }
                 }
             }
         }
-        //熱補償 > 取得此軸向的補償資料
+        //熱補償 > 取得此軸向的補償資料(待)
         private void Thermal_GetCompensate(int axial){
             //取得該軸向的次序
             //StreamReader sr_get = new StreamReader(path + @"\data\compensate.cp");
@@ -934,7 +963,7 @@ namespace ToolWear{
             DialogResult dialogResult = MessageBox.Show("確定要選擇 " + lb_SelectParts[Select_count - 1].Text + " 這項工件嗎？", "選擇工件", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
             //修改磨耗偵測的工件名稱和圖片
-            lb_ToolWear_Status.Text = lb_SelectParts[Select_count - 1].Text;
+            lb_ToolWear_Parts.Text = lb_SelectParts[Select_count - 1].Text;
             pb_ToolWear.BackgroundImage = pb_SelectParts[Select_count - 1].BackgroundImage;
             panel_Dissable();
             panel_ToolWear.Visible = true;
@@ -1035,8 +1064,22 @@ namespace ToolWear{
                         cb_ToolWearSetting_accelerometer.SelectedIndex = Accelerometer;
                         int Axial = int.Parse(tem.Split(',')[2]);
                         cb_ToolWearSetting_Axial.SelectedIndex = Axial;
-                        int Channel = int.Parse(tem.Split(',')[3]);
-                        physicalChannelComboBox.SelectedIndex = Channel;
+                        string tem_Channel = tem.Split(',')[3];
+                        for(int j = 0; j < physicalChannelComboBox.Items.Count; j++){
+                            physicalChannelComboBox.SelectedIndex = j;
+                            if (physicalChannelComboBox.Text.Equals(tem_Channel)){
+                                physicalChannelComboBox.SelectedIndex = j;
+                                break;
+                            }
+                            //如果j已搜尋到最後都找不到匹配的輸入(代表原先設定的訊號不見了)
+                            if(j == physicalChannelComboBox.Items.Count - 1){
+                                physicalChannelComboBox.SelectedIndex = 0;
+                                MessageBox.Show("搜尋不到此軸向原先設定的訊號輸入，請確認輸入訊號接頭是否脫落。\n重新連接設備並使用重新整理按鈕搜尋訊號輸入。" +
+                                    "\n若依然找不到訊號輸入，請重新選擇並儲存。", "找不到訊號輸入", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                        //int Channel = int.Parse(tem.Split(',')[3]);
+                        //physicalChannelComboBox.SelectedIndex = Channel;
                     }
                 }
             }
@@ -1051,7 +1094,7 @@ namespace ToolWear{
             DialogResult dialogResult = MessageBox.Show("確定儲存？", "存檔訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
             string tem_s = tb_ToolWearSetting_name.Text + "," + cb_ToolWearSetting_accelerometer.SelectedIndex +
-               "," + cb_ToolWearSetting_Axial.SelectedIndex + "," + physicalChannelComboBox.SelectedIndex;
+               "," + cb_ToolWearSetting_Axial.SelectedIndex + "," + physicalChannelComboBox.Text;
             try{
                 ToolWearSetting_SW(tem_s);
                 MessageBox.Show("儲存成功！");
@@ -1545,6 +1588,8 @@ namespace ToolWear{
         private int average = 1;        //幾個取樣數顯示成一個點位(必須可整除取樣數)
         private double minimumValueNumeric = -5, maximumValueNumeric = 5, sensitivityNumeric = 10.01, excitationValueNumeric = 0.002;
         private void DAQPhysicalChannels(){
+            physicalChannelComboBox.Items.Clear();
+            physicalChannelComboBox.Items.Add("請選擇訊號輸入");
             //DAQ實體訊號輸入端點讀取
             dataTable = new DataTable();
             physicalChannelComboBox.Items.AddRange(DaqSystem.Local.GetPhysicalChannels(PhysicalChannelTypes.AI, PhysicalChannelAccess.External));
@@ -1616,10 +1661,17 @@ namespace ToolWear{
                 catch (DaqException exception)
                 {
                     // Display Errors
-                    MessageBox.Show(exception.Message);
-                    TaskStop();
-                    //自我修復
-                    DAQInitialize(DAQ_Now);
+                    if(exception.Error == -200431 || exception.Error == -200220){
+                        MessageBox.Show("無法初始化選取的訊號輸入，請確認設定檔內的訊號輸入是否正確，\n或是檢查是否有讀取到原先所設置的訊號。", "偵測啟動失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        btn_ToolWear_Stop_Click(null, null);
+                    }
+                    else
+                    {
+                        MessageBox.Show(exception.Message);
+                        TaskStop();
+                        //嘗試自我修復
+                        DAQInitialize(DAQ_Now);
+                    }
                 }
             }
         }
@@ -1815,9 +1867,9 @@ namespace ToolWear{
             //
 
             //直接進行FFT轉換
-            dataTable.Rows.RemoveAt(dataTable.Rows.Count - 1);
-            var data = new DoubleVector(dataTable);
-            dataTable.Rows.Add();
+            //dataTable.Rows.RemoveAt(dataTable.Rows.Count - 1);
+            //var data = new DoubleVector(dataTable);
+            //dataTable.Rows.Add();
 
             // Compute the FFT
             // This will create a complex conjugate symmetric packed result.
@@ -1825,7 +1877,7 @@ namespace ToolWear{
             //DoubleVector fftresult = fft100.FFT(data);
             try{
                 chart_FFT.Series[0].Points.Clear();
-                chart_LeartFFT.Series[0].Points.Clear();
+                chart_LearnFFT.Series[0].Points.Clear();
             }
             catch {
                 return;
@@ -1842,7 +1894,7 @@ namespace ToolWear{
                 double hz = rateNumeric_base / samplesPerChannelNumeric_base;
                 //if (mag < 0.5) mag *= 0.2f;
                 if (mode.Equals("Match")) chart_FFT.Series[0].Points.AddXY(hz * (i + 1), mag);
-                else if (mode.Equals("Learn")) chart_LeartFFT.Series[0].Points.AddXY(hz * (i + 1), mag);
+                else if (mode.Equals("Learn")) chart_LearnFFT.Series[0].Points.AddXY(hz * (i + 1), mag);
                 //chart_FFT.Series[0].Points.AddXY(i + 1, fftresult.DataBlock.Data[i] / 100);
                 //找尋最大值
                 if (mag > double.Parse(List_FFT_Max[i]))
@@ -1923,7 +1975,10 @@ namespace ToolWear{
             EZNcCom = null;
             return "";
         }
-
+        /// <summary>
+        /// 取得目前轉速
+        /// </summary>
+        /// <returns>轉速(RPM)</returns>
         private double Mitsubishi_GetFeedSpeed(){
             Mitsubishi_Initialization();
             int lFeedType = 0;
