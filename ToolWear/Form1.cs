@@ -230,30 +230,10 @@ namespace ToolWear{
         }
         //磨耗偵測 > 選擇工件
         private void pb_ToolWear_Click(object sender,EventArgs e){
-            panel_ToolWear.Visible = false;
+            panel_Dissable();
             panel_SelectParts.Visible = true;
-            Panel[] panel_Parts = new Panel[8] { panel_SelectParts_01, panel_SelectParts_02, panel_SelectParts_03, panel_SelectParts_04,
-                                                 panel_SelectParts_05, panel_SelectParts_06, panel_SelectParts_07, panel_SelectParts_08 };
-            Label[] lb_Parts = new Label[8] { lb_SelectParts_01, lb_SelectParts_02, lb_SelectParts_03, lb_SelectParts_04,
-                                              lb_SelectParts_05, lb_SelectParts_06, lb_SelectParts_07, lb_SelectParts_08 };
-            PictureBox[] pb_Parts = new PictureBox[8] { pb_SelectParts_01, pb_SelectParts_02, pb_SelectParts_03, pb_SelectParts_04,
-                                                        pb_SelectParts_05, pb_SelectParts_06, pb_SelectParts_07, pb_SelectParts_08};
-            StreamReader sr = new StreamReader(path + @"\data\parts.cp");
-            int read_count = 0;
-            while (!sr.EndOfStream){
-                //tem讀取範例：名稱,C:\Users\user\Desktop\Campro\ToolWear\ToolWear\bin\Debug\data\Image\IMG_3494.JPG
-                string tem = sr.ReadLine();
-                try{
-                    panel_Parts[read_count].Visible = true;
-                    lb_Parts[read_count].Text = tem.Split(',')[0];
-                    pb_Parts[read_count].BackgroundImage = Image.FromFile(tem.Split(',')[1]);
-                    read_count++;
-                    if (read_count >= 8) break;
-                }
-                catch {
-                    MessageBox.Show("讀取工件資料時出現不可測意外。\n可能是設定檔或是圖片檔遺失，請重新檢查。", "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            lb_SelectParts_Page.Text = "1";
+            SelectParts_LoadData();
         }
         //磨耗偵測 > 選擇工件 > 新增工件
         private void btn_SelectParts_Add_Click(object sender,EventArgs e){
@@ -848,6 +828,87 @@ namespace ToolWear{
         }
         #endregion
         #region 選擇工件/新增工件
+        //磨耗偵測 > 選擇工件 > 讀取資料
+        private void SelectParts_LoadData(){
+            Panel[] panel_Parts = new Panel[8] { panel_SelectParts_01, panel_SelectParts_02, panel_SelectParts_03, panel_SelectParts_04,
+                                                 panel_SelectParts_05, panel_SelectParts_06, panel_SelectParts_07, panel_SelectParts_08 };
+            Label[] lb_Parts = new Label[8] { lb_SelectParts_01, lb_SelectParts_02, lb_SelectParts_03, lb_SelectParts_04,
+                                              lb_SelectParts_05, lb_SelectParts_06, lb_SelectParts_07, lb_SelectParts_08 };
+            PictureBox[] pb_Parts = new PictureBox[8] { pb_SelectParts_01, pb_SelectParts_02, pb_SelectParts_03, pb_SelectParts_04,
+                                                        pb_SelectParts_05, pb_SelectParts_06, pb_SelectParts_07, pb_SelectParts_08};
+            StreamReader sr = new StreamReader(path + @"\data\parts.cp");
+            int read_count = 0;
+            while (!sr.EndOfStream){
+                //tem讀取範例：名稱,C:\Users\user\Desktop\Campro\ToolWear\ToolWear\bin\Debug\data\Image\IMG_3494.JPG
+                string tem = sr.ReadLine();
+                try{
+                    if(read_count >= (int.Parse(lb_SelectParts_Page.Text) - 1) * 8 && read_count < int.Parse(lb_SelectParts_Page.Text) * 8){
+                        panel_Parts[read_count].Visible = true;
+                        lb_Parts[read_count].Text = tem.Split(',')[0];
+                        if (!tem.Split(',')[1].Equals("null"))
+                            pb_Parts[read_count].BackgroundImage = Image.FromFile(tem.Split(',')[1]);
+                        else
+                            pb_Parts[read_count].BackgroundImage = ToolWear.Properties.Resources.wd_img_blank;
+                    }
+                    else if (read_count >= (int.Parse(lb_SelectParts_Page.Text) + 1) * 8) break;
+                    read_count++;
+                }
+                catch(Exception ex){
+                    MessageBox.Show("讀取工件資料時出現不可測意外。\n可能是設定檔或是圖片檔遺失，請重新檢查。\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            sr.Close();
+            sr.Dispose();
+        }
+        //磨耗偵測 > 選擇工件 > 工件上一頁
+        private void btn_SelectParts_up_Click(object sender,EventArgs e){
+            if (lb_SelectParts_Page.Text.Equals("1")){
+                MessageBox.Show("沒有辦法移至上一頁，已在首頁。", "頁面切換失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            lb_SelectParts_Page.Text = (int.Parse(lb_SelectParts_Page.Text) - 1).ToString();
+            SelectParts_LoadData();
+        }
+        //磨耗偵測 > 選擇工件 > 工件下一頁
+        private void btn_SelectParts_down_Click(object sender,EventArgs e){
+            StreamReader sr = new StreamReader(path + @"\data\parts.cp");
+            int sr_count = 0;
+            while (!sr.EndOfStream){
+                sr.ReadLine();
+                sr_count++;
+            }
+            if(sr_count > int.Parse(lb_SelectParts_Page.Text) * 8){
+                lb_SelectParts_Page.Text = (int.Parse(lb_SelectParts_Page.Text) + 1).ToString();
+                SelectParts_LoadData();
+            }
+            else{
+                MessageBox.Show("沒有更多的工件，已在最後一頁！", "頁面切換失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            sr.Close();
+            sr.Dispose();
+        }
+        //磨耗偵測 > 選擇工件 > 移除工件
+        private void btn_SelectParts_remove_Click(object sender,EventArgs e){
+            Button btn_Select = (Button)sender;
+
+            pb_ToolWear_Click(null, null);
+        }
+        //磨耗偵測 > 選擇工件 > select按鈕
+        private void btn_SelectParts(object sender,EventArgs e){
+            Button btn_Select = (Button)sender;
+            Label[] lb_SelectParts = new Label[8] { lb_SelectParts_01 , lb_SelectParts_02 , lb_SelectParts_03 , lb_SelectParts_04 ,
+                                                    lb_SelectParts_05 , lb_SelectParts_06 , lb_SelectParts_07 , lb_SelectParts_08};
+            PictureBox[] pb_SelectParts = new PictureBox[8] { pb_SelectParts_01, pb_SelectParts_02, pb_SelectParts_03, pb_SelectParts_04,
+                                                              pb_SelectParts_05, pb_SelectParts_06, pb_SelectParts_07, pb_SelectParts_08};
+            int Select_count = int.Parse(btn_Select.Name.Split('_')[2]);
+            DialogResult dialogResult = MessageBox.Show("確定要選擇 " + lb_SelectParts[Select_count - 1].Text + " 這項工件嗎？", "選擇工件", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Cancel) return;
+            //修改磨耗偵測的工件名稱和圖片
+            lb_ToolWear_Status.Text = lb_SelectParts[Select_count - 1].Text;
+            pb_ToolWear.BackgroundImage = pb_SelectParts[Select_count - 1].BackgroundImage;
+            panel_Dissable();
+            panel_ToolWear.Visible = true;
+        }
         //磨耗偵測 > 選擇工件 > 新增工件 > 取消新增
         private void btn_AddParts_delete_Click(object sender, EventArgs e){
             DialogResult dialogResult = MessageBox.Show("確定要放棄此次新增嗎？", "放棄新增", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
@@ -888,15 +949,21 @@ namespace ToolWear{
             try{
                 FileStream File_module = File.Open(path + @"\data\parts.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
                 StreamWriter sw = new StreamWriter(File_module);
-                sw.WriteLine(tb_AddParts_Name.Text + "," + (path + @"data\Image\" + path_AddFile_name));
+                //有選圖片的話
+                if (!string.IsNullOrWhiteSpace(tb_AddParts_Path.Text)){
+                    sw.WriteLine(tb_AddParts_Name.Text + "," + (path + @"data\Image\" + path_AddFile_name));
+                    File.Copy(tb_AddParts_Path.Text, path + @"\data\Image\" + path_AddFile_name);
+                }
+                //沒選圖片的話
+                else
+                    sw.WriteLine(tb_AddParts_Name.Text + ",null");
                 sw.Close();
                 sw.Dispose();
-                File.Copy(tb_AddParts_Path.Text, path + @"\data\Image\" + path_AddFile_name);
                 MessageBox.Show(tb_AddParts_Name.Text + "\n已儲存成功。", "儲存成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 pb_ToolWear_Click(null, null);
             }
-            catch{
-                MessageBox.Show("在儲存時發生不可測意外。\n\nThis problem is from btn_AddParts_save.", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch(Exception ex){
+                MessageBox.Show("在儲存時發生不可測意外。\n\nThis problem is from btn_AddParts_save.\n"+ ex.ToString(), "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion

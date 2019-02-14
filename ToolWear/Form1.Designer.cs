@@ -431,6 +431,7 @@
             this.btn_AddParts_delete = new System.Windows.Forms.Button();
             this.btn_AddParts_Path = new System.Windows.Forms.Button();
             this.pb_AddParts = new System.Windows.Forms.PictureBox();
+            this.lb_SelectParts_Page = new System.Windows.Forms.Label();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Blade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
@@ -2344,6 +2345,7 @@
             // 
             // panel_SelectParts
             // 
+            this.panel_SelectParts.Controls.Add(this.lb_SelectParts_Page);
             this.panel_SelectParts.Controls.Add(this.panel_SelectParts_06);
             this.panel_SelectParts.Controls.Add(this.panel_SelectParts_08);
             this.panel_SelectParts.Controls.Add(this.panel_SelectParts_05);
@@ -2677,6 +2679,7 @@
             this.btn_SelectParts_06.FlatAppearance.BorderSize = 0;
             this.btn_SelectParts_06.Name = "btn_SelectParts_06";
             this.btn_SelectParts_06.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_06.Click += new System.EventHandler(this.btn_SelectParts);
             // 
             // pb_SelectParts_08
             // 
@@ -2694,6 +2697,7 @@
             this.btn_SelectParts_08.FlatAppearance.BorderSize = 0;
             this.btn_SelectParts_08.Name = "btn_SelectParts_08";
             this.btn_SelectParts_08.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_08.Click += new System.EventHandler(this.btn_SelectParts);
             // 
             // pb_SelectParts_05
             // 
@@ -2711,6 +2715,7 @@
             this.btn_SelectParts_05.FlatAppearance.BorderSize = 0;
             this.btn_SelectParts_05.Name = "btn_SelectParts_05";
             this.btn_SelectParts_05.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_05.Click += new System.EventHandler(this.btn_SelectParts);
             // 
             // pb_SelectParts_04
             // 
@@ -2728,6 +2733,7 @@
             this.btn_SelectParts_04.FlatAppearance.BorderSize = 0;
             this.btn_SelectParts_04.Name = "btn_SelectParts_04";
             this.btn_SelectParts_04.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_04.Click += new System.EventHandler(this.btn_SelectParts);
             // 
             // pb_SelectParts_07
             // 
@@ -2745,6 +2751,7 @@
             this.btn_SelectParts_07.FlatAppearance.BorderSize = 0;
             this.btn_SelectParts_07.Name = "btn_SelectParts_07";
             this.btn_SelectParts_07.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_07.Click += new System.EventHandler(this.btn_SelectParts);
             // 
             // pb_SelectParts_02
             // 
@@ -2762,6 +2769,7 @@
             this.btn_SelectParts_02.FlatAppearance.BorderSize = 0;
             this.btn_SelectParts_02.Name = "btn_SelectParts_02";
             this.btn_SelectParts_02.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_02.Click += new System.EventHandler(this.btn_SelectParts);
             // 
             // pb_SelectParts_03
             // 
@@ -2779,6 +2787,7 @@
             this.btn_SelectParts_03.FlatAppearance.BorderSize = 0;
             this.btn_SelectParts_03.Name = "btn_SelectParts_03";
             this.btn_SelectParts_03.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_03.Click += new System.EventHandler(this.btn_SelectParts);
             // 
             // btn_SelectParts_down
             // 
@@ -2788,6 +2797,7 @@
             this.btn_SelectParts_down.FlatAppearance.BorderSize = 0;
             this.btn_SelectParts_down.Name = "btn_SelectParts_down";
             this.btn_SelectParts_down.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_down.Click += new System.EventHandler(this.btn_SelectParts_down_Click);
             // 
             // btn_SelectParts_up
             // 
@@ -2797,6 +2807,7 @@
             this.btn_SelectParts_up.FlatAppearance.BorderSize = 0;
             this.btn_SelectParts_up.Name = "btn_SelectParts_up";
             this.btn_SelectParts_up.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_up.Click += new System.EventHandler(this.btn_SelectParts_up_Click);
             // 
             // btn_SelectParts_Add
             // 
@@ -2824,6 +2835,7 @@
             this.btn_SelectParts_01.FlatAppearance.BorderSize = 0;
             this.btn_SelectParts_01.Name = "btn_SelectParts_01";
             this.btn_SelectParts_01.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_01.Click += new System.EventHandler(this.btn_SelectParts);
             // 
             // btn_SelectParts_Back
             // 
@@ -4471,6 +4483,13 @@
             this.pb_AddParts.Name = "pb_AddParts";
             this.pb_AddParts.TabStop = false;
             // 
+            // lb_SelectParts_Page
+            // 
+            this.lb_SelectParts_Page.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_SelectParts_Page, "lb_SelectParts_Page");
+            this.lb_SelectParts_Page.ForeColor = System.Drawing.Color.White;
+            this.lb_SelectParts_Page.Name = "lb_SelectParts_Page";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -4910,6 +4929,7 @@
         private System.Windows.Forms.Button btn_AddParts_save;
         private System.Windows.Forms.TextBox tb_AddParts_Name;
         private System.Windows.Forms.Panel panel_ToolWear_Parts;
+        private System.Windows.Forms.Label lb_SelectParts_Page;
     }
 }
 
