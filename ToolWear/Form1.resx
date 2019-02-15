@@ -364,7 +364,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ViewModule.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>8</value>
   </data>
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -796,7 +796,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>9</value>
   </data>
   <data name="btn_ToolWearSetting_Research.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2320,7 +2320,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="lb_ToolWear_Tool.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2511,6 +2511,33 @@
   <data name="&gt;&gt;panel_ToolWear_Parts.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="pb_ToolWear.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pb_ToolWear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pb_ToolWear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 1</value>
+  </data>
+  <data name="pb_ToolWear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 98</value>
+  </data>
+  <data name="pb_ToolWear.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="&gt;&gt;pb_ToolWear.Name" xml:space="preserve">
+    <value>pb_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;pb_ToolWear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb_ToolWear.Parent" xml:space="preserve">
+    <value>panel_ToolWear_Parts</value>
+  </data>
+  <data name="&gt;&gt;pb_ToolWear.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="lb_ToolWear_Parts.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
   </data>
@@ -2543,33 +2570,6 @@
   </data>
   <data name="&gt;&gt;lb_ToolWear_Parts.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="pb_ToolWear.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="pb_ToolWear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pb_ToolWear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 1</value>
-  </data>
-  <data name="pb_ToolWear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 98</value>
-  </data>
-  <data name="pb_ToolWear.TabIndex" type="System.Int32, mscorlib">
-    <value>76</value>
-  </data>
-  <data name="&gt;&gt;pb_ToolWear.Name" xml:space="preserve">
-    <value>pb_ToolWear</value>
-  </data>
-  <data name="&gt;&gt;pb_ToolWear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pb_ToolWear.Parent" xml:space="preserve">
-    <value>panel_ToolWear_Parts</value>
-  </data>
-  <data name="&gt;&gt;pb_ToolWear.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btn_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4129,7 +4129,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_save.Name" xml:space="preserve">
     <value>btn_Threshold_save</value>
@@ -5386,7 +5386,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>5</value>
   </data>
   <data name="btn_CompensateSave.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7375,7 +7375,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>6</value>
   </data>
   <data name="btn_Thermal_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -8316,6 +8316,99 @@
   <data name="&gt;&gt;panel_Thermal_Mutile.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
+  <data name="lb_Thermal_page.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="lb_Thermal_page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Thermal_page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>891, 163</value>
+  </data>
+  <data name="lb_Thermal_page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 41</value>
+  </data>
+  <data name="lb_Thermal_page.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="lb_Thermal_page.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_Thermal_page.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.Name" xml:space="preserve">
+    <value>lb_Thermal_page</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_Thermal_down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Thermal_down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Thermal_down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Thermal_down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>896, 331</value>
+  </data>
+  <data name="btn_Thermal_down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 40</value>
+  </data>
+  <data name="btn_Thermal_down.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.Name" xml:space="preserve">
+    <value>btn_Thermal_down</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_Thermal_up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Thermal_up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Thermal_up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Thermal_up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>896, 7</value>
+  </data>
+  <data name="btn_Thermal_up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 40</value>
+  </data>
+  <data name="btn_Thermal_up.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.Name" xml:space="preserve">
+    <value>btn_Thermal_up</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="lb_Thermal_M2_Now.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -8748,6 +8841,54 @@
   <data name="panel_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="&gt;&gt;lb_Learn_Tool.Name" xml:space="preserve">
+    <value>lb_Learn_Tool</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_Tool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_Tool.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_Tool.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
+  </data>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_FeedSpeed.Name" xml:space="preserve">
+    <value>lb_Learn_FeedSpeed</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_FeedSpeed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_FeedSpeed.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_FeedSpeed.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label40.Name" xml:space="preserve">
+    <value>label40</value>
+  </data>
+  <data name="&gt;&gt;label40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label40.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;btn_Learn_20.Name" xml:space="preserve">
     <value>btn_Learn_20</value>
   </data>
@@ -8758,7 +8899,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_20.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;btn_Learn_19.Name" xml:space="preserve">
     <value>btn_Learn_19</value>
@@ -8770,7 +8911,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_19.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btn_Learn_18.Name" xml:space="preserve">
     <value>btn_Learn_18</value>
@@ -8782,7 +8923,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_18.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;btn_Learn_17.Name" xml:space="preserve">
     <value>btn_Learn_17</value>
@@ -8794,7 +8935,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_17.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;btn_Learn_16.Name" xml:space="preserve">
     <value>btn_Learn_16</value>
@@ -8806,7 +8947,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_16.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;btn_Learn_15.Name" xml:space="preserve">
     <value>btn_Learn_15</value>
@@ -8818,7 +8959,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_15.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;btn_Learn_14.Name" xml:space="preserve">
     <value>btn_Learn_14</value>
@@ -8830,7 +8971,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_14.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;btn_Learn_13.Name" xml:space="preserve">
     <value>btn_Learn_13</value>
@@ -8842,7 +8983,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_13.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;btn_Learn_12.Name" xml:space="preserve">
     <value>btn_Learn_12</value>
@@ -8854,7 +8995,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_12.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;btn_Learn_11.Name" xml:space="preserve">
     <value>btn_Learn_11</value>
@@ -8866,7 +9007,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_11.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;btn_Learn_10.Name" xml:space="preserve">
     <value>btn_Learn_10</value>
@@ -8878,7 +9019,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_10.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;btn_Learn_09.Name" xml:space="preserve">
     <value>btn_Learn_09</value>
@@ -8890,7 +9031,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_09.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;btn_Learn_08.Name" xml:space="preserve">
     <value>btn_Learn_08</value>
@@ -8902,7 +9043,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_08.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
   </data>
   <data name="&gt;&gt;btn_Learn_07.Name" xml:space="preserve">
     <value>btn_Learn_07</value>
@@ -8914,7 +9055,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_07.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;btn_Learn_06.Name" xml:space="preserve">
     <value>btn_Learn_06</value>
@@ -8926,7 +9067,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_06.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="&gt;&gt;btn_Learn_05.Name" xml:space="preserve">
     <value>btn_Learn_05</value>
@@ -8938,7 +9079,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_05.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <data name="&gt;&gt;btn_Learn_04.Name" xml:space="preserve">
     <value>btn_Learn_04</value>
@@ -8950,7 +9091,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_04.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;btn_Learn_03.Name" xml:space="preserve">
     <value>btn_Learn_03</value>
@@ -8962,7 +9103,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_03.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>21</value>
   </data>
   <data name="&gt;&gt;btn_Learn_02.Name" xml:space="preserve">
     <value>btn_Learn_02</value>
@@ -8974,7 +9115,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_02.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>22</value>
   </data>
   <data name="&gt;&gt;btn_Learn_01.Name" xml:space="preserve">
     <value>btn_Learn_01</value>
@@ -8986,7 +9127,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_01.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>23</value>
   </data>
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
@@ -8998,7 +9139,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>24</value>
   </data>
   <data name="&gt;&gt;btn_Learn_Back.Name" xml:space="preserve">
     <value>btn_Learn_Back</value>
@@ -9010,7 +9151,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_Back.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>25</value>
   </data>
   <data name="&gt;&gt;btn_Learn_OK.Name" xml:space="preserve">
     <value>btn_Learn_OK</value>
@@ -9022,7 +9163,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_OK.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>26</value>
   </data>
   <data name="&gt;&gt;btn_Learn_Start.Name" xml:space="preserve">
     <value>btn_Learn_Start</value>
@@ -9034,7 +9175,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_Start.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>27</value>
   </data>
   <data name="&gt;&gt;chart_Learn.Name" xml:space="preserve">
     <value>chart_Learn</value>
@@ -9046,7 +9187,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;chart_Learn.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>28</value>
   </data>
   <data name="&gt;&gt;chart_LearnFFT.Name" xml:space="preserve">
     <value>chart_LearnFFT</value>
@@ -9058,7 +9199,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;chart_LearnFFT.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>29</value>
   </data>
   <data name="&gt;&gt;panel_Learn_Parts.Name" xml:space="preserve">
     <value>panel_Learn_Parts</value>
@@ -9070,7 +9211,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;panel_Learn_Parts.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>30</value>
   </data>
   <data name="panel_Learn.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 9</value>
@@ -9091,7 +9232,151 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lb_Learn_Tool.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_Learn_Tool.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 10.2pt</value>
+  </data>
+  <data name="lb_Learn_Tool.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Learn_Tool.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 275</value>
+  </data>
+  <data name="lb_Learn_Tool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 22</value>
+  </data>
+  <data name="lb_Learn_Tool.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="lb_Learn_Tool.Text" xml:space="preserve">
+    <value>ABC</value>
+  </data>
+  <data name="lb_Learn_Tool.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_Tool.Name" xml:space="preserve">
+    <value>lb_Learn_Tool</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_Tool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_Tool.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_Tool.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label37.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label37.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 10.2pt</value>
+  </data>
+  <data name="label37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 275</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="label37.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>刀具：</value>
+  </data>
+  <data name="label37.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
+  </data>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_Learn_FeedSpeed.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_Learn_FeedSpeed.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 10.2pt</value>
+  </data>
+  <data name="lb_Learn_FeedSpeed.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Learn_FeedSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 275</value>
+  </data>
+  <data name="lb_Learn_FeedSpeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 21</value>
+  </data>
+  <data name="lb_Learn_FeedSpeed.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="lb_Learn_FeedSpeed.Text" xml:space="preserve">
+    <value>0 RPM</value>
+  </data>
+  <data name="lb_Learn_FeedSpeed.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_FeedSpeed.Name" xml:space="preserve">
+    <value>lb_Learn_FeedSpeed</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_FeedSpeed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_FeedSpeed.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;lb_Learn_FeedSpeed.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="label40.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label40.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 10.2pt</value>
+  </data>
+  <data name="label40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 275</value>
+  </data>
+  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="label40.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>轉速：</value>
+  </data>
+  <data name="label40.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label40.Name" xml:space="preserve">
+    <value>label40</value>
+  </data>
+  <data name="&gt;&gt;label40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label40.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="btn_Learn_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9124,7 +9409,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_20.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="btn_Learn_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9157,7 +9442,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_19.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="btn_Learn_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9190,7 +9475,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_18.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="btn_Learn_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9223,7 +9508,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_17.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="btn_Learn_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9256,7 +9541,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_16.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="btn_Learn_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9289,7 +9574,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_15.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="btn_Learn_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9322,7 +9607,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_14.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="btn_Learn_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9355,7 +9640,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_13.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="btn_Learn_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9388,7 +9673,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_12.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="btn_Learn_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9421,7 +9706,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_11.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="btn_Learn_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9454,7 +9739,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_10.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="btn_Learn_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9487,7 +9772,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_09.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="btn_Learn_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9520,7 +9805,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_08.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
   </data>
   <data name="btn_Learn_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9553,7 +9838,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_07.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="btn_Learn_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9586,7 +9871,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_06.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="btn_Learn_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9619,7 +9904,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_05.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <data name="btn_Learn_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9652,7 +9937,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_04.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="btn_Learn_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9685,7 +9970,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_03.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>21</value>
   </data>
   <data name="btn_Learn_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9718,7 +10003,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_02.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>22</value>
   </data>
   <data name="btn_Learn_01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9751,7 +10036,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_01.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>23</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -9784,7 +10069,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>24</value>
   </data>
   <data name="btn_Learn_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9814,7 +10099,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_Back.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>25</value>
   </data>
   <data name="btn_Learn_OK.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9847,7 +10132,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_OK.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>26</value>
   </data>
   <data name="btn_Learn_Start.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9877,7 +10162,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;btn_Learn_Start.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>27</value>
   </data>
   <data name="chart_Learn.Location" type="System.Drawing.Point, System.Drawing">
     <value>682, 526</value>
@@ -9901,7 +10186,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;chart_Learn.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>28</value>
   </data>
   <data name="chart_LearnFFT.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 263</value>
@@ -9925,7 +10210,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;chart_LearnFFT.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>29</value>
   </data>
   <data name="&gt;&gt;pb_Learn.Name" xml:space="preserve">
     <value>pb_Learn</value>
@@ -9970,7 +10255,7 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;panel_Learn_Parts.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>30</value>
   </data>
   <data name="pb_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -10147,7 +10432,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>14</value>
   </data>
   <data name="tb_logTitle_04.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.2000008pt</value>
@@ -10420,7 +10705,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;btn_setting_save.Name" xml:space="preserve">
     <value>btn_setting_save</value>
@@ -10812,17 +11097,41 @@
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;label24.Name" xml:space="preserve">
-    <value>label24</value>
+  <data name="&gt;&gt;tb_Loading.Name" xml:space="preserve">
+    <value>tb_Loading</value>
   </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tb_Loading.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tb_Loading.Parent" xml:space="preserve">
     <value>panel_Loading</value>
   </data>
-  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tb_Loading.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;tb_Load_log.Name" xml:space="preserve">
+    <value>tb_Load_log</value>
+  </data>
+  <data name="&gt;&gt;tb_Load_log.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Load_log.Parent" xml:space="preserve">
+    <value>panel_Loading</value>
+  </data>
+  <data name="&gt;&gt;tb_Load_log.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bar_load.Name" xml:space="preserve">
+    <value>bar_load</value>
+  </data>
+  <data name="&gt;&gt;bar_load.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bar_load.Parent" xml:space="preserve">
+    <value>panel_Loading</value>
+  </data>
+  <data name="&gt;&gt;bar_load.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="panel_Loading.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 9</value>
@@ -10843,40 +11152,31 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>1</value>
   </data>
-  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="bar_load.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 562</value>
   </data>
-  <data name="label24.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 28.2pt</value>
+  <data name="bar_load.Size" type="System.Drawing.Size, System.Drawing">
+    <value>934, 34</value>
   </data>
-  <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bar_load.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
   </data>
-  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 17</value>
+  <data name="bar_load.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 61</value>
+  <data name="&gt;&gt;bar_load.Name" xml:space="preserve">
+    <value>bar_load</value>
   </data>
-  <data name="label24.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+  <data name="&gt;&gt;bar_load.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label24.Text" xml:space="preserve">
-    <value>讀取中...</value>
-  </data>
-  <data name="&gt;&gt;label24.Name" xml:space="preserve">
-    <value>label24</value>
-  </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+  <data name="&gt;&gt;bar_load.Parent" xml:space="preserve">
     <value>panel_Loading</value>
   </data>
-  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;bar_load.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
@@ -11161,7 +11461,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;btn_ATCsetting_save.Name" xml:space="preserve">
     <value>btn_ATCsetting_save</value>
@@ -12205,7 +12505,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>3</value>
   </data>
   <metadata name="timer_temperature.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -12397,7 +12697,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_SelectParts.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;btn_SelectParts_remove01.Name" xml:space="preserve">
     <value>btn_SelectParts_remove01</value>
@@ -14263,7 +14563,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AddParts.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="btn_AddParts_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -14571,97 +14871,67 @@
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="btn_Thermal_up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <metadata name="timer_load.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>210, 17</value>
+  </metadata>
+  <data name="tb_Load_log.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
   </data>
-  <data name="btn_Thermal_up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
+  <data name="tb_Load_log.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 436</value>
   </data>
-  <data name="btn_Thermal_up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tb_Load_log.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="btn_Thermal_up.Location" type="System.Drawing.Point, System.Drawing">
-    <value>896, 7</value>
+  <data name="tb_Load_log.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="btn_Thermal_up.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 40</value>
+  <data name="tb_Load_log.Size" type="System.Drawing.Size, System.Drawing">
+    <value>932, 116</value>
   </data>
-  <data name="btn_Thermal_up.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
+  <data name="tb_Load_log.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;btn_Thermal_up.Name" xml:space="preserve">
-    <value>btn_Thermal_up</value>
+  <data name="&gt;&gt;tb_Load_log.Name" xml:space="preserve">
+    <value>tb_Load_log</value>
   </data>
-  <data name="&gt;&gt;btn_Thermal_up.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tb_Load_log.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_Thermal_up.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
+  <data name="&gt;&gt;tb_Load_log.Parent" xml:space="preserve">
+    <value>panel_Loading</value>
   </data>
-  <data name="&gt;&gt;btn_Thermal_up.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btn_Thermal_down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Thermal_down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Thermal_down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Thermal_down.Location" type="System.Drawing.Point, System.Drawing">
-    <value>896, 331</value>
-  </data>
-  <data name="btn_Thermal_down.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 40</value>
-  </data>
-  <data name="btn_Thermal_down.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;btn_Thermal_down.Name" xml:space="preserve">
-    <value>btn_Thermal_down</value>
-  </data>
-  <data name="&gt;&gt;btn_Thermal_down.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Thermal_down.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
-  </data>
-  <data name="&gt;&gt;btn_Thermal_down.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tb_Load_log.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lb_Thermal_page.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 13.8pt</value>
+  <data name="tb_Loading.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.2000008pt</value>
   </data>
-  <data name="lb_Thermal_page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tb_Loading.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 19</value>
   </data>
-  <data name="lb_Thermal_page.Location" type="System.Drawing.Point, System.Drawing">
-    <value>891, 163</value>
+  <data name="tb_Loading.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="lb_Thermal_page.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 41</value>
+  <data name="tb_Loading.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="lb_Thermal_page.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+  <data name="tb_Loading.Size" type="System.Drawing.Size, System.Drawing">
+    <value>932, 401</value>
   </data>
-  <data name="lb_Thermal_page.Text" xml:space="preserve">
-    <value>1</value>
+  <data name="tb_Loading.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
-  <data name="lb_Thermal_page.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;tb_Loading.Name" xml:space="preserve">
+    <value>tb_Loading</value>
   </data>
-  <data name="&gt;&gt;lb_Thermal_page.Name" xml:space="preserve">
-    <value>lb_Thermal_page</value>
+  <data name="&gt;&gt;tb_Loading.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lb_Thermal_page.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tb_Loading.Parent" xml:space="preserve">
+    <value>panel_Loading</value>
   </data>
-  <data name="&gt;&gt;lb_Thermal_page.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
-  </data>
-  <data name="&gt;&gt;lb_Thermal_page.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tb_Loading.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -14674,7 +14944,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1258, 778</value>
+    <value>1242, 762</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
@@ -14686,6 +14956,12 @@
     <value>timer_temperature</value>
   </data>
   <data name="&gt;&gt;timer_temperature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer_load.Name" xml:space="preserve">
+    <value>timer_load</value>
+  </data>
+  <data name="&gt;&gt;timer_load.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

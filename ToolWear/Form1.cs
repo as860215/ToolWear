@@ -19,10 +19,14 @@ namespace ToolWear{
             InitializeComponent();
         }
         private void Form1_Shown(object sender, EventArgs e){
-            //初始化設定
-            DAQPhysicalChannels();
-            Initialization();
-            Setting();
+            timer_load.Enabled = true;
+            ////初始化設定
+            //DAQPhysicalChannels();
+            //Initialization();
+            //Setting();
+            ////測試連線
+            //Thread TD_ConnectTest = new Thread(Connect_Test);
+            //TD_ConnectTest.Start();
         }
         #region 初始化程式
         private float Chart_PointMax = 0.5f, Chart_PointMin = -0.5f;  //折線圖預設上下限
@@ -73,8 +77,8 @@ namespace ToolWear{
 
             //Panel
             panel_Home.Visible = true;
-            //預設開啟熱補償介面
-            btn_Thermal_Click(null,null);
+            ////預設開啟熱補償介面
+            //btn_Thermal_Click(null,null);
         }
         /// <summary>
         /// 隱藏所有panel(主畫面除外)
@@ -183,6 +187,72 @@ namespace ToolWear{
 
             //讀取今日Log事件表
             Read_Log(DateTime.Now.ToString("yyyyMMdd"));
+        }
+        int Load_Step = 0;
+        //讀取程式
+        private void timer_load_Tick(object sender, EventArgs e){
+            bar_load.Value = Load_Step;
+            void_Loading(Load_Step);
+        }
+        /// <summary>
+        /// 讀取程式
+        /// </summary>
+        /// <param name="push_in_step">為避免因多執行續造成的變數變化問題，在執行switch之前先暫存其</param>
+        private void void_Loading(int push_in_step){
+            int tem_step = push_in_step;
+            if (tem_step != Load_Step) return;
+            string tem = "";
+            switch (tem_step){
+                case 0:
+                    tem = "您好！";
+                    break;
+                //保留1~20初始化元件
+                case 1:
+                    tem = "正在搜尋DAQ訊號輸入...";
+                    break;
+                case 2:
+                    DAQPhysicalChannels();
+                    tem = "DAQ訊號輸入搜尋完畢";
+                    break;
+                case 3:
+                    tem = "正在初始化元件屬性...";
+                    break;
+                case 4:
+                    Initialization();
+                    tem = "元件初始化完畢";
+                    break;
+                case 5:
+                    tem = "正在設定元件屬性...";
+                    break;
+                case 6:
+                    Setting();
+                    tem = "元件屬性設定完畢";
+                    break;
+                //保留20~?測試設備連線
+                case 20:
+                    tem = "正在測試控制器連線...";
+                    break;
+                case 25:
+                    long ret = Mitsubishi_Initialization();
+                    if (ret != 0) tb_Load_log.Text += "控制器連線失敗。\nError Code : " + ret.ToString();
+                    break;
+                case 26:
+                    tem = "控制器連線測試完畢";
+                    break;
+
+                //預留最後95~100緩衝讀取
+                case 95:
+                    tem = "正在將您導入主頁面...";
+                    timer_load.Interval = 300;
+                    break;
+                case 100:
+                    timer_load.Enabled = false;
+                    //預設開啟熱補償介面
+                    btn_Thermal_Click(null, null);
+                    break;
+            }
+            if(!string.IsNullOrWhiteSpace(tem)) tb_Loading.Text += tem + "\r\n";
+            Load_Step++;
         }
         #endregion
         #region 按鈕方法
@@ -1993,15 +2063,16 @@ namespace ToolWear{
         /// <summary>
         /// 三菱控制器初始化
         /// </summary>
-        private void Mitsubishi_Initialization(){
+        private long Mitsubishi_Initialization(){
             int lSystemType = 9;
             int lMachine = 1;
             int lTimeOut = 100;
             lRet = EZNcCom.SetTCPIPProtocol(tb_setting_ip.Text, 683);
             lRet = EZNcCom.Open2(lSystemType, lMachine, lTimeOut, "EZNC_LOCALHOST");
             if(lRet != 0){
-                CatchLog(1000, lRet.ToString());
+                //CatchLog(1000, lRet.ToString());
             }
+            return lRet;
         }
         /// <summary>
         /// 三菱控制器 > 取得自動換刀裝置目前使用刀號
