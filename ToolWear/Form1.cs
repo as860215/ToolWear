@@ -704,7 +704,6 @@ namespace ToolWear{
         //        this.Invoke(CDD);
         //    }
         //    else{
-
         //    }
         //}
         //判定是否產生Log訊息
@@ -856,7 +855,6 @@ namespace ToolWear{
                         }
                     }
                 }
-                //}
             }
         }
         #endregion
