@@ -17,16 +17,14 @@ namespace ToolWear{
         private string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;  //執行檔位置
         public Form1(){
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            //this.TopMost = true;
         }
         private void Form1_Shown(object sender, EventArgs e){
+            panel_Dissable();
+            panel_Loading.Visible = true;
+            panel_log.SendToBack();
             timer_load.Enabled = true;
-            ////初始化設定
-            //DAQPhysicalChannels();
-            //Initialization();
-            //Setting();
-            ////測試連線
-            //Thread TD_ConnectTest = new Thread(Connect_Test);
-            //TD_ConnectTest.Start();
         }
         #region 初始化程式
         private float Chart_PointMax = 0.5f, Chart_PointMin = -0.5f;  //折線圖預設上下限
@@ -189,7 +187,7 @@ namespace ToolWear{
             Read_Log(DateTime.Now.ToString("yyyyMMdd"));
         }
         int Load_Step = 0;
-        //讀取程式
+        //讀取程式計時器
         private void timer_load_Tick(object sender, EventArgs e){
             bar_load.Value = Load_Step;
             void_Loading(Load_Step);
@@ -205,6 +203,13 @@ namespace ToolWear{
             switch (tem_step){
                 case 0:
                     tem = "您好！";
+                    //關閉按鈕功能
+                    btn_Thermal.Enabled = false;
+                    btn_ToolWear.Enabled = false;
+                    btn_ATCsetting.Enabled = false;
+                    btn_setting.Enabled = false;
+                    btn_Health.Enabled = false;
+                    btn_logo.Enabled = false;
                     break;
                 //保留1~20初始化元件
                 case 1:
@@ -228,13 +233,14 @@ namespace ToolWear{
                     Setting();
                     tem = "元件屬性設定完畢";
                     break;
+
                 //保留20~?測試設備連線
                 case 20:
                     tem = "正在測試控制器連線...";
                     break;
                 case 25:
-                    long ret = Mitsubishi_Initialization();
-                    if (ret != 0) tb_Load_log.Text += "控制器連線失敗。\nError Code : " + ret.ToString();
+                    //long ret = Mitsubishi_Initialization();
+                    //if (ret != 0) tb_Load_log.Text += "控制器連線失敗。 Error Code : " + ret.ToString();
                     break;
                 case 26:
                     tem = "控制器連線測試完畢";
@@ -247,6 +253,13 @@ namespace ToolWear{
                     break;
                 case 100:
                     timer_load.Enabled = false;
+                    //開啟按鈕功能
+                    btn_Thermal.Enabled = true;
+                    btn_ToolWear.Enabled = true;
+                    btn_ATCsetting.Enabled = true;
+                    btn_setting.Enabled = true;
+                    btn_Health.Enabled = true;
+                    btn_logo.Enabled = true;
                     //預設開啟熱補償介面
                     btn_Thermal_Click(null, null);
                     break;
@@ -288,7 +301,7 @@ namespace ToolWear{
             panel_Thermal.Visible = true;
         }
         private void btn_Threshold_Back_Click(object sender, EventArgs e){
-            panel_ToolWearSetting.Visible = true;
+            panel_ToolWear.Visible = true;
             panel_Threshold.Visible = false;
         }
         //磨耗偵測 > 選擇工件 > 回上一頁
@@ -298,7 +311,7 @@ namespace ToolWear{
         }
         //磨耗偵測 > 選擇工件
         private void pb_ToolWear_Click(object sender,EventArgs e){
-            panel_Dissable();
+            panel_ToolWear.Visible = false;
             panel_SelectParts.Visible = true;
             lb_SelectParts_Page.Text = "1";
             SelectParts_LoadData();
@@ -363,10 +376,21 @@ namespace ToolWear{
         private void btn_Learn_Click(object sender, EventArgs e){
             //目前在偵測模式
             if(panel_ToolWear.Visible == true){
+                if (lb_ToolWear_Parts.Text.Equals("(未選擇)")){
+                    MessageBox.Show("尚未選擇工件，無法切換學習模式。\n請點選右方工件預覽圖或是文字，進入頁面選取此次偵測的工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (runningTask != null){
+                    MessageBox.Show("請先停止所有軸向的磨耗偵測。\n在學習模式中禁止同時偵測磨耗資訊，以免發生不可測意外。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                lb_Learn_WorkName.Text = lb_ToolWear_Parts.Text;
+                pb_Learn.BackgroundImage = pb_ToolWear.BackgroundImage;
                 panel_Dissable();
                 panel_Learn.Visible = true;
                 btn_Learn.BackgroundImage = ToolWear.Properties.Resources.wd_l_learn_selected;
                 btn_Learn.Enabled = true;
+                btn_Learn_Choose((object)btn_Learn_01, null);
             }
             //目前在學習模式
             else if (panel_Learn.Visible == true){
@@ -374,15 +398,35 @@ namespace ToolWear{
                 panel_ToolWear.Visible = true;
                 btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
                 btn_Learn.Enabled = true;
+                btn_ToolWear_Choose((object)btn_ToolWear_01, null);
             }
         }
         #endregion
         #region 各項功能按鈕
         #region 磨耗偵測
+        //暫存模型資料
+        List<string> Module_FFT = new List<string>();
         //開始偵測
         private void btn_ToolWear_Start_Click(object sender, EventArgs e){
             if (lb_ToolWear_Parts.Text.Equals("(未選擇)")){
                 MessageBox.Show("尚未選擇工件，無法進行磨耗偵測。\n請點選下方工件預覽圖或是文字，進入頁面選取此次偵測的工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            Module_FFT.Clear();
+            //檢查data內是否已有此工件的學習模型
+            try{
+                StreamReader sr = new StreamReader(path + @"data\FFT\" + lb_ToolWear_Parts.Text + pre_Thermal.Text + ".cp");
+                while (!sr.EndOfStream)
+                    Module_FFT.Add(sr.ReadLine());
+                sr.Close();
+                sr.Dispose();
+                double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+                for(int i = 0; i < Module_FFT.Count; i++)
+                    chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
+            }
+            catch {
+                //如果進到例外事件就是找不到檔案，也就是沒有學習過
+                MessageBox.Show("對不起，"+ lb_ToolWear_Parts.Text+ " 此軸向並未找到學習模型，\n請點選左方功能表「學習模式」進行模型建構。", "尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             btn_ToolWear_Start.Enabled = false;
@@ -404,6 +448,8 @@ namespace ToolWear{
             //修改開始與停止按鈕
             btn_ToolWear_Start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
             btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+            //修改偵測軸向的文字顏色
+            pre_ToolWear.ForeColor = Color.White;
         }
         //FFT和原始數據折線圖轉換
         private bool ToolWearChange_FFT = false;    //紀錄現在折線圖顯示何者圖形
@@ -421,7 +467,7 @@ namespace ToolWear{
         }
         //顯示臨界值
         private void btn_ToolWear_Threshold_Click(object sender,EventArgs e){
-            panel_Dissable();
+            panel_ToolWear.Visible = false;
             panel_Threshold.Visible = true;
         }
         //磨耗偵測 > 設定 > DAQ訊號重新整理
@@ -431,10 +477,20 @@ namespace ToolWear{
         }
         #endregion
         #region 學習模式
+        //判斷是否正處於學習模式
+        bool On_Learn = false;
+        //存放現在學習的軸向
+        string Learn_Axial = "";
         //模型學習開始
         private void btn_Learn_Start_Click(object sender, EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("這將改寫您原先的模型數據，請問要繼續嗎？\n(第一次學習請忽略此訊息)", "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
             btn_Learn_Start.Enabled = false;
             btn_Learn_OK.Enabled = true;
+            btn_Learn_Start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+            btn_Learn_OK.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+            Learn_Axial = pre_learn.Text;
+            On_Learn = true;
             StreamWriter sw = new StreamWriter(path + @"\data\module.cp");
             sw.WriteLine();
             sw.Close();
@@ -444,10 +500,13 @@ namespace ToolWear{
         //模型學習完成
         private void btn_Learn_OK_Click(object sender, EventArgs e){
             TaskStop();
+            btn_Learn_Start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+            btn_Learn_OK.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
             btn_Learn_Start.Enabled = true;
             btn_Learn_OK.Enabled = false;
-            panel_ToolWearSetting.Visible = true;
+            panel_Threshold.Visible = true;
             panel_Learn.Visible = false;
+            On_Learn = false;
             chart_Learn.Series[0].Points.Clear();
         }
         //模型學習取消
@@ -1074,7 +1133,7 @@ namespace ToolWear{
             //修改磨耗偵測的工件名稱和圖片
             lb_ToolWear_Parts.Text = lb_SelectParts[Select_count - 1].Text;
             pb_ToolWear.BackgroundImage = pb_SelectParts[Select_count - 1].BackgroundImage;
-            panel_Dissable();
+            panel_SelectParts.Visible = false;
             panel_ToolWear.Visible = true;
         }
         //磨耗偵測 > 選擇工件 > 新增工件 > 取消新增
@@ -1131,6 +1190,7 @@ namespace ToolWear{
                 tb_AddParts_Name.Text = "";
                 tb_AddParts_Path.Text = "";
                 pb_AddParts.BackgroundImage = ToolWear.Properties.Resources.wdpsn_img_blank;
+                panel_AddParts.Visible = false;
                 pb_ToolWear_Click(null, null);
             }
             catch(Exception ex){
@@ -1165,6 +1225,40 @@ namespace ToolWear{
             btn_ToolWear_Start.Focus();
             //判斷是否選擇的軸向已經在偵測狀態中(待)
 
+        }
+        #endregion
+        #region 學習模式
+        //學習模式
+        //現在點到的按鈕
+        int now_learn = 0;
+        //上一個點到的button
+        Button pre_learn = null;
+        private void btn_Learn_Choose(object sender, EventArgs e){
+            //如果正在學習中，不允許切換數據
+            if (On_Learn == true){
+                MessageBox.Show("目前正處於學習階段，不允許切換軸向。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if(runningTask != null){
+                MessageBox.Show("請先停止所有軸向的磨耗偵測。\n在學習模式中禁止同時偵測磨耗資訊，以免發生不可測意外。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            //先重置上次選到的按鈕
+            if (pre_learn != null){
+                pre_learn.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn;
+            }
+            pre_learn = (Button)sender;
+            pre_learn.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn_selected;
+            now_learn = int.Parse(((Button)sender).Name.Split('_')[2]) - 1;
+            //背景處理選擇設定介面的該軸向
+            Button[] btn_ToolWearSetting = new Button[20] { btn_ToolWearSetting_01, btn_ToolWearSetting_02, btn_ToolWearSetting_03,
+            btn_ToolWearSetting_04,btn_ToolWearSetting_05,btn_ToolWearSetting_06,btn_ToolWearSetting_07,btn_ToolWearSetting_08,
+            btn_ToolWearSetting_09,btn_ToolWearSetting_10,btn_ToolWearSetting_11,btn_ToolWearSetting_12,btn_ToolWearSetting_13,
+            btn_ToolWearSetting_14,btn_ToolWearSetting_15,btn_ToolWearSetting_16,btn_ToolWearSetting_17,btn_ToolWearSetting_18,
+            btn_ToolWearSetting_19,btn_ToolWearSetting_20};
+            btn_ToolWearSetting_Choose((object)btn_ToolWearSetting[now_learn], null);
+            //轉移焦點
+            btn_Learn_Start.Focus();
         }
         #endregion
         #region 軸向設定
@@ -2012,7 +2106,7 @@ namespace ToolWear{
             //var fft100 = new DoubleForward1DFFT(FFT_Length);
             //DoubleVector fftresult = fft100.FFT(data);
             try{
-                chart_FFT.Series[0].Points.Clear();
+                chart_FFT.Series[3].Points.Clear();
                 chart_LearnFFT.Series[0].Points.Clear();
             }
             catch {
@@ -2029,15 +2123,15 @@ namespace ToolWear{
                     Math.Pow(samples[i].Imaginary, 2))));
                 double hz = rateNumeric_base / samplesPerChannelNumeric_base;
                 //if (mag < 0.5) mag *= 0.2f;
-                if (mode.Equals("Match")) chart_FFT.Series[0].Points.AddXY(hz * (i + 1), mag);
+                if (mode.Equals("Match")) chart_FFT.Series[3].Points.AddXY(hz * (i + 1), mag);
                 else if (mode.Equals("Learn")) chart_LearnFFT.Series[0].Points.AddXY(hz * (i + 1), mag);
-                //chart_FFT.Series[0].Points.AddXY(i + 1, fftresult.DataBlock.Data[i] / 100);
+                //chart_FFT.Series[3].Points.AddXY(i + 1, fftresult.DataBlock.Data[i] / 100);
                 //找尋最大值
                 if (mag > double.Parse(List_FFT_Max[i]))
                     List_FFT_Max[i] = mag.ToString();
             }
             //寫檔
-            StreamWriter sw_Max = new StreamWriter(path + @"\data\FFT_Max.cp");
+            StreamWriter sw_Max = new StreamWriter(path + @"\data\FFT\"+ lb_Learn_WorkName.Text + Learn_Axial + ".cp");
             for(int i = 0;i<List_FFT_Max.Count;i++) sw_Max.WriteLine(List_FFT_Max[i]);
             sw_Max.Close();
             sw_Max.Dispose();
