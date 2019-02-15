@@ -7044,6 +7044,339 @@
   <data name="panel_Thermal.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="&gt;&gt;btn_Thermal_stop.Name" xml:space="preserve">
+    <value>btn_Thermal_stop</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_stop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_stop.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_stop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_start.Name" xml:space="preserve">
+    <value>btn_Thermal_start</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_start.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_start.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_start.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_20.Name" xml:space="preserve">
+    <value>btn_Thermal_20</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_20.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_20.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_19.Name" xml:space="preserve">
+    <value>btn_Thermal_19</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_19.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_19.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_18.Name" xml:space="preserve">
+    <value>btn_Thermal_18</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_18.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_18.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_17.Name" xml:space="preserve">
+    <value>btn_Thermal_17</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_17.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_17.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_16.Name" xml:space="preserve">
+    <value>btn_Thermal_16</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_16.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_16.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_15.Name" xml:space="preserve">
+    <value>btn_Thermal_15</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_15.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_15.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_14.Name" xml:space="preserve">
+    <value>btn_Thermal_14</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_14.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_14.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_13.Name" xml:space="preserve">
+    <value>btn_Thermal_13</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_13.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_13.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_12.Name" xml:space="preserve">
+    <value>btn_Thermal_12</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_12.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_12.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_11.Name" xml:space="preserve">
+    <value>btn_Thermal_11</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_11.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_11.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_10.Name" xml:space="preserve">
+    <value>btn_Thermal_10</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_10.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_10.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_09.Name" xml:space="preserve">
+    <value>btn_Thermal_09</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_09.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_09.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_08.Name" xml:space="preserve">
+    <value>btn_Thermal_08</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_08.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_08.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_07.Name" xml:space="preserve">
+    <value>btn_Thermal_07</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_07.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_07.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_06.Name" xml:space="preserve">
+    <value>btn_Thermal_06</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_06.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_06.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_05.Name" xml:space="preserve">
+    <value>btn_Thermal_05</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_05.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_05.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_04.Name" xml:space="preserve">
+    <value>btn_Thermal_04</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_04.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_04.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting.Name" xml:space="preserve">
+    <value>btn_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_03.Name" xml:space="preserve">
+    <value>btn_Thermal_03</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_03.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_03.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_02.Name" xml:space="preserve">
+    <value>btn_Thermal_02</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_02.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_02.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_01.Name" xml:space="preserve">
+    <value>btn_Thermal_01</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_01.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_01.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.Name" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_Mutile.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.Name" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.Parent" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal_single.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="panel_Thermal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_Thermal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 645</value>
+  </data>
+  <data name="panel_Thermal.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal.Name" xml:space="preserve">
+    <value>panel_Thermal</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="btn_Thermal_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -7830,6 +8163,42 @@
   <data name="&gt;&gt;btn_Thermal_01.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
+  <data name="&gt;&gt;lb_Thermal_page.Name" xml:space="preserve">
+    <value>lb_Thermal_page</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.Name" xml:space="preserve">
+    <value>btn_Thermal_down</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.Name" xml:space="preserve">
+    <value>btn_Thermal_up</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;lb_Thermal_M2_Now.Name" xml:space="preserve">
     <value>lb_Thermal_M2_Now</value>
   </data>
@@ -7840,7 +8209,7 @@
     <value>panel_Thermal_Mutile</value>
   </data>
   <data name="&gt;&gt;lb_Thermal_M2_Now.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;label31.Name" xml:space="preserve">
     <value>label31</value>
@@ -7852,7 +8221,7 @@
     <value>panel_Thermal_Mutile</value>
   </data>
   <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label32.Name" xml:space="preserve">
     <value>label32</value>
@@ -7864,7 +8233,7 @@
     <value>panel_Thermal_Mutile</value>
   </data>
   <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;chart_Thermal_M2.Name" xml:space="preserve">
     <value>chart_Thermal_M2</value>
@@ -7876,7 +8245,7 @@
     <value>panel_Thermal_Mutile</value>
   </data>
   <data name="&gt;&gt;chart_Thermal_M2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;lb_Thermal_M1_Now.Name" xml:space="preserve">
     <value>lb_Thermal_M1_Now</value>
@@ -7888,7 +8257,7 @@
     <value>panel_Thermal_Mutile</value>
   </data>
   <data name="&gt;&gt;lb_Thermal_M1_Now.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;label28.Name" xml:space="preserve">
     <value>label28</value>
@@ -7900,7 +8269,7 @@
     <value>panel_Thermal_Mutile</value>
   </data>
   <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;label29.Name" xml:space="preserve">
     <value>label29</value>
@@ -7912,7 +8281,7 @@
     <value>panel_Thermal_Mutile</value>
   </data>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;chart_Thermal_M1.Name" xml:space="preserve">
     <value>chart_Thermal_M1</value>
@@ -7924,7 +8293,7 @@
     <value>panel_Thermal_Mutile</value>
   </data>
   <data name="&gt;&gt;chart_Thermal_M1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="panel_Thermal_Mutile.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 263</value>
@@ -7946,6 +8315,246 @@
   </data>
   <data name="&gt;&gt;panel_Thermal_Mutile.ZOrder" xml:space="preserve">
     <value>24</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 22.2pt</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 242</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 48</value>
+  </data>
+  <data name="lb_Thermal_M2_Now.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.Name" xml:space="preserve">
+    <value>lb_Thermal_M2_Now</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M2_Now.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label31.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>863, 306</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="label31.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label32.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 192</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="label32.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>℃</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chart_Thermal_M2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 184</value>
+  </data>
+  <data name="chart_Thermal_M2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 187</value>
+  </data>
+  <data name="chart_Thermal_M2.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="chart_Thermal_M2.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.Name" xml:space="preserve">
+    <value>chart_Thermal_M2</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 22.2pt</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 60</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 48</value>
+  </data>
+  <data name="lb_Thermal_M1_Now.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.Name" xml:space="preserve">
+    <value>lb_Thermal_M1_Now</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_M1_Now.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label28.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>865, 132</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label29.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 10</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>℃</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="chart_Thermal_M1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 2</value>
+  </data>
+  <data name="chart_Thermal_M1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 187</value>
+  </data>
+  <data name="chart_Thermal_M1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chart_Thermal_M1.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.Name" xml:space="preserve">
+    <value>chart_Thermal_M1</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal_M1.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;lb_Thermal_Now.Name" xml:space="preserve">
     <value>lb_Thermal_Now</value>
@@ -8015,267 +8624,6 @@
   </data>
   <data name="&gt;&gt;panel_Thermal_single.ZOrder" xml:space="preserve">
     <value>25</value>
-  </data>
-  <data name="panel_Thermal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
-  </data>
-  <data name="panel_Thermal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 645</value>
-  </data>
-  <data name="panel_Thermal.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel_Thermal.Name" xml:space="preserve">
-    <value>panel_Thermal</value>
-  </data>
-  <data name="&gt;&gt;panel_Thermal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_Thermal.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lb_Thermal_M2_Now.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_Thermal_M2_Now.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 22.2pt</value>
-  </data>
-  <data name="lb_Thermal_M2_Now.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_Thermal_M2_Now.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 242</value>
-  </data>
-  <data name="lb_Thermal_M2_Now.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 48</value>
-  </data>
-  <data name="lb_Thermal_M2_Now.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;lb_Thermal_M2_Now.Name" xml:space="preserve">
-    <value>lb_Thermal_M2_Now</value>
-  </data>
-  <data name="&gt;&gt;lb_Thermal_M2_Now.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_Thermal_M2_Now.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
-  </data>
-  <data name="&gt;&gt;lb_Thermal_M2_Now.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label31.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 13.8pt</value>
-  </data>
-  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>863, 306</value>
-  </data>
-  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 30</value>
-  </data>
-  <data name="label31.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="label31.Text" xml:space="preserve">
-    <value>秒</value>
-  </data>
-  <data name="&gt;&gt;label31.Name" xml:space="preserve">
-    <value>label31</value>
-  </data>
-  <data name="&gt;&gt;label31.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
-  </data>
-  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label32.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 13.8pt</value>
-  </data>
-  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 192</value>
-  </data>
-  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 30</value>
-  </data>
-  <data name="label32.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="label32.Text" xml:space="preserve">
-    <value>℃</value>
-  </data>
-  <data name="&gt;&gt;label32.Name" xml:space="preserve">
-    <value>label32</value>
-  </data>
-  <data name="&gt;&gt;label32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
-  </data>
-  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="chart_Thermal_M2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 184</value>
-  </data>
-  <data name="chart_Thermal_M2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 187</value>
-  </data>
-  <data name="chart_Thermal_M2.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="chart_Thermal_M2.Text" xml:space="preserve">
-    <value>chart2</value>
-  </data>
-  <data name="&gt;&gt;chart_Thermal_M2.Name" xml:space="preserve">
-    <value>chart_Thermal_M2</value>
-  </data>
-  <data name="&gt;&gt;chart_Thermal_M2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_Thermal_M2.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
-  </data>
-  <data name="&gt;&gt;chart_Thermal_M2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lb_Thermal_M1_Now.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_Thermal_M1_Now.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 22.2pt</value>
-  </data>
-  <data name="lb_Thermal_M1_Now.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_Thermal_M1_Now.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 60</value>
-  </data>
-  <data name="lb_Thermal_M1_Now.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 48</value>
-  </data>
-  <data name="lb_Thermal_M1_Now.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;lb_Thermal_M1_Now.Name" xml:space="preserve">
-    <value>lb_Thermal_M1_Now</value>
-  </data>
-  <data name="&gt;&gt;lb_Thermal_M1_Now.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_Thermal_M1_Now.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
-  </data>
-  <data name="&gt;&gt;lb_Thermal_M1_Now.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label28.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 13.8pt</value>
-  </data>
-  <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>865, 132</value>
-  </data>
-  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 30</value>
-  </data>
-  <data name="label28.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="label28.Text" xml:space="preserve">
-    <value>秒</value>
-  </data>
-  <data name="&gt;&gt;label28.Name" xml:space="preserve">
-    <value>label28</value>
-  </data>
-  <data name="&gt;&gt;label28.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
-  </data>
-  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label29.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 13.8pt</value>
-  </data>
-  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 10</value>
-  </data>
-  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 30</value>
-  </data>
-  <data name="label29.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="label29.Text" xml:space="preserve">
-    <value>℃</value>
-  </data>
-  <data name="&gt;&gt;label29.Name" xml:space="preserve">
-    <value>label29</value>
-  </data>
-  <data name="&gt;&gt;label29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
-  </data>
-  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="chart_Thermal_M1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 2</value>
-  </data>
-  <data name="chart_Thermal_M1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 187</value>
-  </data>
-  <data name="chart_Thermal_M1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chart_Thermal_M1.Text" xml:space="preserve">
-    <value>chart1</value>
-  </data>
-  <data name="&gt;&gt;chart_Thermal_M1.Name" xml:space="preserve">
-    <value>chart_Thermal_M1</value>
-  </data>
-  <data name="&gt;&gt;chart_Thermal_M1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_Thermal_M1.Parent" xml:space="preserve">
-    <value>panel_Thermal_Mutile</value>
-  </data>
-  <data name="&gt;&gt;chart_Thermal_M1.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="lb_Thermal_Now.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -9799,7 +10147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="tb_logTitle_04.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.2000008pt</value>
@@ -12049,7 +12397,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_SelectParts.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;btn_SelectParts_remove01.Name" xml:space="preserve">
     <value>btn_SelectParts_remove01</value>
@@ -13915,7 +14263,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AddParts.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btn_AddParts_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -14222,6 +14570,99 @@
   </data>
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="btn_Thermal_up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Thermal_up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Thermal_up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Thermal_up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>896, 7</value>
+  </data>
+  <data name="btn_Thermal_up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 40</value>
+  </data>
+  <data name="btn_Thermal_up.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.Name" xml:space="preserve">
+    <value>btn_Thermal_up</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_up.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_Thermal_down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Thermal_down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Thermal_down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Thermal_down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>896, 331</value>
+  </data>
+  <data name="btn_Thermal_down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 40</value>
+  </data>
+  <data name="btn_Thermal_down.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.Name" xml:space="preserve">
+    <value>btn_Thermal_down</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;btn_Thermal_down.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_Thermal_page.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="lb_Thermal_page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Thermal_page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>891, 163</value>
+  </data>
+  <data name="lb_Thermal_page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 41</value>
+  </data>
+  <data name="lb_Thermal_page.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="lb_Thermal_page.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_Thermal_page.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.Name" xml:space="preserve">
+    <value>lb_Thermal_page</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.Parent" xml:space="preserve">
+    <value>panel_Thermal_Mutile</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_page.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
