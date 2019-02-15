@@ -7947,24 +7947,6 @@
   <data name="&gt;&gt;panel_Thermal_Mutile.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
-  <data name="lb_Thermal_Now.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_Thermal_Now.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 22.2pt</value>
-  </data>
-  <data name="lb_Thermal_Now.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_Thermal_Now.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 156</value>
-  </data>
-  <data name="lb_Thermal_Now.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 48</value>
-  </data>
-  <data name="lb_Thermal_Now.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
   <data name="&gt;&gt;lb_Thermal_Now.Name" xml:space="preserve">
     <value>lb_Thermal_Now</value>
   </data>
@@ -7976,27 +7958,6 @@
   </data>
   <data name="&gt;&gt;lb_Thermal_Now.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 13.8pt</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>915, 323</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 30</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>秒</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -8010,27 +7971,6 @@
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label26.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 13.8pt</value>
-  </data>
-  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 10</value>
-  </data>
-  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 30</value>
-  </data>
-  <data name="label26.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="label26.Text" xml:space="preserve">
-    <value>℃</value>
-  </data>
   <data name="&gt;&gt;label26.Name" xml:space="preserve">
     <value>label26</value>
   </data>
@@ -8042,18 +7982,6 @@
   </data>
   <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="chart_Thermal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 2</value>
-  </data>
-  <data name="chart_Thermal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>883, 371</value>
-  </data>
-  <data name="chart_Thermal.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chart_Thermal.Text" xml:space="preserve">
-    <value>chart1</value>
   </data>
   <data name="&gt;&gt;chart_Thermal.Name" xml:space="preserve">
     <value>chart_Thermal</value>
@@ -8348,6 +8276,126 @@
   </data>
   <data name="&gt;&gt;chart_Thermal_M1.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="lb_Thermal_Now.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_Thermal_Now.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 22.2pt</value>
+  </data>
+  <data name="lb_Thermal_Now.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Thermal_Now.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 156</value>
+  </data>
+  <data name="lb_Thermal_Now.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 48</value>
+  </data>
+  <data name="lb_Thermal_Now.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_Now.Name" xml:space="preserve">
+    <value>lb_Thermal_Now</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_Now.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_Now.Parent" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;lb_Thermal_Now.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>915, 323</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label26.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 10</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="label26.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>℃</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chart_Thermal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 2</value>
+  </data>
+  <data name="chart_Thermal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>883, 371</value>
+  </data>
+  <data name="chart_Thermal.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chart_Thermal.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal.Name" xml:space="preserve">
+    <value>chart_Thermal</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal.Parent" xml:space="preserve">
+    <value>panel_Thermal_single</value>
+  </data>
+  <data name="&gt;&gt;chart_Thermal.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="panel_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
