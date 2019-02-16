@@ -1164,12 +1164,12 @@ namespace ToolWear{
                 string tem = sr.ReadLine();
                 try{
                     if(read_count >= (int.Parse(lb_SelectParts_Page.Text) - 1) * 8 && read_count < int.Parse(lb_SelectParts_Page.Text) * 8){
-                        panel_Parts[read_count].Visible = true;
-                        lb_Parts[read_count].Text = tem.Split(',')[0];
+                        panel_Parts[read_count % 8].Visible = true;
+                        lb_Parts[read_count % 8].Text = tem.Split(',')[0];
                         if (!tem.Split(',')[1].Equals("null"))
-                            pb_Parts[read_count].BackgroundImage = Image.FromFile(tem.Split(',')[1]);
+                            pb_Parts[read_count % 8].BackgroundImage = Image.FromFile(tem.Split(',')[1]);
                         else
-                            pb_Parts[read_count].BackgroundImage = ToolWear.Properties.Resources.wd_img_blank;
+                            pb_Parts[read_count % 8].BackgroundImage = ToolWear.Properties.Resources.wd_img_blank;
                     }
                     else if (read_count >= (int.Parse(lb_SelectParts_Page.Text) + 1) * 8) break;
                     read_count++;
@@ -1256,7 +1256,7 @@ namespace ToolWear{
             pb_SelectParts[Select_count - 1].BackgroundImage = ToolWear.Properties.Resources.wd_img_blank;
             //重新整理頁面
             pb_ToolWear_Click(null, null);
-            MessageBox.Show("工件刪除成功！", "刪除訊息", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("工件刪除成功！", "刪除訊息", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         //磨耗偵測 > 選擇工件 > select按鈕
         private void btn_SelectParts(object sender,EventArgs e){
@@ -1309,9 +1309,24 @@ namespace ToolWear{
                 DialogResult dialogResult1 = MessageBox.Show("您尚未選擇工件圖片來源\n確定不要加入圖片嗎？", "圖片未選取", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if (dialogResult1 == DialogResult.Cancel) return;
             }
+            //檢查是否有同樣名稱的工件
+            StreamReader sr = new StreamReader(path + @"\data\parts.cp");
+            while (!sr.EndOfStream){
+                string tem = sr.ReadLine();
+                if (tem.Split(',')[0].Equals(tb_AddParts_Name.Text)){
+                    MessageBox.Show("工件名稱重複，請重新輸入。", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    sr.Close();
+                    sr.Dispose();
+                    return;
+                }
+            }
+            sr.Close();
+            sr.Dispose();
             DialogResult dialogResult = MessageBox.Show("確定要新增此工件嗎？", "確認訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
-            try{
+
+            try
+            {
                 FileStream File_module = File.Open(path + @"\data\parts.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
                 StreamWriter sw = new StreamWriter(File_module);
                 //有選圖片的話

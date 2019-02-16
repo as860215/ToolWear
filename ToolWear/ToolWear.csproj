@@ -157,9 +157,6 @@
     <None Include="Resources\menubtn_th.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menubtn_health.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\menubtn_learn_default.png" />
   </ItemGroup>
   <ItemGroup>
@@ -224,6 +221,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wdps_formplus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubtn_health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wdpsn_btn_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wdps_btn_plus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets" Condition="Exists('..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets')" />

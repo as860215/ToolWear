@@ -229,4 +229,10 @@
   <data name="wdps_formplus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wdps_formplus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="wdpsn_btn_cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wdpsn_btn_cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wdps_btn_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wdps_btn_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

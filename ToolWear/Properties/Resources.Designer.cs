@@ -373,6 +373,16 @@ namespace ToolWear.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap wdps_btn_plus {
+            get {
+                object obj = ResourceManager.GetObject("wdps_btn_plus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap wdps_btn_select {
             get {
                 object obj = ResourceManager.GetObject("wdps_btn_select", resourceCulture);
@@ -396,6 +406,16 @@ namespace ToolWear.Properties {
         internal static System.Drawing.Bitmap wdps_icon_delete {
             get {
                 object obj = ResourceManager.GetObject("wdps_icon_delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap wdpsn_btn_cancel {
+            get {
+                object obj = ResourceManager.GetObject("wdpsn_btn_cancel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
