@@ -11,6 +11,8 @@ using System.Numerics;
 using System.Windows.Forms;
 using EZNCAUTLib;
 using System.Threading;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace ToolWear{
     public partial class Form1 : Form{
@@ -18,7 +20,7 @@ namespace ToolWear{
         public Form1(){
             InitializeComponent();
             //將視窗最大化
-            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
             //強制置頂視窗
             //this.TopMost = true;
         }
@@ -1144,13 +1146,18 @@ namespace ToolWear{
         private void SelectParts_LoadData(){
             Panel[] panel_Parts = new Panel[8] { panel_SelectParts_01, panel_SelectParts_02, panel_SelectParts_03, panel_SelectParts_04,
                                                  panel_SelectParts_05, panel_SelectParts_06, panel_SelectParts_07, panel_SelectParts_08 };
+            Panel[] panel_Parts_Add = new Panel[8] { panel_SelectParts_01Add, panel_SelectParts_02Add, panel_SelectParts_03Add, panel_SelectParts_04Add,
+                                                 panel_SelectParts_05Add, panel_SelectParts_06Add, panel_SelectParts_07Add, panel_SelectParts_08Add };
             Label[] lb_Parts = new Label[8] { lb_SelectParts_01, lb_SelectParts_02, lb_SelectParts_03, lb_SelectParts_04,
                                               lb_SelectParts_05, lb_SelectParts_06, lb_SelectParts_07, lb_SelectParts_08 };
             PictureBox[] pb_Parts = new PictureBox[8] { pb_SelectParts_01, pb_SelectParts_02, pb_SelectParts_03, pb_SelectParts_04,
                                                         pb_SelectParts_05, pb_SelectParts_06, pb_SelectParts_07, pb_SelectParts_08};
             StreamReader sr = new StreamReader(path + @"\data\parts.cp");
-            //先隱藏全部panel
-            for (int i = 0; i < panel_Parts.Length; i++) panel_Parts[i].Visible = false;
+            //先隱藏全部選項和新增panel
+            for (int i = 0; i < panel_Parts.Length; i++){
+                panel_Parts[i].Visible = false;
+                panel_Parts_Add[i].Visible = false;
+            }
             int read_count = 0;
             while (!sr.EndOfStream){
                 //tem讀取範例：名稱,C:\Users\user\Desktop\Campro\ToolWear\ToolWear\bin\Debug\data\Image\IMG_3494.JPG
@@ -1174,6 +1181,16 @@ namespace ToolWear{
             }
             sr.Close();
             sr.Dispose();
+            //判斷是否此頁面還有空間塞入 + 號
+            for(int i = 0;i< panel_Parts.Length; i++){
+                //如果panel的visible是false的話表示因為沒有資料所以不讀取，那就將該panel置換成新增工件
+                if(panel_Parts[i].Visible == false){
+                    panel_Parts[i].Visible = true;
+                    panel_Parts_Add[i].Visible = true;
+                    panel_Parts_Add[i].BringToFront();
+                    break;
+                }
+            }
         }
         //磨耗偵測 > 選擇工件 > 工件上一頁
         private void btn_SelectParts_up_Click(object sender,EventArgs e){
@@ -1210,6 +1227,7 @@ namespace ToolWear{
             //因為btn_Select.Name會得到btn_SelectParts_remove??，所以在切除底線後再對remove??進行切割取得數字
             int Select_count = int.Parse(btn_Select.Name.Split('_')[2].Split('e')[2]);
             string Parts_Name = lb_SelectParts[Select_count - 1].Text;
+            string Delete_Path = "";
             DialogResult dialogResult = MessageBox.Show("您即將刪除 " + Parts_Name + "此項工件。\n此操作將不可復原，請檢查後再按下確定鍵。", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
             //暫存讀取的字串資料
@@ -1218,7 +1236,11 @@ namespace ToolWear{
             while (!sr.EndOfStream){
                 string tem = sr.ReadLine();
                 //如果資料檔內的工件名稱 = 本次要刪除的名稱 > 不暫存此資料(意即等等要重新改寫cp檔的時候會忽略之)
-                if (!tem.Split(',')[0].Equals(Parts_Name)) tem_Read.Add(tem);
+                if (!tem.Split(',')[0].Equals(Parts_Name)){
+                    tem_Read.Add(tem);
+                    //暫存圖片檔路徑
+                    Delete_Path = tem.Split(',')[1];
+                }
             }
             sr.Close();
             sr.Close();
@@ -1575,7 +1597,7 @@ namespace ToolWear{
                     }
                 }
             }
-            catch(Exception ex) {
+            catch{
                 tb_Compensate_ip.Text = "";
                 cb_Compensate_Channel.SelectedIndex = 0;
             }
@@ -2500,6 +2522,37 @@ namespace ToolWear{
                     DetialTB.BackColor = Color.FromArgb(15, 60, 96);
                     break;
             }
+        }
+        #endregion
+        #region 螢幕鍵盤
+        //顯示屏幕鍵盤
+        public static void ShowInputPanel(){
+            try{
+                Process[] proc = Process.GetProcessesByName("TabTip");
+                if (proc.Length > 0)
+                    proc[0].Kill(); //關閉執行中的螢幕鍵盤，以防無法開啟
+                dynamic file = "C:\\Program Files\\Common Files\\microsoft shared\\ink\\TabTip.exe";
+                if (!System.IO.File.Exists(file))
+                    return;
+                Process.Start(file);
+            }
+            catch (Exception ex){
+                MessageBox.Show("無法開啟螢幕鍵盤。", "鍵盤無法啟用", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //關閉屏幕鍵盤
+        public static void CloseInputPanel(){
+            Process[] proc = Process.GetProcessesByName("TabTip");
+            if (proc.Length > 0)
+                proc[0].Kill(); //關閉執行中的螢幕鍵盤，以防無法開啟
+        }
+        //顯示鍵盤觸發方法
+        private void ShowInputPanel_Click(object sender,EventArgs e){
+            ShowInputPanel();
+        }
+        //關閉鍵盤觸發方法
+        private void CloseInputPanel_Click(object sender, EventArgs e){
+            CloseInputPanel();
         }
         #endregion
     }

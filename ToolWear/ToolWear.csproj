@@ -134,9 +134,6 @@
     <None Include="Resources\wd_s_btn_save.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\tc_s_icon_save-3.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\tc_s_icon_delete.png" />
   </ItemGroup>
   <ItemGroup>
@@ -205,19 +202,7 @@
     <None Include="Resources\btn_stop_selected.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\giphy.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\tc_btn_axiabtn_selected.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wds_btn_save.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wdpsn_btn_save.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wdpsn_picinput.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wd_l_btn_plus.png" />
@@ -232,13 +217,13 @@
     <None Include="Resources\wdpsn_img_blank.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\IMG_3494.JPG" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\wdps_icon_delete.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wds_icon_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wdps_formplus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets" Condition="Exists('..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets')" />
