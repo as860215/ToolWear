@@ -33,6 +33,8 @@ namespace ToolWear{
             panel_log.SendToBack();
             //啟動背景讀取資料timer
             timer_load.Enabled = true;
+            //顯示進度
+            tb_Load_ProgressRate.Text = "讀取進度 ： 0 %";
         }
         private float Chart_PointMax = 0.5f, Chart_PointMin = -0.5f;  //折線圖預設上下限
         /// <summary>
@@ -52,6 +54,7 @@ namespace ToolWear{
             chart_Thermal_M2.Legends.Clear();
             chart_warring_1.Legends.Clear();
             chart_warring_2.Legends.Clear();
+            chart_Blade.Legends.Clear();
             //折線圖上下限與x軸最大值預覽
             //chart_FFT.Series[2].Points.AddXY(1, -0.5);
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
@@ -71,6 +74,7 @@ namespace ToolWear{
             for (int i = 0; i < 100; i++){
                 chart_FFT.Series[1].Points.AddXY(i + 1, 0.1);
                 chart_LearnFFT.Series[1].Points.AddXY(i + 1, 0.1);
+                chart_Blade.Series[1].Points.AddXY(i + 1, 0.1);
             }
             //溫度折線圖
             for (int i = 1; i <= 30; i++){
@@ -190,7 +194,7 @@ namespace ToolWear{
             Read_Log(DateTime.Now.ToString("yyyyMMdd"));
         }
         #endregion
-        #region 程式啟動後背景讀取各項起始資料
+        #region 背景讀取
         //讀取階段
         int Load_Step = 0;
         //讀取程式計時器
@@ -250,14 +254,16 @@ namespace ToolWear{
                     break;
                 case 26:
                     tem = "控制器連線測試完畢";
+                    Load_Step = 80; //因中間已無讀取程式，跳到最後讀取緩衝
                     break;
 
                 //預留最後95~100緩衝讀取
                 case 95:
                     tem = "正在將您導入主頁面...";
-                    timer_load.Interval = 300;
+                    timer_load.Interval = 100;
                     break;
                 case 100:
+                    tem = "完成";
                     timer_load.Enabled = false;
                     //開啟按鈕功能
                     btn_Thermal.Enabled = true;
@@ -271,6 +277,7 @@ namespace ToolWear{
                     break;
             }
             if(!string.IsNullOrWhiteSpace(tem)) tb_Loading.Text += tem + "\r\n";
+            tb_Load_ProgressRate.Text = "讀取進度 ： " + tem_step + " %";
             Load_Step++;
         }
         #endregion
@@ -310,6 +317,7 @@ namespace ToolWear{
         private void btn_Threshold_Back_Click(object sender, EventArgs e){
             panel_ToolWear.Visible = true;
             panel_Threshold.Visible = false;
+            btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
         }
         //磨耗偵測 > 選擇工件 > 回上一頁
         private void btn_SelectParts_Back_Click(object sender,EventArgs e){
@@ -414,6 +422,8 @@ namespace ToolWear{
         //暫存模型資料
         List<string> Module_FFT = new List<string>();
         //開始偵測
+        //目前啟動的軸向編號(只能單軸所以只設一個變數)
+        int now_Match = 0;
         //磨耗偵測目前只能單軸
         private void btn_ToolWear_Start_Click(object sender, EventArgs e){
             if (lb_ToolWear_Parts.Text.Equals("(未選擇)")){
@@ -432,9 +442,10 @@ namespace ToolWear{
                 for(int i = 0; i < Module_FFT.Count; i++)
                     chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
             }
-            catch {
+            catch(Exception ex) {
                 //如果進到例外事件就是找不到檔案，也就是沒有學習過
-                MessageBox.Show("對不起，"+ lb_ToolWear_Parts.Text+ " 此軸向並未找到學習模型，\n請點選左方功能表「學習模式」進行模型建構。", "尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("對不起，" + lb_ToolWear_Parts.Text + " 此軸向並未找到學習模型，\n請點選左方功能表「學習模式」進行模型建構。" +
+                    "\n\nbtn_ToolWear_Start_Click\n\n" + ex.ToString(), "尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             btn_ToolWear_Start.Enabled = false;
@@ -447,6 +458,9 @@ namespace ToolWear{
             pre_ToolWear.ForeColor = Color.FromArgb(255, 187, 0);
             //修改執行階段
             ToolWear_bool[now_ToolWear] = true;
+            now_Match = now_ToolWear;
+            //Log推播訊息
+            Write_Log("系統","已啟動磨耗偵測 ： " + lb_ToolWear_Parts.Text + "/" + pre_ToolWear.Text);
             DAQInitialize("Match");
         }
         //停止偵測
@@ -461,19 +475,28 @@ namespace ToolWear{
             pre_ToolWear.ForeColor = Color.White;
             //修改執行階段
             ToolWear_bool[now_ToolWear] = false;
+            //Log推播訊息
+            Write_Log("系統", "已關閉磨耗偵測 ： " + lb_ToolWear_Parts.Text + "/" + pre_ToolWear.Text);
         }
         //FFT和原始數據折線圖轉換
-        private bool ToolWearChange_FFT = false;    //紀錄現在折線圖顯示何者圖形
         private void btn_ToolWear_Change_Click(object sender, EventArgs e){
-            if (ToolWearChange_FFT == false){
-                chart_FFT.Visible = true;
-                chart_ToolWear.Visible = false;
-                ToolWearChange_FFT = true;
-            }
-            else{
-                chart_FFT.Visible = false;
+            if (lb_ToolWear_ChartStatus.Text.Equals("刀具頻率")){
                 chart_ToolWear.Visible = true;
-                ToolWearChange_FFT = false;
+                chart_FFT.Visible = false;
+                chart_Blade.Visible = false;
+                lb_ToolWear_ChartStatus.Text = "原始數據";
+            }
+            else if(lb_ToolWear_ChartStatus.Text.Equals("原始數據")){
+                chart_ToolWear.Visible = false;
+                chart_FFT.Visible = true;
+                chart_Blade.Visible = false;
+                lb_ToolWear_ChartStatus.Text = "傅立葉數據";
+            }
+            else if (lb_ToolWear_ChartStatus.Text.Equals("傅立葉數據")){
+                chart_ToolWear.Visible = false;
+                chart_FFT.Visible = false;
+                chart_Blade.Visible = true;
+                lb_ToolWear_ChartStatus.Text = "刀具頻率";
             }
         }
         //顯示臨界值
@@ -485,6 +508,10 @@ namespace ToolWear{
         private void btn_ToolWearSetting_Research_Click(object sender,EventArgs e){
             DAQPhysicalChannels();
             btn_ToolWearSetting_Choose(pre_ToolWearSetting, null);
+        }
+        //磨耗偵測 > 判斷是否顯示log(待)
+        private void ToolWear_Log(){
+
         }
         #endregion
         #region 學習模式
@@ -591,7 +618,7 @@ namespace ToolWear{
         }
         //重置縮放
         private void btn_ViewModule_ChartReset_Click(object sender, EventArgs e){
-            chart_Blade.ChartAreas[0].AxisX.ScaleView.ZoomReset(0);
+            //chart_Blade.ChartAreas[0].AxisX.ScaleView.ZoomReset(0);
             chart_ViewModule.ChartAreas[0].AxisX.ScaleView.ZoomReset(0);
             chart_ViewFFT.ChartAreas[0].AxisX.ScaleView.ZoomReset(0);
             chart_ViewFFT.ChartAreas[0].AxisY.ScaleView.ZoomReset(0);
@@ -601,26 +628,86 @@ namespace ToolWear{
             if(chart_ViewModule.Visible == true){
                 chart_ViewFFT.Visible = true;
                 chart_ViewModule.Visible = false;
-                chart_Blade.Visible = false;
+                //chart_Blade.Visible = false;
             }
             else
             {
                 chart_ViewFFT.Visible = false;
                 chart_ViewModule.Visible = true;
-                chart_Blade.Visible = false;
+                //chart_Blade.Visible = false;
             }
         }
         #endregion
         #region 刃數比對
-        //刃數比對(待)
+        //刃數比對
         private void Blade_Comparison(){
-
+            double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+            //讀取Module的暫存FFT變數 ： Module_FFT
+            List<string> Blade_Module = Module_FFT;
+            List<string> Blade_Match = new List<string>();
+            try{
+                StreamReader sr_match = new StreamReader(path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + now_Match.ToString("00") + ".cp");
+                while (!sr_match.EndOfStream)
+                    Blade_Match.Add(sr_match.ReadLine());
+                sr_match.Close();
+                sr_match.Dispose();
+            }
+            catch(Exception ex) {
+                MessageBox.Show("讀取Match檔時發生錯誤。\n\nBlade_Comparison\n\n" + ex.ToString(),"讀取錯誤",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+            chart_Blade.Series[0].Points.Clear();
+            //取得主軸轉數
+            int Tool_rate = 0;
+            if (int.Parse(lb_ToolWear_FeedSpeed.Text.Split(' ')[0]) == 0) Tool_rate = 2500; //如果主軸轉數為0則使用預設轉數
+            else Tool_rate = int.Parse(lb_ToolWear_FeedSpeed.Text.Split(' ')[0]);
+            //取得刀具刃數
+            StreamReader sr_ATC = new StreamReader(path + @"\data\ATC.cp");
+            int Tool_Blade = 0;     //刀具刃數
+            for (int i = 0; i <= now_Match; i++){
+                //讀取範例 1,test,4
+                //編號,名稱,刃數
+                string tem = sr_ATC.ReadLine();
+                if (i != now_Match) continue;
+                try {
+                    Tool_Blade = int.Parse(tem.Split(',')[2]);
+                }
+                catch {
+                    //如果進到例外表示該刀具的刃數沒有設定，那就使用預設值
+                    Tool_Blade = 4;
+                }
+            }
+            //刀具刃數與頻率計算公式
+            double Blade_Hz = Tool_rate / 60 * Tool_Blade;  
+            int Blade_Hz_Mag = 1;   //頻率倍率(取1~5)
+            double sum = 0;         //當前儲存點位總和
+            int count = 0;          //儲存點位數量
+            for (int i = 0; i < Blade_Match.Count; i++){
+                double tem = 0;
+                if ((i + 1) * hz > Blade_Hz_Mag * Blade_Hz * 0.9f && (i + 1) * hz < Blade_Hz_Mag * Blade_Hz * 1.1f){
+                    //上下各取10% range
+                    tem = double.Parse(Blade_Module[i]) - double.Parse(Blade_Match[i]); //暫存相差值
+                    if (tem >= 0){
+                        sum += tem;
+                        count++;
+                    }
+                }
+                else if ((i + 1) * hz > Blade_Hz_Mag * Blade_Hz * 1.1f) Blade_Hz_Mag++; //若頻率已大於刀刃刃數頻率，將倍率提升
+                //FileStream File_module = File.Open(path + @"\data\FFT\new1.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+                //StreamWriter sw = new StreamWriter(File_module);
+                //sw.WriteLine(tem);
+                //sw.Close();
+                //sw.Dispose();
+                chart_Blade.Series[0].Points.AddXY((i + 1) * hz, tem);
+                if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
+            }
+            string tem_s = (sum / count).ToString();
         }
         //刃數比對(舊)
         private void btn_Blade_Click(object sender, EventArgs e){
-            chart_Blade.Visible = true;
-            chart_Blade.Legends.Clear();
-            chart_Blade.Series[0].Points.Clear();
+            //chart_Blade.Visible = true;
+            //chart_Blade.Legends.Clear();
+            //chart_Blade.Series[0].Points.Clear();
             double hz = rateNumeric_base / samplesPerChannelNumeric_base;
             List<string> Blade_new = new List<string>();
             List<string> Blade_crash = new List<string>();
@@ -658,7 +745,7 @@ namespace ToolWear{
                 //sw.WriteLine(tem);
                 //sw.Close();
                 //sw.Dispose();
-                chart_Blade.Series[0].Points.AddXY((i + 1) * hz, tem);
+                //chart_Blade.Series[0].Points.AddXY((i + 1) * hz, tem);
                 if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
             }
             label5.Text = (sum / count).ToString();
@@ -764,8 +851,8 @@ namespace ToolWear{
                     }
                 }
             }
-            catch{
-                MessageBox.Show("此軸向設定檔不完全，請至設定頁面重新設定。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch(Exception ex){
+                MessageBox.Show("此軸向設定檔不完全，請至設定頁面重新設定。\n\nbtn_Thermal_start_Click\n\n" + ex.ToString(), "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 sr_set.Close();
                 sr_set.Dispose();
                 return;
@@ -909,7 +996,7 @@ namespace ToolWear{
                         sr_axial.Close();
                         sr_axial.Dispose();
                     }
-                    catch { }
+                    catch {}
                     chart[chart_count % 2].Series[0].Points.Clear();
                     chart[chart_count % 2].Series[1].Points.Clear();
                     //清除換頁時第二個折線圖異常顯示問題
@@ -1068,7 +1155,8 @@ namespace ToolWear{
                     read_count++;
                 }
                 catch(Exception ex){
-                    MessageBox.Show("讀取工件資料時出現不可測意外。\n可能是設定檔或是圖片檔遺失，請重新檢查。\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("讀取工件資料時出現不可測意外。\n可能是設定檔或是圖片檔遺失，請重新檢查。\n\nSelectParts_LoadData\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
                 }
             }
             sr.Close();
@@ -1209,7 +1297,7 @@ namespace ToolWear{
                 pb_ToolWear_Click(null, null);
             }
             catch(Exception ex){
-                MessageBox.Show("在儲存時發生不可測意外。\n\nThis problem is from btn_AddParts_save.\n"+ ex.ToString(), "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("在儲存時發生不可測意外。\n\nThis problem is from btn_AddParts_save.\n\n"+ ex.ToString(), "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion
@@ -1362,9 +1450,11 @@ namespace ToolWear{
                "," + cb_ToolWearSetting_Axial.SelectedIndex + "," + physicalChannelComboBox.Text;
             try{
                 ToolWearSetting_SW(tem_s);
-                MessageBox.Show("儲存成功！");
+                MessageBox.Show("儲存成功！", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch { }
+            catch(Exception ex) {
+                MessageBox.Show("儲存失敗。\n\nbtn_ToolWearSetting_save_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         //軸向設定 > 刪除
         private void btn_ToolWearSetting_delete_Click(object sender, EventArgs e){
@@ -1373,9 +1463,11 @@ namespace ToolWear{
             string tem_s = tb_ToolWearSetting_name.Text;
             try{
                 ToolWearSetting_SW(tem_s);
-                MessageBox.Show("刪除成功！");
+                MessageBox.Show("刪除成功！", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch { }
+            catch (Exception ex){
+                MessageBox.Show("刪除失敗。\n\nbtn_ToolWearSetting_delete_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         //軸向設定 > 讀檔+寫檔
         private void ToolWearSetting_SW(string s){
@@ -1470,7 +1562,7 @@ namespace ToolWear{
                     }
                 }
             }
-            catch {
+            catch(Exception ex) {
                 tb_Compensate_ip.Text = "";
                 cb_Compensate_Channel.SelectedIndex = 0;
             }
@@ -1494,9 +1586,11 @@ namespace ToolWear{
             string tem = pre_Compensate.Text + "," + tb_Compensate_ip.Text + "," + cb_Compensate_Channel.Text;
             try{
                 RW_CompensateSet(tem);
-                MessageBox.Show("IP與訊號輸入設定完成！");
+                MessageBox.Show("IP與訊號輸入設定完成！", "儲存成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch { }
+            catch(Exception ex) {
+                MessageBox.Show("儲存失敗。\n\nbtn_CompensateSet_save_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         //IP和輸入 > 刪除
         private void btn_CompensateSet_delete_Click(object sender, EventArgs e){
@@ -1507,7 +1601,9 @@ namespace ToolWear{
                 RW_CompensateSet(tem);
                 MessageBox.Show("IP與訊號輸入刪除成功！");
             }
-            catch { }
+            catch (Exception ex){
+                MessageBox.Show("刪除失敗。\n\nbtn_CompensateSet_delete_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         //IP和輸入 > 讀檔+寫檔
         private void RW_CompensateSet(string s){
@@ -1628,7 +1724,9 @@ namespace ToolWear{
                 Initialization();
                 btn_Compensate_Choose((object)pre_Compensate, null);
             }
-            catch { }
+            catch(Exception ex) {
+                MessageBox.Show("發生不可測意外。\n\nbtn_CompensateAdd_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         //溫補 > 儲存
         private void btn_CompensateSave_Click(object sender, EventArgs e){
@@ -1649,7 +1747,9 @@ namespace ToolWear{
             try{
                 RW_Compensate(tem,false);
             }
-            catch { }
+            catch (Exception ex){
+                MessageBox.Show("發生不可測意外。\n\nbtn_CompensateSave_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         //溫補 > 移除
         private void btn_CompensateRemove_Click(object sender, EventArgs e){
@@ -1666,11 +1766,12 @@ namespace ToolWear{
             if (dialogResult == DialogResult.Cancel) return;
             //取得button後面編號
             string tem = "";
-            try
-            {
+            try{
                 RW_Compensate(tem, true);
             }
-            catch { }
+            catch (Exception ex){
+                MessageBox.Show("發生不可測意外。\n\nbtn_CompensateRemove_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         /// <summary>
         /// 溫補 > 讀檔寫檔
@@ -1754,7 +1855,8 @@ namespace ToolWear{
                     }
                 }
             }
-            catch{}
+            catch{
+            }
             sr_ATC.Close();
             sr_ATC.Dispose();
         }
@@ -1767,7 +1869,9 @@ namespace ToolWear{
                 RW_TCsetting(tem);
                 MessageBox.Show("刀具名稱與刃數存檔成功！");
             }
-            catch { }
+            catch (Exception ex){
+                MessageBox.Show("發生不可測意外。\n\nbtn_ATCsetting_save_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         //刀庫設定 > 刪除
         private void btn_ATCsetting_delete_Click(object sender, EventArgs e){
@@ -1778,7 +1882,9 @@ namespace ToolWear{
                 RW_TCsetting(tem);
                 MessageBox.Show("刀具名稱與刃數刪除成功！");
             }
-            catch { }
+            catch (Exception ex){
+                MessageBox.Show("發生不可測意外。\n\nbtn_ATCsetting_delete_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         //刀庫設定 > 讀檔+寫檔
         private void RW_TCsetting(string s){
@@ -2144,7 +2250,8 @@ namespace ToolWear{
                 chart_FFT.Series[3].Points.Clear();
                 chart_LearnFFT.Series[0].Points.Clear();
             }
-            catch {
+            catch (Exception ex){
+                MessageBox.Show("發生不可測意外。\n\nFFT\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -2177,6 +2284,9 @@ namespace ToolWear{
             for(int i = 0;i<List_FFT_Max.Count;i++) sw_Max.WriteLine(List_FFT_Max[i]);
             sw_Max.Close();
             sw_Max.Dispose();
+
+            //刃數比對
+            Blade_Comparison();
         }
         #endregion
         #region 螢幕截圖

@@ -237,6 +237,9 @@
   <ItemGroup>
     <None Include="Resources\wdps_icon_delete.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wds_icon_refresh.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets" Condition="Exists('..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
