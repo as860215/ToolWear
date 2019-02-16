@@ -1,7 +1,7 @@
 X,1,0,cDAQ2Mod1/ai0
 Y,2,2,cDAQ2Mod1/ai0
 Z,2,2,cDAQ2Mod1/ai3
-S1
+S1,1,0,SimDev1/ai0
 S2
 A
 B

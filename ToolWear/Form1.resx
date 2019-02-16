@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ViewModule.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1441,10 +1441,49 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="panel_ToolWear.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="lb_ToolWear_BladeAve.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_ToolWear_BladeAve.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 10.2pt</value>
+  </data>
+  <data name="lb_ToolWear_BladeAve.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_ToolWear_BladeAve.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 258</value>
+  </data>
+  <data name="lb_ToolWear_BladeAve.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 21</value>
+  </data>
+  <data name="lb_ToolWear_BladeAve.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="lb_ToolWear_BladeAve.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lb_ToolWear_BladeAve.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lb_ToolWear_BladeAve.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lb_ToolWear_BladeAve.Name" xml:space="preserve">
+    <value>lb_ToolWear_BladeAve</value>
+  </data>
+  <data name="&gt;&gt;lb_ToolWear_BladeAve.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ToolWear_BladeAve.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;lb_ToolWear_BladeAve.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="lb_ToolWear_ChartStatus.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1480,7 +1519,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;lb_ToolWear_ChartStatus.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="lb_ToolWear_Tool.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1516,7 +1555,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;lb_ToolWear_Tool.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label38.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1552,7 +1591,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="lb_ToolWear_FeedSpeed.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1588,7 +1627,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;lb_ToolWear_FeedSpeed.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label35.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1624,7 +1663,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="pb_ToolWear.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -1705,7 +1744,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear_Parts.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btn_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1735,7 +1774,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_Threshold.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="chart_warring_2.Location" type="System.Drawing.Point, System.Drawing">
     <value>682, 526</value>
@@ -1759,7 +1798,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;chart_warring_2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="chart_warring_1.Location" type="System.Drawing.Point, System.Drawing">
     <value>682, 389</value>
@@ -1783,7 +1822,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;chart_warring_1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="btn_ToolWear_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1816,7 +1855,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_20.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="btn_ToolWear_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1849,7 +1888,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_19.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="btn_ToolWear_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1882,7 +1921,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_18.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="btn_ToolWear_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1915,7 +1954,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_17.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="btn_ToolWear_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1948,7 +1987,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_16.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="btn_ToolWear_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1981,7 +2020,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_15.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="btn_ToolWear_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2014,7 +2053,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_14.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="btn_ToolWear_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2047,7 +2086,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_13.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="btn_ToolWear_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2080,7 +2119,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_12.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="btn_ToolWear_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2113,7 +2152,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_11.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="btn_ToolWear_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2146,7 +2185,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_10.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="btn_ToolWear_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2179,7 +2218,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_09.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="btn_ToolWear_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2212,7 +2251,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_08.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="btn_ToolWear_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2245,7 +2284,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_07.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="btn_ToolWear_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2278,7 +2317,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_06.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="btn_ToolWear_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2311,7 +2350,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_05.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="btn_ToolWear_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2344,7 +2383,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_04.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="btn_ToolWear_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2377,7 +2416,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_03.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="btn_ToolWear_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2410,7 +2449,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_02.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="btn_ToolWear_01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2443,7 +2482,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_01.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2476,7 +2515,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="btn_ToolWear_Change.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2506,7 +2545,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_Change.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="btn_ToolWear_Setting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2536,7 +2575,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_Setting.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="btn_ToolWear_Stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2569,7 +2608,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_Stop.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>33</value>
   </data>
   <data name="btn_ToolWear_Start.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2599,58 +2638,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;btn_ToolWear_Start.ZOrder" xml:space="preserve">
-    <value>33</value>
-  </data>
-  <data name="chart_FFT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 263</value>
-  </data>
-  <data name="chart_FFT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>654, 395</value>
-  </data>
-  <data name="chart_FFT.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="chart_FFT.Text" xml:space="preserve">
-    <value>chart2</value>
-  </data>
-  <data name="chart_FFT.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;chart_FFT.Name" xml:space="preserve">
-    <value>chart_FFT</value>
-  </data>
-  <data name="&gt;&gt;chart_FFT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_FFT.Parent" xml:space="preserve">
-    <value>panel_ToolWear</value>
-  </data>
-  <data name="&gt;&gt;chart_FFT.ZOrder" xml:space="preserve">
     <value>34</value>
-  </data>
-  <data name="chart_ToolWear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 263</value>
-  </data>
-  <data name="chart_ToolWear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>654, 395</value>
-  </data>
-  <data name="chart_ToolWear.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="chart_ToolWear.Text" xml:space="preserve">
-    <value>chart2</value>
-  </data>
-  <data name="&gt;&gt;chart_ToolWear.Name" xml:space="preserve">
-    <value>chart_ToolWear</value>
-  </data>
-  <data name="&gt;&gt;chart_ToolWear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_ToolWear.Parent" xml:space="preserve">
-    <value>panel_ToolWear</value>
-  </data>
-  <data name="&gt;&gt;chart_ToolWear.ZOrder" xml:space="preserve">
-    <value>35</value>
   </data>
   <data name="chart_Blade.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 263</value>
@@ -2677,7 +2665,58 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;chart_Blade.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="chart_FFT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 263</value>
+  </data>
+  <data name="chart_FFT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>654, 395</value>
+  </data>
+  <data name="chart_FFT.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="chart_FFT.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="chart_FFT.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;chart_FFT.Name" xml:space="preserve">
+    <value>chart_FFT</value>
+  </data>
+  <data name="&gt;&gt;chart_FFT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_FFT.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_FFT.ZOrder" xml:space="preserve">
     <value>36</value>
+  </data>
+  <data name="chart_ToolWear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 263</value>
+  </data>
+  <data name="chart_ToolWear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>654, 395</value>
+  </data>
+  <data name="chart_ToolWear.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chart_ToolWear.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="&gt;&gt;chart_ToolWear.Name" xml:space="preserve">
+    <value>chart_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_ToolWear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_ToolWear.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_ToolWear.ZOrder" xml:space="preserve">
+    <value>37</value>
   </data>
   <data name="panel_ToolWear.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 9</value>
@@ -2698,7 +2737,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="panel_Home.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3097,7 +3136,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Home.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="panel_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3754,7 +3793,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>14</value>
   </data>
   <data name="panel_ThermalSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -5239,7 +5278,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>1</value>
   </data>
   <data name="panel_Thermal.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -6544,7 +6583,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>2</value>
   </data>
   <data name="panel_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7627,7 +7666,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>0</value>
   </data>
   <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -8020,7 +8059,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="btn_setting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -8335,7 +8374,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="tb_Load_ProgressRate.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
@@ -8473,7 +8512,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="btn_ATCsetting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9445,7 +9484,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="panel_Health.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 9</value>
@@ -9466,7 +9505,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <metadata name="timer_temperature.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -10831,7 +10870,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_SelectParts.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="btn_AddParts_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -11158,7 +11197,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AddParts.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <metadata name="timer_load.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>210, 17</value>
@@ -11173,7 +11212,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1262, 782</value>
+    <value>1258, 778</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>

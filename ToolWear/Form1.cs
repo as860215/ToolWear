@@ -297,7 +297,10 @@ namespace ToolWear{
             btn_Learn.Enabled = true;
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
             //預設選擇第一個按鈕
-            btn_ToolWear_Choose((object)btn_ToolWear_01, null);
+            if(pre_ToolWear == null)
+                btn_ToolWear_Choose((object)btn_ToolWear_01, null);
+            else
+                btn_ToolWear_Choose((object)pre_ToolWear, null);
         }
         private void btn_BackHome(object sender, EventArgs e){
             panel_Home.Visible = true;
@@ -339,23 +342,20 @@ namespace ToolWear{
         private void btn_ToolWear_Setting_Click(object sender, EventArgs e){
             panel_ToolWearSetting.Visible = true;
             panel_ToolWear.Visible = false;
-            btn_ToolWearSetting_Choose((object)btn_ToolWearSetting_01, null);
-            //cb_ToolWearSetting_WorkName.Items.Clear();
-            //讀取設定檔
-            //StreamReader sr = new StreamReader(path + @"\data\workname.cp");
-            //while (!sr.EndOfStream){
-            //    cb_ToolWearSetting_WorkName.Items.Add(sr.ReadLine());
-            //}
-            //sr.Close();
-            //sr.Dispose();
-            //if (cb_ToolWearSetting_WorkName.Items.Count > 0)
-            //    cb_ToolWearSetting_WorkName.SelectedIndex = 0;
+            if(pre_ToolWearSetting == null)
+                btn_ToolWearSetting_Choose((object)btn_ToolWearSetting_01, null);
+            else
+                btn_ToolWearSetting_Choose((object)pre_ToolWearSetting, null);
         }
+        //磨耗設定 > 熱補償設定
         private void btn_ThermalSetting_Click(object sender, EventArgs e){
             panel_ThermalSetting.Visible = true;
             panel_Compensate.Visible = true;
             panel_Thermal.Visible = false;
-            btn_Compensate_Choose((object)btn_Compensate_01, null);
+            if(pre_Compensate == null)
+                btn_Compensate_Choose((object)btn_Compensate_01, null);
+            else
+                btn_Compensate_Choose((object)pre_Compensate, null);
         }
         private void btn_ToolWearSetting_Back_Click(object sender, EventArgs e){
             panel_ToolWearSetting.Visible = false;
@@ -390,7 +390,7 @@ namespace ToolWear{
         //主選單 > 磨耗偵測 > 學習模式
         private void btn_Learn_Click(object sender, EventArgs e){
             //目前在偵測模式
-            if(panel_ToolWear.Visible == true){
+            if (panel_ToolWear.Visible == true){
                 if (lb_ToolWear_Parts.Text.Equals("(未選擇)")){
                     MessageBox.Show("尚未選擇工件，無法切換學習模式。\n請點選右方工件預覽圖或是文字，進入頁面選取此次偵測的工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -405,7 +405,13 @@ namespace ToolWear{
                 panel_Learn.Visible = true;
                 btn_Learn.BackgroundImage = ToolWear.Properties.Resources.wd_l_learn_selected;
                 btn_Learn.Enabled = true;
-                btn_Learn_Choose((object)btn_Learn_01, null);
+                Button[] btn_Learn_ = new Button[20] { btn_Learn_01, btn_Learn_02, btn_Learn_03,
+                            btn_Learn_04,btn_Learn_05,btn_Learn_06,btn_Learn_07,btn_Learn_08,
+                            btn_Learn_09,btn_Learn_10,btn_Learn_11,btn_Learn_12,btn_Learn_13,
+                            btn_Learn_14,btn_Learn_15,btn_Learn_16,btn_Learn_17,btn_Learn_18,
+                            btn_Learn_19,btn_Learn_20};
+                //預設選擇現在磨耗偵測選到的軸向
+                btn_Learn_Choose((object)btn_Learn_[now_ToolWear], null);
             }
             //目前在學習模式
             else if (panel_Learn.Visible == true){
@@ -413,7 +419,12 @@ namespace ToolWear{
                 panel_ToolWear.Visible = true;
                 btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
                 btn_Learn.Enabled = true;
-                btn_ToolWear_Choose((object)btn_ToolWear_01, null);
+                Button[] btn_ToolWear = new Button[20] { btn_ToolWear_01, btn_ToolWear_02, btn_ToolWear_03,
+                    btn_ToolWear_04,btn_ToolWear_05,btn_ToolWear_06,btn_ToolWear_07,btn_ToolWear_08,
+                    btn_ToolWear_09,btn_ToolWear_10,btn_ToolWear_11,btn_ToolWear_12,btn_ToolWear_13,
+                    btn_ToolWear_14,btn_ToolWear_15,btn_ToolWear_16,btn_ToolWear_17,btn_ToolWear_18,
+                    btn_ToolWear_19,btn_ToolWear_20};
+                btn_ToolWear_Choose((object)btn_ToolWear[now_learn], null);
             }
         }
         #endregion
@@ -484,18 +495,21 @@ namespace ToolWear{
                 chart_ToolWear.Visible = true;
                 chart_FFT.Visible = false;
                 chart_Blade.Visible = false;
+                lb_ToolWear_BladeAve.Visible = false;
                 lb_ToolWear_ChartStatus.Text = "原始數據";
             }
             else if(lb_ToolWear_ChartStatus.Text.Equals("原始數據")){
                 chart_ToolWear.Visible = false;
                 chart_FFT.Visible = true;
                 chart_Blade.Visible = false;
+                lb_ToolWear_BladeAve.Visible = false;
                 lb_ToolWear_ChartStatus.Text = "傅立葉數據";
             }
             else if (lb_ToolWear_ChartStatus.Text.Equals("傅立葉數據")){
                 chart_ToolWear.Visible = false;
                 chart_FFT.Visible = false;
                 chart_Blade.Visible = true;
+                lb_ToolWear_BladeAve.Visible = true;
                 lb_ToolWear_ChartStatus.Text = "刀具頻率";
             }
         }
@@ -686,7 +700,7 @@ namespace ToolWear{
                 double tem = 0;
                 if ((i + 1) * hz > Blade_Hz_Mag * Blade_Hz * 0.9f && (i + 1) * hz < Blade_Hz_Mag * Blade_Hz * 1.1f){
                     //上下各取10% range
-                    tem = double.Parse(Blade_Module[i]) - double.Parse(Blade_Match[i]); //暫存相差值
+                    tem = double.Parse(Blade_Match[i]) - double.Parse(Blade_Module[i]); //暫存相差值
                     if (tem >= 0){
                         sum += tem;
                         count++;
@@ -701,7 +715,7 @@ namespace ToolWear{
                 chart_Blade.Series[0].Points.AddXY((i + 1) * hz, tem);
                 if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
             }
-            string tem_s = (sum / count).ToString();
+            lb_ToolWear_BladeAve.Text = (sum / count).ToString("0.000#####");
         }
         //刃數比對(舊)
         private void btn_Blade_Click(object sender, EventArgs e){
@@ -818,7 +832,6 @@ namespace ToolWear{
                     }
                 }
             }
-
             //更改折線圖顯示名稱
             if(Thermal_single == 0) lb_Thermal_Now.Text = pre_Thermal.Text;
             else if(Thermal_single % 2 == 1) lb_Thermal_M2_Now.Text = pre_Thermal.Text;
