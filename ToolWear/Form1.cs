@@ -17,16 +17,23 @@ namespace ToolWear{
         private string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;  //執行檔位置
         public Form1(){
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            //將視窗最大化
+            //this.WindowState = FormWindowState.Maximized;
+            //強制置頂視窗
             //this.TopMost = true;
         }
+        #region 初始化
+        #region 物件初始化
         private void Form1_Shown(object sender, EventArgs e){
+            //關閉所有panel
             panel_Dissable();
+            //顯示讀取panel
             panel_Loading.Visible = true;
+            //將Log panel調整至所有panel下方(以防卡到其他介面)
             panel_log.SendToBack();
+            //啟動背景讀取資料timer
             timer_load.Enabled = true;
         }
-        #region 初始化程式
         private float Chart_PointMax = 0.5f, Chart_PointMin = -0.5f;  //折線圖預設上下限
         /// <summary>
         /// 初始化設定
@@ -61,8 +68,7 @@ namespace ToolWear{
                 chart_warring_2.Series[1].Points.AddXY(i + 1, Chart_PointMin);
             }
             //FFT折線圖
-            for (int i = 0; i < 100; i++)
-            {
+            for (int i = 0; i < 100; i++){
                 chart_FFT.Series[1].Points.AddXY(i + 1, 0.1);
                 chart_LearnFFT.Series[1].Points.AddXY(i + 1, 0.1);
             }
@@ -72,11 +78,8 @@ namespace ToolWear{
                 chart_Thermal_M1.Series[1].Points.AddXY(i, 25);
                 chart_Thermal_M2.Series[1].Points.AddXY(i, 25);
             }
-
             //Panel
             panel_Home.Visible = true;
-            ////預設開啟熱補償介面
-            //btn_Thermal_Click(null,null);
         }
         /// <summary>
         /// 隱藏所有panel(主畫面除外)
@@ -159,17 +162,17 @@ namespace ToolWear{
             StreamReader sr_setting = new StreamReader(path + @"\data\setting.cp");
             string set = sr_setting.ReadLine();
             //搜尋廠牌
-            for(int i = 0; i < cb_setting_brand.Items.Count; i++){
+            for (int i = 0; i < cb_setting_brand.Items.Count; i++){
                 cb_setting_brand.SelectedIndex = i;
                 if (cb_setting_brand.Text.Equals(set.Split(',')[0])) break;
                 //當搜尋到最後一筆廠牌資料都沒有搜尋到時(因為如果有搜尋到就已經break了)
-                if(i == cb_setting_brand.Items.Count - 1){
+                if (i == cb_setting_brand.Items.Count - 1){
                     cb_setting_brand.SelectedIndex = 0;
-                    MessageBox.Show("設定檔錯誤。\n查無廠牌！\n請確認設定檔資料是否正確，或是前往設定頁面重新選擇資料並儲存。","設定檔錯誤",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("設定檔錯誤。\n查無廠牌！\n請確認設定檔資料是否正確，或是前往設定頁面重新選擇資料並儲存。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             //搜尋型號
-            for(int i = 0; i < cb_setting_model.Items.Count; i++){
+            for (int i = 0; i < cb_setting_model.Items.Count; i++){
                 cb_setting_model.SelectedIndex = i;
                 if (cb_setting_model.Text.Equals(set.Split(',')[1])) break;
                 //當搜尋到最後一筆廠牌資料都沒有搜尋到時(因為如果有搜尋到就已經break了)
@@ -186,6 +189,9 @@ namespace ToolWear{
             //讀取今日Log事件表
             Read_Log(DateTime.Now.ToString("yyyyMMdd"));
         }
+        #endregion
+        #region 程式啟動後背景讀取各項起始資料
+        //讀取階段
         int Load_Step = 0;
         //讀取程式計時器
         private void timer_load_Tick(object sender, EventArgs e){
@@ -267,6 +273,7 @@ namespace ToolWear{
             if(!string.IsNullOrWhiteSpace(tem)) tb_Loading.Text += tem + "\r\n";
             Load_Step++;
         }
+        #endregion
         #endregion
         #region 按鈕方法
         #region panel設定
@@ -407,6 +414,7 @@ namespace ToolWear{
         //暫存模型資料
         List<string> Module_FFT = new List<string>();
         //開始偵測
+        //磨耗偵測目前只能單軸
         private void btn_ToolWear_Start_Click(object sender, EventArgs e){
             if (lb_ToolWear_Parts.Text.Equals("(未選擇)")){
                 MessageBox.Show("尚未選擇工件，無法進行磨耗偵測。\n請點選下方工件預覽圖或是文字，進入頁面選取此次偵測的工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -415,7 +423,7 @@ namespace ToolWear{
             Module_FFT.Clear();
             //檢查data內是否已有此工件的學習模型
             try{
-                StreamReader sr = new StreamReader(path + @"data\FFT\" + lb_ToolWear_Parts.Text + pre_Thermal.Text + ".cp");
+                StreamReader sr = new StreamReader(path + @"data\FFT\L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2] + ".cp");
                 while (!sr.EndOfStream)
                     Module_FFT.Add(sr.ReadLine());
                 sr.Close();
@@ -437,7 +445,8 @@ namespace ToolWear{
             btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
             //修改偵測軸向的文字顏色
             pre_ToolWear.ForeColor = Color.FromArgb(255, 187, 0);
-            //timer1.Enabled = true;
+            //修改執行階段
+            ToolWear_bool[now_ToolWear] = true;
             DAQInitialize("Match");
         }
         //停止偵測
@@ -450,6 +459,8 @@ namespace ToolWear{
             btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
             //修改偵測軸向的文字顏色
             pre_ToolWear.ForeColor = Color.White;
+            //修改執行階段
+            ToolWear_bool[now_ToolWear] = false;
         }
         //FFT和原始數據折線圖轉換
         private bool ToolWearChange_FFT = false;    //紀錄現在折線圖顯示何者圖形
@@ -489,7 +500,7 @@ namespace ToolWear{
             btn_Learn_OK.Enabled = true;
             btn_Learn_Start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_Learn_OK.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
-            Learn_Axial = pre_learn.Text;
+            Learn_Axial = int.Parse(pre_learn.Name.Split('_')[2]).ToString("00");
             On_Learn = true;
             StreamWriter sw = new StreamWriter(path + @"\data\module.cp");
             sw.WriteLine();
@@ -601,7 +612,11 @@ namespace ToolWear{
         }
         #endregion
         #region 刃數比對
-        //刃數比對
+        //刃數比對(待)
+        private void Blade_Comparison(){
+
+        }
+        //刃數比對(舊)
         private void btn_Blade_Click(object sender, EventArgs e){
             chart_Blade.Visible = true;
             chart_Blade.Legends.Clear();
@@ -1206,7 +1221,16 @@ namespace ToolWear{
         int now_ToolWear = 0;
         //上一個點到的button
         Button pre_ToolWear = null;
+        //存放該軸向是否正處於磨耗偵測狀態下
+        bool[] ToolWear_bool = new bool[20];
         private void btn_ToolWear_Choose(object sender,EventArgs e){
+            //目前只能單軸偵測
+            for(int i = 0; i < 20; i++){
+                if(ToolWear_bool[i] == true){
+                    MessageBox.Show("Beta階段只允許單軸偵測，請先關閉當前正在偵測的軸向再點選其他按鈕。", "嘗試選取多軸向", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             //先重置上次選到的按鈕
             if (pre_ToolWear != null){
                 pre_ToolWear.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn;
@@ -1223,8 +1247,19 @@ namespace ToolWear{
             btn_ToolWearSetting_Choose((object)btn_ToolWearSetting[now_ToolWear], null);
             //轉移焦點
             btn_ToolWear_Start.Focus();
-            //判斷是否選擇的軸向已經在偵測狀態中(待)
-
+            //判斷是否選擇的軸向已經在偵測狀態中
+            if(ToolWear_bool[now_ToolWear] == true){
+                btn_ToolWear_Start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+                btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+                btn_ToolWear_Start.Enabled = false;
+                btn_ToolWear_Stop.Enabled = true;
+            }
+            else{
+                btn_ToolWear_Start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+                btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+                btn_ToolWear_Start.Enabled = true;
+                btn_ToolWear_Stop.Enabled = false;
+            }
         }
         #endregion
         #region 學習模式
@@ -2131,7 +2166,14 @@ namespace ToolWear{
                     List_FFT_Max[i] = mag.ToString();
             }
             //寫檔
-            StreamWriter sw_Max = new StreamWriter(path + @"\data\FFT\"+ lb_Learn_WorkName.Text + Learn_Axial + ".cp");
+            string tem_path = "";
+            if (mode.Equals("Learn")) tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + ".cp";
+            else if (mode.Equals("Match")){
+                for(int i = 0;i<ToolWear_bool.Length;i++)
+                    if(ToolWear_bool[i] == true)
+                        tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + i.ToString("00") + ".cp";
+            }
+            StreamWriter sw_Max = new StreamWriter(tem_path);
             for(int i = 0;i<List_FFT_Max.Count;i++) sw_Max.WriteLine(List_FFT_Max[i]);
             sw_Max.Close();
             sw_Max.Dispose();
