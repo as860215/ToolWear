@@ -3213,6 +3213,78 @@
   <data name="panel_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="label49.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label49.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 10.2pt</value>
+  </data>
+  <data name="label49.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
+    <value>571, 343</value>
+  </data>
+  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 22</value>
+  </data>
+  <data name="label49.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="label49.Text" xml:space="preserve">
+    <value>hz</value>
+  </data>
+  <data name="label49.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label49.Name" xml:space="preserve">
+    <value>label49</value>
+  </data>
+  <data name="&gt;&gt;label49.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label49.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;label49.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label48.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label48.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 10.2pt</value>
+  </data>
+  <data name="label48.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 343</value>
+  </data>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="label48.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>加速度</value>
+  </data>
+  <data name="label48.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label48.Name" xml:space="preserve">
+    <value>label48</value>
+  </data>
+  <data name="&gt;&gt;label48.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label48.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;label48.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="tb_Threshold_set05.Location" type="System.Drawing.Point, System.Drawing">
     <value>475, 540</value>
   </data>
@@ -3232,7 +3304,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;tb_Threshold_set05.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="tb_Threshold_set04.Location" type="System.Drawing.Point, System.Drawing">
     <value>475, 505</value>
@@ -3253,7 +3325,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;tb_Threshold_set04.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="tb_Threshold_set03.Location" type="System.Drawing.Point, System.Drawing">
     <value>475, 470</value>
@@ -3274,7 +3346,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;tb_Threshold_set03.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="tb_Threshold_set02.Location" type="System.Drawing.Point, System.Drawing">
     <value>475, 435</value>
@@ -3295,7 +3367,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;tb_Threshold_set02.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label47.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3328,7 +3400,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;label47.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="tb_Threshold_set01.Location" type="System.Drawing.Point, System.Drawing">
     <value>475, 400</value>
@@ -3349,7 +3421,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;tb_Threshold_set01.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="label46.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3382,7 +3454,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;label46.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="label45.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3415,7 +3487,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;label45.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="lb_Threshold_setavg05.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3445,7 +3517,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_setavg05.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="lb_Threshold_setavg04.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3475,7 +3547,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_setavg04.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="lb_Threshold_setavg03.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3505,7 +3577,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_setavg03.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="lb_Threshold_setavg02.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3535,7 +3607,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_setavg02.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="lb_Threshold_setavg01.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3565,7 +3637,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_setavg01.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="label36.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3601,7 +3673,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="label41.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3637,7 +3709,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="label42.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3673,7 +3745,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;label42.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="label43.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3709,7 +3781,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="label44.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3745,7 +3817,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;label44.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="lb_Threshold_sethz05.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3775,7 +3847,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_sethz05.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="lb_Threshold_sethz04.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3805,7 +3877,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_sethz04.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="lb_Threshold_sethz03.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3835,7 +3907,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_sethz03.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="lb_Threshold_sethz02.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3865,7 +3937,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_sethz02.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="lb_Threshold_Blade.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3898,7 +3970,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_Blade.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="lb_Threshold_ATC.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3931,7 +4003,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_ATC.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="lb_Threshold_rate.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3964,7 +4036,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_rate.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="lb_Threshold_sethz01.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -3994,7 +4066,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_sethz01.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="btn_Threshold_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4024,7 +4096,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_save.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="btn_Threshold_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4054,7 +4126,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_delete.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="chart_Threshold.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 37</value>
@@ -4078,7 +4150,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;chart_Threshold.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>341, 93</value>

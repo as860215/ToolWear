@@ -662,7 +662,7 @@ namespace ToolWear{
                 string[] dirs = Directory.GetFiles(path + @"data\FFT");/*目錄(含路徑)的陣列*/
                 List<string> tem_path = new List<string>();
                 foreach (string s in dirs){
-                    //ex L-abc01-1_2500.cp
+                    //ex L-abc01-1_2500-set.cp
                     string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
                     string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
                     if (remove_rate.Equals("L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
@@ -693,19 +693,22 @@ namespace ToolWear{
             if (((TextBox)sender).Text.Equals("")) return;
             double hz = rateNumeric_base / samplesPerChannelNumeric_base;
             List<string> Blade_Module = new List<string>();
+            string tem_File = "";
             try{
-                StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\L-{1}{2}-{3}_{4}.cp", path, lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
-                    (((TextBox)sender).Text).Split(' ')[0].Split('T')[1], ((TextBox)sender).Text.Split(' ')[3].Split(' ')[0]));
+                tem_File = string.Format("{0}{1}-{2}_{3}",lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
+                    (((TextBox)sender).Text).Split(' ')[0].Split('T')[1], ((TextBox)sender).Text.Split(' ')[3].Split(' ')[0]);
+                StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\L-{1}.cp", path, tem_File));
                 while (!sr_learn.EndOfStream)
                     Blade_Module.Add(sr_learn.ReadLine());
                 sr_learn.Close();
                 sr_learn.Dispose();
             }
             catch (Exception ex){
-                MessageBox.Show("讀取Learn檔時發生錯誤。\n\nBlade_Comparison\n\n" + ex.ToString(), "讀取錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("讀取Learn檔時發生錯誤。\n\nThreshold_LoadBlade\n\n" + ex.ToString(), "讀取錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             chart_Threshold.Series[0].Points.Clear();
+            //T0 : abc 5000
             //取得轉速
             int Tool_rate = int.Parse(((TextBox)sender).Text.Split(' ')[3].Split(' ')[0]);
             lb_Threshold_rate.Text = string.Format("轉速 : {0} RPM", Tool_rate);
@@ -758,6 +761,28 @@ namespace ToolWear{
                 }
                 chart_Threshold.Series[0].Points.AddXY((i + 1) * hz, tem);
                 if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
+            }
+
+            //讀取該頻段刀子設定檔
+            TextBox[] tb_Threshold_set = new TextBox[5] { tb_Threshold_set01, tb_Threshold_set02, tb_Threshold_set03,
+                                                          tb_Threshold_set04, tb_Threshold_set05};
+            try{
+                StreamReader sr_set = new StreamReader(string.Format(@"{0}data\FFT\LS-{1}.cp", path, tem_File));
+                int sr_count = 0;
+                while (!sr_set.EndOfStream){
+                    tb_Threshold_set[sr_count].Text = sr_set.ReadLine();
+                    sr_count++;
+                }
+                sr_set.Close();
+                sr_set.Dispose();
+            }
+            catch {
+                //會進到例外事件表示沒有設定檔，生成一個
+                StreamWriter sw_set = new StreamWriter(string.Format(@"{0}data\FFT\LS-{1}.cp", path, tem_File));
+                for (int i = 1; i <= 5; i++)
+                    sw_set.WriteLine(i.ToString());
+                sw_set.Close();
+                sw_set.Dispose();
             }
         }
         #endregion
@@ -949,7 +974,6 @@ namespace ToolWear{
             try
             {
                 StreamReader sr_match = new StreamReader(path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp");
-                //sr_match.ReadLine();    //先把第一行的設定檔讀出來
                 while (!sr_match.EndOfStream)
                     Blade_Match.Add(sr_match.ReadLine());
                 sr_match.Close();

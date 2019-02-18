@@ -510,6 +510,8 @@
             this.tb_Threshold_set03 = new System.Windows.Forms.TextBox();
             this.tb_Threshold_set04 = new System.Windows.Forms.TextBox();
             this.tb_Threshold_set05 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -2056,6 +2058,8 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel4.Controls.Add(this.label49);
+            this.panel4.Controls.Add(this.label48);
             this.panel4.Controls.Add(this.tb_Threshold_set05);
             this.panel4.Controls.Add(this.tb_Threshold_set04);
             this.panel4.Controls.Add(this.tb_Threshold_set03);
@@ -5330,6 +5334,20 @@
             resources.ApplyResources(this.tb_Threshold_set05, "tb_Threshold_set05");
             this.tb_Threshold_set05.Name = "tb_Threshold_set05";
             // 
+            // label48
+            // 
+            resources.ApplyResources(this.label48, "label48");
+            this.label48.BackColor = System.Drawing.Color.Transparent;
+            this.label48.ForeColor = System.Drawing.Color.White;
+            this.label48.Name = "label48";
+            // 
+            // label49
+            // 
+            resources.ApplyResources(this.label49, "label49");
+            this.label49.BackColor = System.Drawing.Color.Transparent;
+            this.label49.ForeColor = System.Drawing.Color.White;
+            this.label49.Name = "label49";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -5852,6 +5870,8 @@
         private System.Windows.Forms.TextBox tb_Threshold_set02;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.TextBox tb_Threshold_set01;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
     }
 }
 
