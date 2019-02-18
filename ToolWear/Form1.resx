@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ViewModule.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -769,7 +769,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2173,7 +2173,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Home.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="panel_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3346,7 +3346,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="numeric_Compensate.Location" type="System.Drawing.Point, System.Drawing">
     <value>601, 276</value>
@@ -4423,7 +4423,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5467,7 +5467,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lb_Learn_Tool.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6189,50 +6189,83 @@
   <data name="&gt;&gt;tb_logDetail_01.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
+  <data name="lb_setting_Reconnection.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lb_setting_Reconnection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
   </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>panel_setting</value>
+  <data name="lb_setting_Reconnection.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="lb_setting_Reconnection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 450</value>
   </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
+  <data name="lb_setting_Reconnection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 30</value>
   </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+  <data name="lb_setting_Reconnection.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;lb_setting_Reconnection.Name" xml:space="preserve">
+    <value>lb_setting_Reconnection</value>
+  </data>
+  <data name="&gt;&gt;lb_setting_Reconnection.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>panel_setting</value>
+  <data name="&gt;&gt;lb_setting_Reconnection.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lb_setting_Reconnection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_setting_Reconnection.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_setting_Reconnection.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_setting_Reconnection.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_setting_Reconnection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 395</value>
+  </data>
+  <data name="btn_setting_Reconnection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 39</value>
+  </data>
+  <data name="btn_setting_Reconnection.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_Reconnection.Name" xml:space="preserve">
+    <value>btn_setting_Reconnection</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_Reconnection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_Reconnection.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btn_setting_Reconnection.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel_setting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
+  <data name="btn_setting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="panel_setting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
+  <data name="btn_setting_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="panel_setting.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="btn_setting_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;panel_setting.Name" xml:space="preserve">
-    <value>panel_setting</value>
+  <data name="btn_setting_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 582</value>
   </data>
-  <data name="&gt;&gt;panel_setting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btn_setting_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>851, 40</value>
   </data>
-  <data name="&gt;&gt;panel_setting.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="btn_setting_save.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
   </data>
   <data name="&gt;&gt;btn_setting_save.Name" xml:space="preserve">
     <value>btn_setting_save</value>
@@ -6244,7 +6277,25 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;btn_setting_save.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
+  </data>
+  <data name="btn_setting_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_setting_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_setting_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_setting_delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 528</value>
+  </data>
+  <data name="btn_setting_delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>851, 40</value>
+  </data>
+  <data name="btn_setting_delete.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
   </data>
   <data name="&gt;&gt;btn_setting_delete.Name" xml:space="preserve">
     <value>btn_setting_delete</value>
@@ -6256,100 +6307,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;btn_setting_delete.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tb_setting_ip.Name" xml:space="preserve">
-    <value>tb_setting_ip</value>
-  </data>
-  <data name="&gt;&gt;tb_setting_ip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_setting_ip.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;tb_setting_ip.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label21.Name" xml:space="preserve">
-    <value>label21</value>
-  </data>
-  <data name="&gt;&gt;label21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;cb_setting_model.Name" xml:space="preserve">
-    <value>cb_setting_model</value>
-  </data>
-  <data name="&gt;&gt;cb_setting_model.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cb_setting_model.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;cb_setting_model.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
-  </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cb_setting_brand.Name" xml:space="preserve">
-    <value>cb_setting_brand</value>
-  </data>
-  <data name="&gt;&gt;cb_setting_brand.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cb_setting_brand.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;cb_setting_brand.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 117</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>916, 645</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>panel_setting</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="tb_setting_ip.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
@@ -6376,7 +6334,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;tb_setting_ip.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="label21.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6409,7 +6367,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="cb_setting_model.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -6433,7 +6391,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;cb_setting_model.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6466,7 +6424,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="cb_setting_brand.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -6496,7 +6454,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;cb_setting_brand.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6529,7 +6487,28 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 117</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>916, 645</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel_setting</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6563,6 +6542,27 @@
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="panel_setting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_setting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_setting.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;panel_setting.Name" xml:space="preserve">
+    <value>panel_setting</value>
+  </data>
+  <data name="&gt;&gt;panel_setting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_setting.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;tb_Load_ProgressRate.Name" xml:space="preserve">
     <value>tb_Load_ProgressRate</value>
@@ -14897,66 +14897,6 @@
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="btn_setting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_setting_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_setting_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_setting_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 582</value>
-  </data>
-  <data name="btn_setting_save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>851, 40</value>
-  </data>
-  <data name="btn_setting_save.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="&gt;&gt;btn_setting_save.Name" xml:space="preserve">
-    <value>btn_setting_save</value>
-  </data>
-  <data name="&gt;&gt;btn_setting_save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_setting_save.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;btn_setting_save.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btn_setting_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_setting_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_setting_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_setting_delete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 528</value>
-  </data>
-  <data name="btn_setting_delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>851, 40</value>
-  </data>
-  <data name="btn_setting_delete.TabIndex" type="System.Int32, mscorlib">
-    <value>98</value>
-  </data>
-  <data name="&gt;&gt;btn_setting_delete.Name" xml:space="preserve">
-    <value>btn_setting_delete</value>
-  </data>
-  <data name="&gt;&gt;btn_setting_delete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_setting_delete.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;btn_setting_delete.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="btn_ATCsetting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>

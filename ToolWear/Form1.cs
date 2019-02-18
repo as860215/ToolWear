@@ -17,6 +17,7 @@ using System.Runtime.InteropServices;
 namespace ToolWear{
     public partial class Form1 : Form{
         private string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;  //執行檔位置
+        private bool machine_connect = false;
         public Form1(){
             InitializeComponent();
             //將視窗最大化
@@ -165,32 +166,7 @@ namespace ToolWear{
             sr_thermal.Dispose();
 
             //主畫面 > 設定
-            StreamReader sr_setting = new StreamReader(path + @"\data\setting.cp");
-            string set = sr_setting.ReadLine();
-            //搜尋廠牌
-            for (int i = 0; i < cb_setting_brand.Items.Count; i++){
-                cb_setting_brand.SelectedIndex = i;
-                if (cb_setting_brand.Text.Equals(set.Split(',')[0])) break;
-                //當搜尋到最後一筆廠牌資料都沒有搜尋到時(因為如果有搜尋到就已經break了)
-                if (i == cb_setting_brand.Items.Count - 1){
-                    cb_setting_brand.SelectedIndex = 0;
-                    MessageBox.Show("設定檔錯誤。\n查無廠牌！\n請確認設定檔資料是否正確，或是前往設定頁面重新選擇資料並儲存。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            //搜尋型號
-            for (int i = 0; i < cb_setting_model.Items.Count; i++){
-                cb_setting_model.SelectedIndex = i;
-                if (cb_setting_model.Text.Equals(set.Split(',')[1])) break;
-                //當搜尋到最後一筆廠牌資料都沒有搜尋到時(因為如果有搜尋到就已經break了)
-                if (i == cb_setting_model.Items.Count - 1){
-                    cb_setting_model.SelectedIndex = 0;
-                    MessageBox.Show("設定檔錯誤。\n查無型號！\n請確認設定檔資料是否正確，或是前往設定頁面重新選擇資料並儲存。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            //讀取設定檔ip
-            tb_setting_ip.Text = set.Split(',')[2];
-            sr_setting.Close();
-            sr_setting.Dispose();
+            setting_load(false);
 
             //讀取今日Log事件表
             Read_Log(DateTime.Now.ToString("yyyyMMdd"));
@@ -199,6 +175,8 @@ namespace ToolWear{
         #region 背景讀取
         //讀取階段
         int Load_Step = 0;
+        //正在讀取
+        bool is_Load = false;
         //讀取程式計時器
         private void timer_load_Tick(object sender, EventArgs e){
             bar_load.Value = Load_Step;
@@ -211,7 +189,10 @@ namespace ToolWear{
         private void void_Loading(int push_in_step){
             int tem_step = push_in_step;
             if (tem_step != Load_Step) return;
+            //如果有別的執行續已經進入讀取階段了就return
+            if (is_Load == true) return;
             string tem = "";
+            is_Load = true;
             switch (tem_step){
                 case 0:
                     tem = "您好！";
@@ -252,7 +233,13 @@ namespace ToolWear{
                     break;
                 case 25:
                     //long ret = Mitsubishi_Initialization();
-                    //if (ret != 0) tb_Load_log.Text += "控制器連線失敗。 Error Code : " + ret.ToString();
+                    //if (ret != 0)
+                    //{
+                    //    tb_Load_log.Text += "控制器連線失敗。 Error Code : " + ret.ToString();
+                    //    machine_connect = false;
+                    //}
+                    //else
+                    //    machine_connect = true;
                     break;
                 case 26:
                     tem = "控制器連線測試完畢";
@@ -281,6 +268,7 @@ namespace ToolWear{
             if(!string.IsNullOrWhiteSpace(tem)) tb_Loading.Text += tem + "\r\n";
             tb_Load_ProgressRate.Text = "讀取進度 ： " + tem_step + " %";
             Load_Step++;
+            is_Load = false;
         }
         #endregion
         #endregion
@@ -576,6 +564,94 @@ namespace ToolWear{
         #endregion
         #region 臨界值設定
 
+        #endregion
+        #region 主畫面設定
+        //主畫面 > 設定 > 重新連線
+        private void btn_setting_Reconnection_Click(object sender,EventArgs e){
+            lb_setting_Reconnection.Text = "正在準備重新連接控制器，這可能需要花費一段時間。";
+            lb_setting_Reconnection.ForeColor = Color.White;
+            Thread TD_Reconnection = new Thread(setting_Reconnection_Thread);
+            TD_Reconnection.Start();
+        }
+        //主畫面 > 設定 > 重新連線執行緒
+        delegate void SettingReconnectionDelegate();
+        private void setting_Reconnection_Thread(){
+            if (this.InvokeRequired){
+                SettingReconnectionDelegate SLD = new SettingReconnectionDelegate(setting_Reconnection_Thread);
+                this.Invoke(SLD);
+            }
+            else{
+                long ret = Mitsubishi_Initialization();
+                if (ret != 0){
+                    lb_setting_Reconnection.Text = "控制器連線失敗。\n請確定控制器廠牌與IP設定無誤，並確認實體線路是否通暢。\n Error Code : " + ret.ToString();
+                    lb_setting_Reconnection.ForeColor = Color.Red;
+                    machine_connect = false;
+                }
+                else{
+                    lb_setting_Reconnection.Text = "已取得連線資訊，位於 " + tb_setting_ip.Text + "。";
+                    machine_connect = true;
+                    StreamWriter sw = new StreamWriter(path + @"\data\setting.cp");
+                    sw.WriteLine(string.Format("{0},{1},{2}", cb_setting_brand.Text, cb_setting_model.Text, tb_setting_ip.Text));
+                    sw.Close();
+                    sw.Dispose();
+                }
+            }  
+        }
+        //主畫面 > 設定 > 存檔
+        private void btn_setting_save_Click(object sender, EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("請先確認所選控制器廠牌與型號及IP是否正確。", "存檔", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Cancel) return;
+            StreamWriter sw = new StreamWriter(path + @"\data\setting.cp");
+            sw.WriteLine(string.Format("{0},{1},{2}", cb_setting_brand.Text, cb_setting_model.Text, tb_setting_ip.Text));
+            sw.Close();
+            sw.Dispose();
+        }
+        //主畫面 > 設定 > 刪除
+        private void btn_setting_delete_Click(object sender,EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("確定要清除設定檔內資料嗎？", "刪除", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            StreamWriter sw = new StreamWriter(path + @"\data\setting.cp");
+            sw.WriteLine("brand,model,192.168.1.1");
+            sw.Close();
+            sw.Dispose();
+            //重新讀取
+            setting_load(true);
+        }
+        /// <summary>
+        /// 主畫面 > 設定 > 重新讀取設定檔
+        /// </summary>
+        /// <param name="OnRemove">是否在移除模式下</param>
+        private void setting_load(bool OnRemove){
+            //主畫面 > 設定
+            StreamReader sr_setting = new StreamReader(path + @"\data\setting.cp");
+            string set = sr_setting.ReadLine();
+            //搜尋廠牌
+            for (int i = 0; i < cb_setting_brand.Items.Count; i++){
+                cb_setting_brand.SelectedIndex = i;
+                if (cb_setting_brand.Text.Equals(set.Split(',')[0])) break;
+                //當搜尋到最後一筆廠牌資料都沒有搜尋到時(因為如果有搜尋到就已經break了)
+                if (i == cb_setting_brand.Items.Count - 1){
+                    cb_setting_brand.SelectedIndex = 0;
+                    if(OnRemove == false)
+                        MessageBox.Show("設定檔錯誤。\n查無廠牌！\n請確認設定檔資料是否正確，或是前往設定頁面重新選擇資料並儲存。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            //搜尋型號
+            for (int i = 0; i < cb_setting_model.Items.Count; i++){
+                cb_setting_model.SelectedIndex = i;
+                if (cb_setting_model.Text.Equals(set.Split(',')[1])) break;
+                //當搜尋到最後一筆廠牌資料都沒有搜尋到時(因為如果有搜尋到就已經break了)
+                if (i == cb_setting_model.Items.Count - 1){
+                    cb_setting_model.SelectedIndex = 0;
+                    if (OnRemove == false)
+                        MessageBox.Show("設定檔錯誤。\n查無型號！\n請確認設定檔資料是否正確，或是前往設定頁面重新選擇資料並儲存。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            //讀取設定檔ip
+            tb_setting_ip.Text = set.Split(',')[2];
+            sr_setting.Close();
+            sr_setting.Dispose();
+        }
         #endregion
         #region 模型預覽
         //模型預覽
