@@ -2353,7 +2353,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="lb_ToolWear_Blade.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3645,33 +3645,6 @@
   <data name="&gt;&gt;btn_ToolWear_Start.ZOrder" xml:space="preserve">
     <value>36</value>
   </data>
-  <data name="chart_Blade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 263</value>
-  </data>
-  <data name="chart_Blade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>654, 395</value>
-  </data>
-  <data name="chart_Blade.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="chart_Blade.Text" xml:space="preserve">
-    <value>chart2</value>
-  </data>
-  <data name="chart_Blade.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;chart_Blade.Name" xml:space="preserve">
-    <value>chart_Blade</value>
-  </data>
-  <data name="&gt;&gt;chart_Blade.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_Blade.Parent" xml:space="preserve">
-    <value>panel_ToolWear</value>
-  </data>
-  <data name="&gt;&gt;chart_Blade.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
   <data name="chart_FFT.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 263</value>
   </data>
@@ -3722,6 +3695,33 @@
   </data>
   <data name="&gt;&gt;chart_ToolWear.ZOrder" xml:space="preserve">
     <value>38</value>
+  </data>
+  <data name="chart_Blade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 263</value>
+  </data>
+  <data name="chart_Blade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>654, 395</value>
+  </data>
+  <data name="chart_Blade.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="chart_Blade.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="chart_Blade.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;chart_Blade.Name" xml:space="preserve">
+    <value>chart_Blade</value>
+  </data>
+  <data name="&gt;&gt;chart_Blade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Blade.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_Blade.ZOrder" xml:space="preserve">
+    <value>39</value>
   </data>
   <data name="panel_Home.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4269,73 +4269,40 @@
   <data name="panel_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
+  <data name="&gt;&gt;lb_Threshold_Blade.Name" xml:space="preserve">
+    <value>lb_Threshold_Blade</value>
   </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.Name" xml:space="preserve">
-    <value>btn_Threshold_Back</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label22.Name" xml:space="preserve">
-    <value>label22</value>
-  </data>
-  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_Threshold_Blade.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
+  <data name="&gt;&gt;lb_Threshold_Blade.Parent" xml:space="preserve">
+    <value>panel4</value>
   </data>
-  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;lb_Threshold_Blade.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="panel_Threshold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 9</value>
+  <data name="&gt;&gt;lb_Threshold_ATC.Name" xml:space="preserve">
+    <value>lb_Threshold_ATC</value>
   </data>
-  <data name="panel_Threshold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
+  <data name="&gt;&gt;lb_Threshold_ATC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panel_Threshold.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;lb_Threshold_ATC.Parent" xml:space="preserve">
+    <value>panel4</value>
   </data>
-  <data name="&gt;&gt;panel_Threshold.Name" xml:space="preserve">
-    <value>panel_Threshold</value>
+  <data name="&gt;&gt;lb_Threshold_ATC.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;panel_Threshold.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lb_Threshold_rate.Name" xml:space="preserve">
+    <value>lb_Threshold_rate</value>
   </data>
-  <data name="&gt;&gt;panel_Threshold.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;lb_Threshold_rate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lb_Threshold_rate.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_rate.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="&gt;&gt;label36.Name" xml:space="preserve">
@@ -4348,7 +4315,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_save.Name" xml:space="preserve">
     <value>btn_Threshold_save</value>
@@ -4360,7 +4327,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_save.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_delete.Name" xml:space="preserve">
     <value>btn_Threshold_delete</value>
@@ -4372,7 +4339,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_delete.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;chart_Threshold.Name" xml:space="preserve">
     <value>chart_Threshold</value>
@@ -4384,7 +4351,7 @@
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;chart_Threshold.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>341, 93</value>
@@ -4407,89 +4374,26 @@
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btn_Threshold_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="lb_Threshold_page.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
   </data>
-  <data name="btn_Threshold_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_Threshold_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_Threshold_page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_Threshold_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 612</value>
+  <data name="lb_Threshold_page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 318</value>
   </data>
-  <data name="btn_Threshold_save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>538, 40</value>
+  <data name="lb_Threshold_page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 38</value>
   </data>
-  <data name="btn_Threshold_save.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
+  <data name="lb_Threshold_page.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;btn_Threshold_save.Name" xml:space="preserve">
-    <value>btn_Threshold_save</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_save.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_save.ZOrder" xml:space="preserve">
+  <data name="lb_Threshold_page.Text" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btn_Threshold_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Threshold_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_Threshold_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Threshold_delete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 560</value>
-  </data>
-  <data name="btn_Threshold_delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>538, 40</value>
-  </data>
-  <data name="btn_Threshold_delete.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_delete.Name" xml:space="preserve">
-    <value>btn_Threshold_delete</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_delete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_delete.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_delete.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="chart_Threshold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 12</value>
-  </data>
-  <data name="chart_Threshold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>578, 328</value>
-  </data>
-  <data name="chart_Threshold.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="chart_Threshold.Text" xml:space="preserve">
-    <value>chart2</value>
-  </data>
-  <data name="&gt;&gt;chart_Threshold.Name" xml:space="preserve">
-    <value>chart_Threshold</value>
-  </data>
-  <data name="&gt;&gt;chart_Threshold.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_Threshold.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;chart_Threshold.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="lb_Threshold_page.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lb_Threshold_page.Name" xml:space="preserve">
     <value>lb_Threshold_page</value>
@@ -4502,219 +4406,6 @@
   </data>
   <data name="&gt;&gt;lb_Threshold_page.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_14.Name" xml:space="preserve">
-    <value>tb_Threshold_14</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_14.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_14.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_13.Name" xml:space="preserve">
-    <value>tb_Threshold_13</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_13.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_13.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_12.Name" xml:space="preserve">
-    <value>tb_Threshold_12</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_12.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_12.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_11.Name" xml:space="preserve">
-    <value>tb_Threshold_11</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_11.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_11.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_10.Name" xml:space="preserve">
-    <value>tb_Threshold_10</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_10.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_10.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_09.Name" xml:space="preserve">
-    <value>tb_Threshold_09</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_09.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_09.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_09.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_08.Name" xml:space="preserve">
-    <value>tb_Threshold_08</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_08.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_08.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_08.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_07.Name" xml:space="preserve">
-    <value>tb_Threshold_07</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_07.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_07.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_07.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_06.Name" xml:space="preserve">
-    <value>tb_Threshold_06</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_06.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_06.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_06.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_05.Name" xml:space="preserve">
-    <value>tb_Threshold_05</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_05.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_05.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_05.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_04.Name" xml:space="preserve">
-    <value>tb_Threshold_04</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_04.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_04.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_04.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_03.Name" xml:space="preserve">
-    <value>tb_Threshold_03</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_03.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_03.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_03.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_02.Name" xml:space="preserve">
-    <value>tb_Threshold_02</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_02.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_02.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_02.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_down.Name" xml:space="preserve">
-    <value>btn_Threshold_down</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_down.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_down.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_down.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_up.Name" xml:space="preserve">
-    <value>btn_Threshold_up</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_up.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_up.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_up.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_01.Name" xml:space="preserve">
-    <value>tb_Threshold_01</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_01.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_01.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_01.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 93</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 672</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="tb_Threshold_14.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 15pt</value>
@@ -5118,6 +4809,27 @@
   <data name="&gt;&gt;tb_Threshold_01.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 93</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 672</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="btn_Threshold_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -5180,6 +4892,180 @@
   </data>
   <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="panel_Threshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 9</value>
+  </data>
+  <data name="panel_Threshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_Threshold.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.Name" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lb_Threshold_rate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="lb_Threshold_rate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Threshold_rate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 326</value>
+  </data>
+  <data name="lb_Threshold_rate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 30</value>
+  </data>
+  <data name="lb_Threshold_rate.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="lb_Threshold_rate.Text" xml:space="preserve">
+    <value>轉速 : 0 RPM</value>
+  </data>
+  <data name="lb_Threshold_rate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_rate.Name" xml:space="preserve">
+    <value>lb_Threshold_rate</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_rate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_rate.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_rate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label36.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 359</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>頻段1</value>
+  </data>
+  <data name="label36.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_Threshold_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Threshold_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_Threshold_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Threshold_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 612</value>
+  </data>
+  <data name="btn_Threshold_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>538, 40</value>
+  </data>
+  <data name="btn_Threshold_save.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.Name" xml:space="preserve">
+    <value>btn_Threshold_save</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_save.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_Threshold_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Threshold_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_Threshold_delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Threshold_delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 560</value>
+  </data>
+  <data name="btn_Threshold_delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>538, 40</value>
+  </data>
+  <data name="btn_Threshold_delete.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.Name" xml:space="preserve">
+    <value>btn_Threshold_delete</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_delete.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chart_Threshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 12</value>
+  </data>
+  <data name="chart_Threshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 328</value>
+  </data>
+  <data name="chart_Threshold.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chart_Threshold.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.Name" xml:space="preserve">
+    <value>chart_Threshold</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;chart_Threshold.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="panel_ThermalSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9445,7 +9331,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lb_Learn_Blade.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -15996,73 +15882,70 @@
   <metadata name="timer_load.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>210, 17</value>
   </metadata>
-  <data name="lb_Threshold_page.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="lb_Threshold_page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_Threshold_page.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 318</value>
-  </data>
-  <data name="lb_Threshold_page.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 38</value>
-  </data>
-  <data name="lb_Threshold_page.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="lb_Threshold_page.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lb_Threshold_page.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lb_Threshold_page.Name" xml:space="preserve">
-    <value>lb_Threshold_page</value>
-  </data>
-  <data name="&gt;&gt;lb_Threshold_page.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_Threshold_page.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;lb_Threshold_page.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label36.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lb_Threshold_ATC.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
   </data>
-  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_Threshold_ATC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 341</value>
+  <data name="lb_Threshold_ATC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 329</value>
   </data>
-  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 30</value>
+  <data name="lb_Threshold_ATC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 30</value>
   </data>
-  <data name="label36.TabIndex" type="System.Int32, mscorlib">
-    <value>73</value>
+  <data name="lb_Threshold_ATC.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
   </data>
-  <data name="label36.Text" xml:space="preserve">
-    <value>頻段1</value>
+  <data name="lb_Threshold_ATC.Text" xml:space="preserve">
+    <value>刀具 ： 預設</value>
   </data>
-  <data name="label36.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lb_Threshold_ATC.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;label36.Name" xml:space="preserve">
-    <value>label36</value>
+  <data name="&gt;&gt;lb_Threshold_ATC.Name" xml:space="preserve">
+    <value>lb_Threshold_ATC</value>
   </data>
-  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_Threshold_ATC.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lb_Threshold_ATC.Parent" xml:space="preserve">
     <value>panel4</value>
   </data>
-  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lb_Threshold_ATC.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_Threshold_Blade.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="lb_Threshold_Blade.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Threshold_Blade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 329</value>
+  </data>
+  <data name="lb_Threshold_Blade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 30</value>
+  </data>
+  <data name="lb_Threshold_Blade.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="lb_Threshold_Blade.Text" xml:space="preserve">
+    <value>刃數 ： 4</value>
+  </data>
+  <data name="lb_Threshold_Blade.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_Blade.Name" xml:space="preserve">
+    <value>lb_Threshold_Blade</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_Blade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_Blade.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_Blade.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -16075,7 +15958,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1270, 790</value>
+    <value>1266, 786</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>

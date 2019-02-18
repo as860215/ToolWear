@@ -68,7 +68,7 @@ namespace ToolWear{
             //震動偵測折線圖
             for (int i = 0; i < Chart_max; i++){
                 chart_Learn.Series[2].Points.AddXY(i + 1, Chart_PointMin);
-                chart_Threshold.Series[2].Points.AddXY(i + 1, Chart_PointMin);
+                //chart_Threshold.Series[2].Points.AddXY(i + 1, Chart_PointMin);
                 chart_ToolWear.Series[2].Points.AddXY(i + 1, Chart_PointMin);
                 chart_warring_1.Series[1].Points.AddXY(i + 1, Chart_PointMin);
                 chart_warring_2.Series[1].Points.AddXY(i + 1, Chart_PointMin);
@@ -635,7 +635,7 @@ namespace ToolWear{
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
         }
         #endregion
-        #region 臨界值設定(待)
+        #region 臨界值設定
         //臨界值設定 > 讀取資料
         private void Threshold_Load(){
             List<string> Blade_Name = new List<string>();
@@ -658,11 +658,22 @@ namespace ToolWear{
             //存放現在寫到哪個TextBox了
             int tb_count = 0;
             try{
-                for (int i = 0; i <= 20; i++){
-                    string FileName = path + @"\data\FFT\L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2] + "-" + i + ".cp";
+                //查詢目錄
+                string[] dirs = Directory.GetFiles(path + @"data\FFT");/*目錄(含路徑)的陣列*/
+                List<string> tem_path = new List<string>();
+                foreach (string s in dirs){
+                    //ex L-abc01-1_2500.cp
+                    string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
+                    string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
+                    if (remove_rate.Equals("L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
+                        tem_path.Add(Path.GetFileNameWithoutExtension(s));
+                }
+                foreach (string s in tem_path){
+                    string FileName = path + @"\data\FFT\" + s + ".cp";
+                    string Blade = s.Split('-')[2].Split('_')[0];
                     //查詢該刀具的資料檔是否存在
                     if (File.Exists(FileName)){
-                        tb_Threshold[tb_count].Text = "T" + i + " : " + Blade_Name[i];
+                        tb_Threshold[tb_count].Text = "T" + Blade + " : " + Blade_Name[int.Parse(Blade)] + " " + s.Split('_')[1];
                         tb_count++;
                     }
                 }
@@ -678,10 +689,12 @@ namespace ToolWear{
         }
         //臨界值設定 > 點選不同刀號
         private void Threshold_LoadBlade(object sender,EventArgs e){
+            if (((TextBox)sender).Text.Equals("")) return;
             double hz = rateNumeric_base / samplesPerChannelNumeric_base;
             List<string> Blade_Module = new List<string>();
             try{
-                StreamReader sr_learn = new StreamReader(path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + (((TextBox)sender).Text).Split(' ')[0].Split('T')[1] + ".cp");
+                StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\L-{1}{2}-{3}_{4}.cp", path, lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
+                    (((TextBox)sender).Text).Split(' ')[0].Split('T')[1], ((TextBox)sender).Text.Split(' ')[3].Split(' ')[0]));
                 while (!sr_learn.EndOfStream)
                     Blade_Module.Add(sr_learn.ReadLine());
                 sr_learn.Close();
@@ -692,7 +705,16 @@ namespace ToolWear{
                 return;
             }
             chart_Threshold.Series[0].Points.Clear();
-
+            lb_Threshold_rate.Text = string.Format("轉速 : {0} RPM", ((TextBox)sender).Text.Split(' ')[3].Split(' ')[0]);
+            lb_Threshold_ATC.Text = string.Format("刀具 ： {0}", ((TextBox)sender).Text.Split(' ')[2].Split(' ')[0]);
+            StreamReader sr = new StreamReader(path + @"data\ATC.cp");
+            string s = ((TextBox)sender).Text.Split(' ')[0].Split('T')[1];
+            for (int i = 0; i < int.Parse(((TextBox)sender).Text.Split(' ')[0].Split('T')[1]); i++)
+                lb_Threshold_Blade.Text = string.Format("刃數 ： {0}", sr.ReadLine().Split(',')[2]); ;
+            sr.Close();
+            sr.Dispose();
+            for (int i = 0; i < Blade_Module.Count; i++)
+                chart_Threshold.Series[0].Points.AddXY((i + 1) * hz, Blade_Module[i]);
         }
         #endregion
         #region 主畫面設定
