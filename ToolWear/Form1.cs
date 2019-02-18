@@ -432,8 +432,10 @@ namespace ToolWear{
                 return;
             }
             Module_FFT.Clear();
+            chart_FFT.Series[0].Points.Clear();
             //檢查data內是否已有此工件的學習模型
-            try{
+            try
+            {
                 StreamReader sr = new StreamReader(path + @"data\FFT\L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2] + "-" + ATC_Status + ".cp");
                 while (!sr.EndOfStream)
                     Module_FFT.Add(sr.ReadLine());
@@ -452,7 +454,6 @@ namespace ToolWear{
             btn_ToolWear_Start.Enabled = false;
             btn_ToolWear_Stop.Enabled = true;
             chart_ToolWear.Series[0].Points.Clear();
-            chart_FFT.Series[0].Points.Clear();
             //修改開始與停止按鈕
             btn_ToolWear_Start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
@@ -522,8 +523,13 @@ namespace ToolWear{
         }
         //顯示臨界值
         private void btn_ToolWear_Threshold_Click(object sender,EventArgs e){
+            if (lb_ToolWear_Parts.Text.Equals("(未選擇)")){
+                MessageBox.Show("尚未選擇工件，無法查詢臨界值。\n請點選下方工件預覽圖或是文字，進入頁面選取查詢工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             panel_ToolWear.Visible = false;
             panel_Threshold.Visible = true;
+            Threshold_Load();
         }
         //磨耗偵測 > 設定 > DAQ訊號重新整理
         private void btn_ToolWearSetting_Research_Click(object sender,EventArgs e){
@@ -554,6 +560,23 @@ namespace ToolWear{
             sw.WriteLine();
             sw.Close();
             sw.Dispose();
+            //清空原先Match檔案資料
+            try{
+                for (int i = 0; i <= 20; i++){
+                    string FileName = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + (now_learn + 1).ToString("00") + "-" + i + ".cp";
+                    //查詢該刀具的資料檔是否存在
+                    if (File.Exists(FileName)){
+                        StreamWriter sw_FFT = new StreamWriter(FileName);
+                        sw_FFT.WriteLine("0");
+                        sw_FFT.Close();
+                        sw_FFT.Dispose();
+                    }
+                }
+            }
+            catch (Exception ex){
+                MessageBox.Show("在清除原先資料檔時發生錯誤。\n\nbtn_Learn_Start_Click\n\nError code:\n" + ex.ToString());
+                return;
+            }
             DAQInitialize("Learn");
         }
         //模型學習完成
@@ -581,9 +604,63 @@ namespace ToolWear{
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
         }
         #endregion
-        #region 臨界值設定
+        #region 臨界值設定(待)
         //臨界值設定 > 讀取資料
         private void Threshold_Load(){
+            List<string> Blade_Name = new List<string>();
+            Blade_Name.Add("預設");
+            try{
+                StreamReader sr = new StreamReader(path + @"\data\ATC.cp");
+                while(!sr.EndOfStream)
+                    Blade_Name.Add(sr.ReadLine().Split(',')[1]);
+                sr.Close();
+                sr.Dispose();
+            }
+            catch (Exception ex){
+                MessageBox.Show("在讀取刀庫資料時發生錯誤。\n\nThreshold_Load\n\nError code:\n" + ex.ToString());
+            }
+            TextBox[] tb_Threshold = new TextBox[14] { tb_Threshold_01 , tb_Threshold_02 , tb_Threshold_03 , tb_Threshold_04 ,
+                                             tb_Threshold_05,tb_Threshold_06,tb_Threshold_07,tb_Threshold_08,tb_Threshold_09,
+                                             tb_Threshold_10,tb_Threshold_11,tb_Threshold_12,tb_Threshold_13,tb_Threshold_14};
+            //清空TextBox資料
+            for (int i = 0; i < tb_Threshold.Length; i++) tb_Threshold[i].Text = "";
+            //存放現在寫到哪個TextBox了
+            int tb_count = 0;
+            try{
+                for (int i = 0; i <= 20; i++){
+                    string FileName = path + @"\data\FFT\L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2] + "-" + i + ".cp";
+                    //查詢該刀具的資料檔是否存在
+                    if (File.Exists(FileName)){
+                        tb_Threshold[tb_count].Text = "T" + i + " : " + Blade_Name[i];
+                        tb_count++;
+                    }
+                }
+                //表示沒有資料
+                if (tb_count == 0){
+                    tb_Threshold[0].Text = "沒有學習資料";
+                    tb_Threshold[1].Text = "無法設定臨界值";
+                }
+            }
+            catch (Exception ex){
+                MessageBox.Show("在讀取比對資料檔時發生錯誤。\n\nThreshold_Load\n\nError code:\n" + ex.ToString());
+            }
+        }
+        //臨界值設定 > 點選不同刀號
+        private void Threshold_LoadBlade(object sender,EventArgs e){
+            double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+            List<string> Blade_Module = new List<string>();
+            try{
+                StreamReader sr_learn = new StreamReader(path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + (((TextBox)sender).Text).Split(' ')[0].Split('T')[1] + ".cp");
+                while (!sr_learn.EndOfStream)
+                    Blade_Module.Add(sr_learn.ReadLine());
+                sr_learn.Close();
+                sr_learn.Dispose();
+            }
+            catch (Exception ex){
+                MessageBox.Show("讀取Learn檔時發生錯誤。\n\nBlade_Comparison\n\n" + ex.ToString(), "讀取錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            chart_Threshold.Series[0].Points.Clear();
 
         }
         #endregion
@@ -761,6 +838,7 @@ namespace ToolWear{
             List<string> Blade_Match = new List<string>();
             try{
                 StreamReader sr_match = new StreamReader(path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + ".cp");
+                sr_match.ReadLine();    //先把第一行的設定檔讀出來
                 while (!sr_match.EndOfStream)
                     Blade_Match.Add(sr_match.ReadLine());
                 sr_match.Close();
@@ -2409,6 +2487,7 @@ namespace ToolWear{
             try{
                 StreamReader sr = new StreamReader(tem_path);
                 int count = 0;
+                sr.ReadLine();  //先將第一行設定檔讀出來
                 while (!sr.EndOfStream){
                     List_FFT_Max[count] = sr.ReadLine();
                     count++;
@@ -2433,6 +2512,8 @@ namespace ToolWear{
             }
             //寫檔
             StreamWriter sw_Max = new StreamWriter(tem_path);
+            //先寫轉速
+            sw_Max.WriteLine(ATC_RPM);
             for(int i = 0;i<List_FFT_Max.Count;i++) sw_Max.WriteLine(List_FFT_Max[i]);
             sw_Max.Close();
             sw_Max.Dispose();
@@ -2512,6 +2593,8 @@ namespace ToolWear{
             EZNcCom = null;
             return "";
         }
+        //暫存轉速
+        double ATC_RPM = 0;
         /// <summary>
         /// 取得目前轉速
         /// </summary>
