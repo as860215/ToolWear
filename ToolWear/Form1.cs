@@ -434,23 +434,49 @@ namespace ToolWear{
             Module_FFT.Clear();
             chart_FFT.Series[0].Points.Clear();
             //檢查data內是否已有此工件的學習模型
-            try
-            {
-                StreamReader sr = new StreamReader(path + @"data\FFT\L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2] + "-" + ATC_Status + ".cp");
+            //查詢目錄
+            string[] dirs = Directory.GetFiles(path + @"data\FFT\");/*目錄(含路徑)的陣列*/
+            List<string> tem_path = new List<string>();
+            foreach (string s in dirs){
+                //ex L-abc01-1_2500.cp
+                string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
+                string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
+                if (remove_rate.Equals("M-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
+                    tem_path.Add(Path.GetFileNameWithoutExtension(s));
+            }
+            if(tem_path.Count == 0){
+                //如果長度為0就是找不到檔案，也就是沒有學習過
+                MessageBox.Show("對不起，" + lb_ToolWear_Parts.Text + " 此軸向並未找到學習模型，\n請點選左方功能表「學習模式」進行模型建構。" +
+                    "\n\nbtn_ToolWear_Start_Click\n\n","尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else{
+                StreamReader sr = new StreamReader(path + @"data\FFT\" + tem_path[0] + ".cp");
                 while (!sr.EndOfStream)
                     Module_FFT.Add(sr.ReadLine());
                 sr.Close();
                 sr.Dispose();
                 double hz = rateNumeric_base / samplesPerChannelNumeric_base;
-                for(int i = 0; i < Module_FFT.Count; i++)
+                for (int i = 0; i < Module_FFT.Count; i++)
                     chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
             }
-            catch(Exception ex) {
-                //如果進到例外事件就是找不到檔案，也就是沒有學習過
-                MessageBox.Show("對不起，" + lb_ToolWear_Parts.Text + " 此軸向並未找到學習模型，\n請點選左方功能表「學習模式」進行模型建構。" +
-                    "\n\nbtn_ToolWear_Start_Click\n\n" + ex.ToString(), "尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            //try
+            //{
+            //    StreamReader sr = new StreamReader(path + @"data\FFT\L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2] + "-" + ATC_Status + ".cp");
+            //    while (!sr.EndOfStream)
+            //        Module_FFT.Add(sr.ReadLine());
+            //    sr.Close();
+            //    sr.Dispose();
+            //    double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+            //    for(int i = 0; i < Module_FFT.Count; i++)
+            //        chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
+            //}
+            //catch(Exception ex) {
+            //    //如果進到例外事件就是找不到檔案，也就是沒有學習過
+            //    MessageBox.Show("對不起，" + lb_ToolWear_Parts.Text + " 此軸向並未找到學習模型，\n請點選左方功能表「學習模式」進行模型建構。" +
+            //        "\n\nbtn_ToolWear_Start_Click\n\n" + ex.ToString(), "尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
             btn_ToolWear_Start.Enabled = false;
             btn_ToolWear_Stop.Enabled = true;
             chart_ToolWear.Series[0].Points.Clear();
@@ -462,21 +488,16 @@ namespace ToolWear{
             //修改執行階段
             ToolWear_bool[now_ToolWear] = true;
             now_Match = now_ToolWear;
-            //清空原先Match檔案資料
-            try{
-                for(int i = 0; i <= 20; i++){
-                    string FileName = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2] + "-" + i + ".cp";
-                    //查詢該刀具的資料檔是否存在
-                    if (File.Exists(FileName)){
-                        StreamWriter sw = new StreamWriter(FileName);
-                        sw.WriteLine("-99");
-                        sw.Close();
-                        sw.Dispose();
-                    }
+            
+            foreach (string s in tem_path){
+                string FileName = path + @"\data\FFT\" + s + ".cp";
+                //查詢該刀具的資料檔是否存在
+                if (File.Exists(FileName)){
+                    StreamWriter sw_FFT = new StreamWriter(FileName);
+                    sw_FFT.WriteLine("0");
+                    sw_FFT.Close();
+                    sw_FFT.Dispose();
                 }
-            }
-            catch(Exception ex) {
-                MessageBox.Show("在清除原先比對資料檔時發生錯誤。\n\nbtn_ToolWear_Start_Click\n\nError code:\n" + ex.ToString());
             }
             //Log推播訊息
             Write_Log("系統","已啟動磨耗偵測 ： " + lb_ToolWear_Parts.Text + "/" + pre_ToolWear.Text);
@@ -562,8 +583,18 @@ namespace ToolWear{
             sw.Dispose();
             //清空原先Match檔案資料
             try{
-                for (int i = 0; i <= 20; i++){
-                    string FileName = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + (now_learn + 1).ToString("00") + "-" + i + ".cp";
+                //查詢目錄
+                string[] dirs = Directory.GetFiles(path + @"data\FFT");/*目錄(含路徑)的陣列*/
+                List<string> tem_path = new List<string>();
+                foreach (string s in dirs){
+                    //ex L-abc01-1_2500.cp
+                    string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
+                    string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
+                    if (remove_rate.Equals("L-" + lb_Learn_WorkName.Text + (now_learn + 1).ToString("00")))
+                        tem_path.Add(Path.GetFileNameWithoutExtension(s));
+                }
+                foreach (string s in tem_path) { 
+                    string FileName = path + @"\data\FFT\" + s + ".cp";
                     //查詢該刀具的資料檔是否存在
                     if (File.Exists(FileName)){
                         StreamWriter sw_FFT = new StreamWriter(FileName);
@@ -836,9 +867,23 @@ namespace ToolWear{
             //讀取Module的暫存FFT變數 ： Module_FFT
             List<string> Blade_Module = Module_FFT;
             List<string> Blade_Match = new List<string>();
-            try{
-                StreamReader sr_match = new StreamReader(path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + ".cp");
-                sr_match.ReadLine();    //先把第一行的設定檔讀出來
+            //try{
+            //    StreamReader sr_module = new StreamReader(path + @"\data\FFT\L-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp");
+            //    //sr_match.ReadLine();    //先把第一行的設定檔讀出來
+            //    while (!sr_module.EndOfStream)
+            //        Blade_Module.Add(sr_module.ReadLine());
+            //    sr_module.Close();
+            //    sr_module.Dispose();
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("讀取Learn檔時發生錯誤。\n\nBlade_Comparison\n\n" + ex.ToString(), "讀取錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
+            try
+            {
+                StreamReader sr_match = new StreamReader(path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp");
+                //sr_match.ReadLine();    //先把第一行的設定檔讀出來
                 while (!sr_match.EndOfStream)
                     Blade_Match.Add(sr_match.ReadLine());
                 sr_match.Close();
@@ -2477,17 +2522,17 @@ namespace ToolWear{
             Fourier.Forward(samples, FourierOptions.NoScaling);
             //判斷模式
             string tem_path = "";
-            if (mode.Equals("Learn")) tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + ATC_Status + ".cp";
+            if (mode.Equals("Learn")) tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp";
             else if (mode.Equals("Match")){
                 for (int i = 0; i < ToolWear_bool.Length; i++)
                     if (ToolWear_bool[i] == true)
-                        tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + ATC_Status + ".cp";
+                        tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp";
             }
             //先讀取目前刀具的最大值檔案
             try{
                 StreamReader sr = new StreamReader(tem_path);
                 int count = 0;
-                sr.ReadLine();  //先將第一行設定檔讀出來
+                //sr.ReadLine();  //先將第一行設定檔讀出來
                 while (!sr.EndOfStream){
                     List_FFT_Max[count] = sr.ReadLine();
                     count++;
@@ -2513,7 +2558,7 @@ namespace ToolWear{
             //寫檔
             StreamWriter sw_Max = new StreamWriter(tem_path);
             //先寫轉速
-            sw_Max.WriteLine(ATC_RPM);
+            //sw_Max.WriteLine(ATC_RPM);
             for(int i = 0;i<List_FFT_Max.Count;i++) sw_Max.WriteLine(List_FFT_Max[i]);
             sw_Max.Close();
             sw_Max.Dispose();
