@@ -686,6 +686,7 @@ namespace ToolWear{
             catch (Exception ex){
                 MessageBox.Show("在讀取比對資料檔時發生錯誤。\n\nThreshold_Load\n\nError code:\n" + ex.ToString());
             }
+            Threshold_LoadBlade((object)tb_Threshold_01, null);
         }
         //臨界值設定 > 點選不同刀號
         private void Threshold_LoadBlade(object sender,EventArgs e){
@@ -705,16 +706,59 @@ namespace ToolWear{
                 return;
             }
             chart_Threshold.Series[0].Points.Clear();
-            lb_Threshold_rate.Text = string.Format("轉速 : {0} RPM", ((TextBox)sender).Text.Split(' ')[3].Split(' ')[0]);
+            //取得轉速
+            int Tool_rate = int.Parse(((TextBox)sender).Text.Split(' ')[3].Split(' ')[0]);
+            lb_Threshold_rate.Text = string.Format("轉速 : {0} RPM", Tool_rate);
             lb_Threshold_ATC.Text = string.Format("刀具 ： {0}", ((TextBox)sender).Text.Split(' ')[2].Split(' ')[0]);
             StreamReader sr = new StreamReader(path + @"data\ATC.cp");
             string s = ((TextBox)sender).Text.Split(' ')[0].Split('T')[1];
-            for (int i = 0; i < int.Parse(((TextBox)sender).Text.Split(' ')[0].Split('T')[1]); i++)
-                lb_Threshold_Blade.Text = string.Format("刃數 ： {0}", sr.ReadLine().Split(',')[2]); ;
+            //取得刃數
+            int Tool_Blade = 4;
+            for (int i = 0; i < int.Parse(((TextBox)sender).Text.Split(' ')[0].Split('T')[1]); i++){
+                Tool_Blade = int.Parse(sr.ReadLine().Split(',')[2]);
+                lb_Threshold_Blade.Text = string.Format("刃數 ： {0}", Tool_Blade);
+            }
             sr.Close();
             sr.Dispose();
-            for (int i = 0; i < Blade_Module.Count; i++)
-                chart_Threshold.Series[0].Points.AddXY((i + 1) * hz, Blade_Module[i]);
+            //for (int i = 0; i < Blade_Module.Count; i++)
+            //    chart_Threshold.Series[0].Points.AddXY((i + 1) * hz, Blade_Module[i]);
+
+            //刀具刃數與頻率計算公式
+            double Blade_Hz = Tool_rate / 60 * Tool_Blade;
+            int Blade_Hz_Mag = 1;   //頻率倍率(取1~5)
+            double sum = 0;         //當前儲存點位總和
+            int count = 0;          //儲存點位數量
+            double Hz_min = 0, Hz_max = 0;  //暫存該頻率倍率中的最大最小值
+            Label[] lb_Threshold_sethz = new Label[5] { lb_Threshold_sethz01 , lb_Threshold_sethz02 , lb_Threshold_sethz03 ,
+                                                      lb_Threshold_sethz04 , lb_Threshold_sethz05};
+            Label[] lb_Threshold_setavg = new Label[5] { lb_Threshold_setavg01 , lb_Threshold_setavg02 , lb_Threshold_setavg03 ,
+                                                      lb_Threshold_setavg04 , lb_Threshold_setavg05};
+            for(int i = 0; i < lb_Threshold_sethz.Length; i++){
+                lb_Threshold_sethz[i].Text = "";
+                lb_Threshold_setavg[i].Text = "";
+            }
+            for (int i = 0; i < Blade_Module.Count; i++){
+                double tem = 0;
+                //上下各取10% range
+                Hz_min = Blade_Hz_Mag * Blade_Hz * 0.9f;
+                Hz_max = Blade_Hz_Mag * Blade_Hz * 1.1f;
+                if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max){
+                    tem = double.Parse(Blade_Module[i]);//暫存值
+                    if (tem >= 0)
+                        sum += tem;
+                    count++;
+                }
+                else if ((i + 1) * hz > Hz_max){
+                    //先顯示數據在Lable上
+                    lb_Threshold_sethz[Blade_Hz_Mag - 1].Text = string.Format("{0} hz ~ {1} hz", Hz_min.ToString("#0"), Hz_max.ToString("#0"));
+                    lb_Threshold_setavg[Blade_Hz_Mag - 1].Text = string.Format("| {0}", (sum / count).ToString("0.0000"));
+
+                    //頻率已大於刀刃刃數頻率，將倍率提升
+                    Blade_Hz_Mag++; 
+                }
+                chart_Threshold.Series[0].Points.AddXY((i + 1) * hz, tem);
+                if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
+            }
         }
         #endregion
         #region 主畫面設定
