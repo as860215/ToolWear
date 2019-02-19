@@ -22,6 +22,8 @@ namespace ToolWear{
             InitializeComponent();
             //將視窗最大化
             this.WindowState = FormWindowState.Maximized;
+            //隱藏工作列
+            this.FormBorderStyle = FormBorderStyle.None;
             //強制置頂視窗
             //this.TopMost = true;
         }
@@ -34,6 +36,8 @@ namespace ToolWear{
             panel_Loading.Visible = true;
             //將Log panel調整至所有panel下方(以防卡到其他介面)
             panel_log.SendToBack();
+            //將Home panel調整至所有panel下方
+            panel_Home.SendToBack();
             //啟動背景讀取資料timer
             timer_load.Enabled = true;
             //顯示進度
@@ -68,8 +72,10 @@ namespace ToolWear{
             //震動偵測折線圖
             for (int i = 0; i < Chart_max; i++){
                 chart_Learn.Series[2].Points.AddXY(i + 1, Chart_PointMin);
-                //chart_Threshold.Series[2].Points.AddXY(i + 1, Chart_PointMin);
                 chart_ToolWear.Series[2].Points.AddXY(i + 1, Chart_PointMin);
+            }
+            //警戒折線圖
+            for(int i = 0; i < 2000; i++){
                 chart_warring_1.Series[1].Points.AddXY(i + 1, Chart_PointMin);
                 chart_warring_2.Series[1].Points.AddXY(i + 1, Chart_PointMin);
             }
@@ -132,17 +138,22 @@ namespace ToolWear{
             btn_Learn_09,btn_Learn_10,btn_Learn_11,btn_Learn_12,btn_Learn_13,
             btn_Learn_14,btn_Learn_15,btn_Learn_16,btn_Learn_17,btn_Learn_18,
             btn_Learn_19,btn_Learn_20};
-            StreamReader sr_axial = new StreamReader(path + @"\data\axial.cp");
             int count = 0;
-            while (!sr_axial.EndOfStream){
-                string axial = sr_axial.ReadLine().Split(',')[0];
-                btn_ToolWearSetting[count].Text = axial;
-                btn_ToolWear[count].Text = axial;
-                btn_Learn[count].Text = axial;
-                count++;
+            try {
+                StreamReader sr_axial = new StreamReader(path + @"\data\axial.cp");
+                while (!sr_axial.EndOfStream){
+                    string axial = sr_axial.ReadLine().Split(',')[0];
+                    btn_ToolWearSetting[count].Text = axial;
+                    btn_ToolWear[count].Text = axial;
+                    btn_Learn[count].Text = axial;
+                    count++;
+                }
+                sr_axial.Close();
+                sr_axial.Dispose();
             }
-            sr_axial.Close();
-            sr_axial.Dispose();
+            catch {
+                tb_Load_log.Text += "讀取不到軸向資料。\n";
+            };
             //熱補償 & 熱補償設定
             Button[] btn_Compensate = new Button[20] { btn_Compensate_01, btn_Compensate_02, btn_Compensate_03,
             btn_Compensate_04,btn_Compensate_05,btn_Compensate_06,btn_Compensate_07,btn_Compensate_08,
@@ -154,16 +165,21 @@ namespace ToolWear{
             btn_Thermal_09,btn_Thermal_10,btn_Thermal_11,btn_Thermal_12,btn_Thermal_13,
             btn_Thermal_14,btn_Thermal_15,btn_Thermal_16,btn_Thermal_17,btn_Thermal_18,
             btn_Thermal_19,btn_Thermal_20};
-            StreamReader sr_thermal = new StreamReader(path + @"\data\thermal.cp");
             count = 0;
-            while (!sr_thermal.EndOfStream){
-                string axial = sr_thermal.ReadLine().Split(',')[0];
-                btn_Compensate[count].Text = axial;
-                btn_Thermal[count].Text = axial;
-                count++;
+            try{
+                StreamReader sr_thermal = new StreamReader(path + @"\data\thermal.cp");
+                while (!sr_thermal.EndOfStream){
+                    string axial = sr_thermal.ReadLine().Split(',')[0];
+                    btn_Compensate[count].Text = axial;
+                    btn_Thermal[count].Text = axial;
+                    count++;
+                }
+                sr_thermal.Close();
+                sr_thermal.Dispose();
             }
-            sr_thermal.Close();
-            sr_thermal.Dispose();
+            catch{
+                tb_Load_log.Text += "讀取不到熱補償資料。\n";
+            }
 
             //主畫面 > 設定
             setting_load(false);
@@ -448,7 +464,7 @@ namespace ToolWear{
                 //ex L-abc01-1_2500.cp
                 string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
                 string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
-                if (remove_rate.Equals("M-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
+                if (remove_rate.Equals("L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
                     tem_path.Add(Path.GetFileNameWithoutExtension(s));
             }
             if(tem_path.Count == 0){
@@ -495,7 +511,16 @@ namespace ToolWear{
             //修改執行階段
             ToolWear_bool[now_ToolWear] = true;
             now_Match = now_ToolWear;
-            
+
+            //初始化Match檔案
+            tem_path.Clear();
+            foreach (string s in dirs) { 
+                //ex L-abc01-1_2500.cp
+                string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
+                string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
+                if (remove_rate.Equals("M-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
+                    tem_path.Add(Path.GetFileNameWithoutExtension(s));
+            }
             foreach (string s in tem_path){
                 string FileName = path + @"\data\FFT\" + s + ".cp";
                 //查詢該刀具的資料檔是否存在
@@ -555,6 +580,13 @@ namespace ToolWear{
                 MessageBox.Show("尚未選擇工件，無法查詢臨界值。\n請點選下方工件預覽圖或是文字，進入頁面選取查詢工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            //判斷是否有軸向正在運行
+            //for(int i = 0;i < ToolWear_bool.Length; i++){
+            //    if(ToolWear_bool[now_ToolWear] == true){
+            //        MessageBox.Show("尚有正在偵測的軸向，您必須停止所有偵測活動\n後才可設定臨界值。", "偵測運轉中", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //        return;
+            //    }
+            //}
             panel_ToolWear.Visible = false;
             panel_Threshold.Visible = true;
             Threshold_Load();
@@ -564,9 +596,92 @@ namespace ToolWear{
             DAQPhysicalChannels();
             btn_ToolWearSetting_Choose(pre_ToolWearSetting, null);
         }
-        //磨耗偵測 > 判斷是否顯示log(待)
+        //暫存此軸向轉速警戒值
+        List<string> ToolWear_Alern = new List<string>();
+        //警戒圖暫存變數
+        int chart_warring_count = 0;    //要將現在的警戒圖形畫到哪一個chart上
+        //磨耗偵測 > 判斷是否超出警戒值(顯示Log)
         private void ToolWear_Log(){
+            string Blade_FileName = "";
+            ToolWear_Alern.Clear();
+            if (machine_connect == false){
+                //如果未連接機台，使用預設2500轉
+                try{
+                    Blade_FileName = string.Format("{0}{1}-{2}_{3}", lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
+                        ATC_num, 2500);
+                    StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\LS-{1}.cp", path, Blade_FileName));
+                    while (!sr_learn.EndOfStream)
+                        ToolWear_Alern.Add(sr_learn.ReadLine());
+                    sr_learn.Close();
+                    sr_learn.Dispose();
+                }
+                catch(Exception ex) {
+                    MessageBox.Show("查詢不到臨界值資料。\n" + ex.ToString(), "查詢失敗", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                Tool_rate = 2500;
+                Tool_Blade = 4;
+                //刀具刃數與頻率計算公式
+                double Blade_Hz = Tool_rate / 60 * Tool_Blade;
+                int Blade_Hz_Mag = 1;   //頻率倍率(取1~5)
+                double sum = 0;         //當前儲存點位總和
+                int count = 0;          //儲存點位數量
+                double Hz_min = 0, Hz_max = 0;  //暫存該頻率倍率中的最大最小值
+                double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+                List<string> Blade_Module = new List<string>();
 
+                try{
+                    StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\L-{1}.cp", path, Blade_FileName));
+                    while (!sr_learn.EndOfStream)
+                        Blade_Module.Add(sr_learn.ReadLine());
+                    sr_learn.Close();
+                    sr_learn.Dispose();
+                }
+                catch (Exception ex){
+                    MessageBox.Show("讀取Learn檔時發生錯誤。\n\nToolWear_Log\n\n" + ex.ToString(), "讀取錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                Button[] btn_ToolWear = new Button[20] { btn_ToolWear_01, btn_ToolWear_02, btn_ToolWear_03,
+                            btn_ToolWear_04,btn_ToolWear_05,btn_ToolWear_06,btn_ToolWear_07,btn_ToolWear_08,
+                            btn_ToolWear_09,btn_ToolWear_10,btn_ToolWear_11,btn_ToolWear_12,btn_ToolWear_13,
+                            btn_ToolWear_14,btn_ToolWear_15,btn_ToolWear_16,btn_ToolWear_17,btn_ToolWear_18,
+                            btn_ToolWear_19,btn_ToolWear_20};
+                for (int i = 0; i < Blade_Module.Count; i++){
+                    double tem = 0;
+                    //上下各取10% range
+                    Hz_min = Blade_Hz_Mag * Blade_Hz * 0.9f;
+                    Hz_max = Blade_Hz_Mag * Blade_Hz * 1.1f;
+                    if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max){
+                        tem = double.Parse(Blade_Module[i]);//暫存值
+                        if (tem >= 0)
+                            sum += tem;
+                        count++;
+                    }
+                    else if ((i + 1) * hz > Hz_max){
+                        //頻率已大於刀刃刃數頻率，將倍率提升
+                        if (((sum / count) > double.Parse(ToolWear_Alern[Blade_Hz_Mag - 1])) && !ToolWear_Alern[Blade_Hz_Mag - 1].Equals("0")){
+                            Write_Log("警告", string.Format("{0}軸 {1}hz~{2}hz 震動幅度超過警戒值，當前:{3}(警戒值:{4})。", btn_ToolWear[now_Match].Text, Hz_min.ToString("0.####"), Hz_max.ToString("0.####"), (sum / count).ToString("0.00##"), ToolWear_Alern[Blade_Hz_Mag - 1]));
+                            List<string> tem_datatable = new List<string>();
+                            for (int j = 0; j < samplesPerChannelNumeric_base; j++)
+                                tem_datatable.Add(dataTable.Rows[i][0].ToString());
+                            System.Windows.Forms.DataVisualization.Charting.Chart[] chart = new System.Windows.Forms.DataVisualization.Charting.Chart[2]
+                            {chart_warring_1,chart_warring_2 };
+                            chart[chart_warring_count].Series[0].Points.Clear();
+                            for (int j = 0;j < tem_datatable.Count;j++)
+                                chart[chart_warring_count].Series[0].Points.AddXY(j+1, tem_datatable[j]);
+                            chart_warring_count++;
+                            if (chart_warring_count > 1) chart_warring_count = 0;   //兩張圖
+                        }
+                        Blade_Hz_Mag++;
+                        count = 0;
+                        sum = 0;
+                    }
+                    if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
+                }
+            }
+            else{
+                //如果已連接機台
+            }
         }
         #endregion
         #region 學習模式
@@ -599,16 +714,14 @@ namespace ToolWear{
                     string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
                     if (remove_rate.Equals("L-" + lb_Learn_WorkName.Text + (now_learn + 1).ToString("00")))
                         tem_path.Add(Path.GetFileNameWithoutExtension(s));
+                    else if (remove_rate.Equals("LS-" + lb_Learn_WorkName.Text + (now_learn + 1).ToString("00")))
+                        tem_path.Add(Path.GetFileNameWithoutExtension(s));
                 }
                 foreach (string s in tem_path) { 
                     string FileName = path + @"\data\FFT\" + s + ".cp";
                     //查詢該刀具的資料檔是否存在
-                    if (File.Exists(FileName)){
-                        StreamWriter sw_FFT = new StreamWriter(FileName);
-                        sw_FFT.WriteLine("0");
-                        sw_FFT.Close();
-                        sw_FFT.Dispose();
-                    }
+                    if (File.Exists(FileName))
+                        File.Delete(FileName);  //刪檔案
                 }
             }
             catch (Exception ex){
@@ -697,6 +810,10 @@ namespace ToolWear{
         }
         //暫存點選的刀號檔案名稱
         string Blade_FileName = "";
+        //轉速
+        int Tool_rate = 0;
+        //刃數
+        int Tool_Blade = 4;
         //暫存上次點選到的刀號TextBox
         TextBox pre_Blade = null;
         //臨界值設定 > 點選不同刀號
@@ -721,13 +838,13 @@ namespace ToolWear{
             chart_Threshold.Series[0].Points.Clear();
             //T0 : abc 5000
             //取得轉速
-            int Tool_rate = int.Parse(pre_Blade.Text.Split(' ')[3].Split(' ')[0]);
+            Tool_rate = int.Parse(pre_Blade.Text.Split(' ')[3].Split(' ')[0]);
             lb_Threshold_rate.Text = string.Format("轉速 : {0} RPM", Tool_rate);
             lb_Threshold_ATC.Text = string.Format("刀具 ： {0}", pre_Blade.Text.Split(' ')[2].Split(' ')[0]);
             StreamReader sr = new StreamReader(path + @"data\ATC.cp");
             string s = pre_Blade.Text.Split(' ')[0].Split('T')[1];
             //取得刃數
-            int Tool_Blade = 4;
+            Tool_Blade = 4;
             for (int i = 0; i < int.Parse(pre_Blade.Text.Split(' ')[0].Split('T')[1]); i++){
                 Tool_Blade = int.Parse(sr.ReadLine().Split(',')[2]);
                 lb_Threshold_Blade.Text = string.Format("刃數 ： {0}", Tool_Blade);
@@ -736,6 +853,30 @@ namespace ToolWear{
             sr.Dispose();
             //for (int i = 0; i < Blade_Module.Count; i++)
             //    chart_Threshold.Series[0].Points.AddXY((i + 1) * hz, Blade_Module[i]);
+            //讀取該頻段刀子設定檔
+            TextBox[] tb_Threshold_set = new TextBox[5] { tb_Threshold_set01, tb_Threshold_set02, tb_Threshold_set03,
+                                                          tb_Threshold_set04, tb_Threshold_set05};
+            try{
+                StreamReader sr_set = new StreamReader(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
+                int sr_count = 0;
+                while (!sr_set.EndOfStream){
+                    tb_Threshold_set[sr_count].Text = sr_set.ReadLine();
+                    sr_count++;
+                }
+                sr_set.Close();
+                sr_set.Dispose();
+            }
+            catch{
+                //會進到例外事件表示沒有設定檔，生成一個
+                StreamWriter sw_set = new StreamWriter(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
+                for (int i = 1; i <= 5; i++)
+                    sw_set.WriteLine("0");
+                sw_set.Close();
+                sw_set.Dispose();
+                //重新讀取
+                Threshold_LoadBlade((object)pre_Blade, null);
+                return;
+            }
 
             //刀具刃數與頻率計算公式
             double Blade_Hz = Tool_rate / 60 * Tool_Blade;
@@ -756,6 +897,9 @@ namespace ToolWear{
                 //上下各取10% range
                 Hz_min = Blade_Hz_Mag * Blade_Hz * 0.9f;
                 Hz_max = Blade_Hz_Mag * Blade_Hz * 1.1f;
+                chart_Threshold.Series[Blade_Hz_Mag + 1].Points.Clear();
+                chart_Threshold.Series[Blade_Hz_Mag + 1].Points.AddXY(Hz_min * 0.9f, tb_Threshold_set[Blade_Hz_Mag - 1].Text);
+                chart_Threshold.Series[Blade_Hz_Mag + 1].Points.AddXY(Hz_max * 1.1f, tb_Threshold_set[Blade_Hz_Mag - 1].Text);
                 if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max){
                     tem = double.Parse(Blade_Module[i]);//暫存值
                     if (tem >= 0)
@@ -768,32 +912,12 @@ namespace ToolWear{
                     lb_Threshold_setavg[Blade_Hz_Mag - 1].Text = string.Format("| {0}", (sum / count).ToString("0.0000"));
 
                     //頻率已大於刀刃刃數頻率，將倍率提升
-                    Blade_Hz_Mag++; 
+                    Blade_Hz_Mag++;
+                    count = 0;
+                    sum = 0;
                 }
                 chart_Threshold.Series[0].Points.AddXY((i + 1) * hz, tem);
                 if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
-            }
-
-            //讀取該頻段刀子設定檔
-            TextBox[] tb_Threshold_set = new TextBox[5] { tb_Threshold_set01, tb_Threshold_set02, tb_Threshold_set03,
-                                                          tb_Threshold_set04, tb_Threshold_set05};
-            try{
-                StreamReader sr_set = new StreamReader(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
-                int sr_count = 0;
-                while (!sr_set.EndOfStream){
-                    tb_Threshold_set[sr_count].Text = sr_set.ReadLine();
-                    sr_count++;
-                }
-                sr_set.Close();
-                sr_set.Dispose();
-            }
-            catch {
-                //會進到例外事件表示沒有設定檔，生成一個
-                StreamWriter sw_set = new StreamWriter(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
-                for (int i = 1; i <= 5; i++)
-                    sw_set.WriteLine(i.ToString());
-                sw_set.Close();
-                sw_set.Dispose();
             }
         }
         //臨界值設定 > 儲存
@@ -1022,19 +1146,6 @@ namespace ToolWear{
             //讀取Module的暫存FFT變數 ： Module_FFT
             List<string> Blade_Module = Module_FFT;
             List<string> Blade_Match = new List<string>();
-            //try{
-            //    StreamReader sr_module = new StreamReader(path + @"\data\FFT\L-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp");
-            //    //sr_match.ReadLine();    //先把第一行的設定檔讀出來
-            //    while (!sr_module.EndOfStream)
-            //        Blade_Module.Add(sr_module.ReadLine());
-            //    sr_module.Close();
-            //    sr_module.Dispose();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("讀取Learn檔時發生錯誤。\n\nBlade_Comparison\n\n" + ex.ToString(), "讀取錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
             try
             {
                 StreamReader sr_match = new StreamReader(path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp");
@@ -1084,15 +1195,9 @@ namespace ToolWear{
                     }
                 }
                 else if ((i + 1) * hz > Blade_Hz_Mag * Blade_Hz * 1.1f) Blade_Hz_Mag++; //若頻率已大於刀刃刃數頻率，將倍率提升
-                //FileStream File_module = File.Open(path + @"\data\FFT\new1.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
-                //StreamWriter sw = new StreamWriter(File_module);
-                //sw.WriteLine(tem);
-                //sw.Close();
-                //sw.Dispose();
                 chart_Blade.Series[0].Points.AddXY((i + 1) * hz, tem);
                 if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
             }
-            lb_ToolWear_BladeAve.Text = (sum / count).ToString("0.000#####");
         }
         #endregion
         #region 熱補償
@@ -2310,9 +2415,11 @@ namespace ToolWear{
         }
         #endregion
         #region 文字變更事件
+        //暫存刀號
+        int ATC_num = 0;
         private void lb_ToolWear_Tool_TextChanged(object sender, EventArgs e){
             try{
-                int ATC_num = int.Parse(((Label)sender).Text);
+                ATC_num = int.Parse(((Label)sender).Text);
                 StreamReader sr = new StreamReader(path + @"\data\ATC.cp");
                 for (int i = 0; i < ATC_num; i++){
                     string tem = sr.ReadLine();
@@ -2674,6 +2781,9 @@ namespace ToolWear{
             for (int i = 0; i < samplesPerChannelNumeric_base; i++)
                 samples[i] = new Complex(double.Parse(dataTable.Rows[i][0].ToString()), 0);
             Fourier.Forward(samples, FourierOptions.NoScaling);
+            //判斷轉速(如果機台未連線，設為預設2500)
+            if (machine_connect == false)
+                ATC_RPM = 2500;
             //判斷模式
             string tem_path = "";
             if (mode.Equals("Learn")) tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp";
@@ -2712,13 +2822,18 @@ namespace ToolWear{
             //寫檔
             StreamWriter sw_Max = new StreamWriter(tem_path);
             //先寫轉速
-            //sw_Max.WriteLine(ATC_RPM);
             for(int i = 0;i<List_FFT_Max.Count;i++) sw_Max.WriteLine(List_FFT_Max[i]);
             sw_Max.Close();
             sw_Max.Dispose();
+            
+            //在偵測模式下才進行判斷
+            if (mode.Equals("Match")){
+                //刃數比對
+                Blade_Comparison();
 
-            //刃數比對
-            Blade_Comparison();
+                //警戒值判斷
+                ToolWear_Log();
+            }
         }
         #endregion
         #region 螢幕截圖
