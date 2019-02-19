@@ -373,9 +373,16 @@ namespace ToolWear{
         }
         //主選單 > 關機
         private void btn_shutdown_Click(object sender, EventArgs e){
-            DialogResult dialogResult = MessageBox.Show("請先確認所有設定皆已儲存，否則將造成新設定遺失。", "關閉訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            DialogResult dialogResult = MessageBox.Show("請先確認所有設定皆已儲存，否則將造成新設定遺失。", "關機警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
-            this.Close();
+            try{
+                //啟動本地程序並執行命令
+                Process.Start("Shutdown.exe", " -s -t 0");
+            }
+            catch (Exception ex){
+                MessageBox.Show(ex.Message);
+            }
+            //this.Close();
         }
         //主選單 > 磨耗偵測 > 學習模式
         private void btn_Learn_Click(object sender, EventArgs e){
@@ -688,16 +695,20 @@ namespace ToolWear{
             }
             Threshold_LoadBlade((object)tb_Threshold_01, null);
         }
+        //暫存點選的刀號檔案名稱
+        string Blade_FileName = "";
+        //暫存上次點選到的刀號TextBox
+        TextBox pre_Blade = null;
         //臨界值設定 > 點選不同刀號
         private void Threshold_LoadBlade(object sender,EventArgs e){
-            if (((TextBox)sender).Text.Equals("")) return;
+            pre_Blade = (TextBox)sender;
+            if (pre_Blade.Text.Equals("")) return;
             double hz = rateNumeric_base / samplesPerChannelNumeric_base;
             List<string> Blade_Module = new List<string>();
-            string tem_File = "";
             try{
-                tem_File = string.Format("{0}{1}-{2}_{3}",lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
-                    (((TextBox)sender).Text).Split(' ')[0].Split('T')[1], ((TextBox)sender).Text.Split(' ')[3].Split(' ')[0]);
-                StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\L-{1}.cp", path, tem_File));
+                Blade_FileName = string.Format("{0}{1}-{2}_{3}",lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
+                    pre_Blade.Text.Split(' ')[0].Split('T')[1], pre_Blade.Text.Split(' ')[3].Split(' ')[0]);
+                StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\L-{1}.cp", path, Blade_FileName));
                 while (!sr_learn.EndOfStream)
                     Blade_Module.Add(sr_learn.ReadLine());
                 sr_learn.Close();
@@ -710,14 +721,14 @@ namespace ToolWear{
             chart_Threshold.Series[0].Points.Clear();
             //T0 : abc 5000
             //取得轉速
-            int Tool_rate = int.Parse(((TextBox)sender).Text.Split(' ')[3].Split(' ')[0]);
+            int Tool_rate = int.Parse(pre_Blade.Text.Split(' ')[3].Split(' ')[0]);
             lb_Threshold_rate.Text = string.Format("轉速 : {0} RPM", Tool_rate);
-            lb_Threshold_ATC.Text = string.Format("刀具 ： {0}", ((TextBox)sender).Text.Split(' ')[2].Split(' ')[0]);
+            lb_Threshold_ATC.Text = string.Format("刀具 ： {0}", pre_Blade.Text.Split(' ')[2].Split(' ')[0]);
             StreamReader sr = new StreamReader(path + @"data\ATC.cp");
-            string s = ((TextBox)sender).Text.Split(' ')[0].Split('T')[1];
+            string s = pre_Blade.Text.Split(' ')[0].Split('T')[1];
             //取得刃數
             int Tool_Blade = 4;
-            for (int i = 0; i < int.Parse(((TextBox)sender).Text.Split(' ')[0].Split('T')[1]); i++){
+            for (int i = 0; i < int.Parse(pre_Blade.Text.Split(' ')[0].Split('T')[1]); i++){
                 Tool_Blade = int.Parse(sr.ReadLine().Split(',')[2]);
                 lb_Threshold_Blade.Text = string.Format("刃數 ： {0}", Tool_Blade);
             }
@@ -767,7 +778,7 @@ namespace ToolWear{
             TextBox[] tb_Threshold_set = new TextBox[5] { tb_Threshold_set01, tb_Threshold_set02, tb_Threshold_set03,
                                                           tb_Threshold_set04, tb_Threshold_set05};
             try{
-                StreamReader sr_set = new StreamReader(string.Format(@"{0}data\FFT\LS-{1}.cp", path, tem_File));
+                StreamReader sr_set = new StreamReader(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
                 int sr_count = 0;
                 while (!sr_set.EndOfStream){
                     tb_Threshold_set[sr_count].Text = sr_set.ReadLine();
@@ -778,12 +789,65 @@ namespace ToolWear{
             }
             catch {
                 //會進到例外事件表示沒有設定檔，生成一個
-                StreamWriter sw_set = new StreamWriter(string.Format(@"{0}data\FFT\LS-{1}.cp", path, tem_File));
+                StreamWriter sw_set = new StreamWriter(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
                 for (int i = 1; i <= 5; i++)
                     sw_set.WriteLine(i.ToString());
                 sw_set.Close();
                 sw_set.Dispose();
             }
+        }
+        //臨界值設定 > 儲存
+        private void btn_Threshold_save_Click(object sender,EventArgs e){
+            TextBox[] tb_Threshold_set = new TextBox[5] { tb_Threshold_set01, tb_Threshold_set02, tb_Threshold_set03,
+                                                          tb_Threshold_set04, tb_Threshold_set05};
+            //先判斷輸入框是否合法
+            for(int i = 0; i < tb_Threshold_set.Length; i++){
+                if (string.IsNullOrWhiteSpace(tb_Threshold_set[i].Text)){
+                    MessageBox.Show("有一個臨界值設定為空，請重新確認後再儲存。","儲存失敗",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    return;
+                }
+                try{
+                    double tem = double.Parse(tb_Threshold_set[i].Text);
+                }
+                catch {
+                    MessageBox.Show(string.Format("{0}\n輸入框文字訊息不合法，請確認是否為數字。", tb_Threshold_set[i].Text), "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+            //改寫設定檔
+            try{
+                StreamWriter sw_set = new StreamWriter(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
+                for(int i = 0; i < 5; i++)
+                    sw_set.WriteLine(tb_Threshold_set[i].Text);
+                sw_set.Close();
+                sw_set.Dispose();
+            }
+            catch(Exception ex) {
+                MessageBox.Show(string.Format("改寫設定檔時發生錯誤。\nError code:\n{0}", ex.ToString()), "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            MessageBox.Show("儲存完畢", "儲存成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Threshold_LoadBlade((object)pre_Blade, null);
+        }
+        //臨界值設定 > 刪除
+        private void btn_Threshold_delete_Click(object sender,EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("確定要清除臨界值資料嗎？", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            TextBox[] tb_Threshold_set = new TextBox[5] { tb_Threshold_set01, tb_Threshold_set02, tb_Threshold_set03,
+                                                          tb_Threshold_set04, tb_Threshold_set05};
+            try{
+                StreamWriter sw_set = new StreamWriter(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
+                for (int i = 0; i < 5; i++)
+                    sw_set.WriteLine("0");
+                sw_set.Close();
+                sw_set.Dispose();
+            }
+            catch (Exception ex){
+                MessageBox.Show(string.Format("改寫設定檔時發生錯誤。\nError code:\n{0}", ex.ToString()), "刪除失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            Threshold_LoadBlade((object)pre_Blade, null);
+            MessageBox.Show("清除完畢。", "刪除成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         #endregion
         #region 主畫面設定

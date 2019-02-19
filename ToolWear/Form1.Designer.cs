@@ -204,6 +204,30 @@
             this.btn_setting = new System.Windows.Forms.Button();
             this.panel_Threshold = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.tb_Threshold_set05 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_set04 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_set03 = new System.Windows.Forms.TextBox();
+            this.tb_Threshold_set02 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.tb_Threshold_set01 = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.lb_Threshold_setavg05 = new System.Windows.Forms.Label();
+            this.lb_Threshold_setavg04 = new System.Windows.Forms.Label();
+            this.lb_Threshold_setavg03 = new System.Windows.Forms.Label();
+            this.lb_Threshold_setavg02 = new System.Windows.Forms.Label();
+            this.lb_Threshold_setavg01 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.lb_Threshold_sethz05 = new System.Windows.Forms.Label();
+            this.lb_Threshold_sethz04 = new System.Windows.Forms.Label();
+            this.lb_Threshold_sethz03 = new System.Windows.Forms.Label();
+            this.lb_Threshold_sethz02 = new System.Windows.Forms.Label();
             this.lb_Threshold_Blade = new System.Windows.Forms.Label();
             this.lb_Threshold_ATC = new System.Windows.Forms.Label();
             this.lb_Threshold_rate = new System.Windows.Forms.Label();
@@ -488,30 +512,6 @@
             this.pb_AddParts = new System.Windows.Forms.PictureBox();
             this.label30 = new System.Windows.Forms.Label();
             this.timer_load = new System.Windows.Forms.Timer(this.components);
-            this.lb_Threshold_sethz02 = new System.Windows.Forms.Label();
-            this.lb_Threshold_sethz03 = new System.Windows.Forms.Label();
-            this.lb_Threshold_sethz04 = new System.Windows.Forms.Label();
-            this.lb_Threshold_sethz05 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.lb_Threshold_setavg05 = new System.Windows.Forms.Label();
-            this.lb_Threshold_setavg04 = new System.Windows.Forms.Label();
-            this.lb_Threshold_setavg03 = new System.Windows.Forms.Label();
-            this.lb_Threshold_setavg02 = new System.Windows.Forms.Label();
-            this.lb_Threshold_setavg01 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.tb_Threshold_set01 = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.tb_Threshold_set02 = new System.Windows.Forms.TextBox();
-            this.tb_Threshold_set03 = new System.Windows.Forms.TextBox();
-            this.tb_Threshold_set04 = new System.Windows.Forms.TextBox();
-            this.tb_Threshold_set05 = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -2092,6 +2092,164 @@
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
+            // label49
+            // 
+            resources.ApplyResources(this.label49, "label49");
+            this.label49.BackColor = System.Drawing.Color.Transparent;
+            this.label49.ForeColor = System.Drawing.Color.White;
+            this.label49.Name = "label49";
+            // 
+            // label48
+            // 
+            resources.ApplyResources(this.label48, "label48");
+            this.label48.BackColor = System.Drawing.Color.Transparent;
+            this.label48.ForeColor = System.Drawing.Color.White;
+            this.label48.Name = "label48";
+            // 
+            // tb_Threshold_set05
+            // 
+            resources.ApplyResources(this.tb_Threshold_set05, "tb_Threshold_set05");
+            this.tb_Threshold_set05.Name = "tb_Threshold_set05";
+            // 
+            // tb_Threshold_set04
+            // 
+            resources.ApplyResources(this.tb_Threshold_set04, "tb_Threshold_set04");
+            this.tb_Threshold_set04.Name = "tb_Threshold_set04";
+            // 
+            // tb_Threshold_set03
+            // 
+            resources.ApplyResources(this.tb_Threshold_set03, "tb_Threshold_set03");
+            this.tb_Threshold_set03.Name = "tb_Threshold_set03";
+            // 
+            // tb_Threshold_set02
+            // 
+            resources.ApplyResources(this.tb_Threshold_set02, "tb_Threshold_set02");
+            this.tb_Threshold_set02.Name = "tb_Threshold_set02";
+            // 
+            // label47
+            // 
+            this.label47.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label47, "label47");
+            this.label47.ForeColor = System.Drawing.Color.White;
+            this.label47.Name = "label47";
+            // 
+            // tb_Threshold_set01
+            // 
+            resources.ApplyResources(this.tb_Threshold_set01, "tb_Threshold_set01");
+            this.tb_Threshold_set01.Name = "tb_Threshold_set01";
+            // 
+            // label46
+            // 
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label46, "label46");
+            this.label46.ForeColor = System.Drawing.Color.White;
+            this.label46.Name = "label46";
+            // 
+            // label45
+            // 
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label45, "label45");
+            this.label45.ForeColor = System.Drawing.Color.White;
+            this.label45.Name = "label45";
+            // 
+            // lb_Threshold_setavg05
+            // 
+            this.lb_Threshold_setavg05.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_Threshold_setavg05, "lb_Threshold_setavg05");
+            this.lb_Threshold_setavg05.ForeColor = System.Drawing.Color.White;
+            this.lb_Threshold_setavg05.Name = "lb_Threshold_setavg05";
+            // 
+            // lb_Threshold_setavg04
+            // 
+            this.lb_Threshold_setavg04.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_Threshold_setavg04, "lb_Threshold_setavg04");
+            this.lb_Threshold_setavg04.ForeColor = System.Drawing.Color.White;
+            this.lb_Threshold_setavg04.Name = "lb_Threshold_setavg04";
+            // 
+            // lb_Threshold_setavg03
+            // 
+            this.lb_Threshold_setavg03.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_Threshold_setavg03, "lb_Threshold_setavg03");
+            this.lb_Threshold_setavg03.ForeColor = System.Drawing.Color.White;
+            this.lb_Threshold_setavg03.Name = "lb_Threshold_setavg03";
+            // 
+            // lb_Threshold_setavg02
+            // 
+            this.lb_Threshold_setavg02.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_Threshold_setavg02, "lb_Threshold_setavg02");
+            this.lb_Threshold_setavg02.ForeColor = System.Drawing.Color.White;
+            this.lb_Threshold_setavg02.Name = "lb_Threshold_setavg02";
+            // 
+            // lb_Threshold_setavg01
+            // 
+            this.lb_Threshold_setavg01.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_Threshold_setavg01, "lb_Threshold_setavg01");
+            this.lb_Threshold_setavg01.ForeColor = System.Drawing.Color.White;
+            this.lb_Threshold_setavg01.Name = "lb_Threshold_setavg01";
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.BackColor = System.Drawing.Color.Transparent;
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Name = "label36";
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Name = "label41";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.BackColor = System.Drawing.Color.Transparent;
+            this.label42.ForeColor = System.Drawing.Color.White;
+            this.label42.Name = "label42";
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.BackColor = System.Drawing.Color.Transparent;
+            this.label43.ForeColor = System.Drawing.Color.White;
+            this.label43.Name = "label43";
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.BackColor = System.Drawing.Color.Transparent;
+            this.label44.ForeColor = System.Drawing.Color.White;
+            this.label44.Name = "label44";
+            // 
+            // lb_Threshold_sethz05
+            // 
+            this.lb_Threshold_sethz05.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_Threshold_sethz05, "lb_Threshold_sethz05");
+            this.lb_Threshold_sethz05.ForeColor = System.Drawing.Color.White;
+            this.lb_Threshold_sethz05.Name = "lb_Threshold_sethz05";
+            // 
+            // lb_Threshold_sethz04
+            // 
+            this.lb_Threshold_sethz04.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_Threshold_sethz04, "lb_Threshold_sethz04");
+            this.lb_Threshold_sethz04.ForeColor = System.Drawing.Color.White;
+            this.lb_Threshold_sethz04.Name = "lb_Threshold_sethz04";
+            // 
+            // lb_Threshold_sethz03
+            // 
+            this.lb_Threshold_sethz03.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_Threshold_sethz03, "lb_Threshold_sethz03");
+            this.lb_Threshold_sethz03.ForeColor = System.Drawing.Color.White;
+            this.lb_Threshold_sethz03.Name = "lb_Threshold_sethz03";
+            // 
+            // lb_Threshold_sethz02
+            // 
+            this.lb_Threshold_sethz02.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_Threshold_sethz02, "lb_Threshold_sethz02");
+            this.lb_Threshold_sethz02.ForeColor = System.Drawing.Color.White;
+            this.lb_Threshold_sethz02.Name = "lb_Threshold_sethz02";
+            // 
             // lb_Threshold_Blade
             // 
             this.lb_Threshold_Blade.BackColor = System.Drawing.Color.Transparent;
@@ -2128,6 +2286,7 @@
             this.btn_Threshold_save.FlatAppearance.BorderSize = 0;
             this.btn_Threshold_save.Name = "btn_Threshold_save";
             this.btn_Threshold_save.UseVisualStyleBackColor = false;
+            this.btn_Threshold_save.Click += new System.EventHandler(this.btn_Threshold_save_Click);
             // 
             // btn_Threshold_delete
             // 
@@ -2137,6 +2296,7 @@
             this.btn_Threshold_delete.FlatAppearance.BorderSize = 0;
             this.btn_Threshold_delete.Name = "btn_Threshold_delete";
             this.btn_Threshold_delete.UseVisualStyleBackColor = false;
+            this.btn_Threshold_delete.Click += new System.EventHandler(this.btn_Threshold_delete_Click);
             // 
             // chart_Threshold
             // 
@@ -5189,164 +5349,6 @@
             // 
             this.timer_load.Interval = 1;
             this.timer_load.Tick += new System.EventHandler(this.timer_load_Tick);
-            // 
-            // lb_Threshold_sethz02
-            // 
-            this.lb_Threshold_sethz02.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lb_Threshold_sethz02, "lb_Threshold_sethz02");
-            this.lb_Threshold_sethz02.ForeColor = System.Drawing.Color.White;
-            this.lb_Threshold_sethz02.Name = "lb_Threshold_sethz02";
-            // 
-            // lb_Threshold_sethz03
-            // 
-            this.lb_Threshold_sethz03.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lb_Threshold_sethz03, "lb_Threshold_sethz03");
-            this.lb_Threshold_sethz03.ForeColor = System.Drawing.Color.White;
-            this.lb_Threshold_sethz03.Name = "lb_Threshold_sethz03";
-            // 
-            // lb_Threshold_sethz04
-            // 
-            this.lb_Threshold_sethz04.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lb_Threshold_sethz04, "lb_Threshold_sethz04");
-            this.lb_Threshold_sethz04.ForeColor = System.Drawing.Color.White;
-            this.lb_Threshold_sethz04.Name = "lb_Threshold_sethz04";
-            // 
-            // lb_Threshold_sethz05
-            // 
-            this.lb_Threshold_sethz05.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lb_Threshold_sethz05, "lb_Threshold_sethz05");
-            this.lb_Threshold_sethz05.ForeColor = System.Drawing.Color.White;
-            this.lb_Threshold_sethz05.Name = "lb_Threshold_sethz05";
-            // 
-            // label36
-            // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.BackColor = System.Drawing.Color.Transparent;
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Name = "label36";
-            // 
-            // label41
-            // 
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Name = "label41";
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.BackColor = System.Drawing.Color.Transparent;
-            this.label42.ForeColor = System.Drawing.Color.White;
-            this.label42.Name = "label42";
-            // 
-            // label43
-            // 
-            resources.ApplyResources(this.label43, "label43");
-            this.label43.BackColor = System.Drawing.Color.Transparent;
-            this.label43.ForeColor = System.Drawing.Color.White;
-            this.label43.Name = "label43";
-            // 
-            // label44
-            // 
-            resources.ApplyResources(this.label44, "label44");
-            this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Name = "label44";
-            // 
-            // lb_Threshold_setavg05
-            // 
-            this.lb_Threshold_setavg05.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lb_Threshold_setavg05, "lb_Threshold_setavg05");
-            this.lb_Threshold_setavg05.ForeColor = System.Drawing.Color.White;
-            this.lb_Threshold_setavg05.Name = "lb_Threshold_setavg05";
-            // 
-            // lb_Threshold_setavg04
-            // 
-            this.lb_Threshold_setavg04.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lb_Threshold_setavg04, "lb_Threshold_setavg04");
-            this.lb_Threshold_setavg04.ForeColor = System.Drawing.Color.White;
-            this.lb_Threshold_setavg04.Name = "lb_Threshold_setavg04";
-            // 
-            // lb_Threshold_setavg03
-            // 
-            this.lb_Threshold_setavg03.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lb_Threshold_setavg03, "lb_Threshold_setavg03");
-            this.lb_Threshold_setavg03.ForeColor = System.Drawing.Color.White;
-            this.lb_Threshold_setavg03.Name = "lb_Threshold_setavg03";
-            // 
-            // lb_Threshold_setavg02
-            // 
-            this.lb_Threshold_setavg02.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lb_Threshold_setavg02, "lb_Threshold_setavg02");
-            this.lb_Threshold_setavg02.ForeColor = System.Drawing.Color.White;
-            this.lb_Threshold_setavg02.Name = "lb_Threshold_setavg02";
-            // 
-            // lb_Threshold_setavg01
-            // 
-            this.lb_Threshold_setavg01.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.lb_Threshold_setavg01, "lb_Threshold_setavg01");
-            this.lb_Threshold_setavg01.ForeColor = System.Drawing.Color.White;
-            this.lb_Threshold_setavg01.Name = "lb_Threshold_setavg01";
-            // 
-            // label45
-            // 
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.label45, "label45");
-            this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Name = "label45";
-            // 
-            // label46
-            // 
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.label46, "label46");
-            this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Name = "label46";
-            // 
-            // tb_Threshold_set01
-            // 
-            resources.ApplyResources(this.tb_Threshold_set01, "tb_Threshold_set01");
-            this.tb_Threshold_set01.Name = "tb_Threshold_set01";
-            // 
-            // label47
-            // 
-            this.label47.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.label47, "label47");
-            this.label47.ForeColor = System.Drawing.Color.White;
-            this.label47.Name = "label47";
-            // 
-            // tb_Threshold_set02
-            // 
-            resources.ApplyResources(this.tb_Threshold_set02, "tb_Threshold_set02");
-            this.tb_Threshold_set02.Name = "tb_Threshold_set02";
-            // 
-            // tb_Threshold_set03
-            // 
-            resources.ApplyResources(this.tb_Threshold_set03, "tb_Threshold_set03");
-            this.tb_Threshold_set03.Name = "tb_Threshold_set03";
-            // 
-            // tb_Threshold_set04
-            // 
-            resources.ApplyResources(this.tb_Threshold_set04, "tb_Threshold_set04");
-            this.tb_Threshold_set04.Name = "tb_Threshold_set04";
-            // 
-            // tb_Threshold_set05
-            // 
-            resources.ApplyResources(this.tb_Threshold_set05, "tb_Threshold_set05");
-            this.tb_Threshold_set05.Name = "tb_Threshold_set05";
-            // 
-            // label48
-            // 
-            resources.ApplyResources(this.label48, "label48");
-            this.label48.BackColor = System.Drawing.Color.Transparent;
-            this.label48.ForeColor = System.Drawing.Color.White;
-            this.label48.Name = "label48";
-            // 
-            // label49
-            // 
-            resources.ApplyResources(this.label49, "label49");
-            this.label49.BackColor = System.Drawing.Color.Transparent;
-            this.label49.ForeColor = System.Drawing.Color.White;
-            this.label49.Name = "label49";
             // 
             // Form1
             // 
