@@ -482,15 +482,27 @@ namespace ToolWear{
                     "\n\nbtn_ToolWear_Start_Click\n\n","尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            //判斷輸入裝置然後給予頻率
+            double rate = 0, sample = 0;
+            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+                rate = 1000;
+                sample = 100;
+            }
             else{
-                StreamReader sr = new StreamReader(path + @"data\FFT\" + tem_path[0] + ".cp");
-                while (!sr.EndOfStream)
-                    Module_FFT.Add(sr.ReadLine());
-                sr.Close();
-                sr.Dispose();
-                double hz = rateNumeric_base / samplesPerChannelNumeric_base;
-                for (int i = 0; i < Module_FFT.Count; i++)
-                    chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
+                rate = rateNumeric_base;
+                sample = samplesPerChannelNumeric_base;
+            }
+
+            StreamReader sr = new StreamReader(path + @"data\FFT\" + tem_path[0] + ".cp");
+            while (!sr.EndOfStream)
+                Module_FFT.Add(sr.ReadLine());
+            sr.Close();
+            sr.Dispose();
+            double hz = rate / sample;
+            for (int i = 0; i < Module_FFT.Count; i++){
+                //只畫到2000hz
+                if (hz * (i + 1) >= 2000) break;
+                chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
             }
             btn_ToolWear_Start.Enabled = false;
             btn_ToolWear_Stop.Enabled = true;
@@ -529,8 +541,12 @@ namespace ToolWear{
             //判斷訊號輸入
             //寶元
             if(physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+                LNC_Connect();
                 short rc = 0;
                 rc = CLNCc.lnc_svi_enable(gNid, 1);
+                dt_LNC = new DataTable();
+                dt_LNC.Columns.Add("Z");
+                FFT_Reset(1000);
                 timer_LNC.Enabled = true;
             }
             else DAQInitialize("Match");
@@ -538,7 +554,12 @@ namespace ToolWear{
         //停止偵測
         private void btn_ToolWear_Stop_Click(object sender, EventArgs e){
             if (runningTask != null) TaskStop();
-            if (timer_LNC.Enabled == true) timer_LNC.Enabled = false;
+            if (timer_LNC.Enabled == true){
+                timer_LNC.Enabled = false;
+                short rc = 0;
+                rc =  CLNCc.lnc_svi_enable(gNid, 0);
+                rc =  CLNCc.lnc_disconnect(gNid);
+            }
             btn_ToolWear_Start.Enabled = true;
             btn_ToolWear_Stop.Enabled = false;
             //修改開始與停止按鈕
@@ -581,13 +602,6 @@ namespace ToolWear{
                 MessageBox.Show("尚未選擇工件，無法查詢臨界值。\n請點選下方工件預覽圖或是文字，進入頁面選取查詢工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            //判斷是否有軸向正在運行
-            //for(int i = 0;i < ToolWear_bool.Length; i++){
-            //    if(ToolWear_bool[now_ToolWear] == true){
-            //        MessageBox.Show("尚有正在偵測的軸向，您必須停止所有偵測活動\n後才可設定臨界值。", "偵測運轉中", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //        return;
-            //    }
-            //}
             panel_ToolWear.Visible = false;
             panel_Threshold.Visible = true;
             Threshold_Load();
@@ -603,7 +617,7 @@ namespace ToolWear{
         //警戒圖暫存變數
         int chart_warring_count = 0;    //要將現在的警戒圖形畫到哪一個chart上
         //磨耗偵測 > 判斷是否超出警戒值(顯示Log)
-        private void ToolWear_Log(){
+        private void ToolWear_Log(DataTable dt, double sample, double rate){
             string Blade_FileName = "";
             ToolWear_Alern.Clear();
             if (machine_connect == false){
@@ -629,7 +643,7 @@ namespace ToolWear{
                 double sum = 0;         //當前儲存點位總和
                 int count = 0;          //儲存點位數量
                 double Hz_min = 0, Hz_max = 0;  //暫存該頻率倍率中的最大最小值
-                double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+                double hz = rate / sample;
                 List<string> Blade_Module = new List<string>();
 
                 try{
@@ -664,8 +678,8 @@ namespace ToolWear{
                         if (((sum / count) > double.Parse(ToolWear_Alern[Blade_Hz_Mag - 1])) && !ToolWear_Alern[Blade_Hz_Mag - 1].Equals("0")){
                             Write_Log("警告", string.Format("{0}軸 {1}hz~{2}hz 震動幅度超過警戒值，當前:{3}(警戒值:{4})。", btn_ToolWear[now_Match].Text, Hz_min.ToString("0.####"), Hz_max.ToString("0.####"), (sum / count).ToString("0.00##"), ToolWear_Alern[Blade_Hz_Mag - 1]));
                             List<string> tem_datatable = new List<string>();
-                            for (int j = 0; j < samplesPerChannelNumeric_base; j++)
-                                tem_datatable.Add(dataTable.Rows[j][0].ToString());
+                            for (int j = 0; j < sample; j++)
+                                tem_datatable.Add(dt.Rows[j][0].ToString());
                             System.Windows.Forms.DataVisualization.Charting.Chart[] chart = new System.Windows.Forms.DataVisualization.Charting.Chart[2]
                             {chart_warring_1,chart_warring_2 };
                             Label[] lb_chart = new Label[2] { lb_ToolWear_warring_1, lb_ToolWear_warring_2 };
@@ -696,7 +710,7 @@ namespace ToolWear{
                             sw_match.Close();
                             sw_match.Dispose();
                             List_FFT_Max.Clear();
-                            for (int j = 0; j < samplesPerChannelNumeric_base / 2; j++)
+                            for (int j = 0; j < sample / 2; j++)
                                 List_FFT_Max.Add("-99");
                             
                         }
@@ -758,11 +772,28 @@ namespace ToolWear{
                 MessageBox.Show("在清除原先資料檔時發生錯誤。\n\nbtn_Learn_Start_Click\n\nError code:\n" + ex.ToString());
                 return;
             }
-            DAQInitialize("Learn");
+
+            //判斷訊號輸入
+            //寶元
+            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+                LNC_Connect();
+                short rc = 0;
+                rc = CLNCc.lnc_svi_enable(gNid, 1);
+                dt_LNC = new DataTable();
+                dt_LNC.Columns.Add("Z");
+                FFT_Reset(1000);
+                timer_LNC.Enabled = true;
+            }
+            else DAQInitialize("Learn");
         }
         //模型學習完成
         private void btn_Learn_OK_Click(object sender, EventArgs e){
-            TaskStop();
+            if (runningTask != null) TaskStop();
+            if (timer_LNC.Enabled == true){
+                timer_LNC.Enabled = false;
+                CLNCc.lnc_svi_enable(gNid, 0);
+                CLNCc.lnc_disconnect(gNid);
+            }
             btn_Learn_Start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
             btn_Learn_OK.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
             btn_Learn_Start.Enabled = true;
@@ -850,7 +881,17 @@ namespace ToolWear{
         private void Threshold_LoadBlade(object sender,EventArgs e){
             pre_Blade = (TextBox)sender;
             if (pre_Blade.Text.Equals("")) return;
-            double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+            //判斷裝置給予頻率
+            double rate = 0, sample = 0;
+            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+                rate = 1000;
+                sample = 100;
+            }
+            else{
+                rate = rateNumeric_base;
+                sample = samplesPerChannelNumeric_base;
+            }
+            double hz = rate / sample;
             List<string> Blade_Module = new List<string>();
             try{
                 Blade_FileName = string.Format("{0}{1}-{2}_{3}",lb_ToolWear_Parts.Text, pre_ToolWear.Name.Split('_')[2],
@@ -1171,13 +1212,12 @@ namespace ToolWear{
         #endregion
         #region 刃數比對
         //刃數比對
-        private void Blade_Comparison(){
-            double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+        private void Blade_Comparison(double sample, double rate){
+            double hz = rate / sample;
             //讀取Module的暫存FFT變數 ： Module_FFT
             List<string> Blade_Module = Module_FFT;
             List<string> Blade_Match = new List<string>();
-            try
-            {
+            try{
                 StreamReader sr_match = new StreamReader(path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp");
                 while (!sr_match.EndOfStream)
                     Blade_Match.Add(sr_match.ReadLine());
@@ -1230,7 +1270,11 @@ namespace ToolWear{
                 else if ((i + 1) * hz > Hz_max){
                     Blade_Hz_Mag++; //若頻率已大於刀刃刃數頻率，將倍率提升
                 }
-                chart_Blade.Series[0].Points.AddXY((i + 1) * hz, tem);
+                //只顯示正數
+                if(tem > 0)
+                    chart_Blade.Series[0].Points.AddXY((i + 1) * hz, tem);
+                else
+                    chart_Blade.Series[0].Points.AddXY((i + 1) * hz, 0);
                 if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
             }
         }
@@ -2544,7 +2588,7 @@ namespace ToolWear{
                     //sw.WriteLine();
                     //sw.Close();le
                     //參數設定
-                    FFT_Reset();    //重置傅立葉轉換最大最小值
+                    FFT_Reset((int)samplesPerChannelNumeric_base);    //重置傅立葉轉換最大最小值
                     DAQ_Now = DAQ;  //紀錄現在資料擷取要用的區域
                     samplesPerChannelNumeric = samplesPerChannelNumeric_base + 1; //取樣數偏移
                     rateNumeric = rateNumeric_base + 1;  //頻率偏移
@@ -2690,7 +2734,7 @@ namespace ToolWear{
                 for (int i = 0; i < tem_Match_DT.Count; i++){
                     chart_ToolWear.Series[0].Points.AddXY(i + 1, tem_Match_DT[i]);
                 }
-                FFT(DAQ_Now);
+                FFT(DAQ_Now, dataTable,(int)samplesPerChannelNumeric_base, (int)rateNumeric_base);
                 #endregion
             }
             //模型建置狀態下執行
@@ -2714,7 +2758,7 @@ namespace ToolWear{
                     sw.Close();
                     sw.Dispose();
                     File_module.Dispose();
-                    FFT(DAQ_Now);
+                    FFT(DAQ_Now, dataTable, (int)samplesPerChannelNumeric_base, (int)rateNumeric_base);
                 }
                 catch { }
                 #endregion
@@ -2724,9 +2768,9 @@ namespace ToolWear{
         #region 傅立葉變換
         private List<string> List_FFT_Max = new List<string>();
         //private int FFT_Length = 2000;
-        private void FFT_Reset(){
-            if (List_FFT_Max.Count != 0) return;
-            for (int i = 0; i < samplesPerChannelNumeric_base / 2; i++){
+        private void FFT_Reset(int sample){
+            List_FFT_Max.Clear();
+            for (int i = 0; i < sample / 2; i++){
                 List_FFT_Max.Add("-99");
             }
             if(FFT_TemPoint.Columns.Count == 0)FFT_TemPoint.Columns.Add("Z");
@@ -2735,20 +2779,11 @@ namespace ToolWear{
         /// <summary>
         /// 傅立葉轉換
         /// </summary>
-        private void FFT(string mode){
+        private void FFT(string mode,DataTable dt,double sample, double rate){
             //
             // Simple example to compute a forward 1D real 1024 point FFT
             //
-
-            //直接進行FFT轉換
-            //dataTable.Rows.RemoveAt(dataTable.Rows.Count - 1);
-            //var data = new DoubleVector(dataTable);
-            //dataTable.Rows.Add();
-
-            // Compute the FFT
-            // This will create a complex conjugate symmetric packed result.
-            //var fft100 = new DoubleForward1DFFT(FFT_Length);
-            //DoubleVector fftresult = fft100.FFT(data);
+            
             try{
                 chart_FFT.Series[3].Points.Clear();
                 chart_LearnFFT.Series[0].Points.Clear();
@@ -2759,9 +2794,9 @@ namespace ToolWear{
             }
 
             //double[] fund = Generate.Sinusoidal((int)samplesPerChannelNumeric_base, (int)rateNumeric_base, 60, 10, 0);
-            Complex[] samples = new Complex[(int)samplesPerChannelNumeric_base];
-            for (int i = 0; i < samplesPerChannelNumeric_base; i++)
-                samples[i] = new Complex(double.Parse(dataTable.Rows[i][0].ToString()), 0);
+            Complex[] samples = new Complex[(int)sample];
+            for (int i = 0; i < sample; i++)
+                samples[i] = new Complex(double.Parse(dt.Rows[i][0].ToString()), 0);
             Fourier.Forward(samples, FourierOptions.NoScaling);
             //判斷轉速(如果機台未連線，設為預設2500)
             if (machine_connect == false)
@@ -2789,39 +2824,44 @@ namespace ToolWear{
             catch {
                 //如果進到catch就表示目前沒有此刀具的檔案
             }
-            for (int i = 0; i < samplesPerChannelNumeric_base / 2; i++){
-                double mag = (4.0 / samplesPerChannelNumeric_base) * (Math.Abs(Math.Sqrt(Math.Pow(samples[i].Real, 2) +
+            for (int i = 0; i < sample / 2; i++){
+                double mag = (4.0 / sample) * (Math.Abs(Math.Sqrt(Math.Pow(samples[i].Real, 2) +
                     Math.Pow(samples[i].Imaginary, 2))));
-                double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+                double hz = rate / sample;
                 //if (mag < 0.5) mag *= 0.2f;
-                if (mode.Equals("Match")) chart_FFT.Series[3].Points.AddXY(hz * (i + 1), mag);
-                else if (mode.Equals("Learn")) chart_LearnFFT.Series[0].Points.AddXY(hz * (i + 1), mag);
-                //chart_FFT.Series[3].Points.AddXY(i + 1, fftresult.DataBlock.Data[i] / 100);
+                //在2000hz以下才畫圖
+                if(hz * (i + 1) < 2000){
+                    if (mode.Equals("Match")) chart_FFT.Series[3].Points.AddXY(hz * (i + 1), mag);
+                    else if (mode.Equals("Learn")) chart_LearnFFT.Series[0].Points.AddXY(hz * (i + 1), mag);
+                    //chart_FFT.Series[3].Points.AddXY(i + 1, fftresult.DataBlock.Data[i] / 100);
+                }
                 //找尋最大值
                 if (mag > double.Parse(List_FFT_Max[i]))
                     List_FFT_Max[i] = mag.ToString();
             }
             //寫檔
             StreamWriter sw_Max = new StreamWriter(tem_path);
-            //先寫轉速
-            for(int i = 0;i<List_FFT_Max.Count;i++) sw_Max.WriteLine(List_FFT_Max[i]);
+            for (int i = 0; i < List_FFT_Max.Count; i++){
+                if(!List_FFT_Max[i].Equals("-99"))
+                    sw_Max.WriteLine(List_FFT_Max[i]);
+            }
             sw_Max.Close();
             sw_Max.Dispose();
             
             //在偵測模式下才進行判斷
             if (mode.Equals("Match")){
                 //刃數比對
-                Blade_Comparison();
+                Blade_Comparison(sample, rate);
 
                 //警戒值判斷
-                ToolWear_Log();
+                ToolWear_Log(dt, sample, rate);
+
             }
         }
         #endregion
         #region 寶元資料讀取
         //暫存LNC資料
         List<string> LNC_Data = new List<string>();
-        List<string> LNC_FFT = new List<string>();
 
         //寶元用變數
         ushort gNid;
@@ -2864,7 +2904,38 @@ namespace ToolWear{
                 }
             }
         }
-        
+        //LNC連結
+        private void LNC_Connect(){
+            ushort i = 0;
+            short rc = 0;
+            int existCnt = 0;
+            gNid = 0;
+
+            byte commSts = 0, sensorSTS = 0;
+            int watchdogCnt = 0;
+            //取得連線狀態
+            rc = CLNCc.lnc_get_status(gNid, ref commSts, ref sensorSTS, ref watchdogCnt);
+            if (commSts != 3){
+                StringBuilder name = new StringBuilder(16);
+                StringBuilder ip = new StringBuilder(16);
+
+                rc = CLNCc.lnc_get_controller_cnt(ref existCnt);
+
+                rc = CLNCc.lnc_get_controller_info(i, name, ip);
+
+                if (name.Length != 0){
+                    string s_ip = ip.ToString();
+                    //連線裝置
+                    CLNCc.lnc_connect(gNid, s_ip, 0);
+
+                    //先歸零感測器
+                    rc = 0;
+                    rc = CLNCc.lnc_svi_set_zero(gNid);
+                }
+            }
+        }
+        //暫存LNC資料
+        DataTable dt_LNC = new DataTable();
         //取得LNC資料
         private void LNC_GetData(){
             ushort i = 0;
@@ -2880,53 +2951,73 @@ namespace ToolWear{
 
                 rc = CLNCc.lnc_svi_get_td_data_length(gNid, ref TDLength);
                 if (TDLength != 0){
+                    //如果存值>1000筆資料，重置Datatable
+                    if(dt_LNC.Rows.Count >= 1000){
+                        dt_LNC = new DataTable();
+                        dt_LNC.Columns.Add("Z");
+                    }
+
                     //txtTDLen.Text = TDLength.ToString();
                     short[] parrTDData = new short[TDLength];
 
                     rc = CLNCc.lnc_svi_get_td_data(gNid, TDLength, ref parrTDData[0], ref numTD);
 
-                    TDData td;
+                    //TDData td;
                     if (LNC_Data.Count >= Chart_max)
-                        LNC_Data.RemoveRange(0, (int)numTD - 1);
+                        LNC_Data.RemoveRange(0, 500);
                     for (i = 0; i < numTD; i += 3){
                         //if (dataQueue.Count > 1000)
                         //  dataQueue.Dequeue();
 
-                        td.x = parrTDData[i];
-                        td.y = parrTDData[i + 1];
-                        td.z = parrTDData[i + 2];
+                        //td.x = parrTDData[i];
+                        //td.y = parrTDData[i + 1];
+                        //td.z = parrTDData[i + 2];
+                        dt_LNC.Rows.Add(parrTDData[i].ToString());
                         LNC_Data.Add(parrTDData[i].ToString());
+                        
                         //dataQueue.Enqueue(td);
                     }
                     chart_ToolWear.Series[0].Points.Clear();
                     for (i = 0; i < LNC_Data.Count; i++)
                         chart_ToolWear.Series[0].Points.AddXY((i + 1), LNC_Data[i]);
                     //chart_ToolWear.Series[0].Points.AddXY((i + 1), dataQueue.ElementAt(i).x);
+
+                    if (dt_LNC.Rows.Count >= 1000)
+                        FFT("Match", dt_LNC, 100, 1000);
                 }
+                //else
+                //{
+                //    //將sensor接收重新打開
+                //    rc = CLNCc.lnc_svi_enable(gNid, 0);
+                //    rc = CLNCc.lnc_svi_enable(gNid, 1);
 
-                float max = 0;
-                int maxFq = 0;
-                float[] arrFDData;
-                int fdLength = 0;
+                //}
 
-                fdLength = CLNCc.LNC_FD_DATA_LENGTH_1D66K;
+                //float max = 0;
+                //int maxFq = 0;
+                //float[] arrFDData;
+                //int fdLength = 0;
 
-                arrFDData = new float[fdLength];
+                //fdLength = CLNCc.LNC_FD_DATA_LENGTH_1D66K;
 
-                rc = CLNCc.lnc_svi_get_fd_data(gNid, ref arrFDData[0]);
+                //arrFDData = new float[fdLength];
 
-                if (rc == CLNCc.LNC_ERR_NO_ERROR){
-                    chart_FFT.Series[0].Points.Clear();
+                //rc = CLNCc.lnc_svi_get_fd_data(gNid, ref arrFDData[0]);
 
-                    for (i = 0; i < fdLength; i++){
-                        if (arrFDData[i] > max){
-                            max = arrFDData[i];
-                            maxFq = i + 1;
-                        }
-                        LNC_FFT.Add(arrFDData[i].ToString());
-                        chart_FFT.Series[0].Points.AddXY((i + 1), arrFDData[i]);
-                    }
-                }
+                //if (rc == CLNCc.LNC_ERR_NO_ERROR)
+                //{
+                //    chart_FFT.Series[0].Points.Clear();
+
+                //    for (i = 0; i < fdLength; i++)
+                //    {
+                //        if (arrFDData[i] > max)
+                //        {
+                //            max = arrFDData[i];
+                //            maxFq = i + 1;
+                //        }
+                //        chart_FFT.Series[0].Points.AddXY((i + 1), arrFDData[i]);
+                //    }
+                //}
             }
         }
         #endregion
