@@ -531,13 +531,14 @@ namespace ToolWear{
             if(physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
                 short rc = 0;
                 rc = CLNCc.lnc_svi_enable(gNid, 1);
-                LNC_GetData();
+                timer_LNC.Enabled = true;
             }
             else DAQInitialize("Match");
         }
         //停止偵測
         private void btn_ToolWear_Stop_Click(object sender, EventArgs e){
-            TaskStop();
+            if (runningTask != null) TaskStop();
+            if (timer_LNC.Enabled == true) timer_LNC.Enabled = false;
             btn_ToolWear_Start.Enabled = true;
             btn_ToolWear_Stop.Enabled = false;
             //修改開始與停止按鈕
@@ -852,7 +853,7 @@ namespace ToolWear{
             double hz = rateNumeric_base / samplesPerChannelNumeric_base;
             List<string> Blade_Module = new List<string>();
             try{
-                Blade_FileName = string.Format("{0}{1}-{2}_{3}",lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
+                Blade_FileName = string.Format("{0}{1}-{2}_{3}",lb_ToolWear_Parts.Text, pre_ToolWear.Name.Split('_')[2],
                     pre_Blade.Text.Split(' ')[0].Split('T')[1], pre_Blade.Text.Split(' ')[3].Split(' ')[0]);
                 StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\L-{1}.cp", path, Blade_FileName));
                 while (!sr_learn.EndOfStream)
@@ -2494,6 +2495,10 @@ namespace ToolWear{
             Thread TD_FakeData = new Thread(Thermal_FakeData);
             TD_FakeData.Start();
         }
+
+        private void timer_LNC_Tick(object sender, EventArgs e){
+            LNC_GetData();
+        }
         #endregion
         #region DAQ資料讀取
         private NationalInstruments.DAQmx.Task runningTask;
@@ -2686,65 +2691,6 @@ namespace ToolWear{
                     chart_ToolWear.Series[0].Points.AddXY(i + 1, tem_Match_DT[i]);
                 }
                 FFT(DAQ_Now);
-                //if (Match_Bool == true)
-                //{
-                //    double sum = 0; //暫存目前存取數值
-                //    int avg = 0;    //暫存該此總共存取幾個點位
-                //    if (Match_count > Chart_max)
-                //    {
-                //        try
-                //        {
-                //            string s = Module_Data[Chart_max + (int)samplesPerChannelNumeric - 2];
-                //        }
-                //        catch
-                //        {
-                //            //模型比對已結束
-                //            TaskStop();
-                //            return;
-                //        }
-                //        chart_Match.Series[0].Points.Clear();
-                //        Module_Data.RemoveRange(0, (int)samplesPerChannelNumeric - 1);
-                //        for (int i = 0; i < Chart_max; i++)
-                //        {
-                //            chart_Match.Series[0].Points.AddXY(i + 1, Module_Data[i]);
-                //        }
-                //        Match_count = 1;
-                //        chart_Match.Series[1].Points.Clear();
-                //        tem_Match_DT.RemoveRange(0, (int)samplesPerChannelNumeric - 1);
-                //        for (int i = 0; i < tem_Match_DT.Count; i++)
-                //        {
-                //            chart_Match.Series[1].Points.AddXY(Match_count, tem_Match_DT[i]);
-                //            Match_count++;
-                //        }
-                //    }
-                //    for (int i = 0; i < (int)samplesPerChannelNumeric - 1; i++)
-                //    {
-                //        try
-                //        {
-                //            sum += double.Parse(dataTable.Rows[i][0].ToString());
-                //            avg++;
-                //        }
-                //        catch { }
-                //        if ((i + 1) % average == 0)
-                //        {
-                //            tem_Match_DT.Add(sum.ToString());
-                //            chart_Match.Series[1].Points.AddXY(Match_count, sum.ToString());
-                //            sum = 0;
-                //            avg = 0;
-                //            Match_count++;
-                //        }
-                //    }
-                //    match_1 = 0;
-                //    match_Read1 = tem_Match_DT.Count;
-                //    for (int i = 0; i < tem_Match_DT.Count; i++)
-                //    {
-                //        double tem_abs = Math.Abs(double.Parse(Module_Data[i]) - double.Parse(tem_Match_DT[i]));
-                //        if (tem_abs < double.Parse(tem_Match_DT[i]) * range && tem_abs > -(double.Parse(tem_Match_DT[i]) * range))
-                //            match_1++;
-                //    }
-                //    lb_log1.Text = (((double)match_1 / (double)match_Read1) * 100) + " %";
-                //    return;
-                //}
                 #endregion
             }
             //模型建置狀態下執行
@@ -2918,6 +2864,7 @@ namespace ToolWear{
                 }
             }
         }
+        
         //取得LNC資料
         private void LNC_GetData(){
             ushort i = 0;
@@ -2940,19 +2887,19 @@ namespace ToolWear{
 
                     TDData td;
                     if (LNC_Data.Count >= Chart_max)
-                        LNC_Data.RemoveRange(0, 1000);
+                        LNC_Data.RemoveRange(0, (int)numTD - 1);
                     for (i = 0; i < numTD; i += 3){
-                        if (dataQueue.Count > 1000)
-                          dataQueue.Dequeue();
+                        //if (dataQueue.Count > 1000)
+                        //  dataQueue.Dequeue();
 
                         td.x = parrTDData[i];
                         td.y = parrTDData[i + 1];
                         td.z = parrTDData[i + 2];
                         LNC_Data.Add(parrTDData[i].ToString());
-                        dataQueue.Enqueue(td);
+                        //dataQueue.Enqueue(td);
                     }
                     chart_ToolWear.Series[0].Points.Clear();
-                    for (i = 0; i < dataQueue.Count; i++)
+                    for (i = 0; i < LNC_Data.Count; i++)
                         chart_ToolWear.Series[0].Points.AddXY((i + 1), LNC_Data[i]);
                     //chart_ToolWear.Series[0].Points.AddXY((i + 1), dataQueue.ElementAt(i).x);
                 }
