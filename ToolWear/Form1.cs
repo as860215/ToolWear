@@ -13,6 +13,9 @@ using EZNCAUTLib;
 using System.Threading;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Text;
+using LNCcomm;
+using System.Linq;
 
 namespace ToolWear{
     public partial class Form1 : Form{
@@ -26,6 +29,8 @@ namespace ToolWear{
             this.FormBorderStyle = FormBorderStyle.None;
             //強制置頂視窗
             //this.TopMost = true;
+            //LNC_Scan();
+            //LNC_GetData();
         }
         #region 初始化
         #region 物件初始化
@@ -2871,6 +2876,127 @@ namespace ToolWear{
             }
         }
         #endregion
+        #region 寶元資料讀取
+        //暫存LNC資料
+        List<string> LNC_Data = new List<string>();
+        List<string> LNC_FFT = new List<string>();
+
+        //寶元用變數
+        ushort gNid;
+        private Queue<TDData> dataQueue = new Queue<TDData>(1000);
+        struct TDData{
+            public short x;
+            public short y;
+            public short z;
+        };
+        //搜尋裝置
+        private void LNC_Scan(){
+            ushort i = 0;
+            short rc = 0;
+            int existCnt = 0;
+            gNid = 0;
+
+            byte commSts = 0, sensorSTS = 0;
+            int watchdogCnt = 0;
+            //取得連線狀態
+            rc = CLNCc.lnc_get_status(gNid, ref commSts, ref sensorSTS, ref watchdogCnt);
+            if(commSts != 3){
+                StringBuilder name = new StringBuilder(16);
+                StringBuilder ip = new StringBuilder(16);
+
+                rc = CLNCc.lnc_get_controller_cnt(ref existCnt);
+
+                rc = CLNCc.lnc_get_controller_info(i, name, ip);
+
+                if (name.Length != 0){
+                    string s_ip = ip.ToString();
+                    //連線裝置
+                    CLNCc.lnc_connect(gNid, s_ip, 0);
+
+                    //先歸零感測器
+                    rc = 0;
+                    rc = CLNCc.lnc_svi_set_zero(gNid);
+                }
+            }
+        }
+        //取得LNC資料
+        private void LNC_GetData(){
+            ushort i = 0;
+            short rc = 0;
+            byte commSts = 0, sensorSTS = 0;
+            int watchdogCnt = 0;
+            //取得連線狀態
+            rc = CLNCc.lnc_get_status(gNid, ref commSts, ref sensorSTS, ref watchdogCnt);
+            //當狀態=3時(連線中)才執行取值程式
+            if (commSts == 3){
+                //截取資料
+                uint TDLength = 0, numTD = 0;
+
+                rc = CLNCc.lnc_svi_get_td_data_length(gNid, ref TDLength);
+                if (TDLength != 0){
+                    //txtTDLen.Text = TDLength.ToString();
+                    short[] parrTDData = new short[TDLength];
+
+                    rc = CLNCc.lnc_svi_get_td_data(gNid, TDLength, ref parrTDData[0], ref numTD);
+
+                    TDData td;
+
+                    for (i = 0; i < numTD; i += 3){
+                        if (dataQueue.Count > 1000)
+                        { dataQueue.Dequeue(); }
+
+                        td.x = parrTDData[i];
+                        td.y = parrTDData[i + 1];
+                        td.z = parrTDData[i + 2];
+                        dataQueue.Enqueue(td);
+                    }
+
+                    chart_ToolWear.Series[0].Points.Clear();
+                    for (i = 0; i < dataQueue.Count; i++)
+                        chart_ToolWear.Series[0].Points.AddXY((i + 1), dataQueue.ElementAt(i).x);
+                }
+
+                float max = 0;
+                int maxFq = 0;
+                float[] arrFDData;
+                int fdLength = 0;
+
+                fdLength = CLNCc.LNC_FD_DATA_LENGTH_1D66K;
+
+                arrFDData = new float[fdLength];
+
+                rc = CLNCc.lnc_svi_get_fd_data(gNid, ref arrFDData[0]);
+
+                if (rc == CLNCc.LNC_ERR_NO_ERROR){
+                    chart_FFT.Series[0].Points.Clear();
+
+                    for (i = 0; i < fdLength; i++){
+                        if (arrFDData[i] > max){
+                            max = arrFDData[i];
+                            maxFq = i + 1;
+                        }
+
+                        chart_FFT.Series[0].Points.AddXY((i + 1), arrFDData[i]);
+                    }
+
+                    //if (max > 100)
+                    //{
+                    //    this.chart2.ChartAreas[0].AxisY.Minimum = (max * 0.1) * (-1);
+                    //    this.chart2.ChartAreas[0].AxisY.Maximum = max + max * 0.1;
+                    //}
+                    //else
+                    //{
+                    //    this.chart2.ChartAreas[0].AxisY.Minimum = -10;
+                    //    this.chart2.ChartAreas[0].AxisY.Maximum = 100;
+                    //}
+                    //chart2.ChartAreas[0].AxisX.Interval = fdLength / 10;
+
+                    //txtFDfq.Text = maxFq.ToString();
+                    //txtFDvalue.Text = max.ToString();
+                }
+            }
+        }
+        #endregion
         #region 螢幕截圖
         /// <summary>
         /// 螢幕截圖
@@ -2897,9 +3023,10 @@ namespace ToolWear{
             int lTimeOut = 100;
             lRet = EZNcCom.SetTCPIPProtocol(tb_setting_ip.Text, 683);
             lRet = EZNcCom.Open2(lSystemType, lMachine, lTimeOut, "EZNC_LOCALHOST");
-            if(lRet != 0){
-                //CatchLog(1000, lRet.ToString());
-            }
+            if (lRet == 0)
+                machine_connect = true;
+            else
+                machine_connect = false;
             return lRet;
         }
         //暫存刀具編號
@@ -2909,7 +3036,7 @@ namespace ToolWear{
         /// </summary>
         /// <returns>目前刀號</returns>
         private int Mitsubishi_GetATCStatus(){
-            Mitsubishi_Initialization();
+            if (machine_connect == false) return -1;
             int ATC_NUM = 0;
             if (lRet == 0){
                 //取得目前使用刀號
@@ -2928,7 +3055,7 @@ namespace ToolWear{
         /// </summary>
         /// <returns>目前狀態</returns>
         private string Mitsubishi_GetRunStatus(){
-            Mitsubishi_Initialization();
+            if (machine_connect == false) return "NotConnect";
             string[] s_status = new string[3] { "Run", "Start", "Alarm" };
             int status = 0;
             if(lRet == 0){
@@ -2949,7 +3076,7 @@ namespace ToolWear{
         /// </summary>
         /// <returns>轉速(RPM)</returns>
         private double Mitsubishi_GetFeedSpeed(){
-            Mitsubishi_Initialization();
+            if (machine_connect == false) return -1;
             int lFeedType = 0;
             double pdSpeed = 0;
             if(lRet == 0){

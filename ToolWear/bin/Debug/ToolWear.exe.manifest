@@ -126,14 +126,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ToolWear.exe" size="915416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ToolWear.exe" size="918488">
       <assemblyIdentity name="ToolWear" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kZTj46qiesoqZMiuyVWNIp5c08/tUhvNh7eU3orttUk=</dsig:DigestValue>
+        <dsig:DigestValue>8u3y4nN0s4vgiTC79JqQN6+fbsApBkpc9iDDMMxbmXE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
