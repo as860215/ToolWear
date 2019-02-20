@@ -1746,9 +1746,10 @@ namespace ToolWear{
             if (dialogResult == DialogResult.Cancel) return;
             tb_AddParts_Name.Text = "";
             tb_AddParts_Path.Text = "";
-            pb_AddParts.BackgroundImage = ToolWear.Properties.Resources.wdpsn_img_blank;
             panel_Dissable();
             panel_SelectParts.Visible = true;
+            btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
+            btn_Learn.Enabled = true;
         }
         //磨耗偵測 > 選擇工件 > 新增工件 > 搜尋
         private void btn_AddParts_Path_Click(object sender, EventArgs e){
@@ -1808,8 +1809,9 @@ namespace ToolWear{
                 MessageBox.Show(tb_AddParts_Name.Text + "\n已儲存成功。", "儲存成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tb_AddParts_Name.Text = "";
                 tb_AddParts_Path.Text = "";
-                pb_AddParts.BackgroundImage = ToolWear.Properties.Resources.wdpsn_img_blank;
                 panel_AddParts.Visible = false;
+                btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
+                btn_Learn.Enabled = true;
                 pb_ToolWear_Click(null, null);
             }
             catch(Exception ex){
@@ -3075,7 +3077,7 @@ namespace ToolWear{
         #endregion
         #region 螢幕鍵盤
         //顯示屏幕鍵盤
-        public static void ShowInputPanel(){
+        public void ShowInputPanel(){
             try{
                 Process[] proc = Process.GetProcessesByName("TabTip");
                 if (proc.Length > 0)
@@ -3090,7 +3092,7 @@ namespace ToolWear{
             }
         }
         //關閉屏幕鍵盤
-        public static void CloseInputPanel(){
+        public void CloseInputPanel(){
             Process[] proc = Process.GetProcessesByName("TabTip");
             if (proc.Length > 0)
                 proc[0].Kill(); //關閉執行中的螢幕鍵盤，以防無法開啟
