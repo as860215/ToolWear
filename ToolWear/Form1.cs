@@ -631,7 +631,7 @@ namespace ToolWear{
                 List<string> Blade_Module = new List<string>();
 
                 try{
-                    StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\L-{1}.cp", path, Blade_FileName));
+                    StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\M-{1}.cp", path, Blade_FileName));
                     while (!sr_learn.EndOfStream)
                         Blade_Module.Add(sr_learn.ReadLine());
                     sr_learn.Close();
@@ -663,15 +663,43 @@ namespace ToolWear{
                             Write_Log("警告", string.Format("{0}軸 {1}hz~{2}hz 震動幅度超過警戒值，當前:{3}(警戒值:{4})。", btn_ToolWear[now_Match].Text, Hz_min.ToString("0.####"), Hz_max.ToString("0.####"), (sum / count).ToString("0.00##"), ToolWear_Alern[Blade_Hz_Mag - 1]));
                             List<string> tem_datatable = new List<string>();
                             for (int j = 0; j < samplesPerChannelNumeric_base; j++)
-                                tem_datatable.Add(dataTable.Rows[i][0].ToString());
+                                tem_datatable.Add(dataTable.Rows[j][0].ToString());
                             System.Windows.Forms.DataVisualization.Charting.Chart[] chart = new System.Windows.Forms.DataVisualization.Charting.Chart[2]
                             {chart_warring_1,chart_warring_2 };
+                            Label[] lb_chart = new Label[2] { lb_ToolWear_warring_1, lb_ToolWear_warring_2 };
                             chart[chart_warring_count].Series[0].Points.Clear();
                             for (int j = 0;j < tem_datatable.Count;j++)
                                 chart[chart_warring_count].Series[0].Points.AddXY(j+1, tem_datatable[j]);
+                            //註記折線圖標題
+                            lb_chart[chart_warring_count].Text = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
                             chart_warring_count++;
                             if (chart_warring_count > 1) chart_warring_count = 0;   //兩張圖
+                            
+
+                            //存放warring檔案
+                            //先檢查有沒有資料夾
+                            bool dir_bool = Directory.Exists(path + @"\data\Warring\" + DateTime.Now.ToString("yyyyMMdd"));
+                            if(dir_bool == false) Directory.CreateDirectory(path + @"\data\Warring\" + DateTime.Now.ToString("yyyyMMdd"));
+                            //寫入新的warring檔
+                            StreamWriter sw = new StreamWriter(string.Format(@"{0}\data\Warring\{1}\{2}-{3}",
+                                path, DateTime.Now.ToString("yyyyMMdd"), DateTime.Now.ToString("HHmmss"), Blade_FileName));
+                            for(int j = 0;j < tem_datatable.Count; j++)
+                                sw.WriteLine(tem_datatable[j]);
+                            sw.Close();
+                            sw.Dispose();
+                            
+                            //重置當前FFT判斷值
+                            StreamWriter sw_match = new StreamWriter(string.Format(@"{0}\data\FFT\M-{1}.cp", path, Blade_FileName));
+                            sw_match.WriteLine("-99");
+                            sw_match.Close();
+                            sw_match.Dispose();
+                            List_FFT_Max.Clear();
+                            for (int j = 0; j < samplesPerChannelNumeric_base / 2; j++)
+                                List_FFT_Max.Add("-99");
+                            
                         }
+                        if (Blade_Hz_Mag == 1)
+                            lb_ToolWear_BladeAve.Text = (sum / count).ToString();
                         Blade_Hz_Mag++;
                         count = 0;
                         sum = 0;
@@ -1161,7 +1189,7 @@ namespace ToolWear{
             chart_Blade.Series[0].Points.Clear();
             //取得主軸轉數
             int Tool_rate = 0;
-            if (int.Parse(lb_ToolWear_FeedSpeed.Text.Split(' ')[0]) == 0) Tool_rate = 2500; //如果主軸轉數為0則使用預設轉數
+            if (machine_connect == false) Tool_rate = 2500; //如果主軸轉數為0則使用預設轉數
             else Tool_rate = int.Parse(lb_ToolWear_FeedSpeed.Text.Split(' ')[0]);
             //取得刀具刃數
             StreamReader sr_ATC = new StreamReader(path + @"\data\ATC.cp");
@@ -1184,17 +1212,22 @@ namespace ToolWear{
             int Blade_Hz_Mag = 1;   //頻率倍率(取1~5)
             double sum = 0;         //當前儲存點位總和
             int count = 0;          //儲存點位數量
+            double Hz_min = 0, Hz_max = 0;  //暫存該頻率倍率中的最大最小值
             for (int i = 0; i < Blade_Match.Count; i++){
                 double tem = 0;
-                if ((i + 1) * hz > Blade_Hz_Mag * Blade_Hz * 0.9f && (i + 1) * hz < Blade_Hz_Mag * Blade_Hz * 1.1f){
-                    //上下各取10% range
+                //上下各取10% range
+                Hz_min = Blade_Hz_Mag * Blade_Hz * 0.9f;
+                Hz_max = Blade_Hz_Mag * Blade_Hz * 1.1f;
+                if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max){
                     tem = double.Parse(Blade_Match[i]) - double.Parse(Blade_Module[i]); //暫存相差值
                     if (tem >= 0){
                         sum += tem;
                         count++;
                     }
                 }
-                else if ((i + 1) * hz > Blade_Hz_Mag * Blade_Hz * 1.1f) Blade_Hz_Mag++; //若頻率已大於刀刃刃數頻率，將倍率提升
+                else if ((i + 1) * hz > Hz_max){
+                    Blade_Hz_Mag++; //若頻率已大於刀刃刃數頻率，將倍率提升
+                }
                 chart_Blade.Series[0].Points.AddXY((i + 1) * hz, tem);
                 if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
             }
