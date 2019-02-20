@@ -29,8 +29,6 @@ namespace ToolWear{
             this.FormBorderStyle = FormBorderStyle.None;
             //強制置頂視窗
             //this.TopMost = true;
-            //LNC_Scan();
-            //LNC_GetData();
         }
         #region 初始化
         #region 物件初始化
@@ -247,7 +245,13 @@ namespace ToolWear{
                     Setting();
                     tem = "元件屬性設定完畢";
                     break;
-
+                case 7:
+                    tem = "正在掃描LNC訊號...";
+                    break;
+                case 8:
+                    LNC_Scan();
+                    tem = "LNC訊號掃描完畢";
+                    break;
                 //保留20~?測試設備連線
                 case 20:
                     tem = "正在測試控制器連線...";
@@ -488,23 +492,6 @@ namespace ToolWear{
                 for (int i = 0; i < Module_FFT.Count; i++)
                     chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
             }
-            //try
-            //{
-            //    StreamReader sr = new StreamReader(path + @"data\FFT\L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2] + "-" + ATC_Status + ".cp");
-            //    while (!sr.EndOfStream)
-            //        Module_FFT.Add(sr.ReadLine());
-            //    sr.Close();
-            //    sr.Dispose();
-            //    double hz = rateNumeric_base / samplesPerChannelNumeric_base;
-            //    for(int i = 0; i < Module_FFT.Count; i++)
-            //        chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
-            //}
-            //catch(Exception ex) {
-            //    //如果進到例外事件就是找不到檔案，也就是沒有學習過
-            //    MessageBox.Show("對不起，" + lb_ToolWear_Parts.Text + " 此軸向並未找到學習模型，\n請點選左方功能表「學習模式」進行模型建構。" +
-            //        "\n\nbtn_ToolWear_Start_Click\n\n" + ex.ToString(), "尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
             btn_ToolWear_Start.Enabled = false;
             btn_ToolWear_Stop.Enabled = true;
             chart_ToolWear.Series[0].Points.Clear();
@@ -538,7 +525,15 @@ namespace ToolWear{
             }
             //Log推播訊息
             Write_Log("系統","已啟動磨耗偵測 ： " + lb_ToolWear_Parts.Text + "/" + pre_ToolWear.Text);
-            DAQInitialize("Match");
+
+            //判斷訊號輸入
+            //寶元
+            if(physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+                short rc = 0;
+                rc = CLNCc.lnc_svi_enable(gNid, 1);
+                LNC_GetData();
+            }
+            else DAQInitialize("Match");
         }
         //停止偵測
         private void btn_ToolWear_Stop_Click(object sender, EventArgs e){
@@ -599,6 +594,7 @@ namespace ToolWear{
         //磨耗偵測 > 設定 > DAQ訊號重新整理
         private void btn_ToolWearSetting_Research_Click(object sender,EventArgs e){
             DAQPhysicalChannels();
+            LNC_Scan();
             btn_ToolWearSetting_Choose(pre_ToolWearSetting, null);
         }
         //暫存此軸向轉速警戒值
@@ -2916,6 +2912,9 @@ namespace ToolWear{
                     //先歸零感測器
                     rc = 0;
                     rc = CLNCc.lnc_svi_set_zero(gNid);
+
+                    //加入channel
+                    physicalChannelComboBox.Items.Add("LNC-" + name.ToString());
                 }
             }
         }
@@ -2940,20 +2939,22 @@ namespace ToolWear{
                     rc = CLNCc.lnc_svi_get_td_data(gNid, TDLength, ref parrTDData[0], ref numTD);
 
                     TDData td;
-
+                    if (LNC_Data.Count >= Chart_max)
+                        LNC_Data.RemoveRange(0, 1000);
                     for (i = 0; i < numTD; i += 3){
                         if (dataQueue.Count > 1000)
-                        { dataQueue.Dequeue(); }
+                          dataQueue.Dequeue();
 
                         td.x = parrTDData[i];
                         td.y = parrTDData[i + 1];
                         td.z = parrTDData[i + 2];
+                        LNC_Data.Add(parrTDData[i].ToString());
                         dataQueue.Enqueue(td);
                     }
-
                     chart_ToolWear.Series[0].Points.Clear();
                     for (i = 0; i < dataQueue.Count; i++)
-                        chart_ToolWear.Series[0].Points.AddXY((i + 1), dataQueue.ElementAt(i).x);
+                        chart_ToolWear.Series[0].Points.AddXY((i + 1), LNC_Data[i]);
+                    //chart_ToolWear.Series[0].Points.AddXY((i + 1), dataQueue.ElementAt(i).x);
                 }
 
                 float max = 0;
@@ -2975,24 +2976,9 @@ namespace ToolWear{
                             max = arrFDData[i];
                             maxFq = i + 1;
                         }
-
+                        LNC_FFT.Add(arrFDData[i].ToString());
                         chart_FFT.Series[0].Points.AddXY((i + 1), arrFDData[i]);
                     }
-
-                    //if (max > 100)
-                    //{
-                    //    this.chart2.ChartAreas[0].AxisY.Minimum = (max * 0.1) * (-1);
-                    //    this.chart2.ChartAreas[0].AxisY.Maximum = max + max * 0.1;
-                    //}
-                    //else
-                    //{
-                    //    this.chart2.ChartAreas[0].AxisY.Minimum = -10;
-                    //    this.chart2.ChartAreas[0].AxisY.Maximum = 100;
-                    //}
-                    //chart2.ChartAreas[0].AxisX.Interval = fdLength / 10;
-
-                    //txtFDfq.Text = maxFq.ToString();
-                    //txtFDvalue.Text = max.ToString();
                 }
             }
         }
