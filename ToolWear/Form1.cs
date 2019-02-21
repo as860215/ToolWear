@@ -485,8 +485,8 @@ namespace ToolWear{
             //判斷輸入裝置然後給予頻率
             double rate = 0, sample = 0;
             if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
-                rate = 1000;
-                sample = 100;
+                rate = 1660;
+                sample = 166;
             }
             else{
                 rate = rateNumeric_base;
@@ -541,12 +541,12 @@ namespace ToolWear{
             //判斷訊號輸入
             //寶元
             if(physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
-                LNC_Connect();
+                //LNC_Connect();
                 short rc = 0;
                 rc = CLNCc.lnc_svi_enable(gNid, 1);
                 dt_LNC = new DataTable();
                 dt_LNC.Columns.Add("Z");
-                FFT_Reset(1000);
+                FFT_Reset(1660);
                 timer_LNC.Enabled = true;
             }
             else DAQInitialize("Match");
@@ -557,8 +557,8 @@ namespace ToolWear{
             if (timer_LNC.Enabled == true){
                 timer_LNC.Enabled = false;
                 short rc = 0;
-                rc =  CLNCc.lnc_svi_enable(gNid, 0);
-                rc =  CLNCc.lnc_disconnect(gNid);
+                rc = CLNCc.lnc_svi_enable(gNid, 0);
+                //rc =  CLNCc.lnc_disconnect(gNid);
             }
             btn_ToolWear_Start.Enabled = true;
             btn_ToolWear_Stop.Enabled = false;
@@ -684,6 +684,7 @@ namespace ToolWear{
                             {chart_warring_1,chart_warring_2 };
                             Label[] lb_chart = new Label[2] { lb_ToolWear_warring_1, lb_ToolWear_warring_2 };
                             chart[chart_warring_count].Series[0].Points.Clear();
+                            chart[chart_warring_count].Series[1].Points.Clear();
                             for (int j = 0;j < tem_datatable.Count;j++)
                                 chart[chart_warring_count].Series[0].Points.AddXY(j+1, tem_datatable[j]);
                             //註記折線圖標題
@@ -776,12 +777,12 @@ namespace ToolWear{
             //判斷訊號輸入
             //寶元
             if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
-                LNC_Connect();
+                //LNC_Connect();
                 short rc = 0;
                 rc = CLNCc.lnc_svi_enable(gNid, 1);
                 dt_LNC = new DataTable();
                 dt_LNC.Columns.Add("Z");
-                FFT_Reset(1000);
+                FFT_Reset(1660);
                 timer_LNC.Enabled = true;
             }
             else DAQInitialize("Learn");
@@ -884,8 +885,8 @@ namespace ToolWear{
             //判斷裝置給予頻率
             double rate = 0, sample = 0;
             if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
-                rate = 1000;
-                sample = 100;
+                rate = 1660;
+                sample = 166;
             }
             else{
                 rate = rateNumeric_base;
@@ -2905,35 +2906,35 @@ namespace ToolWear{
             }
         }
         //LNC連結
-        private void LNC_Connect(){
-            ushort i = 0;
-            short rc = 0;
-            int existCnt = 0;
-            gNid = 0;
+        //private void LNC_Connect(){
+        //    ushort i = 0;
+        //    short rc = 0;
+        //    int existCnt = 0;
+        //    gNid = 0;
 
-            byte commSts = 0, sensorSTS = 0;
-            int watchdogCnt = 0;
-            //取得連線狀態
-            rc = CLNCc.lnc_get_status(gNid, ref commSts, ref sensorSTS, ref watchdogCnt);
-            if (commSts != 3){
-                StringBuilder name = new StringBuilder(16);
-                StringBuilder ip = new StringBuilder(16);
+        //    byte commSts = 0, sensorSTS = 0;
+        //    int watchdogCnt = 0;
+        //    //取得連線狀態
+        //    rc = CLNCc.lnc_get_status(gNid, ref commSts, ref sensorSTS, ref watchdogCnt);
+        //    if (commSts != 3){
+        //        StringBuilder name = new StringBuilder(16);
+        //        StringBuilder ip = new StringBuilder(16);
 
-                rc = CLNCc.lnc_get_controller_cnt(ref existCnt);
+        //        rc = CLNCc.lnc_get_controller_cnt(ref existCnt);
 
-                rc = CLNCc.lnc_get_controller_info(i, name, ip);
+        //        rc = CLNCc.lnc_get_controller_info(i, name, ip);
 
-                if (name.Length != 0){
-                    string s_ip = ip.ToString();
-                    //連線裝置
-                    CLNCc.lnc_connect(gNid, s_ip, 0);
+        //        if (name.Length != 0){
+        //            string s_ip = ip.ToString();
+        //            //連線裝置
+        //            CLNCc.lnc_connect(gNid, s_ip, 0);
 
-                    //先歸零感測器
-                    rc = 0;
-                    rc = CLNCc.lnc_svi_set_zero(gNid);
-                }
-            }
-        }
+        //            //先歸零感測器
+        //            rc = 0;
+        //            rc = CLNCc.lnc_svi_set_zero(gNid);
+        //        }
+        //    }
+        //}
         //暫存LNC資料
         DataTable dt_LNC = new DataTable();
         //取得LNC資料
@@ -2951,8 +2952,8 @@ namespace ToolWear{
 
                 rc = CLNCc.lnc_svi_get_td_data_length(gNid, ref TDLength);
                 if (TDLength != 0){
-                    //如果存值>1000筆資料，重置Datatable
-                    if(dt_LNC.Rows.Count >= 1000){
+                    //如果存值>1660筆資料，重置Datatable
+                    if(dt_LNC.Rows.Count >= 1660){
                         dt_LNC = new DataTable();
                         dt_LNC.Columns.Add("Z");
                     }
@@ -2965,7 +2966,8 @@ namespace ToolWear{
                     //TDData td;
                     if (LNC_Data.Count >= Chart_max)
                         LNC_Data.RemoveRange(0, 500);
-                    for (i = 0; i < numTD; i += 3){
+                    for (i = 0;  i < numTD; i += 3){
+                        if (i > 3000) break;
                         //if (dataQueue.Count > 1000)
                         //  dataQueue.Dequeue();
 
@@ -2982,8 +2984,8 @@ namespace ToolWear{
                         chart_ToolWear.Series[0].Points.AddXY((i + 1), LNC_Data[i]);
                     //chart_ToolWear.Series[0].Points.AddXY((i + 1), dataQueue.ElementAt(i).x);
 
-                    if (dt_LNC.Rows.Count >= 1000)
-                        FFT("Match", dt_LNC, 100, 1000);
+                    if (dt_LNC.Rows.Count >= 1660)
+                        FFT("Match", dt_LNC, 166, 1660);
                 }
                 //else
                 //{
