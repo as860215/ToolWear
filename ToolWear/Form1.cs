@@ -72,7 +72,6 @@ namespace ToolWear{
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_Threshold.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_ToolWear.Series[1].Points.AddXY(1, Chart_PointMax);
-            chart_Current.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_warring_1.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_warring_2.Series[1].Points.AddXY(1, Chart_PointMax);
             //震動偵測折線圖
@@ -100,7 +99,7 @@ namespace ToolWear{
 
             //電流
             for(int i = 0;i < 200; i++){
-                chart_Current.Series[2].Points.AddXY(i + 1, Chart_PointMin);
+                chart_Current.Series[2].Points.AddXY(i + 1, 0);
             }
             //Panel
             panel_Home.Visible = true;
@@ -661,11 +660,17 @@ namespace ToolWear{
         private void ToolWear_Log(DataTable dt, double sample, double rate){
             string Blade_FileName = "";
             ToolWear_Alern.Clear();
-            if (machine_connect == false){
+            //if (machine_connect == false){
                 //如果未連接機台，使用預設2500轉
                 try{
                     Blade_FileName = string.Format("{0}{1}-{2}_{3}", lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
                         ATC_num, 2500);
+                    //判斷檔案是否存在
+                    string tem_path = string.Format(@"{0}\data\FFT\LS-{1}.cp", path, Blade_FileName);
+                    //若查不到檔案則使用預設0刀號
+                    if(!File.Exists(tem_path))
+                        Blade_FileName = string.Format("{0}{1}-{2}_{3}", lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
+                            0, 2500);
                     StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\LS-{1}.cp", path, Blade_FileName));
                     while (!sr_learn.EndOfStream)
                         ToolWear_Alern.Add(sr_learn.ReadLine());
@@ -764,10 +769,10 @@ namespace ToolWear{
                     }
                     if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
                 }
-            }
-            else{
-                //如果已連接機台
-            }
+            //}
+            //else{
+            //    //如果已連接機台
+            //}
         }
         #endregion
         #region 學習模式
@@ -1090,6 +1095,8 @@ namespace ToolWear{
         #region 主畫面設定
         //主畫面 > 設定 > 重新連線
         private void btn_setting_Reconnection_Click(object sender,EventArgs e){
+            if(EZNcCom != null) EZNcCom.Close();
+            EZNcCom = new DispEZNcCommunication();
             lb_setting_Reconnection.Text = "正在準備重新連接控制器，這可能需要花費一段時間。";
             lb_setting_Reconnection.ForeColor = Color.White;
             Thread TD_Reconnection = new Thread(setting_Reconnection_Thread);
@@ -1261,7 +1268,11 @@ namespace ToolWear{
             List<string> Blade_Module = Module_FFT;
             List<string> Blade_Match = new List<string>();
             try{
-                StreamReader sr_match = new StreamReader(path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp");
+                //判斷檔案是否存在
+                string tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp";
+                //若沒有存在則使用預設0刀號
+                if (!File.Exists(tem_path)) tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
+                StreamReader sr_match = new StreamReader(tem_path);
                 while (!sr_match.EndOfStream)
                     Blade_Match.Add(sr_match.ReadLine());
                 sr_match.Close();
@@ -2558,6 +2569,7 @@ namespace ToolWear{
             try{
                 ATC_num = int.Parse(((Label)sender).Text);
                 if (ATC_num > 20){
+                    ATC_num = 0;
                     ((Label)sender).Text = "預設";
                     lb_ToolWear_Blade.Text = "4";
                     return;
@@ -2893,11 +2905,24 @@ namespace ToolWear{
                 ATC_RPM = 2500;
             //判斷模式
             string tem_path = "";
-            if (mode.Equals("Learn")) tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp";
+
+            if (mode.Equals("Learn")) {
+                //判斷檔案是否存在
+                tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp";
+                //若沒有存在則使用預設0刀號
+                if (!File.Exists(tem_path))
+                    tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
+            }
             else if (mode.Equals("Match")){
                 for (int i = 0; i < ToolWear_bool.Length; i++)
-                    if (ToolWear_bool[i] == true)
+                    if (ToolWear_bool[i] == true){
+                        //判斷檔案是否存在
                         tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp";
+                        //若沒有存在則使用預設0刀號
+                        if (!File.Exists(tem_path))
+                            tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
+                    }
+                       
             }
             //先讀取目前刀具的最大值檔案
             try{
@@ -3111,7 +3136,7 @@ namespace ToolWear{
                 int tem = readHoldingRegisters[0];
                 readHoldingRegisters[0] = readHoldingRegisters[1];
                 readHoldingRegisters[1] = tem;
-                float output = Show_Data_Float(readHoldingRegisters);
+                float output = (Show_Data_Float(readHoldingRegisters) - 4) * 9.375f;
                 //int output = readHoldingRegisters[0];
                 draw_chart(output);
                 //Console.Write(output);
@@ -3122,9 +3147,11 @@ namespace ToolWear{
         }
         //暫存電流的值
         List<string> Current_Value = new List<string>();
+        //電流折線圖最大值
+        int Chart_CurrentMax = 200;
         //電流 > 畫折線圖
         private void draw_chart(float output){
-            if (Current_Value.Count > Chart_max){
+            if (Current_Value.Count > Chart_CurrentMax){
                 Current_Value.RemoveAt(0);
                 chart_Current.Series[0].Points.Clear();
                 for (int i = 0; i < Chart_max; i++) chart_Current.Series[0].Points.AddXY(i + 1, Current_Value[i]);
