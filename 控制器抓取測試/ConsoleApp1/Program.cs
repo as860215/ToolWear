@@ -16,23 +16,24 @@ namespace ConsoleApp1{
             int ATC_NUM = 0;
             lRet = EZNcCom.SetTCPIPProtocol("192.168.11.205", 683);
             lRet = EZNcCom.Open2(lSystemType,1,100,"EZNC_LOCALHOST");
+            //while (true)
+            //{
+            //    //取得目前使用刀號
+            //    lRet = EZNcCom.ATC_GetMGNReady(0, out ATC_NUM);
+            //    //display
+            //    Console.WriteLine(DateTime.Now.ToString("HH:mm:ss : ") + ATC_NUM);
+
+            //}
+
+
+
+            int lIndex = 2, lspindle = 1, plData = 0;
+            string buffer = "";
             while (true)
             {
-                //取得目前使用刀號
-                lRet = EZNcCom.ATC_GetMGNReady(0, out ATC_NUM);
-                //display
-                Console.WriteLine(DateTime.Now.ToString("HH:mm:ss : ") + ATC_NUM);
-
+                lRet = EZNcCom.Monitor_GetSpindleMonitor(lIndex, lspindle, out plData, out buffer);
+                Console.WriteLine(DateTime.Now.ToString("HH:mm:ss : ") + plData);
             }
-            
-
-
-            //int lIndex = 2,lspindle = 1,plData = 0;
-            //string buffer = "";
-            //while (true){
-            //    lRet = EZNcCom.Monitor_GetSpindleMonitor(lIndex, lspindle, out plData, out buffer);
-            //    Console.WriteLine(DateTime.Now.ToString("HH:mm:ss : ") + plData);
-            //}
 
 
             //while (true)

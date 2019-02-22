@@ -514,6 +514,19 @@ namespace ToolWear{
                     "\n\nbtn_ToolWear_Start_Click\n\n","尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+
+            //判斷是否要讀取電流資訊
+            if (!tb_ToolWear_CurrentIP.Equals("")){
+                Current_Connect();
+                if(modbusClient.Connected == true) timer_Current.Enabled = true;
+            }
+            else{
+                DialogResult dialogResult = MessageBox.Show("此軸向並未設定電流IP，繼續操作將不會對電流量進行數據探勘。\n請問要繼續嗎？",
+                    "電流尚未設定", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (dialogResult == DialogResult.Cancel) return;
+            }
+
             //判斷輸入裝置然後給予頻率
             double rate = 0, sample = 0;
             if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
@@ -569,12 +582,6 @@ namespace ToolWear{
             }
             //Log推播訊息
             Write_Log("系統","已啟動磨耗偵測 ： " + lb_ToolWear_Parts.Text + "/" + pre_ToolWear.Text);
-
-            //判斷是否要讀取電流資訊
-            if (!tb_ToolWear_CurrentIP.Equals("")){
-                Current_Connect();
-                timer_Current.Enabled = true;
-            }
 
             //判斷訊號輸入
             //寶元
@@ -3154,7 +3161,7 @@ namespace ToolWear{
             if (Current_Value.Count > Chart_CurrentMax){
                 Current_Value.RemoveAt(0);
                 chart_Current.Series[0].Points.Clear();
-                for (int i = 0; i < Chart_max; i++) chart_Current.Series[0].Points.AddXY(i + 1, Current_Value[i]);
+                for (int i = 0; i < Chart_CurrentMax; i++) chart_Current.Series[0].Points.AddXY(i + 1, Current_Value[i]);
             }
             chart_Current.Series[0].Points.AddXY(Current_Value.Count + 1, output);
             Current_Value.Add(output.ToString());
