@@ -79,8 +79,6 @@ namespace ToolWear{
             for (int i = 0; i < Chart_max; i++){
                 chart_Learn.Series[2].Points.AddXY(i + 1, Chart_PointMin);
                 chart_ToolWear.Series[2].Points.AddXY(i + 1, Chart_PointMin);
-                //電流
-                chart_Current.Series[2].Points.AddXY(i + 1, Chart_PointMin);
             }
             //警戒折線圖
             for(int i = 0; i < 2000; i++){
@@ -98,6 +96,11 @@ namespace ToolWear{
                 chart_Thermal.Series[1].Points.AddXY(i, 25);
                 chart_Thermal_M1.Series[1].Points.AddXY(i, 25);
                 chart_Thermal_M2.Series[1].Points.AddXY(i, 25);
+            }
+
+            //電流
+            for(int i = 0;i < 200; i++){
+                chart_Current.Series[2].Points.AddXY(i + 1, Chart_PointMin);
             }
             //Panel
             panel_Home.Visible = true;
@@ -264,14 +267,13 @@ namespace ToolWear{
                     tem = "正在測試控制器連線...";
                     break;
                 case 25:
-                    //long ret = Mitsubishi_Initialization();
-                    //if (ret != 0)
-                    //{
-                    //    tb_Load_log.Text += "控制器連線失敗。 Error Code : " + ret.ToString();
-                    //    machine_connect = false;
-                    //}
-                    //else
-                    //    machine_connect = true;
+                    long ret = Mitsubishi_Initialization();
+                    if (ret != 0){
+                        tb_Load_log.Text += "控制器連線失敗。 Error Code : " + ret.ToString();
+                        machine_connect = false;
+                    }
+                    else
+                        machine_connect = true;
                     break;
                 case 26:
                     tem = "控制器連線測試完畢";
@@ -597,6 +599,8 @@ namespace ToolWear{
                 rc = CLNCc.lnc_svi_enable(gNid, 0);
                 //rc =  CLNCc.lnc_disconnect(gNid);
             }
+            timer_Current.Enabled = false;
+
             btn_ToolWear_Start.Enabled = true;
             btn_ToolWear_Stop.Enabled = false;
             //修改開始與停止按鈕
@@ -1123,6 +1127,7 @@ namespace ToolWear{
             sw.WriteLine(string.Format("{0},{1},{2}", cb_setting_brand.Text, cb_setting_model.Text, tb_setting_ip.Text));
             sw.Close();
             sw.Dispose();
+            MessageBox.Show("存檔成功。", "存檔", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         //主畫面 > 設定 > 刪除
         private void btn_setting_delete_Click(object sender,EventArgs e){
@@ -2552,6 +2557,17 @@ namespace ToolWear{
         private void lb_ToolWear_Tool_TextChanged(object sender, EventArgs e){
             try{
                 ATC_num = int.Parse(((Label)sender).Text);
+                if (ATC_num > 20){
+                    ((Label)sender).Text = "預設";
+                    lb_ToolWear_Blade.Text = "4";
+                    return;
+                }
+            }
+            catch {
+                //會進到catch表示Text資料過大或有誤，直接return
+                return;
+            }
+            try{
                 StreamReader sr = new StreamReader(path + @"\data\ATC.cp");
                 for (int i = 0; i < ATC_num; i++){
                     string tem = sr.ReadLine();
@@ -2567,6 +2583,18 @@ namespace ToolWear{
             }
         }
         private void lb_Learn_Tool_TextChanged(object sender, EventArgs e){
+            try{
+                ATC_num = int.Parse(((Label)sender).Text);
+                if (ATC_num > 20){
+                    ((Label)sender).Text = "預設";
+                    lb_Learn_Blade.Text = "4";
+                    return;
+                }
+            }
+            catch{
+                //會進到catch表示Text資料過大或有誤，直接return
+                return;
+            }
             try{
                 int ATC_num = int.Parse(((Label)sender).Text);
                 StreamReader sr = new StreamReader(path + @"\data\ATC.cp");
@@ -2595,7 +2623,15 @@ namespace ToolWear{
             LNC_GetData();
         }
         private void timer_Current_Tick(object sender,EventArgs e){
-            Current_Getdata("31");
+            Current_Getdata("33");
+        }
+        private void timer_CNC_Tick(object sender,EventArgs e){
+            int FeedSpeed = Mitsubishi_GetFeedSpeed();
+            int ATCStatus = Mitsubishi_GetATCStatus();
+            lb_ToolWear_FeedSpeed.Text = FeedSpeed.ToString() + " RPM";
+            lb_Learn_FeedSpeed.Text = FeedSpeed.ToString() + " RPM";
+            lb_ToolWear_Tool.Text = ATCStatus.ToString();
+            lb_Learn_Tool.Text = ATCStatus.ToString();
         }
         #endregion
         #region DAQ資料讀取
@@ -3067,7 +3103,7 @@ namespace ToolWear{
         }
         //電流 > 取得資料
         private void Current_Getdata(string address){
-            if (modbusClient.Connected == false) return;
+            if (modbusClient == null || modbusClient.Connected == false) return;
             try{
                 modbusClient.UnitIdentifier = byte.Parse("1");
                 int start = int.Parse(address) - 1;
@@ -3147,8 +3183,11 @@ namespace ToolWear{
             int lTimeOut = 100;
             lRet = EZNcCom.SetTCPIPProtocol(tb_setting_ip.Text, 683);
             lRet = EZNcCom.Open2(lSystemType, lMachine, lTimeOut, "EZNC_LOCALHOST");
-            if (lRet == 0)
+            if (lRet == 0){
                 machine_connect = true;
+                //開始擷取CNC資料
+                timer_CNC.Enabled = true;
+            }
             else
                 machine_connect = false;
             return lRet;
@@ -3170,8 +3209,8 @@ namespace ToolWear{
                 else
                     CatchLog(1001, lRet.ToString());
             }
-            lRet = EZNcCom.Close();
-            EZNcCom = null;
+            //lRet = EZNcCom.Close();
+            //EZNcCom = null;
             return 0;
         }
         /// <summary>
@@ -3189,8 +3228,8 @@ namespace ToolWear{
                 else
                     CatchLog(1002, lRet.ToString());
             }
-            lRet = EZNcCom.Close();
-            EZNcCom = null;
+            //lRet = EZNcCom.Close();
+            //EZNcCom = null;
             return "";
         }
         //暫存轉速
@@ -3199,19 +3238,19 @@ namespace ToolWear{
         /// 取得目前轉速
         /// </summary>
         /// <returns>轉速(RPM)</returns>
-        private double Mitsubishi_GetFeedSpeed(){
+        private int Mitsubishi_GetFeedSpeed(){
             if (machine_connect == false) return -1;
-            int lFeedType = 0;
-            double pdSpeed = 0;
-            if(lRet == 0){
-                lRet = EZNcCom.Position_GetFeedSpeed(lFeedType, out pdSpeed);
+            int lIndex = 2, lspindle = 1, plData = 0;
+            string buffer = "";
+            if (lRet == 0){
+                lRet = EZNcCom.Monitor_GetSpindleMonitor(lIndex, lspindle, out plData, out buffer);
                 if (lRet == 0)
-                    return pdSpeed;
+                    return plData;
                 else
                     CatchLog(1003, lRet.ToString());
             }
-            lRet = EZNcCom.Close();
-            EZNcCom = null;
+            //lRet = EZNcCom.Close();
+            //EZNcCom = null;
             return 0;
         }
         #endregion
