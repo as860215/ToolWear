@@ -16,6 +16,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using LNCcomm;
 using System.Linq;
+using EasyModbus;
 
 namespace ToolWear{
     public partial class Form1 : Form{
@@ -65,17 +66,21 @@ namespace ToolWear{
             chart_warring_1.Legends.Clear();
             chart_warring_2.Legends.Clear();
             chart_Blade.Legends.Clear();
+            chart_Current.Legends.Clear();
             //折線圖上下限與x軸最大值預覽
             //chart_FFT.Series[2].Points.AddXY(1, -0.5);
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_Threshold.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_ToolWear.Series[1].Points.AddXY(1, Chart_PointMax);
+            chart_Current.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_warring_1.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_warring_2.Series[1].Points.AddXY(1, Chart_PointMax);
             //震動偵測折線圖
             for (int i = 0; i < Chart_max; i++){
                 chart_Learn.Series[2].Points.AddXY(i + 1, Chart_PointMin);
                 chart_ToolWear.Series[2].Points.AddXY(i + 1, Chart_PointMin);
+                //電流
+                chart_Current.Series[2].Points.AddXY(i + 1, Chart_PointMin);
             }
             //警戒折線圖
             for(int i = 0; i < 2000; i++){
@@ -118,8 +123,10 @@ namespace ToolWear{
             panel_AddParts.Visible = false;
             //關閉所有主選單副組件
             btn_Learn.Enabled = false;
+            btn_ChangeMode.Enabled = false;
             //重置所有主選單副組件顯示圖片
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
+            btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
         }
         /// <summary>
         /// 初始化資料
@@ -311,6 +318,9 @@ namespace ToolWear{
             //學習按鈕啟動
             btn_Learn.Enabled = true;
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
+            //震動/電流切換按鈕啟動
+            btn_ChangeMode.Enabled = true;
+            btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.wd_menubtn_current;
             //預設選擇第一個按鈕
             if(pre_ToolWear == null)
                 btn_ToolWear_Choose((object)btn_ToolWear_01, null);
@@ -425,8 +435,11 @@ namespace ToolWear{
                 pb_Learn.BackgroundImage = pb_ToolWear.BackgroundImage;
                 panel_Dissable();
                 panel_Learn.Visible = true;
+
+                //按鈕變更
                 btn_Learn.BackgroundImage = ToolWear.Properties.Resources.wd_l_learn_selected;
                 btn_Learn.Enabled = true;
+
                 Button[] btn_Learn_ = new Button[20] { btn_Learn_01, btn_Learn_02, btn_Learn_03,
                             btn_Learn_04,btn_Learn_05,btn_Learn_06,btn_Learn_07,btn_Learn_08,
                             btn_Learn_09,btn_Learn_10,btn_Learn_11,btn_Learn_12,btn_Learn_13,
@@ -447,6 +460,24 @@ namespace ToolWear{
                     btn_ToolWear_14,btn_ToolWear_15,btn_ToolWear_16,btn_ToolWear_17,btn_ToolWear_18,
                     btn_ToolWear_19,btn_ToolWear_20};
                 btn_ToolWear_Choose((object)btn_ToolWear[now_learn], null);
+            }
+        }
+        //主選單 > 磨耗偵測 > 切換模式
+        private void btn_ChangeMode_Click(object sender,EventArgs e){
+            //在磨耗偵測狀況下
+            if(panel_ToolWear.Visible == true){
+                if (lb_ToolWear_Title.Text.Equals("磨耗偵測(震動)")){
+                    lb_ToolWear_Title.Text = "磨耗偵測(電流)";
+                    btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.wd_menubtn_vibration;
+                    chart_Current.Visible = true;
+                    chart_Current.BringToFront();
+                }
+                else{
+                    lb_ToolWear_Title.Text = "磨耗偵測(震動)";
+                    btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.wd_menubtn_current;
+                    chart_Current.Visible = false;
+                    chart_Current.SendToBack();
+                }
             }
         }
         #endregion
@@ -537,6 +568,12 @@ namespace ToolWear{
             }
             //Log推播訊息
             Write_Log("系統","已啟動磨耗偵測 ： " + lb_ToolWear_Parts.Text + "/" + pre_ToolWear.Text);
+
+            //判斷是否要讀取電流資訊
+            if (!tb_ToolWear_CurrentIP.Equals("")){
+                Current_Connect();
+                timer_Current.Enabled = true;
+            }
 
             //判斷訊號輸入
             //寶元
@@ -1974,6 +2011,9 @@ namespace ToolWear{
                     cb_ToolWearSetting_accelerometer.SelectedIndex = 0;
                     cb_ToolWearSetting_Axial.SelectedIndex = 0;
                     physicalChannelComboBox.SelectedIndex = 0;
+                    //初始化電流參數
+                    tb_ToolWear_CurrentIP.Text = "";
+                    cb_ToolWear_CurrentInput.SelectedIndex = 0;
                     //ex. tem = "X,0,0,0" or tem = "Y,1,2,0"
                     string tem = sr_axial.ReadLine();
                     if (i == int.Parse(ID) - 1){
@@ -1986,7 +2026,7 @@ namespace ToolWear{
                         for(int j = 0; j < physicalChannelComboBox.Items.Count; j++){
                             physicalChannelComboBox.SelectedIndex = j;
                             if (physicalChannelComboBox.Text.Equals(tem_Channel)){
-                                physicalChannelComboBox.SelectedIndex = j;
+                                //physicalChannelComboBox.SelectedIndex = j;
                                 break;
                             }
                             //如果j已搜尋到最後都找不到匹配的輸入(代表原先設定的訊號不見了)
@@ -1996,8 +2036,17 @@ namespace ToolWear{
                                     "\n若依然找不到訊號輸入，請重新選擇並儲存。", "找不到訊號輸入", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
-                        //int Channel = int.Parse(tem.Split(',')[3]);
-                        //physicalChannelComboBox.SelectedIndex = Channel;
+                        string ip = tem.Split(',')[4];
+                        tb_ToolWear_CurrentIP.Text = ip;
+                        string CurrentChannel = tem.Split(',')[5];
+                        for(int j = 0;j < cb_ToolWear_CurrentInput.Items.Count; j++){
+                            cb_ToolWear_CurrentInput.SelectedIndex = j;
+                            if (cb_ToolWear_CurrentInput.Text.Equals(CurrentChannel))
+                                break;
+                            //表示搜尋到最後仍然找不到匹配的輸入
+                            if(j == cb_ToolWear_CurrentInput.Items.Count - 1)
+                                cb_ToolWear_CurrentInput.SelectedIndex = 0;
+                        }
                     }
                 }
             }
@@ -2011,8 +2060,9 @@ namespace ToolWear{
         private void btn_ToolWearSetting_save_Click(object sender, EventArgs e){
             DialogResult dialogResult = MessageBox.Show("確定儲存？", "存檔訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
-            string tem_s = tb_ToolWearSetting_name.Text + "," + cb_ToolWearSetting_accelerometer.SelectedIndex +
-               "," + cb_ToolWearSetting_Axial.SelectedIndex + "," + physicalChannelComboBox.Text;
+            string tem_s = string.Format("{0},{1},{2},{3},{4},{5}", tb_ToolWearSetting_name.Text,
+                cb_ToolWearSetting_accelerometer.SelectedIndex, cb_ToolWearSetting_Axial.SelectedIndex, physicalChannelComboBox.Text,
+                tb_ToolWear_CurrentIP.Text, cb_ToolWear_CurrentInput.Text);
             try{
                 ToolWearSetting_SW(tem_s);
                 MessageBox.Show("儲存成功！", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -2544,6 +2594,9 @@ namespace ToolWear{
         private void timer_LNC_Tick(object sender, EventArgs e){
             LNC_GetData();
         }
+        private void timer_Current_Tick(object sender,EventArgs e){
+            Current_Getdata("31");
+        }
         #endregion
         #region DAQ資料讀取
         private NationalInstruments.DAQmx.Task runningTask;
@@ -2866,12 +2919,6 @@ namespace ToolWear{
 
         //寶元用變數
         ushort gNid;
-        private Queue<TDData> dataQueue = new Queue<TDData>(1000);
-        struct TDData{
-            public short x;
-            public short y;
-            public short z;
-        };
         //搜尋裝置
         private void LNC_Scan(){
             ushort i = 0;
@@ -2905,36 +2952,6 @@ namespace ToolWear{
                 }
             }
         }
-        //LNC連結
-        //private void LNC_Connect(){
-        //    ushort i = 0;
-        //    short rc = 0;
-        //    int existCnt = 0;
-        //    gNid = 0;
-
-        //    byte commSts = 0, sensorSTS = 0;
-        //    int watchdogCnt = 0;
-        //    //取得連線狀態
-        //    rc = CLNCc.lnc_get_status(gNid, ref commSts, ref sensorSTS, ref watchdogCnt);
-        //    if (commSts != 3){
-        //        StringBuilder name = new StringBuilder(16);
-        //        StringBuilder ip = new StringBuilder(16);
-
-        //        rc = CLNCc.lnc_get_controller_cnt(ref existCnt);
-
-        //        rc = CLNCc.lnc_get_controller_info(i, name, ip);
-
-        //        if (name.Length != 0){
-        //            string s_ip = ip.ToString();
-        //            //連線裝置
-        //            CLNCc.lnc_connect(gNid, s_ip, 0);
-
-        //            //先歸零感測器
-        //            rc = 0;
-        //            rc = CLNCc.lnc_svi_set_zero(gNid);
-        //        }
-        //    }
-        //}
         //暫存LNC資料
         DataTable dt_LNC = new DataTable();
         //取得LNC資料
@@ -2957,43 +2974,37 @@ namespace ToolWear{
                         dt_LNC = new DataTable();
                         dt_LNC.Columns.Add("Z");
                     }
-
-                    //txtTDLen.Text = TDLength.ToString();
+                    
                     short[] parrTDData = new short[TDLength];
 
                     rc = CLNCc.lnc_svi_get_td_data(gNid, TDLength, ref parrTDData[0], ref numTD);
-
-                    //TDData td;
+                    
                     if (LNC_Data.Count >= Chart_max)
                         LNC_Data.RemoveRange(0, 500);
                     for (i = 0;  i < numTD; i += 3){
                         if (i > 3000) break;
-                        //if (dataQueue.Count > 1000)
-                        //  dataQueue.Dequeue();
-
-                        //td.x = parrTDData[i];
-                        //td.y = parrTDData[i + 1];
-                        //td.z = parrTDData[i + 2];
                         dt_LNC.Rows.Add(parrTDData[i].ToString());
                         LNC_Data.Add(parrTDData[i].ToString());
-                        
-                        //dataQueue.Enqueue(td);
                     }
-                    chart_ToolWear.Series[0].Points.Clear();
-                    for (i = 0; i < LNC_Data.Count; i++)
-                        chart_ToolWear.Series[0].Points.AddXY((i + 1), LNC_Data[i]);
-                    //chart_ToolWear.Series[0].Points.AddXY((i + 1), dataQueue.ElementAt(i).x);
+                    //學習模式
+                    if(On_Learn == true){
+                        chart_Learn.Series[0].Points.Clear();
+                        for (i = 0; i < LNC_Data.Count; i++)
+                            chart_Learn.Series[0].Points.AddXY((i + 1), LNC_Data[i]);
 
-                    if (dt_LNC.Rows.Count >= 1660)
-                        FFT("Match", dt_LNC, 166, 1660);
+                        if (dt_LNC.Rows.Count >= 1660)
+                            FFT("Learn", dt_LNC, 166, 1660);
+                    }
+                    //偵測模式
+                    else{
+                        chart_ToolWear.Series[0].Points.Clear();
+                        for (i = 0; i < LNC_Data.Count; i++)
+                            chart_ToolWear.Series[0].Points.AddXY((i + 1), LNC_Data[i]);
+
+                        if (dt_LNC.Rows.Count >= 1660)
+                            FFT("Match", dt_LNC, 166, 1660);
+                    }
                 }
-                //else
-                //{
-                //    //將sensor接收重新打開
-                //    rc = CLNCc.lnc_svi_enable(gNid, 0);
-                //    rc = CLNCc.lnc_svi_enable(gNid, 1);
-
-                //}
 
                 //float max = 0;
                 //int maxFq = 0;
@@ -3021,6 +3032,93 @@ namespace ToolWear{
                 //    }
                 //}
             }
+        }
+        #endregion
+        #region 電流資料讀取
+        //暫存modbus資訊
+        private ModbusClient modbusClient;
+        //暫存電流輸入訊號
+        private string Current_Channel = "";
+        //電流 > 連線
+        private void Current_Connect(){
+            try{
+                //取得第幾個軸向
+                string ID = pre_ToolWearSetting.Name.Split('_')[2];
+                //暫存IP
+                string IP = "";
+                StreamReader sr = new StreamReader(path + @"\data\axial.cp");
+                for(int i = 0; i < int.Parse(ID); i++){
+                    string tem = sr.ReadLine();
+                    if(i == int.Parse(ID) - 1){
+                        IP = tem.Split(',')[4];
+                        Current_Channel = tem.Split(',')[5];
+                    }
+                }
+                if (IP.Equals("")){
+                    MessageBox.Show("IP錯誤。\n請至設定頁面查詢電流IP是否正確。", "連線失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                modbusClient = new ModbusClient(IP, 502);    //Ip-Address and Port of Modbus-TCP-Server
+                modbusClient.Connect();     //Connect to Server
+            }
+            catch (Exception ex) {
+                MessageBox.Show("電流連線失敗。\n\nCurrent_Connect\n\nError code:\n" + ex.ToString(), "連線失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //電流 > 取得資料
+        private void Current_Getdata(string address){
+            if (modbusClient.Connected == false) return;
+            try{
+                modbusClient.UnitIdentifier = byte.Parse("1");
+                int start = int.Parse(address) - 1;
+                int[] readHoldingRegisters = modbusClient.ReadHoldingRegisters(start, 2);
+                int tem = readHoldingRegisters[0];
+                readHoldingRegisters[0] = readHoldingRegisters[1];
+                readHoldingRegisters[1] = tem;
+                float output = Show_Data_Float(readHoldingRegisters);
+                //int output = readHoldingRegisters[0];
+                draw_chart(output);
+                //Console.Write(output);
+            }
+            catch (Exception ex){
+                MessageBox.Show("讀取電流資料發生錯誤。\n\nCurrent_Getdata\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //暫存電流的值
+        List<string> Current_Value = new List<string>();
+        //電流 > 畫折線圖
+        private void draw_chart(float output){
+            if (Current_Value.Count > Chart_max){
+                Current_Value.RemoveAt(0);
+                chart_Current.Series[0].Points.Clear();
+                for (int i = 0; i < Chart_max; i++) chart_Current.Series[0].Points.AddXY(i + 1, Current_Value[i]);
+            }
+            chart_Current.Series[0].Points.AddXY(Current_Value.Count + 1, output);
+            Current_Value.Add(output.ToString());
+        }
+        //電流 > 資料換算成float
+        private static float Show_Data_Float(int[] date){
+            float sum = 0;                                      //存放最終運算結果
+            string date_1 = Convert.ToString(date[0], 2);       //將十進位數字轉為二進位
+            while (date_1.Length < 16) date_1 = "0" + date_1;   //未滿16位將前方補0
+            string date_2 = Convert.ToString(date[1], 2);       //將十進位數字轉為二進位
+            while (date_2.Length < 16) date_2 = "0" + date_2;   //未滿16位將前方補0
+            string tem = date_1 + date_2;                       //將二進位組合成32位元
+            string sign = tem.Substring(0, 1);                  //代表正負號
+            string exponent = tem.Substring(1, 8);                   //指數
+            string fraction = tem.Substring(9, 23);                  //浮點數值
+            if (sign.Equals("0")) sum = 1f;
+            else sum = -1f;
+            int expo = -127 + Convert.ToInt32(exponent, 2);     //計算指數值
+            float frac = 1;                                     //有效數位的初始值為1
+            char[] tem_c = fraction.ToCharArray();              //將有效數位轉為char陣列
+            for (int i = 0; i < tem_c.Length; i++){
+                if (tem_c[i] == '1')
+                    frac += (float)Math.Pow(2, -(i + 1));
+            }
+            sum *= (float)(frac * Math.Pow(2, expo));           //計算浮點數(正負值 * 指數加權 * 有效數位)
+            sum = (float)Math.Round(sum, 4);                    //四捨五入到小數點後第二位
+            return sum;
         }
         #endregion
         #region 螢幕截圖

@@ -342,6 +342,201 @@
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="cb_ToolWear_CurrentInput.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Items" xml:space="preserve">
+    <value>未選擇</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Items1" xml:space="preserve">
+    <value>AI0</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Items2" xml:space="preserve">
+    <value>AI1</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Items3" xml:space="preserve">
+    <value>AI2</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Items4" xml:space="preserve">
+    <value>AI3</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Items5" xml:space="preserve">
+    <value>AI4</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Items6" xml:space="preserve">
+    <value>AI5</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Items7" xml:space="preserve">
+    <value>AI6</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Items8" xml:space="preserve">
+    <value>AI7</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Items9" xml:space="preserve">
+    <value>AI8</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 162</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 37</value>
+  </data>
+  <data name="cb_ToolWear_CurrentInput.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWear_CurrentInput.Name" xml:space="preserve">
+    <value>cb_ToolWear_CurrentInput</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWear_CurrentInput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWear_CurrentInput.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWear_CurrentInput.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label51.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label51.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label51.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 116</value>
+  </data>
+  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 38</value>
+  </data>
+  <data name="label51.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="label51.Text" xml:space="preserve">
+    <value>訊號輸入</value>
+  </data>
+  <data name="&gt;&gt;label51.Name" xml:space="preserve">
+    <value>label51</value>
+  </data>
+  <data name="&gt;&gt;label51.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label51.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;label51.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tb_ToolWear_CurrentIP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 65</value>
+  </data>
+  <data name="tb_ToolWear_CurrentIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 34</value>
+  </data>
+  <data name="tb_ToolWear_CurrentIP.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;tb_ToolWear_CurrentIP.Name" xml:space="preserve">
+    <value>tb_ToolWear_CurrentIP</value>
+  </data>
+  <data name="&gt;&gt;tb_ToolWear_CurrentIP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_ToolWear_CurrentIP.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;tb_ToolWear_CurrentIP.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label50.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label50.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label50.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label50.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 24</value>
+  </data>
+  <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 38</value>
+  </data>
+  <data name="label50.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="label50.Text" xml:space="preserve">
+    <value>電流IP</value>
+  </data>
+  <data name="&gt;&gt;label50.Name" xml:space="preserve">
+    <value>label50</value>
+  </data>
+  <data name="&gt;&gt;label50.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label50.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;label50.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>497, 268</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>447, 348</value>
+  </data>
+  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 38</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>加速規</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btn_ToolWearSetting_Research.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -352,7 +547,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_ToolWearSetting_Research.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 533</value>
+    <value>252, 264</value>
   </data>
   <data name="btn_ToolWearSetting_Research.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 38</value>
@@ -367,10 +562,34 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_Research.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_Research.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="physicalChannelComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="physicalChannelComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 264</value>
+  </data>
+  <data name="physicalChannelComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 37</value>
+  </data>
+  <data name="physicalChannelComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;physicalChannelComboBox.Name" xml:space="preserve">
+    <value>physicalChannelComboBox</value>
+  </data>
+  <data name="&gt;&gt;physicalChannelComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;physicalChannelComboBox.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;physicalChannelComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -382,7 +601,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 296</value>
+    <value>296, 27</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 38</value>
@@ -400,13 +619,46 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 223</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 38</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>訊號輸入</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="tb_ToolWearSetting_name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 334</value>
+    <value>303, 65</value>
   </data>
   <data name="tb_ToolWearSetting_name.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 34</value>
@@ -421,10 +673,157 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tb_ToolWearSetting_name.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;tb_ToolWearSetting_name.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
+  </data>
+  <data name="cb_ToolWearSetting_Axial.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="cb_ToolWearSetting_Axial.Items" xml:space="preserve">
+    <value>未選擇</value>
+  </data>
+  <data name="cb_ToolWearSetting_Axial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 161</value>
+  </data>
+  <data name="cb_ToolWearSetting_Axial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 37</value>
+  </data>
+  <data name="cb_ToolWearSetting_Axial.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_Axial.Name" xml:space="preserve">
+    <value>cb_ToolWearSetting_Axial</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_Axial.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_Axial.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_Axial.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cb_ToolWearSetting_accelerometer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 13.8pt</value>
+  </data>
+  <data name="cb_ToolWearSetting_accelerometer.Items" xml:space="preserve">
+    <value>未選擇</value>
+  </data>
+  <data name="cb_ToolWearSetting_accelerometer.Items1" xml:space="preserve">
+    <value>單軸</value>
+  </data>
+  <data name="cb_ToolWearSetting_accelerometer.Items2" xml:space="preserve">
+    <value>三軸</value>
+  </data>
+  <data name="cb_ToolWearSetting_accelerometer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 65</value>
+  </data>
+  <data name="cb_ToolWearSetting_accelerometer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 37</value>
+  </data>
+  <data name="cb_ToolWearSetting_accelerometer.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.Name" xml:space="preserve">
+    <value>cb_ToolWearSetting_accelerometer</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btn_ToolWearSetting_ViewModule.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ToolWearSetting_ViewModule.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_ToolWearSetting_ViewModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ToolWearSetting_ViewModule.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 158</value>
+  </data>
+  <data name="btn_ToolWearSetting_ViewModule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 40</value>
+  </data>
+  <data name="btn_ToolWearSetting_ViewModule.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btn_ToolWearSetting_ViewModule.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.Name" xml:space="preserve">
+    <value>btn_ToolWearSetting_ViewModule</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 116</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 38</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>軸向</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 268</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 348</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>panel_ToolWearSetting</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btn_ToolWearSetting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -454,7 +853,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_save.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="btn_ToolWearSetting_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -484,7 +883,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_delete.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="btn_ToolWearSetting_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -517,7 +916,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_20.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="btn_ToolWearSetting_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -550,7 +949,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_19.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="btn_ToolWearSetting_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -583,7 +982,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_18.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="btn_ToolWearSetting_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -616,7 +1015,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_17.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="btn_ToolWearSetting_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -649,7 +1048,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_16.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="btn_ToolWearSetting_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -682,7 +1081,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_15.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="btn_ToolWearSetting_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -715,7 +1114,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_14.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="btn_ToolWearSetting_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -748,7 +1147,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_13.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="btn_ToolWearSetting_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -781,7 +1180,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_12.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="btn_ToolWearSetting_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -814,7 +1213,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_11.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="btn_ToolWearSetting_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -847,7 +1246,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_10.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="btn_ToolWearSetting_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -880,7 +1279,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_09.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="btn_ToolWearSetting_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -913,7 +1312,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_08.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
   <data name="btn_ToolWearSetting_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -946,7 +1345,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_07.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>17</value>
   </data>
   <data name="btn_ToolWearSetting_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -979,7 +1378,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_06.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>18</value>
   </data>
   <data name="btn_ToolWearSetting_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1012,7 +1411,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_05.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>19</value>
   </data>
   <data name="btn_ToolWearSetting_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1045,7 +1444,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_04.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>20</value>
   </data>
   <data name="btn_ToolWearSetting_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1078,7 +1477,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_03.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>21</value>
   </data>
   <data name="btn_ToolWearSetting_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1111,7 +1510,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_02.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>22</value>
   </data>
   <data name="btn_ToolWearSetting_01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1144,133 +1543,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_01.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 18pt</value>
-  </data>
-  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 293</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 38</value>
-  </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>加速規</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="cb_ToolWearSetting_accelerometer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 13.8pt</value>
-  </data>
-  <data name="cb_ToolWearSetting_accelerometer.Items" xml:space="preserve">
-    <value>未選擇</value>
-  </data>
-  <data name="cb_ToolWearSetting_accelerometer.Items1" xml:space="preserve">
-    <value>單軸</value>
-  </data>
-  <data name="cb_ToolWearSetting_accelerometer.Items2" xml:space="preserve">
-    <value>三軸</value>
-  </data>
-  <data name="cb_ToolWearSetting_accelerometer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 334</value>
-  </data>
-  <data name="cb_ToolWearSetting_accelerometer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 37</value>
-  </data>
-  <data name="cb_ToolWearSetting_accelerometer.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.Name" xml:space="preserve">
-    <value>cb_ToolWearSetting_accelerometer</value>
-  </data>
-  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;cb_ToolWearSetting_accelerometer.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 18pt</value>
-  </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 389</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 38</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>軸向</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="cb_ToolWearSetting_Axial.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 13.8pt</value>
-  </data>
-  <data name="cb_ToolWearSetting_Axial.Items" xml:space="preserve">
-    <value>未選擇</value>
-  </data>
-  <data name="cb_ToolWearSetting_Axial.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 430</value>
-  </data>
-  <data name="cb_ToolWearSetting_Axial.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 37</value>
-  </data>
-  <data name="cb_ToolWearSetting_Axial.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;cb_ToolWearSetting_Axial.Name" xml:space="preserve">
-    <value>cb_ToolWearSetting_Axial</value>
-  </data>
-  <data name="&gt;&gt;cb_ToolWearSetting_Axial.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cb_ToolWearSetting_Axial.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;cb_ToolWearSetting_Axial.ZOrder" xml:space="preserve">
-    <value>28</value>
   </data>
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1303,97 +1576,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="btn_ToolWearSetting_ViewModule.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ToolWearSetting_ViewModule.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_ToolWearSetting_ViewModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ToolWearSetting_ViewModule.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 332</value>
-  </data>
-  <data name="btn_ToolWearSetting_ViewModule.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 40</value>
-  </data>
-  <data name="btn_ToolWearSetting_ViewModule.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="btn_ToolWearSetting_ViewModule.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.Name" xml:space="preserve">
-    <value>btn_ToolWearSetting_ViewModule</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ToolWearSetting_ViewModule.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 18pt</value>
-  </data>
-  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 492</value>
-  </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 38</value>
-  </data>
-  <data name="label17.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>訊號輸入</value>
-  </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
-  </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="physicalChannelComboBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 13.8pt</value>
-  </data>
-  <data name="physicalChannelComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 533</value>
-  </data>
-  <data name="physicalChannelComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 37</value>
-  </data>
-  <data name="physicalChannelComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;physicalChannelComboBox.Name" xml:space="preserve">
-    <value>physicalChannelComboBox</value>
-  </data>
-  <data name="&gt;&gt;physicalChannelComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;physicalChannelComboBox.Parent" xml:space="preserve">
-    <value>panel_ToolWearSetting</value>
-  </data>
-  <data name="&gt;&gt;physicalChannelComboBox.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>24</value>
   </data>
   <data name="btn_ToolWearSetting_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1423,7 +1606,7 @@
     <value>panel_ToolWearSetting</value>
   </data>
   <data name="&gt;&gt;btn_ToolWearSetting_Back.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>25</value>
   </data>
   <data name="panel_ToolWearSetting.Location" type="System.Drawing.Point, System.Drawing">
     <value>267, 9</value>
@@ -1630,7 +1813,7 @@
     <value>NoControl</value>
   </data>
   <data name="lb_ToolWear_ChartStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 633</value>
+    <value>18, 633</value>
   </data>
   <data name="lb_ToolWear_ChartStatus.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 22</value>
@@ -2619,37 +2802,37 @@
   <data name="&gt;&gt;btn_ToolWear_01.ZOrder" xml:space="preserve">
     <value>33</value>
   </data>
-  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lb_ToolWear_Title.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lb_ToolWear_Title.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 28.2pt</value>
   </data>
-  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lb_ToolWear_Title.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lb_ToolWear_Title.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 17</value>
   </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 61</value>
+  <data name="lb_ToolWear_Title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 61</value>
   </data>
-  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+  <data name="lb_ToolWear_Title.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="label18.Text" xml:space="preserve">
-    <value>磨耗偵測</value>
+  <data name="lb_ToolWear_Title.Text" xml:space="preserve">
+    <value>磨耗偵測(震動)</value>
   </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
+  <data name="&gt;&gt;lb_ToolWear_Title.Name" xml:space="preserve">
+    <value>lb_ToolWear_Title</value>
   </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_ToolWear_Title.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lb_ToolWear_Title.Parent" xml:space="preserve">
     <value>panel_ToolWear</value>
   </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lb_ToolWear_Title.ZOrder" xml:space="preserve">
     <value>34</value>
   </data>
   <data name="btn_ToolWear_Change.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -2775,6 +2958,30 @@
   <data name="&gt;&gt;btn_ToolWear_Start.ZOrder" xml:space="preserve">
     <value>38</value>
   </data>
+  <data name="chart_Current.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 263</value>
+  </data>
+  <data name="chart_Current.Size" type="System.Drawing.Size, System.Drawing">
+    <value>654, 395</value>
+  </data>
+  <data name="chart_Current.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="chart_Current.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;chart_Current.Name" xml:space="preserve">
+    <value>chart_Current</value>
+  </data>
+  <data name="&gt;&gt;chart_Current.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Current.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_Current.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
   <data name="chart_Blade.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 263</value>
   </data>
@@ -2800,7 +3007,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;chart_Blade.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>40</value>
   </data>
   <data name="chart_FFT.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 263</value>
@@ -2827,7 +3034,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;chart_FFT.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>41</value>
   </data>
   <data name="chart_ToolWear.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 263</value>
@@ -2851,7 +3058,7 @@
     <value>panel_ToolWear</value>
   </data>
   <data name="&gt;&gt;chart_ToolWear.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>42</value>
   </data>
   <data name="panel_ToolWear.Location" type="System.Drawing.Point, System.Drawing">
     <value>267, 9</value>
@@ -2940,37 +3147,37 @@
   <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btn_ChangeMode.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="button6.Enabled" type="System.Boolean, mscorlib">
+  <data name="btn_ChangeMode.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="button6.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btn_ChangeMode.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_ChangeMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_ChangeMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>143, 271</value>
   </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_ChangeMode.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 125</value>
   </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_ChangeMode.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
+  <data name="&gt;&gt;btn_ChangeMode.Name" xml:space="preserve">
+    <value>btn_ChangeMode</value>
   </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_ChangeMode.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_ChangeMode.Parent" xml:space="preserve">
     <value>panel_Home</value>
   </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_ChangeMode.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="button7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -12654,6 +12861,9 @@
   <metadata name="timer_LNC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>314, 17</value>
   </metadata>
+  <metadata name="timer_Current.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>418, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -12664,7 +12874,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1266, 786</value>
+    <value>1258, 778</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
@@ -12688,6 +12898,12 @@
     <value>timer_LNC</value>
   </data>
   <data name="&gt;&gt;timer_LNC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer_Current.Name" xml:space="preserve">
+    <value>timer_Current</value>
+  </data>
+  <data name="&gt;&gt;timer_Current.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

@@ -333,6 +333,26 @@ namespace ToolWear.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap wd_menubtn_current {
+            get {
+                object obj = ResourceManager.GetObject("wd_menubtn_current", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap wd_menubtn_vibration {
+            get {
+                object obj = ResourceManager.GetObject("wd_menubtn_vibration", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap wd_s_btn_delete {
             get {
                 object obj = ResourceManager.GetObject("wd_s_btn_delete", resourceCulture);
