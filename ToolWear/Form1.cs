@@ -237,7 +237,8 @@ namespace ToolWear{
                     tem = "正在搜尋DAQ訊號輸入...";
                     break;
                 case 2:
-                    DAQPhysicalChannels();
+                    Thread TD_DAQChannel = new Thread(DAQPhysicalChannels);
+                    TD_DAQChannel.Start();
                     tem = "DAQ訊號輸入搜尋完畢";
                     break;
                 case 3:
@@ -1926,6 +1927,12 @@ namespace ToolWear{
             }
         }
         #endregion
+        #region 縮小視窗
+        private void FormBorderMode(object sender,EventArgs e){
+            //縮小視窗
+            this.WindowState = FormWindowState.Minimized;
+        }
+        #endregion
         #endregion
         #region 20顆按鈕事件
         #region 磨耗偵測
@@ -2673,14 +2680,27 @@ namespace ToolWear{
         private int Chart_max = 4000;   //波形圖樣本數
         private int average = 1;        //幾個取樣數顯示成一個點位(必須可整除取樣數)
         private double minimumValueNumeric = -5, maximumValueNumeric = 5, sensitivityNumeric = 10.01, excitationValueNumeric = 0.002;
+        delegate void DAQChannelDelegate();
         private void DAQPhysicalChannels(){
-            physicalChannelComboBox.Items.Clear();
-            physicalChannelComboBox.Items.Add("請選擇訊號輸入");
-            //DAQ實體訊號輸入端點讀取
-            dataTable = new DataTable();
-            physicalChannelComboBox.Items.AddRange(DaqSystem.Local.GetPhysicalChannels(PhysicalChannelTypes.AI, PhysicalChannelAccess.External));
-            if (physicalChannelComboBox.Items.Count > 0)
-                physicalChannelComboBox.SelectedIndex = 0;
+            if (this.InvokeRequired){
+                DAQChannelDelegate DAQD = new DAQChannelDelegate(DAQPhysicalChannels);
+                this.Invoke(DAQD);
+            }
+            else{
+                physicalChannelComboBox.Items.Clear();
+                physicalChannelComboBox.Items.Add("請選擇訊號輸入");
+                //DAQ實體訊號輸入端點讀取
+                dataTable = new DataTable();
+                try{
+                    physicalChannelComboBox.Items.AddRange(DaqSystem.Local.GetPhysicalChannels(PhysicalChannelTypes.AI, PhysicalChannelAccess.External));
+                    if (physicalChannelComboBox.Items.Count > 0)
+                        physicalChannelComboBox.SelectedIndex = 0;
+                }
+                catch{
+                    tb_Load_log.Text += "DAQ訊號讀取失敗。\n";
+                }
+            }
+            
         }
         /// <summary>
         /// DAQ參數初始化
