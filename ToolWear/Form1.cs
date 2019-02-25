@@ -328,6 +328,8 @@ namespace ToolWear{
                 btn_ToolWear_Choose((object)btn_ToolWear_01, null);
             else
                 btn_ToolWear_Choose((object)pre_ToolWear, null);
+            //重置偵測模式(震動/電流)
+            btn_ChangeMode_Click(null, null);
         }
         private void btn_BackHome(object sender, EventArgs e){
             panel_Home.Visible = true;
@@ -348,6 +350,9 @@ namespace ToolWear{
             panel_ToolWear.Visible = true;
             panel_Threshold.Visible = false;
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
+            //開啟模式切換按鈕
+            btn_ChangeMode.Enabled = true;
+            btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.wd_menubtn_current;
         }
         //磨耗偵測 > 選擇工件 > 回上一頁
         private void btn_SelectParts_Back_Click(object sender,EventArgs e){
@@ -1292,12 +1297,12 @@ namespace ToolWear{
             }
             chart_Blade.Series[0].Points.Clear();
             //取得主軸轉數
-            int Tool_rate = 0;
+            int Tool_rate = 2500;
             if (machine_connect == false) Tool_rate = 2500; //如果主軸轉數為0則使用預設轉數
             else Tool_rate = int.Parse(lb_ToolWear_FeedSpeed.Text.Split(' ')[0]);
             //取得刀具刃數
             StreamReader sr_ATC = new StreamReader(path + @"\data\ATC.cp");
-            int Tool_Blade = 0;     //刀具刃數
+            int Tool_Blade = 4;     //刀具刃數
             for (int i = 0; i <= now_Match; i++){
                 //讀取範例 1,test,4
                 //編號,名稱,刃數
@@ -2652,12 +2657,12 @@ namespace ToolWear{
             Current_Getdata("33");
         }
         private void timer_CNC_Tick(object sender,EventArgs e){
-            int FeedSpeed = Mitsubishi_GetFeedSpeed();
-            int ATCStatus = Mitsubishi_GetATCStatus();
-            lb_ToolWear_FeedSpeed.Text = FeedSpeed.ToString() + " RPM";
-            lb_Learn_FeedSpeed.Text = FeedSpeed.ToString() + " RPM";
-            lb_ToolWear_Tool.Text = ATCStatus.ToString();
-            lb_Learn_Tool.Text = ATCStatus.ToString();
+            ATC_RPM = Mitsubishi_GetFeedSpeed();
+            ATC_Status = Mitsubishi_GetATCStatus();
+            lb_ToolWear_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
+            lb_Learn_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
+            lb_ToolWear_Tool.Text = ATC_Status.ToString();
+            lb_Learn_Tool.Text = ATC_Status.ToString();
         }
         #endregion
         #region DAQ資料讀取
