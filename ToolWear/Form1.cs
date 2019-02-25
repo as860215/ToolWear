@@ -323,13 +323,15 @@ namespace ToolWear{
             //震動/電流切換按鈕啟動
             btn_ChangeMode.Enabled = true;
             btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.wd_menubtn_current;
+            //重置偵測模式(震動/電流)
+            lb_ToolWear_Title.Text = "磨耗偵測(電流)";
+            btn_ChangeMode_Click(null, null);
+
             //預設選擇第一個按鈕
-            if(pre_ToolWear == null)
+            if (pre_ToolWear == null)
                 btn_ToolWear_Choose((object)btn_ToolWear_01, null);
             else
                 btn_ToolWear_Choose((object)pre_ToolWear, null);
-            //重置偵測模式(震動/電流)
-            btn_ChangeMode_Click(null, null);
         }
         private void btn_BackHome(object sender, EventArgs e){
             panel_Home.Visible = true;
@@ -523,7 +525,7 @@ namespace ToolWear{
 
 
             //判斷是否要讀取電流資訊
-            if (!tb_ToolWear_CurrentIP.Equals("")){
+            if (!string.IsNullOrWhiteSpace(tb_ToolWear_CurrentIP.Text)){
                 Current_Connect();
                 if(modbusClient.Connected == true) timer_Current.Enabled = true;
             }
@@ -1300,6 +1302,8 @@ namespace ToolWear{
             int Tool_rate = 2500;
             if (machine_connect == false) Tool_rate = 2500; //如果主軸轉數為0則使用預設轉數
             else Tool_rate = int.Parse(lb_ToolWear_FeedSpeed.Text.Split(' ')[0]);
+            //強制設定頻率為2500
+            Tool_rate = 2500;
             //取得刀具刃數
             StreamReader sr_ATC = new StreamReader(path + @"\data\ATC.cp");
             int Tool_Blade = 4;     //刀具刃數
@@ -1952,7 +1956,8 @@ namespace ToolWear{
             //目前只能單軸偵測
             for(int i = 0; i < 20; i++){
                 if(ToolWear_bool[i] == true){
-                    MessageBox.Show("Beta階段只允許單軸偵測，請先關閉當前正在偵測的軸向再點選其他按鈕。", "嘗試選取多軸向", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //MessageBox.Show("Beta階段只允許單軸偵測，請先關閉當前正在偵測的軸向再點選其他按鈕。", "嘗試選取多軸向", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Write_Log("緊急", "目前只允許單軸偵測，請先關閉當前正在偵測的軸向再點選其他按鈕。");
                     return;
                 }
             }
@@ -2678,10 +2683,10 @@ namespace ToolWear{
         private AsyncCallback analogCallback;
         private AnalogWaveform<double>[] data;
         private string DAQ_Now = "";    //紀錄現在資料擷取是用在何處
-        private double samplesPerChannelNumeric_base = 2000;  //取樣數(基準)
-        private double rateNumeric_base = 10000;  //頻率(基準)
-        private double samplesPerChannelNumeric = 2000;  //取樣數
-        private double rateNumeric = 10000;  //頻率
+        private double samplesPerChannelNumeric_base = 800;  //取樣數(基準)
+        private double rateNumeric_base = 4000;  //頻率(基準)
+        private double samplesPerChannelNumeric = 800;  //取樣數
+        private double rateNumeric = 4000;  //頻率
         private int Chart_max = 4000;   //波形圖樣本數
         private int average = 1;        //幾個取樣數顯示成一個點位(必須可整除取樣數)
         private double minimumValueNumeric = -5, maximumValueNumeric = 5, sensitivityNumeric = 10.01, excitationValueNumeric = 0.002;
@@ -2778,7 +2783,8 @@ namespace ToolWear{
                     }
                     else
                     {
-                        MessageBox.Show(exception.Message);
+                        Write_Log("系統","DAQ正在嘗試自我修復...");
+                        //MessageBox.Show(exception.Message);
                         TaskStop();
                         //嘗試自我修復
                         DAQInitialize(DAQ_Now);
@@ -2824,11 +2830,13 @@ namespace ToolWear{
                         analogCallback, myTask, data);
                 }
             }
-            catch (DaqException exception)
-            {
+            catch (DaqException exception){
                 // Display Errors
-                MessageBox.Show(exception.Message);
+                //MessageBox.Show(exception.Message);
+                Write_Log("系統", "DAQ正在嘗試自我修復。");
                 TaskStop();
+                //嘗試自我修復
+                DAQInitialize(DAQ_Now);
                 //if (Match_Bool == false)
                 //{
                 //    timer_F.Enabled = false;
@@ -3072,8 +3080,9 @@ namespace ToolWear{
 
                     rc = CLNCc.lnc_svi_get_td_data(gNid, TDLength, ref parrTDData[0], ref numTD);
                     
-                    if (LNC_Data.Count >= Chart_max)
+                    while(LNC_Data.Count >= Chart_max){
                         LNC_Data.RemoveRange(0, 500);
+                    }
                     for (i = 0;  i < numTD; i += 3){
                         if (i > 3000) break;
                         dt_LNC.Rows.Add(parrTDData[i].ToString());
@@ -3155,7 +3164,7 @@ namespace ToolWear{
                 modbusClient.Connect();     //Connect to Server
             }
             catch (Exception ex) {
-                MessageBox.Show("電流連線失敗。\n\nCurrent_Connect\n\nError code:\n" + ex.ToString(), "連線失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("電流連線失敗。\n請放心，這不會影響您的震動偵測。\n\nCurrent_Connect\n\nError code:\n" + ex.ToString(), "連線失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         //電流 > 取得資料
