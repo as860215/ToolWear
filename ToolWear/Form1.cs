@@ -700,7 +700,7 @@ namespace ToolWear{
                         if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))){
                             //ex.LS-xxx00-0_2500
                             //將前方抬頭刪掉
-                            Blade_FileName = path_s.Split('-')[1] + path_s.Split('-')[2];
+                            Blade_FileName = path_s.Split('-')[1] + "-" + path_s.Split('-')[2];
                             break;
                         }
                     }
@@ -735,7 +735,7 @@ namespace ToolWear{
                         if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))){
                             //ex.LS-xxx00-0_2500
                             //將前方抬頭刪掉
-                            Blade_FileName = path_s.Split('-')[1] + path_s.Split('-')[2];
+                            Blade_FileName = path_s.Split('-')[1] + "-" + path_s.Split('-')[2];
                             break;
                         }
                     }
@@ -769,7 +769,7 @@ namespace ToolWear{
                     if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))){
                         //ex.LS-xxx00-0_2500
                         //將前方抬頭刪掉
-                        Blade_FileName = path_s.Split('-')[1] + path_s.Split('-')[2];
+                        Blade_FileName = path_s.Split('-')[1] + "-" + path_s.Split('-')[2];
                         break;
                     }
                 }
@@ -912,9 +912,13 @@ namespace ToolWear{
             btn_Learn_OK.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
             btn_Learn_Start.Enabled = true;
             btn_Learn_OK.Enabled = false;
+            On_Learn = false;
+
+            //如果sender == null，表示非按下按鈕後進入function，為例外事件所進入，因此不顯示臨界值
+            if (sender == null) return;
+
             panel_Threshold.Visible = true;
             panel_Learn.Visible = false;
-            On_Learn = false;
             chart_Learn.Series[0].Points.Clear();
 
             //同步化磨耗偵測與學習模式選取的軸向
@@ -923,8 +927,6 @@ namespace ToolWear{
             btn_ToolWear_09,btn_ToolWear_10,btn_ToolWear_11,btn_ToolWear_12,btn_ToolWear_13,
             btn_ToolWear_14,btn_ToolWear_15,btn_ToolWear_16,btn_ToolWear_17,btn_ToolWear_18,
             btn_ToolWear_19,btn_ToolWear_20};
-
-            //pre_ToolWear = btn_ToolWear[now_learn];
 
             btn_ToolWear_Choose((object)btn_ToolWear[now_learn], null);
 
@@ -1346,11 +1348,25 @@ namespace ToolWear{
             //讀取Module的暫存FFT變數 ： Module_FFT
             List<string> Blade_Module = Module_FFT;
             List<string> Blade_Match = new List<string>();
+            string tem_path = "";
             try{
                 //判斷檔案是否存在
-                string tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
+                tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
                 //若沒有存在則使用預設0刀號
                 if (!File.Exists(tem_path)) tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
+                if (!File.Exists(tem_path)){
+                    //查不到預設檔案，隨便選取一項
+                    foreach (string s in Directory.GetFiles(path + @"data\FFT")){
+                        string path_s = Path.GetFileNameWithoutExtension(s);
+                        if (!path_s.Split('-')[0].Equals("M")) continue;
+                        if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))){
+                            //ex.LS-xxx00-0_2500
+                            //將前方抬頭刪掉
+                            tem_path = path + @"\data\FFT\M-" + path_s.Split('-')[1] + "-" + path_s.Split('-')[2] + ".cp";
+                            break;
+                        }
+                    }
+                }
                 StreamReader sr_match = new StreamReader(tem_path);
                 while (!sr_match.EndOfStream)
                     Blade_Match.Add(sr_match.ReadLine());
@@ -1358,16 +1374,18 @@ namespace ToolWear{
                 sr_match.Dispose();
             }
             catch(Exception ex) {
-                MessageBox.Show("讀取Match檔時發生錯誤。\n\nBlade_Comparison\n\n" + ex.ToString(),"讀取錯誤",MessageBoxButtons.OK,MessageBoxIcon.Error);
+
+                MessageBox.Show("讀取Match檔時發生錯誤。\n\nBlade_Comparison\n\n" + ex.ToString(), "讀取錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             chart_Blade.Series[0].Points.Clear();
             //取得主軸轉數
             int Tool_rate = 2500;
             if (machine_connect == false) Tool_rate = 2500; //如果主軸轉數為0則使用預設轉數
             else Tool_rate = int.Parse(lb_ToolWear_FeedSpeed.Text.Split(' ')[0]);
             //強制設定頻率為2500
-            Tool_rate = 2500;
+            //Tool_rate = 2500;
             //取得刀具刃數
             StreamReader sr_ATC = new StreamReader(path + @"\data\ATC.cp");
             int Tool_Blade = 4;     //刀具刃數
@@ -2004,6 +2022,14 @@ namespace ToolWear{
         private void FormBorderMode(object sender,EventArgs e){
             //縮小視窗
             this.WindowState = FormWindowState.Minimized;
+        }
+        #endregion
+        #region 選擇按鈕(Up/Down)
+        private void btn_ATCsetting_BladeUp_Click(object sender,EventArgs e){
+            numeric_ATCsetting_Blade.Value += 1;
+        }
+        private void btn_ATCsetting_BladeDown_Click(object sender, EventArgs e){
+            numeric_ATCsetting_Blade.Value -= 1;
         }
         #endregion
         #endregion
@@ -2854,6 +2880,7 @@ namespace ToolWear{
                     if(exception.Error == -200431 || exception.Error == -200220){
                         MessageBox.Show("無法初始化選取的訊號輸入，請確認設定檔內的訊號輸入是否正確，\n或是檢查是否有讀取到原先所設置的訊號。", "偵測啟動失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         btn_ToolWear_Stop_Click(null, null);
+                        btn_Learn_OK_Click(null, null);
                     }
                     else
                     {
@@ -2904,7 +2931,7 @@ namespace ToolWear{
                         analogCallback, myTask, data);
                 }
             }
-            catch (DaqException exception){
+            catch{
                 // Display Errors
                 //MessageBox.Show(exception.Message);
                 Write_Log("系統", "DAQ正在嘗試自我修復。");
@@ -3024,8 +3051,8 @@ namespace ToolWear{
                 //判斷檔案是否存在
                 tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
                 //若沒有存在則使用預設0刀號
-                if (!File.Exists(tem_path))
-                    tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
+                //if (!File.Exists(tem_path))
+                //    tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
             }
             else if (mode.Equals("Match")){
                 for (int i = 0; i < ToolWear_bool.Length; i++)
@@ -3033,8 +3060,20 @@ namespace ToolWear{
                         //判斷檔案是否存在
                         tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
                         //若沒有存在則使用預設0刀號
-                        if (!File.Exists(tem_path))
-                            tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
+                        if (!File.Exists(tem_path)){
+                            //查不到預設檔案，隨便選取一項
+                            foreach (string s in Directory.GetFiles(path + @"data\FFT")){
+                                string path_s = Path.GetFileNameWithoutExtension(s);
+                                if (!path_s.Split('-')[0].Equals("M")) continue;
+                                if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (i + 1).ToString("00"))){
+                                    //ex.LS-xxx00-0_2500
+                                    //將前方抬頭刪掉
+                                    tem_path = path + @"\data\FFT\M-" + path_s.Split('-')[1] + "-" + path_s.Split('-')[2] + ".cp";
+                                    break;
+                                }
+                            }
+                        }
+                        //tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
                     }
                        
             }
@@ -3517,7 +3556,7 @@ namespace ToolWear{
                     return;
                 Process.Start(file);
             }
-            catch (Exception ex){
+            catch {
                 MessageBox.Show("無法開啟螢幕鍵盤。", "鍵盤無法啟用", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
