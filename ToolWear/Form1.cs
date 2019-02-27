@@ -138,9 +138,11 @@ namespace ToolWear{
             //關閉所有主選單副組件
             btn_Learn.Enabled = false;
             btn_ChangeMode.Enabled = false;
+            btn_ChangeMode3.Enabled = false;
             //重置所有主選單副組件顯示圖片
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
             btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
+            btn_ChangeMode3.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
         }
         /// <summary>
         /// 初始化資料
@@ -423,7 +425,7 @@ namespace ToolWear{
             panel_Health_Factory.Visible = true;
             panel_Health_AfterSale.Visible = false;
             lb_Health_Title.Text = "健康診斷/出廠檢測";
-            btn_ChangeMode3.BackgroundImage = ToolWear.Properties.Resources.menubtn_h_factory_inspection;
+            btn_ChangeMode3.BackgroundImage = ToolWear.Properties.Resources.menubtn_h_after_sales_inspection;
             btn_ChangeMode3.Enabled = true;
             Health_load();
         }
