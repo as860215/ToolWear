@@ -916,6 +916,18 @@ namespace ToolWear{
             panel_Learn.Visible = false;
             On_Learn = false;
             chart_Learn.Series[0].Points.Clear();
+
+            //同步化磨耗偵測與學習模式選取的軸向
+            Button[] btn_ToolWear = new Button[20] { btn_ToolWear_01, btn_ToolWear_02, btn_ToolWear_03,
+            btn_ToolWear_04,btn_ToolWear_05,btn_ToolWear_06,btn_ToolWear_07,btn_ToolWear_08,
+            btn_ToolWear_09,btn_ToolWear_10,btn_ToolWear_11,btn_ToolWear_12,btn_ToolWear_13,
+            btn_ToolWear_14,btn_ToolWear_15,btn_ToolWear_16,btn_ToolWear_17,btn_ToolWear_18,
+            btn_ToolWear_19,btn_ToolWear_20};
+
+            //pre_ToolWear = btn_ToolWear[now_learn];
+
+            btn_ToolWear_Choose((object)btn_ToolWear[now_learn], null);
+
             //讀取臨界值
             Threshold_Load();
         }
@@ -1336,7 +1348,7 @@ namespace ToolWear{
             List<string> Blade_Match = new List<string>();
             try{
                 //判斷檔案是否存在
-                string tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp";
+                string tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
                 //若沒有存在則使用預設0刀號
                 if (!File.Exists(tem_path)) tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
                 StreamReader sr_match = new StreamReader(tem_path);
@@ -2715,11 +2727,11 @@ namespace ToolWear{
         }
         private void timer_CNC_Tick(object sender,EventArgs e){
             ATC_RPM = Mitsubishi_GetFeedSpeed();
-            ATC_Status = Mitsubishi_GetATCStatus();
+            ATC_num = Mitsubishi_GetATCStatus();
             lb_ToolWear_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
             lb_Learn_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
-            lb_ToolWear_Tool.Text = ATC_Status.ToString();
-            lb_Learn_Tool.Text = ATC_Status.ToString();
+            lb_ToolWear_Tool.Text = ATC_num.ToString();
+            lb_Learn_Tool.Text = ATC_num.ToString();
         }
         private void timer_FakeData_Tick(object sender,EventArgs e){
             machine_connect = true;
@@ -2727,6 +2739,9 @@ namespace ToolWear{
             ATC_RPM = 1000 + ran.Next(0, 501);
             lb_Learn_FeedSpeed.Text = ATC_RPM + " RPM";
             lb_ToolWear_FeedSpeed.Text = ATC_RPM + " RPM";
+            ATC_num = ran.Next(0,6);
+            lb_Learn_Tool.Text = ATC_num.ToString();
+            lb_ToolWear_Tool.Text = ATC_num.ToString();
         }
         #endregion
         #region DAQ資料讀取
@@ -3007,7 +3022,7 @@ namespace ToolWear{
 
             if (mode.Equals("Learn")) {
                 //判斷檔案是否存在
-                tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp";
+                tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
                 //若沒有存在則使用預設0刀號
                 if (!File.Exists(tem_path))
                     tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
@@ -3016,7 +3031,7 @@ namespace ToolWear{
                 for (int i = 0; i < ToolWear_bool.Length; i++)
                     if (ToolWear_bool[i] == true){
                         //判斷檔案是否存在
-                        tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + ATC_Status + "_" + (int)ATC_RPM + ".cp";
+                        tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
                         //若沒有存在則使用預設0刀號
                         if (!File.Exists(tem_path))
                             tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
@@ -3319,8 +3334,6 @@ namespace ToolWear{
                 machine_connect = false;
             return lRet;
         }
-        //暫存刀具編號
-        private int ATC_Status = 0;
         /// <summary>
         /// 三菱控制器 > 取得自動換刀裝置目前使用刀號
         /// </summary>
