@@ -70,6 +70,8 @@ namespace ToolWear{
             chart_Health.Legends.Clear();
             chart_Health_FFT.Legends.Clear();
             chart_Health_Match.Legends.Clear();
+            chart_HealthResult_AfterSale.Legends.Clear();
+            chart_HealthResult_Factory.Legends.Clear();
             //折線圖上下限與x軸最大值預覽
             //chart_FFT.Series[2].Points.AddXY(1, -0.5);
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
@@ -95,6 +97,8 @@ namespace ToolWear{
                 chart_Blade.Series[1].Points.AddXY(i + 1, 0.1);
                 chart_Health_FFT.Series[1].Points.AddXY(i + 1, 0.1);
                 chart_Health_Match.Series[1].Points.AddXY(i + 1, 0.1);
+                chart_HealthResult_AfterSale.Series[1].Points.AddXY(i + 1, 0.1);
+                chart_HealthResult_Factory.Series[1].Points.AddXY(i + 1, 0.1);
             }
             //溫度折線圖
             for (int i = 1; i <= 30; i++){
@@ -128,6 +132,7 @@ namespace ToolWear{
             panel_ATCsetting.Visible = false;
             panel_Health.Visible = false;
             panel_Health_Setting.Visible = false;
+            panel_Health_Result.Visible = false;
             panel_SelectParts.Visible = false;
             panel_AddParts.Visible = false;
             //關閉所有主選單副組件
@@ -1937,27 +1942,70 @@ namespace ToolWear{
         }
         //健康診斷 > 開始
         private void Health_Start(object sender,EventArgs e){
-            DialogResult dialogResult = MessageBox.Show("繼續操作將會覆蓋您原先的設定檔，\n請問要繼續嗎？", "模型重建", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-            if (dialogResult == DialogResult.Cancel) return;
+            //檢查是否有選擇機台型號
+            if (string.IsNullOrWhiteSpace(lb_Health_Machine.Text)){
+                MessageBox.Show("請先至設定頁面選擇機台型號後再開始。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            //出廠檢測模式
+            if(panel_Health_Factory.Visible == true){
+                DialogResult dialogResult = MessageBox.Show("繼續操作將會覆蓋您原先的設定檔，\n請問要繼續嗎？\n(若是第一次建置請無視此訊息)", "模型重建", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (dialogResult == DialogResult.Cancel) return;
 
-            if (panel_Health_Factory.Visible == true) DAQ_Now = "Factory";  //出場檢測
-            else DAQ_Now = "AfterSale"; //售後檢測
+                //重置設定檔
+                StreamWriter sw = new StreamWriter(path + @"data\FFT\Factory_" + lb_Health_Machine.Text + ".cp");
+                sw.WriteLine("-99");
+                sw.Close();
+                sw.Dispose();
+
+                //重置最大值參數
+                tem_Factory_Max.Clear();
+                for (int i = 0; i < samplesPerChannelNumeric_base / 2; i++)
+                    tem_Factory_Max.Add("-99");
+
+                DAQ_Now = "Factory";  //出場檢測
+            }
+            //售後檢測模式
+            else{
+                //重置最大值參數
+                tem_AfterSale_Max.Clear();
+                for (int i = 0; i < samplesPerChannelNumeric_base / 2; i++)
+                    tem_AfterSale_Max.Add("-99");
+
+                //讀取出場檢測資料檔
+                try{
+                    StreamReader sr = new StreamReader(path + @"data\FFT\Factory_" + lb_Health_Machine.Text + ".cp");
+                    tem_Factory_Max.Clear();
+                    while (!sr.EndOfStream)
+                        tem_Factory_Max.Add(sr.ReadLine());
+                    sr.Close();
+                    sr.Dispose();
+                }
+                catch{
+                    //會進到catch表示沒有學習模型
+                    MessageBox.Show("此機器型號沒有出廠資料檔，請先使用出廠檢測取得基準\n資料後再進行售後檢測。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                //重置設定檔
+                StreamWriter sw = new StreamWriter(path + @"data\FFT\AfterSale_" + lb_Health_Machine.Text + ".cp");
+                sw.WriteLine("-99");
+                sw.Close();
+                sw.Dispose();
+
+                //將出場檢測資料繪至折線圖
+                chart_Health_Match.Series[3].Points.Clear();
+                double hz = (double)rateNumeric_base / (double)samplesPerChannelNumeric_base;
+                for (int i = 0; i < tem_Factory_Max.Count; i++)
+                    chart_Health_Match.Series[3].Points.AddXY((i + 1) * hz, tem_Factory_Max[i]);
+
+                DAQ_Now = "AfterSale"; //售後檢測
+            }
 
             //按鈕變更
             btn_Health_Start.Enabled = false;
             btn_Health_Stop.Enabled = true;
             btn_Health_Start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_Health_Stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
-
-            //重置設定檔
-            StreamWriter sw = new StreamWriter(path + @"data\FFT\L-Factory.cp");
-            sw.WriteLine("-99");
-            sw.Close();
-            sw.Dispose();
-
-            //重置最大值參數
-            for (int i = 0; i < samplesPerChannelNumeric_base / 2; i++)
-                tem_Factory_Max.Add("-99");
 
             //開啟Task
             if (runningTask == null){
@@ -2010,6 +2058,72 @@ namespace ToolWear{
                     }
                 }
             }
+        }
+        //健康診斷 > 停止
+        private void Health_Stop(object sender,EventArgs e){
+            //清空Task
+            if (runningTask != null) TaskStop();
+            //重置按鈕
+            btn_Health_Start.Enabled = true;
+            btn_Health_Stop.Enabled = false;
+            btn_Health_Start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+            btn_Health_Stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+
+            //如果是售後檢測模式
+            if (DAQ_Now.Equals("AfterSale")){
+                panel_Dissable();
+                panel_Health_Result.Visible = true;
+                HealthResult_Load();
+            }
+        }
+        //健康診斷 > 檢測結果讀取與計算
+        private void HealthResult_Load(){
+            //重置最大值參數(避免超出陣列問題發生)
+            tem_Factory_Max.Clear();
+            tem_AfterSale_Max.Clear();
+            //清空折線圖
+            chart_HealthResult_Factory.Series[0].Points.Clear();
+            chart_HealthResult_AfterSale.Series[0].Points.Clear();
+            for (int i = 0; i < (int)samplesPerChannelNumeric_base; i++){
+                tem_Factory_Max.Add("-99");
+                tem_AfterSale_Max.Add("-99");
+            }
+            double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+            //讀取出廠數據
+            StreamReader sr_Factory = new StreamReader(path + @"data\FFT\Factory_" + lb_Health_Machine.Text + ".cp");
+            int sr_Factory_Count = 0;
+            while (!sr_Factory.EndOfStream){
+                string tem = sr_Factory.ReadLine();
+                tem_Factory_Max[sr_Factory_Count] = tem;
+                sr_Factory_Count++;
+                chart_HealthResult_Factory.Series[0].Points.AddXY(sr_Factory_Count * hz, tem);
+            }
+            sr_Factory.Close();
+            sr_Factory.Dispose();
+            //讀取售後數據
+            StreamReader sr_AfterSale = new StreamReader(path + @"data\FFT\AfterSale_" + lb_Health_Machine.Text + ".cp");
+            int sr_AfterSale_Count = 0;
+            while (!sr_AfterSale.EndOfStream){
+                string tem = sr_AfterSale.ReadLine();
+                tem_AfterSale_Max[sr_AfterSale_Count] = tem;
+                sr_AfterSale_Count++;
+                chart_HealthResult_AfterSale.Series[0].Points.AddXY(sr_AfterSale_Count * hz, tem);
+            }
+            sr_AfterSale.Close();
+            sr_AfterSale.Dispose();
+            //讀取設定檔內的可容忍範圍
+            StreamReader sr_Health = new StreamReader(path + @"data\health.cp");
+            double range = double.Parse(sr_Health.ReadLine().Split(',')[2]) * 0.01;
+            sr_Health.Close();
+            sr_Health.Dispose();
+            //比對圖形
+            int over_count = 0;  //暫存總共有幾筆頻率在設定值內
+            for(int i = 0;i< tem_Factory_Max.Count; i++){
+                //在設定值就將暫存值+1
+                if((double.Parse(tem_AfterSale_Max[i]) * (1 + range)) < double.Parse(tem_Factory_Max[i]))
+                    over_count++;
+            }
+            lb_HealthResult_Result.Text = string.Format("在檢測震幅範圍{0} %之下的合格率為{1} %", range * 100, 100 - (((double)over_count / (double)tem_Factory_Max.Count) * 100));
         }
         #endregion
         #region 選擇工件/新增工件
@@ -3155,6 +3269,8 @@ namespace ToolWear{
         private List<string> tem_Match_DT = new List<string>();
         private List<string> tem_Factory_DT = new List<string>();
         private List<string> tem_Factory_Max = new List<string>();
+        private List<string> tem_AfterSale_DT = new List<string>();
+        private List<string> tem_AfterSale_Max = new List<string>();
         private void dataToDataTable(AnalogWaveform<double>[] sourceArray, ref DataTable dataTable){
             // Iterate over channels
             int currentLineIndex = 0;
@@ -3209,6 +3325,7 @@ namespace ToolWear{
             }
             else if (DAQ_Now.Equals("Factory")){
                 #region 健康診斷/出場檢測
+                //繪製折線圖
                 if (tem_Factory_DT.Count > Chart_max - 1) tem_Factory_DT.RemoveRange(0, (int)samplesPerChannelNumeric_base);
                 try { chart_Health.Series[0].Points.Clear(); }
                 catch { }
@@ -3219,7 +3336,7 @@ namespace ToolWear{
                     chart_Health.Series[0].Points.AddXY(i + 1, tem_Factory_DT[i]);
                 }
                 //讀取最大值檔案
-                StreamReader sr = new StreamReader(path + @"data\FFT\L-Factory.cp");
+                StreamReader sr = new StreamReader(path + @"data\FFT\Factory_" + lb_Health_Machine.Text + ".cp");
                 int sr_count = 0;
                 while (!sr.EndOfStream){
                     tem_Factory_Max[sr_count] = sr.ReadLine();
@@ -3239,14 +3356,14 @@ namespace ToolWear{
                 for (int i = 0; i < (int)samplesPerChannelNumeric_base / 2; i++){
                     double mag = (4.0 / (int)samplesPerChannelNumeric_base) * (Math.Abs(Math.Sqrt(Math.Pow(samples[i].Real, 2)
                         + Math.Pow(samples[i].Imaginary, 2))));
-                    double hz = (double)rateNumeric / (int)samplesPerChannelNumeric_base;
+                    double hz = (double)rateNumeric_base / (double)samplesPerChannelNumeric_base;
                     chart_Health_FFT.Series[0].Points.AddXY(hz * (i + 1), mag);
                     //找尋最大值
                     if (mag > double.Parse(tem_Factory_Max[i]))
                         tem_Factory_Max[i] = mag.ToString();
                 }
                 //寫回最大值檔案
-                StreamWriter sw_Max = new StreamWriter(path + @"data\FFT\L-Factory.cp");
+                StreamWriter sw_Max = new StreamWriter(path + @"data\FFT\Factory_" + lb_Health_Machine.Text + ".cp");
                 for (int i = 0; i < tem_Factory_Max.Count; i++){
                     sw_Max.WriteLine(tem_Factory_Max[i]);
                 }
@@ -3257,6 +3374,48 @@ namespace ToolWear{
             else if (DAQ_Now.Equals("AfterSale")){
                 #region 健康診斷/售後檢測
 
+                //儲存原始震動資料
+                if (tem_AfterSale_DT.Count > Chart_max - 1) tem_AfterSale_DT.RemoveRange(0, (int)samplesPerChannelNumeric_base);
+                for (int i = 0; i < (int)samplesPerChannelNumeric_base; i++){
+                    tem_AfterSale_DT.Add(dataTable.Rows[i][0].ToString());
+                }
+
+                //讀取最大值檔案
+                StreamReader sr = new StreamReader(path + @"data\FFT\AfterSale_" + lb_Health_Machine.Text + ".cp");
+                int sr_count = 0;
+                while (!sr.EndOfStream){
+                    tem_AfterSale_Max[sr_count] = sr.ReadLine();
+                    sr_count++;
+                }
+                sr.Close();
+                sr.Dispose();
+
+                //FFT
+                Complex[] samples = new Complex[(int)samplesPerChannelNumeric_base];
+                for (int i = 0; i < (int)samplesPerChannelNumeric_base; i++)
+                    samples[i] = new Complex(double.Parse(dataTable.Rows[i][0].ToString()), 0);
+                try
+                { chart_Health_Match.Series[0].Points.Clear(); }
+                catch
+                { }
+                Fourier.Forward(samples, FourierOptions.NoScaling);
+                for (int i = 0; i < (int)samplesPerChannelNumeric_base / 2; i++){
+                    double mag = (4.0 / (int)samplesPerChannelNumeric_base) * (Math.Abs(Math.Sqrt(Math.Pow(samples[i].Real, 2)
+                        + Math.Pow(samples[i].Imaginary, 2))));
+                    double hz = (double)rateNumeric_base / (double)samplesPerChannelNumeric_base;
+                    chart_Health_Match.Series[0].Points.AddXY(hz * (i + 1), mag);
+                    //找尋最大值
+                    if (mag > double.Parse(tem_AfterSale_Max[i]))
+                        tem_AfterSale_Max[i] = mag.ToString();
+                }
+
+                //寫回最大值檔案
+                StreamWriter sw_Max = new StreamWriter(path + @"data\FFT\AfterSale_" + lb_Health_Machine.Text + ".cp");
+                for (int i = 0; i < tem_AfterSale_Max.Count; i++){
+                    sw_Max.WriteLine(tem_AfterSale_Max[i]);
+                }
+                sw_Max.Close();
+                sw_Max.Dispose();
                 #endregion
             }
         }
