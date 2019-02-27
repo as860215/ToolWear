@@ -121,6 +121,7 @@ namespace ToolWear{
             panel_Loading.Visible = false;
             panel_ATCsetting.Visible = false;
             panel_Health.Visible = false;
+            panel_Health_Setting.Visible = false;
             panel_SelectParts.Visible = false;
             panel_AddParts.Visible = false;
             //關閉所有主選單副組件
@@ -403,6 +404,22 @@ namespace ToolWear{
         private void btn_ViewModule_Back_Click(object sender, EventArgs e){
             panel_ToolWearSetting.Visible = true;
             panel_ViewModule.Visible = false;
+        }
+        //主選單 > 健康診斷
+        private void btn_Health_Click(object sender,EventArgs e){
+            panel_Dissable();
+            panel_Health.Visible = true;
+            Health_load();
+        }
+        //主選單 > 健康診斷 > 設定
+        private void btn_Health_Setting_Click(object sender, EventArgs e){
+            panel_Dissable();
+            panel_Health_Setting.Visible = true;
+        }
+        //主選單 > 健康診斷 > 設定 > 回上一頁
+        private void btn_HealthSetting_Back_Click(object sender, EventArgs e){
+            panel_Dissable();
+            panel_Health.Visible = true;
         }
         //主選單 > 刀庫
         private void btn_ATCsetting_Click(object sender, EventArgs e){
@@ -1806,6 +1823,87 @@ namespace ToolWear{
             }
         }
         #endregion
+        #region 健康診斷
+        //健康診斷 > 讀取資料
+        private void Health_load(){
+            //先重整頻道
+            Health_ChannelLoad(null,null);
+            try{
+                StreamReader sr = new StreamReader(path + @"data\health.cp");
+                string tem = sr.ReadLine();
+                //檢查廠牌資料
+                for(int i = 0; i < cb_HealthSetting_Machine.Items.Count; i++){
+                    cb_HealthSetting_Machine.SelectedIndex = i;
+                    if (tem.Split(',')[0].Equals(cb_HealthSetting_Machine.Text)) break;
+                    //如果搜尋到最後都沒查到符合的
+                    if(i == cb_HealthSetting_Machine.Items.Count - 1){
+                        cb_HealthSetting_Machine.SelectedIndex = 0;
+                    }
+                }
+                //檢查訊號輸入
+                for(int i = 0; i < cb_HealthSetting_Channel.Items.Count; i++){
+                    cb_HealthSetting_Channel.SelectedIndex = i;
+                    if (tem.Split(',')[1].Equals(cb_HealthSetting_Channel.Text)) break;
+                    //如果搜尋到最後都沒查到符合的
+                    if (i == cb_HealthSetting_Channel.Items.Count - 1){
+                        cb_HealthSetting_Channel.SelectedIndex = 0;
+                    }
+                }
+                //帶入數值
+                numeric_HealthSetting_Range.Value = decimal.Parse(tem.Split(',')[2]);
+
+                sr.Close();
+                sr.Dispose();
+            }
+            catch(Exception ex){
+                MessageBox.Show("讀取健康診斷資料失敗。\n\nHealth_load\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
+        //健康診斷 > 設定 > 頻道讀取
+        private void Health_ChannelLoad(object sender,EventArgs e){
+            cb_HealthSetting_Channel.Items.Clear();
+            cb_HealthSetting_Channel.Items.Add("請選擇訊號輸入");
+            //DAQ實體訊號輸入端點讀取
+            dataTable = new DataTable();
+            try{
+                cb_HealthSetting_Channel.Items.AddRange(DaqSystem.Local.GetPhysicalChannels(PhysicalChannelTypes.AI, PhysicalChannelAccess.External));
+                if (cb_HealthSetting_Channel.Items.Count > 0)
+                    cb_HealthSetting_Channel.SelectedIndex = 0;
+            }
+            catch{}
+            //如果是按按鈕觸發的(sender != null)，重新讀取資料
+            if (sender != null) Health_load();
+        }
+        //健康診斷 > 設定 > 存檔
+        private void HealthSetting_save(object sender,EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("繼續操作將會覆蓋您之前的設定檔，\n請問要繼續嗎？", "存檔", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Cancel) return;
+            try{
+                StreamWriter sw = new StreamWriter(path + @"data\health.cp");
+                sw.WriteLine(string.Format("{0},{1},{2}", cb_HealthSetting_Machine.Text, cb_HealthSetting_Channel.Text, numeric_HealthSetting_Range.Value));
+                sw.Close();
+                sw.Dispose();
+            }
+            catch (Exception ex){
+                MessageBox.Show("在存檔時發生不可測意外。\n\nHealthSetting_save\n\n" + ex.ToString(), "存檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //健康診斷 > 設定 > 刪除
+        private void HealthSetting_delete(object sender,EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("繼續操作將會刪除您的設定檔，\n請問要繼續嗎？", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            try{
+                StreamWriter sw = new StreamWriter(path + @"data\health.cp");
+                sw.WriteLine(",,0");
+                sw.Close();
+                sw.Dispose();
+            }
+            catch (Exception ex){
+                MessageBox.Show("在刪除設定檔時發生不可測意外。\n\nHealthSetting_delete\n\n" + ex.ToString(), "刪除失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        #endregion
         #region 選擇工件/新增工件
         //磨耗偵測 > 選擇工件 > 讀取資料
         private void SelectParts_LoadData(){
@@ -2030,6 +2128,12 @@ namespace ToolWear{
         }
         private void btn_ATCsetting_BladeDown_Click(object sender, EventArgs e){
             numeric_ATCsetting_Blade.Value -= 1;
+        }
+        private void btn_HealthSetting_Up_Click(object sender,EventArgs e){
+            numeric_HealthSetting_Range.Value += 1;
+        }
+        private void btn_HealthSetting_Down_Click(object sender, EventArgs e){
+            numeric_HealthSetting_Range.Value -= 1;
         }
         #endregion
         #endregion
