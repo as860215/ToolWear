@@ -431,12 +431,12 @@ namespace ToolWear{
         }
         //主選單 > 健康診斷 > 設定
         private void btn_Health_Setting_Click(object sender, EventArgs e){
-            panel_Dissable();
+            panel_Health.Visible = false;
             panel_Health_Setting.Visible = true;
         }
         //主選單 > 健康診斷 > 設定 > 回上一頁
         private void btn_HealthSetting_Back_Click(object sender, EventArgs e){
-            panel_Dissable();
+            panel_Health_Setting.Visible = false;
             panel_Health.Visible = true;
             Health_load();
         }
@@ -688,21 +688,18 @@ namespace ToolWear{
                 chart_ToolWear.Visible = true;
                 chart_FFT.Visible = false;
                 chart_Blade.Visible = false;
-                lb_ToolWear_BladeAve.Visible = false;
                 lb_ToolWear_ChartStatus.Text = "原始數據";
             }
             else if(lb_ToolWear_ChartStatus.Text.Equals("原始數據")){
                 chart_ToolWear.Visible = false;
                 chart_FFT.Visible = true;
                 chart_Blade.Visible = false;
-                lb_ToolWear_BladeAve.Visible = false;
                 lb_ToolWear_ChartStatus.Text = "傅立葉數據";
             }
             else if (lb_ToolWear_ChartStatus.Text.Equals("傅立葉數據")){
                 chart_ToolWear.Visible = false;
                 chart_FFT.Visible = false;
                 chart_Blade.Visible = true;
-                lb_ToolWear_BladeAve.Visible = true;
                 lb_ToolWear_ChartStatus.Text = "刀具頻率";
             }
         }
@@ -887,8 +884,6 @@ namespace ToolWear{
                             List_FFT_Max.Add("-99");
 
                     }
-                    if (Blade_Hz_Mag == 1)
-                        lb_ToolWear_BladeAve.Text = (sum / count).ToString();
                     Blade_Hz_Mag++;
                     count = 0;
                     sum = 0;
@@ -1955,7 +1950,7 @@ namespace ToolWear{
                 if (dialogResult == DialogResult.Cancel) return;
 
                 //重置設定檔
-                StreamWriter sw = new StreamWriter(path + @"data\FFT\Factory_" + lb_Health_Machine.Text + ".cp");
+                StreamWriter sw = new StreamWriter(path + @"data\Health\Factory_" + lb_Health_Machine.Text + ".cp");
                 sw.WriteLine("-99");
                 sw.Close();
                 sw.Dispose();
@@ -1976,7 +1971,7 @@ namespace ToolWear{
 
                 //讀取出場檢測資料檔
                 try{
-                    StreamReader sr = new StreamReader(path + @"data\FFT\Factory_" + lb_Health_Machine.Text + ".cp");
+                    StreamReader sr = new StreamReader(path + @"data\Health\Factory_" + lb_Health_Machine.Text + ".cp");
                     tem_Factory_Max.Clear();
                     while (!sr.EndOfStream)
                         tem_Factory_Max.Add(sr.ReadLine());
@@ -1989,7 +1984,7 @@ namespace ToolWear{
                     return;
                 }
                 //重置設定檔
-                StreamWriter sw = new StreamWriter(path + @"data\FFT\AfterSale_" + lb_Health_Machine.Text + ".cp");
+                StreamWriter sw = new StreamWriter(path + @"data\Health\AfterSale_" + lb_Health_Machine.Text + ".cp");
                 sw.WriteLine("-99");
                 sw.Close();
                 sw.Dispose();
@@ -2091,28 +2086,37 @@ namespace ToolWear{
                 tem_AfterSale_Max.Add("-99");
             }
             double hz = rateNumeric_base / samplesPerChannelNumeric_base;
+            //暫存數據最大值(作為折線圖的高點)
+            double tem_max = 0;
             //讀取出廠數據
-            StreamReader sr_Factory = new StreamReader(path + @"data\FFT\Factory_" + lb_Health_Machine.Text + ".cp");
+            StreamReader sr_Factory = new StreamReader(path + @"data\Health\Factory_" + lb_Health_Machine.Text + ".cp");
             int sr_Factory_Count = 0;
             while (!sr_Factory.EndOfStream){
                 string tem = sr_Factory.ReadLine();
                 tem_Factory_Max[sr_Factory_Count] = tem;
                 sr_Factory_Count++;
                 chart_HealthResult_Factory.Series[0].Points.AddXY(sr_Factory_Count * hz, tem);
+                if(double.Parse(tem) > tem_max)
+                    tem_max = double.Parse(tem);
             }
             sr_Factory.Close();
             sr_Factory.Dispose();
             //讀取售後數據
-            StreamReader sr_AfterSale = new StreamReader(path + @"data\FFT\AfterSale_" + lb_Health_Machine.Text + ".cp");
+            StreamReader sr_AfterSale = new StreamReader(path + @"data\Health\AfterSale_" + lb_Health_Machine.Text + ".cp");
             int sr_AfterSale_Count = 0;
             while (!sr_AfterSale.EndOfStream){
                 string tem = sr_AfterSale.ReadLine();
                 tem_AfterSale_Max[sr_AfterSale_Count] = tem;
                 sr_AfterSale_Count++;
                 chart_HealthResult_AfterSale.Series[0].Points.AddXY(sr_AfterSale_Count * hz, tem);
+                if (double.Parse(tem) > tem_max)
+                    tem_max = double.Parse(tem);
             }
             sr_AfterSale.Close();
             sr_AfterSale.Dispose();
+            //統一兩個折線圖最大值
+            chart_HealthResult_Factory.Series[2].Points.AddXY(sr_Factory_Count * hz, tem_max);
+            chart_HealthResult_AfterSale.Series[2].Points.AddXY(sr_Factory_Count * hz, tem_max);
             //讀取設定檔內的可容忍範圍
             StreamReader sr_Health = new StreamReader(path + @"data\health.cp");
             double range = double.Parse(sr_Health.ReadLine().Split(',')[2]) * 0.01;
@@ -3090,10 +3094,10 @@ namespace ToolWear{
         private void timer_FakeData_Tick(object sender,EventArgs e){
             machine_connect = true;
             Random ran = new Random();
-            ATC_RPM = 1000 + ran.Next(0, 501);
+            ATC_RPM = 1000 + ran.Next(0, 201);
             lb_Learn_FeedSpeed.Text = ATC_RPM + " RPM";
             lb_ToolWear_FeedSpeed.Text = ATC_RPM + " RPM";
-            ATC_num = ran.Next(0,6);
+            ATC_num = ran.Next(1,6);
             lb_Learn_Tool.Text = ATC_num.ToString();
             lb_ToolWear_Tool.Text = ATC_num.ToString();
         }
@@ -3338,7 +3342,7 @@ namespace ToolWear{
                     chart_Health.Series[0].Points.AddXY(i + 1, tem_Factory_DT[i]);
                 }
                 //讀取最大值檔案
-                StreamReader sr = new StreamReader(path + @"data\FFT\Factory_" + lb_Health_Machine.Text + ".cp");
+                StreamReader sr = new StreamReader(path + @"data\Health\Factory_" + lb_Health_Machine.Text + ".cp");
                 int sr_count = 0;
                 while (!sr.EndOfStream){
                     tem_Factory_Max[sr_count] = sr.ReadLine();
@@ -3365,7 +3369,7 @@ namespace ToolWear{
                         tem_Factory_Max[i] = mag.ToString();
                 }
                 //寫回最大值檔案
-                StreamWriter sw_Max = new StreamWriter(path + @"data\FFT\Factory_" + lb_Health_Machine.Text + ".cp");
+                StreamWriter sw_Max = new StreamWriter(path + @"data\Health\Factory_" + lb_Health_Machine.Text + ".cp");
                 for (int i = 0; i < tem_Factory_Max.Count; i++){
                     sw_Max.WriteLine(tem_Factory_Max[i]);
                 }
@@ -3383,7 +3387,7 @@ namespace ToolWear{
                 }
 
                 //讀取最大值檔案
-                StreamReader sr = new StreamReader(path + @"data\FFT\AfterSale_" + lb_Health_Machine.Text + ".cp");
+                StreamReader sr = new StreamReader(path + @"data\Health\AfterSale_" + lb_Health_Machine.Text + ".cp");
                 int sr_count = 0;
                 while (!sr.EndOfStream){
                     tem_AfterSale_Max[sr_count] = sr.ReadLine();
@@ -3412,7 +3416,7 @@ namespace ToolWear{
                 }
 
                 //寫回最大值檔案
-                StreamWriter sw_Max = new StreamWriter(path + @"data\FFT\AfterSale_" + lb_Health_Machine.Text + ".cp");
+                StreamWriter sw_Max = new StreamWriter(path + @"data\Health\AfterSale_" + lb_Health_Machine.Text + ".cp");
                 for (int i = 0; i < tem_AfterSale_Max.Count; i++){
                     sw_Max.WriteLine(tem_AfterSale_Max[i]);
                 }
