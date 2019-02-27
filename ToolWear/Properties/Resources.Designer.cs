@@ -113,6 +113,26 @@ namespace ToolWear.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap menubtn_h_after_sales_inspection {
+            get {
+                object obj = ResourceManager.GetObject("menubtn_h_after_sales_inspection", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap menubtn_h_factory_inspection {
+            get {
+                object obj = ResourceManager.GetObject("menubtn_h_factory_inspection", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap menubtn_health {
             get {
                 object obj = ResourceManager.GetObject("menubtn_health", resourceCulture);

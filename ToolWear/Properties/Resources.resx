@@ -244,4 +244,10 @@
   <data name="wd_menubtn_vibration" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wd_menubtn_vibration.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menubtn_h_after_sales_inspection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menubtn_h_after-sales inspection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menubtn_h_factory_inspection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menubtn_h_factory inspection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -67,6 +67,9 @@ namespace ToolWear{
             chart_warring_2.Legends.Clear();
             chart_Blade.Legends.Clear();
             chart_Current.Legends.Clear();
+            chart_Health.Legends.Clear();
+            chart_Health_FFT.Legends.Clear();
+            chart_Health_Match.Legends.Clear();
             //折線圖上下限與x軸最大值預覽
             //chart_FFT.Series[2].Points.AddXY(1, -0.5);
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
@@ -78,6 +81,7 @@ namespace ToolWear{
             for (int i = 0; i < Chart_max; i++){
                 chart_Learn.Series[2].Points.AddXY(i + 1, Chart_PointMin);
                 chart_ToolWear.Series[2].Points.AddXY(i + 1, Chart_PointMin);
+                chart_Health.Series[2].Points.AddXY(i + 1, Chart_PointMin);
             }
             //警戒折線圖
             for(int i = 0; i < 2000; i++){
@@ -89,6 +93,8 @@ namespace ToolWear{
                 chart_FFT.Series[1].Points.AddXY(i + 1, 0.1);
                 chart_LearnFFT.Series[1].Points.AddXY(i + 1, 0.1);
                 chart_Blade.Series[1].Points.AddXY(i + 1, 0.1);
+                chart_Health_FFT.Series[1].Points.AddXY(i + 1, 0.1);
+                chart_Health_Match.Series[1].Points.AddXY(i + 1, 0.1);
             }
             //溫度折線圖
             for (int i = 1; i <= 30; i++){
@@ -409,6 +415,11 @@ namespace ToolWear{
         private void btn_Health_Click(object sender,EventArgs e){
             panel_Dissable();
             panel_Health.Visible = true;
+            panel_Health_Factory.Visible = true;
+            panel_Health_AfterSale.Visible = false;
+            lb_Health_Title.Text = "健康診斷/出廠檢測";
+            btn_ChangeMode3.BackgroundImage = ToolWear.Properties.Resources.menubtn_h_factory_inspection;
+            btn_ChangeMode3.Enabled = true;
             Health_load();
         }
         //主選單 > 健康診斷 > 設定
@@ -420,6 +431,26 @@ namespace ToolWear{
         private void btn_HealthSetting_Back_Click(object sender, EventArgs e){
             panel_Dissable();
             panel_Health.Visible = true;
+            Health_load();
+        }
+        //健康診斷 > 切換模式
+        private void btn_ChangeMode3_Click(object sender,EventArgs e){
+            if(panel_Health.Visible == true){
+                //如果在出場檢測
+                if(panel_Health_Factory.Visible == true){
+                    panel_Health_Factory.Visible = false;
+                    panel_Health_AfterSale.Visible = true;
+                    lb_Health_Title.Text = "健康診斷/售後檢測";
+                    btn_ChangeMode3.BackgroundImage = ToolWear.Properties.Resources.menubtn_h_factory_inspection;
+                }
+                //在售後檢測狀態
+                else{
+                    panel_Health_Factory.Visible = true;
+                    panel_Health_AfterSale.Visible = false;
+                    lb_Health_Title.Text = "健康診斷/出廠檢測";
+                    btn_ChangeMode3.BackgroundImage = ToolWear.Properties.Resources.menubtn_h_after_sales_inspection;
+                }
+            }
         }
         //主選單 > 刀庫
         private void btn_ATCsetting_Click(object sender, EventArgs e){
@@ -1741,8 +1772,8 @@ namespace ToolWear{
         /// <param name="temperature">溫度</param>
         /// <param name="WriteWhere">發生事故的物件名稱</param>
         private void Thermal_Log(float temperature, string WriteObject){
-            if (temperature > 25.85f) Write_Log("緊急", WriteObject + "軸目前溫度已上升至 " + temperature + "℃");
-            else if (temperature > 25.7f) Write_Log("警告", WriteObject + "軸目前溫度已上升至 " + temperature + "℃");
+            if (temperature > 25.95f) Write_Log("緊急", WriteObject + "軸目前溫度已上升至 " + temperature + "℃");
+            else if (temperature > 25.85f) Write_Log("警告", WriteObject + "軸目前溫度已上升至 " + temperature + "℃");
         }
         //====假資料專用變數====
         bool[] Thermal_bool = new bool[20]; //該軸向是否開啟
@@ -1859,6 +1890,7 @@ namespace ToolWear{
                 MessageBox.Show("讀取健康診斷資料失敗。\n\nHealth_load\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            lb_Health_Machine.Text = cb_HealthSetting_Machine.Text;
         }
         //健康診斷 > 設定 > 頻道讀取
         private void Health_ChannelLoad(object sender,EventArgs e){
@@ -1901,6 +1933,82 @@ namespace ToolWear{
             }
             catch (Exception ex){
                 MessageBox.Show("在刪除設定檔時發生不可測意外。\n\nHealthSetting_delete\n\n" + ex.ToString(), "刪除失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //健康診斷 > 開始
+        private void Health_Start(object sender,EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("繼續操作將會覆蓋您原先的設定檔，\n請問要繼續嗎？", "模型重建", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+
+            if (panel_Health_Factory.Visible == true) DAQ_Now = "Factory";  //出場檢測
+            else DAQ_Now = "AfterSale"; //售後檢測
+
+            //按鈕變更
+            btn_Health_Start.Enabled = false;
+            btn_Health_Stop.Enabled = true;
+            btn_Health_Start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+            btn_Health_Stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+
+            //重置設定檔
+            StreamWriter sw = new StreamWriter(path + @"data\FFT\L-Factory.cp");
+            sw.WriteLine("-99");
+            sw.Close();
+            sw.Dispose();
+
+            //重置最大值參數
+            for (int i = 0; i < samplesPerChannelNumeric_base / 2; i++)
+                tem_Factory_Max.Add("-99");
+
+            //開啟Task
+            if (runningTask == null){
+                try{
+                    samplesPerChannelNumeric = samplesPerChannelNumeric_base + 1; //取樣數偏移
+                    rateNumeric = rateNumeric_base + 1;  //頻率偏移
+                    //TASK設定
+                    sensitivityUnits = AIAccelerometerSensitivityUnits.MillivoltsPerG;
+                    terminalConfiguration = AITerminalConfiguration.Pseudodifferential;
+                    excitationSource = AIExcitationSource.Internal;
+                    inputCoupling = AICoupling.AC;
+                    // Create a new task
+                    myTask = new NationalInstruments.DAQmx.Task();
+                    AIChannel aiChannel;
+                    // Create a virtual channel
+                    aiChannel = myTask.AIChannels.CreateAccelerometerChannel(cb_HealthSetting_Channel.Text, "",
+                        terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
+                        Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
+                        Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
+                    // Setup the input coupling
+                    aiChannel.Coupling = inputCoupling;
+                    // Configure the timing parameters
+                    myTask.Timing.ConfigureSampleClock("", Convert.ToDouble(rateNumeric),
+                        SampleClockActiveEdge.Rising, SampleQuantityMode.ContinuousSamples, (int)samplesPerChannelNumeric);
+                    // Verify the Task
+                    myTask.Control(TaskAction.Verify);
+                    //Prepare the table for Data
+                    InitializeDataTable(myTask.AIChannels, ref dataTable);
+                    runningTask = myTask;
+                    analogInReader = new AnalogMultiChannelReader(myTask.Stream);
+                    analogCallback = new AsyncCallback(AnalogInCallback);
+                    // Use SynchronizeCallbacks to specify that the object 
+                    // marshals callbacks across threads appropriately.
+                    analogInReader.SynchronizeCallbacks = true;
+                    analogInReader.BeginReadWaveform(Convert.ToInt32(samplesPerChannelNumeric), analogCallback, myTask);
+                }
+                catch (DaqException exception){
+                    // Display Errors
+                    if (exception.Error == -200431 || exception.Error == -200220){
+                        MessageBox.Show("無法初始化選取的訊號輸入，請確認設定檔內的訊號輸入是否正確，\n或是檢查是否有讀取到原先所設置的訊號。", "偵測啟動失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        btn_ToolWear_Stop_Click(null, null);
+                        btn_Learn_OK_Click(null, null);
+                    }
+                    else{
+                        Write_Log("系統", "DAQ正在嘗試自我修復...");
+                        //MessageBox.Show(exception.Message);
+                        TaskStop();
+                        //嘗試自我修復
+                        DAQInitialize(DAQ_Now);
+                    }
+                }
             }
         }
         #endregion
@@ -2887,12 +2995,11 @@ namespace ToolWear{
         private AsyncCallback analogCallback;
         private AnalogWaveform<double>[] data;
         private string DAQ_Now = "";    //紀錄現在資料擷取是用在何處
-        private double samplesPerChannelNumeric_base = 800;  //取樣數(基準)
-        private double rateNumeric_base = 4000;  //頻率(基準)
-        private double samplesPerChannelNumeric = 800;  //取樣數
-        private double rateNumeric = 4000;  //頻率
+        private double samplesPerChannelNumeric_base = 400;  //取樣數(基準)
+        private double rateNumeric_base = 2000;  //頻率(基準)
+        private double samplesPerChannelNumeric = 400;  //取樣數
+        private double rateNumeric = 2000;  //頻率
         private int Chart_max = 4000;   //波形圖樣本數
-        private int average = 1;        //幾個取樣數顯示成一個點位(必須可整除取樣數)
         private double minimumValueNumeric = -5, maximumValueNumeric = 5, sensitivityNumeric = 10.01, excitationValueNumeric = 0.002;
         delegate void DAQChannelDelegate();
         private void DAQPhysicalChannels(){
@@ -3042,22 +3149,12 @@ namespace ToolWear{
                 TaskStop();
                 //嘗試自我修復
                 DAQInitialize(DAQ_Now);
-                //if (Match_Bool == false)
-                //{
-                //    timer_F.Enabled = false;
-                //    //自我修復
-                //    btn_ModuleCreate.Text = "開始建置模型";
-                //    btn_ModuleCreate.BackColor = Color.MidnightBlue;
-                //    btn_ModuleCreate_Click(null, null);
-                //}
             }
         }
         private List<string> tem_DT = new List<string>();
         private List<string> tem_Match_DT = new List<string>();
-        //private int Match_count = 1;
-        //private double range = 3; //可接受範圍 (倍率)
-        //private int match_1 = 0;    //於可接受範圍內的點位數量
-        //private int match_Read1 = 0; //比對數值讀取到的筆數
+        private List<string> tem_Factory_DT = new List<string>();
+        private List<string> tem_Factory_Max = new List<string>();
         private void dataToDataTable(AnalogWaveform<double>[] sourceArray, ref DataTable dataTable){
             // Iterate over channels
             int currentLineIndex = 0;
@@ -3072,7 +3169,7 @@ namespace ToolWear{
             //偵測模式下執行
             if (DAQ_Now.Equals("Match")){
                 #region 偵測模式
-                if (tem_Match_DT.Count > Chart_max - 1) tem_Match_DT.RemoveRange(0, ((int)samplesPerChannelNumeric - 1) / average);
+                if (tem_Match_DT.Count > Chart_max - 1) tem_Match_DT.RemoveRange(0, (int)samplesPerChannelNumeric - 1);
                 try { chart_ToolWear.Series[0].Points.Clear(); }
                 catch { }
                 for (int i = 0; i < (int)samplesPerChannelNumeric - 1; i++){
@@ -3090,7 +3187,7 @@ namespace ToolWear{
                 try{
                     FileStream File_module = File.Open(path + @"\data\module.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
                     StreamWriter sw = new StreamWriter(File_module);
-                    if (tem_DT.Count > Chart_max - 1) tem_DT.RemoveRange(0, ((int)samplesPerChannelNumeric - 1) / average);
+                    if (tem_DT.Count > Chart_max - 1) tem_DT.RemoveRange(0, (int)samplesPerChannelNumeric - 1);
                     chart_Learn.Series[0].Points.Clear();
                     for (int i = 0; i < (int)samplesPerChannelNumeric - 1; i++){
                         try{
@@ -3108,6 +3205,58 @@ namespace ToolWear{
                     FFT(DAQ_Now, dataTable, (int)samplesPerChannelNumeric_base, (int)rateNumeric_base);
                 }
                 catch { }
+                #endregion
+            }
+            else if (DAQ_Now.Equals("Factory")){
+                #region 健康診斷/出場檢測
+                if (tem_Factory_DT.Count > Chart_max - 1) tem_Factory_DT.RemoveRange(0, (int)samplesPerChannelNumeric_base);
+                try { chart_Health.Series[0].Points.Clear(); }
+                catch { }
+                for (int i = 0; i < (int)samplesPerChannelNumeric_base; i++){
+                    tem_Factory_DT.Add(dataTable.Rows[i][0].ToString());
+                }
+                for (int i = 0; i < tem_Factory_DT.Count; i++){
+                    chart_Health.Series[0].Points.AddXY(i + 1, tem_Factory_DT[i]);
+                }
+                //讀取最大值檔案
+                StreamReader sr = new StreamReader(path + @"data\FFT\L-Factory.cp");
+                int sr_count = 0;
+                while (!sr.EndOfStream){
+                    tem_Factory_Max[sr_count] = sr.ReadLine();
+                    sr_count++;
+                }
+                sr.Close();
+                sr.Dispose();
+                //FFT
+                Complex[] samples = new Complex[(int)samplesPerChannelNumeric_base];
+                for (int i = 0; i < (int)samplesPerChannelNumeric_base; i++)
+                    samples[i] = new Complex(double.Parse(dataTable.Rows[i][0].ToString()), 0);
+                try
+                { chart_Health_FFT.Series[0].Points.Clear(); }
+                catch
+                { }
+                Fourier.Forward(samples, FourierOptions.NoScaling);
+                for (int i = 0; i < (int)samplesPerChannelNumeric_base / 2; i++){
+                    double mag = (4.0 / (int)samplesPerChannelNumeric_base) * (Math.Abs(Math.Sqrt(Math.Pow(samples[i].Real, 2)
+                        + Math.Pow(samples[i].Imaginary, 2))));
+                    double hz = (double)rateNumeric / (int)samplesPerChannelNumeric_base;
+                    chart_Health_FFT.Series[0].Points.AddXY(hz * (i + 1), mag);
+                    //找尋最大值
+                    if (mag > double.Parse(tem_Factory_Max[i]))
+                        tem_Factory_Max[i] = mag.ToString();
+                }
+                //寫回最大值檔案
+                StreamWriter sw_Max = new StreamWriter(path + @"data\FFT\L-Factory.cp");
+                for (int i = 0; i < tem_Factory_Max.Count; i++){
+                    sw_Max.WriteLine(tem_Factory_Max[i]);
+                }
+                sw_Max.Close();
+                sw_Max.Dispose();
+                #endregion
+            }
+            else if (DAQ_Now.Equals("AfterSale")){
+                #region 健康診斷/售後檢測
+
                 #endregion
             }
         }

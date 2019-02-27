@@ -201,9 +201,6 @@
     <None Include="Resources\tc_s_icon_save.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menubtn_th.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\menubtn_learn_default.png" />
   </ItemGroup>
   <ItemGroup>
@@ -292,6 +289,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubtn_h_after-sales inspection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubtn_h_factory inspection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubtn_th.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets" Condition="Exists('..\packages\CenterSpace.NMath.6.2.0.47\build\CenterSpace.NMath.targets')" />
