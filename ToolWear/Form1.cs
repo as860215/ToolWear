@@ -675,7 +675,7 @@ namespace ToolWear{
         private void ToolWear_Log(DataTable dt, double sample, double rate){
             string Blade_FileName = "";
             ToolWear_Alern.Clear();
-            //if (machine_connect == false){
+            if (machine_connect == false){
                 //如果未連接機台，使用預設2500轉
                 try{
                     Blade_FileName = string.Format("{0}{1}-{2}_{3}", lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
@@ -692,14 +692,39 @@ namespace ToolWear{
                     sr_learn.Close();
                     sr_learn.Dispose();
                 }
-                catch(Exception ex) {
-                    MessageBox.Show("查詢不到臨界值資料。\n" + ex.ToString(), "查詢失敗", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                catch {
+                    Write_Log("警告", "查詢不到臨界值資料。");
                     return;
                 }
                 Tool_rate = 2500;
                 Tool_Blade = 4;
-                //刀具刃數與頻率計算公式
-                double Blade_Hz = Tool_rate / 60 * Tool_Blade;
+            }
+            else{
+                //如果已連接機台
+                try{
+                    Blade_FileName = string.Format("{0}{1}-{2}_{3}", lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
+                        ATC_num, ATC_RPM);
+                    //判斷檔案是否存在
+                    string tem_path = string.Format(@"{0}\data\FFT\LS-{1}.cp", path, Blade_FileName);
+                    //若查不到檔案則使用預設0刀號
+                    if (!File.Exists(tem_path))
+                        Blade_FileName = string.Format("{0}{1}-{2}_{3}", lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
+                            0, ATC_RPM);
+                    StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\LS-{1}.cp", path, Blade_FileName));
+                    while (!sr_learn.EndOfStream)
+                        ToolWear_Alern.Add(sr_learn.ReadLine());
+                    sr_learn.Close();
+                    sr_learn.Dispose();
+                }
+                catch{
+                    Write_Log("警告", "查詢不到臨界值資料。");
+                    return;
+                }
+                Tool_rate = (int)ATC_RPM;
+                Tool_Blade = 4;
+            }
+            //刀具刃數與頻率計算公式
+            double Blade_Hz = Tool_rate / 60 * Tool_Blade;
                 int Blade_Hz_Mag = 1;   //頻率倍率(取1~5)
                 double sum = 0;         //當前儲存點位總和
                 int count = 0;          //儲存點位數量
@@ -784,10 +809,6 @@ namespace ToolWear{
                     }
                     if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
                 }
-            //}
-            //else{
-            //    //如果已連接機台
-            //}
         }
         #endregion
         #region 學習模式
@@ -2669,6 +2690,13 @@ namespace ToolWear{
             lb_ToolWear_Tool.Text = ATC_Status.ToString();
             lb_Learn_Tool.Text = ATC_Status.ToString();
         }
+        private void timer_FakeData_Tick(object sender,EventArgs e){
+            machine_connect = true;
+            Random ran = new Random();
+            ATC_RPM = 1000 + ran.Next(0, 501);
+            lb_Learn_FeedSpeed.Text = ATC_RPM + " RPM";
+            lb_ToolWear_FeedSpeed.Text = ATC_RPM + " RPM";
+        }
         #endregion
         #region DAQ資料讀取
         private NationalInstruments.DAQmx.Task runningTask;
@@ -2940,8 +2968,8 @@ namespace ToolWear{
             for (int i = 0; i < sample; i++)
                 samples[i] = new Complex(double.Parse(dt.Rows[i][0].ToString()), 0);
             Fourier.Forward(samples, FourierOptions.NoScaling);
-            //判斷轉速(如果機台未連線，設為預設2500)
-            if (machine_connect == false)
+            //判斷轉速(如果機台未連線或為0，設為預設2500)
+            if (machine_connect == false || ATC_RPM == 0)
                 ATC_RPM = 2500;
             //判斷模式
             string tem_path = "";
