@@ -1147,8 +1147,12 @@ namespace ToolWear{
                 Hz_min = Blade_Hz_Mag * Blade_Hz * 0.9f;
                 Hz_max = Blade_Hz_Mag * Blade_Hz * 1.1f;
                 chart_Threshold.Series[Blade_Hz_Mag + 1].Points.Clear();
-                chart_Threshold.Series[Blade_Hz_Mag + 1].Points.AddXY(Hz_min * 0.9f, tb_Threshold_set[Blade_Hz_Mag - 1].Text);
-                chart_Threshold.Series[Blade_Hz_Mag + 1].Points.AddXY(Hz_max * 1.1f, tb_Threshold_set[Blade_Hz_Mag - 1].Text);
+                //將臨界值畫在倍頻的頻段上方
+                //chart_Threshold.Series[Blade_Hz_Mag + 1].Points.AddXY(Hz_min * 0.9f, tb_Threshold_set[Blade_Hz_Mag - 1].Text);
+                //chart_Threshold.Series[Blade_Hz_Mag + 1].Points.AddXY(Hz_max * 1.1f, tb_Threshold_set[Blade_Hz_Mag - 1].Text);
+                //將臨界值畫滿整個折線圖
+                chart_Threshold.Series[Blade_Hz_Mag + 1].Points.AddXY(0, tb_Threshold_set[Blade_Hz_Mag - 1].Text);
+                chart_Threshold.Series[Blade_Hz_Mag + 1].Points.AddXY(Blade_Hz * 5 * 1.1f, tb_Threshold_set[Blade_Hz_Mag - 1].Text);
                 if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max){
                     tem = double.Parse(Blade_Module[i]);//暫存值
                     if (tem >= 0)
