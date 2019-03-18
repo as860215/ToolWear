@@ -601,6 +601,7 @@ namespace ToolWear{
                 sample = samplesPerChannelNumeric_base;
             }
 
+            //讀取學習模型FFT資料
             StreamReader sr = new StreamReader(path + @"data\FFT\" + tem_path[0] + ".cp");
             while (!sr.EndOfStream)
                 Module_FFT.Add(sr.ReadLine());
@@ -612,10 +613,11 @@ namespace ToolWear{
                 if (hz * (i + 1) >= 2000) break;
                 chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
             }
+
+            //修改開始與停止按鈕
             btn_ToolWear_Start.Enabled = false;
             btn_ToolWear_Stop.Enabled = true;
             chart_ToolWear.Series[0].Points.Clear();
-            //修改開始與停止按鈕
             btn_ToolWear_Start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
             //修改偵測軸向的文字顏色
@@ -3094,6 +3096,53 @@ namespace ToolWear{
             lb_Learn_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
             lb_ToolWear_Tool.Text = ATC_num.ToString();
             lb_Learn_Tool.Text = ATC_num.ToString();
+
+            //判斷當處於磨耗偵測模式時才重新讀取FFT圖形
+            if (On_Learn == false){
+                //查詢是否有軸向正在偵測
+                bool On_ToolWear = false;
+                for (int i = 0; i < 20; i++){
+                    if (ToolWear_bool[i] == true){
+                        On_ToolWear = true;
+                        break;
+                    }
+                }
+                //沒有軸向正在被偵測
+                if (On_ToolWear == false) return;
+            }
+
+            //判斷輸入裝置然後給予頻率
+            double rate = 0, sample = 0;
+            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+                rate = 1660;
+                sample = 166;
+            }
+            else{
+                rate = rateNumeric_base;
+                sample = samplesPerChannelNumeric_base;
+            }
+
+            //重新讀取磨耗偵測FFT比對圖形
+            try{
+                Module_FFT.Clear();
+                chart_FFT.Series[0].Points.Clear();
+                StreamReader sr = new StreamReader(path + @"data\FFT\L-" + lb_ToolWear_Parts.Text +
+                                                    pre_ToolWear.Name.Split('_')[2] + "-" + ATC_num +
+                                                    "_" + ATC_RPM + ".cp");
+                while (!sr.EndOfStream)
+                    Module_FFT.Add(sr.ReadLine());
+                sr.Close();
+                sr.Dispose();
+                double hz = rate / sample;
+                for (int i = 0; i < Module_FFT.Count; i++){
+                    //只畫到2000hz
+                    if (hz * (i + 1) >= 2000) break;
+                    chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
+                }
+            }
+            catch(Exception ex){
+                MessageBox.Show("發生不可測意外。\n\ntimer_CNC_Tick\n\n" + ex.ToString());
+            }
         }
         private void timer_FakeData_Tick(object sender,EventArgs e){
             machine_connect = true;
