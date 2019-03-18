@@ -1432,10 +1432,9 @@ namespace ToolWear{
             chart_Blade.Series[0].Points.Clear();
             //取得主軸轉數
             int Tool_rate = 2500;
-            if (machine_connect == false) Tool_rate = 2500; //如果主軸轉數為0則使用預設轉數
+            if (machine_connect == false || int.Parse(lb_ToolWear_FeedSpeed.Text.Split(' ')[0]) == 0)
+                Tool_rate = 2500; //如果主軸轉數為0則使用預設轉數
             else Tool_rate = int.Parse(lb_ToolWear_FeedSpeed.Text.Split(' ')[0]);
-            //強制設定頻率為2500
-            //Tool_rate = 2500;
             //取得刀具刃數
             StreamReader sr_ATC = new StreamReader(path + @"\data\ATC.cp");
             int Tool_Blade = 4;     //刀具刃數
@@ -3081,7 +3080,8 @@ namespace ToolWear{
             LNC_GetData();
         }
         private void timer_Current_Tick(object sender,EventArgs e){
-            Current_Getdata("33");
+            //Current_Getdata("33");
+            Current_Getdata_Schneider("1");
         }
         private void timer_CNC_Tick(object sender,EventArgs e){
             ATC_RPM = Mitsubishi_GetFeedSpeed();
@@ -3115,10 +3115,10 @@ namespace ToolWear{
         private AsyncCallback analogCallback;
         private AnalogWaveform<double>[] data;
         private string DAQ_Now = "";    //紀錄現在資料擷取是用在何處
-        private double samplesPerChannelNumeric_base = 400;  //取樣數(基準)
-        private double rateNumeric_base = 2000;  //頻率(基準)
-        private double samplesPerChannelNumeric = 400;  //取樣數
-        private double rateNumeric = 2000;  //頻率
+        private double samplesPerChannelNumeric_base = 800;  //取樣數(基準)
+        private double rateNumeric_base = 4000;  //頻率(基準)
+        private double samplesPerChannelNumeric = 800;  //取樣數
+        private double rateNumeric = 4000;  //頻率
         private int Chart_max = 4000;   //波形圖樣本數
         private double minimumValueNumeric = -5, maximumValueNumeric = 5, sensitivityNumeric = 10.01, excitationValueNumeric = 0.002;
         delegate void DAQChannelDelegate();
@@ -3265,7 +3265,7 @@ namespace ToolWear{
             catch{
                 // Display Errors
                 //MessageBox.Show(exception.Message);
-                Write_Log("系統", "DAQ正在嘗試自我修復。");
+                //Write_Log("系統", "DAQ正在嘗試自我修復。");
                 TaskStop();
                 //嘗試自我修復
                 DAQInitialize(DAQ_Now);
@@ -3698,7 +3698,21 @@ namespace ToolWear{
                 MessageBox.Show("電流連線失敗。\n請放心，這不會影響您的震動偵測。\n\nCurrent_Connect\n\nError code:\n" + ex.ToString(), "連線失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        //電流 > 取得資料
+        //電流 > 取得資料(施耐德)
+        private void Current_Getdata_Schneider(string address){
+            if (modbusClient == null || modbusClient.Connected == false) return;
+            try{
+                modbusClient.UnitIdentifier = byte.Parse("1");
+                int start = int.Parse(address) - 1;
+                int[] readHoldingRegisters = modbusClient.ReadHoldingRegisters(start, 1);
+                float output = ((float)readHoldingRegisters[0] - 4000) * 9.375f * 0.001f;
+                draw_chart(output);
+            }
+            catch(Exception ex){
+                MessageBox.Show("讀取電流資料發生錯誤。\n\nCurrent_Getdata_Schneider\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //電流 > 取得資料(Adam)
         private void Current_Getdata(string address){
             if (modbusClient == null || modbusClient.Connected == false) return;
             try{
