@@ -15964,7 +15964,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_SelectParts.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btn_SelectParts_Add.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -18262,7 +18262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AddParts.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="btn_AddParts_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>

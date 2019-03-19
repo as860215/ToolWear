@@ -19,6 +19,7 @@ using EasyModbus;
 namespace ToolWear{
     public partial class Form1 : Form{
         private string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;  //執行檔位置
+        private char[] Unlawful = new char[2] { ',', ':' }; //非法字元
         private bool machine_connect = false;
         public Form1(){
             InitializeComponent();
@@ -2314,6 +2315,8 @@ namespace ToolWear{
                 DialogResult dialogResult1 = MessageBox.Show("您尚未選擇工件圖片來源\n確定不要加入圖片嗎？", "圖片未選取", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if (dialogResult1 == DialogResult.Cancel) return;
             }
+            //檢查是否有非法字元
+            if (Unlawful_Check(tb_AddParts_Name.Text)) return;
             //檢查是否有同樣名稱的工件
             StreamReader sr = new StreamReader(path + @"\data\parts.cp");
             while (!sr.EndOfStream){
@@ -2330,8 +2333,7 @@ namespace ToolWear{
             DialogResult dialogResult = MessageBox.Show("確定要新增此工件嗎？", "確認訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
 
-            try
-            {
+            try{
                 FileStream File_module = File.Open(path + @"\data\parts.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
                 StreamWriter sw = new StreamWriter(File_module);
                 //有選圖片的話
@@ -4068,6 +4070,22 @@ namespace ToolWear{
         //關閉鍵盤觸發方法
         private void CloseInputPanel_Click(object sender, EventArgs e){
             CloseInputPanel();
+        }
+        #endregion
+        #region 檢查非法字元
+        /// <summary>
+        /// 檢查是否輸入的字串有非法字元存在
+        /// </summary>
+        /// <param name="s">欲檢查的字串</param>
+        /// <returns>若為true則表示含有非法字元；若為false表示不含非法字元</returns>
+        private bool Unlawful_Check(string s){
+            for (int i = 0; i < Unlawful.Length; i++){
+                if(s.Split(Unlawful[i]).Length > 1){
+                    MessageBox.Show(string.Format("輸入字串\n{0}\n含有非法字元\n{1}\n請重新輸入。", s, Unlawful[i]), "文字含有非法字元", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return true;
+                }
+            }
+            return false;
         }
         #endregion
     }
