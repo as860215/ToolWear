@@ -1,5 +1,4 @@
-﻿using CenterSpace.NMath.Core;
-using MathNet.Numerics.IntegralTransforms;
+﻿using MathNet.Numerics.IntegralTransforms;
 using NationalInstruments;
 using NationalInstruments.DAQmx;
 using System;
@@ -12,7 +11,6 @@ using System.Windows.Forms;
 using EZNCAUTLib;
 using System.Threading;
 using System.Diagnostics;
-using System.Runtime.InteropServices;
 using System.Text;
 using LNCcomm;
 using System.Linq;
@@ -2162,8 +2160,12 @@ namespace ToolWear{
                     if(read_count >= (int.Parse(lb_SelectParts_Page.Text) - 1) * 8 && read_count < int.Parse(lb_SelectParts_Page.Text) * 8){
                         panel_Parts[read_count % 8].Visible = true;
                         lb_Parts[read_count % 8].Text = tem.Split(',')[0];
-                        if (!tem.Split(',')[1].Equals("null"))
-                            pb_Parts[read_count % 8].BackgroundImage = Image.FromFile(tem.Split(',')[1]);
+                        if (!tem.Split(',')[1].Equals("null")){
+                            using (var tem_img = Image.FromFile(tem.Split(',')[1])){
+                                Image img = new Bitmap(tem_img);
+                                pb_Parts[read_count % 8].BackgroundImage = img;
+                            }
+                        }
                         else
                             pb_Parts[read_count % 8].BackgroundImage = ToolWear.Properties.Resources.wd_img_blank;
                     }
@@ -2252,7 +2254,13 @@ namespace ToolWear{
             pb_SelectParts[Select_count - 1].BackgroundImage = ToolWear.Properties.Resources.wd_img_blank;
             //重新整理頁面
             pb_ToolWear_Click(null, null);
-            //MessageBox.Show("工件刪除成功！", "刪除訊息", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //刪除data內圖片檔案
+            try{
+                File.Delete(path + @"\data\Image\" + Parts_Name);
+            }
+            catch (Exception ex){
+                MessageBox.Show("刪除data圖片檔案時發生錯誤。\n\nbtn_SelectParts_remove_Click\n\n" + ex.ToString());
+            }
         }
         //磨耗偵測 > 選擇工件 > select按鈕
         private void btn_SelectParts(object sender,EventArgs e){
@@ -2328,8 +2336,8 @@ namespace ToolWear{
                 StreamWriter sw = new StreamWriter(File_module);
                 //有選圖片的話
                 if (!string.IsNullOrWhiteSpace(tb_AddParts_Path.Text)){
-                    sw.WriteLine(tb_AddParts_Name.Text + "," + (path + @"data\Image\" + path_AddFile_name));
-                    File.Copy(tb_AddParts_Path.Text, path + @"\data\Image\" + path_AddFile_name);
+                    sw.WriteLine(tb_AddParts_Name.Text + "," + path + @"data\Image\" + tb_AddParts_Name.Text);
+                    File.Copy(tb_AddParts_Path.Text, path + @"\data\Image\" + tb_AddParts_Name.Text);
                 }
                 //沒選圖片的話
                 else
@@ -2342,6 +2350,7 @@ namespace ToolWear{
                 panel_AddParts.Visible = false;
                 btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
                 btn_Learn.Enabled = true;
+                pb_AddParts.BackgroundImage = ToolWear.Properties.Resources.wdpsn_img_blank;
                 pb_ToolWear_Click(null, null);
             }
             catch(Exception ex){
@@ -3097,6 +3106,7 @@ namespace ToolWear{
             lb_ToolWear_Tool.Text = ATC_num.ToString();
             lb_Learn_Tool.Text = ATC_num.ToString();
 
+            //以下未測試
             //判斷當處於磨耗偵測模式時才重新讀取FFT圖形
             if (On_Learn == false){
                 //查詢是否有軸向正在偵測
