@@ -24,7 +24,7 @@ namespace ToolWear{
         public Form1(){
             InitializeComponent();
             //將視窗最大化
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
             //隱藏工作列
             this.FormBorderStyle = FormBorderStyle.None;
             //強制置頂視窗
@@ -437,7 +437,14 @@ namespace ToolWear{
         private void btn_HealthSetting_Back_Click(object sender, EventArgs e){
             panel_Health_Setting.Visible = false;
             panel_Health.Visible = true;
-            Health_load();
+            //清空折線圖
+            chart_Health_Match.Series[0].Points.Clear();
+            chart_Health_Match.Series[3].Points.Clear();
+            chart_Health_FFT.Series[0].Points.Clear();
+            chart_Health.Series[0].Points.Clear();
+            btn_Health_Click(null, null);
+            //切換成售後檢測模式
+            btn_ChangeMode3_Click(null, null);
         }
         //健康診斷 > 切換模式
         private void btn_ChangeMode3_Click(object sender,EventArgs e){
@@ -2047,12 +2054,9 @@ namespace ToolWear{
                     // Display Errors
                     if (exception.Error == -200431 || exception.Error == -200220){
                         MessageBox.Show("無法初始化選取的訊號輸入，請確認設定檔內的訊號輸入是否正確，\n或是檢查是否有讀取到原先所設置的訊號。", "偵測啟動失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        btn_ToolWear_Stop_Click(null, null);
-                        btn_Learn_OK_Click(null, null);
+                        Health_Stop(null, null);
                     }
                     else{
-                        Write_Log("系統", "DAQ正在嘗試自我修復...");
-                        //MessageBox.Show(exception.Message);
                         TaskStop();
                         //嘗試自我修復
                         DAQInitialize(DAQ_Now);
@@ -2070,6 +2074,9 @@ namespace ToolWear{
             btn_Health_Start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
             btn_Health_Stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
 
+            //如果是程式呼叫表示是從例外事件觸發，直接return
+            if (sender == null) return;
+
             //如果是售後檢測模式
             if (DAQ_Now.Equals("AfterSale")){
                 panel_Dissable();
@@ -2085,7 +2092,9 @@ namespace ToolWear{
             //清空折線圖
             chart_HealthResult_Factory.Series[0].Points.Clear();
             chart_HealthResult_AfterSale.Series[0].Points.Clear();
-            for (int i = 0; i < (int)samplesPerChannelNumeric_base; i++){
+            chart_HealthResult_Factory.Series[2].Points.Clear();
+            chart_HealthResult_AfterSale.Series[2].Points.Clear();
+            for (int i = 0; i < (int)(samplesPerChannelNumeric_base / 2); i++){
                 tem_Factory_Max.Add("-99");
                 tem_AfterSale_Max.Add("-99");
             }
@@ -2127,13 +2136,13 @@ namespace ToolWear{
             sr_Health.Close();
             sr_Health.Dispose();
             //比對圖形
-            int over_count = 0;  //暫存總共有幾筆頻率在設定值內
+            int pass_count = 0;  //暫存總共有幾筆頻率在設定值內
             for(int i = 0;i< tem_Factory_Max.Count; i++){
-                //在設定值就將暫存值+1
-                if((double.Parse(tem_AfterSale_Max[i]) * (1 + range)) < double.Parse(tem_Factory_Max[i]))
-                    over_count++;
+                //在設定值內就將暫存值+1
+                if((double.Parse(tem_AfterSale_Max[i])) < double.Parse(tem_Factory_Max[i]) * (1 + range))
+                    pass_count++;
             }
-            lb_HealthResult_Result.Text = string.Format("在檢測震幅範圍{0} %之下的合格率為{1} %", range * 100, 100 - (((double)over_count / (double)tem_Factory_Max.Count) * 100));
+            lb_HealthResult_Result.Text = string.Format("在檢測震幅範圍{0} %之下的合格率為{1} %", range * 100, ((double)pass_count / (double)tem_Factory_Max.Count) * 100);
         }
         #endregion
         #region 選擇工件/新增工件
