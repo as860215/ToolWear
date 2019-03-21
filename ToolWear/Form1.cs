@@ -52,8 +52,6 @@ namespace ToolWear{
         /// 初始化設定
         /// </summary>
         private void Setting(){
-            //表單設定
-            //this.WindowState = FormWindowState.Maximized; //最大化
             //折線圖Legends清除
             chart_Learn.Legends.Clear();
             chart_Thermal.Legends.Clear();
@@ -217,7 +215,7 @@ namespace ToolWear{
         private void System_Load(){
             string tem_s = "";
             try{
-                //讀取版本資料
+                //讀取軟體版本資料
                 StreamReader sr_version = new StreamReader(path + @"\data\version.cp");
                 string tem_version = sr_version.ReadLine();
                 sr_version.Close();
@@ -225,7 +223,7 @@ namespace ToolWear{
                 tem_s += string.Format("軟體版本\r\n{0}\r\n\r\n", tem_version);
 
                 //取得.NET版本
-                tem_s += string.Format(".NET\r\n{0}\r\n\r\n", Environment.Version.ToString());
+                tem_s += string.Format(".NET版本\r\n{0}\r\n\r\n", Environment.Version.ToString());
 
                 //取得CPU資料
                 ManagementClass mc = new ManagementClass("Win32_Processor");
@@ -244,7 +242,7 @@ namespace ToolWear{
                 foreach (ManagementObject ram in search.Get())
                     total += (UInt64)ram.GetPropertyValue("Capacity");
                 Memory = (total / 1048576).ToString();
-                tem_s += string.Format("Memory\r\n{0} MB\r\n\r\n", Memory);
+                tem_s += string.Format("記憶體\r\n{0} MB\r\n\r\n", Memory);
 
                 //取得電腦名稱與IP
                 String strHostName = System.Net.Dns.GetHostName();                                     //先讀取本機名稱
@@ -253,7 +251,8 @@ namespace ToolWear{
                 string ip = "";
                 foreach (System.Net.IPAddress ipaddress in iphostentry.AddressList)
                     ip += ipaddress.ToString();
-                tem_s += string.Format("IP\r\n{0}\r\n\r\n", ip);
+                tem_s += string.Format("主機IP\r\n{0}\r\n\r\n", ip);
+                
                 tb_setting_System.Text = tem_s;
             }
             catch(Exception ex){
@@ -1658,17 +1657,6 @@ namespace ToolWear{
             if(Thermal_single == 0) lb_Thermal_Now.Text = pre_Thermal.Text;
             else if(Thermal_single % 2 == 1) lb_Thermal_M2_Now.Text = pre_Thermal.Text;
         }
-        //熱補償 > 取得此軸向的補償資料(待)
-        private void Thermal_GetCompensate(int axial){
-            //取得該軸向的次序
-            //StreamReader sr_get = new StreamReader(path + @"\data\compensate.cp");
-            //List<string> tem_read = new List<string>();
-            //while (!sr_get.EndOfStream){
-            //    string tem = sr_get.ReadLine();
-            //    if (tem.Split(',')[0].Equals(now_Thermal.ToString()))
-            //        tem_read.Add(tem);
-            //}
-        }
         //熱補償 > 開始
         private void btn_Thermal_start_Click(object sender, EventArgs e){
             string axial = "";  //軸向
@@ -1694,9 +1682,6 @@ namespace ToolWear{
             }
             sr_set.Close();
             sr_set.Dispose();
-
-            //取得熱補償資料
-            Thermal_GetCompensate(now_Thermal);
 
             //開始偵測
             pre_Thermal.ForeColor = Color.FromArgb(255, 187, 0);
@@ -1876,17 +1861,64 @@ namespace ToolWear{
         /// <summary>
         /// 判定是否產生Log訊息
         /// </summary>
+        /// <param name="axial">軸向</param>
         /// <param name="temperature">溫度</param>
         /// <param name="WriteWhere">發生事故的物件名稱</param>
-        private void Thermal_Log(float temperature, string WriteObject){
-            if (temperature > 25.95f) Write_Log("緊急", WriteObject + "軸目前溫度已上升至 " + temperature + "℃");
-            else if (temperature > 25.85f) Write_Log("警告", WriteObject + "軸目前溫度已上升至 " + temperature + "℃");
+        private void Thermal_Log(int axial,float temperature, string WriteObject){
+            //讀取熱補償資料(待)
+            StreamReader sr_compensate = new StreamReader(path + @"\data\compensate.cp");
+            List<string> tem_compensate = new List<string>();
+            while (!sr_compensate.EndOfStream){
+                string s = sr_compensate.ReadLine();
+                //紀錄該軸向的補償資訊
+                if (s.Split(',')[0].Equals(axial.ToString()))
+                    tem_compensate.Add(s);
+            }
+            sr_compensate.Close();
+            sr_compensate.Dispose();
+
+            //如果tem_compensate的長度為0，表示沒有補償資料，直接return
+            if (tem_compensate.Count == 0) return;
+
+            //排序資料
+            Compensate_Sort(ref tem_compensate, 0, tem_compensate.Count - 1);
+
+            //檢查警告數值
+            //從最大值開始判斷
+            for(int i = tem_compensate.Count - 1; i >= 0; i--){
+                //若temperature小於陣列數值，表示未達該補償溫度，繼續往溫度低的資料判斷
+                if (temperature < float.Parse(tem_compensate[i].Split(',')[1])) continue;
+                else{
+                    Write_Log("警告", string.Format("{0}軸溫度已上升至{1}℃，補償值{2}mm",
+                        WriteObject, temperature, tem_compensate[i].Split(',')[2]));
+                    break;
+                }
+            }
+        }
+        //熱補償專用排序(因為其為字串且需要一次更動兩個參數)
+        private void Compensate_Sort(ref List<string> numbers, int left, int right){
+            if (left < right){
+                double middle = double.Parse(numbers[(left + right) / 2].Split(',')[1]);
+                int i = left - 1;
+                int j = right + 1;
+                while (true){
+                    while (double.Parse(numbers[++i].Split(',')[1]) < middle) ;
+                    while (double.Parse(numbers[--j].Split(',')[1]) > middle) ;
+                    if (i >= j)
+                        break;
+                    //交換
+                    string number = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = number;
+                }
+                Compensate_Sort(ref numbers, left, i - 1);
+                Compensate_Sort(ref numbers, j + 1, right);
+            }
         }
         //====假資料專用變數====
         bool[] Thermal_bool = new bool[20]; //該軸向是否開啟
         int[] Thermal_count = new int[20];
         float[] Thermal_temperature = new float[20];
-        //List<string> tem_Thermal_chartData = new List<string>();
         //====假資料專用變數====
         //熱補償 > 產生假資料
         delegate void FakeDataDelegate();
@@ -1911,7 +1943,7 @@ namespace ToolWear{
                                        btn_Thermal_14,btn_Thermal_15,btn_Thermal_16,btn_Thermal_17,btn_Thermal_18,
                                        btn_Thermal_19,btn_Thermal_20};
                     //寫log
-                    Thermal_Log(Thermal_temperature[i], btn_Thermal[i].Text);
+                    Thermal_Log(i,Thermal_temperature[i], btn_Thermal[i].Text);
 
                     List<string> tem_read = new List<string>();
                     try{
@@ -4209,6 +4241,35 @@ namespace ToolWear{
                 }
             }
             return false;
+        }
+        #endregion
+        #region 快速排序法
+        /// <summary>
+        /// 快速排序法
+        /// </summary>
+        /// <param name="numbers">要進行排序的陣列</param>
+        /// <param name="left">排序起點(通常為0，即陣列開頭)</param>
+        /// <param name="right">排序終點(通常為陣列大小-1，即陣列最後)</param>
+        private void Sort(List<int> numbers, int left, int right){
+            if (left < right){
+                int middle = numbers[(left + right) / 2];
+                int i = left - 1;
+                int j = right + 1;
+                while (true){
+                    while (numbers[++i] < middle) ;
+                    while (numbers[--j] > middle) ;
+                    if (i >= j)
+                        break;
+                    Swap(numbers, i, j);
+                }
+                Sort(numbers, left, i - 1);
+                Sort(numbers, j + 1, right);
+            }
+        }
+        private void Swap(List<int> numbers, int i, int j){
+            int number = numbers[i];
+            numbers[i] = numbers[j];
+            numbers[j] = number;
         }
         #endregion
     }
