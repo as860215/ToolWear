@@ -299,10 +299,10 @@
     <None Include="Resources\menubtn_th.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Export_Profile.png" />
+    <None Include="Resources\Import_Profile.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Import_Profile.png" />
+    <None Include="Resources\Export_Profile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

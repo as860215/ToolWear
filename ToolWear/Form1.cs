@@ -4200,7 +4200,7 @@ namespace ToolWear
         }
         #endregion
         #region 輸出/載入設定檔
-        BackgroundWorker bgw_Export_Profile = new BackgroundWorker();
+        BackgroundWorker bgw_Profile = new BackgroundWorker();
         string Export_Path = null;
         //輸出設定檔
         private void Export_Profile(object sender,EventArgs e){
@@ -4214,14 +4214,13 @@ namespace ToolWear
             if (dialog.ShowDialog() == DialogResult.OK)
                 Export_Path = dialog.SelectedPath;
             Bar_setting.Visible = true;
-            try
-            {
-                bgw_Export_Profile.DoWork += new DoWorkEventHandler(Export_Profile_DoWork);
-                bgw_Export_Profile.RunWorkerCompleted += new RunWorkerCompletedEventHandler(Export_Profile_RunWorkerCompleted);
-                bgw_Export_Profile.ProgressChanged += new ProgressChangedEventHandler(Export_Profile_ProgressChanged);
-                bgw_Export_Profile.WorkerReportsProgress = true;
+            Bar_setting.Value = 0;
+            try{
+                bgw_Profile.DoWork += new DoWorkEventHandler(Export_Profile_DoWork);
+                bgw_Profile.ProgressChanged += new ProgressChangedEventHandler(Profile_ProgressChanged);
+                bgw_Profile.WorkerReportsProgress = true;
 
-                bgw_Export_Profile.RunWorkerAsync();
+                bgw_Profile.RunWorkerAsync();
             }
             catch(Exception ex){
                 MessageBox.Show("輸出設定檔時發生錯誤。\n\nExport_Profile\n\n" + ex.ToString(), "輸出設定檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -4229,7 +4228,6 @@ namespace ToolWear
         }
         //輸出設定檔 > 背景執行續 > 開始
         private void Export_Profile_DoWork(object sender,DoWorkEventArgs e){
-
             //複製設定檔到指定目錄
             try{
                 //計算設定檔內有多少檔案數量(進度條用)
@@ -4241,9 +4239,32 @@ namespace ToolWear
             }
             catch(Exception ex){
                 MessageBox.Show("輸出設定檔時發生錯誤。\n\nExport_Profile_DoWork\n\n" + ex.ToString(), "輸出設定檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                bgw_Export_Profile.CancelAsync();
+                bgw_Profile.CancelAsync();
                 return;
             }
+        }
+        //輸出/載入設定檔 > 背景執行續 > 進度
+        private void Profile_ProgressChanged(object sender, ProgressChangedEventArgs e){
+            Bar_setting.Value = e.ProgressPercentage;
+        }
+        //載入設定檔
+        string Import_Path = null;
+        private void Import_Profile(object sender,EventArgs e){
+            //確認訊息
+            DialogResult dialogResult = MessageBox.Show("您確定要載入設定檔嗎？\n根據您的設定檔大小將可能耗費不少時間。" +
+                "\n並且會完全覆蓋掉您原先的設定檔，\n請問要繼續嗎？", "載入設定檔", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            MessageBox.Show("※※※※※※警告※※※※※※\n\n請務必選擇原先輸出設定檔產生的\ndata 資料夾\n若選擇錯誤將造成設定檔遺失的不可逆狀況。", "警告訊息", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //選擇輸入來源
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+                Import_Path = dialog.SelectedPath;
+            if(!Import_Path.Substring(Import_Path.Length - 5, 5).Equals(@"\data")){
+                MessageBox.Show("請選擇\ndata\n資料夾以避免程式產生錯誤。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            Bar_setting.Visible = true;
+            Bar_setting.Value = 0;
         }
         //計算檔案目錄內所有檔案數量
         int Export_Profile_TotalFile = 0;
@@ -4253,19 +4274,6 @@ namespace ToolWear
             foreach (DirectoryInfo subdir in dirInfo.GetDirectories())
                 totalFile += GetFilesCount(subdir);
             return totalFile;
-        }
-        //輸出設定檔 > 背景執行續 > 完成
-        private void Export_Profile_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e){
-            //Bar_setting.Value = 0;
-            //Bar_setting.Visible = false;
-        }
-        //輸出設定檔 > 背景執行續 > 進度
-        private void Export_Profile_ProgressChanged(object sender, ProgressChangedEventArgs e){
-            Bar_setting.Value = e.ProgressPercentage;
-        }
-        //載入設定檔
-        private void Import_Profile(object sender,EventArgs e){
-
         }
         //現在已經讀取的檔案數量
         int Export_Profile_LoadFile = 0;
@@ -4296,9 +4304,8 @@ namespace ToolWear
                 if (File.Exists(temppath)) File.Delete(temppath);
                 file.CopyTo(temppath, false);
                 Export_Profile_LoadFile += 100;
-                bgw_Export_Profile.ReportProgress((int)(Export_Profile_LoadFile / Export_Profile_TotalFile));
+                bgw_Profile.ReportProgress((int)(Export_Profile_LoadFile / Export_Profile_TotalFile));
             }
-            bgw_Export_Profile.ReportProgress(100);
 
             //子目錄遞迴程式
             if (copySubDirs){
