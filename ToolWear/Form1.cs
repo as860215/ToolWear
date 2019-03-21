@@ -24,7 +24,7 @@ namespace ToolWear{
         public Form1(){
             InitializeComponent();
             //將視窗最大化
-            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
             //隱藏工作列
             this.FormBorderStyle = FormBorderStyle.None;
             //強制置頂視窗
@@ -72,9 +72,7 @@ namespace ToolWear{
             chart_HealthResult_AfterSale.Legends.Clear();
             chart_HealthResult_Factory.Legends.Clear();
             //折線圖上下限與x軸最大值預覽
-            //chart_FFT.Series[2].Points.AddXY(1, -0.5);
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
-            chart_Threshold.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_ToolWear.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_warring_1.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_warring_2.Series[1].Points.AddXY(1, Chart_PointMax);
@@ -1028,6 +1026,7 @@ namespace ToolWear{
                 //查詢目錄
                 string[] dirs = Directory.GetFiles(path + @"data\FFT");/*目錄(含路徑)的陣列*/
                 List<string> tem_path = new List<string>();
+                //先將該工件的所有臨界值資料取出
                 foreach (string s in dirs){
                     //ex L-abc01-1_2500-set.cp
                     string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
@@ -1035,7 +1034,12 @@ namespace ToolWear{
                     if (remove_rate.Equals("L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
                         tem_path.Add(Path.GetFileNameWithoutExtension(s));
                 }
+                //填入TextBox
+                int tem_pathCount = 0;  //暫存讀取目錄計數器
                 foreach (string s in tem_path){
+                    tem_pathCount++;
+                    if (tem_pathCount <= (int.Parse(lb_Threshold_page.Text) - 1) * 14) continue;    //如果還沒有讀到該頁數的設定檔則略過
+                    else if (tem_pathCount > int.Parse(lb_Threshold_page.Text) * 14) break;
                     string FileName = path + @"\data\FFT\" + s + ".cp";
                     string Blade = s.Split('-')[2].Split('_')[0];
                     //查詢該刀具的資料檔是否存在
@@ -1233,6 +1237,35 @@ namespace ToolWear{
             }
             Threshold_LoadBlade((object)pre_Blade, null);
             MessageBox.Show("清除完畢。", "刪除成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        //臨界值設定 > 上一頁
+        private void btn_Threshold_Up_Click(object sender, EventArgs e){
+            if (lb_Threshold_page.Text.Equals("1")){
+                MessageBox.Show("已經在第一頁了。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            lb_Threshold_page.Text = (int.Parse(lb_Threshold_page.Text) - 1).ToString();
+            Threshold_Load();
+        }
+        //臨界值設定 > 下一頁
+        private void btn_Threshold_Down_Click(object sender, EventArgs e){
+            //查詢目錄
+            string[] dirs = Directory.GetFiles(path + @"data\FFT");/*目錄(含路徑)的陣列*/
+            int path_count = 0; //計算有幾個檔案
+            //先將該工件的所有臨界值資料取出
+            foreach (string s in dirs){
+                //ex L-abc01-1_2500-set.cp
+                string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
+                string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
+                if (remove_rate.Equals("L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
+                    path_count++;
+            }
+            if (path_count > int.Parse(lb_Threshold_page.Text) * 14){
+                lb_Threshold_page.Text = (int.Parse(lb_Threshold_page.Text) + 1).ToString();
+                Threshold_Load();
+            }
+            else
+                MessageBox.Show("已經在最後一頁。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         #endregion
         #region 主畫面設定
