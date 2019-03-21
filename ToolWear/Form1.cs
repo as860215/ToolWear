@@ -16,8 +16,11 @@ using LNCcomm;
 using System.Linq;
 using EasyModbus;
 using System.Management;
+using System.IO.Compression;
+using System.ComponentModel;
 
-namespace ToolWear{
+namespace ToolWear
+{
     public partial class Form1 : Form{
         private string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;  //執行檔位置
         private char[] Unlawful = new char[2] { ',', ':' }; //非法字元
@@ -292,14 +295,7 @@ namespace ToolWear{
                     btn_Health.Enabled = false;
                     btn_logo.Enabled = false;
                     break;
-                //1~2讀取系統資料
-                case 1:
-                    tem = "正在讀取系統資料...";
-                    break;
-                case 2:
-                    System_Load();
-                    tem = "系統資料讀取完畢";
-                    break;
+                //保留1~2備用
                 //保留3~20初始化元件
                 case 3:
                     tem = "正在搜尋DAQ訊號輸入...";
@@ -330,7 +326,7 @@ namespace ToolWear{
                     LNC_Scan();
                     tem = "LNC訊號掃描完畢";
                     break;
-                //保留20~?測試設備連線
+                //保留20~80測試設備連線
                 case 20:
                     tem = "正在測試控制器連線...";
                     break;
@@ -345,9 +341,15 @@ namespace ToolWear{
                     break;
                 case 26:
                     tem = "控制器連線測試完畢";
-                    Load_Step = 80; //因中間已無讀取程式，跳到最後讀取緩衝
                     break;
-
+                //保留81~94查詢系統
+                case 81:
+                    tem = "正在讀取系統資料...";
+                    break;
+                case 82:
+                    System_Load();
+                    tem = "系統資料讀取完畢";
+                    break;
                 //預留最後95~100緩衝讀取
                 case 95:
                     tem = "正在將您導入主頁面...";
@@ -529,6 +531,7 @@ namespace ToolWear{
         //主選單 > 設定
         private void btn_setting_Click(object sender, EventArgs e){
             panel_Dissable();
+            Bar_setting.Visible = false;
             panel_setting.Visible = true;
         }
         //主選單 > 關機
@@ -1865,7 +1868,7 @@ namespace ToolWear{
         /// <param name="temperature">溫度</param>
         /// <param name="WriteWhere">發生事故的物件名稱</param>
         private void Thermal_Log(int axial,float temperature, string WriteObject){
-            //讀取熱補償資料(待)
+            //讀取熱補償資料
             StreamReader sr_compensate = new StreamReader(path + @"\data\compensate.cp");
             List<string> tem_compensate = new List<string>();
             while (!sr_compensate.EndOfStream){
@@ -4194,6 +4197,117 @@ namespace ToolWear{
                     DetialTB.BackColor = Color.FromArgb(15, 60, 96);
                     break;
             }
+        }
+        #endregion
+        #region 輸出/載入設定檔
+        BackgroundWorker bgw_Export_Profile = new BackgroundWorker();
+        string Export_Path = null;
+        //輸出設定檔
+        private void Export_Profile(object sender,EventArgs e){
+            //確認訊息
+            DialogResult dialogResult = MessageBox.Show("您確定要輸出設定檔嗎？\n根據您的設定檔大小將可能耗費不少時間。" +
+                "\n並且若您的輸出目錄已有data資料夾，將會覆蓋內部所有相關設定檔。", "輸出設定檔", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+
+            //選擇輸出目的地
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+                Export_Path = dialog.SelectedPath;
+            Bar_setting.Visible = true;
+            try
+            {
+                bgw_Export_Profile.DoWork += new DoWorkEventHandler(Export_Profile_DoWork);
+                bgw_Export_Profile.RunWorkerCompleted += new RunWorkerCompletedEventHandler(Export_Profile_RunWorkerCompleted);
+                bgw_Export_Profile.ProgressChanged += new ProgressChangedEventHandler(Export_Profile_ProgressChanged);
+                bgw_Export_Profile.WorkerReportsProgress = true;
+
+                bgw_Export_Profile.RunWorkerAsync();
+            }
+            catch(Exception ex){
+                MessageBox.Show("輸出設定檔時發生錯誤。\n\nExport_Profile\n\n" + ex.ToString(), "輸出設定檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //輸出設定檔 > 背景執行續 > 開始
+        private void Export_Profile_DoWork(object sender,DoWorkEventArgs e){
+
+            //複製設定檔到指定目錄
+            try{
+                //計算設定檔內有多少檔案數量(進度條用)
+                DirectoryInfo dirInfo = new DirectoryInfo(path + @"\data");
+                Export_Profile_TotalFile = GetFilesCount(dirInfo);
+
+                DirectoryCopy(path + @"\data", Export_Path + @"\data", true);
+                MessageBox.Show("輸出設定檔完畢。", "輸出設定檔成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch(Exception ex){
+                MessageBox.Show("輸出設定檔時發生錯誤。\n\nExport_Profile_DoWork\n\n" + ex.ToString(), "輸出設定檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                bgw_Export_Profile.CancelAsync();
+                return;
+            }
+        }
+        //計算檔案目錄內所有檔案數量
+        int Export_Profile_TotalFile = 0;
+        private int GetFilesCount(DirectoryInfo dirInfo){
+            int totalFile = 0;
+            totalFile += dirInfo.GetFiles().Length;
+            foreach (DirectoryInfo subdir in dirInfo.GetDirectories())
+                totalFile += GetFilesCount(subdir);
+            return totalFile;
+        }
+        //輸出設定檔 > 背景執行續 > 完成
+        private void Export_Profile_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e){
+            //Bar_setting.Value = 0;
+            //Bar_setting.Visible = false;
+        }
+        //輸出設定檔 > 背景執行續 > 進度
+        private void Export_Profile_ProgressChanged(object sender, ProgressChangedEventArgs e){
+            Bar_setting.Value = e.ProgressPercentage;
+        }
+        //載入設定檔
+        private void Import_Profile(object sender,EventArgs e){
+
+        }
+        //現在已經讀取的檔案數量
+        int Export_Profile_LoadFile = 0;
+        /// <summary>
+        /// 複製檔案
+        /// </summary>
+        /// <param name="sourceDirName">來源目錄</param>
+        /// <param name="destDirName">目標目錄</param>
+        /// <param name="copySubDirs">是否複製子目錄</param>
+        /// <returns>是否執行成功</returns>
+        private bool DirectoryCopy(string sourceDirName, string destDirName, bool copySubDirs){
+            //獲取來源目錄的子目錄
+            DirectoryInfo dir = new DirectoryInfo(sourceDirName);
+
+            //來源目錄是否存在
+            if (!dir.Exists)
+                return false;
+
+            DirectoryInfo[] dirs = dir.GetDirectories();
+            //如果目標資料夾沒有存在則創建一個
+            if (!Directory.Exists(destDirName))
+                Directory.CreateDirectory(destDirName);
+
+            //獲取目錄的檔案並複製到新的地方
+            FileInfo[] files = dir.GetFiles();
+            foreach (FileInfo file in files){
+                string temppath = Path.Combine(destDirName, file.Name);
+                if (File.Exists(temppath)) File.Delete(temppath);
+                file.CopyTo(temppath, false);
+                Export_Profile_LoadFile += 100;
+                bgw_Export_Profile.ReportProgress((int)(Export_Profile_LoadFile / Export_Profile_TotalFile));
+            }
+            bgw_Export_Profile.ReportProgress(100);
+
+            //子目錄遞迴程式
+            if (copySubDirs){
+                foreach (DirectoryInfo subdir in dirs){
+                    string temppath = Path.Combine(destDirName, subdir.Name);
+                    DirectoryCopy(subdir.FullName, temppath, copySubDirs);
+                }
+            }
+            return true;
         }
         #endregion
         #region 螢幕鍵盤

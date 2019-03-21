@@ -250,4 +250,10 @@
   <data name="menubtn_h_factory_inspection" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menubtn_h_factory inspection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Export_Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Export_Profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Import_Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Import_Profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

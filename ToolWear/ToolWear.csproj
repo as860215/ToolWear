@@ -96,6 +96,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Management" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Runtime.Serialization" />
@@ -296,6 +297,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\menubtn_th.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export_Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Import_Profile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
