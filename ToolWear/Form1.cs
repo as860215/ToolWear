@@ -15,6 +15,7 @@ using System.Text;
 using LNCcomm;
 using System.Linq;
 using EasyModbus;
+using System.Management;
 
 namespace ToolWear{
     public partial class Form1 : Form{
@@ -210,6 +211,55 @@ namespace ToolWear{
             //讀取今日Log事件表
             Read_Log(DateTime.Now.ToString("yyyyMMdd"));
         }
+        /// <summary>
+        /// 讀取系統資料
+        /// </summary>
+        private void System_Load(){
+            string tem_s = "";
+            try{
+                //讀取版本資料
+                StreamReader sr_version = new StreamReader(path + @"\data\version.cp");
+                string tem_version = sr_version.ReadLine();
+                sr_version.Close();
+                sr_version.Dispose();
+                tem_s += string.Format("軟體版本\r\n{0}\r\n\r\n", tem_version);
+
+                //取得.NET版本
+                tem_s += string.Format(".NET\r\n{0}\r\n\r\n", Environment.Version.ToString());
+
+                //取得CPU資料
+                ManagementClass mc = new ManagementClass("Win32_Processor");
+                ManagementObjectCollection moc = mc.GetInstances();
+                string CPUName = null;    //CPU名稱
+                foreach (ManagementObject mo in moc){
+                    CPUName = mo.Properties["Name"].Value.ToString().Trim();
+                    break;
+                }
+                tem_s += string.Format("CPU\r\n{0}\r\n\r\n", CPUName);
+
+                //取得記憶體資料
+                string Memory = null;   //記憶體大小
+                ManagementObjectSearcher search = new ManagementObjectSearcher("Select * From Win32_PhysicalMemory");
+                UInt64 total = 0;
+                foreach (ManagementObject ram in search.Get())
+                    total += (UInt64)ram.GetPropertyValue("Capacity");
+                Memory = (total / 1048576).ToString();
+                tem_s += string.Format("Memory\r\n{0} MB\r\n\r\n", Memory);
+
+                //取得電腦名稱與IP
+                String strHostName = System.Net.Dns.GetHostName();                                     //先讀取本機名稱
+                tem_s += string.Format("主機名稱\r\n{0}\r\n\r\n", strHostName);
+                System.Net.IPHostEntry iphostentry = System.Net.Dns.GetHostByName(strHostName);   //取得本機的 IpHostEntry 類別實體
+                string ip = "";
+                foreach (System.Net.IPAddress ipaddress in iphostentry.AddressList)
+                    ip += ipaddress.ToString();
+                tem_s += string.Format("IP\r\n{0}\r\n\r\n", ip);
+                tb_setting_System.Text = tem_s;
+            }
+            catch(Exception ex){
+                MessageBox.Show("讀取系統資料時發生錯誤。\n\nSystem_Load\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         #endregion
         #region 背景讀取
         //讀取階段
@@ -243,33 +293,41 @@ namespace ToolWear{
                     btn_Health.Enabled = false;
                     btn_logo.Enabled = false;
                     break;
-                //保留1~20初始化元件
+                //1~2讀取系統資料
                 case 1:
-                    tem = "正在搜尋DAQ訊號輸入...";
+                    tem = "正在讀取系統資料...";
                     break;
                 case 2:
+                    System_Load();
+                    tem = "系統資料讀取完畢";
+                    break;
+                //保留3~20初始化元件
+                case 3:
+                    tem = "正在搜尋DAQ訊號輸入...";
+                    break;
+                case 4:
                     Thread TD_DAQChannel = new Thread(DAQPhysicalChannels);
                     TD_DAQChannel.Start();
                     tem = "DAQ訊號輸入搜尋完畢";
                     break;
-                case 3:
+                case 5:
                     tem = "正在初始化元件屬性...";
                     break;
-                case 4:
+                case 6:
                     Initialization();
                     tem = "元件初始化完畢";
                     break;
-                case 5:
+                case 7:
                     tem = "正在設定元件屬性...";
                     break;
-                case 6:
+                case 8:
                     Setting();
                     tem = "元件屬性設定完畢";
                     break;
-                case 7:
+                case 9:
                     tem = "正在掃描LNC訊號...";
                     break;
-                case 8:
+                case 10:
                     LNC_Scan();
                     tem = "LNC訊號掃描完畢";
                     break;
@@ -2884,6 +2942,10 @@ namespace ToolWear{
         }
         //溫補 > 儲存
         private void btn_CompensateSave_Click(object sender, EventArgs e){
+            if (pre_Compensate_tb == null){
+                MessageBox.Show("尚未選取欲修改的項目，\n若您是要新增一筆資料請點選 + 按鈕。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (tb_Compensate_Select == -1){
                 string output = "";
                 if (pre_Compensate_tb.Text.Equals(""))

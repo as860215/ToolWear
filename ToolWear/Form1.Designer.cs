@@ -632,6 +632,7 @@
             this.btn_HealthResult_Back = new System.Windows.Forms.Button();
             this.label52 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.tb_setting_System = new System.Windows.Forms.TextBox();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -2933,6 +2934,8 @@
             this.btn_CompensateSave.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_save;
             resources.ApplyResources(this.btn_CompensateSave, "btn_CompensateSave");
             this.btn_CompensateSave.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_CompensateSave.Name = "btn_CompensateSave";
             this.btn_CompensateSave.UseVisualStyleBackColor = false;
             this.btn_CompensateSave.Click += new System.EventHandler(this.btn_CompensateSave_Click);
@@ -3086,6 +3089,8 @@
             this.btn_CompensateRemove.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_delete;
             resources.ApplyResources(this.btn_CompensateRemove, "btn_CompensateRemove");
             this.btn_CompensateRemove.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateRemove.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateRemove.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_CompensateRemove.Name = "btn_CompensateRemove";
             this.btn_CompensateRemove.UseVisualStyleBackColor = false;
             this.btn_CompensateRemove.Click += new System.EventHandler(this.btn_CompensateRemove_Click);
@@ -3107,6 +3112,8 @@
             this.btn_CompensateAdd.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_new;
             resources.ApplyResources(this.btn_CompensateAdd, "btn_CompensateAdd");
             this.btn_CompensateAdd.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_CompensateAdd.Name = "btn_CompensateAdd";
             this.btn_CompensateAdd.UseVisualStyleBackColor = false;
             this.btn_CompensateAdd.Click += new System.EventHandler(this.btn_CompensateAdd_Click);
@@ -3271,6 +3278,8 @@
             this.btn_CompensateSet_delete.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_delete;
             resources.ApplyResources(this.btn_CompensateSet_delete, "btn_CompensateSet_delete");
             this.btn_CompensateSet_delete.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateSet_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_CompensateSet_delete.Name = "btn_CompensateSet_delete";
             this.btn_CompensateSet_delete.UseVisualStyleBackColor = false;
             // 
@@ -3280,6 +3289,8 @@
             this.btn_CompensateSet_save.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_save;
             resources.ApplyResources(this.btn_CompensateSet_save, "btn_CompensateSet_save");
             this.btn_CompensateSet_save.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateSet_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_CompensateSet_save.Name = "btn_CompensateSet_save";
             this.btn_CompensateSet_save.UseVisualStyleBackColor = false;
             this.btn_CompensateSet_save.Click += new System.EventHandler(this.btn_CompensateSet_save_Click);
@@ -4628,6 +4639,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel2.Controls.Add(this.tb_setting_System);
             this.panel2.Controls.Add(this.lb_setting_Reconnection);
             this.panel2.Controls.Add(this.btn_setting_Reconnection);
             this.panel2.Controls.Add(this.btn_setting_save);
@@ -6613,15 +6625,24 @@
             resources.ApplyResources(this.panel11, "panel11");
             this.panel11.Name = "panel11";
             // 
+            // tb_setting_System
+            // 
+            this.tb_setting_System.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.tb_setting_System.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.tb_setting_System, "tb_setting_System");
+            this.tb_setting_System.ForeColor = System.Drawing.Color.White;
+            this.tb_setting_System.Name = "tb_setting_System";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
             this.ControlBox = false;
+            this.Controls.Add(this.panel_setting);
+            this.Controls.Add(this.panel_ThermalSetting);
             this.Controls.Add(this.panel_ATCsetting);
             this.Controls.Add(this.panel_ToolWearSetting);
-            this.Controls.Add(this.panel_ThermalSetting);
             this.Controls.Add(this.panel_Threshold);
             this.Controls.Add(this.panel_Health_Setting);
             this.Controls.Add(this.panel_Health_Result);
@@ -6630,7 +6651,6 @@
             this.Controls.Add(this.panel_SelectParts);
             this.Controls.Add(this.panel_ToolWear);
             this.Controls.Add(this.panel_Learn);
-            this.Controls.Add(this.panel_setting);
             this.Controls.Add(this.panel_Thermal);
             this.Controls.Add(this.panel_ViewModule);
             this.Controls.Add(this.panel_Home);
@@ -7248,6 +7268,7 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.TextBox tb_setting_System;
     }
 }
 
