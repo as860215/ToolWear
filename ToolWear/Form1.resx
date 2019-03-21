@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ViewModule.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -673,7 +673,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;cb_ToolWear_CurrentInput.Name" xml:space="preserve">
     <value>cb_ToolWear_CurrentInput</value>
@@ -2635,7 +2635,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="lb_ToolWear_warring_2.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 10.2pt</value>
@@ -4216,7 +4216,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Home.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="btn_shutdown.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4595,6 +4595,75 @@
   </data>
   <data name="panel_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.Name" xml:space="preserve">
+    <value>btn_Threshold_Back</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel_Threshold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 9</value>
+  </data>
+  <data name="panel_Threshold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_Threshold.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.Name" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_delete.Name" xml:space="preserve">
     <value>btn_Threshold_delete</value>
@@ -5001,546 +5070,6 @@
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lb_Threshold_page.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="lb_Threshold_page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_Threshold_page.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 318</value>
-  </data>
-  <data name="lb_Threshold_page.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 38</value>
-  </data>
-  <data name="lb_Threshold_page.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="lb_Threshold_page.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lb_Threshold_page.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lb_Threshold_page.Name" xml:space="preserve">
-    <value>lb_Threshold_page</value>
-  </data>
-  <data name="&gt;&gt;lb_Threshold_page.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_Threshold_page.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;lb_Threshold_page.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tb_Threshold_14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 623</value>
-  </data>
-  <data name="tb_Threshold_14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_14.TabIndex" type="System.Int32, mscorlib">
-    <value>72</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_14.Name" xml:space="preserve">
-    <value>tb_Threshold_14</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_14.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_14.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tb_Threshold_13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 576</value>
-  </data>
-  <data name="tb_Threshold_13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_13.TabIndex" type="System.Int32, mscorlib">
-    <value>71</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_13.Name" xml:space="preserve">
-    <value>tb_Threshold_13</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_13.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_13.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tb_Threshold_12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 529</value>
-  </data>
-  <data name="tb_Threshold_12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_12.TabIndex" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_12.Name" xml:space="preserve">
-    <value>tb_Threshold_12</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_12.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_12.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tb_Threshold_11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 482</value>
-  </data>
-  <data name="tb_Threshold_11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_11.TabIndex" type="System.Int32, mscorlib">
-    <value>69</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_11.Name" xml:space="preserve">
-    <value>tb_Threshold_11</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_11.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_11.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tb_Threshold_10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 435</value>
-  </data>
-  <data name="tb_Threshold_10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_10.TabIndex" type="System.Int32, mscorlib">
-    <value>68</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_10.Name" xml:space="preserve">
-    <value>tb_Threshold_10</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_10.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_10.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tb_Threshold_09.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_09.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 388</value>
-  </data>
-  <data name="tb_Threshold_09.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_09.TabIndex" type="System.Int32, mscorlib">
-    <value>67</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_09.Name" xml:space="preserve">
-    <value>tb_Threshold_09</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_09.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_09.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_09.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="tb_Threshold_08.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_08.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 341</value>
-  </data>
-  <data name="tb_Threshold_08.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_08.TabIndex" type="System.Int32, mscorlib">
-    <value>66</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_08.Name" xml:space="preserve">
-    <value>tb_Threshold_08</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_08.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_08.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_08.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="tb_Threshold_07.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_07.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 294</value>
-  </data>
-  <data name="tb_Threshold_07.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_07.TabIndex" type="System.Int32, mscorlib">
-    <value>65</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_07.Name" xml:space="preserve">
-    <value>tb_Threshold_07</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_07.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_07.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_07.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="tb_Threshold_06.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_06.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 247</value>
-  </data>
-  <data name="tb_Threshold_06.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_06.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_06.Name" xml:space="preserve">
-    <value>tb_Threshold_06</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_06.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_06.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_06.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="tb_Threshold_05.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_05.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 200</value>
-  </data>
-  <data name="tb_Threshold_05.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_05.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_05.Name" xml:space="preserve">
-    <value>tb_Threshold_05</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_05.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_05.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_05.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="tb_Threshold_04.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_04.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 153</value>
-  </data>
-  <data name="tb_Threshold_04.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_04.TabIndex" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_04.Name" xml:space="preserve">
-    <value>tb_Threshold_04</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_04.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_04.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_04.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="tb_Threshold_03.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_03.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 106</value>
-  </data>
-  <data name="tb_Threshold_03.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_03.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_03.Name" xml:space="preserve">
-    <value>tb_Threshold_03</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_03.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_03.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_03.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="tb_Threshold_02.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_02.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 59</value>
-  </data>
-  <data name="tb_Threshold_02.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_02.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_02.Name" xml:space="preserve">
-    <value>tb_Threshold_02</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_02.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_02.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_02.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="btn_Threshold_down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Threshold_down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_Threshold_down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Threshold_down.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 624</value>
-  </data>
-  <data name="btn_Threshold_down.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 40</value>
-  </data>
-  <data name="btn_Threshold_down.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="btn_Threshold_down.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_down.Name" xml:space="preserve">
-    <value>btn_Threshold_down</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_down.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_down.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_down.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="btn_Threshold_up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Threshold_up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_Threshold_up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Threshold_up.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 12</value>
-  </data>
-  <data name="btn_Threshold_up.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 40</value>
-  </data>
-  <data name="btn_Threshold_up.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="btn_Threshold_up.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_up.Name" xml:space="preserve">
-    <value>btn_Threshold_up</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_up.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_up.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_up.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="tb_Threshold_01.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="tb_Threshold_01.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 12</value>
-  </data>
-  <data name="tb_Threshold_01.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 41</value>
-  </data>
-  <data name="tb_Threshold_01.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_01.Name" xml:space="preserve">
-    <value>tb_Threshold_01</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_01.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_01.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;tb_Threshold_01.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 93</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 672</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_Threshold_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Threshold_Back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Threshold_Back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Threshold_Back.Location" type="System.Drawing.Point, System.Drawing">
-    <value>884, 14</value>
-  </data>
-  <data name="btn_Threshold_Back.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Threshold_Back.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.Name" xml:space="preserve">
-    <value>btn_Threshold_Back</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;btn_Threshold_Back.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 28.2pt</value>
-  </data>
-  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 17</value>
-  </data>
-  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>479, 61</value>
-  </data>
-  <data name="label22.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="label22.Text" xml:space="preserve">
-    <value>磨耗偵測/臨界值設定</value>
-  </data>
-  <data name="&gt;&gt;label22.Name" xml:space="preserve">
-    <value>label22</value>
-  </data>
-  <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel_Threshold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 9</value>
-  </data>
-  <data name="panel_Threshold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
-  </data>
-  <data name="panel_Threshold.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.Name" xml:space="preserve">
-    <value>panel_Threshold</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btn_Threshold_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -5575,7 +5104,7 @@
     <value>16, 435</value>
   </data>
   <data name="panel_Mark.Size" type="System.Drawing.Size, System.Drawing">
-    <value>572, 145</value>
+    <value>593, 145</value>
   </data>
   <data name="panel_Mark.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -6501,8 +6030,779 @@
   <data name="&gt;&gt;chart_Threshold.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
+  <data name="&gt;&gt;lb_Threshold_page.Name" xml:space="preserve">
+    <value>lb_Threshold_page</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_page.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_page.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_page.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Name" xml:space="preserve">
+    <value>tb_Threshold_14</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Name" xml:space="preserve">
+    <value>tb_Threshold_13</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Name" xml:space="preserve">
+    <value>tb_Threshold_12</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Name" xml:space="preserve">
+    <value>tb_Threshold_11</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Name" xml:space="preserve">
+    <value>tb_Threshold_10</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Name" xml:space="preserve">
+    <value>tb_Threshold_09</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Name" xml:space="preserve">
+    <value>tb_Threshold_08</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Name" xml:space="preserve">
+    <value>tb_Threshold_07</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Name" xml:space="preserve">
+    <value>tb_Threshold_06</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Name" xml:space="preserve">
+    <value>tb_Threshold_05</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Name" xml:space="preserve">
+    <value>tb_Threshold_04</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Name" xml:space="preserve">
+    <value>tb_Threshold_03</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Name" xml:space="preserve">
+    <value>tb_Threshold_02</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Name" xml:space="preserve">
+    <value>btn_Threshold_down</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Name" xml:space="preserve">
+    <value>btn_Threshold_up</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Name" xml:space="preserve">
+    <value>tb_Threshold_01</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 93</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 672</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_Threshold_page.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="lb_Threshold_page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Threshold_page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 318</value>
+  </data>
+  <data name="lb_Threshold_page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 38</value>
+  </data>
+  <data name="lb_Threshold_page.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lb_Threshold_page.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_Threshold_page.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_page.Name" xml:space="preserve">
+    <value>lb_Threshold_page</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_page.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_page.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;lb_Threshold_page.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tb_Threshold_14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 623</value>
+  </data>
+  <data name="tb_Threshold_14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_14.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Name" xml:space="preserve">
+    <value>tb_Threshold_14</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_14.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tb_Threshold_13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 576</value>
+  </data>
+  <data name="tb_Threshold_13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_13.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Name" xml:space="preserve">
+    <value>tb_Threshold_13</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tb_Threshold_12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 529</value>
+  </data>
+  <data name="tb_Threshold_12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_12.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Name" xml:space="preserve">
+    <value>tb_Threshold_12</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_12.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tb_Threshold_11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 482</value>
+  </data>
+  <data name="tb_Threshold_11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_11.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Name" xml:space="preserve">
+    <value>tb_Threshold_11</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_11.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tb_Threshold_10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 435</value>
+  </data>
+  <data name="tb_Threshold_10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_10.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Name" xml:space="preserve">
+    <value>tb_Threshold_10</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_10.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tb_Threshold_09.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_09.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 388</value>
+  </data>
+  <data name="tb_Threshold_09.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_09.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Name" xml:space="preserve">
+    <value>tb_Threshold_09</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_09.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tb_Threshold_08.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_08.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 341</value>
+  </data>
+  <data name="tb_Threshold_08.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_08.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Name" xml:space="preserve">
+    <value>tb_Threshold_08</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_08.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tb_Threshold_07.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_07.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 294</value>
+  </data>
+  <data name="tb_Threshold_07.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_07.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Name" xml:space="preserve">
+    <value>tb_Threshold_07</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_07.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tb_Threshold_06.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_06.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 247</value>
+  </data>
+  <data name="tb_Threshold_06.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_06.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Name" xml:space="preserve">
+    <value>tb_Threshold_06</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_06.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tb_Threshold_05.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_05.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 200</value>
+  </data>
+  <data name="tb_Threshold_05.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_05.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Name" xml:space="preserve">
+    <value>tb_Threshold_05</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_05.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="tb_Threshold_04.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_04.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 153</value>
+  </data>
+  <data name="tb_Threshold_04.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_04.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Name" xml:space="preserve">
+    <value>tb_Threshold_04</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_04.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tb_Threshold_03.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_03.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 106</value>
+  </data>
+  <data name="tb_Threshold_03.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_03.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Name" xml:space="preserve">
+    <value>tb_Threshold_03</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_03.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="tb_Threshold_02.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_02.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 59</value>
+  </data>
+  <data name="tb_Threshold_02.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_02.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Name" xml:space="preserve">
+    <value>tb_Threshold_02</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_02.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btn_Threshold_down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Threshold_down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_Threshold_down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Threshold_down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 624</value>
+  </data>
+  <data name="btn_Threshold_down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 40</value>
+  </data>
+  <data name="btn_Threshold_down.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="btn_Threshold_down.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Name" xml:space="preserve">
+    <value>btn_Threshold_down</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_down.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btn_Threshold_up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Threshold_up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_Threshold_up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Threshold_up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 12</value>
+  </data>
+  <data name="btn_Threshold_up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 40</value>
+  </data>
+  <data name="btn_Threshold_up.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="btn_Threshold_up.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Name" xml:space="preserve">
+    <value>btn_Threshold_up</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_up.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="tb_Threshold_01.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="tb_Threshold_01.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 12</value>
+  </data>
+  <data name="tb_Threshold_01.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 41</value>
+  </data>
+  <data name="tb_Threshold_01.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Name" xml:space="preserve">
+    <value>tb_Threshold_01</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;tb_Threshold_01.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btn_Threshold_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Threshold_Back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Threshold_Back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Threshold_Back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>884, 14</value>
+  </data>
+  <data name="btn_Threshold_Back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Threshold_Back.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.Name" xml:space="preserve">
+    <value>btn_Threshold_Back</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;btn_Threshold_Back.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 28.2pt</value>
+  </data>
+  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 61</value>
+  </data>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>磨耗偵測/臨界值設定</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>panel_Threshold</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="panel_ThermalSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.Name" xml:space="preserve">
+    <value>numeric_Compensate_Down</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.Name" xml:space="preserve">
+    <value>numeric_Compensate_Up</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.Name" xml:space="preserve">
+    <value>numeric_Temperature_Down</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.Name" xml:space="preserve">
+    <value>numeric_Temperature_Up</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btn_CompensateSave.Name" xml:space="preserve">
     <value>btn_CompensateSave</value>
@@ -6514,7 +6814,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_CompensateSave.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_20.Name" xml:space="preserve">
     <value>btn_Compensate_20</value>
@@ -6526,7 +6826,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_20.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_19.Name" xml:space="preserve">
     <value>btn_Compensate_19</value>
@@ -6538,7 +6838,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_19.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_18.Name" xml:space="preserve">
     <value>btn_Compensate_18</value>
@@ -6550,7 +6850,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_18.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_17.Name" xml:space="preserve">
     <value>btn_Compensate_17</value>
@@ -6562,7 +6862,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_17.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_16.Name" xml:space="preserve">
     <value>btn_Compensate_16</value>
@@ -6574,7 +6874,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_16.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_15.Name" xml:space="preserve">
     <value>btn_Compensate_15</value>
@@ -6586,7 +6886,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_15.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_14.Name" xml:space="preserve">
     <value>btn_Compensate_14</value>
@@ -6598,7 +6898,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_14.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_13.Name" xml:space="preserve">
     <value>btn_Compensate_13</value>
@@ -6610,7 +6910,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_13.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_12.Name" xml:space="preserve">
     <value>btn_Compensate_12</value>
@@ -6622,7 +6922,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_12.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_11.Name" xml:space="preserve">
     <value>btn_Compensate_11</value>
@@ -6634,7 +6934,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_11.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_10.Name" xml:space="preserve">
     <value>btn_Compensate_10</value>
@@ -6646,7 +6946,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_10.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_09.Name" xml:space="preserve">
     <value>btn_Compensate_09</value>
@@ -6658,7 +6958,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_09.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_08.Name" xml:space="preserve">
     <value>btn_Compensate_08</value>
@@ -6670,7 +6970,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_08.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;btn_CompensateRemove.Name" xml:space="preserve">
     <value>btn_CompensateRemove</value>
@@ -6682,7 +6982,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_CompensateRemove.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_07.Name" xml:space="preserve">
     <value>btn_Compensate_07</value>
@@ -6694,7 +6994,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_07.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <data name="&gt;&gt;btn_CompensateAdd.Name" xml:space="preserve">
     <value>btn_CompensateAdd</value>
@@ -6706,7 +7006,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_CompensateAdd.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_06.Name" xml:space="preserve">
     <value>btn_Compensate_06</value>
@@ -6718,19 +7018,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_06.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate.Name" xml:space="preserve">
-    <value>numeric_Compensate</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>21</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_05.Name" xml:space="preserve">
     <value>btn_Compensate_05</value>
@@ -6742,19 +7030,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_05.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature.Name" xml:space="preserve">
-    <value>numeric_Temperature</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_04.Name" xml:space="preserve">
     <value>btn_Compensate_04</value>
@@ -6766,19 +7042,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_04.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_03.Name" xml:space="preserve">
     <value>btn_Compensate_03</value>
@@ -6790,18 +7054,6 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_03.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_02.Name" xml:space="preserve">
@@ -6876,6 +7128,78 @@
   <data name="&gt;&gt;panel_Compensate.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
+  <data name="&gt;&gt;panel8.Name" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;panel8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel8.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;panel8.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;panel9.Name" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;panel9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel9.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.Name" xml:space="preserve">
+    <value>numeric_Temperature</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.Name" xml:space="preserve">
+    <value>numeric_Compensate</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
   <data name="panel_ThermalSetting.Location" type="System.Drawing.Point, System.Drawing">
     <value>267, 9</value>
   </data>
@@ -6895,7 +7219,139 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>2</value>
+  </data>
+  <data name="numeric_Compensate_Down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="numeric_Compensate_Down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="numeric_Compensate_Down.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="numeric_Compensate_Down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="numeric_Compensate_Down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>734, 276</value>
+  </data>
+  <data name="numeric_Compensate_Down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 35</value>
+  </data>
+  <data name="numeric_Compensate_Down.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.Name" xml:space="preserve">
+    <value>numeric_Compensate_Down</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numeric_Compensate_Up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="numeric_Compensate_Up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="numeric_Compensate_Up.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="numeric_Compensate_Up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="numeric_Compensate_Up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>688, 276</value>
+  </data>
+  <data name="numeric_Compensate_Up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 35</value>
+  </data>
+  <data name="numeric_Compensate_Up.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.Name" xml:space="preserve">
+    <value>numeric_Compensate_Up</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="numeric_Temperature_Down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="numeric_Temperature_Down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="numeric_Temperature_Down.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="numeric_Temperature_Down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="numeric_Temperature_Down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 276</value>
+  </data>
+  <data name="numeric_Temperature_Down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 35</value>
+  </data>
+  <data name="numeric_Temperature_Down.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.Name" xml:space="preserve">
+    <value>numeric_Temperature_Down</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="numeric_Temperature_Up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="numeric_Temperature_Up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="numeric_Temperature_Up.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="numeric_Temperature_Up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="numeric_Temperature_Up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 276</value>
+  </data>
+  <data name="numeric_Temperature_Up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 35</value>
+  </data>
+  <data name="numeric_Temperature_Up.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.Name" xml:space="preserve">
+    <value>numeric_Temperature_Up</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="btn_CompensateSave.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -6928,7 +7384,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_CompensateSave.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="btn_Compensate_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -6961,7 +7417,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_20.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="btn_Compensate_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -6994,7 +7450,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_19.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="btn_Compensate_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7027,7 +7483,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_18.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="btn_Compensate_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7060,7 +7516,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_17.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="btn_Compensate_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7093,7 +7549,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_16.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="btn_Compensate_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7126,7 +7582,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_15.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="btn_Compensate_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7159,7 +7615,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_14.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="btn_Compensate_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7192,7 +7648,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_13.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="btn_Compensate_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7225,7 +7681,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_12.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="btn_Compensate_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7258,7 +7714,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_11.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="btn_Compensate_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7291,7 +7747,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_10.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="btn_Compensate_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7324,7 +7780,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_09.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
   </data>
   <data name="btn_Compensate_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7357,7 +7813,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_08.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="btn_CompensateRemove.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7387,7 +7843,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_CompensateRemove.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="btn_Compensate_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7420,7 +7876,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_07.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <data name="btn_CompensateAdd.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7453,7 +7909,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_CompensateAdd.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="btn_Compensate_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7486,31 +7942,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_06.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="numeric_Compensate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>601, 276</value>
-  </data>
-  <data name="numeric_Compensate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 34</value>
-  </data>
-  <data name="numeric_Compensate.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="numeric_Compensate.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate.Name" xml:space="preserve">
-    <value>numeric_Compensate</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>21</value>
   </data>
   <data name="btn_Compensate_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7543,31 +7975,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_05.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="numeric_Temperature.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 275</value>
-  </data>
-  <data name="numeric_Temperature.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 34</value>
-  </data>
-  <data name="numeric_Temperature.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="numeric_Temperature.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature.Name" xml:space="preserve">
-    <value>numeric_Temperature</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="btn_Compensate_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7600,40 +8008,7 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_04.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 18pt</value>
-  </data>
-  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 272</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 38</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>補償(mm)</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="btn_Compensate_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7666,39 +8041,6 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;btn_Compensate_03.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 18pt</value>
-  </data>
-  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>167, 272</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 38</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>溫度(℃)</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
   <data name="btn_Compensate_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -8550,6 +8892,162 @@
   <data name="&gt;&gt;tb_Compensate_01.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 270</value>
+  </data>
+  <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 57</value>
+  </data>
+  <data name="panel8.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="&gt;&gt;panel8.Name" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;panel8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel8.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;panel8.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 270</value>
+  </data>
+  <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 57</value>
+  </data>
+  <data name="panel9.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="&gt;&gt;panel9.Name" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;panel9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel9.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="numeric_Temperature.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 277</value>
+  </data>
+  <data name="numeric_Temperature.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 34</value>
+  </data>
+  <data name="numeric_Temperature.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="numeric_Temperature.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.Name" xml:space="preserve">
+    <value>numeric_Temperature</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 273</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 38</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>溫度(℃)</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="numeric_Compensate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>591, 276</value>
+  </data>
+  <data name="numeric_Compensate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 34</value>
+  </data>
+  <data name="numeric_Compensate.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="numeric_Compensate.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.Name" xml:space="preserve">
+    <value>numeric_Compensate</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 272</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 38</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>補償(mm)</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
   <data name="panel_Thermal.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -8884,7 +9382,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="btn_Thermal_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -10765,7 +11263,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="lb_Learn_Blade.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -12109,7 +12607,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -12526,7 +13024,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;lb_setting_Reconnection.Name" xml:space="preserve">
     <value>lb_setting_Reconnection</value>
@@ -13069,7 +13567,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="tb_Load_ProgressRate.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
@@ -13187,411 +13685,6 @@
   </data>
   <data name="&gt;&gt;tb_Loading.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_30.Name" xml:space="preserve">
-    <value>btn_ATCsetting_30</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_30.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_30.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_29.Name" xml:space="preserve">
-    <value>btn_ATCsetting_29</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_29.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_29.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_28.Name" xml:space="preserve">
-    <value>btn_ATCsetting_28</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_28.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_28.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_28.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_27.Name" xml:space="preserve">
-    <value>btn_ATCsetting_27</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_27.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_27.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_26.Name" xml:space="preserve">
-    <value>btn_ATCsetting_26</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_26.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_26.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_25.Name" xml:space="preserve">
-    <value>btn_ATCsetting_25</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_25.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_25.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_24.Name" xml:space="preserve">
-    <value>btn_ATCsetting_24</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_24.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_24.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_23.Name" xml:space="preserve">
-    <value>btn_ATCsetting_23</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_23.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_23.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_22.Name" xml:space="preserve">
-    <value>btn_ATCsetting_22</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_22.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_22.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_21.Name" xml:space="preserve">
-    <value>btn_ATCsetting_21</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_21.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_21.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_20.Name" xml:space="preserve">
-    <value>btn_ATCsetting_20</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_20.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_20.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_19.Name" xml:space="preserve">
-    <value>btn_ATCsetting_19</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_19.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_19.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_18.Name" xml:space="preserve">
-    <value>btn_ATCsetting_18</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_18.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_18.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_17.Name" xml:space="preserve">
-    <value>btn_ATCsetting_17</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_17.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_17.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_16.Name" xml:space="preserve">
-    <value>btn_ATCsetting_16</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_16.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_16.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_15.Name" xml:space="preserve">
-    <value>btn_ATCsetting_15</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_15.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_15.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_14.Name" xml:space="preserve">
-    <value>btn_ATCsetting_14</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_14.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_14.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_13.Name" xml:space="preserve">
-    <value>btn_ATCsetting_13</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_13.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_13.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_12.Name" xml:space="preserve">
-    <value>btn_ATCsetting_12</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_12.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_12.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_11.Name" xml:space="preserve">
-    <value>btn_ATCsetting_11</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_11.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_11.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_10.Name" xml:space="preserve">
-    <value>btn_ATCsetting_10</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_10.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_10.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_09.Name" xml:space="preserve">
-    <value>btn_ATCsetting_09</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_09.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_09.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_09.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_08.Name" xml:space="preserve">
-    <value>btn_ATCsetting_08</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_08.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_08.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_08.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_07.Name" xml:space="preserve">
-    <value>btn_ATCsetting_07</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_07.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_07.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_07.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_06.Name" xml:space="preserve">
-    <value>btn_ATCsetting_06</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_06.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_06.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_06.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_05.Name" xml:space="preserve">
-    <value>btn_ATCsetting_05</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_05.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_05.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_05.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_04.Name" xml:space="preserve">
-    <value>btn_ATCsetting_04</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_04.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_04.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_04.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_03.Name" xml:space="preserve">
-    <value>btn_ATCsetting_03</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_03.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_03.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_03.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_02.Name" xml:space="preserve">
-    <value>btn_ATCsetting_02</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_02.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_02.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_02.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_01.Name" xml:space="preserve">
-    <value>btn_ATCsetting_01</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_01.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_01.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_01.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="panel_ATCsetting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 9</value>
-  </data>
-  <data name="panel_ATCsetting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 780</value>
-  </data>
-  <data name="panel_ATCsetting.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;panel_ATCsetting.Name" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;panel_ATCsetting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_ATCsetting.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="btn_ATCsetting_30.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -13953,123 +14046,6 @@
   <data name="&gt;&gt;btn_ATCsetting_21.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;btn_ATCsetting_BladeDown.Name" xml:space="preserve">
-    <value>btn_ATCsetting_BladeDown</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_BladeDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_BladeDown.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_BladeDown.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_BladeUp.Name" xml:space="preserve">
-    <value>btn_ATCsetting_BladeUp</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_BladeUp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_BladeUp.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_BladeUp.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_save.Name" xml:space="preserve">
-    <value>btn_ATCsetting_save</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_save.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_save.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_delete.Name" xml:space="preserve">
-    <value>btn_ATCsetting_delete</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_delete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_delete.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btn_ATCsetting_delete.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;numeric_ATCsetting_Blade.Name" xml:space="preserve">
-    <value>numeric_ATCsetting_Blade</value>
-  </data>
-  <data name="&gt;&gt;numeric_ATCsetting_Blade.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_ATCsetting_Blade.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;numeric_ATCsetting_Blade.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label25.Name" xml:space="preserve">
-    <value>label25</value>
-  </data>
-  <data name="&gt;&gt;label25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;tb_ATCsetting_Name.Name" xml:space="preserve">
-    <value>tb_ATCsetting_Name</value>
-  </data>
-  <data name="&gt;&gt;tb_ATCsetting_Name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_ATCsetting_Name.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;tb_ATCsetting_Name.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 359</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>932, 406</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>76</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>panel_ATCsetting</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
   <data name="btn_ATCsetting_BladeDown.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -14083,7 +14059,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_ATCsetting_BladeDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 215</value>
+    <value>296, 215</value>
   </data>
   <data name="btn_ATCsetting_BladeDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 35</value>
@@ -14116,7 +14092,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_ATCsetting_BladeUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 215</value>
+    <value>246, 215</value>
   </data>
   <data name="btn_ATCsetting_BladeUp.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 35</value>
@@ -14196,30 +14172,6 @@
   <data name="&gt;&gt;btn_ATCsetting_delete.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="numeric_ATCsetting_Blade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 216</value>
-  </data>
-  <data name="numeric_ATCsetting_Blade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 34</value>
-  </data>
-  <data name="numeric_ATCsetting_Blade.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="numeric_ATCsetting_Blade.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numeric_ATCsetting_Blade.Name" xml:space="preserve">
-    <value>numeric_ATCsetting_Blade</value>
-  </data>
-  <data name="&gt;&gt;numeric_ATCsetting_Blade.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_ATCsetting_Blade.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;numeric_ATCsetting_Blade.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -14251,7 +14203,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="tb_ATCsetting_Name.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
@@ -14278,7 +14230,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;tb_ATCsetting_Name.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -14311,7 +14263,73 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>238, 203</value>
+  </data>
+  <data name="panel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 65</value>
+  </data>
+  <data name="panel11.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;panel11.Name" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;panel11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel11.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel11.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="numeric_ATCsetting_Blade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 216</value>
+  </data>
+  <data name="numeric_ATCsetting_Blade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 34</value>
+  </data>
+  <data name="numeric_ATCsetting_Blade.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="numeric_ATCsetting_Blade.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.Name" xml:space="preserve">
+    <value>numeric_ATCsetting_Blade</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;numeric_ATCsetting_Blade.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 359</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>932, 406</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="btn_ATCsetting_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -15066,6 +15084,27 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
+  <data name="panel_ATCsetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 9</value>
+  </data>
+  <data name="panel_ATCsetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_ATCsetting.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;panel_ATCsetting.Name" xml:space="preserve">
+    <value>panel_ATCsetting</value>
+  </data>
+  <data name="&gt;&gt;panel_ATCsetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_ATCsetting.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;label18.Name" xml:space="preserve">
     <value>label18</value>
   </data>
@@ -15181,7 +15220,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -16117,7 +16156,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_SelectParts.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="btn_SelectParts_Add.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -18415,7 +18454,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AddParts.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="btn_AddParts_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -18793,19 +18832,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health_Setting.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btn_HealthSetting_Refresh.Name" xml:space="preserve">
-    <value>btn_HealthSetting_Refresh</value>
-  </data>
-  <data name="&gt;&gt;btn_HealthSetting_Refresh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_HealthSetting_Refresh.Parent" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="&gt;&gt;btn_HealthSetting_Refresh.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label57.Name" xml:space="preserve">
     <value>label57</value>
@@ -18817,6 +18844,18 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;label57.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_HealthSetting_Refresh.Name" xml:space="preserve">
+    <value>btn_HealthSetting_Refresh</value>
+  </data>
+  <data name="&gt;&gt;btn_HealthSetting_Refresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_HealthSetting_Refresh.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;btn_HealthSetting_Refresh.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;btn_HealthSetting_Down.Name" xml:space="preserve">
@@ -18843,18 +18882,6 @@
   <data name="&gt;&gt;btn_HealthSetting_Up.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;numeric_HealthSetting_Range.Name" xml:space="preserve">
-    <value>numeric_HealthSetting_Range</value>
-  </data>
-  <data name="&gt;&gt;numeric_HealthSetting_Range.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_HealthSetting_Range.Parent" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="&gt;&gt;numeric_HealthSetting_Range.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="&gt;&gt;cb_HealthSetting_Channel.Name" xml:space="preserve">
     <value>cb_HealthSetting_Channel</value>
   </data>
@@ -18865,7 +18892,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;cb_HealthSetting_Channel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;cb_HealthSetting_Machine.Name" xml:space="preserve">
     <value>cb_HealthSetting_Machine</value>
@@ -18877,7 +18904,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;cb_HealthSetting_Machine.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btn_HealthSetting_save.Name" xml:space="preserve">
     <value>btn_HealthSetting_save</value>
@@ -18889,7 +18916,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;btn_HealthSetting_save.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;btn_HealthSetting_delete.Name" xml:space="preserve">
     <value>btn_HealthSetting_delete</value>
@@ -18901,7 +18928,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;btn_HealthSetting_delete.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;label56.Name" xml:space="preserve">
     <value>label56</value>
@@ -18913,7 +18940,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;label56.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;label55.Name" xml:space="preserve">
     <value>label55</value>
@@ -18925,7 +18952,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;label55.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;label54.Name" xml:space="preserve">
     <value>label54</value>
@@ -18937,7 +18964,31 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;label54.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;panel10.Name" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;panel10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel10.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="&gt;&gt;numeric_HealthSetting_Range.Name" xml:space="preserve">
+    <value>numeric_HealthSetting_Range</value>
+  </data>
+  <data name="&gt;&gt;numeric_HealthSetting_Range.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_HealthSetting_Range.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;numeric_HealthSetting_Range.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
     <value>28, 120</value>
@@ -18958,6 +19009,39 @@
     <value>panel_Health_Setting</value>
   </data>
   <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label57.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label57.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="label57.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label57.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 358</value>
+  </data>
+  <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 35</value>
+  </data>
+  <data name="label57.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="label57.Text" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="&gt;&gt;label57.Name" xml:space="preserve">
+    <value>label57</value>
+  </data>
+  <data name="&gt;&gt;label57.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label57.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;label57.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btn_HealthSetting_Refresh.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -18991,39 +19075,6 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;btn_HealthSetting_Refresh.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label57.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label57.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="label57.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label57.Location" type="System.Drawing.Point, System.Drawing">
-    <value>238, 360</value>
-  </data>
-  <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 35</value>
-  </data>
-  <data name="label57.TabIndex" type="System.Int32, mscorlib">
-    <value>107</value>
-  </data>
-  <data name="label57.Text" xml:space="preserve">
-    <value>%</value>
-  </data>
-  <data name="&gt;&gt;label57.Name" xml:space="preserve">
-    <value>label57</value>
-  </data>
-  <data name="&gt;&gt;label57.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label57.Parent" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="&gt;&gt;label57.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="btn_HealthSetting_Down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -19039,7 +19090,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_HealthSetting_Down.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 360</value>
+    <value>321, 358</value>
   </data>
   <data name="btn_HealthSetting_Down.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 35</value>
@@ -19072,7 +19123,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_HealthSetting_Up.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 360</value>
+    <value>277, 358</value>
   </data>
   <data name="btn_HealthSetting_Up.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 35</value>
@@ -19091,30 +19142,6 @@
   </data>
   <data name="&gt;&gt;btn_HealthSetting_Up.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="numeric_HealthSetting_Range.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 359</value>
-  </data>
-  <data name="numeric_HealthSetting_Range.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 34</value>
-  </data>
-  <data name="numeric_HealthSetting_Range.TabIndex" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="numeric_HealthSetting_Range.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;numeric_HealthSetting_Range.Name" xml:space="preserve">
-    <value>numeric_HealthSetting_Range</value>
-  </data>
-  <data name="&gt;&gt;numeric_HealthSetting_Range.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_HealthSetting_Range.Parent" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="&gt;&gt;numeric_HealthSetting_Range.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="cb_HealthSetting_Channel.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -19141,7 +19168,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;cb_HealthSetting_Channel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="cb_HealthSetting_Machine.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -19171,7 +19198,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;cb_HealthSetting_Machine.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="btn_HealthSetting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -19201,7 +19228,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;btn_HealthSetting_save.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="btn_HealthSetting_delete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -19231,7 +19258,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;btn_HealthSetting_delete.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="label56.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -19264,7 +19291,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;label56.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="label55.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -19297,7 +19324,7 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;label55.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="label54.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -19330,7 +19357,52 @@
     <value>panel7</value>
   </data>
   <data name="&gt;&gt;label54.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="panel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 349</value>
+  </data>
+  <data name="panel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 57</value>
+  </data>
+  <data name="panel10.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="&gt;&gt;panel10.Name" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;panel10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel10.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="numeric_HealthSetting_Range.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 359</value>
+  </data>
+  <data name="numeric_HealthSetting_Range.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 34</value>
+  </data>
+  <data name="numeric_HealthSetting_Range.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="numeric_HealthSetting_Range.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;numeric_HealthSetting_Range.Name" xml:space="preserve">
+    <value>numeric_HealthSetting_Range</value>
+  </data>
+  <data name="&gt;&gt;numeric_HealthSetting_Range.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_HealthSetting_Range.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;numeric_HealthSetting_Range.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="btn_HealthSetting_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -19594,7 +19666,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health_Result.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="label75.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -20077,7 +20149,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1246, 766</value>
+    <value>1238, 758</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>

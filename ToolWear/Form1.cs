@@ -1069,6 +1069,9 @@ namespace ToolWear{
         TextBox pre_Blade = null;
         //臨界值設定 > 點選不同刀號
         private void Threshold_LoadBlade(object sender,EventArgs e){
+            //修改TextBox顏色
+            if (pre_Blade != null) pre_Blade.BackColor = Color.WhiteSmoke;
+            ((TextBox)sender).BackColor = Color.CadetBlue;
             pre_Blade = (TextBox)sender;
             if (pre_Blade.Text.Equals("")) return;
             //判斷裝置給予頻率
@@ -2843,6 +2846,22 @@ namespace ToolWear{
                 tb_Compensate_Clear();
             }
             else MessageBox.Show("已經在最末頁了！");
+        }
+        //溫補 > 溫度+0.1
+        private void numeric_Temperature_Up_Click(object sender,EventArgs e){
+            numeric_Temperature.Value += (decimal)0.1;
+        }
+        //溫補 > 溫度-0.1
+        private void numeric_Temperature_Down_Click(object sender, EventArgs e){
+            numeric_Temperature.Value -= (decimal)0.1;
+        }
+        //溫補 > 補償值+0.01
+        private void numeric_Compensate_Up_Click(object sender,EventArgs e){
+            numeric_Compensate.Value += (decimal)0.01;
+        }
+        //溫補 > 補償值-0.01
+        private void numeric_Compensate_Down_Click(object sender, EventArgs e){
+            numeric_Compensate.Value -= (decimal)0.01;
         }
         //溫補 > 新增
         private void btn_CompensateAdd_Click(object sender, EventArgs e){
