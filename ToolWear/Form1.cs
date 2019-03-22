@@ -848,20 +848,8 @@ namespace ToolWear
                     sr_learn.Dispose();
                 }
                 catch{
-                    return;
-                    //查不到預設檔案，隨便選取一項
-                    foreach(string s in Directory.GetFiles(path + @"data\FFT")){
-                        string path_s = Path.GetFileNameWithoutExtension(s);
-                        if (!path_s.Split('-')[0].Equals("L")) continue;
-                        if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))){
-                            //ex.LS-xxx00-0_2500
-                            //將前方抬頭刪掉
-                            Blade_FileName = path_s.Split('-')[1] + "-" + path_s.Split('-')[2];
-                            break;
-                        }
-                    }
                     //Write_Log("警告", "查詢不到臨界值資料。");
-                    //return;
+                    return;
                 }
                 Tool_rate = (int)ATC_RPM;
                 Tool_Blade = 4;
@@ -3287,7 +3275,6 @@ namespace ToolWear
             }
 
             //如果轉速和之前一樣不重新讀取
-
             double reload_RPM = ATC_RPM;
             if (ATC_RPM == 0) reload_RPM = 2500;
             if (reload_RPM == LastReload_RPM) return;
@@ -3324,7 +3311,6 @@ namespace ToolWear
             }
             catch(Exception ex){
                 //進到例外表示沒有當前轉速/刀號的學習紀錄檔，可忽略
-                //MessageBox.Show("發生不可測意外。\n\ntimer_CNC_Tick\n\n" + ex.ToString());
             }
         }
         private void timer_FakeData_Tick(object sender,EventArgs e){
@@ -3713,23 +3699,7 @@ namespace ToolWear
                     if (ToolWear_bool[i] == true){
                         //判斷檔案是否存在
                         tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
-                        //若沒有存在則使用預設0刀號
-                        //if (!File.Exists(tem_path)){
-                        //    //查不到預設檔案，隨便選取一項
-                        //    foreach (string s in Directory.GetFiles(path + @"data\FFT")){
-                        //        string path_s = Path.GetFileNameWithoutExtension(s);
-                        //        if (!path_s.Split('-')[0].Equals("M")) continue;
-                        //        if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (i + 1).ToString("00"))){
-                        //            //ex.LS-xxx00-0_2500
-                        //            //將前方抬頭刪掉
-                        //            tem_path = path + @"\data\FFT\M-" + path_s.Split('-')[1] + "-" + path_s.Split('-')[2] + ".cp";
-                        //            break;
-                        //        }
-                        //    }
-                        //}
-                        //tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
                     }
-                       
             }
             //先讀取目前刀具的最大值檔案
             try{
