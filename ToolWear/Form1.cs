@@ -677,6 +677,8 @@ namespace ToolWear
                 if (hz * (i + 1) >= 2000) break;
                 chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
             }
+            //重置RPM訊息
+            LastReload_RPM = 0;
 
             //修改開始與停止按鈕
             btn_ToolWear_Start.Enabled = false;
@@ -846,6 +848,7 @@ namespace ToolWear
                     sr_learn.Dispose();
                 }
                 catch{
+                    return;
                     //查不到預設檔案，隨便選取一項
                     foreach(string s in Directory.GetFiles(path + @"data\FFT")){
                         string path_s = Path.GetFileNameWithoutExtension(s);
@@ -3258,6 +3261,8 @@ namespace ToolWear
             //Current_Getdata("33");
             Current_Getdata_Schneider("1");
         }
+        //暫存上次讀取的RPM數據
+        double LastReload_RPM = 0;
         private void timer_CNC_Tick(object sender,EventArgs e){
             ATC_RPM = Mitsubishi_GetFeedSpeed();
             ATC_num = Mitsubishi_GetATCStatus();
@@ -3281,6 +3286,12 @@ namespace ToolWear
                 if (On_ToolWear == false) return;
             }
 
+            //如果轉速和之前一樣不重新讀取
+
+            double reload_RPM = ATC_RPM;
+            if (ATC_RPM == 0) reload_RPM = 2500;
+            if (reload_RPM == LastReload_RPM) return;
+
             //判斷輸入裝置然後給予頻率
             double rate = 0, sample = 0;
             if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
@@ -3294,11 +3305,11 @@ namespace ToolWear
 
             //重新讀取磨耗偵測FFT比對圖形
             try{
-                Module_FFT.Clear();
-                chart_FFT.Series[0].Points.Clear();
                 StreamReader sr = new StreamReader(path + @"data\FFT\L-" + lb_ToolWear_Parts.Text +
                                                     pre_ToolWear.Name.Split('_')[2] + "-" + ATC_num +
-                                                    "_" + ATC_RPM + ".cp");
+                                                    "_" + reload_RPM + ".cp");
+                Module_FFT.Clear();
+                chart_FFT.Series[0].Points.Clear();
                 while (!sr.EndOfStream)
                     Module_FFT.Add(sr.ReadLine());
                 sr.Close();
@@ -3309,9 +3320,11 @@ namespace ToolWear
                     if (hz * (i + 1) >= 2000) break;
                     chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
                 }
+                LastReload_RPM = reload_RPM;
             }
             catch(Exception ex){
-                MessageBox.Show("發生不可測意外。\n\ntimer_CNC_Tick\n\n" + ex.ToString());
+                //進到例外表示沒有當前轉速/刀號的學習紀錄檔，可忽略
+                //MessageBox.Show("發生不可測意外。\n\ntimer_CNC_Tick\n\n" + ex.ToString());
             }
         }
         private void timer_FakeData_Tick(object sender,EventArgs e){
@@ -3701,19 +3714,19 @@ namespace ToolWear
                         //判斷檔案是否存在
                         tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
                         //若沒有存在則使用預設0刀號
-                        if (!File.Exists(tem_path)){
-                            //查不到預設檔案，隨便選取一項
-                            foreach (string s in Directory.GetFiles(path + @"data\FFT")){
-                                string path_s = Path.GetFileNameWithoutExtension(s);
-                                if (!path_s.Split('-')[0].Equals("M")) continue;
-                                if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (i + 1).ToString("00"))){
-                                    //ex.LS-xxx00-0_2500
-                                    //將前方抬頭刪掉
-                                    tem_path = path + @"\data\FFT\M-" + path_s.Split('-')[1] + "-" + path_s.Split('-')[2] + ".cp";
-                                    break;
-                                }
-                            }
-                        }
+                        //if (!File.Exists(tem_path)){
+                        //    //查不到預設檔案，隨便選取一項
+                        //    foreach (string s in Directory.GetFiles(path + @"data\FFT")){
+                        //        string path_s = Path.GetFileNameWithoutExtension(s);
+                        //        if (!path_s.Split('-')[0].Equals("M")) continue;
+                        //        if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (i + 1).ToString("00"))){
+                        //            //ex.LS-xxx00-0_2500
+                        //            //將前方抬頭刪掉
+                        //            tem_path = path + @"\data\FFT\M-" + path_s.Split('-')[1] + "-" + path_s.Split('-')[2] + ".cp";
+                        //            break;
+                        //        }
+                        //    }
+                        //}
                         //tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
                     }
                        
@@ -4078,8 +4091,12 @@ namespace ToolWear
             string buffer = "";
             if (lRet == 0){
                 lRet = EZNcCom.Monitor_GetSpindleMonitor(lIndex, lspindle, out plData, out buffer);
-                if (lRet == 0)
+                if (lRet == 0){
+                    //補正轉速偏差
+                    if (plData % 10 == 9) plData++;
+                    else if (plData % 10 == 1) plData--;
                     return plData;
+                }
                 else
                     CatchLog(1003, lRet.ToString());
             }
@@ -4200,7 +4217,7 @@ namespace ToolWear
         }
         #endregion
         #region 輸出/載入設定檔
-        BackgroundWorker bgw_Profile = new BackgroundWorker();
+        BackgroundWorker bgw_Profile = null;
         string Export_Path = null;
         //輸出設定檔
         private void Export_Profile(object sender,EventArgs e){
@@ -4216,6 +4233,7 @@ namespace ToolWear
             Bar_setting.Visible = true;
             Bar_setting.Value = 0;
             try{
+                bgw_Profile = new BackgroundWorker();
                 bgw_Profile.DoWork += new DoWorkEventHandler(Export_Profile_DoWork);
                 bgw_Profile.ProgressChanged += new ProgressChangedEventHandler(Profile_ProgressChanged);
                 bgw_Profile.WorkerReportsProgress = true;
@@ -4230,6 +4248,9 @@ namespace ToolWear
         private void Export_Profile_DoWork(object sender,DoWorkEventArgs e){
             //複製設定檔到指定目錄
             try{
+                btn_ExportProfile.Enabled = false;
+                btn_ImportProfile.Enabled = false;
+
                 //計算設定檔內有多少檔案數量(進度條用)
                 DirectoryInfo dirInfo = new DirectoryInfo(path + @"\data");
                 Export_Profile_TotalFile = GetFilesCount(dirInfo);
@@ -4239,8 +4260,11 @@ namespace ToolWear
             }
             catch(Exception ex){
                 MessageBox.Show("輸出設定檔時發生錯誤。\n\nExport_Profile_DoWork\n\n" + ex.ToString(), "輸出設定檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally{
+                btn_ExportProfile.Enabled = true;
+                btn_ImportProfile.Enabled = true;
                 bgw_Profile.CancelAsync();
-                return;
             }
         }
         //輸出/載入設定檔 > 背景執行續 > 進度
@@ -4260,11 +4284,45 @@ namespace ToolWear
             if (dialog.ShowDialog() == DialogResult.OK)
                 Import_Path = dialog.SelectedPath;
             if(!Import_Path.Substring(Import_Path.Length - 5, 5).Equals(@"\data")){
-                MessageBox.Show("請選擇\ndata\n資料夾以避免程式產生錯誤。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("請選擇原先輸出設定檔產生的\ndata\n資料夾以避免程式產生錯誤。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             Bar_setting.Visible = true;
             Bar_setting.Value = 0;
+
+            try{
+                bgw_Profile = new BackgroundWorker();
+                bgw_Profile.DoWork += new DoWorkEventHandler(Import_Profile_DoWork);
+                bgw_Profile.ProgressChanged += new ProgressChangedEventHandler(Profile_ProgressChanged);
+                bgw_Profile.WorkerReportsProgress = true;
+
+                bgw_Profile.RunWorkerAsync();
+            }
+            catch (Exception ex){
+                MessageBox.Show("載入設定檔時發生錯誤。\n\nImport_Profile\n\n" + ex.ToString(), "載入設定檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //載入設定檔 > 背景執行續 > 開始
+        private void Import_Profile_DoWork(object sender, DoWorkEventArgs e){
+            try{
+                btn_ExportProfile.Enabled = false;
+                btn_ImportProfile.Enabled = false;
+
+                //計算設定檔內有多少檔案數量(進度條用)
+                DirectoryInfo dirInfo = new DirectoryInfo(path + @"\data");
+                Export_Profile_TotalFile = GetFilesCount(dirInfo);
+
+                DirectoryCopy(path + @"\data", Export_Path + @"\data", true);
+                MessageBox.Show("載入設定檔完畢。", "載入設定檔成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex){
+                MessageBox.Show("載入設定檔時發生錯誤。\n\nImport_Profile_DoWork\n\n" + ex.ToString(), "載入設定檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally{
+                btn_ExportProfile.Enabled = true;
+                btn_ImportProfile.Enabled = true;
+                bgw_Profile.CancelAsync();
+            }
         }
         //計算檔案目錄內所有檔案數量
         int Export_Profile_TotalFile = 0;
