@@ -2497,16 +2497,20 @@ namespace ToolWear
         #endregion
         #region 選擇按鈕(Up/Down)
         private void btn_ATCsetting_BladeUp_Click(object sender,EventArgs e){
-            numeric_ATCsetting_Blade.Value += 1;
+            if(numeric_ATCsetting_Blade.Value < numeric_ATCsetting_Blade.Maximum)
+                numeric_ATCsetting_Blade.Value += 1;
         }
         private void btn_ATCsetting_BladeDown_Click(object sender, EventArgs e){
-            numeric_ATCsetting_Blade.Value -= 1;
+            if(numeric_ATCsetting_Blade.Value > numeric_ATCsetting_Blade.Minimum)
+                numeric_ATCsetting_Blade.Value -= 1;
         }
         private void btn_HealthSetting_Up_Click(object sender,EventArgs e){
-            numeric_HealthSetting_Range.Value += 1;
+            if(numeric_HealthSetting_Range.Value < numeric_HealthSetting_Range.Maximum)
+                numeric_HealthSetting_Range.Value += 1;
         }
         private void btn_HealthSetting_Down_Click(object sender, EventArgs e){
-            numeric_HealthSetting_Range.Value -= 1;
+            if(numeric_HealthSetting_Range.Value > numeric_HealthSetting_Range.Minimum)
+                numeric_HealthSetting_Range.Value -= 1;
         }
         #endregion
         #endregion
@@ -3109,7 +3113,7 @@ namespace ToolWear
             string tem = pre_ATCSetting.Text + "," + tb_ATCsetting_Name.Text + "," + numeric_ATCsetting_Blade.Value;
             try{
                 RW_TCsetting(tem);
-                MessageBox.Show("刀具名稱與刃數存檔成功！");
+                MessageBox.Show("刀具名稱與刃數存檔成功！", "儲存成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex){
                 MessageBox.Show("發生不可測意外。\n\nbtn_ATCsetting_save_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -3122,7 +3126,7 @@ namespace ToolWear
             string tem = ((Button)pre_ATCSetting).Text + ",,";
             try{
                 RW_TCsetting(tem);
-                MessageBox.Show("刀具名稱與刃數刪除成功！");
+                MessageBox.Show("刀具名稱與刃數刪除成功！", "刪除成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex){
                 MessageBox.Show("發生不可測意外。\n\nbtn_ATCsetting_delete_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -4191,6 +4195,13 @@ namespace ToolWear
         string Export_Path = null;
         //輸出設定檔
         private void Export_Profile(object sender,EventArgs e){
+            //檢查是否正在輸出或載入
+            if (bgw_Profile != null){
+                if(bgw_Profile.IsBusy == true){
+                    MessageBox.Show("系統正在處理設定檔，請稍後再試。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
             //確認訊息
             DialogResult dialogResult = MessageBox.Show("您確定要輸出設定檔嗎？\n根據您的設定檔大小將可能耗費不少時間。" +
                 "\n並且若您的輸出目錄已有data資料夾，將會覆蓋內部所有相關設定檔。", "輸出設定檔", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
@@ -4200,8 +4211,10 @@ namespace ToolWear
             FolderBrowserDialog dialog = new FolderBrowserDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
                 Export_Path = dialog.SelectedPath;
+            else return;
             Bar_setting.Visible = true;
             Bar_setting.Value = 0;
+            Export_Profile_LoadFile = 0;
             try{
                 bgw_Profile = new BackgroundWorker();
                 bgw_Profile.DoWork += new DoWorkEventHandler(Export_Profile_DoWork);
@@ -4218,9 +4231,6 @@ namespace ToolWear
         private void Export_Profile_DoWork(object sender,DoWorkEventArgs e){
             //複製設定檔到指定目錄
             try{
-                btn_ExportProfile.Enabled = false;
-                btn_ImportProfile.Enabled = false;
-
                 //計算設定檔內有多少檔案數量(進度條用)
                 DirectoryInfo dirInfo = new DirectoryInfo(path + @"\data");
                 Export_Profile_TotalFile = GetFilesCount(dirInfo);
@@ -4232,8 +4242,6 @@ namespace ToolWear
                 MessageBox.Show("輸出設定檔時發生錯誤。\n\nExport_Profile_DoWork\n\n" + ex.ToString(), "輸出設定檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally{
-                btn_ExportProfile.Enabled = true;
-                btn_ImportProfile.Enabled = true;
                 bgw_Profile.CancelAsync();
             }
         }
@@ -4244,6 +4252,14 @@ namespace ToolWear
         //載入設定檔
         string Import_Path = null;
         private void Import_Profile(object sender,EventArgs e){
+            //檢查是否正在輸出或載入
+            if (bgw_Profile != null){
+                if(bgw_Profile.IsBusy == true){
+                    MessageBox.Show("系統正在處理設定檔，請稍後再試。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+
             //確認訊息
             DialogResult dialogResult = MessageBox.Show("您確定要載入設定檔嗎？\n根據您的設定檔大小將可能耗費不少時間。" +
                 "\n並且會完全覆蓋掉您原先的設定檔，\n請問要繼續嗎？", "載入設定檔", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
@@ -4253,13 +4269,14 @@ namespace ToolWear
             FolderBrowserDialog dialog = new FolderBrowserDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
                 Import_Path = dialog.SelectedPath;
+            else return;
             if(!Import_Path.Substring(Import_Path.Length - 5, 5).Equals(@"\data")){
                 MessageBox.Show("請選擇原先輸出設定檔產生的\ndata\n資料夾以避免程式產生錯誤。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             Bar_setting.Visible = true;
             Bar_setting.Value = 0;
-
+            Export_Profile_LoadFile = 0;
             try{
                 bgw_Profile = new BackgroundWorker();
                 bgw_Profile.DoWork += new DoWorkEventHandler(Import_Profile_DoWork);
@@ -4275,24 +4292,36 @@ namespace ToolWear
         //載入設定檔 > 背景執行續 > 開始
         private void Import_Profile_DoWork(object sender, DoWorkEventArgs e){
             try{
-                btn_ExportProfile.Enabled = false;
-                btn_ImportProfile.Enabled = false;
-
-                //計算設定檔內有多少檔案數量(進度條用)
-                DirectoryInfo dirInfo = new DirectoryInfo(path + @"\data");
+                //計算要載入的設定檔內有多少檔案數量(進度條用)
+                DirectoryInfo dirInfo = new DirectoryInfo(Import_Path);
                 Export_Profile_TotalFile = GetFilesCount(dirInfo);
 
-                DirectoryCopy(path + @"\data", Export_Path + @"\data", true);
+                //先刪檔案
+                File_Delete(path + @"\data");
+
+                DirectoryCopy(Import_Path, path + @"\data" , true);
                 MessageBox.Show("載入設定檔完畢。", "載入設定檔成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex){
                 MessageBox.Show("載入設定檔時發生錯誤。\n\nImport_Profile_DoWork\n\n" + ex.ToString(), "載入設定檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally{
-                btn_ExportProfile.Enabled = true;
-                btn_ImportProfile.Enabled = true;
                 bgw_Profile.CancelAsync();
             }
+        }
+        /// <summary>
+        /// 刪除路徑所有檔案與子目錄
+        /// </summary>
+        /// <param name="Path">路徑</param>
+        private void File_Delete(string Path){
+            if (Directory.Exists(Path)){
+                try{
+                    Directory.Delete(Path, true);
+                }
+                catch (IOException e){
+                }
+            }
+
         }
         //計算檔案目錄內所有檔案數量
         int Export_Profile_TotalFile = 0;

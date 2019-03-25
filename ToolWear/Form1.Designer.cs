@@ -638,6 +638,8 @@
             this.lb_HealthResult_Machine = new System.Windows.Forms.Label();
             this.btn_HealthResult_Back = new System.Windows.Forms.Button();
             this.label52 = new System.Windows.Forms.Label();
+            this.panel_ImportProfile = new System.Windows.Forms.Panel();
+            this.panel_ExportProfile = new System.Windows.Forms.Panel();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -717,6 +719,8 @@
             this.panel_Health_Result.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_HealthResult_AfterSale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_HealthResult_Factory)).BeginInit();
+            this.panel_ImportProfile.SuspendLayout();
+            this.panel_ExportProfile.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_ViewModule
@@ -4636,13 +4640,11 @@
             // panel_setting
             // 
             this.panel_setting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            this.panel_setting.Controls.Add(this.label77);
-            this.panel_setting.Controls.Add(this.btn_ImportProfile);
-            this.panel_setting.Controls.Add(this.label76);
-            this.panel_setting.Controls.Add(this.btn_ExportProfile);
             this.panel_setting.Controls.Add(this.panel2);
             this.panel_setting.Controls.Add(this.label14);
             this.panel_setting.Controls.Add(this.Bar_setting);
+            this.panel_setting.Controls.Add(this.panel_ImportProfile);
+            this.panel_setting.Controls.Add(this.panel_ExportProfile);
             resources.ApplyResources(this.panel_setting, "panel_setting");
             this.panel_setting.Name = "panel_setting";
             // 
@@ -4652,6 +4654,7 @@
             resources.ApplyResources(this.label77, "label77");
             this.label77.ForeColor = System.Drawing.Color.White;
             this.label77.Name = "label77";
+            this.label77.Click += new System.EventHandler(this.Import_Profile);
             // 
             // btn_ImportProfile
             // 
@@ -4671,6 +4674,7 @@
             resources.ApplyResources(this.label76, "label76");
             this.label76.ForeColor = System.Drawing.Color.White;
             this.label76.Name = "label76";
+            this.label76.Click += new System.EventHandler(this.Export_Profile);
             // 
             // btn_ExportProfile
             // 
@@ -6686,6 +6690,22 @@
             this.label52.ForeColor = System.Drawing.Color.White;
             this.label52.Name = "label52";
             // 
+            // panel_ImportProfile
+            // 
+            this.panel_ImportProfile.Controls.Add(this.btn_ImportProfile);
+            this.panel_ImportProfile.Controls.Add(this.label77);
+            resources.ApplyResources(this.panel_ImportProfile, "panel_ImportProfile");
+            this.panel_ImportProfile.Name = "panel_ImportProfile";
+            this.panel_ImportProfile.Click += new System.EventHandler(this.Import_Profile);
+            // 
+            // panel_ExportProfile
+            // 
+            this.panel_ExportProfile.Controls.Add(this.label76);
+            this.panel_ExportProfile.Controls.Add(this.btn_ExportProfile);
+            resources.ApplyResources(this.panel_ExportProfile, "panel_ExportProfile");
+            this.panel_ExportProfile.Name = "panel_ExportProfile";
+            this.panel_ExportProfile.Click += new System.EventHandler(this.Export_Profile);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -6821,6 +6841,8 @@
             this.panel_Health_Result.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_HealthResult_AfterSale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_HealthResult_Factory)).EndInit();
+            this.panel_ImportProfile.ResumeLayout(false);
+            this.panel_ExportProfile.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -7327,6 +7349,8 @@
         private System.Windows.Forms.ProgressBar Bar_setting;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Button btn_ImportProfile;
+        private System.Windows.Forms.Panel panel_ImportProfile;
+        private System.Windows.Forms.Panel panel_ExportProfile;
     }
 }
 
