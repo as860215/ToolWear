@@ -10,12 +10,23 @@ using EZNCAUTLib;
 namespace ConsoleApp1{
     class Program{
         static void Main(string[] args){
+            object a = null;
+            string[] s = new string[2] { "2", "3" };
+            a = s;
+            Console.WriteLine(((string[])a)[0]);
+
             DispEZNcCommunication EZNcCom = new DispEZNcCommunication();
             long lRet;
             int lSystemType = 9;
             int ATC_NUM = 0;
-            lRet = EZNcCom.SetTCPIPProtocol("192.168.11.205", 683);
+            lRet = EZNcCom.SetTCPIPProtocol("192.168.11.220", 683);
             lRet = EZNcCom.Open2(lSystemType,1,100,"EZNC_LOCALHOST");
+
+            
+            object vValues = null;
+            lRet = EZNcCom.Device_ReadBlock(2,"M4992",2,out vValues);
+            Console.WriteLine(vValues);
+
             //while (true)
             //{
             //    //取得目前使用刀號
@@ -27,13 +38,13 @@ namespace ConsoleApp1{
 
 
 
-            int lIndex = 2, lspindle = 1, plData = 0;
-            string buffer = "";
-            while (true)
-            {
-                lRet = EZNcCom.Monitor_GetSpindleMonitor(lIndex, lspindle, out plData, out buffer);
-                Console.WriteLine(DateTime.Now.ToString("HH:mm:ss : ") + plData);
-            }
+            //int lIndex = 2, lspindle = 1, plData = 0;
+            //string buffer = "";
+            //while (true)
+            //{
+            //    lRet = EZNcCom.Monitor_GetSpindleMonitor(lIndex, lspindle, out plData, out buffer);
+            //    Console.WriteLine(DateTime.Now.ToString("HH:mm:ss : ") + plData);
+            //}
 
 
             //while (true)

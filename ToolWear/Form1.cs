@@ -791,6 +791,8 @@ namespace ToolWear
         List<string> ToolWear_Alern = new List<string>();
         //警戒圖暫存變數
         int chart_warring_count = 0;    //要將現在的警戒圖形畫到哪一個chart上
+        //暫存進入警戒時的時間(避免同一秒鐘一直輸出警戒資訊)
+        DateTime Warring_Time = new DateTime();
         //磨耗偵測 > 判斷是否超出警戒值(顯示Log)
         private void ToolWear_Log(DataTable dt, double sample, double rate){
             string Blade_FileName = "";
@@ -902,6 +904,12 @@ namespace ToolWear
                 else if ((i + 1) * hz > Hz_max){
                     //頻率已大於刀刃刃數頻率，將倍率提升
                     if (((sum / count) > double.Parse(ToolWear_Alern[Blade_Hz_Mag - 1])) && !ToolWear_Alern[Blade_Hz_Mag - 1].Equals("0")){
+                        //先檢查同一秒鐘有沒有觸發過預警
+                        if (Warring_Time.ToString("HHmmss").Equals(DateTime.Now.ToString("HHmmss"))) return;
+
+                        //存取現在寫入LOG檔的時間，避免同一秒重複讀寫
+                        Warring_Time = DateTime.Now;
+
                         Write_Log("警告", string.Format("{0}軸 {1}hz~{2}hz 震動幅度超過警戒值，當前:{3}(警戒值:{4})。", btn_ToolWear[now_Match].Text, Hz_min.ToString("0.####"), Hz_max.ToString("0.####"), (sum / count).ToString("0.00##"), ToolWear_Alern[Blade_Hz_Mag - 1]));
                         List<string> tem_datatable = new List<string>();
                         for (int j = 0; j < sample; j++)
@@ -4078,6 +4086,21 @@ namespace ToolWear
             //EZNcCom = null;
             return 0;
         }
+        /// <summary>
+        /// 取得輸入的記憶體位置資料
+        /// </summary>
+        /// <param name="Address">記憶體位置</param>
+        /// <returns>記憶體資料(-1為失敗)</returns>
+        private int Mitsubishi_GetMemoryData(string Address){
+            if (machine_connect == false) return -1;
+            object vValues = null;
+            lRet = EZNcCom.Device_ReadBlock(2, Address, 2, out vValues);
+            if(lRet == 0){
+                int tem_value = ((int[])vValues)[0];
+                return tem_value;
+            }
+            return -1;
+        }
         #endregion
         #endregion
         #region 例外事件
@@ -4094,7 +4117,7 @@ namespace ToolWear
                     catch_log = "取得機台狀態失敗";
                     break;
                 case 1003:
-                    catch_log = "取得進給率失敗";
+                    catch_log = "取得轉速失敗";
                     break;
             }
             MessageBox.Show(catch_log + "\n錯誤代碼：" + code + "\n資訊：" + detail);

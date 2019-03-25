@@ -1627,7 +1627,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="panel_ToolWear.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3040,7 +3040,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="panel_Home.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4963,7 +4963,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="panel_ThermalSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -6622,7 +6622,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="panel_Thermal.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7927,7 +7927,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="panel_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -8934,54 +8934,6 @@
   <data name="&gt;&gt;btn_Learn_Start.ZOrder" xml:space="preserve">
     <value>29</value>
   </data>
-  <data name="chart_Learn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>682, 526</value>
-  </data>
-  <data name="chart_Learn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 124</value>
-  </data>
-  <data name="chart_Learn.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="chart_Learn.Text" xml:space="preserve">
-    <value>chart2</value>
-  </data>
-  <data name="&gt;&gt;chart_Learn.Name" xml:space="preserve">
-    <value>chart_Learn</value>
-  </data>
-  <data name="&gt;&gt;chart_Learn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_Learn.Parent" xml:space="preserve">
-    <value>panel_Learn</value>
-  </data>
-  <data name="&gt;&gt;chart_Learn.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="chart_LearnFFT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 263</value>
-  </data>
-  <data name="chart_LearnFFT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>654, 395</value>
-  </data>
-  <data name="chart_LearnFFT.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="chart_LearnFFT.Text" xml:space="preserve">
-    <value>chart2</value>
-  </data>
-  <data name="&gt;&gt;chart_LearnFFT.Name" xml:space="preserve">
-    <value>chart_LearnFFT</value>
-  </data>
-  <data name="&gt;&gt;chart_LearnFFT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_LearnFFT.Parent" xml:space="preserve">
-    <value>panel_Learn</value>
-  </data>
-  <data name="&gt;&gt;chart_LearnFFT.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
   <data name="pb_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -9061,6 +9013,54 @@
     <value>panel_Learn</value>
   </data>
   <data name="&gt;&gt;panel_Learn_Parts.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="chart_LearnFFT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>682, 526</value>
+  </data>
+  <data name="chart_LearnFFT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 124</value>
+  </data>
+  <data name="chart_LearnFFT.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="chart_LearnFFT.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="&gt;&gt;chart_LearnFFT.Name" xml:space="preserve">
+    <value>chart_LearnFFT</value>
+  </data>
+  <data name="&gt;&gt;chart_LearnFFT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_LearnFFT.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;chart_LearnFFT.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="chart_Learn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 273</value>
+  </data>
+  <data name="chart_Learn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>654, 395</value>
+  </data>
+  <data name="chart_Learn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chart_Learn.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.Name" xml:space="preserve">
+    <value>chart_Learn</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.Parent" xml:space="preserve">
+    <value>panel_Learn</value>
+  </data>
+  <data name="&gt;&gt;chart_Learn.ZOrder" xml:space="preserve">
     <value>32</value>
   </data>
   <data name="panel_Learn.Location" type="System.Drawing.Point, System.Drawing">
@@ -9082,7 +9082,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>0</value>
   </data>
   <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -10072,7 +10072,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="tb_Load_ProgressRate.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
@@ -11629,7 +11629,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -12250,7 +12250,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <metadata name="timer_temperature.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -13951,7 +13951,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_SelectParts.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="btn_AddParts_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -14278,7 +14278,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AddParts.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <metadata name="timer_load.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>210, 17</value>
@@ -14791,7 +14791,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health_Setting.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label75.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -15283,7 +15283,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health_Result.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
