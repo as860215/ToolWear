@@ -10,11 +10,6 @@ using EZNCAUTLib;
 namespace ConsoleApp1{
     class Program{
         static void Main(string[] args){
-            object a = null;
-            string[] s = new string[2] { "2", "3" };
-            a = s;
-            Console.WriteLine(((string[])a)[0]);
-
             DispEZNcCommunication EZNcCom = new DispEZNcCommunication();
             long lRet;
             int lSystemType = 9;

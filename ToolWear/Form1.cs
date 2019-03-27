@@ -3321,7 +3321,7 @@ namespace ToolWear
                 }
                 LastReload_RPM = reload_RPM;
             }
-            catch(Exception ex){
+            catch{
                 //進到例外表示沒有當前轉速/刀號的學習紀錄檔，可忽略
             }
         }
@@ -4099,7 +4099,52 @@ namespace ToolWear
                 int tem_value = ((int[])vValues)[0];
                 return tem_value;
             }
+            else
+                CatchLog(1004, lRet.ToString());
             return -1;
+        }
+        /// <summary>
+        /// 將數值寫入指定的記憶體位置
+        /// </summary>
+        /// <param name="address">記憶體位置</param>
+        /// <param name="value">數值</param>
+        /// <returns>是否成功改寫記憶體</returns>
+        private bool Mitsubishi_WriteMemoryData(string address,string value){
+            if (machine_connect == false) return false;
+            object vValue = value;
+            lRet = EZNcCom.Device_WriteBlock(2, address, 2, vValue);
+            if (lRet == 0)
+                return true;
+            else
+                CatchLog(1005,lRet.ToString());
+            return false;
+        }
+        /// <summary>
+        /// 停止程式運行
+        /// </summary>
+        /// <returns>是否成功</returns>
+        private bool Mitsubishi_Stop(){
+            if (machine_connect == false) return false;
+            lRet = EZNcCom.Operation_Stop();
+            if (lRet == 0)
+                return true;
+            else
+                CatchLog(1006, lRet.ToString());
+            return false;
+        }
+        /// <summary>
+        /// 取得機台Alarm狀態
+        /// </summary>
+        /// <returns>Alarm訊號</returns>
+        private string Mitsubishi_GetAlarm(){
+            if (machine_connect == false) return "NotConnect";
+            string sBuffer = "";
+            lRet = EZNcCom.System_GetAlarm(10, 0,out sBuffer);
+            if (lRet == 0)
+                return sBuffer;
+            else
+                CatchLog(1007, lRet.ToString());
+            return null;
         }
         #endregion
         #endregion
@@ -4118,6 +4163,21 @@ namespace ToolWear
                     break;
                 case 1003:
                     catch_log = "取得轉速失敗";
+                    break;
+                case 1004:
+                    catch_log = "讀取記憶體位置失敗";
+                    break;
+                case 1005:
+                    catch_log = "改寫記憶體失敗";
+                    break;
+                case 1006:
+                    catch_log = "停止可編成程式失敗";
+                    break;
+                case 1007:
+                    catch_log = "取得Alarm狀態失敗";
+                    break;
+                default:
+                    catch_log = "錯誤碼未定義";
                     break;
             }
             MessageBox.Show(catch_log + "\n錯誤代碼：" + code + "\n資訊：" + detail);
@@ -4342,6 +4402,7 @@ namespace ToolWear
                     Directory.Delete(Path, true);
                 }
                 catch (IOException e){
+                    MessageBox.Show("發生不可測意外。\n\nFile_Delete\n\n" + e.ToString(), "刪除檔案失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
 
