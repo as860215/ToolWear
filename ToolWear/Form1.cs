@@ -4120,7 +4120,7 @@ namespace ToolWear
             return false;
         }
         /// <summary>
-        /// 停止程式運行
+        /// 緊急停止
         /// </summary>
         /// <returns>是否成功</returns>
         private bool Mitsubishi_Stop(){
@@ -4130,6 +4130,17 @@ namespace ToolWear
                 return true;
             else
                 CatchLog(1006, lRet.ToString());
+            return false;
+        }
+        /// <summary>
+        /// 重置急停
+        /// </summary>
+        /// <returns>是否成功</returns>
+        private bool Mitsubishi_Run(){
+            if (machine_connect == false) return false;
+            lRet = EZNcCom.Operation_Run();
+            if (lRet == 0)
+                return true;
             return false;
         }
         /// <summary>

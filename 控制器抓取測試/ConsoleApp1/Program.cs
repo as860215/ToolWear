@@ -17,10 +17,11 @@ namespace ConsoleApp1{
             lRet = EZNcCom.SetTCPIPProtocol("192.168.11.220", 683);
             lRet = EZNcCom.Open2(lSystemType,1,100,"EZNC_LOCALHOST");
 
-            
-            object vValues = null;
-            lRet = EZNcCom.Device_ReadBlock(2,"M4992",2,out vValues);
-            Console.WriteLine(vValues);
+            lRet = EZNcCom.Operation_Run();
+
+            //object vValues = null;
+            //lRet = EZNcCom.Device_ReadBlock(2,"M4992",2,out vValues);
+            //Console.WriteLine(vValues);
 
             //while (true)
             //{
