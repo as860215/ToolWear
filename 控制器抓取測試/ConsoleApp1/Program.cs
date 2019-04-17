@@ -20,11 +20,8 @@ namespace ConsoleApp1{
             //軸負載(0%為0，1%為65535，2%為65534，以此類推)
             int lAxisNo = 3;
             int lIndex = 3;
-            while (true)
-            {
-                lRet = EZNcCom.Monitor_GetServoMonitor(lAxisNo, lIndex, out int plData, out string pbstrBuffer);
-                Console.WriteLine(plData.ToString());
-            }
+            lRet = EZNcCom.Monitor_GetServoMonitor(lAxisNo, lIndex, out int plData, out string pbstrBuffer);
+
             //lRet = EZNcCom.Operation_Stop();
 
             //lRet = EZNcCom.Operation_Run();

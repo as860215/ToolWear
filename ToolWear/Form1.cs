@@ -18,14 +18,17 @@ using EasyModbus;
 using System.Management;
 using System.IO.Compression;
 using System.ComponentModel;
+using Campro;
 
 namespace ToolWear{
     public partial class Form1 : Form{
         private string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;  //執行檔位置
         private char[] Unlawful = new char[2] { ',', ':' }; //非法字元
         private bool machine_connect = false;
+        private string machine_type = "";
         public Form1(){
             InitializeComponent();
+            Brother_Initialization();
             //將視窗最大化
             this.WindowState = FormWindowState.Maximized;
             //隱藏工作列
@@ -3271,8 +3274,14 @@ namespace ToolWear{
         //暫存上次讀取的RPM數據
         double LastReload_RPM = 0;
         private void timer_CNC_Tick(object sender,EventArgs e){
-            ATC_RPM = Mitsubishi_GetFeedSpeed();
-            ATC_num = Mitsubishi_GetATCStatus();
+            if (machine_type.Equals("Mitsubishi")){
+                ATC_RPM = Mitsubishi_GetFeedSpeed();
+                ATC_num = Mitsubishi_GetATCStatus();
+            }
+            else if (machine_type.Equals("Brother")){
+                ATC_RPM = double.Parse(Brother_GetFeedSpeed());
+                ATC_num = double.Parse(Brother_GetATCStatus());
+            }
             lb_ToolWear_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
             lb_Learn_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
             lb_ToolWear_Tool.Text = ATC_num.ToString();
@@ -4009,6 +4018,8 @@ namespace ToolWear{
         }
         #endregion
         #region 控制器讀取
+        //暫存轉速
+        double ATC_RPM = 0;
         #region 三菱
         long lRet;
         DispEZNcCommunication EZNcCom = new DispEZNcCommunication();
@@ -4023,6 +4034,7 @@ namespace ToolWear{
             lRet = EZNcCom.Open2(lSystemType, lMachine, lTimeOut, "EZNC_LOCALHOST");
             if (lRet == 0){
                 machine_connect = true;
+                machine_type = "Mitsubishi";
                 //開始擷取CNC資料
                 timer_CNC.Enabled = true;
             }
@@ -4068,8 +4080,6 @@ namespace ToolWear{
             //EZNcCom = null;
             return "";
         }
-        //暫存轉速
-        double ATC_RPM = 0;
         /// <summary>
         /// 取得目前轉速
         /// </summary>
@@ -4172,12 +4182,67 @@ namespace ToolWear{
         private string Mitsubishi_GetLoad(int Axis){
             int lAxisNo = Axis;
             int lIndex = 3;
+            //軸負載(0%為0，1%為65535，2%為65534，以此類推)
             lRet = EZNcCom.Monitor_GetServoMonitor(lAxisNo, lIndex, out int plData, out string pbstrBuffer);
-            if(lRet == 0)
+            if (lRet == 0){
+                if(plData != 0)
+                    plData = 65536 - plData;
                 return plData.ToString();
+            }
             else
                 CatchLog(1008, lRet.ToString());
             return "";
+        }
+        #endregion
+        #region Brother
+        string Bro_lRet = "";
+        /// <summary>
+        /// Brother控制器初始化
+        /// </summary>
+        private string Brother_Initialization(){
+            Brother br = new Brother(tb_setting_ip.Text, 10000);
+            Bro_lRet = br.CNC_Status();    //測試連線
+            if (Bro_lRet.Equals(""))
+                machine_connect = false;
+            else{
+                machine_connect = true;
+                machine_type = "Brother";
+                timer_CNC.Enabled = true;
+            }
+            return Bro_lRet;
+        }
+        /// <summary>
+        /// Brother控制器 > 取得自動換刀裝置目前使用刀號
+        /// </summary>
+        /// <returns>目前刀號</returns>
+        private string Brother_GetATCStatus(){
+            Brother br = new Brother(tb_setting_ip.Text, 10000);
+            Bro_lRet = br.ATC_Number();
+            if (Bro_lRet.Equals(""))
+                CatchLog(1001,Bro_lRet);
+            return Bro_lRet;
+        }
+        /// <summary>
+        /// Brother控制器 > 取得機台狀態
+        /// </summary>
+        /// <returns>目前狀態</returns>
+        private string Brother_GetRunStatus(){
+            Brother br = new Brother(tb_setting_ip.Text, 10000);
+            Bro_lRet = br.CNC_Status();
+            if (Bro_lRet.Equals(""))
+                CatchLog(1002, Bro_lRet);
+            return Bro_lRet;
+        }
+        /// <summary>
+        /// 取得目前轉速
+        /// </summary>
+        /// <returns>轉速(RPM)</returns>
+        private string Brother_GetFeedSpeed(){
+            Brother br = new Brother(tb_setting_ip.Text, 10000);
+            Bro_lRet = br.Rotating();
+            if (Bro_lRet.Equals(""))
+                CatchLog(1003, Bro_lRet);
+            return Bro_lRet;
         }
         #endregion
         #endregion

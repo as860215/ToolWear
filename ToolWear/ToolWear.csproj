@@ -77,6 +77,10 @@
     <OutputPath>bin\x64\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Campro, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\Campro.dll</HintPath>
+    </Reference>
     <Reference Include="EasyModbus">
       <HintPath>library\EasyModbus.dll</HintPath>
     </Reference>
