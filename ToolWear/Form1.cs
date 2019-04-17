@@ -252,8 +252,10 @@ namespace ToolWear{
                 tem_s += string.Format("主機名稱\r\n{0}\r\n\r\n", strHostName);
                 System.Net.IPHostEntry iphostentry = System.Net.Dns.GetHostByName(strHostName);   //取得本機的 IpHostEntry 類別實體
                 string ip = "";
-                foreach (System.Net.IPAddress ipaddress in iphostentry.AddressList)
+                foreach (System.Net.IPAddress ipaddress in iphostentry.AddressList){
                     ip += ipaddress.ToString();
+                    break;  //只讀一個IP
+                }
                 tem_s += string.Format("主機IP\r\n{0}\r\n\r\n", ip);
                 
                 tb_setting_System.Text = tem_s;
@@ -4160,7 +4162,22 @@ namespace ToolWear{
                 return sBuffer;
             else
                 CatchLog(1007, lRet.ToString());
-            return null;
+            return "";
+        }
+        /// <summary>
+        /// 取得機台指定軸向負載
+        /// </summary>
+        /// <param name="Axis">軸向(從1開始)</param>
+        /// <returns>負載量(%)</returns>
+        private string Mitsubishi_GetLoad(int Axis){
+            int lAxisNo = Axis;
+            int lIndex = 3;
+            lRet = EZNcCom.Monitor_GetServoMonitor(lAxisNo, lIndex, out int plData, out string pbstrBuffer);
+            if(lRet == 0)
+                return plData.ToString();
+            else
+                CatchLog(1008, lRet.ToString());
+            return "";
         }
         #endregion
         #endregion
@@ -4191,6 +4208,9 @@ namespace ToolWear{
                     break;
                 case 1007:
                     catch_log = "取得Alarm狀態失敗";
+                    break;
+                case 1008:
+                    catch_log = "取得負載資料失敗";
                     break;
                 default:
                     catch_log = "錯誤碼未定義";

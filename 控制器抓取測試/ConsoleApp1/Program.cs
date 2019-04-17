@@ -17,9 +17,17 @@ namespace ConsoleApp1{
             lRet = EZNcCom.SetTCPIPProtocol("192.168.11.220", 683);
             lRet = EZNcCom.Open2(lSystemType,1,100,"EZNC_LOCALHOST");
 
-            lRet = EZNcCom.Operation_Stop();
+            //軸負載(0%為0，1%為65535，2%為65534，以此類推)
+            int lAxisNo = 3;
+            int lIndex = 3;
+            while (true)
+            {
+                lRet = EZNcCom.Monitor_GetServoMonitor(lAxisNo, lIndex, out int plData, out string pbstrBuffer);
+                Console.WriteLine(plData.ToString());
+            }
+            //lRet = EZNcCom.Operation_Stop();
 
-            lRet = EZNcCom.Operation_Run();
+            //lRet = EZNcCom.Operation_Run();
 
             //object vValues = null;
             //lRet = EZNcCom.Device_ReadBlock(2,"M4992",2,out vValues);
