@@ -24,8 +24,8 @@ namespace ToolWear{
     public partial class Form1 : Form{
         private string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;  //執行檔位置
         private char[] Unlawful = new char[2] { ',', ':' }; //非法字元
-        private bool machine_connect = false;
-        private string machine_type = "";
+        private bool machine_connect = false;   //是否有連線機台
+        private string machine_type = "";   //機台廠牌
         public Form1(){
             InitializeComponent();
             Brother_Initialization();
@@ -4243,6 +4243,25 @@ namespace ToolWear{
             if (Bro_lRet.Equals(""))
                 CatchLog(1003, Bro_lRet);
             return Bro_lRet;
+        }
+        #endregion
+        #region 發那科
+        short ret = 0;
+        ushort FFlibHndl;
+        String FileName;
+        /// <summary>
+        /// Fanuc控制器初始化
+        /// </summary>
+        private short FANUC_Initialization(){
+            short ret = Focas1.cnc_allclibhndl3(tb_setting_ip.Text, 8193, 1, out FFlibHndl);
+            if (ret == 0)
+                machine_connect = false;
+            else{
+                machine_connect = true;
+                machine_type = "Fanuc";
+                timer_CNC.Enabled = true;
+            }
+            return ret;
         }
         #endregion
         #endregion
