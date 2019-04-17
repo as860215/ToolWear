@@ -9082,7 +9082,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -9477,6 +9477,90 @@
   <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="btn_AlarmSet.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_AlarmSet.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_AlarmSet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_AlarmSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 4</value>
+  </data>
+  <data name="btn_AlarmSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 48</value>
+  </data>
+  <data name="btn_AlarmSet.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="&gt;&gt;btn_AlarmSet.Name" xml:space="preserve">
+    <value>btn_AlarmSet</value>
+  </data>
+  <data name="&gt;&gt;btn_AlarmSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AlarmSet.Parent" xml:space="preserve">
+    <value>panel_AlarmSet</value>
+  </data>
+  <data name="&gt;&gt;btn_AlarmSet.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label78.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 7.8pt</value>
+  </data>
+  <data name="label78.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label78.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 60</value>
+  </data>
+  <data name="label78.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 19</value>
+  </data>
+  <data name="label78.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="label78.Text" xml:space="preserve">
+    <value>Alarm設定</value>
+  </data>
+  <data name="label78.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label78.Name" xml:space="preserve">
+    <value>label78</value>
+  </data>
+  <data name="&gt;&gt;label78.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label78.Parent" xml:space="preserve">
+    <value>panel_AlarmSet</value>
+  </data>
+  <data name="&gt;&gt;label78.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_AlarmSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>678, 19</value>
+  </data>
+  <data name="panel_AlarmSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 80</value>
+  </data>
+  <data name="panel_AlarmSet.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="&gt;&gt;panel_AlarmSet.Name" xml:space="preserve">
+    <value>panel_AlarmSet</value>
+  </data>
+  <data name="&gt;&gt;panel_AlarmSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_AlarmSet.Parent" xml:space="preserve">
+    <value>panel_setting</value>
+  </data>
+  <data name="&gt;&gt;panel_AlarmSet.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tb_setting_System.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
   </data>
@@ -9823,7 +9907,7 @@
     <value>panel_setting</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -9856,7 +9940,7 @@
     <value>panel_setting</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Bar_setting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -9883,7 +9967,7 @@
     <value>panel_setting</value>
   </data>
   <data name="&gt;&gt;Bar_setting.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btn_ImportProfile.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9967,7 +10051,7 @@
     <value>panel_setting</value>
   </data>
   <data name="&gt;&gt;panel_ImportProfile.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label76.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 7.8pt</value>
@@ -10051,7 +10135,7 @@
     <value>panel_setting</value>
   </data>
   <data name="&gt;&gt;panel_ExportProfile.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="panel_setting.Location" type="System.Drawing.Point, System.Drawing">
     <value>267, 9</value>
@@ -10072,7 +10156,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="tb_Load_ProgressRate.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
@@ -15285,6 +15369,27 @@
   <data name="&gt;&gt;panel_Health_Result.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="panel_AlarmSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 9</value>
+  </data>
+  <data name="panel_AlarmSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 780</value>
+  </data>
+  <data name="panel_AlarmSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="&gt;&gt;panel_AlarmSetting.Name" xml:space="preserve">
+    <value>panel_AlarmSetting</value>
+  </data>
+  <data name="&gt;&gt;panel_AlarmSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_AlarmSetting.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_AlarmSetting.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -15295,7 +15400,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1266, 786</value>
+    <value>1262, 782</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>

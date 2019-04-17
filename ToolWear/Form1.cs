@@ -19,8 +19,7 @@ using System.Management;
 using System.IO.Compression;
 using System.ComponentModel;
 
-namespace ToolWear
-{
+namespace ToolWear{
     public partial class Form1 : Form{
         private string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;  //執行檔位置
         private char[] Unlawful = new char[2] { ',', ':' }; //非法字元
@@ -134,6 +133,7 @@ namespace ToolWear
             panel_Health_Result.Visible = false;
             panel_SelectParts.Visible = false;
             panel_AddParts.Visible = false;
+            panel_AlarmSetting.Visible = false;
             //關閉所有主選單副組件
             btn_Learn.Enabled = false;
             btn_ChangeMode.Enabled = false;
@@ -533,6 +533,11 @@ namespace ToolWear
             panel_Dissable();
             Bar_setting.Visible = false;
             panel_setting.Visible = true;
+        }
+        //主選單 > 設定 > Alarm設定
+        private void btn_AlarmSet_Click(object sender,EventArgs e){
+            panel_Dissable();
+            panel_AlarmSetting.Visible = true;
         }
         //主選單 > 關機
         private void btn_shutdown_Click(object sender, EventArgs e){

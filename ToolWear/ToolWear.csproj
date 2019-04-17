@@ -304,5 +304,8 @@
   <ItemGroup>
     <None Include="Resources\Export_Profile.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
