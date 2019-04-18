@@ -1447,11 +1447,11 @@ namespace ToolWear{
         private void btn_AlarmMode_Flash_Click(object sender,EventArgs e){
             Alarm = Alarm_Mode.Flash;
         }
-        //設定 > Alarm設定 > 停止模式 > 瞬間
+        //設定 > Alarm設定 > 停止模式 > 作業後停止
         private void btn_AlarmMode_Delay_Click(object sender, EventArgs e){
             Alarm = Alarm_Mode.Delay;
         }
-        //設定 > Alarm設定 > 停止模式 > 瞬間
+        //設定 > Alarm設定 > 停止模式 > 不處理
         private void btn_AlarmMode_None_Click(object sender, EventArgs e){
             Alarm = Alarm_Mode.None;
         }
