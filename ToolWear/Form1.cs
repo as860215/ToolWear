@@ -22,21 +22,13 @@ using Campro;
 
 namespace ToolWear{
     public partial class Form1 : Form{
+        #region 全域參數宣告
         private string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;  //執行檔位置
         private char[] Unlawful = new char[2] { ',', ':' }; //非法字元
         private bool machine_connect = false;   //是否有連線機台
         private string machine_type = "";   //機台廠牌
         private Alarm_Mode Alarm = 0;     //發生異警時的處理方式
-        public Form1(){
-            InitializeComponent();
-            Brother_Initialization();
-            //將視窗最大化
-            this.WindowState = FormWindowState.Maximized;
-            //隱藏工作列
-            this.FormBorderStyle = FormBorderStyle.None;
-            //強制置頂視窗
-            //this.TopMost = true;
-        }
+        #endregion
         #region 列舉定義
         /// <summary>
         /// Alarn設定 > 停止模式定義
@@ -49,6 +41,16 @@ namespace ToolWear{
         #endregion
         #region 初始化
         #region 物件初始化
+        public Form1(){
+            InitializeComponent();
+            Brother_Initialization();
+            //將視窗最大化
+            this.WindowState = FormWindowState.Maximized;
+            //隱藏工作列
+            this.FormBorderStyle = FormBorderStyle.None;
+            //強制置頂視窗
+            //this.TopMost = true;
+        }
         private void Form1_Shown(object sender, EventArgs e){
             //關閉所有panel
             panel_Dissable();
@@ -347,13 +349,24 @@ namespace ToolWear{
                     tem = "正在測試控制器連線...";
                     break;
                 case 25:
-                    long ret = Mitsubishi_Initialization();
-                    if (ret != 0){
-                        tb_Load_log.Text += "控制器連線失敗。 Error Code : " + ret.ToString();
-                        machine_connect = false;
+                    //測試連線
+                    switch (cb_setting_brand.Text){
+                        case "Mitsubishi":
+                            long ret = Mitsubishi_Initialization();
+                            if (ret != 0)
+                                tb_Load_log.Text += "控制器連線失敗。 Error Code : " + ret.ToString();
+                            break;
+                        case "Brother":
+                            string br_ret = Brother_Initialization();
+                            if (br_ret.Equals(""))
+                                tb_Load_log.Text += "控制器連線失敗。 Error : IP或Port無法連接。";
+                            break;
+                        case "Fanuc":
+                            short fanuc_ret = FANUC_Initialization();
+                            if(fanuc_ret == 0)
+                                tb_Load_log.Text += "控制器連線失敗。 Error : IP或Port無法連接。";
+                            break;
                     }
-                    else
-                        machine_connect = true;
                     break;
                 case 26:
                     tem = "控制器連線測試完畢";
@@ -3217,7 +3230,14 @@ namespace ToolWear{
                 case "Mitsubishi":
                     cb_setting_model.Items.Add("M800");
                     break;
+                case "Brother":
+                    cb_setting_model.Items.Add("S700Z1");
+                    break;
+                case "Fanuc":
+                    cb_setting_model.Items.Add("16i");
+                    break;
             }
+            cb_setting_model.SelectedIndex = 0;
         }
         #endregion
         #region 文字變更事件
@@ -3305,7 +3325,7 @@ namespace ToolWear{
             }
             else if (machine_type.Equals("Brother")){
                 ATC_RPM = double.Parse(Brother_GetFeedSpeed());
-                ATC_num = double.Parse(Brother_GetATCStatus());
+                ATC_num = int.Parse(Brother_GetATCStatus());
             }
             lb_ToolWear_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
             lb_Learn_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
@@ -4271,22 +4291,22 @@ namespace ToolWear{
         }
         #endregion
         #region 發那科
-        short ret = 0;
+        short Fanuc_lRet = 0;
         ushort FFlibHndl;
-        String FileName;
+        //String FileName;
         /// <summary>
         /// Fanuc控制器初始化
         /// </summary>
         private short FANUC_Initialization(){
-            short ret = Focas1.cnc_allclibhndl3(tb_setting_ip.Text, 8193, 1, out FFlibHndl);
-            if (ret == 0)
+            Fanuc_lRet = Focas1.cnc_allclibhndl3(tb_setting_ip.Text, 8193, 1, out FFlibHndl);
+            if (Fanuc_lRet == 0)
                 machine_connect = false;
             else{
                 machine_connect = true;
                 machine_type = "Fanuc";
                 timer_CNC.Enabled = true;
             }
-            return ret;
+            return Fanuc_lRet;
         }
         #endregion
         #endregion
