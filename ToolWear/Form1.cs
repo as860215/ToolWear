@@ -26,6 +26,7 @@ namespace ToolWear{
         private char[] Unlawful = new char[2] { ',', ':' }; //非法字元
         private bool machine_connect = false;   //是否有連線機台
         private string machine_type = "";   //機台廠牌
+        private Alarm_Mode Alarm = 0;     //發生異警時的處理方式
         public Form1(){
             InitializeComponent();
             Brother_Initialization();
@@ -36,6 +37,16 @@ namespace ToolWear{
             //強制置頂視窗
             //this.TopMost = true;
         }
+        #region 列舉定義
+        /// <summary>
+        /// Alarn設定 > 停止模式定義
+        /// </summary>
+        private enum Alarm_Mode{
+            Flash = 0,
+            Delay = 1,
+            None = 2,
+        }
+        #endregion
         #region 初始化
         #region 物件初始化
         private void Form1_Shown(object sender, EventArgs e){
@@ -1429,6 +1440,20 @@ namespace ToolWear{
             tb_setting_ip.Text = set.Split(',')[2];
             sr_setting.Close();
             sr_setting.Dispose();
+        }
+        #endregion
+        #region Alarm設定
+        //設定 > Alarm設定 > 停止模式 > 瞬間
+        private void btn_AlarmMode_Flash_Click(object sender,EventArgs e){
+            Alarm = Alarm_Mode.Flash;
+        }
+        //設定 > Alarm設定 > 停止模式 > 瞬間
+        private void btn_AlarmMode_Delay_Click(object sender, EventArgs e){
+            Alarm = Alarm_Mode.Delay;
+        }
+        //設定 > Alarm設定 > 停止模式 > 瞬間
+        private void btn_AlarmMode_None_Click(object sender, EventArgs e){
+            Alarm = Alarm_Mode.None;
         }
         #endregion
         #region 模型預覽
