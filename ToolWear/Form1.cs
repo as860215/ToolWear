@@ -45,7 +45,7 @@ namespace ToolWear{
             InitializeComponent();
             Brother_Initialization();
             //將視窗最大化
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
             //隱藏工作列
             this.FormBorderStyle = FormBorderStyle.None;
             //強制置頂視窗
@@ -220,6 +220,26 @@ namespace ToolWear{
             }
             catch{
                 tb_Load_log.Text += "讀取不到熱補償資料。\n";
+            }
+
+            //Alarm設定
+            try{
+                StreamReader sr_AlarmSet = new StreamReader(path + @"\data\alarm_set.cp");
+                string tem_s = sr_AlarmSet.ReadLine();
+                sr_AlarmSet.Close();
+                sr_AlarmSet.Dispose();
+                //分割設定檔內容
+                //停止模式
+                if (tem_s.Split(',')[0].Equals("Flash")) btn_AlarmMode_Flash_Click(null, null);
+                else if (tem_s.Split(',')[0].Equals("Delay")) btn_AlarmMode_Delay_Click(null, null);
+                else if (tem_s.Split(',')[0].Equals("None")) btn_AlarmMode_None_Click(null, null);
+                //廠牌現在只有施耐德
+
+                //讀取ip
+                tb_AlarmMethod_IP.Text = tem_s.Split(',')[2];
+            }
+            catch{
+                tb_Load_log.Text += "Alarm設定資料錯誤。\n";
             }
 
             //主畫面 > 設定
@@ -1468,6 +1488,36 @@ namespace ToolWear{
         private void btn_AlarmMode_None_Click(object sender, EventArgs e){
             Alarm = Alarm_Mode.None;
         }
+        //設定 > Alarm設定 > 上一頁
+        private void btn_AlarmSetting_Back_Click(object sender,EventArgs e){
+            panel_Dissable();
+            panel_setting.Visible = true;
+        }
+        //設定 > Alarm設定 > 儲存
+        private void panel_AlarmSetting_save_Click(object sender,EventArgs e){
+            if (string.IsNullOrEmpty(tb_AlarmMethod_IP.Text)){
+                MessageBox.Show("IP位址不可為空。", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            DialogResult dialogResult = MessageBox.Show("確定要儲存嗎？", "確認儲存", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Cancel) return;
+            string write_s = "";    //暫存要寫入的文字
+            if (Alarm == Alarm_Mode.Flash) write_s += "Flash";
+            else if (Alarm == Alarm_Mode.Delay) write_s += "Delay";
+            else if (Alarm == Alarm_Mode.None) write_s += "None";
+
+            //目前只有施耐德
+            write_s += ",Schneider";
+
+            //IP
+            write_s += "," + tb_AlarmMethod_IP.Text;
+
+            StreamWriter sw = new StreamWriter(path + @"\data\alarm_set.cp");
+            sw.WriteLine(write_s);
+            sw.Close();
+            sw.Dispose();
+        }
+        
         #endregion
         #region 模型預覽
         //模型預覽

@@ -653,6 +653,14 @@
             this.label81 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.btn_AlarmSetting_Back = new System.Windows.Forms.Button();
+            this.label84 = new System.Windows.Forms.Label();
+            this.btn_AlarmMethod_Schneider = new System.Windows.Forms.Button();
+            this.label85 = new System.Windows.Forms.Label();
+            this.tb_AlarmMethod_IP = new System.Windows.Forms.TextBox();
+            this.label86 = new System.Windows.Forms.Label();
+            this.panel_AlarmSetting_save = new System.Windows.Forms.Button();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -737,6 +745,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart_HealthResult_Factory)).BeginInit();
             this.panel_AlarmSetting.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_ViewModule
@@ -6756,6 +6765,8 @@
             // panel_AlarmSetting
             // 
             this.panel_AlarmSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            this.panel_AlarmSetting.Controls.Add(this.btn_AlarmSetting_Back);
+            this.panel_AlarmSetting.Controls.Add(this.panel13);
             this.panel_AlarmSetting.Controls.Add(this.panel12);
             this.panel_AlarmSetting.Controls.Add(this.label79);
             resources.ApplyResources(this.panel_AlarmSetting, "panel_AlarmSetting");
@@ -6842,14 +6853,84 @@
             this.label79.ForeColor = System.Drawing.Color.White;
             this.label79.Name = "label79";
             // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel13.Controls.Add(this.panel_AlarmSetting_save);
+            this.panel13.Controls.Add(this.label86);
+            this.panel13.Controls.Add(this.tb_AlarmMethod_IP);
+            this.panel13.Controls.Add(this.btn_AlarmMethod_Schneider);
+            this.panel13.Controls.Add(this.label84);
+            this.panel13.Controls.Add(this.label85);
+            resources.ApplyResources(this.panel13, "panel13");
+            this.panel13.Name = "panel13";
+            // 
+            // btn_AlarmSetting_Back
+            // 
+            this.btn_AlarmSetting_Back.BackColor = System.Drawing.Color.White;
+            this.btn_AlarmSetting_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_AlarmSetting_Back, "btn_AlarmSetting_Back");
+            this.btn_AlarmSetting_Back.FlatAppearance.BorderSize = 0;
+            this.btn_AlarmSetting_Back.Name = "btn_AlarmSetting_Back";
+            this.btn_AlarmSetting_Back.UseVisualStyleBackColor = false;
+            this.btn_AlarmSetting_Back.Click += new System.EventHandler(this.btn_AlarmSetting_Back_Click);
+            // 
+            // label84
+            // 
+            resources.ApplyResources(this.label84, "label84");
+            this.label84.BackColor = System.Drawing.Color.Transparent;
+            this.label84.ForeColor = System.Drawing.Color.White;
+            this.label84.Name = "label84";
+            // 
+            // btn_AlarmMethod_Schneider
+            // 
+            this.btn_AlarmMethod_Schneider.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btn_AlarmMethod_Schneider, "btn_AlarmMethod_Schneider");
+            this.btn_AlarmMethod_Schneider.FlatAppearance.BorderSize = 0;
+            this.btn_AlarmMethod_Schneider.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_AlarmMethod_Schneider.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_AlarmMethod_Schneider.Name = "btn_AlarmMethod_Schneider";
+            this.btn_AlarmMethod_Schneider.UseVisualStyleBackColor = false;
+            // 
+            // label85
+            // 
+            resources.ApplyResources(this.label85, "label85");
+            this.label85.BackColor = System.Drawing.Color.Transparent;
+            this.label85.ForeColor = System.Drawing.Color.White;
+            this.label85.Name = "label85";
+            // 
+            // tb_AlarmMethod_IP
+            // 
+            resources.ApplyResources(this.tb_AlarmMethod_IP, "tb_AlarmMethod_IP");
+            this.tb_AlarmMethod_IP.Name = "tb_AlarmMethod_IP";
+            // 
+            // label86
+            // 
+            resources.ApplyResources(this.label86, "label86");
+            this.label86.BackColor = System.Drawing.Color.Transparent;
+            this.label86.ForeColor = System.Drawing.Color.White;
+            this.label86.Name = "label86";
+            // 
+            // panel_AlarmSetting_save
+            // 
+            this.panel_AlarmSetting_save.BackColor = System.Drawing.Color.Transparent;
+            this.panel_AlarmSetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.panel_AlarmSetting_save, "panel_AlarmSetting_save");
+            this.panel_AlarmSetting_save.FlatAppearance.BorderSize = 0;
+            this.panel_AlarmSetting_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.panel_AlarmSetting_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.panel_AlarmSetting_save.Name = "panel_AlarmSetting_save";
+            this.panel_AlarmSetting_save.UseVisualStyleBackColor = false;
+            this.panel_AlarmSetting_save.Click += new System.EventHandler(this.panel_AlarmSetting_save_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
             this.ControlBox = false;
-            this.Controls.Add(this.panel_setting);
             this.Controls.Add(this.panel_AlarmSetting);
+            this.Controls.Add(this.panel_setting);
             this.Controls.Add(this.panel_Learn);
             this.Controls.Add(this.panel_Thermal);
             this.Controls.Add(this.panel_ThermalSetting);
@@ -6985,6 +7066,8 @@
             this.panel_AlarmSetting.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -7506,6 +7589,14 @@
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Button btn_AlarmSetting_Back;
+        private System.Windows.Forms.Button panel_AlarmSetting_save;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.TextBox tb_AlarmMethod_IP;
+        private System.Windows.Forms.Button btn_AlarmMethod_Schneider;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label85;
     }
 }
 
