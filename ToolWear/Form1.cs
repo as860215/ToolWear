@@ -2368,8 +2368,15 @@ namespace ToolWear{
                 if((double.Parse(tem_AfterSale_Max[i])) < double.Parse(tem_Factory_Max[i]) * (1 + range))
                     pass_count++;
             }
-            lb_HealthResult_Result.Text = string.Format("在檢測震幅範圍{0} %之下的合格率為{1} %", range * 100, ((double)pass_count / (double)tem_Factory_Max.Count) * 100);
+            lb_HealthResult_Result.Text = string.Format("在檢測震幅範圍{0} %之下的合格率為{1} %", range * 100, (double)pass_count / (double)tem_Factory_Max.Count * 100);
+            StreamWriter sw_pass = new StreamWriter(path + @"data\Health\Pass_" + lb_Health_Machine.Text + ".cp");
+            sw_pass.WriteLine((double)pass_count / (double)tem_Factory_Max.Count * 100);
+            sw_pass.Close();
+            sw_pass.Dispose();
         }
+        #endregion
+        #region 刀具磨耗預測
+
         #endregion
         #region 選擇工件/新增工件
         //磨耗偵測 > 選擇工件 > 讀取資料
