@@ -21,7 +21,7 @@ using System.ComponentModel;
 using Campro;
 
 namespace ToolWear{
-    public partial class Form1 : Form{
+    public partial class Form1 : Form {
         #region 全域參數宣告
         private string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;  //執行檔位置
         private char[] Unlawful = new char[2] { ',', ':' }; //非法字元
@@ -33,7 +33,7 @@ namespace ToolWear{
         /// <summary>
         /// Alarn設定 > 停止模式定義
         /// </summary>
-        private enum Alarm_Mode{
+        private enum Alarm_Mode {
             Flash = 0,
             Delay = 1,
             None = 2,
@@ -41,7 +41,7 @@ namespace ToolWear{
         #endregion
         #region 初始化
         #region 物件初始化
-        public Form1(){
+        public Form1() {
             InitializeComponent();
             Brother_Initialization();
             //將視窗最大化
@@ -51,7 +51,7 @@ namespace ToolWear{
             //強制置頂視窗
             //this.TopMost = true;
         }
-        private void Form1_Shown(object sender, EventArgs e){
+        private void Form1_Shown(object sender, EventArgs e) {
             //關閉所有panel
             panel_Dissable();
             //顯示讀取panel
@@ -69,7 +69,7 @@ namespace ToolWear{
         /// <summary>
         /// 初始化設定
         /// </summary>
-        private void Setting(){
+        private void Setting() {
             //折線圖Legends清除
             chart_Learn.Legends.Clear();
             chart_Thermal.Legends.Clear();
@@ -97,18 +97,18 @@ namespace ToolWear{
             chart_warring_1.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_warring_2.Series[1].Points.AddXY(1, Chart_PointMax);
             //震動偵測折線圖
-            for (int i = 0; i < Chart_max; i++){
+            for (int i = 0; i < Chart_max; i++) {
                 chart_Learn.Series[2].Points.AddXY(i + 1, Chart_PointMin);
                 chart_ToolWear.Series[2].Points.AddXY(i + 1, Chart_PointMin);
                 chart_Health.Series[2].Points.AddXY(i + 1, Chart_PointMin);
             }
             //警戒折線圖
-            for(int i = 0; i < 2000; i++){
+            for (int i = 0; i < 2000; i++) {
                 chart_warring_1.Series[1].Points.AddXY(i + 1, Chart_PointMin);
                 chart_warring_2.Series[1].Points.AddXY(i + 1, Chart_PointMin);
             }
             //FFT折線圖
-            for (int i = 0; i < 100; i++){
+            for (int i = 0; i < 100; i++) {
                 chart_FFT.Series[1].Points.AddXY(i + 1, 0.1);
                 chart_LearnFFT.Series[1].Points.AddXY(i + 1, 0.1);
                 chart_Blade.Series[1].Points.AddXY(i + 1, 0.1);
@@ -118,14 +118,14 @@ namespace ToolWear{
                 chart_HealthResult_Factory.Series[1].Points.AddXY(i + 1, 0.1);
             }
             //溫度折線圖
-            for (int i = 1; i <= 30; i++){
+            for (int i = 1; i <= 30; i++) {
                 chart_Thermal.Series[1].Points.AddXY(i, 25);
                 chart_Thermal_M1.Series[1].Points.AddXY(i, 25);
                 chart_Thermal_M2.Series[1].Points.AddXY(i, 25);
             }
 
             //電流
-            for(int i = 0;i < 200; i++){
+            for (int i = 0; i < 200; i++) {
                 chart_Current.Series[2].Points.AddXY(i + 1, 0);
             }
             //Panel
@@ -134,7 +134,7 @@ namespace ToolWear{
         /// <summary>
         /// 隱藏所有panel(主畫面除外)
         /// </summary>
-        private void panel_Dissable(){
+        private void panel_Dissable() {
             //關閉所有panel
             panel_Thermal.Visible = false;
             panel_ThermalSetting.Visible = false;
@@ -166,7 +166,7 @@ namespace ToolWear{
         /// <summary>
         /// 初始化資料
         /// </summary>
-        private void Initialization(){
+        private void Initialization() {
             //磨耗偵測 & 軸向設定
             Button[] btn_ToolWearSetting = new Button[20] { btn_ToolWearSetting_01, btn_ToolWearSetting_02, btn_ToolWearSetting_03,
             btn_ToolWearSetting_04,btn_ToolWearSetting_05,btn_ToolWearSetting_06,btn_ToolWearSetting_07,btn_ToolWearSetting_08,
@@ -186,7 +186,7 @@ namespace ToolWear{
             int count = 0;
             try {
                 StreamReader sr_axial = new StreamReader(path + @"\data\axial.cp");
-                while (!sr_axial.EndOfStream){
+                while (!sr_axial.EndOfStream) {
                     string axial = sr_axial.ReadLine().Split(',')[0];
                     btn_ToolWearSetting[count].Text = axial;
                     btn_ToolWear[count].Text = axial;
@@ -211,9 +211,9 @@ namespace ToolWear{
             btn_Thermal_14,btn_Thermal_15,btn_Thermal_16,btn_Thermal_17,btn_Thermal_18,
             btn_Thermal_19,btn_Thermal_20};
             count = 0;
-            try{
+            try {
                 StreamReader sr_thermal = new StreamReader(path + @"\data\thermal.cp");
-                while (!sr_thermal.EndOfStream){
+                while (!sr_thermal.EndOfStream) {
                     string axial = sr_thermal.ReadLine().Split(',')[0];
                     btn_Compensate[count].Text = axial;
                     btn_Thermal[count].Text = axial;
@@ -222,12 +222,12 @@ namespace ToolWear{
                 sr_thermal.Close();
                 sr_thermal.Dispose();
             }
-            catch{
+            catch {
                 tb_Load_log.Text += "讀取不到熱補償資料。\n";
             }
 
             //Alarm設定
-            try{
+            try {
                 StreamReader sr_AlarmSet = new StreamReader(path + @"\data\alarm_set.cp");
                 string tem_s = sr_AlarmSet.ReadLine();
                 sr_AlarmSet.Close();
@@ -242,7 +242,7 @@ namespace ToolWear{
                 //讀取ip
                 tb_AlarmMethod_IP.Text = tem_s.Split(',')[2];
             }
-            catch{
+            catch {
                 tb_Load_log.Text += "Alarm設定資料錯誤。\n";
             }
 
@@ -255,9 +255,9 @@ namespace ToolWear{
         /// <summary>
         /// 讀取系統資料
         /// </summary>
-        private void System_Load(){
+        private void System_Load() {
             string tem_s = "";
-            try{
+            try {
                 //讀取軟體版本資料
                 StreamReader sr_version = new StreamReader(path + @"\data\version.cp");
                 string tem_version = sr_version.ReadLine();
@@ -272,7 +272,7 @@ namespace ToolWear{
                 ManagementClass mc = new ManagementClass("Win32_Processor");
                 ManagementObjectCollection moc = mc.GetInstances();
                 string CPUName = null;    //CPU名稱
-                foreach (ManagementObject mo in moc){
+                foreach (ManagementObject mo in moc) {
                     CPUName = mo.Properties["Name"].Value.ToString().Trim();
                     break;
                 }
@@ -292,15 +292,15 @@ namespace ToolWear{
                 tem_s += string.Format("主機名稱\r\n{0}\r\n\r\n", strHostName);
                 System.Net.IPHostEntry iphostentry = System.Net.Dns.GetHostByName(strHostName);   //取得本機的 IpHostEntry 類別實體
                 string ip = "";
-                foreach (System.Net.IPAddress ipaddress in iphostentry.AddressList){
+                foreach (System.Net.IPAddress ipaddress in iphostentry.AddressList) {
                     ip += ipaddress.ToString();
                     break;  //只讀一個IP
                 }
                 tem_s += string.Format("主機IP\r\n{0}\r\n\r\n", ip);
-                
+
                 tb_setting_System.Text = tem_s;
             }
-            catch(Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("讀取系統資料時發生錯誤。\n\nSystem_Load\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -311,7 +311,7 @@ namespace ToolWear{
         //正在讀取
         bool is_Load = false;
         //讀取程式計時器
-        private void timer_load_Tick(object sender, EventArgs e){
+        private void timer_load_Tick(object sender, EventArgs e) {
             bar_load.Value = Load_Step;
             void_Loading(Load_Step);
         }
@@ -319,14 +319,14 @@ namespace ToolWear{
         /// 讀取程式
         /// </summary>
         /// <param name="push_in_step">為避免因多執行續造成的變數變化問題，在執行switch之前先暫存其</param>
-        private void void_Loading(int push_in_step){
+        private void void_Loading(int push_in_step) {
             int tem_step = push_in_step;
             if (tem_step != Load_Step) return;
             //如果有別的執行續已經進入讀取階段了就return
             if (is_Load == true) return;
             string tem = "";
             is_Load = true;
-            switch (tem_step){
+            switch (tem_step) {
                 case 0:
                     tem = "您好！";
                     //關閉按鈕功能
@@ -374,7 +374,7 @@ namespace ToolWear{
                     break;
                 case 25:
                     //測試連線
-                    switch (cb_setting_brand.Text){
+                    switch (cb_setting_brand.Text) {
                         case "Mitsubishi":
                             long ret = Mitsubishi_Initialization();
                             if (ret != 0)
@@ -387,7 +387,7 @@ namespace ToolWear{
                             break;
                         case "Fanuc":
                             short fanuc_ret = FANUC_Initialization();
-                            if(fanuc_ret == 0)
+                            if (fanuc_ret == 0)
                                 tb_Load_log.Text += "控制器連線失敗。 Error : IP或Port無法連接。";
                             break;
                     }
@@ -422,7 +422,7 @@ namespace ToolWear{
                     btn_Thermal_Click(null, null);
                     break;
             }
-            if(!string.IsNullOrWhiteSpace(tem)) tb_Loading.Text += tem + "\r\n";
+            if (!string.IsNullOrWhiteSpace(tem)) tb_Loading.Text += tem + "\r\n";
             tb_Load_ProgressRate.Text = "讀取進度 ： " + tem_step + " %";
             Load_Step++;
             is_Load = false;
@@ -431,13 +431,13 @@ namespace ToolWear{
         #endregion
         #region 按鈕方法
         #region panel設定
-        private void btn_Thermal_Click(object sender, EventArgs e){
+        private void btn_Thermal_Click(object sender, EventArgs e) {
             panel_Dissable();
             panel_Thermal.Visible = true;
             btn_Thermal_Axial_Click((object)btn_Thermal_01, null);
         }
         //磨耗偵測
-        private void btn_ToolWear_Click(object sender, EventArgs e){
+        private void btn_ToolWear_Click(object sender, EventArgs e) {
             panel_Dissable();
             panel_ToolWear.Visible = true;
             //學習按鈕啟動
@@ -458,7 +458,7 @@ namespace ToolWear{
             else
                 btn_ToolWear_Choose((object)pre_ToolWear, null);
         }
-        private void btn_BackHome(object sender, EventArgs e){
+        private void btn_BackHome(object sender, EventArgs e) {
             panel_Home.Visible = true;
             panel_Thermal.Visible = false;
             panel_ThermalSetting.Visible = false;
@@ -469,11 +469,11 @@ namespace ToolWear{
             panel_Threshold.Visible = false;
             panel_setting.Visible = false;
         }
-        private void btn_ThermalSetting_Back_Click(object sender, EventArgs e){
+        private void btn_ThermalSetting_Back_Click(object sender, EventArgs e) {
             panel_ThermalSetting.Visible = false;
             panel_Thermal.Visible = true;
         }
-        private void btn_Threshold_Back_Click(object sender, EventArgs e){
+        private void btn_Threshold_Back_Click(object sender, EventArgs e) {
             panel_ToolWear.Visible = true;
             panel_Threshold.Visible = false;
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
@@ -482,55 +482,55 @@ namespace ToolWear{
             btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.wd_menubtn_current;
         }
         //磨耗偵測 > 選擇工件 > 回上一頁
-        private void btn_SelectParts_Back_Click(object sender,EventArgs e){
+        private void btn_SelectParts_Back_Click(object sender, EventArgs e) {
             panel_ToolWear.Visible = true;
             panel_SelectParts.Visible = false;
         }
         //磨耗偵測 > 選擇工件
-        private void pb_ToolWear_Click(object sender,EventArgs e){
+        private void pb_ToolWear_Click(object sender, EventArgs e) {
             panel_ToolWear.Visible = false;
             panel_SelectParts.Visible = true;
             lb_SelectParts_Page.Text = "1";
             SelectParts_LoadData();
         }
         //磨耗偵測 > 選擇工件 > 新增工件
-        private void btn_SelectParts_Add_Click(object sender,EventArgs e){
+        private void btn_SelectParts_Add_Click(object sender, EventArgs e) {
             panel_Dissable();
             panel_AddParts.Visible = true;
         }
-        private void btn_ToolWear_Setting_Click(object sender, EventArgs e){
+        private void btn_ToolWear_Setting_Click(object sender, EventArgs e) {
             panel_ToolWearSetting.Visible = true;
             panel_ToolWear.Visible = false;
-            if(pre_ToolWearSetting == null)
+            if (pre_ToolWearSetting == null)
                 btn_ToolWearSetting_Choose((object)btn_ToolWearSetting_01, null);
             else
                 btn_ToolWearSetting_Choose((object)pre_ToolWearSetting, null);
         }
         //磨耗設定 > 熱補償設定
-        private void btn_ThermalSetting_Click(object sender, EventArgs e){
+        private void btn_ThermalSetting_Click(object sender, EventArgs e) {
             panel_ThermalSetting.Visible = true;
             panel_Compensate.Visible = true;
             panel_Thermal.Visible = false;
-            if(pre_Compensate == null)
+            if (pre_Compensate == null)
                 btn_Compensate_Choose((object)btn_Compensate_01, null);
             else
                 btn_Compensate_Choose((object)pre_Compensate, null);
         }
-        private void btn_ToolWearSetting_Back_Click(object sender, EventArgs e){
+        private void btn_ToolWearSetting_Back_Click(object sender, EventArgs e) {
             panel_ToolWearSetting.Visible = false;
             panel_ToolWear.Visible = true;
             btn_ToolWear_Click(null, null);
         }
-        private void btn_ToolWearSetting_Learn_Click(object sender, EventArgs e){
+        private void btn_ToolWearSetting_Learn_Click(object sender, EventArgs e) {
             //panel_ToolWearSetting.Visible = false;
             //panel_Learn.Visible = true;
         }
-        private void btn_ViewModule_Back_Click(object sender, EventArgs e){
+        private void btn_ViewModule_Back_Click(object sender, EventArgs e) {
             panel_ToolWearSetting.Visible = true;
             panel_ViewModule.Visible = false;
         }
         //主選單 > 健康診斷
-        private void btn_Health_Click(object sender,EventArgs e){
+        private void btn_Health_Click(object sender, EventArgs e) {
             panel_Dissable();
             panel_Health.Visible = true;
             panel_Health_Factory.Visible = true;
@@ -541,12 +541,12 @@ namespace ToolWear{
             Health_load();
         }
         //主選單 > 健康診斷 > 設定
-        private void btn_Health_Setting_Click(object sender, EventArgs e){
+        private void btn_Health_Setting_Click(object sender, EventArgs e) {
             panel_Health.Visible = false;
             panel_Health_Setting.Visible = true;
         }
         //主選單 > 健康診斷 > 設定 > 回上一頁
-        private void btn_HealthSetting_Back_Click(object sender, EventArgs e){
+        private void btn_HealthSetting_Back_Click(object sender, EventArgs e) {
             panel_Health_Setting.Visible = false;
             panel_Health.Visible = true;
             //清空折線圖
@@ -559,18 +559,18 @@ namespace ToolWear{
             btn_ChangeMode3_Click(null, null);
         }
         //主畫面 > 子按鈕3切換模式
-        private void btn_ChangeMode3_Click(object sender,EventArgs e){
+        private void btn_ChangeMode3_Click(object sender, EventArgs e) {
             //健康檢測狀態
-            if(panel_Health.Visible == true){
+            if (panel_Health.Visible == true) {
                 //如果在出場檢測
-                if(panel_Health_Factory.Visible == true){
+                if (panel_Health_Factory.Visible == true) {
                     panel_Health_Factory.Visible = false;
                     panel_Health_AfterSale.Visible = true;
                     lb_Health_Title.Text = "健康診斷/售後檢測";
                     btn_ChangeMode3.BackgroundImage = ToolWear.Properties.Resources.menubtn_h_factory_inspection;
                 }
                 //在售後檢測狀態
-                else{
+                else {
                     panel_Health_Factory.Visible = true;
                     panel_Health_AfterSale.Visible = false;
                     lb_Health_Title.Text = "健康診斷/出廠檢測";
@@ -578,51 +578,51 @@ namespace ToolWear{
                 }
             }
             //刀具磨耗狀態
-            else if(panel_ToolWear.Visible == true){
+            else if (panel_ToolWear.Visible == true) {
                 panel_Dissable();
                 panel_prediction.Visible = true;
                 panle_prediction_Load();
             }
         }
         //主選單 > 刀庫
-        private void btn_ATCsetting_Click(object sender, EventArgs e){
+        private void btn_ATCsetting_Click(object sender, EventArgs e) {
             panel_Dissable();
             panel_ATCsetting.Visible = true;
             btn_ATCSetting_Choose((object)btn_ATCsetting_01, null);
         }
         //主選單 > 設定
-        private void btn_setting_Click(object sender, EventArgs e){
+        private void btn_setting_Click(object sender, EventArgs e) {
             panel_Dissable();
             Bar_setting.Visible = false;
             panel_setting.Visible = true;
         }
         //主選單 > 設定 > Alarm設定
-        private void btn_AlarmSet_Click(object sender,EventArgs e){
+        private void btn_AlarmSet_Click(object sender, EventArgs e) {
             panel_Dissable();
             panel_AlarmSetting.Visible = true;
         }
         //主選單 > 關機
-        private void btn_shutdown_Click(object sender, EventArgs e){
+        private void btn_shutdown_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("請先確認所有設定皆已儲存，否則將造成新設定遺失。", "關機警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
-            try{
+            try {
                 //啟動本地程序並執行命令
                 Process.Start("Shutdown.exe", " -s -t 0");
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show(ex.Message);
             }
             //this.Close();
         }
         //主選單 > 磨耗偵測 > 學習模式
-        private void btn_Learn_Click(object sender, EventArgs e){
+        private void btn_Learn_Click(object sender, EventArgs e) {
             //目前在偵測模式
-            if (panel_ToolWear.Visible == true){
-                if (lb_ToolWear_Parts.Text.Equals("(未選擇)")){
+            if (panel_ToolWear.Visible == true) {
+                if (lb_ToolWear_Parts.Text.Equals("(未選擇)")) {
                     MessageBox.Show("尚未選擇工件，無法切換學習模式。\n請點選右方工件預覽圖或是文字，進入頁面選取此次偵測的工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (runningTask != null){
+                if (runningTask != null) {
                     MessageBox.Show("請先停止所有軸向的磨耗偵測。\n在學習模式中禁止同時偵測磨耗資訊，以免發生不可測意外。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -644,7 +644,7 @@ namespace ToolWear{
                 btn_Learn_Choose((object)btn_Learn_[now_ToolWear], null);
             }
             //目前在學習模式
-            else if (panel_Learn.Visible == true){
+            else if (panel_Learn.Visible == true) {
                 panel_Dissable();
                 panel_ToolWear.Visible = true;
                 btn_Learn.BackgroundImage = ToolWear.Properties.Resources.menubtn_learn_default;
@@ -658,16 +658,16 @@ namespace ToolWear{
             }
         }
         //主選單 > 磨耗偵測 > 切換模式
-        private void btn_ChangeMode_Click(object sender,EventArgs e){
+        private void btn_ChangeMode_Click(object sender, EventArgs e) {
             //在磨耗偵測狀況下
-            if(panel_ToolWear.Visible == true){
-                if (lb_ToolWear_Title.Text.Equals("磨耗偵測(震動)")){
+            if (panel_ToolWear.Visible == true) {
+                if (lb_ToolWear_Title.Text.Equals("磨耗偵測(震動)")) {
                     lb_ToolWear_Title.Text = "磨耗偵測(電流)";
                     btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.wd_menubtn_vibration;
                     chart_Current.Visible = true;
                     chart_Current.BringToFront();
                 }
-                else{
+                else {
                     lb_ToolWear_Title.Text = "磨耗偵測(震動)";
                     btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.wd_menubtn_current;
                     chart_Current.Visible = false;
@@ -684,8 +684,8 @@ namespace ToolWear{
         //目前啟動的軸向編號(只能單軸所以只設一個變數)
         int now_Match = 0;
         //磨耗偵測目前只能單軸
-        private void btn_ToolWear_Start_Click(object sender, EventArgs e){
-            if (lb_ToolWear_Parts.Text.Equals("(未選擇)")){
+        private void btn_ToolWear_Start_Click(object sender, EventArgs e) {
+            if (lb_ToolWear_Parts.Text.Equals("(未選擇)")) {
                 MessageBox.Show("尚未選擇工件，無法進行磨耗偵測。\n請點選下方工件預覽圖或是文字，進入頁面選取此次偵測的工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -695,27 +695,27 @@ namespace ToolWear{
             //查詢目錄
             string[] dirs = Directory.GetFiles(path + @"data\FFT\");/*目錄(含路徑)的陣列*/
             List<string> tem_path = new List<string>();
-            foreach (string s in dirs){
+            foreach (string s in dirs) {
                 //ex L-abc01-1_2500.cp
                 string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
                 string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
                 if (remove_rate.Equals("L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
                     tem_path.Add(Path.GetFileNameWithoutExtension(s));
             }
-            if(tem_path.Count == 0){
+            if (tem_path.Count == 0) {
                 //如果長度為0就是找不到檔案，也就是沒有學習過
                 MessageBox.Show("對不起，" + lb_ToolWear_Parts.Text + " 此軸向並未找到學習模型，\n請點選左方功能表「學習模式」進行模型建構。" +
-                    "\n\nbtn_ToolWear_Start_Click\n\n","尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    "\n\nbtn_ToolWear_Start_Click\n\n", "尚未建構模型", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
 
             //判斷是否要讀取電流資訊
-            if (!string.IsNullOrWhiteSpace(tb_ToolWear_CurrentIP.Text)){
+            if (!string.IsNullOrWhiteSpace(tb_ToolWear_CurrentIP.Text)) {
                 Current_Connect();
-                if(modbusClient.Connected == true) timer_Current.Enabled = true;
+                if (modbusClient.Connected == true) timer_Current.Enabled = true;
             }
-            else{
+            else {
                 DialogResult dialogResult = MessageBox.Show("此軸向並未設定電流IP，繼續操作將不會對電流量進行數據探勘。\n請問要繼續嗎？",
                     "電流尚未設定", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (dialogResult == DialogResult.Cancel) return;
@@ -723,11 +723,11 @@ namespace ToolWear{
 
             //判斷輸入裝置然後給予頻率
             double rate = 0, sample = 0;
-            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")) {
                 rate = 1660;
                 sample = 166;
             }
-            else{
+            else {
                 rate = rateNumeric_base;
                 sample = samplesPerChannelNumeric_base;
             }
@@ -739,7 +739,7 @@ namespace ToolWear{
             sr.Close();
             sr.Dispose();
             double hz = rate / sample;
-            for (int i = 0; i < Module_FFT.Count; i++){
+            for (int i = 0; i < Module_FFT.Count; i++) {
                 //只畫到2000hz
                 if (hz * (i + 1) >= 2000) break;
                 chart_FFT.Series[0].Points.AddXY(hz * (i + 1), Module_FFT[i]);
@@ -761,29 +761,35 @@ namespace ToolWear{
 
             //初始化Match檔案
             tem_path.Clear();
-            foreach (string s in dirs) { 
+            foreach (string s in dirs) {
                 //ex L-abc01-1_2500.cp
                 string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
                 string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
                 if (remove_rate.Equals("M-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
                     tem_path.Add(Path.GetFileNameWithoutExtension(s));
             }
-            foreach (string s in tem_path){
+            foreach (string s in tem_path) {
                 string FileName = path + @"\data\FFT\" + s + ".cp";
                 //查詢該刀具的資料檔是否存在
-                if (File.Exists(FileName)){
+                if (File.Exists(FileName)) {
                     StreamWriter sw_FFT = new StreamWriter(FileName);
                     sw_FFT.WriteLine("0");
                     sw_FFT.Close();
                     sw_FFT.Dispose();
                 }
             }
+            //清空match.cp檔案
+            StreamWriter sw_match = new StreamWriter(path + @"data\match.cp");
+            sw_match.Write("");
+            sw_match.Close();
+            sw_match.Dispose();
+
             //Log推播訊息
-            Write_Log("系統","已啟動磨耗偵測 ： " + lb_ToolWear_Parts.Text + "/" + pre_ToolWear.Text);
+            Write_Log("系統", "已啟動磨耗偵測 ： " + lb_ToolWear_Parts.Text + "/" + pre_ToolWear.Text);
 
             //判斷訊號輸入
             //寶元
-            if(physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")) {
                 //LNC_Connect();
                 short rc = 0;
                 rc = CLNCc.lnc_svi_enable(gNid, 1);
@@ -795,9 +801,9 @@ namespace ToolWear{
             else DAQInitialize("Match");
         }
         //停止偵測
-        private void btn_ToolWear_Stop_Click(object sender, EventArgs e){
+        private void btn_ToolWear_Stop_Click(object sender, EventArgs e) {
             if (runningTask != null) TaskStop();
-            if (timer_LNC.Enabled == true){
+            if (timer_LNC.Enabled == true) {
                 timer_LNC.Enabled = false;
                 short rc = 0;
                 rc = CLNCc.lnc_svi_enable(gNid, 0);
@@ -818,20 +824,20 @@ namespace ToolWear{
             Write_Log("系統", "已關閉磨耗偵測 ： " + lb_ToolWear_Parts.Text + "/" + pre_ToolWear.Text);
         }
         //FFT和原始數據折線圖轉換
-        private void btn_ToolWear_Change_Click(object sender, EventArgs e){
-            if (lb_ToolWear_ChartStatus.Text.Equals("刀具頻率")){
+        private void btn_ToolWear_Change_Click(object sender, EventArgs e) {
+            if (lb_ToolWear_ChartStatus.Text.Equals("刀具頻率")) {
                 chart_ToolWear.Visible = true;
                 chart_FFT.Visible = false;
                 chart_Blade.Visible = false;
                 lb_ToolWear_ChartStatus.Text = "原始數據";
             }
-            else if(lb_ToolWear_ChartStatus.Text.Equals("原始數據")){
+            else if (lb_ToolWear_ChartStatus.Text.Equals("原始數據")) {
                 chart_ToolWear.Visible = false;
                 chart_FFT.Visible = true;
                 chart_Blade.Visible = false;
                 lb_ToolWear_ChartStatus.Text = "傅立葉數據";
             }
-            else if (lb_ToolWear_ChartStatus.Text.Equals("傅立葉數據")){
+            else if (lb_ToolWear_ChartStatus.Text.Equals("傅立葉數據")) {
                 chart_ToolWear.Visible = false;
                 chart_FFT.Visible = false;
                 chart_Blade.Visible = true;
@@ -839,8 +845,8 @@ namespace ToolWear{
             }
         }
         //顯示臨界值
-        private void btn_ToolWear_Threshold_Click(object sender,EventArgs e){
-            if (lb_ToolWear_Parts.Text.Equals("(未選擇)")){
+        private void btn_ToolWear_Threshold_Click(object sender, EventArgs e) {
+            if (lb_ToolWear_Parts.Text.Equals("(未選擇)")) {
                 MessageBox.Show("尚未選擇工件，無法查詢臨界值。\n請點選下方工件預覽圖或是文字，進入頁面選取查詢工件。", "未選擇工件", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -849,7 +855,7 @@ namespace ToolWear{
             Threshold_Load();
         }
         //磨耗偵測 > 設定 > DAQ訊號重新整理
-        private void btn_ToolWearSetting_Research_Click(object sender,EventArgs e){
+        private void btn_ToolWearSetting_Research_Click(object sender, EventArgs e) {
             DAQPhysicalChannels();
             LNC_Scan();
             btn_ToolWearSetting_Choose(pre_ToolWearSetting, null);
@@ -861,18 +867,18 @@ namespace ToolWear{
         //暫存進入警戒時的時間(避免同一秒鐘一直輸出警戒資訊)
         DateTime Warring_Time = new DateTime();
         //磨耗偵測 > 判斷是否超出警戒值(顯示Log)
-        private void ToolWear_Log(DataTable dt, double sample, double rate){
+        private void ToolWear_Log(DataTable dt, double sample, double rate) {
             string Blade_FileName = "";
             ToolWear_Alern.Clear();
-            if (machine_connect == false){
+            if (machine_connect == false) {
                 //如果未連接機台，使用預設2500轉
-                try{
+                try {
                     Blade_FileName = string.Format("{0}{1}-{2}_{3}", lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
                         ATC_num, 2500);
                     //判斷檔案是否存在
                     string tem_path = string.Format(@"{0}\data\FFT\LS-{1}.cp", path, Blade_FileName);
                     //若查不到檔案則使用預設0刀號
-                    if(!File.Exists(tem_path))
+                    if (!File.Exists(tem_path))
                         Blade_FileName = string.Format("{0}{1}-{2}_{3}", lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
                             0, 2500);
                     StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\LS-{1}.cp", path, Blade_FileName));
@@ -883,10 +889,10 @@ namespace ToolWear{
                 }
                 catch {
                     //查不到預設檔案，隨便選取一項
-                    foreach (string s in Directory.GetFiles(path + @"data\FFT")){
+                    foreach (string s in Directory.GetFiles(path + @"data\FFT")) {
                         string path_s = Path.GetFileNameWithoutExtension(s);
                         if (!path_s.Split('-')[0].Equals("L")) continue;
-                        if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))){
+                        if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))) {
                             //ex.LS-xxx00-0_2500
                             //將前方抬頭刪掉
                             Blade_FileName = path_s.Split('-')[1] + "-" + path_s.Split('-')[2];
@@ -899,9 +905,9 @@ namespace ToolWear{
                 Tool_rate = 2500;
                 Tool_Blade = 4;
             }
-            else{
+            else {
                 //如果已連接機台
-                try{
+                try {
                     Blade_FileName = string.Format("{0}{1}-{2}_{3}", lb_ToolWear_Parts.Text, (now_Match + 1).ToString("00"),
                         ATC_num, ATC_RPM);
                     //判斷檔案是否存在
@@ -916,7 +922,7 @@ namespace ToolWear{
                     sr_learn.Close();
                     sr_learn.Dispose();
                 }
-                catch{
+                catch {
                     //Write_Log("警告", "查詢不到臨界值資料。");
                     return;
                 }
@@ -932,19 +938,19 @@ namespace ToolWear{
             double hz = rate / sample;
             List<string> Blade_Module = new List<string>();
 
-            try{
+            try {
                 StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\M-{1}.cp", path, Blade_FileName));
                 while (!sr_learn.EndOfStream)
                     Blade_Module.Add(sr_learn.ReadLine());
                 sr_learn.Close();
                 sr_learn.Dispose();
             }
-            catch{
+            catch {
                 //查不到預設檔案，隨便選取一項
-                foreach (string s in Directory.GetFiles(path + @"data\FFT")){
+                foreach (string s in Directory.GetFiles(path + @"data\FFT")) {
                     string path_s = Path.GetFileNameWithoutExtension(s);
                     if (!path_s.Split('-')[0].Equals("M")) continue;
-                    if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))){
+                    if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))) {
                         //ex.LS-xxx00-0_2500
                         //將前方抬頭刪掉
                         Blade_FileName = path_s.Split('-')[1] + "-" + path_s.Split('-')[2];
@@ -957,20 +963,20 @@ namespace ToolWear{
                        btn_ToolWear_09,btn_ToolWear_10,btn_ToolWear_11,btn_ToolWear_12,btn_ToolWear_13,
                        btn_ToolWear_14,btn_ToolWear_15,btn_ToolWear_16,btn_ToolWear_17,btn_ToolWear_18,
                        btn_ToolWear_19,btn_ToolWear_20};
-            for (int i = 0; i < Blade_Module.Count; i++){
+            for (int i = 0; i < Blade_Module.Count; i++) {
                 double tem = 0;
                 //上下各取10% range
                 Hz_min = Blade_Hz_Mag * Blade_Hz * 0.9f;
                 Hz_max = Blade_Hz_Mag * Blade_Hz * 1.1f;
-                if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max){
+                if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max) {
                     tem = double.Parse(Blade_Module[i]);//暫存值
                     if (tem >= 0)
                         sum += tem;
                     count++;
                 }
-                else if ((i + 1) * hz > Hz_max){
+                else if ((i + 1) * hz > Hz_max) {
                     //頻率已大於刀刃刃數頻率，將倍率提升
-                    if (((sum / count) > double.Parse(ToolWear_Alern[Blade_Hz_Mag - 1])) && !ToolWear_Alern[Blade_Hz_Mag - 1].Equals("0")){
+                    if (((sum / count) > double.Parse(ToolWear_Alern[Blade_Hz_Mag - 1])) && !ToolWear_Alern[Blade_Hz_Mag - 1].Equals("0")) {
                         //先檢查同一秒鐘有沒有觸發過預警
                         if (Warring_Time.ToString("HHmmss").Equals(DateTime.Now.ToString("HHmmss"))) return;
 
@@ -1030,7 +1036,7 @@ namespace ToolWear{
         //存放現在學習的軸向
         string Learn_Axial = "";
         //模型學習開始
-        private void btn_Learn_Start_Click(object sender, EventArgs e){
+        private void btn_Learn_Start_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("這將改寫您原先的模型數據，請問要繼續嗎？\n(第一次學習請忽略此訊息)", "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
             btn_Learn_Start.Enabled = false;
@@ -1044,11 +1050,11 @@ namespace ToolWear{
             sw.Close();
             sw.Dispose();
             //清空原先Match檔案資料
-            try{
+            try {
                 //查詢目錄
                 string[] dirs = Directory.GetFiles(path + @"data\FFT");/*目錄(含路徑)的陣列*/
                 List<string> tem_path = new List<string>();
-                foreach (string s in dirs){
+                foreach (string s in dirs) {
                     //ex L-abc01-1_2500.cp
                     string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
                     string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
@@ -1057,21 +1063,21 @@ namespace ToolWear{
                     else if (remove_rate.Equals("LS-" + lb_Learn_WorkName.Text + (now_learn + 1).ToString("00")))
                         tem_path.Add(Path.GetFileNameWithoutExtension(s));
                 }
-                foreach (string s in tem_path) { 
+                foreach (string s in tem_path) {
                     string FileName = path + @"\data\FFT\" + s + ".cp";
                     //查詢該刀具的資料檔是否存在
                     if (File.Exists(FileName))
                         File.Delete(FileName);  //刪檔案
                 }
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("在清除原先資料檔時發生錯誤。\n\nbtn_Learn_Start_Click\n\nError code:\n" + ex.ToString());
                 return;
             }
 
             //判斷訊號輸入
             //寶元
-            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")) {
                 //LNC_Connect();
                 short rc = 0;
                 rc = CLNCc.lnc_svi_enable(gNid, 1);
@@ -1083,9 +1089,9 @@ namespace ToolWear{
             else DAQInitialize("Learn");
         }
         //模型學習完成
-        private void btn_Learn_OK_Click(object sender, EventArgs e){
+        private void btn_Learn_OK_Click(object sender, EventArgs e) {
             if (runningTask != null) TaskStop();
-            if (timer_LNC.Enabled == true){
+            if (timer_LNC.Enabled == true) {
                 timer_LNC.Enabled = false;
                 CLNCc.lnc_svi_enable(gNid, 0);
                 CLNCc.lnc_disconnect(gNid);
@@ -1116,7 +1122,7 @@ namespace ToolWear{
             Threshold_Load();
         }
         //模型學習取消
-        private void btn_Learn_Cancel_Click(object sender, EventArgs e){
+        private void btn_Learn_Cancel_Click(object sender, EventArgs e) {
             if (runningTask != null) TaskStop();
             btn_Learn_Start.Enabled = true;
             btn_Learn_OK.Enabled = false;
@@ -1128,17 +1134,17 @@ namespace ToolWear{
         #endregion
         #region 臨界值設定
         //臨界值設定 > 讀取資料
-        private void Threshold_Load(){
+        private void Threshold_Load() {
             List<string> Blade_Name = new List<string>();
             Blade_Name.Add("預設");
-            try{
+            try {
                 StreamReader sr = new StreamReader(path + @"\data\ATC.cp");
-                while(!sr.EndOfStream)
+                while (!sr.EndOfStream)
                     Blade_Name.Add(sr.ReadLine().Split(',')[1]);
                 sr.Close();
                 sr.Dispose();
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("在讀取刀庫資料時發生錯誤。\n\nThreshold_Load\n\nError code:\n" + ex.ToString());
             }
             TextBox[] tb_Threshold = new TextBox[14] { tb_Threshold_01 , tb_Threshold_02 , tb_Threshold_03 , tb_Threshold_04 ,
@@ -1148,12 +1154,12 @@ namespace ToolWear{
             for (int i = 0; i < tb_Threshold.Length; i++) tb_Threshold[i].Text = "";
             //存放現在寫到哪個TextBox了
             int tb_count = 0;
-            try{
+            try {
                 //查詢目錄
                 string[] dirs = Directory.GetFiles(path + @"data\FFT");/*目錄(含路徑)的陣列*/
                 List<string> tem_path = new List<string>();
                 //先將該工件的所有臨界值資料取出
-                foreach (string s in dirs){
+                foreach (string s in dirs) {
                     //ex L-abc01-1_2500-set.cp
                     string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
                     string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
@@ -1162,25 +1168,25 @@ namespace ToolWear{
                 }
                 //填入TextBox
                 int tem_pathCount = 0;  //暫存讀取目錄計數器
-                foreach (string s in tem_path){
+                foreach (string s in tem_path) {
                     tem_pathCount++;
                     if (tem_pathCount <= (int.Parse(lb_Threshold_page.Text) - 1) * 14) continue;    //如果還沒有讀到該頁數的設定檔則略過
                     else if (tem_pathCount > int.Parse(lb_Threshold_page.Text) * 14) break;
                     string FileName = path + @"\data\FFT\" + s + ".cp";
                     string Blade = s.Split('-')[2].Split('_')[0];
                     //查詢該刀具的資料檔是否存在
-                    if (File.Exists(FileName)){
+                    if (File.Exists(FileName)) {
                         tb_Threshold[tb_count].Text = "T" + Blade + " : " + Blade_Name[int.Parse(Blade)] + " " + s.Split('_')[1];
                         tb_count++;
                     }
                 }
                 //表示沒有資料
-                if (tb_count == 0){
+                if (tb_count == 0) {
                     tb_Threshold[0].Text = "沒有學習資料";
                     tb_Threshold[1].Text = "無法設定臨界值";
                 }
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("在讀取比對資料檔時發生錯誤。\n\nThreshold_Load\n\nError code:\n" + ex.ToString());
             }
             Threshold_LoadBlade((object)tb_Threshold_01, null);
@@ -1194,7 +1200,7 @@ namespace ToolWear{
         //暫存上次點選到的刀號TextBox
         TextBox pre_Blade = null;
         //臨界值設定 > 點選不同刀號
-        private void Threshold_LoadBlade(object sender,EventArgs e){
+        private void Threshold_LoadBlade(object sender, EventArgs e) {
             //修改TextBox顏色
             if (pre_Blade != null) pre_Blade.BackColor = Color.WhiteSmoke;
             ((TextBox)sender).BackColor = Color.CadetBlue;
@@ -1202,18 +1208,18 @@ namespace ToolWear{
             if (pre_Blade.Text.Equals("")) return;
             //判斷裝置給予頻率
             double rate = 0, sample = 0;
-            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")) {
                 rate = 1660;
                 sample = 166;
             }
-            else{
+            else {
                 rate = rateNumeric_base;
                 sample = samplesPerChannelNumeric_base;
             }
             double hz = rate / sample;
             List<string> Blade_Module = new List<string>();
-            try{
-                Blade_FileName = string.Format("{0}{1}-{2}_{3}",lb_ToolWear_Parts.Text, pre_ToolWear.Name.Split('_')[2],
+            try {
+                Blade_FileName = string.Format("{0}{1}-{2}_{3}", lb_ToolWear_Parts.Text, pre_ToolWear.Name.Split('_')[2],
                     pre_Blade.Text.Split(' ')[0].Split('T')[1], pre_Blade.Text.Split(' ')[3].Split(' ')[0]);
                 StreamReader sr_learn = new StreamReader(string.Format(@"{0}\data\FFT\L-{1}.cp", path, Blade_FileName));
                 while (!sr_learn.EndOfStream)
@@ -1221,7 +1227,7 @@ namespace ToolWear{
                 sr_learn.Close();
                 sr_learn.Dispose();
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("讀取Learn檔時發生錯誤。\n\nThreshold_LoadBlade\n\n" + ex.ToString(), "讀取錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -1235,7 +1241,7 @@ namespace ToolWear{
             string s = pre_Blade.Text.Split(' ')[0].Split('T')[1];
             //取得刃數
             Tool_Blade = 4;
-            for (int i = 0; i < int.Parse(pre_Blade.Text.Split(' ')[0].Split('T')[1]); i++){
+            for (int i = 0; i < int.Parse(pre_Blade.Text.Split(' ')[0].Split('T')[1]); i++) {
                 Tool_Blade = int.Parse(sr.ReadLine().Split(',')[2]);
                 lb_Threshold_Blade.Text = string.Format("刃數 ： {0}", Tool_Blade);
             }
@@ -1246,17 +1252,17 @@ namespace ToolWear{
             //讀取該頻段刀子設定檔
             TextBox[] tb_Threshold_set = new TextBox[5] { tb_Threshold_set01, tb_Threshold_set02, tb_Threshold_set03,
                                                           tb_Threshold_set04, tb_Threshold_set05};
-            try{
+            try {
                 StreamReader sr_set = new StreamReader(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
                 int sr_count = 0;
-                while (!sr_set.EndOfStream){
+                while (!sr_set.EndOfStream) {
                     tb_Threshold_set[sr_count].Text = sr_set.ReadLine();
                     sr_count++;
                 }
                 sr_set.Close();
                 sr_set.Dispose();
             }
-            catch{
+            catch {
                 //會進到例外事件表示沒有設定檔，生成一個
                 StreamWriter sw_set = new StreamWriter(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
                 for (int i = 1; i <= 5; i++)
@@ -1278,11 +1284,11 @@ namespace ToolWear{
                                                       lb_Threshold_sethz04 , lb_Threshold_sethz05};
             Label[] lb_Threshold_setavg = new Label[5] { lb_Threshold_setavg01 , lb_Threshold_setavg02 , lb_Threshold_setavg03 ,
                                                       lb_Threshold_setavg04 , lb_Threshold_setavg05};
-            for(int i = 0; i < lb_Threshold_sethz.Length; i++){
+            for (int i = 0; i < lb_Threshold_sethz.Length; i++) {
                 lb_Threshold_sethz[i].Text = "";
                 lb_Threshold_setavg[i].Text = "";
             }
-            for (int i = 0; i < Blade_Module.Count; i++){
+            for (int i = 0; i < Blade_Module.Count; i++) {
                 double tem = 0;
                 //上下各取10% range
                 Hz_min = Blade_Hz_Mag * Blade_Hz * 0.9f;
@@ -1294,13 +1300,13 @@ namespace ToolWear{
                 //將臨界值畫滿整個折線圖
                 chart_Threshold.Series[Blade_Hz_Mag + 1].Points.AddXY(0, tb_Threshold_set[Blade_Hz_Mag - 1].Text);
                 chart_Threshold.Series[Blade_Hz_Mag + 1].Points.AddXY(Blade_Hz * 5 * 1.1f, tb_Threshold_set[Blade_Hz_Mag - 1].Text);
-                if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max){
+                if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max) {
                     tem = double.Parse(Blade_Module[i]);//暫存值
                     if (tem >= 0)
                         sum += tem;
                     count++;
                 }
-                else if ((i + 1) * hz > Hz_max){
+                else if ((i + 1) * hz > Hz_max) {
                     //先顯示數據在Lable上
                     lb_Threshold_sethz[Blade_Hz_Mag - 1].Text = string.Format("{0} hz ~ {1} hz", Hz_min.ToString("#0"), Hz_max.ToString("#0"));
                     lb_Threshold_setavg[Blade_Hz_Mag - 1].Text = string.Format("| {0}", (sum / count).ToString("0.0000"));
@@ -1315,16 +1321,16 @@ namespace ToolWear{
             }
         }
         //臨界值設定 > 儲存
-        private void btn_Threshold_save_Click(object sender,EventArgs e){
+        private void btn_Threshold_save_Click(object sender, EventArgs e) {
             TextBox[] tb_Threshold_set = new TextBox[5] { tb_Threshold_set01, tb_Threshold_set02, tb_Threshold_set03,
                                                           tb_Threshold_set04, tb_Threshold_set05};
             //先判斷輸入框是否合法
-            for(int i = 0; i < tb_Threshold_set.Length; i++){
-                if (string.IsNullOrWhiteSpace(tb_Threshold_set[i].Text)){
-                    MessageBox.Show("有一個臨界值設定為空，請重新確認後再儲存。","儲存失敗",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            for (int i = 0; i < tb_Threshold_set.Length; i++) {
+                if (string.IsNullOrWhiteSpace(tb_Threshold_set[i].Text)) {
+                    MessageBox.Show("有一個臨界值設定為空，請重新確認後再儲存。", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                try{
+                try {
                     double tem = double.Parse(tb_Threshold_set[i].Text);
                 }
                 catch {
@@ -1333,14 +1339,14 @@ namespace ToolWear{
                 }
             }
             //改寫設定檔
-            try{
+            try {
                 StreamWriter sw_set = new StreamWriter(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
-                for(int i = 0; i < 5; i++)
+                for (int i = 0; i < 5; i++)
                     sw_set.WriteLine(tb_Threshold_set[i].Text);
                 sw_set.Close();
                 sw_set.Dispose();
             }
-            catch(Exception ex) {
+            catch (Exception ex) {
                 MessageBox.Show(string.Format("改寫設定檔時發生錯誤。\nError code:\n{0}", ex.ToString()), "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -1348,19 +1354,19 @@ namespace ToolWear{
             Threshold_LoadBlade((object)pre_Blade, null);
         }
         //臨界值設定 > 刪除
-        private void btn_Threshold_delete_Click(object sender,EventArgs e){
+        private void btn_Threshold_delete_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("確定要清除臨界值資料嗎？", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
             TextBox[] tb_Threshold_set = new TextBox[5] { tb_Threshold_set01, tb_Threshold_set02, tb_Threshold_set03,
                                                           tb_Threshold_set04, tb_Threshold_set05};
-            try{
+            try {
                 StreamWriter sw_set = new StreamWriter(string.Format(@"{0}data\FFT\LS-{1}.cp", path, Blade_FileName));
                 for (int i = 0; i < 5; i++)
                     sw_set.WriteLine("0");
                 sw_set.Close();
                 sw_set.Dispose();
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show(string.Format("改寫設定檔時發生錯誤。\nError code:\n{0}", ex.ToString()), "刪除失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -1368,8 +1374,8 @@ namespace ToolWear{
             MessageBox.Show("清除完畢。", "刪除成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         //臨界值設定 > 上一頁
-        private void btn_Threshold_Up_Click(object sender, EventArgs e){
-            if (lb_Threshold_page.Text.Equals("1")){
+        private void btn_Threshold_Up_Click(object sender, EventArgs e) {
+            if (lb_Threshold_page.Text.Equals("1")) {
                 MessageBox.Show("已經在第一頁了。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -1377,19 +1383,19 @@ namespace ToolWear{
             Threshold_Load();
         }
         //臨界值設定 > 下一頁
-        private void btn_Threshold_Down_Click(object sender, EventArgs e){
+        private void btn_Threshold_Down_Click(object sender, EventArgs e) {
             //查詢目錄
             string[] dirs = Directory.GetFiles(path + @"data\FFT");/*目錄(含路徑)的陣列*/
             int path_count = 0; //計算有幾個檔案
             //先將該工件的所有臨界值資料取出
-            foreach (string s in dirs){
+            foreach (string s in dirs) {
                 //ex L-abc01-1_2500-set.cp
                 string file = Path.GetFileNameWithoutExtension(s).Split('_')[0];
                 string remove_rate = file.Split('-')[0] + "-" + file.Split('-')[1];
                 if (remove_rate.Equals("L-" + lb_ToolWear_Parts.Text + pre_ToolWear.Name.Split('_')[2]))
                     path_count++;
             }
-            if (path_count > int.Parse(lb_Threshold_page.Text) * 14){
+            if (path_count > int.Parse(lb_Threshold_page.Text) * 14) {
                 lb_Threshold_page.Text = (int.Parse(lb_Threshold_page.Text) + 1).ToString();
                 Threshold_Load();
             }
@@ -1399,8 +1405,8 @@ namespace ToolWear{
         #endregion
         #region 主畫面設定
         //主畫面 > 設定 > 重新連線
-        private void btn_setting_Reconnection_Click(object sender,EventArgs e){
-            if(EZNcCom != null) EZNcCom.Close();
+        private void btn_setting_Reconnection_Click(object sender, EventArgs e) {
+            if (EZNcCom != null) EZNcCom.Close();
             EZNcCom = new DispEZNcCommunication();
             lb_setting_Reconnection.Text = "正在準備重新連接控制器，這可能需要花費一段時間。";
             lb_setting_Reconnection.ForeColor = Color.White;
@@ -1409,19 +1415,19 @@ namespace ToolWear{
         }
         //主畫面 > 設定 > 重新連線執行緒
         delegate void SettingReconnectionDelegate();
-        private void setting_Reconnection_Thread(){
-            if (this.InvokeRequired){
+        private void setting_Reconnection_Thread() {
+            if (this.InvokeRequired) {
                 SettingReconnectionDelegate SLD = new SettingReconnectionDelegate(setting_Reconnection_Thread);
                 this.Invoke(SLD);
             }
-            else{
+            else {
                 long ret = Mitsubishi_Initialization();
-                if (ret != 0){
+                if (ret != 0) {
                     lb_setting_Reconnection.Text = "控制器連線失敗。\n請確定控制器廠牌與IP設定無誤，並確認實體線路是否通暢。\n Error Code : " + ret.ToString();
                     lb_setting_Reconnection.ForeColor = Color.Red;
                     machine_connect = false;
                 }
-                else{
+                else {
                     lb_setting_Reconnection.Text = "已取得連線資訊，位於 " + tb_setting_ip.Text + "。";
                     machine_connect = true;
                     StreamWriter sw = new StreamWriter(path + @"\data\setting.cp");
@@ -1429,10 +1435,10 @@ namespace ToolWear{
                     sw.Close();
                     sw.Dispose();
                 }
-            }  
+            }
         }
         //主畫面 > 設定 > 存檔
-        private void btn_setting_save_Click(object sender, EventArgs e){
+        private void btn_setting_save_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("請先確認所選控制器廠牌與型號及IP是否正確。", "存檔", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
             StreamWriter sw = new StreamWriter(path + @"\data\setting.cp");
@@ -1442,7 +1448,7 @@ namespace ToolWear{
             MessageBox.Show("存檔成功。", "存檔", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         //主畫面 > 設定 > 刪除
-        private void btn_setting_delete_Click(object sender,EventArgs e){
+        private void btn_setting_delete_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("確定要清除設定檔內資料嗎？", "刪除", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
             StreamWriter sw = new StreamWriter(path + @"\data\setting.cp");
@@ -1456,27 +1462,27 @@ namespace ToolWear{
         /// 主畫面 > 設定 > 重新讀取設定檔
         /// </summary>
         /// <param name="OnRemove">是否在移除模式下</param>
-        private void setting_load(bool OnRemove){
+        private void setting_load(bool OnRemove) {
             //主畫面 > 設定
             StreamReader sr_setting = new StreamReader(path + @"\data\setting.cp");
             string set = sr_setting.ReadLine();
             //搜尋廠牌
-            for (int i = 0; i < cb_setting_brand.Items.Count; i++){
+            for (int i = 0; i < cb_setting_brand.Items.Count; i++) {
                 cb_setting_brand.SelectedIndex = i;
                 if (cb_setting_brand.Text.Equals(set.Split(',')[0])) break;
                 //當搜尋到最後一筆廠牌資料都沒有搜尋到時(因為如果有搜尋到就已經break了)
-                if (i == cb_setting_brand.Items.Count - 1){
+                if (i == cb_setting_brand.Items.Count - 1) {
                     cb_setting_brand.SelectedIndex = 0;
-                    if(OnRemove == false)
+                    if (OnRemove == false)
                         MessageBox.Show("設定檔錯誤。\n查無廠牌！\n請確認設定檔資料是否正確，或是前往設定頁面重新選擇資料並儲存。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             //搜尋型號
-            for (int i = 0; i < cb_setting_model.Items.Count; i++){
+            for (int i = 0; i < cb_setting_model.Items.Count; i++) {
                 cb_setting_model.SelectedIndex = i;
                 if (cb_setting_model.Text.Equals(set.Split(',')[1])) break;
                 //當搜尋到最後一筆廠牌資料都沒有搜尋到時(因為如果有搜尋到就已經break了)
-                if (i == cb_setting_model.Items.Count - 1){
+                if (i == cb_setting_model.Items.Count - 1) {
                     cb_setting_model.SelectedIndex = 0;
                     if (OnRemove == false)
                         MessageBox.Show("設定檔錯誤。\n查無型號！\n請確認設定檔資料是否正確，或是前往設定頁面重新選擇資料並儲存。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1490,25 +1496,25 @@ namespace ToolWear{
         #endregion
         #region Alarm設定
         //設定 > Alarm設定 > 停止模式 > 瞬間
-        private void btn_AlarmMode_Flash_Click(object sender,EventArgs e){
+        private void btn_AlarmMode_Flash_Click(object sender, EventArgs e) {
             Alarm = Alarm_Mode.Flash;
         }
         //設定 > Alarm設定 > 停止模式 > 作業後停止
-        private void btn_AlarmMode_Delay_Click(object sender, EventArgs e){
+        private void btn_AlarmMode_Delay_Click(object sender, EventArgs e) {
             Alarm = Alarm_Mode.Delay;
         }
         //設定 > Alarm設定 > 停止模式 > 不處理
-        private void btn_AlarmMode_None_Click(object sender, EventArgs e){
+        private void btn_AlarmMode_None_Click(object sender, EventArgs e) {
             Alarm = Alarm_Mode.None;
         }
         //設定 > Alarm設定 > 上一頁
-        private void btn_AlarmSetting_Back_Click(object sender,EventArgs e){
+        private void btn_AlarmSetting_Back_Click(object sender, EventArgs e) {
             panel_Dissable();
             panel_setting.Visible = true;
         }
         //設定 > Alarm設定 > 儲存
-        private void panel_AlarmSetting_save_Click(object sender,EventArgs e){
-            if (string.IsNullOrEmpty(tb_AlarmMethod_IP.Text)){
+        private void panel_AlarmSetting_save_Click(object sender, EventArgs e) {
+            if (string.IsNullOrEmpty(tb_AlarmMethod_IP.Text)) {
                 MessageBox.Show("IP位址不可為空。", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -1530,11 +1536,11 @@ namespace ToolWear{
             sw.Close();
             sw.Dispose();
         }
-        
+
         #endregion
         #region 模型預覽
         //模型預覽
-        private void btn_ToolWearSetting_ViewModule_Click(object sender, EventArgs e){
+        private void btn_ToolWearSetting_ViewModule_Click(object sender, EventArgs e) {
             panel_ToolWearSetting.Visible = false;
             panel_ViewModule.Visible = true;
             chart_ViewModule.Legends.Clear();
@@ -1546,7 +1552,7 @@ namespace ToolWear{
             int count = 1;
             //double per_number = 0f;
             //bool Cutting_bool = false;
-            while (!sr.EndOfStream){
+            while (!sr.EndOfStream) {
                 string tem_read = sr.ReadLine();
                 count++;
                 if (string.IsNullOrWhiteSpace(tem_read)) continue;
@@ -1575,10 +1581,10 @@ namespace ToolWear{
             double hz = rateNumeric_base / samplesPerChannelNumeric_base;
             string[] file_name = new string[] {"FFT_Max(new-1)", "FFT_Max(new-2)", "FFT_Max(new-3)", "FFT_Max(new-4)", "FFT_Max(new-5)",
                 "FFT_Max(crash-1)","FFT_Max(crash-2)","FFT_Max(crash-3)","FFT_Max(crash-4)","FFT_Max(crash-5)" };
-            for(int i = 0; i < file_name.Length; i++){
+            for (int i = 0; i < file_name.Length; i++) {
                 StreamReader sr_FFTmax = new StreamReader(path + @"\data\" + file_name[i] + ".cp");
                 int FFT_count = 1;
-                while (!sr_FFTmax.EndOfStream){
+                while (!sr_FFTmax.EndOfStream) {
                     chart_ViewFFT.Series[i].Points.AddXY(FFT_count * hz, sr_FFTmax.ReadLine());
                     FFT_count++;
                 }
@@ -1588,15 +1594,15 @@ namespace ToolWear{
             #endregion
         }
         //重置縮放
-        private void btn_ViewModule_ChartReset_Click(object sender, EventArgs e){
+        private void btn_ViewModule_ChartReset_Click(object sender, EventArgs e) {
             //chart_Blade.ChartAreas[0].AxisX.ScaleView.ZoomReset(0);
             chart_ViewModule.ChartAreas[0].AxisX.ScaleView.ZoomReset(0);
             chart_ViewFFT.ChartAreas[0].AxisX.ScaleView.ZoomReset(0);
             chart_ViewFFT.ChartAreas[0].AxisY.ScaleView.ZoomReset(0);
         }
         //波形圖切換
-        private void btn_ViewChartChange_Click(object sender, EventArgs e){
-            if(chart_ViewModule.Visible == true){
+        private void btn_ViewChartChange_Click(object sender, EventArgs e) {
+            if (chart_ViewModule.Visible == true) {
                 chart_ViewFFT.Visible = true;
                 chart_ViewModule.Visible = false;
                 //chart_Blade.Visible = false;
@@ -1611,23 +1617,23 @@ namespace ToolWear{
         #endregion
         #region 刃數比對
         //刃數比對
-        private void Blade_Comparison(double sample, double rate){
+        private void Blade_Comparison(double sample, double rate) {
             double hz = rate / sample;
             //讀取Module的暫存FFT變數 ： Module_FFT
             List<string> Blade_Module = Module_FFT;
             List<string> Blade_Match = new List<string>();
             string tem_path = "";
-            try{
+            try {
                 //判斷檔案是否存在
                 tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
                 //若沒有存在則使用預設0刀號
                 if (!File.Exists(tem_path)) tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00") + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
-                if (!File.Exists(tem_path)){
+                if (!File.Exists(tem_path)) {
                     //查不到預設檔案，隨便選取一項
-                    foreach (string s in Directory.GetFiles(path + @"data\FFT")){
+                    foreach (string s in Directory.GetFiles(path + @"data\FFT")) {
                         string path_s = Path.GetFileNameWithoutExtension(s);
                         if (!path_s.Split('-')[0].Equals("M")) continue;
-                        if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))){
+                        if (path_s.Split('-')[1].Equals(lb_ToolWear_Parts.Text + (now_Match + 1).ToString("00"))) {
                             //ex.LS-xxx00-0_2500
                             //將前方抬頭刪掉
                             tem_path = path + @"\data\FFT\M-" + path_s.Split('-')[1] + "-" + path_s.Split('-')[2] + ".cp";
@@ -1641,7 +1647,7 @@ namespace ToolWear{
                 sr_match.Close();
                 sr_match.Dispose();
             }
-            catch(Exception ex) {
+            catch (Exception ex) {
 
                 MessageBox.Show("讀取Match檔時發生錯誤。\n\nBlade_Comparison\n\n" + ex.ToString(), "讀取錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -1656,7 +1662,7 @@ namespace ToolWear{
             //取得刀具刃數
             StreamReader sr_ATC = new StreamReader(path + @"\data\ATC.cp");
             int Tool_Blade = 4;     //刀具刃數
-            for (int i = 0; i <= now_Match; i++){
+            for (int i = 0; i <= now_Match; i++) {
                 //讀取範例 1,test,4
                 //編號,名稱,刃數
                 string tem = sr_ATC.ReadLine();
@@ -1670,28 +1676,28 @@ namespace ToolWear{
                 }
             }
             //刀具刃數與頻率計算公式
-            double Blade_Hz = Tool_rate / 60 * Tool_Blade;  
+            double Blade_Hz = Tool_rate / 60 * Tool_Blade;
             int Blade_Hz_Mag = 1;   //頻率倍率(取1~5)
             double sum = 0;         //當前儲存點位總和
             int count = 0;          //儲存點位數量
             double Hz_min = 0, Hz_max = 0;  //暫存該頻率倍率中的最大最小值
-            for (int i = 0; i < Blade_Match.Count; i++){
+            for (int i = 0; i < Blade_Match.Count; i++) {
                 double tem = 0;
                 //上下各取10% range
                 Hz_min = Blade_Hz_Mag * Blade_Hz * 0.9f;
                 Hz_max = Blade_Hz_Mag * Blade_Hz * 1.1f;
-                if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max){
+                if ((i + 1) * hz > Hz_min && (i + 1) * hz < Hz_max) {
                     tem = double.Parse(Blade_Match[i]) - double.Parse(Blade_Module[i]); //暫存相差值
-                    if (tem >= 0){
+                    if (tem >= 0) {
                         sum += tem;
                         count++;
                     }
                 }
-                else if ((i + 1) * hz > Hz_max){
+                else if ((i + 1) * hz > Hz_max) {
                     Blade_Hz_Mag++; //若頻率已大於刀刃刃數頻率，將倍率提升
                 }
                 //只顯示正數
-                if(tem > 0)
+                if (tem > 0)
                     chart_Blade.Series[0].Points.AddXY((i + 1) * hz, tem);
                 else
                     chart_Blade.Series[0].Points.AddXY((i + 1) * hz, 0);
@@ -1711,21 +1717,21 @@ namespace ToolWear{
         //熱補償 > 按下軸向按鈕
         private void btn_Thermal_Axial_Click(object sender, EventArgs e) {
             //先重置上次選到的按鈕
-            if (pre_Thermal != null){
+            if (pre_Thermal != null) {
                 pre_Thermal.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn;
             }
             pre_Thermal = (Button)sender;
             pre_Thermal.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn_selected;
             now_Thermal = int.Parse(((Button)sender).Name.Split('_')[2]) - 1;
             //判斷目前的軸向是否正在偵測
-            if(((Button)sender).ForeColor != Color.White){
+            if (((Button)sender).ForeColor != Color.White) {
                 btn_Thermal_start.Enabled = false;
                 btn_Thermal_stop.Enabled = true;
                 btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
                 btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
                 btn_Thermal_stop.Focus();
             }
-            else{
+            else {
                 btn_Thermal_start.Enabled = true;
                 btn_Thermal_stop.Enabled = false;
                 btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
@@ -1733,61 +1739,61 @@ namespace ToolWear{
                 btn_Thermal_start.Focus();
             }
             //判斷是否有其他軸向正在啟動
-            if(Thermal_single > 0 && Thermal_bool[now_Thermal] != true){
+            if (Thermal_single > 0 && Thermal_bool[now_Thermal] != true) {
                 //表示有其他軸向正在啟動，且不是目前選到的這一軸(代表這是第2個或以上選取的軸向)
                 panel_Thermal_single.Visible = false;
                 panel_Thermal_Mutile.Visible = true;
                 Thermal_SelectAnother = true;
                 //如果是點同一個按鈕才清空
-                if (lb_Thermal_M2_Now.Text.Equals(pre_Thermal.Text)){
+                if (lb_Thermal_M2_Now.Text.Equals(pre_Thermal.Text)) {
                     chart_Thermal_M2.Series[0].Points.Clear();
                     chart_Thermal_M2.Series[1].Points.Clear();
                     for (int i = 1; i <= 30; i++)
                         chart_Thermal_M2.Series[1].Points.AddXY(i, 25);
                 }
             }
-            else if(Thermal_single > 1){
+            else if (Thermal_single > 1) {
                 panel_Thermal_single.Visible = false;
                 panel_Thermal_Mutile.Visible = true;
                 Thermal_SelectAnother = false;
             }
-            else{
+            else {
                 panel_Thermal_single.Visible = true;
                 panel_Thermal_Mutile.Visible = false;
                 Thermal_SelectAnother = false;
-                if(Thermal_single == 0){
+                if (Thermal_single == 0) {
                     chart_Thermal.Series[0].Points.Clear();
                     chart_Thermal.Series[1].Points.Clear();
                     chart_Thermal_M1.Series[0].Points.Clear();
                     chart_Thermal_M1.Series[1].Points.Clear();
-                    for (int i = 1; i <= 30; i++){
+                    for (int i = 1; i <= 30; i++) {
                         chart_Thermal.Series[1].Points.AddXY(i, 25);
                         chart_Thermal_M1.Series[1].Points.AddXY(i, 25);
                     }
                 }
             }
             //更改折線圖顯示名稱
-            if(Thermal_single == 0) lb_Thermal_Now.Text = pre_Thermal.Text;
-            else if(Thermal_single % 2 == 1) lb_Thermal_M2_Now.Text = pre_Thermal.Text;
+            if (Thermal_single == 0) lb_Thermal_Now.Text = pre_Thermal.Text;
+            else if (Thermal_single % 2 == 1) lb_Thermal_M2_Now.Text = pre_Thermal.Text;
         }
         //熱補償 > 開始
-        private void btn_Thermal_start_Click(object sender, EventArgs e){
+        private void btn_Thermal_start_Click(object sender, EventArgs e) {
             string axial = "";  //軸向
             string ip = "";     //此軸向ip
             string channel = "";
             //先檢查此軸向設定檔是否完整
             StreamReader sr_set = new StreamReader(path + @"\data\thermal.cp");
-            try{
-                for (int i = 0; i <= now_Thermal; i++){
+            try {
+                for (int i = 0; i <= now_Thermal; i++) {
                     string tem = sr_set.ReadLine();
-                    if (i == now_Thermal){
+                    if (i == now_Thermal) {
                         axial = tem.Split(',')[0];
                         ip = tem.Split(',')[1];
                         channel = tem.Split(',')[2];
                     }
                 }
             }
-            catch(Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("此軸向設定檔不完全，請至設定頁面重新設定。\n\nbtn_Thermal_start_Click\n\n" + ex.ToString(), "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 sr_set.Close();
                 sr_set.Dispose();
@@ -1802,10 +1808,10 @@ namespace ToolWear{
             btn_Thermal_stop.Enabled = true;
             btn_Thermal_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_Thermal_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
-            if(Thermal_single == 0) lb_Thermal_Now.Text = pre_Thermal.Text;
+            if (Thermal_single == 0) lb_Thermal_Now.Text = pre_Thermal.Text;
 
             //清除原先折線圖資訊
-            if (Thermal_single == 0){
+            if (Thermal_single == 0) {
                 chart_Thermal.Series[0].Points.Clear();
                 chart_Thermal.Series[1].Points.Clear();
                 chart_Thermal_M1.Series[0].Points.Clear();
@@ -1816,7 +1822,7 @@ namespace ToolWear{
                     chart_Thermal_M1.Series[1].Points.AddXY(i, 25);
                 }
             }
-            else if (Thermal_single == 1){ 
+            else if (Thermal_single == 1) {
                 chart_Thermal_M2.Series[0].Points.Clear();
                 chart_Thermal_M2.Series[1].Points.Clear();
                 for (int i = 1; i <= 30; i++)
@@ -1846,13 +1852,13 @@ namespace ToolWear{
 
             //重新設定頁數為最後一頁
             lb_Thermal_page.Text = (((Thermal_single - 1) / 2) + 1).ToString();
-            
+
             //清除第二個折線圖標題因更改頁數而異常出現的問題
             if (Thermal_single % 2 == 1)
                 lb_Thermal_M2_Now.Text = "";
         }
         //熱補償 > 停止
-        private void btn_Thermal_stop_Click(object sender, EventArgs e){
+        private void btn_Thermal_stop_Click(object sender, EventArgs e) {
             pre_Thermal.ForeColor = Color.White;
             btn_Thermal_start.Enabled = true;
             btn_Thermal_stop.Enabled = false;
@@ -1861,9 +1867,9 @@ namespace ToolWear{
             Thermal_bool[now_Thermal] = false;
             Thermal_single--;
             //當都已經沒有任何軸向在啟動的時候
-            if(Thermal_single == 0)
+            if (Thermal_single == 0)
                 timer_temperature.Enabled = false;
-            else if(Thermal_single > 0)
+            else if (Thermal_single > 0)
                 Thermal_SelectAnother = true;
             //Log推播
             Write_Log("系統", "已關閉熱補償偵測 ： " + pre_Thermal.Text + " 軸。");
@@ -1873,37 +1879,37 @@ namespace ToolWear{
             btn_Thermal_Axial_Click((object)pre_Thermal, null);
         }
         //熱補償 > 折線圖上一頁
-        private void btn_Thermal_up_Click(object sender,EventArgs e){
-            if (lb_Thermal_page.Text.Equals("1")){
+        private void btn_Thermal_up_Click(object sender, EventArgs e) {
+            if (lb_Thermal_page.Text.Equals("1")) {
                 MessageBox.Show("頁面切換失敗，已經在第一頁。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            else{
+            else {
                 lb_Thermal_page.Text = (int.Parse(lb_Thermal_page.Text) - 1).ToString();
                 Thread TD_ChartData = new Thread(Thermal_ChartData);
                 TD_ChartData.Start();
             }
         }
         //熱補償 > 折線圖下一頁
-        private void btn_Thermal_down_Click(object sender,EventArgs e){
-            if(Thermal_single > int.Parse(lb_Thermal_page.Text) * 2){
+        private void btn_Thermal_down_Click(object sender, EventArgs e) {
+            if (Thermal_single > int.Parse(lb_Thermal_page.Text) * 2) {
                 lb_Thermal_page.Text = (int.Parse(lb_Thermal_page.Text) + 1).ToString();
                 Thread TD_ChartData = new Thread(Thermal_ChartData);
                 TD_ChartData.Start();
             }
-            else{
-                MessageBox.Show("沒有更多的偵測圖，已在最後一頁。","操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else {
+                MessageBox.Show("沒有更多的偵測圖，已在最後一頁。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
         }
         //熱補償 > 顯示折線圖
         delegate void ChartDataDelegate();
-        private void Thermal_ChartData(){
-            if (this.InvokeRequired){
+        private void Thermal_ChartData() {
+            if (this.InvokeRequired) {
                 ChartDataDelegate CDD = new ChartDataDelegate(Thermal_ChartData);
                 this.Invoke(CDD);
             }
-            else{
+            else {
                 //暫存畫了幾張圖
                 int chart_count = 0;
                 //暫存當前頁數
@@ -1916,35 +1922,35 @@ namespace ToolWear{
                                        btn_Thermal_09,btn_Thermal_10,btn_Thermal_11,btn_Thermal_12,btn_Thermal_13,
                                        btn_Thermal_14,btn_Thermal_15,btn_Thermal_16,btn_Thermal_17,btn_Thermal_18,
                                        btn_Thermal_19,btn_Thermal_20};
-                for (int i = 0; i < 20; i++){
+                for (int i = 0; i < 20; i++) {
                     if (Thermal_bool[i] == false) continue;
-                    if(chart_count < (int_page - 1) * 2 ){
+                    if (chart_count < (int_page - 1) * 2) {
                         chart_count++;
                         continue;
                     }
                     List<string> tem_read = new List<string>();
-                    try{
+                    try {
                         StreamReader sr_axial = new StreamReader(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
                         while (!sr_axial.EndOfStream) tem_read.Add(sr_axial.ReadLine());
                         sr_axial.Close();
                         sr_axial.Dispose();
                     }
-                    catch {}
+                    catch { }
                     chart[chart_count % 2].Series[0].Points.Clear();
                     chart[chart_count % 2].Series[1].Points.Clear();
                     //清除換頁時第二個折線圖異常顯示問題
-                    if(chart_count % 2 != 1){
+                    if (chart_count % 2 != 1) {
                         chart[1].Series[0].Points.Clear();
                         if ((int_page * 2) - 1 > chart_count && Thermal_SelectAnother == false)
                             chart_Title[1].Text = "";
                     }
-                    if (chart_count == 0){
+                    if (chart_count == 0) {
                         chart_Thermal.Series[0].Points.Clear();
                         chart_Thermal.Series[1].Points.Clear();
                         //只剩一個時把第二張折線圖的線刪掉
                         chart[chart_count + 1].Series[0].Points.Clear();
                     }
-                    for (int j = 0; j < tem_read.Count; j++){
+                    for (int j = 0; j < tem_read.Count; j++) {
                         //如果資料檔內還沒存放超過30個數字，表示不用推移折線圖，直接加入最新點位即可
                         //if (tem_read.Count < 30) j = tem_read.Count - 1;
                         int tem_count = int.Parse(tem_read[j].Split(',')[0]) + 1;
@@ -1952,13 +1958,13 @@ namespace ToolWear{
                         if (chart_count == 0)
                             chart_Thermal.Series[0].Points.AddXY(tem_count, tem_read[j].Split(',')[1]);
                     }
-                    for (int j = 0; j < 30; j++){
-                        if(tem_read.Count >= 30){
+                    for (int j = 0; j < 30; j++) {
+                        if (tem_read.Count >= 30) {
                             int tem_count = int.Parse(tem_read[j].Split(',')[0]) + 1;
                             chart[chart_count % 2].Series[1].Points.AddXY(tem_count, 25);
                             chart_Thermal.Series[1].Points.AddXY(tem_count, 25);
                         }
-                        else{
+                        else {
                             chart[chart_count % 2].Series[1].Points.AddXY(j + 1, 25);
                             chart_Thermal.Series[1].Points.AddXY(j + 1, 25);
                         }
@@ -1977,11 +1983,11 @@ namespace ToolWear{
         /// <param name="axial">軸向</param>
         /// <param name="temperature">溫度</param>
         /// <param name="WriteWhere">發生事故的物件名稱</param>
-        private void Thermal_Log(int axial,float temperature, string WriteObject){
+        private void Thermal_Log(int axial, float temperature, string WriteObject) {
             //讀取熱補償資料
             StreamReader sr_compensate = new StreamReader(path + @"\data\compensate.cp");
             List<string> tem_compensate = new List<string>();
-            while (!sr_compensate.EndOfStream){
+            while (!sr_compensate.EndOfStream) {
                 string s = sr_compensate.ReadLine();
                 //紀錄該軸向的補償資訊
                 if (s.Split(',')[0].Equals(axial.ToString()))
@@ -1998,10 +2004,10 @@ namespace ToolWear{
 
             //檢查警告數值
             //從最大值開始判斷
-            for(int i = tem_compensate.Count - 1; i >= 0; i--){
+            for (int i = tem_compensate.Count - 1; i >= 0; i--) {
                 //若temperature小於陣列數值，表示未達該補償溫度，繼續往溫度低的資料判斷
                 if (temperature < float.Parse(tem_compensate[i].Split(',')[1])) continue;
-                else{
+                else {
                     Write_Log("警告", string.Format("{0}軸溫度已上升至{1}℃，補償值{2}mm",
                         WriteObject, temperature, tem_compensate[i].Split(',')[2]));
                     break;
@@ -2009,12 +2015,12 @@ namespace ToolWear{
             }
         }
         //熱補償專用排序(因為其為字串且需要一次更動兩個參數)
-        private void Compensate_Sort(ref List<string> numbers, int left, int right){
-            if (left < right){
+        private void Compensate_Sort(ref List<string> numbers, int left, int right) {
+            if (left < right) {
                 double middle = double.Parse(numbers[(left + right) / 2].Split(',')[1]);
                 int i = left - 1;
                 int j = right + 1;
-                while (true){
+                while (true) {
                     while (double.Parse(numbers[++i].Split(',')[1]) < middle) ;
                     while (double.Parse(numbers[--j].Split(',')[1]) > middle) ;
                     if (i >= j)
@@ -2035,16 +2041,16 @@ namespace ToolWear{
         //====假資料專用變數====
         //熱補償 > 產生假資料
         delegate void FakeDataDelegate();
-        private void Thermal_FakeData(){
-            if (this.InvokeRequired){
+        private void Thermal_FakeData() {
+            if (this.InvokeRequired) {
                 FakeDataDelegate FDD = new FakeDataDelegate(Thermal_FakeData);
                 this.Invoke(FDD);
             }
-            else{
+            else {
                 //Thermal_single = 0 : 沒有任何啟動
                 //Thermal_single = 1 : 啟動單軸
                 //Thermal_single > 1 : 啟動好幾軸
-                for (int i = 0; i < 20; i++){
+                for (int i = 0; i < 20; i++) {
                     if (Thermal_bool[i] == false) continue;
                     Thermal_count[i]++;
                     Random ran = new Random(Guid.NewGuid().GetHashCode());
@@ -2056,10 +2062,10 @@ namespace ToolWear{
                                        btn_Thermal_14,btn_Thermal_15,btn_Thermal_16,btn_Thermal_17,btn_Thermal_18,
                                        btn_Thermal_19,btn_Thermal_20};
                     //寫log
-                    Thermal_Log(i,Thermal_temperature[i], btn_Thermal[i].Text);
+                    Thermal_Log(i, Thermal_temperature[i], btn_Thermal[i].Text);
 
                     List<string> tem_read = new List<string>();
-                    try{
+                    try {
                         StreamReader sr_axial = new StreamReader(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
                         while (!sr_axial.EndOfStream) tem_read.Add(sr_axial.ReadLine());
                         sr_axial.Close();
@@ -2068,19 +2074,19 @@ namespace ToolWear{
                     catch { }
 
                     ////顯示折線圖(單軸)
-                    if (tem_read.Count >= 30) 
+                    if (tem_read.Count >= 30)
                         tem_read.RemoveAt(0);
 
                     tem_read.Add(Thermal_temperature[i].ToString());
                     StreamWriter sw_axial = new StreamWriter(path + @"\data\Temperature\Axial" + i.ToString("00") + ".cp");
-                    for (int j = 0; j < tem_read.Count; j++){
+                    for (int j = 0; j < tem_read.Count; j++) {
                         if (tem_read.Count >= 30)
                             //判斷是不是新加入的值
                             if (j == tem_read.Count - 1)
                                 sw_axial.WriteLine(Thermal_count[i] + "," + Thermal_temperature[i].ToString());
                             else
                                 sw_axial.WriteLine((Thermal_count[i] - (30 - j)).ToString() + "," + tem_read[j].Split(',')[1]);
-                        else{
+                        else {
                             //判斷是不是新加入的值
                             if (j == tem_read.Count - 1)
                                 sw_axial.WriteLine(j + "," + Thermal_temperature[i].ToString());
@@ -2093,11 +2099,11 @@ namespace ToolWear{
                     //break;
                 }
                 //是否只有一個訊號在運行且是否點選正在運行的訊號
-                if (Thermal_single == 1 && Thermal_SelectAnother == false){
+                if (Thermal_single == 1 && Thermal_SelectAnother == false) {
                     panel_Thermal_single.Visible = true;
                     panel_Thermal_Mutile.Visible = false;
                 }
-                else if (Thermal_single == 1 && Thermal_SelectAnother == true){
+                else if (Thermal_single == 1 && Thermal_SelectAnother == true) {
                     panel_Thermal_single.Visible = false;
                     panel_Thermal_Mutile.Visible = true;
                 }
@@ -2108,27 +2114,27 @@ namespace ToolWear{
         #endregion
         #region 健康診斷
         //健康診斷 > 讀取資料
-        private void Health_load(){
+        private void Health_load() {
             //先重整頻道
-            Health_ChannelLoad(null,null);
-            try{
+            Health_ChannelLoad(null, null);
+            try {
                 StreamReader sr = new StreamReader(path + @"data\health.cp");
                 string tem = sr.ReadLine();
                 //檢查廠牌資料
-                for(int i = 0; i < cb_HealthSetting_Machine.Items.Count; i++){
+                for (int i = 0; i < cb_HealthSetting_Machine.Items.Count; i++) {
                     cb_HealthSetting_Machine.SelectedIndex = i;
                     if (tem.Split(',')[0].Equals(cb_HealthSetting_Machine.Text)) break;
                     //如果搜尋到最後都沒查到符合的
-                    if(i == cb_HealthSetting_Machine.Items.Count - 1){
+                    if (i == cb_HealthSetting_Machine.Items.Count - 1) {
                         cb_HealthSetting_Machine.SelectedIndex = 0;
                     }
                 }
                 //檢查訊號輸入
-                for(int i = 0; i < cb_HealthSetting_Channel.Items.Count; i++){
+                for (int i = 0; i < cb_HealthSetting_Channel.Items.Count; i++) {
                     cb_HealthSetting_Channel.SelectedIndex = i;
                     if (tem.Split(',')[1].Equals(cb_HealthSetting_Channel.Text)) break;
                     //如果搜尋到最後都沒查到符合的
-                    if (i == cb_HealthSetting_Channel.Items.Count - 1){
+                    if (i == cb_HealthSetting_Channel.Items.Count - 1) {
                         cb_HealthSetting_Channel.SelectedIndex = 0;
                     }
                 }
@@ -2138,64 +2144,64 @@ namespace ToolWear{
                 sr.Close();
                 sr.Dispose();
             }
-            catch(Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("讀取健康診斷資料失敗。\n\nHealth_load\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             lb_Health_Machine.Text = cb_HealthSetting_Machine.Text;
         }
         //健康診斷 > 設定 > 頻道讀取
-        private void Health_ChannelLoad(object sender,EventArgs e){
+        private void Health_ChannelLoad(object sender, EventArgs e) {
             cb_HealthSetting_Channel.Items.Clear();
             cb_HealthSetting_Channel.Items.Add("請選擇訊號輸入");
             //DAQ實體訊號輸入端點讀取
             dataTable = new DataTable();
-            try{
+            try {
                 cb_HealthSetting_Channel.Items.AddRange(DaqSystem.Local.GetPhysicalChannels(PhysicalChannelTypes.AI, PhysicalChannelAccess.External));
                 if (cb_HealthSetting_Channel.Items.Count > 0)
                     cb_HealthSetting_Channel.SelectedIndex = 0;
             }
-            catch{}
+            catch { }
             //如果是按按鈕觸發的(sender != null)，重新讀取資料
             if (sender != null) Health_load();
         }
         //健康診斷 > 設定 > 存檔
-        private void HealthSetting_save(object sender,EventArgs e){
+        private void HealthSetting_save(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("繼續操作將會覆蓋您之前的設定檔，\n請問要繼續嗎？", "存檔", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
-            try{
+            try {
                 StreamWriter sw = new StreamWriter(path + @"data\health.cp");
                 sw.WriteLine(string.Format("{0},{1},{2}", cb_HealthSetting_Machine.Text, cb_HealthSetting_Channel.Text, numeric_HealthSetting_Range.Value));
                 sw.Close();
                 sw.Dispose();
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("在存檔時發生不可測意外。\n\nHealthSetting_save\n\n" + ex.ToString(), "存檔失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //健康診斷 > 設定 > 刪除
-        private void HealthSetting_delete(object sender,EventArgs e){
+        private void HealthSetting_delete(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("繼續操作將會刪除您的設定檔，\n請問要繼續嗎？", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
-            try{
+            try {
                 StreamWriter sw = new StreamWriter(path + @"data\health.cp");
                 sw.WriteLine(",,0");
                 sw.Close();
                 sw.Dispose();
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("在刪除設定檔時發生不可測意外。\n\nHealthSetting_delete\n\n" + ex.ToString(), "刪除失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //健康診斷 > 開始
-        private void Health_Start(object sender,EventArgs e){
+        private void Health_Start(object sender, EventArgs e) {
             //檢查是否有選擇機台型號
-            if (string.IsNullOrWhiteSpace(lb_Health_Machine.Text)){
+            if (string.IsNullOrWhiteSpace(lb_Health_Machine.Text)) {
                 MessageBox.Show("請先至設定頁面選擇機台型號後再開始。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             //出廠檢測模式
-            if(panel_Health_Factory.Visible == true){
+            if (panel_Health_Factory.Visible == true) {
                 DialogResult dialogResult = MessageBox.Show("繼續操作將會覆蓋您原先的設定檔，\n請問要繼續嗎？\n(若是第一次建置請無視此訊息)", "模型重建", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Cancel) return;
 
@@ -2213,14 +2219,14 @@ namespace ToolWear{
                 DAQ_Now = "Factory";  //出場檢測
             }
             //售後檢測模式
-            else{
+            else {
                 //重置最大值參數
                 tem_AfterSale_Max.Clear();
                 for (int i = 0; i < samplesPerChannelNumeric_base / 2; i++)
                     tem_AfterSale_Max.Add("-99");
 
                 //讀取出場檢測資料檔
-                try{
+                try {
                     StreamReader sr = new StreamReader(path + @"data\Health\Factory_" + lb_Health_Machine.Text + ".cp");
                     tem_Factory_Max.Clear();
                     while (!sr.EndOfStream)
@@ -2228,7 +2234,7 @@ namespace ToolWear{
                     sr.Close();
                     sr.Dispose();
                 }
-                catch{
+                catch {
                     //會進到catch表示沒有學習模型
                     MessageBox.Show("此機器型號沒有出廠資料檔，請先使用出廠檢測取得基準\n資料後再進行售後檢測。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -2255,8 +2261,8 @@ namespace ToolWear{
             btn_Health_Stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
 
             //開啟Task
-            if (runningTask == null){
-                try{
+            if (runningTask == null) {
+                try {
                     samplesPerChannelNumeric = samplesPerChannelNumeric_base + 1; //取樣數偏移
                     rateNumeric = rateNumeric_base + 1;  //頻率偏移
                     //TASK設定
@@ -2289,13 +2295,13 @@ namespace ToolWear{
                     analogInReader.SynchronizeCallbacks = true;
                     analogInReader.BeginReadWaveform(Convert.ToInt32(samplesPerChannelNumeric), analogCallback, myTask);
                 }
-                catch (DaqException exception){
+                catch (DaqException exception) {
                     // Display Errors
-                    if (exception.Error == -200431 || exception.Error == -200220){
+                    if (exception.Error == -200431 || exception.Error == -200220) {
                         MessageBox.Show("無法初始化選取的訊號輸入，請確認設定檔內的訊號輸入是否正確，\n或是檢查是否有讀取到原先所設置的訊號。", "偵測啟動失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         Health_Stop(null, null);
                     }
-                    else{
+                    else {
                         TaskStop();
                         //嘗試自我修復
                         DAQInitialize(DAQ_Now);
@@ -2304,7 +2310,7 @@ namespace ToolWear{
             }
         }
         //健康診斷 > 停止
-        private void Health_Stop(object sender,EventArgs e){
+        private void Health_Stop(object sender, EventArgs e) {
             //清空Task
             if (runningTask != null) TaskStop();
             //重置按鈕
@@ -2317,14 +2323,14 @@ namespace ToolWear{
             if (sender == null) return;
 
             //如果是售後檢測模式
-            if (DAQ_Now.Equals("AfterSale")){
+            if (DAQ_Now.Equals("AfterSale")) {
                 panel_Dissable();
                 panel_Health_Result.Visible = true;
                 HealthResult_Load();
             }
         }
         //健康診斷 > 檢測結果讀取與計算
-        private void HealthResult_Load(){
+        private void HealthResult_Load() {
             //重置最大值參數(避免超出陣列問題發生)
             tem_Factory_Max.Clear();
             tem_AfterSale_Max.Clear();
@@ -2333,7 +2339,7 @@ namespace ToolWear{
             chart_HealthResult_AfterSale.Series[0].Points.Clear();
             chart_HealthResult_Factory.Series[2].Points.Clear();
             chart_HealthResult_AfterSale.Series[2].Points.Clear();
-            for (int i = 0; i < (int)(samplesPerChannelNumeric_base / 2); i++){
+            for (int i = 0; i < (int)(samplesPerChannelNumeric_base / 2); i++) {
                 tem_Factory_Max.Add("-99");
                 tem_AfterSale_Max.Add("-99");
             }
@@ -2343,12 +2349,12 @@ namespace ToolWear{
             //讀取出廠數據
             StreamReader sr_Factory = new StreamReader(path + @"data\Health\Factory_" + lb_Health_Machine.Text + ".cp");
             int sr_Factory_Count = 0;
-            while (!sr_Factory.EndOfStream){
+            while (!sr_Factory.EndOfStream) {
                 string tem = sr_Factory.ReadLine();
                 tem_Factory_Max[sr_Factory_Count] = tem;
                 sr_Factory_Count++;
                 chart_HealthResult_Factory.Series[0].Points.AddXY(sr_Factory_Count * hz, tem);
-                if(double.Parse(tem) > tem_max)
+                if (double.Parse(tem) > tem_max)
                     tem_max = double.Parse(tem);
             }
             sr_Factory.Close();
@@ -2356,7 +2362,7 @@ namespace ToolWear{
             //讀取售後數據
             StreamReader sr_AfterSale = new StreamReader(path + @"data\Health\AfterSale_" + lb_Health_Machine.Text + ".cp");
             int sr_AfterSale_Count = 0;
-            while (!sr_AfterSale.EndOfStream){
+            while (!sr_AfterSale.EndOfStream) {
                 string tem = sr_AfterSale.ReadLine();
                 tem_AfterSale_Max[sr_AfterSale_Count] = tem;
                 sr_AfterSale_Count++;
@@ -2376,9 +2382,9 @@ namespace ToolWear{
             sr_Health.Dispose();
             //比對圖形
             int pass_count = 0;  //暫存總共有幾筆頻率在設定值內
-            for(int i = 0;i< tem_Factory_Max.Count; i++){
+            for (int i = 0; i < tem_Factory_Max.Count; i++) {
                 //在設定值內就將暫存值+1
-                if((double.Parse(tem_AfterSale_Max[i])) < double.Parse(tem_Factory_Max[i]) * (1 + range))
+                if ((double.Parse(tem_AfterSale_Max[i])) < double.Parse(tem_Factory_Max[i]) * (1 + range))
                     pass_count++;
             }
             lb_HealthResult_Result.Text = string.Format("在檢測震幅範圍{0} %之下的合格率為{1} %", range * 100, (double)pass_count / (double)tem_Factory_Max.Count * 100);
@@ -2390,18 +2396,23 @@ namespace ToolWear{
         #endregion
         #region 刀具磨耗預測
         //讀取刀具磨耗預測設定檔資料
-        private void panle_prediction_Load(){
+        private void panle_prediction_Load() {
             //讀取設定檔內資料
-            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\"))
+            cb_prediction_ModelName.Items.Clear();
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\module\"))
                 cb_prediction_ModelName.Items.Add(Path.GetFileNameWithoutExtension(fname));
             cb_prediction_Material.SelectedIndex = 0;
             cb_prediction_Type.SelectedIndex = 0;
             cb_prediction_work.SelectedIndex = 0;
             cb_prediction_ModelName.SelectedIndex = cb_prediction_ModelName.Items.Count - 1;
         }
+        //回上一頁
+        private void btn_prediction_back_Click(object sender,EventArgs e){
+            btn_ToolWear_Click(null, null);
+        }
         //讀取設定檔內資料
         private void cb_prediction_ModelName_SelectedIndexChanged(object sender, EventArgs e){
-            StreamReader sr = new StreamReader(path + @"data\Prediction\" + cb_prediction_ModelName.Text + ".csv");
+            StreamReader sr = new StreamReader(path + @"data\Prediction\module\" + cb_prediction_ModelName.Text + ".csv");
             string tem_s = sr.ReadLine();   //格式為 名稱,刀具材質,刀具種類,工件種類
             sr.Close();
             sr.Dispose();
@@ -2438,7 +2449,7 @@ namespace ToolWear{
                     MessageBox.Show("「工件種類」未讀取到匹配項目，請確定設定檔是否被更動。", "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        //刀具磨耗預測 > 開始擷取資料
+        //刀具磨耗預測 > 開始
         private void btn_prediction_start_Click(object sender,EventArgs e){
             //首先判斷名稱是否已填寫
             if (string.IsNullOrWhiteSpace(cb_prediction_ModelName.Text)){
@@ -2446,19 +2457,74 @@ namespace ToolWear{
                 return;
             }
             //將新的模型寫入新檔
-            StreamWriter sw = new StreamWriter(path + @"data\Prediction\" + cb_prediction_ModelName.Text + ".csv");
+            StreamWriter sw = new StreamWriter(path + @"data\Prediction\module\" + cb_prediction_ModelName.Text + ".csv");
             sw.WriteLine(cb_prediction_ModelName.Text + "," + cb_prediction_Material.Text + "," +
                 cb_prediction_Type.Text + "," + cb_prediction_work.Text);
             sw.Close();
             sw.Dispose();
+            //將現在使用的模型名稱寫入file_name.csv
+            StreamWriter sw_file_name = new StreamWriter(path + @"data\Prediction\file_name\file_name.csv");
+            sw_file_name.WriteLine(cb_prediction_ModelName.Text);
+            sw_file_name.Close();
+            sw_file_name.Dispose();
+            //清空Raw_Data.csv
+            StreamWriter sw_Raw_Data = new StreamWriter(path + @"data\Prediction\Raw_Data.csv");
+            sw_Raw_Data.WriteLine("X,Y,Z");
+            sw_Raw_Data.Close();
+            sw_Raw_Data.Dispose();
 
             btn_prediction_start.Enabled = false;
             btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_prediction_stop.Enabled = true;
             btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
-
-
+            
             DAQInitialize("Prediction");
+        }
+        //刀具磨耗預測 > 停止
+        private void btn_prediction_stop_Click(object sender, EventArgs e){
+            TaskStop();
+
+            //呼叫exe
+            //未完成
+            //ProcessStartInfo info = new ProcessStartInfo();
+            //info.FileName = "SE_ML.exe";
+            //info.WindowStyle = ProcessWindowStyle.Hidden;
+            //Process.Start(info);
+
+            //讀取結果txt
+            List<string> Read_List = new List<string>();
+            StreamReader sr = new StreamReader(path + @"data\Prediction\SE_ML_R.txt");
+            while (!sr.EndOfStream) Read_List.Add(sr.ReadLine());
+            sr.Close();
+            sr.Dispose();
+
+            //將結果放到TextBox
+            TextBox[] tb_prediction = new TextBox[8] { tb_prediction_Result,tb_prediction_ToolStatus,tb_prediction_Xmax,
+            tb_prediction_Ymax,tb_prediction_Zmax,tb_prediction_Xmin,tb_prediction_Ymin,tb_prediction_Zmin};
+            for (int i = 0; i < tb_prediction.Length; i++)
+                tb_prediction[i].Text = Read_List[i];
+
+
+            btn_prediction_start.Enabled = true;
+            btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+            btn_prediction_stop.Enabled = false;
+            btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+
+        }
+        //刀具磨耗預測 > 自我學習
+        private void btn_prediction_self_Click(object sender, EventArgs e){
+            //呼叫exe
+            //未完成
+            //Process.Start("SE_SL.exe");
+
+            //讀取結果txt
+            StreamReader sr = new StreamReader(path + @"data\Prediction\SE_SL_R.txt");
+            string tem_s = sr.ReadLine();
+            sr.Close();
+            sr.Dispose();
+
+            //將結果放到TextBox
+            tb_prediction_Accuracy.Text = tem_s;
         }
         #endregion
         #region 選擇工件/新增工件
@@ -3755,8 +3821,11 @@ namespace ToolWear{
                 if (tem_Match_DT.Count > Chart_max - 1) tem_Match_DT.RemoveRange(0, (int)samplesPerChannelNumeric - 1);
                 try { chart_ToolWear.Series[0].Points.Clear(); }
                 catch { }
+                FileStream File_match = File.Open(path + @"data\match.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+                StreamWriter sw = new StreamWriter(File_match);
                 for (int i = 0; i < (int)samplesPerChannelNumeric - 1; i++){
                     tem_Match_DT.Add(dataTable.Rows[i][0].ToString());
+                    sw.WriteLine(dataTable.Rows[i][0].ToString());
                 }
                 for (int i = 0; i < tem_Match_DT.Count; i++){
                     chart_ToolWear.Series[0].Points.AddXY(i + 1, tem_Match_DT[i]);
@@ -3890,11 +3959,16 @@ namespace ToolWear{
                 chart_prediction_X.Series[0].Points.Clear();
                 chart_prediction_Y.Series[0].Points.Clear();
                 chart_prediction_Z.Series[0].Points.Clear();
-                for(int i = 0;i< dataTable.Rows.Count; i++){
+                FileStream File_module = File.Open(path + @"data\Prediction\Raw_Data.csv", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+                StreamWriter sw = new StreamWriter(File_module);
+                for (int i = 0;i< dataTable.Rows.Count; i++){
                     chart_prediction_X.Series[0].Points.AddXY(i, dataTable.Rows[i][0]);
                     chart_prediction_Y.Series[0].Points.AddXY(i, dataTable.Rows[i][1]);
                     chart_prediction_Z.Series[0].Points.AddXY(i, dataTable.Rows[i][2]);
+                    sw.WriteLine(dataTable.Rows[i][0] + "," + dataTable.Rows[i][1] + "," + dataTable.Rows[i][2]);
                 }
+                sw.Close();
+                sw.Dispose();
                 #endregion
             }
         }
