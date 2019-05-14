@@ -88,6 +88,9 @@ namespace ToolWear{
             chart_Health_Match.Legends.Clear();
             chart_HealthResult_AfterSale.Legends.Clear();
             chart_HealthResult_Factory.Legends.Clear();
+            chart_prediction_X.Legends.Clear();
+            chart_prediction_Y.Legends.Clear();
+            chart_prediction_Z.Legends.Clear();
             //折線圖上下限與x軸最大值預覽
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_ToolWear.Series[1].Points.AddXY(1, Chart_PointMax);
@@ -150,6 +153,7 @@ namespace ToolWear{
             panel_SelectParts.Visible = false;
             panel_AddParts.Visible = false;
             panel_AlarmSetting.Visible = false;
+            panel_prediction.Visible = false;
             //關閉所有主選單副組件
             btn_Learn.Enabled = false;
             btn_ChangeMode.Enabled = false;
@@ -445,6 +449,8 @@ namespace ToolWear{
             //重置偵測模式(震動/電流)
             lb_ToolWear_Title.Text = "磨耗偵測(電流)";
             btn_ChangeMode_Click(null, null);
+            //刀具磨耗預測按鈕啟動
+            btn_ChangeMode3.Enabled = true;
 
             //預設選擇第一個按鈕
             if (pre_ToolWear == null)
@@ -552,8 +558,9 @@ namespace ToolWear{
             //切換成售後檢測模式
             btn_ChangeMode3_Click(null, null);
         }
-        //健康診斷 > 切換模式
+        //主畫面 > 子按鈕3切換模式
         private void btn_ChangeMode3_Click(object sender,EventArgs e){
+            //健康檢測狀態
             if(panel_Health.Visible == true){
                 //如果在出場檢測
                 if(panel_Health_Factory.Visible == true){
@@ -569,6 +576,12 @@ namespace ToolWear{
                     lb_Health_Title.Text = "健康診斷/出廠檢測";
                     btn_ChangeMode3.BackgroundImage = ToolWear.Properties.Resources.menubtn_h_after_sales_inspection;
                 }
+            }
+            //刀具磨耗狀態
+            else if(panel_ToolWear.Visible == true){
+                panel_Dissable();
+                panel_prediction.Visible = true;
+                panle_prediction_Load();
             }
         }
         //主選單 > 刀庫
@@ -2376,7 +2389,77 @@ namespace ToolWear{
         }
         #endregion
         #region 刀具磨耗預測
+        //讀取刀具磨耗預測設定檔資料
+        private void panle_prediction_Load(){
+            //讀取設定檔內資料
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\"))
+                cb_prediction_ModelName.Items.Add(Path.GetFileNameWithoutExtension(fname));
+            cb_prediction_Material.SelectedIndex = 0;
+            cb_prediction_Type.SelectedIndex = 0;
+            cb_prediction_work.SelectedIndex = 0;
+            cb_prediction_ModelName.SelectedIndex = cb_prediction_ModelName.Items.Count - 1;
+        }
+        //讀取設定檔內資料
+        private void cb_prediction_ModelName_SelectedIndexChanged(object sender, EventArgs e){
+            StreamReader sr = new StreamReader(path + @"data\Prediction\" + cb_prediction_ModelName.Text + ".csv");
+            string tem_s = sr.ReadLine();   //格式為 名稱,刀具材質,刀具種類,工件種類
+            sr.Close();
+            sr.Dispose();
+            
+            //自動選擇各項材質
+            
+            //刀具材質
+            for(int i = 0; i < cb_prediction_Material.Items.Count; i++){
+                cb_prediction_Material.SelectedIndex = i;
+                if (cb_prediction_Material.Text.Equals(tem_s.Split(',')[1])) break;
 
+                //防呆，if會成立表示設定檔被更動過
+                if (i == cb_prediction_Material.Items.Count - 1)
+                    MessageBox.Show("「刀具材質」未讀取到匹配項目，請確定設定檔是否被更動。", "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            //刀具種類
+            for (int i = 0; i < cb_prediction_Type.Items.Count; i++){
+                cb_prediction_Type.SelectedIndex = i;
+                if (cb_prediction_Type.Text.Equals(tem_s.Split(',')[2])) break;
+
+                //防呆，if會成立表示設定檔被更動過
+                if (i == cb_prediction_Type.Items.Count - 1)
+                    MessageBox.Show("「刀具種類」未讀取到匹配項目，請確定設定檔是否被更動。", "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            //工件種類
+            for (int i = 0; i < cb_prediction_work.Items.Count; i++){
+                cb_prediction_work.SelectedIndex = i;
+                if (cb_prediction_work.Text.Equals(tem_s.Split(',')[3])) break;
+
+                //防呆，if會成立表示設定檔被更動過
+                if (i == cb_prediction_work.Items.Count - 1)
+                    MessageBox.Show("「工件種類」未讀取到匹配項目，請確定設定檔是否被更動。", "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        //刀具磨耗預測 > 開始擷取資料
+        private void btn_prediction_start_Click(object sender,EventArgs e){
+            //首先判斷名稱是否已填寫
+            if (string.IsNullOrWhiteSpace(cb_prediction_ModelName.Text)){
+                MessageBox.Show("模型名稱未填寫。", "執行失敗", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            //將新的模型寫入新檔
+            StreamWriter sw = new StreamWriter(path + @"data\Prediction\" + cb_prediction_ModelName.Text + ".csv");
+            sw.WriteLine(cb_prediction_ModelName.Text + "," + cb_prediction_Material.Text + "," +
+                cb_prediction_Type.Text + "," + cb_prediction_work.Text);
+            sw.Close();
+            sw.Dispose();
+
+            btn_prediction_start.Enabled = false;
+            btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+            btn_prediction_stop.Enabled = true;
+            btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+
+
+            DAQInitialize("Prediction");
+        }
         #endregion
         #region 選擇工件/新增工件
         //磨耗偵測 > 選擇工件 > 讀取資料
@@ -3379,6 +3462,7 @@ namespace ToolWear{
             if (machine_type.Equals("Mitsubishi")){
                 ATC_RPM = Mitsubishi_GetFeedSpeed();
                 ATC_num = Mitsubishi_GetATCStatus();
+                lb_prediction_status.Text = Mitsubishi_GetRunStatus();
             }
             else if (machine_type.Equals("Brother")){
                 ATC_RPM = double.Parse(Brother_GetFeedSpeed());
@@ -3524,12 +3608,37 @@ namespace ToolWear{
                     myTask = new NationalInstruments.DAQmx.Task();
                     AIChannel aiChannel;
                     // Create a virtual channel
-                    aiChannel = myTask.AIChannels.CreateAccelerometerChannel(physicalChannelComboBox.Text, "",
-                        terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
-                        Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
-                        Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
-                    // Setup the input coupling
-                    aiChannel.Coupling = inputCoupling;
+                    //三軸專用
+                    if (DAQ.Equals("Prediction")){
+                        physicalChannelComboBox.SelectedIndex = 1;
+                        aiChannel = myTask.AIChannels.CreateAccelerometerChannel(physicalChannelComboBox.Text, "",
+                            terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
+                            Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
+                            Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
+
+                        physicalChannelComboBox.SelectedIndex = 2;
+                        myTask.AIChannels.CreateAccelerometerChannel(physicalChannelComboBox.Text, "",
+                            terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
+                            Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
+                            Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
+
+                        physicalChannelComboBox.SelectedIndex = 3;
+                        myTask.AIChannels.CreateAccelerometerChannel(physicalChannelComboBox.Text, "",
+                            terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
+                            Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
+                            Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
+                        // Setup the input coupling
+                        aiChannel.Coupling = inputCoupling;
+                    }
+                    //正常情況使用此
+                    else{
+                        aiChannel = myTask.AIChannels.CreateAccelerometerChannel(physicalChannelComboBox.Text, "",
+                            terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
+                            Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
+                            Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
+                        // Setup the input coupling
+                        aiChannel.Coupling = inputCoupling;
+                    }
                     // Configure the timing parameters
                     myTask.Timing.ConfigureSampleClock("", Convert.ToDouble(rateNumeric),
                         SampleClockActiveEdge.Rising, SampleQuantityMode.ContinuousSamples, (int)samplesPerChannelNumeric);
@@ -3774,6 +3883,18 @@ namespace ToolWear{
                 }
                 sw_Max.Close();
                 sw_Max.Dispose();
+                #endregion
+            }
+            else if (DAQ_Now.Equals("Prediction")){
+                #region 刀具磨耗預測
+                chart_prediction_X.Series[0].Points.Clear();
+                chart_prediction_Y.Series[0].Points.Clear();
+                chart_prediction_Z.Series[0].Points.Clear();
+                for(int i = 0;i< dataTable.Rows.Count; i++){
+                    chart_prediction_X.Series[0].Points.AddXY(i, dataTable.Rows[i][0]);
+                    chart_prediction_Y.Series[0].Points.AddXY(i, dataTable.Rows[i][1]);
+                    chart_prediction_Z.Series[0].Points.AddXY(i, dataTable.Rows[i][2]);
+                }
                 #endregion
             }
         }
