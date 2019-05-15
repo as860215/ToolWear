@@ -2410,7 +2410,22 @@ namespace ToolWear{
         private void btn_prediction_back_Click(object sender,EventArgs e){
             btn_ToolWear_Click(null, null);
         }
-        //讀取設定檔內資料
+        //使用者自己打字時
+        private void cb_prediction_ModelName_TextChanged(object sender,EventArgs e){
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\module\")){
+                string file_name = Path.GetFileNameWithoutExtension(fname);
+                if (file_name.Equals(cb_prediction_ModelName.Text)){
+                    cb_prediction_Material.Enabled = false;
+                    cb_prediction_Type.Enabled = false;
+                    cb_prediction_work.Enabled = false;
+                    return;
+                }
+            }
+            cb_prediction_Material.Enabled = true;
+            cb_prediction_Type.Enabled = true;
+            cb_prediction_work.Enabled = true;
+        }
+        //選擇不同的項目時讀取設定檔內資料
         private void cb_prediction_ModelName_SelectedIndexChanged(object sender, EventArgs e){
             StreamReader sr = new StreamReader(path + @"data\Prediction\module\" + cb_prediction_ModelName.Text + ".csv");
             string tem_s = sr.ReadLine();   //格式為 名稱,刀具材質,刀具種類,工件種類
@@ -2422,7 +2437,7 @@ namespace ToolWear{
             //刀具材質
             for(int i = 0; i < cb_prediction_Material.Items.Count; i++){
                 cb_prediction_Material.SelectedIndex = i;
-                if (cb_prediction_Material.Text.Equals(tem_s.Split(',')[1])) break;
+                if (cb_prediction_Material.Text.Equals(tem_s.Split(',')[6])) break;
 
                 //防呆，if會成立表示設定檔被更動過
                 if (i == cb_prediction_Material.Items.Count - 1)
@@ -2432,7 +2447,7 @@ namespace ToolWear{
             //刀具種類
             for (int i = 0; i < cb_prediction_Type.Items.Count; i++){
                 cb_prediction_Type.SelectedIndex = i;
-                if (cb_prediction_Type.Text.Equals(tem_s.Split(',')[2])) break;
+                if (cb_prediction_Type.Text.Equals(tem_s.Split(',')[7])) break;
 
                 //防呆，if會成立表示設定檔被更動過
                 if (i == cb_prediction_Type.Items.Count - 1)
@@ -2442,7 +2457,7 @@ namespace ToolWear{
             //工件種類
             for (int i = 0; i < cb_prediction_work.Items.Count; i++){
                 cb_prediction_work.SelectedIndex = i;
-                if (cb_prediction_work.Text.Equals(tem_s.Split(',')[3])) break;
+                if (cb_prediction_work.Text.Equals(tem_s.Split(',')[8])) break;
 
                 //防呆，if會成立表示設定檔被更動過
                 if (i == cb_prediction_work.Items.Count - 1)
@@ -2456,12 +2471,22 @@ namespace ToolWear{
                 MessageBox.Show("模型名稱未填寫。", "執行失敗", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            //將新的模型寫入新檔
-            StreamWriter sw = new StreamWriter(path + @"data\Prediction\module\" + cb_prediction_ModelName.Text + ".csv");
-            sw.WriteLine(cb_prediction_ModelName.Text + "," + cb_prediction_Material.Text + "," +
-                cb_prediction_Type.Text + "," + cb_prediction_work.Text);
-            sw.Close();
-            sw.Dispose();
+            //判斷是否為新檔案
+            List<string> file_module = new List<string>();
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\module\"))
+                file_module.Add(Path.GetFileNameWithoutExtension(fname));
+            for(int i = 0; i < file_module.Count; i++){
+                if (file_module[i].Equals(cb_prediction_ModelName.Text)) break;
+                if(i == file_module.Count - 1){
+                    //將新的模型寫入新檔
+                    StreamWriter sw = new StreamWriter(path + @"data\Prediction\module\" + cb_prediction_ModelName.Text + ".csv");
+                    sw.WriteLine("x,y,z,tool_condition,date,time," + cb_prediction_Material.Text + "," +
+                        cb_prediction_Type.Text + "," + cb_prediction_work.Text);
+                    sw.Close();
+                    sw.Dispose();
+                    cb_prediction_ModelName.Items.Add(cb_prediction_ModelName.Text);
+                }
+            }
             //將現在使用的模型名稱寫入file_name.csv
             StreamWriter sw_file_name = new StreamWriter(path + @"data\Prediction\file_name\file_name.csv");
             sw_file_name.WriteLine(cb_prediction_ModelName.Text);
@@ -2477,7 +2502,12 @@ namespace ToolWear{
             btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_prediction_stop.Enabled = true;
             btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
-            
+
+            cb_prediction_ModelName.Enabled = false;
+            cb_prediction_Material.Enabled = false;
+            cb_prediction_Type.Enabled = false;
+            cb_prediction_work.Enabled = false;
+
             DAQInitialize("Prediction");
         }
         //刀具磨耗預測 > 停止
@@ -2486,17 +2516,16 @@ namespace ToolWear{
 
             //呼叫exe
             //未完成
-            //ProcessStartInfo info = new ProcessStartInfo();
-            //info.FileName = "SE_ML.exe";
-            //info.WindowStyle = ProcessWindowStyle.Hidden;
             //Process.Start(info);
 
             //讀取結果txt
             List<string> Read_List = new List<string>();
+            //do{
             StreamReader sr = new StreamReader(path + @"data\Prediction\SE_ML_R.txt");
             while (!sr.EndOfStream) Read_List.Add(sr.ReadLine());
             sr.Close();
             sr.Dispose();
+            //} while (Read_List[0].Split('.')[2].Equals(DateTime.Now.Minute));
 
             //將結果放到TextBox
             TextBox[] tb_prediction = new TextBox[8] { tb_prediction_Result,tb_prediction_ToolStatus,tb_prediction_Xmax,
@@ -2510,6 +2539,7 @@ namespace ToolWear{
             btn_prediction_stop.Enabled = false;
             btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
 
+            cb_prediction_ModelName.Enabled = true;
         }
         //刀具磨耗預測 > 自我學習
         private void btn_prediction_self_Click(object sender, EventArgs e){
