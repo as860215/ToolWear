@@ -95,6 +95,7 @@ namespace ToolWear{
             chart_AccCur_Y.Legends.Clear();
             chart_AccCur_Z.Legends.Clear();
             chart_AccCur_Current.Legends.Clear();
+            chart_AE.Legends.Clear();
             //折線圖上下限與x軸最大值預覽
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_ToolWear.Series[1].Points.AddXY(1, Chart_PointMax);
@@ -160,6 +161,7 @@ namespace ToolWear{
             panel_prediction.Visible = false;
             panel_AccCur.Visible = false;
             panel_AccCur_setting.Visible = false;
+            panel_AE.Visible = false;
             //關閉所有主選單副組件
             btn_Learn.Enabled = false;
             btn_ChangeMode.Enabled = false;
@@ -687,12 +689,23 @@ namespace ToolWear{
                     chart_Current.SendToBack();
                 }
             }
+            //在磨耗偵測(三軸、電流)狀態下
+            if (panel_AccCur.Visible == true){
+                TaskStop();
+                panel_Dissable();
+                panel_AE.Visible = true;
+            }
         }
         //主選單 > 磨耗偵測 > 切換模式0
         private void btn_ChangeMode0_Click(object sender,EventArgs e){
+            //在磨耗偵測狀態下(開啟三軸、電流)
             if(panel_ToolWear.Visible == true){
                 panel_Dissable();
                 panel_AccCur.Visible = true;
+
+                //開啟子功能項
+                btn_ChangeMode.Enabled = true;
+                btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
             }
         }
         #endregion
@@ -2678,6 +2691,46 @@ namespace ToolWear{
 
             TaskStop();
         }
+        #region 音頻偵測
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 音頻偵測 > 回上一頁
+        private void btn_AE_back_Click(object sender,EventArgs e){
+            TaskStop();
+            panel_AccCur.Visible = true;
+            panel_AE.Visible = false;
+
+            //重置按鈕
+            btn_AE_start.Enabled = true;
+            btn_AE_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+            btn_AE_stop.Enabled = false;
+            btn_AE_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+
+            //開啟子功能項
+            btn_ChangeMode.Enabled = true;
+            btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 音頻偵測 > 開始
+        private void btn_AE_start_Click(object sender, EventArgs e){
+            btn_AE_start.Enabled = false;
+            btn_AE_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+            btn_AE_stop.Enabled = true;
+            btn_AE_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+
+            DAQInitialize("AE");
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流 > 音頻偵測 > 停止
+        private void btn_AE_stop_Click(object sender, EventArgs e){
+            btn_AE_start.Enabled = true;
+            btn_AE_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+            btn_AE_stop.Enabled = false;
+            btn_AE_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+
+            //重置取樣頻率
+            samplesPerChannelNumeric_base = 800;
+            rateNumeric = 4000;
+
+            TaskStop();
+        }
+        #endregion
         #endregion
         #region 選擇工件/新增工件
         //磨耗偵測 > 選擇工件 > 讀取資料
@@ -3853,7 +3906,12 @@ namespace ToolWear{
                         samplesPerChannelNumeric_base = 2000;
                         rateNumeric = 2000;
                     }
-                    else{
+                    else if (DAQ.Equals("AE")){
+                        samplesPerChannelNumeric_base = 10000;
+                        rateNumeric = 10000;
+                    }
+                    else
+                    {
                         samplesPerChannelNumeric_base = 800;
                         rateNumeric = 4000;
                     }
@@ -3903,10 +3961,14 @@ namespace ToolWear{
                                 myTask.AIChannels.CreateCurrentChannel(cb_Channel[i - 1].Text, "",
                                     (AITerminalConfiguration)(-1), Convert.ToDouble("0.000"),
                                     Convert.ToDouble("0.020"), AICurrentUnits.Amps);
-
                             }
 
                         }
+                    }
+                    //音頻
+                    else if (DAQ.Equals("AE")){
+                        myTask.AIChannels.CreateVoltageChannel(cb_AccCur_setting_ChannelAE.Text, "",
+                            (AITerminalConfiguration)(-1), Convert.ToDouble("-10"), Convert.ToDouble("10"), AIVoltageUnits.Volts);
                     }
                     //正常情況使用此
                     else{
@@ -3960,7 +4022,8 @@ namespace ToolWear{
         private void TaskStop(){
             // Dispose of the task
             runningTask = null;
-            myTask.Dispose();
+            try { myTask.Dispose(); }
+            catch { }
         }
         public void InitializeDataTable(AIChannelCollection channelCollection, ref DataTable data){
             int numOfChannels = channelCollection.Count;
@@ -4189,6 +4252,14 @@ namespace ToolWear{
                     chart_AccCur_Z.Series[0].Points.AddXY(i, dataTable.Rows[i][2]);
                     chart_AccCur_Current.Series[0].Points.AddXY(i, dataTable.Rows[i][3]);
                 }
+                #endregion
+            }
+            else if (DAQ_Now.Equals("AE")){
+                #region 音頻
+                chart_AE.Series[0].Points.Clear();
+
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                    chart_AE.Series[0].Points.AddXY(i, dataTable.Rows[i][0]);
                 #endregion
             }
         }
