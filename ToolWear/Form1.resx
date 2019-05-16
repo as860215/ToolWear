@@ -21834,72 +21834,6 @@
   <data name="&gt;&gt;btn_prediction_self.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lb_prediction_status.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_prediction_status.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="lb_prediction_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_prediction_status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>543, 66</value>
-  </data>
-  <data name="lb_prediction_status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 35</value>
-  </data>
-  <data name="lb_prediction_status.TabIndex" type="System.Int32, mscorlib">
-    <value>139</value>
-  </data>
-  <data name="lb_prediction_status.Text" xml:space="preserve">
-    <value>Run</value>
-  </data>
-  <data name="&gt;&gt;lb_prediction_status.Name" xml:space="preserve">
-    <value>lb_prediction_status</value>
-  </data>
-  <data name="&gt;&gt;lb_prediction_status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_prediction_status.Parent" xml:space="preserve">
-    <value>panel_prediction</value>
-  </data>
-  <data name="&gt;&gt;lb_prediction_status.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label97.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label97.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="label97.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label97.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 66</value>
-  </data>
-  <data name="label97.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 35</value>
-  </data>
-  <data name="label97.TabIndex" type="System.Int32, mscorlib">
-    <value>138</value>
-  </data>
-  <data name="label97.Text" xml:space="preserve">
-    <value>機台狀態：</value>
-  </data>
-  <data name="&gt;&gt;label97.Name" xml:space="preserve">
-    <value>label97</value>
-  </data>
-  <data name="&gt;&gt;label97.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label97.Parent" xml:space="preserve">
-    <value>panel_prediction</value>
-  </data>
-  <data name="&gt;&gt;label97.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;tb_prediction_Zmin.Name" xml:space="preserve">
     <value>tb_prediction_Zmin</value>
   </data>
@@ -22135,19 +22069,7 @@
     <value>panel_prediction</value>
   </data>
   <data name="&gt;&gt;panel15.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cb_prediction_ModelName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 12pt</value>
-  </data>
-  <data name="cb_prediction_ModelName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 18</value>
-  </data>
-  <data name="cb_prediction_ModelName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 33</value>
-  </data>
-  <data name="cb_prediction_ModelName.TabIndex" type="System.Int32, mscorlib">
-    <value>121</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;cb_prediction_ModelName.Name" xml:space="preserve">
     <value>cb_prediction_ModelName</value>
@@ -22161,27 +22083,6 @@
   <data name="&gt;&gt;cb_prediction_ModelName.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label88.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label88.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="label88.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label88.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 16</value>
-  </data>
-  <data name="label88.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 35</value>
-  </data>
-  <data name="label88.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="label88.Text" xml:space="preserve">
-    <value>模型名稱</value>
-  </data>
   <data name="&gt;&gt;label88.Name" xml:space="preserve">
     <value>label88</value>
   </data>
@@ -22193,78 +22094,6 @@
   </data>
   <data name="&gt;&gt;label88.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="cb_prediction_work.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 12pt</value>
-  </data>
-  <data name="cb_prediction_work.Items" xml:space="preserve">
-    <value>NNAK80</value>
-  </data>
-  <data name="cb_prediction_work.Items1" xml:space="preserve">
-    <value>P20</value>
-  </data>
-  <data name="cb_prediction_work.Items2" xml:space="preserve">
-    <value>SKD61</value>
-  </data>
-  <data name="cb_prediction_work.Items3" xml:space="preserve">
-    <value>A6061</value>
-  </data>
-  <data name="cb_prediction_work.Items4" xml:space="preserve">
-    <value>SUS316</value>
-  </data>
-  <data name="cb_prediction_work.Items5" xml:space="preserve">
-    <value>S45c</value>
-  </data>
-  <data name="cb_prediction_work.Items6" xml:space="preserve">
-    <value>ADC12</value>
-  </data>
-  <data name="cb_prediction_work.Items7" xml:space="preserve">
-    <value>A7075</value>
-  </data>
-  <data name="cb_prediction_work.Items8" xml:space="preserve">
-    <value>鑄鐵(軟)</value>
-  </data>
-  <data name="cb_prediction_work.Items9" xml:space="preserve">
-    <value>鑄鐵(硬)</value>
-  </data>
-  <data name="cb_prediction_work.Items10" xml:space="preserve">
-    <value>可鍛鑄鐵</value>
-  </data>
-  <data name="cb_prediction_work.Items11" xml:space="preserve">
-    <value>鋼(軟)</value>
-  </data>
-  <data name="cb_prediction_work.Items12" xml:space="preserve">
-    <value>鋼(硬)</value>
-  </data>
-  <data name="cb_prediction_work.Items13" xml:space="preserve">
-    <value>鋁合金</value>
-  </data>
-  <data name="cb_prediction_work.Items14" xml:space="preserve">
-    <value>黃鋼(軟)</value>
-  </data>
-  <data name="cb_prediction_work.Items15" xml:space="preserve">
-    <value>黃鋼(硬)</value>
-  </data>
-  <data name="cb_prediction_work.Items16" xml:space="preserve">
-    <value>青銅</value>
-  </data>
-  <data name="cb_prediction_work.Items17" xml:space="preserve">
-    <value>銅</value>
-  </data>
-  <data name="cb_prediction_work.Items18" xml:space="preserve">
-    <value>硬橡膠</value>
-  </data>
-  <data name="cb_prediction_work.Items19" xml:space="preserve">
-    <value>纖維</value>
-  </data>
-  <data name="cb_prediction_work.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 209</value>
-  </data>
-  <data name="cb_prediction_work.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 33</value>
-  </data>
-  <data name="cb_prediction_work.TabIndex" type="System.Int32, mscorlib">
-    <value>120</value>
   </data>
   <data name="&gt;&gt;cb_prediction_work.Name" xml:space="preserve">
     <value>cb_prediction_work</value>
@@ -22278,27 +22107,6 @@
   <data name="&gt;&gt;cb_prediction_work.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="label91.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label91.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="label91.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label91.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 208</value>
-  </data>
-  <data name="label91.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 35</value>
-  </data>
-  <data name="label91.TabIndex" type="System.Int32, mscorlib">
-    <value>119</value>
-  </data>
-  <data name="label91.Text" xml:space="preserve">
-    <value>工件種類</value>
-  </data>
   <data name="&gt;&gt;label91.Name" xml:space="preserve">
     <value>label91</value>
   </data>
@@ -22310,27 +22118,6 @@
   </data>
   <data name="&gt;&gt;label91.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="label89.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label89.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="label89.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label89.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 77</value>
-  </data>
-  <data name="label89.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 35</value>
-  </data>
-  <data name="label89.TabIndex" type="System.Int32, mscorlib">
-    <value>115</value>
-  </data>
-  <data name="label89.Text" xml:space="preserve">
-    <value>刀具材質</value>
   </data>
   <data name="&gt;&gt;label89.Name" xml:space="preserve">
     <value>label89</value>
@@ -22344,36 +22131,6 @@
   <data name="&gt;&gt;label89.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="cb_prediction_Type.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 12pt</value>
-  </data>
-  <data name="cb_prediction_Type.Items" xml:space="preserve">
-    <value>面銑刀</value>
-  </data>
-  <data name="cb_prediction_Type.Items1" xml:space="preserve">
-    <value>端銑刀</value>
-  </data>
-  <data name="cb_prediction_Type.Items2" xml:space="preserve">
-    <value>螺紋切削平銑刀</value>
-  </data>
-  <data name="cb_prediction_Type.Items3" xml:space="preserve">
-    <value>溝槽和側銑刀</value>
-  </data>
-  <data name="cb_prediction_Type.Items4" xml:space="preserve">
-    <value>成型銑刀</value>
-  </data>
-  <data name="cb_prediction_Type.Items5" xml:space="preserve">
-    <value>金屬縫銑刀</value>
-  </data>
-  <data name="cb_prediction_Type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 143</value>
-  </data>
-  <data name="cb_prediction_Type.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 33</value>
-  </data>
-  <data name="cb_prediction_Type.TabIndex" type="System.Int32, mscorlib">
-    <value>118</value>
-  </data>
   <data name="&gt;&gt;cb_prediction_Type.Name" xml:space="preserve">
     <value>cb_prediction_Type</value>
   </data>
@@ -22386,27 +22143,6 @@
   <data name="&gt;&gt;cb_prediction_Type.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="cb_prediction_Material.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 12pt</value>
-  </data>
-  <data name="cb_prediction_Material.Items" xml:space="preserve">
-    <value>鋼(高速加工)</value>
-  </data>
-  <data name="cb_prediction_Material.Items1" xml:space="preserve">
-    <value>鎢鋼(粗加工)</value>
-  </data>
-  <data name="cb_prediction_Material.Items2" xml:space="preserve">
-    <value>鎢鋼(細加工)</value>
-  </data>
-  <data name="cb_prediction_Material.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 78</value>
-  </data>
-  <data name="cb_prediction_Material.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 33</value>
-  </data>
-  <data name="cb_prediction_Material.TabIndex" type="System.Int32, mscorlib">
-    <value>116</value>
-  </data>
   <data name="&gt;&gt;cb_prediction_Material.Name" xml:space="preserve">
     <value>cb_prediction_Material</value>
   </data>
@@ -22418,27 +22154,6 @@
   </data>
   <data name="&gt;&gt;cb_prediction_Material.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="label90.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label90.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="label90.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label90.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 142</value>
-  </data>
-  <data name="label90.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 35</value>
-  </data>
-  <data name="label90.TabIndex" type="System.Int32, mscorlib">
-    <value>117</value>
-  </data>
-  <data name="label90.Text" xml:space="preserve">
-    <value>刀具種類</value>
   </data>
   <data name="&gt;&gt;label90.Name" xml:space="preserve">
     <value>label90</value>
@@ -22471,7 +22186,7 @@
     <value>panel_prediction</value>
   </data>
   <data name="&gt;&gt;panel14.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="chart_prediction_Z.Location" type="System.Drawing.Point, System.Drawing">
     <value>653, 379</value>
@@ -22495,7 +22210,7 @@
     <value>panel_prediction</value>
   </data>
   <data name="&gt;&gt;chart_prediction_Z.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="chart_prediction_Y.Location" type="System.Drawing.Point, System.Drawing">
     <value>331, 379</value>
@@ -22519,7 +22234,7 @@
     <value>panel_prediction</value>
   </data>
   <data name="&gt;&gt;chart_prediction_Y.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="chart_prediction_X.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 379</value>
@@ -22543,7 +22258,7 @@
     <value>panel_prediction</value>
   </data>
   <data name="&gt;&gt;chart_prediction_X.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="btn_prediction_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -22576,7 +22291,7 @@
     <value>panel_prediction</value>
   </data>
   <data name="&gt;&gt;btn_prediction_stop.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="btn_prediction_start.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -22606,7 +22321,7 @@
     <value>panel_prediction</value>
   </data>
   <data name="&gt;&gt;btn_prediction_start.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="btn_prediction_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -22636,7 +22351,7 @@
     <value>panel_prediction</value>
   </data>
   <data name="&gt;&gt;btn_prediction_back.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="label87.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -22669,7 +22384,97 @@
     <value>panel_prediction</value>
   </data>
   <data name="&gt;&gt;label87.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="PB_prediction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 100</value>
+  </data>
+  <data name="PB_prediction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 36</value>
+  </data>
+  <data name="PB_prediction.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="PB_prediction.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction.Name" xml:space="preserve">
+    <value>PB_prediction</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction.Parent" xml:space="preserve">
+    <value>panel_prediction</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lb_prediction_status.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_prediction_status.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="lb_prediction_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_prediction_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 66</value>
+  </data>
+  <data name="lb_prediction_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 35</value>
+  </data>
+  <data name="lb_prediction_status.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="lb_prediction_status.Text" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="&gt;&gt;lb_prediction_status.Name" xml:space="preserve">
+    <value>lb_prediction_status</value>
+  </data>
+  <data name="&gt;&gt;lb_prediction_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_prediction_status.Parent" xml:space="preserve">
+    <value>panel_prediction</value>
+  </data>
+  <data name="&gt;&gt;lb_prediction_status.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="label97.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label97.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="label97.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label97.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 66</value>
+  </data>
+  <data name="label97.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 35</value>
+  </data>
+  <data name="label97.TabIndex" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="label97.Text" xml:space="preserve">
+    <value>機台狀態：</value>
+  </data>
+  <data name="&gt;&gt;label97.Name" xml:space="preserve">
+    <value>label97</value>
+  </data>
+  <data name="&gt;&gt;label97.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label97.Parent" xml:space="preserve">
+    <value>panel_prediction</value>
+  </data>
+  <data name="&gt;&gt;label97.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="panel_prediction.Location" type="System.Drawing.Point, System.Drawing">
     <value>267, 9</value>
@@ -23205,6 +23010,324 @@
   <data name="&gt;&gt;label101.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
+  <data name="cb_prediction_ModelName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 12pt</value>
+  </data>
+  <data name="cb_prediction_ModelName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 18</value>
+  </data>
+  <data name="cb_prediction_ModelName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 33</value>
+  </data>
+  <data name="cb_prediction_ModelName.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_ModelName.Name" xml:space="preserve">
+    <value>cb_prediction_ModelName</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_ModelName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_ModelName.Parent" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_ModelName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label88.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label88.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="label88.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label88.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 16</value>
+  </data>
+  <data name="label88.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 35</value>
+  </data>
+  <data name="label88.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="label88.Text" xml:space="preserve">
+    <value>模型名稱</value>
+  </data>
+  <data name="&gt;&gt;label88.Name" xml:space="preserve">
+    <value>label88</value>
+  </data>
+  <data name="&gt;&gt;label88.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label88.Parent" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;label88.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cb_prediction_work.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 12pt</value>
+  </data>
+  <data name="cb_prediction_work.Items" xml:space="preserve">
+    <value>NNAK80</value>
+  </data>
+  <data name="cb_prediction_work.Items1" xml:space="preserve">
+    <value>P20</value>
+  </data>
+  <data name="cb_prediction_work.Items2" xml:space="preserve">
+    <value>SKD61</value>
+  </data>
+  <data name="cb_prediction_work.Items3" xml:space="preserve">
+    <value>A6061</value>
+  </data>
+  <data name="cb_prediction_work.Items4" xml:space="preserve">
+    <value>SUS316</value>
+  </data>
+  <data name="cb_prediction_work.Items5" xml:space="preserve">
+    <value>S45c</value>
+  </data>
+  <data name="cb_prediction_work.Items6" xml:space="preserve">
+    <value>ADC12</value>
+  </data>
+  <data name="cb_prediction_work.Items7" xml:space="preserve">
+    <value>A7075</value>
+  </data>
+  <data name="cb_prediction_work.Items8" xml:space="preserve">
+    <value>鑄鐵(軟)</value>
+  </data>
+  <data name="cb_prediction_work.Items9" xml:space="preserve">
+    <value>鑄鐵(硬)</value>
+  </data>
+  <data name="cb_prediction_work.Items10" xml:space="preserve">
+    <value>可鍛鑄鐵</value>
+  </data>
+  <data name="cb_prediction_work.Items11" xml:space="preserve">
+    <value>鋼(軟)</value>
+  </data>
+  <data name="cb_prediction_work.Items12" xml:space="preserve">
+    <value>鋼(硬)</value>
+  </data>
+  <data name="cb_prediction_work.Items13" xml:space="preserve">
+    <value>鋁合金</value>
+  </data>
+  <data name="cb_prediction_work.Items14" xml:space="preserve">
+    <value>黃鋼(軟)</value>
+  </data>
+  <data name="cb_prediction_work.Items15" xml:space="preserve">
+    <value>黃鋼(硬)</value>
+  </data>
+  <data name="cb_prediction_work.Items16" xml:space="preserve">
+    <value>青銅</value>
+  </data>
+  <data name="cb_prediction_work.Items17" xml:space="preserve">
+    <value>銅</value>
+  </data>
+  <data name="cb_prediction_work.Items18" xml:space="preserve">
+    <value>硬橡膠</value>
+  </data>
+  <data name="cb_prediction_work.Items19" xml:space="preserve">
+    <value>纖維</value>
+  </data>
+  <data name="cb_prediction_work.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 209</value>
+  </data>
+  <data name="cb_prediction_work.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 33</value>
+  </data>
+  <data name="cb_prediction_work.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_work.Name" xml:space="preserve">
+    <value>cb_prediction_work</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_work.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_work.Parent" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_work.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label91.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label91.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="label91.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label91.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 208</value>
+  </data>
+  <data name="label91.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 35</value>
+  </data>
+  <data name="label91.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="label91.Text" xml:space="preserve">
+    <value>工件種類</value>
+  </data>
+  <data name="&gt;&gt;label91.Name" xml:space="preserve">
+    <value>label91</value>
+  </data>
+  <data name="&gt;&gt;label91.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label91.Parent" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;label91.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label89.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label89.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="label89.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label89.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 77</value>
+  </data>
+  <data name="label89.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 35</value>
+  </data>
+  <data name="label89.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="label89.Text" xml:space="preserve">
+    <value>刀具材質</value>
+  </data>
+  <data name="&gt;&gt;label89.Name" xml:space="preserve">
+    <value>label89</value>
+  </data>
+  <data name="&gt;&gt;label89.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label89.Parent" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;label89.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cb_prediction_Type.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 12pt</value>
+  </data>
+  <data name="cb_prediction_Type.Items" xml:space="preserve">
+    <value>面銑刀</value>
+  </data>
+  <data name="cb_prediction_Type.Items1" xml:space="preserve">
+    <value>端銑刀</value>
+  </data>
+  <data name="cb_prediction_Type.Items2" xml:space="preserve">
+    <value>螺紋切削平銑刀</value>
+  </data>
+  <data name="cb_prediction_Type.Items3" xml:space="preserve">
+    <value>溝槽和側銑刀</value>
+  </data>
+  <data name="cb_prediction_Type.Items4" xml:space="preserve">
+    <value>成型銑刀</value>
+  </data>
+  <data name="cb_prediction_Type.Items5" xml:space="preserve">
+    <value>金屬縫銑刀</value>
+  </data>
+  <data name="cb_prediction_Type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 143</value>
+  </data>
+  <data name="cb_prediction_Type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 33</value>
+  </data>
+  <data name="cb_prediction_Type.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_Type.Name" xml:space="preserve">
+    <value>cb_prediction_Type</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_Type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_Type.Parent" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_Type.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cb_prediction_Material.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 12pt</value>
+  </data>
+  <data name="cb_prediction_Material.Items" xml:space="preserve">
+    <value>鋼(高速加工)</value>
+  </data>
+  <data name="cb_prediction_Material.Items1" xml:space="preserve">
+    <value>鎢鋼(粗加工)</value>
+  </data>
+  <data name="cb_prediction_Material.Items2" xml:space="preserve">
+    <value>鎢鋼(細加工)</value>
+  </data>
+  <data name="cb_prediction_Material.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 78</value>
+  </data>
+  <data name="cb_prediction_Material.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 33</value>
+  </data>
+  <data name="cb_prediction_Material.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_Material.Name" xml:space="preserve">
+    <value>cb_prediction_Material</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_Material.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_Material.Parent" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;cb_prediction_Material.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label90.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label90.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="label90.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label90.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 142</value>
+  </data>
+  <data name="label90.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 35</value>
+  </data>
+  <data name="label90.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="label90.Text" xml:space="preserve">
+    <value>刀具種類</value>
+  </data>
+  <data name="&gt;&gt;label90.Name" xml:space="preserve">
+    <value>label90</value>
+  </data>
+  <data name="&gt;&gt;label90.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label90.Parent" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;label90.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="timer_prediction.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>911, 18</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -23215,7 +23338,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1250, 770</value>
+    <value>1242, 762</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
@@ -23257,6 +23380,12 @@
     <value>timer_FakeData</value>
   </data>
   <data name="&gt;&gt;timer_FakeData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer_prediction.Name" xml:space="preserve">
+    <value>timer_prediction</value>
+  </data>
+  <data name="&gt;&gt;timer_prediction.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

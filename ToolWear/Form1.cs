@@ -2399,20 +2399,23 @@ namespace ToolWear{
         private void panle_prediction_Load() {
             //讀取設定檔內資料
             cb_prediction_ModelName.Items.Clear();
-            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\module\"))
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\model_name\"))
                 cb_prediction_ModelName.Items.Add(Path.GetFileNameWithoutExtension(fname));
             cb_prediction_Material.SelectedIndex = 0;
             cb_prediction_Type.SelectedIndex = 0;
             cb_prediction_work.SelectedIndex = 0;
             cb_prediction_ModelName.SelectedIndex = cb_prediction_ModelName.Items.Count - 1;
+
+            PB_prediction.Visible = false;
         }
         //回上一頁
         private void btn_prediction_back_Click(object sender,EventArgs e){
+            timer_prediction.Enabled = false;
             btn_ToolWear_Click(null, null);
         }
         //使用者自己打字時
         private void cb_prediction_ModelName_TextChanged(object sender,EventArgs e){
-            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\module\")){
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\model_name\")){
                 string file_name = Path.GetFileNameWithoutExtension(fname);
                 if (file_name.Equals(cb_prediction_ModelName.Text)){
                     cb_prediction_Material.Enabled = false;
@@ -2427,7 +2430,7 @@ namespace ToolWear{
         }
         //選擇不同的項目時讀取設定檔內資料
         private void cb_prediction_ModelName_SelectedIndexChanged(object sender, EventArgs e){
-            StreamReader sr = new StreamReader(path + @"data\Prediction\module\" + cb_prediction_ModelName.Text + ".csv");
+            StreamReader sr = new StreamReader(path + @"data\Prediction\model_name\" + cb_prediction_ModelName.Text + ".csv");
             string tem_s = sr.ReadLine();   //格式為 名稱,刀具材質,刀具種類,工件種類
             sr.Close();
             sr.Dispose();
@@ -2473,13 +2476,13 @@ namespace ToolWear{
             }
             //判斷是否為新檔案
             List<string> file_module = new List<string>();
-            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\module\"))
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\model_name\"))
                 file_module.Add(Path.GetFileNameWithoutExtension(fname));
             for(int i = 0; i < file_module.Count; i++){
                 if (file_module[i].Equals(cb_prediction_ModelName.Text)) break;
                 if(i == file_module.Count - 1){
                     //將新的模型寫入新檔
-                    StreamWriter sw = new StreamWriter(path + @"data\Prediction\module\" + cb_prediction_ModelName.Text + ".csv");
+                    StreamWriter sw = new StreamWriter(path + @"data\Prediction\model_name\" + cb_prediction_ModelName.Text + ".csv");
                     sw.WriteLine("x,y,z,tool_condition,date,time," + cb_prediction_Material.Text + "," +
                         cb_prediction_Type.Text + "," + cb_prediction_work.Text);
                     sw.Close();
@@ -2510,51 +2513,31 @@ namespace ToolWear{
 
             DAQInitialize("Prediction");
         }
+        //暫存現在使用刀具磨耗預測的甚麼功能
+        string Prediction_Now = "";
         //刀具磨耗預測 > 停止
         private void btn_prediction_stop_Click(object sender, EventArgs e){
             TaskStop();
 
+            Prediction_Now = "ML";
             //呼叫exe
-            //未完成
-            //Process.Start(info);
+            Process.Start(path + @"/data/Prediction/SE_ML.exe");
 
-            //讀取結果txt
-            List<string> Read_List = new List<string>();
-            //do{
-            StreamReader sr = new StreamReader(path + @"data\Prediction\SE_ML_R.txt");
-            while (!sr.EndOfStream) Read_List.Add(sr.ReadLine());
-            sr.Close();
-            sr.Dispose();
-            //} while (Read_List[0].Split('.')[2].Equals(DateTime.Now.Minute));
-
-            //將結果放到TextBox
-            TextBox[] tb_prediction = new TextBox[8] { tb_prediction_Result,tb_prediction_ToolStatus,tb_prediction_Xmax,
-            tb_prediction_Ymax,tb_prediction_Zmax,tb_prediction_Xmin,tb_prediction_Ymin,tb_prediction_Zmin};
-            for (int i = 0; i < tb_prediction.Length; i++)
-                tb_prediction[i].Text = Read_List[i];
-
-
-            btn_prediction_start.Enabled = true;
-            btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
-            btn_prediction_stop.Enabled = false;
-            btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
-
-            cb_prediction_ModelName.Enabled = true;
+            //歸零進度條
+            PB_prediction.Value = 0;
+            //啟動timer讀取結果
+            timer_prediction.Enabled = true;
         }
         //刀具磨耗預測 > 自我學習
         private void btn_prediction_self_Click(object sender, EventArgs e){
+            Prediction_Now = "SL";
             //呼叫exe
-            //未完成
-            //Process.Start("SE_SL.exe");
+            Process.Start(path + @"/data/Prediction/SE_SL.exe");
 
-            //讀取結果txt
-            StreamReader sr = new StreamReader(path + @"data\Prediction\SE_SL_R.txt");
-            string tem_s = sr.ReadLine();
-            sr.Close();
-            sr.Dispose();
-
-            //將結果放到TextBox
-            tb_prediction_Accuracy.Text = tem_s;
+            //歸零進度條
+            PB_prediction.Value = 0;
+            //啟動timer讀取結果
+            timer_prediction.Enabled = true;
         }
         #endregion
         #region 選擇工件/新增工件
@@ -3551,6 +3534,50 @@ namespace ToolWear{
         private void timer_Current_Tick(object sender,EventArgs e){
             //Current_Getdata("33");
             Current_Getdata_Schneider("1");
+        }
+        //刀具磨耗預測
+        private void timer_prediction_Tick(object sender, EventArgs e){
+            PB_prediction.Value++;
+            PB_prediction.Visible = true;
+            if (Prediction_Now.Equals("ML")){
+                //讀取結果txt
+                List<string> Read_List = new List<string>();
+                StreamReader sr = new StreamReader(path + @"data\Prediction\SE_ML_R.txt");
+                string time = sr.ReadLine();    //暫存時間(2019-05-15_12_59)
+                if (!time.Equals(DateTime.Now.ToString("yyyy-MM-dd_HH_mm"))) return;    //表示背景程式還沒跑完
+                while (!sr.EndOfStream) Read_List.Add(sr.ReadLine());
+                sr.Close();
+                sr.Dispose();
+
+                //將結果放到TextBox
+                TextBox[] tb_prediction = new TextBox[8] { tb_prediction_Result,tb_prediction_ToolStatus,tb_prediction_Xmax,
+                        tb_prediction_Ymax,tb_prediction_Zmax,tb_prediction_Xmin,tb_prediction_Ymin,tb_prediction_Zmin};
+                for (int i = 0; i < tb_prediction.Length; i++)
+                    tb_prediction[i].Text = Read_List[i];
+                
+                btn_prediction_start.Enabled = true;
+                btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+                btn_prediction_stop.Enabled = false;
+                btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+
+                cb_prediction_ModelName.Enabled = true;
+            }
+            else if (Prediction_Now.Equals("SL")){
+                //讀取結果txt
+                StreamReader sr = new StreamReader(path + @"data\Prediction\SE_SL_R.txt");
+                string time = sr.ReadLine();    //暫存時間(2019-05-15_12_59)
+                if (!time.Equals(DateTime.Now.ToString("yyyy-MM-dd_HH_mm"))) return;
+                string tem_s = sr.ReadLine();
+                sr.Close();
+                sr.Dispose();
+
+                //將結果放到TextBox
+                tb_prediction_Accuracy.Text = tem_s;
+            }
+
+            //執行結束
+            timer_prediction.Enabled = false;
+            PB_prediction.Value = 100;
         }
         //暫存上次讀取的RPM數據
         double LastReload_RPM = 0;
