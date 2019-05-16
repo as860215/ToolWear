@@ -133,6 +133,18 @@ namespace ToolWear{
             for (int i = 0; i < 200; i++) {
                 chart_Current.Series[2].Points.AddXY(i + 1, 0);
             }
+
+            //磨耗偵測(三軸、電流)
+            for (int i = 0; i < 2000; i++){
+                chart_AccCur_X.Series[1].Points.AddXY(i + 1, 0);
+                chart_AccCur_Y.Series[1].Points.AddXY(i + 1, 0);
+                chart_AccCur_Z.Series[1].Points.AddXY(i + 1, 0);
+                chart_AccCur_Current.Series[1].Points.AddXY(i + 1, 0);
+            }
+            //音頻偵測
+            for(int i = 0;i<2000;i++)
+                chart_AE.Series[1].Points.AddXY(i + 1, 0);
+
             //Panel
             panel_Home.Visible = true;
         }
@@ -2585,12 +2597,14 @@ namespace ToolWear{
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定
         private void btn_AccCur_setting_Click(object sender,EventArgs e){
-            panel_Dissable();
+            panel_AccCur.Visible = false;
             panel_AccCur_setting.Visible = true;
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 回上一頁
         private void btn_AccCur_setting_back_Click(object sender, EventArgs e){
             panel_AccCur.Visible = true;
+
+
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 讀取訊號輸入
         private void btn_AccCur_setting_loadChannel(object sender,EventArgs e){
@@ -3907,7 +3921,7 @@ namespace ToolWear{
                         rateNumeric = 2000;
                     }
                     else if (DAQ.Equals("AE")){
-                        samplesPerChannelNumeric_base = 10000;
+                        samplesPerChannelNumeric_base = 5000;
                         rateNumeric = 10000;
                     }
                     else

@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ViewModule.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -673,7 +673,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;cb_ToolWear_CurrentInput.Name" xml:space="preserve">
     <value>cb_ToolWear_CurrentInput</value>
@@ -4216,7 +4216,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Home.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="btn_shutdown.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4663,7 +4663,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_delete.Name" xml:space="preserve">
     <value>btn_Threshold_delete</value>
@@ -7219,7 +7219,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="numeric_Compensate_Down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9382,7 +9382,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btn_Thermal_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -11263,7 +11263,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lb_Learn_Blade.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -12607,7 +12607,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -13072,7 +13072,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btn_AlarmSet.Name" xml:space="preserve">
     <value>btn_AlarmSet</value>
@@ -14011,7 +14011,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="tb_Load_ProgressRate.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
@@ -14533,7 +14533,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="btn_ATCsetting_30.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -16156,7 +16156,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -17092,7 +17092,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_SelectParts.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="btn_SelectParts_Add.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -19390,7 +19390,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AddParts.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="btn_AddParts_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -19768,7 +19768,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health_Setting.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;label57.Name" xml:space="preserve">
     <value>label57</value>
@@ -20602,7 +20602,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health_Result.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label75.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21142,7 +21142,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AlarmSetting.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btn_AlarmSetting_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -21982,7 +21982,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_prediction.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btn_prediction_self.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -23659,7 +23659,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AccCur.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btn_AccCur_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -24184,7 +24184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AccCur_setting.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>0</value>
   </data>
   <data name="btn_AccCur_setting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -24882,6 +24882,219 @@
   <data name="&gt;&gt;label107.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="&gt;&gt;btn_AE_stop.Name" xml:space="preserve">
+    <value>btn_AE_stop</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_stop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_stop.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_stop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_start.Name" xml:space="preserve">
+    <value>btn_AE_start</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_start.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_start.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_start.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.Name" xml:space="preserve">
+    <value>chart_AE</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label115.Name" xml:space="preserve">
+    <value>label115</value>
+  </data>
+  <data name="&gt;&gt;label115.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label115.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;label115.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.Name" xml:space="preserve">
+    <value>btn_AE_back</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label114.Name" xml:space="preserve">
+    <value>label114</value>
+  </data>
+  <data name="&gt;&gt;label114.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label114.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;label114.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel_AE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 9</value>
+  </data>
+  <data name="panel_AE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 655</value>
+  </data>
+  <data name="panel_AE.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;panel_AE.Name" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;panel_AE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_AE.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_AE.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label114.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label114.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 28.2pt</value>
+  </data>
+  <data name="label114.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label114.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="label114.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 61</value>
+  </data>
+  <data name="label114.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label114.Text" xml:space="preserve">
+    <value>音頻偵測</value>
+  </data>
+  <data name="&gt;&gt;label114.Name" xml:space="preserve">
+    <value>label114</value>
+  </data>
+  <data name="&gt;&gt;label114.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label114.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;label114.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_AE_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_AE_back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_AE_back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_AE_back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 11</value>
+  </data>
+  <data name="btn_AE_back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_AE_back.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.Name" xml:space="preserve">
+    <value>btn_AE_back</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label115.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label115.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="label115.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label115.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 117</value>
+  </data>
+  <data name="label115.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 35</value>
+  </data>
+  <data name="label115.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="label115.Text" xml:space="preserve">
+    <value>音頻訊號監測</value>
+  </data>
+  <data name="label115.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label115.Name" xml:space="preserve">
+    <value>label115</value>
+  </data>
+  <data name="&gt;&gt;label115.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label115.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;label115.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chart_AE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 154</value>
+  </data>
+  <data name="chart_AE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 463</value>
+  </data>
+  <data name="chart_AE.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.Name" xml:space="preserve">
+    <value>chart_AE</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="btn_AE_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -24944,147 +25157,6 @@
   </data>
   <data name="&gt;&gt;btn_AE_start.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="chart_AE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 154</value>
-  </data>
-  <data name="chart_AE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>928, 463</value>
-  </data>
-  <data name="chart_AE.TabIndex" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="&gt;&gt;chart_AE.Name" xml:space="preserve">
-    <value>chart_AE</value>
-  </data>
-  <data name="&gt;&gt;chart_AE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_AE.Parent" xml:space="preserve">
-    <value>panel_AE</value>
-  </data>
-  <data name="&gt;&gt;chart_AE.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label115.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label115.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="label115.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label115.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 117</value>
-  </data>
-  <data name="label115.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 35</value>
-  </data>
-  <data name="label115.TabIndex" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="label115.Text" xml:space="preserve">
-    <value>音頻訊號監測</value>
-  </data>
-  <data name="label115.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label115.Name" xml:space="preserve">
-    <value>label115</value>
-  </data>
-  <data name="&gt;&gt;label115.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label115.Parent" xml:space="preserve">
-    <value>panel_AE</value>
-  </data>
-  <data name="&gt;&gt;label115.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btn_AE_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_AE_back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_AE_back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_AE_back.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 11</value>
-  </data>
-  <data name="btn_AE_back.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_AE_back.TabIndex" type="System.Int32, mscorlib">
-    <value>103</value>
-  </data>
-  <data name="&gt;&gt;btn_AE_back.Name" xml:space="preserve">
-    <value>btn_AE_back</value>
-  </data>
-  <data name="&gt;&gt;btn_AE_back.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_AE_back.Parent" xml:space="preserve">
-    <value>panel_AE</value>
-  </data>
-  <data name="&gt;&gt;btn_AE_back.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label114.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label114.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 28.2pt</value>
-  </data>
-  <data name="label114.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label114.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 17</value>
-  </data>
-  <data name="label114.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 61</value>
-  </data>
-  <data name="label114.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="label114.Text" xml:space="preserve">
-    <value>音頻偵測</value>
-  </data>
-  <data name="&gt;&gt;label114.Name" xml:space="preserve">
-    <value>label114</value>
-  </data>
-  <data name="&gt;&gt;label114.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label114.Parent" xml:space="preserve">
-    <value>panel_AE</value>
-  </data>
-  <data name="&gt;&gt;label114.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="panel_AE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 9</value>
-  </data>
-  <data name="panel_AE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 655</value>
-  </data>
-  <data name="panel_AE.TabIndex" type="System.Int32, mscorlib">
-    <value>103</value>
-  </data>
-  <data name="&gt;&gt;panel_AE.Name" xml:space="preserve">
-    <value>panel_AE</value>
-  </data>
-  <data name="&gt;&gt;panel_AE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_AE.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_AE.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
