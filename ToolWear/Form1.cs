@@ -91,6 +91,10 @@ namespace ToolWear{
             chart_prediction_X.Legends.Clear();
             chart_prediction_Y.Legends.Clear();
             chart_prediction_Z.Legends.Clear();
+            chart_AccCur_X.Legends.Clear();
+            chart_AccCur_Y.Legends.Clear();
+            chart_AccCur_Z.Legends.Clear();
+            chart_AccCur_Current.Legends.Clear();
             //折線圖上下限與x軸最大值預覽
             chart_Learn.Series[1].Points.AddXY(1, Chart_PointMax);
             chart_ToolWear.Series[1].Points.AddXY(1, Chart_PointMax);
@@ -154,13 +158,19 @@ namespace ToolWear{
             panel_AddParts.Visible = false;
             panel_AlarmSetting.Visible = false;
             panel_prediction.Visible = false;
+            panel_AccCur.Visible = false;
+            panel_AccCur_setting.Visible = false;
             //關閉所有主選單副組件
             btn_Learn.Enabled = false;
             btn_ChangeMode.Enabled = false;
+            btn_ChangeMode0.Enabled = false;
+            btn_ChangeMode2.Enabled = false;
             btn_ChangeMode3.Enabled = false;
             //重置所有主選單副組件顯示圖片
             btn_Learn.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
             btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
+            btn_ChangeMode0.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
+            btn_ChangeMode2.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
             btn_ChangeMode3.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
         }
         /// <summary>
@@ -345,6 +355,7 @@ namespace ToolWear{
                 case 4:
                     Thread TD_DAQChannel = new Thread(DAQPhysicalChannels);
                     TD_DAQChannel.Start();
+                    btn_AccCur_setting_loadChannel(null,null);
                     tem = "DAQ訊號輸入搜尋完畢";
                     break;
                 case 5:
@@ -451,6 +462,8 @@ namespace ToolWear{
             btn_ChangeMode_Click(null, null);
             //刀具磨耗預測按鈕啟動
             btn_ChangeMode3.Enabled = true;
+            //磨耗偵測(三軸、電流)按鈕啟動
+            btn_ChangeMode0.Enabled = true;
 
             //預設選擇第一個按鈕
             if (pre_ToolWear == null)
@@ -673,6 +686,13 @@ namespace ToolWear{
                     chart_Current.Visible = false;
                     chart_Current.SendToBack();
                 }
+            }
+        }
+        //主選單 > 磨耗偵測 > 切換模式0
+        private void btn_ChangeMode0_Click(object sender,EventArgs e){
+            if(panel_ToolWear.Visible == true){
+                panel_Dissable();
+                panel_AccCur.Visible = true;
             }
         }
         #endregion
@@ -2540,6 +2560,125 @@ namespace ToolWear{
             timer_prediction.Enabled = true;
         }
         #endregion
+        #region 磨耗偵測(三軸、電流)
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 回上一頁
+        private void btn_AccCur_back_Click(object sender,EventArgs e){
+            panel_Dissable();
+            btn_ToolWear_Click(null, null);
+            //重置取樣頻率
+            samplesPerChannelNumeric_base = 800;
+            rateNumeric = 4000;
+            TaskStop();
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定
+        private void btn_AccCur_setting_Click(object sender,EventArgs e){
+            panel_Dissable();
+            panel_AccCur_setting.Visible = true;
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 回上一頁
+        private void btn_AccCur_setting_back_Click(object sender, EventArgs e){
+            panel_AccCur.Visible = true;
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 讀取訊號輸入
+        private void btn_AccCur_setting_loadChannel(object sender,EventArgs e){
+            ComboBox[] cb_Channel = new ComboBox[5] { cb_AccCur_setting_ChannelX, cb_AccCur_setting_ChannelY,
+            cb_AccCur_setting_ChannelZ,cb_AccCur_setting_ChannelC,cb_AccCur_setting_ChannelAE};
+            for (int i = 0; i < cb_Channel.Length; i++)
+                cb_Channel[i].Items.Clear();
+
+            List<string> channel = new List<string>();
+
+            channel.Add("請選擇訊號輸入");
+            //DAQ實體訊號輸入端點讀取
+            channel.AddRange(DaqSystem.Local.GetPhysicalChannels(PhysicalChannelTypes.AI, PhysicalChannelAccess.External));
+
+            for (int i = 0; i < channel.Count; i++)
+                for (int j = 0; j < cb_Channel.Length; j++)
+                    cb_Channel[j].Items.Add(channel[i]);
+            AccCur_setting_load();
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 讀取資料
+        private void AccCur_setting_load(){
+            //暫存頻道資訊
+            List<string> Channel = new List<string>();
+            ComboBox[] cb_Channel = new ComboBox[5] { cb_AccCur_setting_ChannelX, cb_AccCur_setting_ChannelY,
+            cb_AccCur_setting_ChannelZ,cb_AccCur_setting_ChannelC,cb_AccCur_setting_ChannelAE};
+            //暫存是否有找到符合資料檔的頻道
+            bool[] find_Channel = new bool[cb_Channel.Length];
+            StreamReader sr = new StreamReader(path + @"\data\AccCur.cp");
+            while (!sr.EndOfStream) Channel.Add(sr.ReadLine());
+            sr.Close();
+            sr.Dispose();
+            
+            //選取頻道
+            for(int i = 0; i < cb_AccCur_setting_ChannelX.Items.Count; i++){
+                for(int j = 0;j<cb_Channel.Length;j++){
+                    //如果還沒找到該資料檔符合的頻道
+                    if(find_Channel[j] == false){
+                        cb_Channel[j].SelectedIndex = i;
+                        if (Channel[j].Equals(cb_Channel[j].Text)) find_Channel[j] = true;
+                    }
+                }
+            }
+            //檢查是否有沒有找到頻道的資料
+            for(int i = 0;i< find_Channel.Length; i++){
+                if(find_Channel[i] == false){
+                    //MessageBox.Show("有頻道的資料檔錯誤。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    cb_Channel[i].SelectedIndex = 0;
+                }
+            }
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 儲存
+        private void btn_AccCur_setting_save_Click(object sender,EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("確定儲存新的訊號輸入嗎？", "儲存", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Cancel) return;
+
+            ComboBox[] cb_Channel = new ComboBox[5] { cb_AccCur_setting_ChannelX, cb_AccCur_setting_ChannelY,
+            cb_AccCur_setting_ChannelZ,cb_AccCur_setting_ChannelC,cb_AccCur_setting_ChannelAE};
+
+            //先檢查有沒有選到一樣的輸入端
+            for(int i = 0; i < cb_Channel.Length - 2; i++){
+                for(int j = i + 1; j < cb_Channel.Length; j++){
+                    if(cb_Channel[i].SelectedIndex == cb_Channel[j].SelectedIndex && cb_Channel[i].SelectedIndex != 0){
+                        MessageBox.Show("選擇了相同的訊號輸入，請重新選擇。\n\n" + cb_Channel[i].Text, "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+            }
+
+            StreamWriter sw = new StreamWriter(path + @"\data\AccCur.cp");
+            for (int i = 0; i < cb_Channel.Length; i++){
+                if (cb_Channel[i].SelectedIndex == 0) sw.WriteLine("0");
+                else sw.WriteLine(cb_Channel[i].Text);
+            }
+            sw.Close();
+            sw.Dispose();
+
+            MessageBox.Show("儲存成功", "儲存完畢", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 開始
+        private void btn_AccCur_start_Click(object sender,EventArgs e){
+            btn_AccCur_start.Enabled = false;
+            btn_AccCur_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
+            btn_AccCur_stop.Enabled = true;
+            btn_AccCur_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+
+            DAQInitialize("AccCur");
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 停止
+        private void btn_AccCur_stop_Click(object sender, EventArgs e){
+            btn_AccCur_start.Enabled = true;
+            btn_AccCur_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+            btn_AccCur_stop.Enabled = false;
+            btn_AccCur_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+
+            //重置取樣頻率
+            samplesPerChannelNumeric_base = 800;
+            rateNumeric = 4000;
+
+            TaskStop();
+        }
+        #endregion
         #region 選擇工件/新增工件
         //磨耗偵測 > 選擇工件 > 讀取資料
         private void SelectParts_LoadData(){
@@ -3709,14 +3848,15 @@ namespace ToolWear{
         private void DAQInitialize(string DAQ){
             if (runningTask == null){
                 try{
-                    //Match_Bool = false;
-                    //DialogResult dialogResult = MessageBox.Show("此舉動將會清空原先已存在之模型設定檔\n(第一次建立模型請無視此訊息)", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    //if (dialogResult == DialogResult.No) return;
-                    ////清空modu設定檔
-                    //StreamWriter sw = new StreamWriter(path + @"\data\module.cp");
-                    //sw.WriteLine();
-                    //sw.Close();le
                     //參數設定
+                    if (DAQ.Equals("AccCur")){
+                        samplesPerChannelNumeric_base = 2000;
+                        rateNumeric = 2000;
+                    }
+                    else{
+                        samplesPerChannelNumeric_base = 800;
+                        rateNumeric = 4000;
+                    }
                     FFT_Reset((int)samplesPerChannelNumeric_base);    //重置傅立葉轉換最大最小值
                     DAQ_Now = DAQ;  //紀錄現在資料擷取要用的區域
                     samplesPerChannelNumeric = samplesPerChannelNumeric_base + 1; //取樣數偏移
@@ -3733,25 +3873,40 @@ namespace ToolWear{
                     // Create a virtual channel
                     //三軸專用
                     if (DAQ.Equals("Prediction")){
-                        physicalChannelComboBox.SelectedIndex = 1;
-                        aiChannel = myTask.AIChannels.CreateAccelerometerChannel(physicalChannelComboBox.Text, "",
-                            terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
-                            Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
-                            Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
+                        for(int i = 1; i <= 3; i++){
+                            physicalChannelComboBox.SelectedIndex = i;
+                            aiChannel = myTask.AIChannels.CreateAccelerometerChannel(physicalChannelComboBox.Text, "",
+                                terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
+                                Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
+                                Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
 
-                        physicalChannelComboBox.SelectedIndex = 2;
-                        myTask.AIChannels.CreateAccelerometerChannel(physicalChannelComboBox.Text, "",
-                            terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
-                            Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
-                            Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
+                            // Setup the input coupling
+                            if (i == 3)
+                                aiChannel.Coupling = inputCoupling;
+                        }
+                    }
+                    //三軸&電流
+                    else if (DAQ.Equals("AccCur")){
+                        ComboBox[] cb_Channel = new ComboBox[4] { cb_AccCur_setting_ChannelX, cb_AccCur_setting_ChannelY,
+                            cb_AccCur_setting_ChannelZ,cb_AccCur_setting_ChannelC};
+                        for (int i = 1; i <= 4; i++){
+                            //前三項為加速度
+                            if (i <= 3){
+                                aiChannel = myTask.AIChannels.CreateAccelerometerChannel(cb_Channel[i - 1].Text, "",
+                                    terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
+                                    Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
+                                    Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
+                                aiChannel.Coupling = inputCoupling;
+                            }
+                            //第四項為電流
+                            else if(i == 4){
+                                myTask.AIChannels.CreateCurrentChannel(cb_Channel[i - 1].Text, "",
+                                    (AITerminalConfiguration)(-1), Convert.ToDouble("0.000"),
+                                    Convert.ToDouble("0.020"), AICurrentUnits.Amps);
 
-                        physicalChannelComboBox.SelectedIndex = 3;
-                        myTask.AIChannels.CreateAccelerometerChannel(physicalChannelComboBox.Text, "",
-                            terminalConfiguration, Convert.ToDouble(minimumValueNumeric), Convert.ToDouble(maximumValueNumeric),
-                            Convert.ToDouble(sensitivityNumeric), sensitivityUnits, excitationSource,
-                            Convert.ToDouble(excitationValueNumeric), AIAccelerationUnits.G);
-                        // Setup the input coupling
-                        aiChannel.Coupling = inputCoupling;
+                            }
+
+                        }
                     }
                     //正常情況使用此
                     else{
@@ -3778,16 +3933,7 @@ namespace ToolWear{
                     // marshals callbacks across threads appropriately.
                     analogInReader.SynchronizeCallbacks = true;
                     analogInReader.BeginReadWaveform(Convert.ToInt32(samplesPerChannelNumeric), analogCallback, myTask);
-
-                    //if (Match_Bool == false)
-                    //{
-                    //    //取樣頻率偵測timer
-                    //    timer_F.Enabled = true;
-                    //    //設定
-                    //    physicalChannelComboBox.Enabled = false;
-                    //    btn_ModuleCreate.Text = "停止";
-                    //    btn_ModuleCreate.BackColor = Color.Red;
-                    //}
+                    
                 }
                 catch (DaqException exception)
                 {
@@ -3887,6 +4033,8 @@ namespace ToolWear{
                 for (int i = 0; i < tem_Match_DT.Count; i++){
                     chart_ToolWear.Series[0].Points.AddXY(i + 1, tem_Match_DT[i]);
                 }
+                sw.Close();
+                sw.Dispose();
                 FFT(DAQ_Now, dataTable,(int)samplesPerChannelNumeric_base, (int)rateNumeric_base);
                 #endregion
             }
@@ -4026,6 +4174,21 @@ namespace ToolWear{
                 }
                 sw.Close();
                 sw.Dispose();
+                #endregion
+            }
+            else if (DAQ_Now.Equals("AccCur")){
+                #region 磨耗偵測(三軸、電流)
+                chart_AccCur_X.Series[0].Points.Clear();
+                chart_AccCur_Y.Series[0].Points.Clear();
+                chart_AccCur_Z.Series[0].Points.Clear();
+                chart_AccCur_Current.Series[0].Points.Clear();
+
+                for (int i = 0; i < dataTable.Rows.Count; i++){
+                    chart_AccCur_X.Series[0].Points.AddXY(i, dataTable.Rows[i][0]);
+                    chart_AccCur_Y.Series[0].Points.AddXY(i, dataTable.Rows[i][1]);
+                    chart_AccCur_Z.Series[0].Points.AddXY(i, dataTable.Rows[i][2]);
+                    chart_AccCur_Current.Series[0].Points.AddXY(i, dataTable.Rows[i][3]);
+                }
                 #endregion
             }
         }
