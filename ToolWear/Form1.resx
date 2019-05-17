@@ -3948,57 +3948,6 @@
   <data name="&gt;&gt;btn_ToolWear_Start.ZOrder" xml:space="preserve">
     <value>37</value>
   </data>
-  <data name="chart_Current.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 263</value>
-  </data>
-  <data name="chart_Current.Size" type="System.Drawing.Size, System.Drawing">
-    <value>654, 395</value>
-  </data>
-  <data name="chart_Current.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="chart_Current.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;chart_Current.Name" xml:space="preserve">
-    <value>chart_Current</value>
-  </data>
-  <data name="&gt;&gt;chart_Current.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_Current.Parent" xml:space="preserve">
-    <value>panel_ToolWear</value>
-  </data>
-  <data name="&gt;&gt;chart_Current.ZOrder" xml:space="preserve">
-    <value>40</value>
-  </data>
-  <data name="chart_Blade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 263</value>
-  </data>
-  <data name="chart_Blade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>654, 395</value>
-  </data>
-  <data name="chart_Blade.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="chart_Blade.Text" xml:space="preserve">
-    <value>chart2</value>
-  </data>
-  <data name="chart_Blade.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;chart_Blade.Name" xml:space="preserve">
-    <value>chart_Blade</value>
-  </data>
-  <data name="&gt;&gt;chart_Blade.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_Blade.Parent" xml:space="preserve">
-    <value>panel_ToolWear</value>
-  </data>
-  <data name="&gt;&gt;chart_Blade.ZOrder" xml:space="preserve">
-    <value>41</value>
-  </data>
   <data name="chart_FFT.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 263</value>
   </data>
@@ -4049,6 +3998,57 @@
   </data>
   <data name="&gt;&gt;chart_ToolWear.ZOrder" xml:space="preserve">
     <value>39</value>
+  </data>
+  <data name="chart_Current.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 263</value>
+  </data>
+  <data name="chart_Current.Size" type="System.Drawing.Size, System.Drawing">
+    <value>654, 395</value>
+  </data>
+  <data name="chart_Current.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="chart_Current.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;chart_Current.Name" xml:space="preserve">
+    <value>chart_Current</value>
+  </data>
+  <data name="&gt;&gt;chart_Current.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Current.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_Current.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="chart_Blade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 263</value>
+  </data>
+  <data name="chart_Blade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>654, 395</value>
+  </data>
+  <data name="chart_Blade.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="chart_Blade.Text" xml:space="preserve">
+    <value>chart2</value>
+  </data>
+  <data name="chart_Blade.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;chart_Blade.Name" xml:space="preserve">
+    <value>chart_Blade</value>
+  </data>
+  <data name="&gt;&gt;chart_Blade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_Blade.Parent" xml:space="preserve">
+    <value>panel_ToolWear</value>
+  </data>
+  <data name="&gt;&gt;chart_Blade.ZOrder" xml:space="preserve">
+    <value>41</value>
   </data>
   <data name="panel_Home.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -21927,16 +21927,16 @@
   <data name="&gt;&gt;label87.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;PB_prediction.Name" xml:space="preserve">
-    <value>PB_prediction</value>
+  <data name="&gt;&gt;PB_prediction_ML.Name" xml:space="preserve">
+    <value>PB_prediction_ML</value>
   </data>
-  <data name="&gt;&gt;PB_prediction.Type" xml:space="preserve">
+  <data name="&gt;&gt;PB_prediction_ML.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PB_prediction.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PB_prediction_ML.Parent" xml:space="preserve">
     <value>panel_prediction</value>
   </data>
-  <data name="&gt;&gt;PB_prediction.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;PB_prediction_ML.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="&gt;&gt;lb_prediction_status.Name" xml:space="preserve">
@@ -21963,6 +21963,18 @@
   <data name="&gt;&gt;label97.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="&gt;&gt;PB_prediction_SL.Name" xml:space="preserve">
+    <value>PB_prediction_SL</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction_SL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction_SL.Parent" xml:space="preserve">
+    <value>panel_prediction</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction_SL.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
   <data name="panel_prediction.Location" type="System.Drawing.Point, System.Drawing">
     <value>267, 9</value>
   </data>
@@ -21982,7 +21994,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_prediction.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="btn_prediction_self.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -23391,28 +23403,28 @@
   <data name="&gt;&gt;label87.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="PB_prediction.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="PB_prediction_ML.Location" type="System.Drawing.Point, System.Drawing">
     <value>405, 100</value>
   </data>
-  <data name="PB_prediction.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PB_prediction_ML.Size" type="System.Drawing.Size, System.Drawing">
     <value>544, 36</value>
   </data>
-  <data name="PB_prediction.TabIndex" type="System.Int32, mscorlib">
+  <data name="PB_prediction_ML.TabIndex" type="System.Int32, mscorlib">
     <value>141</value>
   </data>
-  <data name="PB_prediction.Visible" type="System.Boolean, mscorlib">
+  <data name="PB_prediction_ML.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;PB_prediction.Name" xml:space="preserve">
-    <value>PB_prediction</value>
+  <data name="&gt;&gt;PB_prediction_ML.Name" xml:space="preserve">
+    <value>PB_prediction_ML</value>
   </data>
-  <data name="&gt;&gt;PB_prediction.Type" xml:space="preserve">
+  <data name="&gt;&gt;PB_prediction_ML.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PB_prediction.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PB_prediction_ML.Parent" xml:space="preserve">
     <value>panel_prediction</value>
   </data>
-  <data name="&gt;&gt;PB_prediction.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;PB_prediction_ML.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="lb_prediction_status.AutoSize" type="System.Boolean, mscorlib">
@@ -23481,7 +23493,7 @@
   <data name="&gt;&gt;label97.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <metadata name="timer_prediction.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timer_prediction_ML.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>911, 18</value>
   </metadata>
   <data name="&gt;&gt;btn_AccCur_back.Name" xml:space="preserve">
@@ -23659,7 +23671,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AccCur.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btn_AccCur_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -24184,7 +24196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AccCur_setting.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btn_AccCur_setting_save.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -24973,126 +24985,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AE.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label114.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label114.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 28.2pt</value>
-  </data>
-  <data name="label114.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label114.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 17</value>
-  </data>
-  <data name="label114.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 61</value>
-  </data>
-  <data name="label114.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="label114.Text" xml:space="preserve">
-    <value>音頻偵測</value>
-  </data>
-  <data name="&gt;&gt;label114.Name" xml:space="preserve">
-    <value>label114</value>
-  </data>
-  <data name="&gt;&gt;label114.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label114.Parent" xml:space="preserve">
-    <value>panel_AE</value>
-  </data>
-  <data name="&gt;&gt;label114.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btn_AE_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_AE_back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_AE_back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_AE_back.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 11</value>
-  </data>
-  <data name="btn_AE_back.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_AE_back.TabIndex" type="System.Int32, mscorlib">
-    <value>103</value>
-  </data>
-  <data name="&gt;&gt;btn_AE_back.Name" xml:space="preserve">
-    <value>btn_AE_back</value>
-  </data>
-  <data name="&gt;&gt;btn_AE_back.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_AE_back.Parent" xml:space="preserve">
-    <value>panel_AE</value>
-  </data>
-  <data name="&gt;&gt;btn_AE_back.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label115.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label115.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 16.2pt</value>
-  </data>
-  <data name="label115.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label115.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 117</value>
-  </data>
-  <data name="label115.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 35</value>
-  </data>
-  <data name="label115.TabIndex" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="label115.Text" xml:space="preserve">
-    <value>音頻訊號監測</value>
-  </data>
-  <data name="label115.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label115.Name" xml:space="preserve">
-    <value>label115</value>
-  </data>
-  <data name="&gt;&gt;label115.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label115.Parent" xml:space="preserve">
-    <value>panel_AE</value>
-  </data>
-  <data name="&gt;&gt;label115.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="chart_AE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 154</value>
-  </data>
-  <data name="chart_AE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>928, 463</value>
-  </data>
-  <data name="chart_AE.TabIndex" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="&gt;&gt;chart_AE.Name" xml:space="preserve">
-    <value>chart_AE</value>
-  </data>
-  <data name="&gt;&gt;chart_AE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
-  </data>
-  <data name="&gt;&gt;chart_AE.Parent" xml:space="preserve">
-    <value>panel_AE</value>
-  </data>
-  <data name="&gt;&gt;chart_AE.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="btn_AE_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -25158,6 +25050,156 @@
   <data name="&gt;&gt;btn_AE_start.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="chart_AE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 154</value>
+  </data>
+  <data name="chart_AE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 463</value>
+  </data>
+  <data name="chart_AE.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.Name" xml:space="preserve">
+    <value>chart_AE</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;chart_AE.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label115.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label115.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 16.2pt</value>
+  </data>
+  <data name="label115.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label115.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 117</value>
+  </data>
+  <data name="label115.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 35</value>
+  </data>
+  <data name="label115.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="label115.Text" xml:space="preserve">
+    <value>音頻訊號監測</value>
+  </data>
+  <data name="label115.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label115.Name" xml:space="preserve">
+    <value>label115</value>
+  </data>
+  <data name="&gt;&gt;label115.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label115.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;label115.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_AE_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_AE_back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_AE_back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_AE_back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 11</value>
+  </data>
+  <data name="btn_AE_back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_AE_back.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.Name" xml:space="preserve">
+    <value>btn_AE_back</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;btn_AE_back.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label114.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label114.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 28.2pt</value>
+  </data>
+  <data name="label114.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label114.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="label114.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 61</value>
+  </data>
+  <data name="label114.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label114.Text" xml:space="preserve">
+    <value>音頻偵測</value>
+  </data>
+  <data name="&gt;&gt;label114.Name" xml:space="preserve">
+    <value>label114</value>
+  </data>
+  <data name="&gt;&gt;label114.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label114.Parent" xml:space="preserve">
+    <value>panel_AE</value>
+  </data>
+  <data name="&gt;&gt;label114.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PB_prediction_SL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PB_prediction_SL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 99</value>
+  </data>
+  <data name="PB_prediction_SL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 36</value>
+  </data>
+  <data name="PB_prediction_SL.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="PB_prediction_SL.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction_SL.Name" xml:space="preserve">
+    <value>PB_prediction_SL</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction_SL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction_SL.Parent" xml:space="preserve">
+    <value>panel_prediction</value>
+  </data>
+  <data name="&gt;&gt;PB_prediction_SL.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <metadata name="timer_prediction_SL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1115, 18</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -25168,7 +25210,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1230, 750</value>
+    <value>1274, 726</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
@@ -25212,10 +25254,16 @@
   <data name="&gt;&gt;timer_FakeData.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;timer_prediction.Name" xml:space="preserve">
-    <value>timer_prediction</value>
+  <data name="&gt;&gt;timer_prediction_ML.Name" xml:space="preserve">
+    <value>timer_prediction_ML</value>
   </data>
-  <data name="&gt;&gt;timer_prediction.Type" xml:space="preserve">
+  <data name="&gt;&gt;timer_prediction_ML.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer_prediction_SL.Name" xml:space="preserve">
+    <value>timer_prediction_SL</value>
+  </data>
+  <data name="&gt;&gt;timer_prediction_SL.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

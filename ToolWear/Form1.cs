@@ -135,14 +135,14 @@ namespace ToolWear{
             }
 
             //磨耗偵測(三軸、電流)
-            for (int i = 0; i < 2000; i++){
+            for (int i = 0; i < 2000; i++) {
                 chart_AccCur_X.Series[1].Points.AddXY(i + 1, 0);
                 chart_AccCur_Y.Series[1].Points.AddXY(i + 1, 0);
                 chart_AccCur_Z.Series[1].Points.AddXY(i + 1, 0);
                 chart_AccCur_Current.Series[1].Points.AddXY(i + 1, 0);
             }
             //音頻偵測
-            for(int i = 0;i<2000;i++)
+            for (int i = 0; i < 2000; i++)
                 chart_AE.Series[1].Points.AddXY(i + 1, 0);
 
             //Panel
@@ -369,7 +369,7 @@ namespace ToolWear{
                 case 4:
                     Thread TD_DAQChannel = new Thread(DAQPhysicalChannels);
                     TD_DAQChannel.Start();
-                    btn_AccCur_setting_loadChannel(null,null);
+                    btn_AccCur_setting_loadChannel(null, null);
                     tem = "DAQ訊號輸入搜尋完畢";
                     break;
                 case 5:
@@ -702,16 +702,16 @@ namespace ToolWear{
                 }
             }
             //在磨耗偵測(三軸、電流)狀態下
-            if (panel_AccCur.Visible == true){
+            if (panel_AccCur.Visible == true) {
                 TaskStop();
                 panel_Dissable();
                 panel_AE.Visible = true;
             }
         }
         //主選單 > 磨耗偵測 > 切換模式0
-        private void btn_ChangeMode0_Click(object sender,EventArgs e){
+        private void btn_ChangeMode0_Click(object sender, EventArgs e) {
             //在磨耗偵測狀態下(開啟三軸、電流)
-            if(panel_ToolWear.Visible == true){
+            if (panel_ToolWear.Visible == true) {
                 panel_Dissable();
                 panel_AccCur.Visible = true;
 
@@ -2451,18 +2451,20 @@ namespace ToolWear{
             cb_prediction_work.SelectedIndex = 0;
             cb_prediction_ModelName.SelectedIndex = cb_prediction_ModelName.Items.Count - 1;
 
-            PB_prediction.Visible = false;
+            PB_prediction_ML.Visible = false;
+            PB_prediction_SL.Visible = false;
+            btn_ChangeMode0.BackgroundImage = ToolWear.Properties.Resources.SE_logo;
         }
         //回上一頁
-        private void btn_prediction_back_Click(object sender,EventArgs e){
-            timer_prediction.Enabled = false;
+        private void btn_prediction_back_Click(object sender, EventArgs e) {
+            timer_prediction_ML.Enabled = false;
             btn_ToolWear_Click(null, null);
         }
         //使用者自己打字時
-        private void cb_prediction_ModelName_TextChanged(object sender,EventArgs e){
-            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\model_name\")){
+        private void cb_prediction_ModelName_TextChanged(object sender, EventArgs e) {
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\model_name\")) {
                 string file_name = Path.GetFileNameWithoutExtension(fname);
-                if (file_name.Equals(cb_prediction_ModelName.Text)){
+                if (file_name.Equals(cb_prediction_ModelName.Text)) {
                     cb_prediction_Material.Enabled = false;
                     cb_prediction_Type.Enabled = false;
                     cb_prediction_work.Enabled = false;
@@ -2474,16 +2476,16 @@ namespace ToolWear{
             cb_prediction_work.Enabled = true;
         }
         //選擇不同的項目時讀取設定檔內資料
-        private void cb_prediction_ModelName_SelectedIndexChanged(object sender, EventArgs e){
+        private void cb_prediction_ModelName_SelectedIndexChanged(object sender, EventArgs e) {
             StreamReader sr = new StreamReader(path + @"data\Prediction\model_name\" + cb_prediction_ModelName.Text + ".csv");
             string tem_s = sr.ReadLine();   //格式為 名稱,刀具材質,刀具種類,工件種類
             sr.Close();
             sr.Dispose();
-            
+
             //自動選擇各項材質
-            
+
             //刀具材質
-            for(int i = 0; i < cb_prediction_Material.Items.Count; i++){
+            for (int i = 0; i < cb_prediction_Material.Items.Count; i++) {
                 cb_prediction_Material.SelectedIndex = i;
                 if (cb_prediction_Material.Text.Equals(tem_s.Split(',')[6])) break;
 
@@ -2493,7 +2495,7 @@ namespace ToolWear{
             }
 
             //刀具種類
-            for (int i = 0; i < cb_prediction_Type.Items.Count; i++){
+            for (int i = 0; i < cb_prediction_Type.Items.Count; i++) {
                 cb_prediction_Type.SelectedIndex = i;
                 if (cb_prediction_Type.Text.Equals(tem_s.Split(',')[7])) break;
 
@@ -2503,7 +2505,7 @@ namespace ToolWear{
             }
 
             //工件種類
-            for (int i = 0; i < cb_prediction_work.Items.Count; i++){
+            for (int i = 0; i < cb_prediction_work.Items.Count; i++) {
                 cb_prediction_work.SelectedIndex = i;
                 if (cb_prediction_work.Text.Equals(tem_s.Split(',')[8])) break;
 
@@ -2513,9 +2515,9 @@ namespace ToolWear{
             }
         }
         //刀具磨耗預測 > 開始
-        private void btn_prediction_start_Click(object sender,EventArgs e){
+        private void btn_prediction_start_Click(object sender, EventArgs e) {
             //首先判斷名稱是否已填寫
-            if (string.IsNullOrWhiteSpace(cb_prediction_ModelName.Text)){
+            if (string.IsNullOrWhiteSpace(cb_prediction_ModelName.Text)) {
                 MessageBox.Show("模型名稱未填寫。", "執行失敗", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
@@ -2523,9 +2525,9 @@ namespace ToolWear{
             List<string> file_module = new List<string>();
             foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\model_name\"))
                 file_module.Add(Path.GetFileNameWithoutExtension(fname));
-            for(int i = 0; i < file_module.Count; i++){
+            for (int i = 0; i < file_module.Count; i++) {
                 if (file_module[i].Equals(cb_prediction_ModelName.Text)) break;
-                if(i == file_module.Count - 1){
+                if (i == file_module.Count - 1) {
                     //將新的模型寫入新檔
                     StreamWriter sw = new StreamWriter(path + @"data\Prediction\model_name\" + cb_prediction_ModelName.Text + ".csv");
                     sw.WriteLine("x,y,z,tool_condition,date,time," + cb_prediction_Material.Text + "," +
@@ -2558,36 +2560,32 @@ namespace ToolWear{
 
             DAQInitialize("Prediction");
         }
-        //暫存現在使用刀具磨耗預測的甚麼功能
-        string Prediction_Now = "";
         //刀具磨耗預測 > 停止
-        private void btn_prediction_stop_Click(object sender, EventArgs e){
+        private void btn_prediction_stop_Click(object sender, EventArgs e) {
             TaskStop();
-
-            Prediction_Now = "ML";
+            
             //呼叫exe
             Process.Start(path + @"/data/Prediction/SE_ML.exe");
 
             //歸零進度條
-            PB_prediction.Value = 0;
+            PB_prediction_ML.Value = 0;
             //啟動timer讀取結果
-            timer_prediction.Enabled = true;
+            timer_prediction_ML.Enabled = true;
         }
         //刀具磨耗預測 > 自我學習
-        private void btn_prediction_self_Click(object sender, EventArgs e){
-            Prediction_Now = "SL";
+        private void btn_prediction_self_Click(object sender, EventArgs e) {
             //呼叫exe
             Process.Start(path + @"/data/Prediction/SE_SL.exe");
 
             //歸零進度條
-            PB_prediction.Value = 0;
+            PB_prediction_SL.Value = 0;
             //啟動timer讀取結果
-            timer_prediction.Enabled = true;
+            timer_prediction_SL.Enabled = true;
         }
         #endregion
         #region 磨耗偵測(三軸、電流)
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 回上一頁
-        private void btn_AccCur_back_Click(object sender,EventArgs e){
+        private void btn_AccCur_back_Click(object sender, EventArgs e) {
             panel_Dissable();
             btn_ToolWear_Click(null, null);
             //重置取樣頻率
@@ -2596,18 +2594,18 @@ namespace ToolWear{
             TaskStop();
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定
-        private void btn_AccCur_setting_Click(object sender,EventArgs e){
+        private void btn_AccCur_setting_Click(object sender, EventArgs e) {
             panel_AccCur.Visible = false;
             panel_AccCur_setting.Visible = true;
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 回上一頁
-        private void btn_AccCur_setting_back_Click(object sender, EventArgs e){
+        private void btn_AccCur_setting_back_Click(object sender, EventArgs e) {
             panel_AccCur.Visible = true;
 
 
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 讀取訊號輸入
-        private void btn_AccCur_setting_loadChannel(object sender,EventArgs e){
+        private void btn_AccCur_setting_loadChannel(object sender, EventArgs e) {
             ComboBox[] cb_Channel = new ComboBox[5] { cb_AccCur_setting_ChannelX, cb_AccCur_setting_ChannelY,
             cb_AccCur_setting_ChannelZ,cb_AccCur_setting_ChannelC,cb_AccCur_setting_ChannelAE};
             for (int i = 0; i < cb_Channel.Length; i++)
@@ -2625,7 +2623,7 @@ namespace ToolWear{
             AccCur_setting_load();
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 讀取資料
-        private void AccCur_setting_load(){
+        private void AccCur_setting_load() {
             //暫存頻道資訊
             List<string> Channel = new List<string>();
             ComboBox[] cb_Channel = new ComboBox[5] { cb_AccCur_setting_ChannelX, cb_AccCur_setting_ChannelY,
@@ -2636,27 +2634,27 @@ namespace ToolWear{
             while (!sr.EndOfStream) Channel.Add(sr.ReadLine());
             sr.Close();
             sr.Dispose();
-            
+
             //選取頻道
-            for(int i = 0; i < cb_AccCur_setting_ChannelX.Items.Count; i++){
-                for(int j = 0;j<cb_Channel.Length;j++){
+            for (int i = 0; i < cb_AccCur_setting_ChannelX.Items.Count; i++) {
+                for (int j = 0; j < cb_Channel.Length; j++) {
                     //如果還沒找到該資料檔符合的頻道
-                    if(find_Channel[j] == false){
+                    if (find_Channel[j] == false) {
                         cb_Channel[j].SelectedIndex = i;
                         if (Channel[j].Equals(cb_Channel[j].Text)) find_Channel[j] = true;
                     }
                 }
             }
             //檢查是否有沒有找到頻道的資料
-            for(int i = 0;i< find_Channel.Length; i++){
-                if(find_Channel[i] == false){
+            for (int i = 0; i < find_Channel.Length; i++) {
+                if (find_Channel[i] == false) {
                     //MessageBox.Show("有頻道的資料檔錯誤。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     cb_Channel[i].SelectedIndex = 0;
                 }
             }
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 儲存
-        private void btn_AccCur_setting_save_Click(object sender,EventArgs e){
+        private void btn_AccCur_setting_save_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("確定儲存新的訊號輸入嗎？", "儲存", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
 
@@ -2664,9 +2662,9 @@ namespace ToolWear{
             cb_AccCur_setting_ChannelZ,cb_AccCur_setting_ChannelC,cb_AccCur_setting_ChannelAE};
 
             //先檢查有沒有選到一樣的輸入端
-            for(int i = 0; i < cb_Channel.Length - 2; i++){
-                for(int j = i + 1; j < cb_Channel.Length; j++){
-                    if(cb_Channel[i].SelectedIndex == cb_Channel[j].SelectedIndex && cb_Channel[i].SelectedIndex != 0){
+            for (int i = 0; i < cb_Channel.Length - 2; i++) {
+                for (int j = i + 1; j < cb_Channel.Length; j++) {
+                    if (cb_Channel[i].SelectedIndex == cb_Channel[j].SelectedIndex && cb_Channel[i].SelectedIndex != 0) {
                         MessageBox.Show("選擇了相同的訊號輸入，請重新選擇。\n\n" + cb_Channel[i].Text, "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
@@ -2674,7 +2672,7 @@ namespace ToolWear{
             }
 
             StreamWriter sw = new StreamWriter(path + @"\data\AccCur.cp");
-            for (int i = 0; i < cb_Channel.Length; i++){
+            for (int i = 0; i < cb_Channel.Length; i++) {
                 if (cb_Channel[i].SelectedIndex == 0) sw.WriteLine("0");
                 else sw.WriteLine(cb_Channel[i].Text);
             }
@@ -2684,7 +2682,7 @@ namespace ToolWear{
             MessageBox.Show("儲存成功", "儲存完畢", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 開始
-        private void btn_AccCur_start_Click(object sender,EventArgs e){
+        private void btn_AccCur_start_Click(object sender, EventArgs e) {
             btn_AccCur_start.Enabled = false;
             btn_AccCur_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_AccCur_stop.Enabled = true;
@@ -2693,7 +2691,7 @@ namespace ToolWear{
             DAQInitialize("AccCur");
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 停止
-        private void btn_AccCur_stop_Click(object sender, EventArgs e){
+        private void btn_AccCur_stop_Click(object sender, EventArgs e) {
             btn_AccCur_start.Enabled = true;
             btn_AccCur_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
             btn_AccCur_stop.Enabled = false;
@@ -2707,7 +2705,7 @@ namespace ToolWear{
         }
         #region 音頻偵測
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 音頻偵測 > 回上一頁
-        private void btn_AE_back_Click(object sender,EventArgs e){
+        private void btn_AE_back_Click(object sender, EventArgs e) {
             TaskStop();
             panel_AccCur.Visible = true;
             panel_AE.Visible = false;
@@ -2723,7 +2721,7 @@ namespace ToolWear{
             btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 音頻偵測 > 開始
-        private void btn_AE_start_Click(object sender, EventArgs e){
+        private void btn_AE_start_Click(object sender, EventArgs e) {
             btn_AE_start.Enabled = false;
             btn_AE_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_AE_stop.Enabled = true;
@@ -2732,7 +2730,7 @@ namespace ToolWear{
             DAQInitialize("AE");
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流 > 音頻偵測 > 停止
-        private void btn_AE_stop_Click(object sender, EventArgs e){
+        private void btn_AE_stop_Click(object sender, EventArgs e) {
             btn_AE_start.Enabled = true;
             btn_AE_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
             btn_AE_stop.Enabled = false;
@@ -2748,7 +2746,7 @@ namespace ToolWear{
         #endregion
         #region 選擇工件/新增工件
         //磨耗偵測 > 選擇工件 > 讀取資料
-        private void SelectParts_LoadData(){
+        private void SelectParts_LoadData() {
             Panel[] panel_Parts = new Panel[8] { panel_SelectParts_01, panel_SelectParts_02, panel_SelectParts_03, panel_SelectParts_04,
                                                  panel_SelectParts_05, panel_SelectParts_06, panel_SelectParts_07, panel_SelectParts_08 };
             Panel[] panel_Parts_Add = new Panel[8] { panel_SelectParts_01Add, panel_SelectParts_02Add, panel_SelectParts_03Add, panel_SelectParts_04Add,
@@ -2759,20 +2757,20 @@ namespace ToolWear{
                                                         pb_SelectParts_05, pb_SelectParts_06, pb_SelectParts_07, pb_SelectParts_08};
             StreamReader sr = new StreamReader(path + @"\data\parts.cp");
             //先隱藏全部選項和新增panel
-            for (int i = 0; i < panel_Parts.Length; i++){
+            for (int i = 0; i < panel_Parts.Length; i++) {
                 panel_Parts[i].Visible = false;
                 panel_Parts_Add[i].Visible = false;
             }
             int read_count = 0;
-            while (!sr.EndOfStream){
+            while (!sr.EndOfStream) {
                 //tem讀取範例：名稱,C:\Users\user\Desktop\Campro\ToolWear\ToolWear\bin\Debug\data\Image\IMG_3494.JPG
                 string tem = sr.ReadLine();
-                try{
-                    if(read_count >= (int.Parse(lb_SelectParts_Page.Text) - 1) * 8 && read_count < int.Parse(lb_SelectParts_Page.Text) * 8){
+                try {
+                    if (read_count >= (int.Parse(lb_SelectParts_Page.Text) - 1) * 8 && read_count < int.Parse(lb_SelectParts_Page.Text) * 8) {
                         panel_Parts[read_count % 8].Visible = true;
                         lb_Parts[read_count % 8].Text = tem.Split(',')[0];
-                        if (!tem.Split(',')[1].Equals("null")){
-                            using (var tem_img = Image.FromFile(tem.Split(',')[1])){
+                        if (!tem.Split(',')[1].Equals("null")) {
+                            using (var tem_img = Image.FromFile(tem.Split(',')[1])) {
                                 Image img = new Bitmap(tem_img);
                                 pb_Parts[read_count % 8].BackgroundImage = img;
                             }
@@ -2783,7 +2781,7 @@ namespace ToolWear{
                     else if (read_count >= (int.Parse(lb_SelectParts_Page.Text) + 1) * 8) break;
                     read_count++;
                 }
-                catch(Exception ex){
+                catch (Exception ex) {
                     MessageBox.Show("讀取工件資料時出現不可測意外。\n可能是設定檔或是圖片檔遺失，請重新檢查。\n\nSelectParts_LoadData\n\n" + ex.ToString(), "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 }
@@ -2791,9 +2789,9 @@ namespace ToolWear{
             sr.Close();
             sr.Dispose();
             //判斷是否此頁面還有空間塞入 + 號
-            for(int i = 0;i< panel_Parts.Length; i++){
+            for (int i = 0; i < panel_Parts.Length; i++) {
                 //如果panel的visible是false的話表示因為沒有資料所以不讀取，那就將該panel置換成新增工件
-                if(panel_Parts[i].Visible == false){
+                if (panel_Parts[i].Visible == false) {
                     panel_Parts[i].Visible = true;
                     panel_Parts_Add[i].Visible = true;
                     panel_Parts_Add[i].BringToFront();
@@ -2802,8 +2800,8 @@ namespace ToolWear{
             }
         }
         //磨耗偵測 > 選擇工件 > 工件上一頁
-        private void btn_SelectParts_up_Click(object sender,EventArgs e){
-            if (lb_SelectParts_Page.Text.Equals("1")){
+        private void btn_SelectParts_up_Click(object sender, EventArgs e) {
+            if (lb_SelectParts_Page.Text.Equals("1")) {
                 MessageBox.Show("沒有辦法移至上一頁，已在首頁。", "頁面切換失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -2811,25 +2809,25 @@ namespace ToolWear{
             SelectParts_LoadData();
         }
         //磨耗偵測 > 選擇工件 > 工件下一頁
-        private void btn_SelectParts_down_Click(object sender,EventArgs e){
+        private void btn_SelectParts_down_Click(object sender, EventArgs e) {
             StreamReader sr = new StreamReader(path + @"\data\parts.cp");
             int sr_count = 0;
-            while (!sr.EndOfStream){
+            while (!sr.EndOfStream) {
                 sr.ReadLine();
                 sr_count++;
             }
-            if(sr_count > int.Parse(lb_SelectParts_Page.Text) * 8){
+            if (sr_count > int.Parse(lb_SelectParts_Page.Text) * 8) {
                 lb_SelectParts_Page.Text = (int.Parse(lb_SelectParts_Page.Text) + 1).ToString();
                 SelectParts_LoadData();
             }
-            else{
+            else {
                 MessageBox.Show("沒有更多的工件，已在最後一頁！", "頁面切換失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             sr.Close();
             sr.Dispose();
         }
         //磨耗偵測 > 選擇工件 > 移除工件
-        private void btn_SelectParts_remove_Click(object sender,EventArgs e){
+        private void btn_SelectParts_remove_Click(object sender, EventArgs e) {
             Button btn_Select = (Button)sender;
             Label[] lb_SelectParts = new Label[8] { lb_SelectParts_01 , lb_SelectParts_02 , lb_SelectParts_03 , lb_SelectParts_04 ,
                                                     lb_SelectParts_05 , lb_SelectParts_06 , lb_SelectParts_07 , lb_SelectParts_08};
@@ -2842,10 +2840,10 @@ namespace ToolWear{
             //暫存讀取的字串資料
             List<string> tem_Read = new List<string>();
             StreamReader sr = new StreamReader(path + @"\data\parts.cp");
-            while (!sr.EndOfStream){
+            while (!sr.EndOfStream) {
                 string tem = sr.ReadLine();
                 //如果資料檔內的工件名稱 = 本次要刪除的名稱 > 不暫存此資料(意即等等要重新改寫cp檔的時候會忽略之)
-                if (!tem.Split(',')[0].Equals(Parts_Name)){
+                if (!tem.Split(',')[0].Equals(Parts_Name)) {
                     tem_Read.Add(tem);
                     //暫存圖片檔路徑
                     Delete_Path = tem.Split(',')[1];
@@ -2854,8 +2852,8 @@ namespace ToolWear{
             sr.Close();
             sr.Close();
             StreamWriter sw = new StreamWriter(path + @"\data\parts.cp");
-            for(int i = 0; i < tem_Read.Count; i++)
-                    sw.WriteLine(tem_Read[i]);
+            for (int i = 0; i < tem_Read.Count; i++)
+                sw.WriteLine(tem_Read[i]);
             sw.Close();
             sw.Dispose();
             //初始化該項目的pictureBox和TextBox，避免不必要的例外事件發生
@@ -2866,15 +2864,15 @@ namespace ToolWear{
             //重新整理頁面
             pb_ToolWear_Click(null, null);
             //刪除data內圖片檔案
-            try{
+            try {
                 File.Delete(path + @"\data\Image\" + Parts_Name);
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("刪除data圖片檔案時發生錯誤。\n\nbtn_SelectParts_remove_Click\n\n" + ex.ToString());
             }
         }
         //磨耗偵測 > 選擇工件 > select按鈕
-        private void btn_SelectParts(object sender,EventArgs e){
+        private void btn_SelectParts(object sender, EventArgs e) {
             Button btn_Select = (Button)sender;
             Label[] lb_SelectParts = new Label[8] { lb_SelectParts_01 , lb_SelectParts_02 , lb_SelectParts_03 , lb_SelectParts_04 ,
                                                     lb_SelectParts_05 , lb_SelectParts_06 , lb_SelectParts_07 , lb_SelectParts_08};
@@ -2890,7 +2888,7 @@ namespace ToolWear{
             panel_ToolWear.Visible = true;
         }
         //磨耗偵測 > 選擇工件 > 新增工件 > 取消新增
-        private void btn_AddParts_delete_Click(object sender, EventArgs e){
+        private void btn_AddParts_delete_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("確定要放棄此次新增嗎？", "放棄新增", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
             tb_AddParts_Name.Text = "";
@@ -2901,7 +2899,7 @@ namespace ToolWear{
             btn_Learn.Enabled = true;
         }
         //磨耗偵測 > 選擇工件 > 新增工件 > 搜尋
-        private void btn_AddParts_Path_Click(object sender, EventArgs e){
+        private void btn_AddParts_Path_Click(object sender, EventArgs e) {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Title = "選擇工件圖片";
             dialog.InitialDirectory = @"C:\";
@@ -2916,12 +2914,12 @@ namespace ToolWear{
         //選擇的檔案名稱
         private string path_AddFile_name = "";
         //磨耗偵測 > 選擇工件 > 新增工件 > 儲存
-        private void btn_AddParts_save_Click(object sender, EventArgs e){
-            if (string.IsNullOrWhiteSpace(tb_AddParts_Name.Text) || string.IsNullOrEmpty(tb_AddParts_Name.Text)){
+        private void btn_AddParts_save_Click(object sender, EventArgs e) {
+            if (string.IsNullOrWhiteSpace(tb_AddParts_Name.Text) || string.IsNullOrEmpty(tb_AddParts_Name.Text)) {
                 MessageBox.Show("請輸入工件名稱！", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (string.IsNullOrWhiteSpace(tb_AddParts_Path.Text)){
+            if (string.IsNullOrWhiteSpace(tb_AddParts_Path.Text)) {
                 DialogResult dialogResult1 = MessageBox.Show("您尚未選擇工件圖片來源\n確定不要加入圖片嗎？", "圖片未選取", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if (dialogResult1 == DialogResult.Cancel) return;
             }
@@ -2929,9 +2927,9 @@ namespace ToolWear{
             if (Unlawful_Check(tb_AddParts_Name.Text)) return;
             //檢查是否有同樣名稱的工件
             StreamReader sr = new StreamReader(path + @"\data\parts.cp");
-            while (!sr.EndOfStream){
+            while (!sr.EndOfStream) {
                 string tem = sr.ReadLine();
-                if (tem.Split(',')[0].Equals(tb_AddParts_Name.Text)){
+                if (tem.Split(',')[0].Equals(tb_AddParts_Name.Text)) {
                     MessageBox.Show("工件名稱重複，請重新輸入。", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     sr.Close();
                     sr.Dispose();
@@ -2943,11 +2941,11 @@ namespace ToolWear{
             DialogResult dialogResult = MessageBox.Show("確定要新增此工件嗎？", "確認訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
 
-            try{
+            try {
                 FileStream File_module = File.Open(path + @"\data\parts.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
                 StreamWriter sw = new StreamWriter(File_module);
                 //有選圖片的話
-                if (!string.IsNullOrWhiteSpace(tb_AddParts_Path.Text)){
+                if (!string.IsNullOrWhiteSpace(tb_AddParts_Path.Text)) {
                     sw.WriteLine(tb_AddParts_Name.Text + "," + path + @"data\Image\" + tb_AddParts_Name.Text);
                     File.Copy(tb_AddParts_Path.Text, path + @"\data\Image\" + tb_AddParts_Name.Text);
                 }
@@ -2965,32 +2963,32 @@ namespace ToolWear{
                 pb_AddParts.BackgroundImage = ToolWear.Properties.Resources.wdpsn_img_blank;
                 pb_ToolWear_Click(null, null);
             }
-            catch(Exception ex){
-                MessageBox.Show("在儲存時發生不可測意外。\n\nThis problem is from btn_AddParts_save.\n\n"+ ex.ToString(), "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch (Exception ex) {
+                MessageBox.Show("在儲存時發生不可測意外。\n\nThis problem is from btn_AddParts_save.\n\n" + ex.ToString(), "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion
         #region 縮小視窗
-        private void FormBorderMode(object sender,EventArgs e){
+        private void FormBorderMode(object sender, EventArgs e) {
             //縮小視窗
             this.WindowState = FormWindowState.Minimized;
         }
         #endregion
         #region 選擇按鈕(Up/Down)
-        private void btn_ATCsetting_BladeUp_Click(object sender,EventArgs e){
-            if(numeric_ATCsetting_Blade.Value < numeric_ATCsetting_Blade.Maximum)
+        private void btn_ATCsetting_BladeUp_Click(object sender, EventArgs e) {
+            if (numeric_ATCsetting_Blade.Value < numeric_ATCsetting_Blade.Maximum)
                 numeric_ATCsetting_Blade.Value += 1;
         }
-        private void btn_ATCsetting_BladeDown_Click(object sender, EventArgs e){
-            if(numeric_ATCsetting_Blade.Value > numeric_ATCsetting_Blade.Minimum)
+        private void btn_ATCsetting_BladeDown_Click(object sender, EventArgs e) {
+            if (numeric_ATCsetting_Blade.Value > numeric_ATCsetting_Blade.Minimum)
                 numeric_ATCsetting_Blade.Value -= 1;
         }
-        private void btn_HealthSetting_Up_Click(object sender,EventArgs e){
-            if(numeric_HealthSetting_Range.Value < numeric_HealthSetting_Range.Maximum)
+        private void btn_HealthSetting_Up_Click(object sender, EventArgs e) {
+            if (numeric_HealthSetting_Range.Value < numeric_HealthSetting_Range.Maximum)
                 numeric_HealthSetting_Range.Value += 1;
         }
-        private void btn_HealthSetting_Down_Click(object sender, EventArgs e){
-            if(numeric_HealthSetting_Range.Value > numeric_HealthSetting_Range.Minimum)
+        private void btn_HealthSetting_Down_Click(object sender, EventArgs e) {
+            if (numeric_HealthSetting_Range.Value > numeric_HealthSetting_Range.Minimum)
                 numeric_HealthSetting_Range.Value -= 1;
         }
         #endregion
@@ -3004,17 +3002,17 @@ namespace ToolWear{
         Button pre_ToolWear = null;
         //存放該軸向是否正處於磨耗偵測狀態下
         bool[] ToolWear_bool = new bool[20];
-        private void btn_ToolWear_Choose(object sender,EventArgs e){
+        private void btn_ToolWear_Choose(object sender, EventArgs e) {
             //目前只能單軸偵測
-            for(int i = 0; i < 20; i++){
-                if(ToolWear_bool[i] == true){
+            for (int i = 0; i < 20; i++) {
+                if (ToolWear_bool[i] == true) {
                     //MessageBox.Show("Beta階段只允許單軸偵測，請先關閉當前正在偵測的軸向再點選其他按鈕。", "嘗試選取多軸向", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     Write_Log("緊急", "目前只允許單軸偵測，請先關閉當前正在偵測的軸向再點選其他按鈕。");
                     return;
                 }
             }
             //先重置上次選到的按鈕
-            if (pre_ToolWear != null){
+            if (pre_ToolWear != null) {
                 pre_ToolWear.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn;
             }
             pre_ToolWear = (Button)sender;
@@ -3030,13 +3028,13 @@ namespace ToolWear{
             //轉移焦點
             btn_ToolWear_Start.Focus();
             //判斷是否選擇的軸向已經在偵測狀態中
-            if(ToolWear_bool[now_ToolWear] == true){
+            if (ToolWear_bool[now_ToolWear] == true) {
                 btn_ToolWear_Start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
                 btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
                 btn_ToolWear_Start.Enabled = false;
                 btn_ToolWear_Stop.Enabled = true;
             }
-            else{
+            else {
                 btn_ToolWear_Start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
                 btn_ToolWear_Stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
                 btn_ToolWear_Start.Enabled = true;
@@ -3050,18 +3048,18 @@ namespace ToolWear{
         int now_learn = 0;
         //上一個點到的button
         Button pre_learn = null;
-        private void btn_Learn_Choose(object sender, EventArgs e){
+        private void btn_Learn_Choose(object sender, EventArgs e) {
             //如果正在學習中，不允許切換數據
-            if (On_Learn == true){
+            if (On_Learn == true) {
                 MessageBox.Show("目前正處於學習階段，不允許切換軸向。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if(runningTask != null){
+            if (runningTask != null) {
                 MessageBox.Show("請先停止所有軸向的磨耗偵測。\n在學習模式中禁止同時偵測磨耗資訊，以免發生不可測意外。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             //先重置上次選到的按鈕
-            if (pre_learn != null){
+            if (pre_learn != null) {
                 pre_learn.BackgroundImage = ToolWear.Properties.Resources.tc_btn_axiabtn;
             }
             pre_learn = (Button)sender;
@@ -3097,8 +3095,8 @@ namespace ToolWear{
             string ID = btn.Name.Split('_')[2];
             now_ToolWearSetting = int.Parse(ID) - 1;
             StreamReader sr_axial = new StreamReader(path + @"\data\axial.cp");
-            try{
-                for (int i = 0; i < int.Parse(ID); i++){
+            try {
+                for (int i = 0; i < int.Parse(ID); i++) {
                     //初始化下拉選單
                     cb_ToolWearSetting_accelerometer.SelectedIndex = 0;
                     cb_ToolWearSetting_Axial.SelectedIndex = 0;
@@ -3108,21 +3106,21 @@ namespace ToolWear{
                     cb_ToolWear_CurrentInput.SelectedIndex = 0;
                     //ex. tem = "X,0,0,0" or tem = "Y,1,2,0"
                     string tem = sr_axial.ReadLine();
-                    if (i == int.Parse(ID) - 1){
+                    if (i == int.Parse(ID) - 1) {
                         tb_ToolWearSetting_name.Text = tem.Split(',')[0];
                         int Accelerometer = int.Parse(tem.Split(',')[1]);
                         cb_ToolWearSetting_accelerometer.SelectedIndex = Accelerometer;
                         int Axial = int.Parse(tem.Split(',')[2]);
                         cb_ToolWearSetting_Axial.SelectedIndex = Axial;
                         string tem_Channel = tem.Split(',')[3];
-                        for(int j = 0; j < physicalChannelComboBox.Items.Count; j++){
+                        for (int j = 0; j < physicalChannelComboBox.Items.Count; j++) {
                             physicalChannelComboBox.SelectedIndex = j;
-                            if (physicalChannelComboBox.Text.Equals(tem_Channel)){
+                            if (physicalChannelComboBox.Text.Equals(tem_Channel)) {
                                 //physicalChannelComboBox.SelectedIndex = j;
                                 break;
                             }
                             //如果j已搜尋到最後都找不到匹配的輸入(代表原先設定的訊號不見了)
-                            if(j == physicalChannelComboBox.Items.Count - 1){
+                            if (j == physicalChannelComboBox.Items.Count - 1) {
                                 physicalChannelComboBox.SelectedIndex = 0;
                                 MessageBox.Show("搜尋不到此軸向原先設定的訊號輸入，請確認輸入訊號接頭是否脫落。\n重新連接設備並使用重新整理按鈕搜尋訊號輸入。" +
                                     "\n若依然找不到訊號輸入，請重新選擇並儲存。", "找不到訊號輸入", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -3131,12 +3129,12 @@ namespace ToolWear{
                         string ip = tem.Split(',')[4];
                         tb_ToolWear_CurrentIP.Text = ip;
                         string CurrentChannel = tem.Split(',')[5];
-                        for(int j = 0;j < cb_ToolWear_CurrentInput.Items.Count; j++){
+                        for (int j = 0; j < cb_ToolWear_CurrentInput.Items.Count; j++) {
                             cb_ToolWear_CurrentInput.SelectedIndex = j;
                             if (cb_ToolWear_CurrentInput.Text.Equals(CurrentChannel))
                                 break;
                             //表示搜尋到最後仍然找不到匹配的輸入
-                            if(j == cb_ToolWear_CurrentInput.Items.Count - 1)
+                            if (j == cb_ToolWear_CurrentInput.Items.Count - 1)
                                 cb_ToolWear_CurrentInput.SelectedIndex = 0;
                         }
                     }
@@ -3149,35 +3147,35 @@ namespace ToolWear{
             sr_axial.Dispose();
         }
         //軸向設定 > 儲存
-        private void btn_ToolWearSetting_save_Click(object sender, EventArgs e){
+        private void btn_ToolWearSetting_save_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("確定儲存？", "存檔訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
             string tem_s = string.Format("{0},{1},{2},{3},{4},{5}", tb_ToolWearSetting_name.Text,
                 cb_ToolWearSetting_accelerometer.SelectedIndex, cb_ToolWearSetting_Axial.SelectedIndex, physicalChannelComboBox.Text,
                 tb_ToolWear_CurrentIP.Text, cb_ToolWear_CurrentInput.Text);
-            try{
+            try {
                 ToolWearSetting_SW(tem_s);
                 MessageBox.Show("儲存成功！", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch(Exception ex) {
+            catch (Exception ex) {
                 MessageBox.Show("儲存失敗。\n\nbtn_ToolWearSetting_save_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //軸向設定 > 刪除
-        private void btn_ToolWearSetting_delete_Click(object sender, EventArgs e){
+        private void btn_ToolWearSetting_delete_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("確定要刪除此軸向之設定資料嗎？", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
             string tem_s = tb_ToolWearSetting_name.Text;
-            try{
+            try {
                 ToolWearSetting_SW(tem_s);
                 MessageBox.Show("刪除成功！", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("刪除失敗。\n\nbtn_ToolWearSetting_delete_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //軸向設定 > 讀檔+寫檔
-        private void ToolWearSetting_SW(string s){
+        private void ToolWearSetting_SW(string s) {
             StreamReader sr_axial = new StreamReader(path + @"\data\axial.cp");
             List<string> tem_read = new List<string>();
             while (!sr_axial.EndOfStream) tem_read.Add(sr_axial.ReadLine());
@@ -3203,7 +3201,7 @@ namespace ToolWear{
         Button pre_Compensate = null;
         //紀錄溫升補償
         List<string> compensate_data = new List<string>();
-        private void btn_Compensate_Choose(object sender, EventArgs e){
+        private void btn_Compensate_Choose(object sender, EventArgs e) {
             //宣告溫升補償顯示TextBox欄位
             TextBox[] tb_Compensate = new TextBox[7] { tb_Compensate_01 , tb_Compensate_02 , tb_Compensate_03 ,
             tb_Compensate_04,tb_Compensate_05,tb_Compensate_06,tb_Compensate_07};
@@ -3227,18 +3225,18 @@ namespace ToolWear{
             string ID = btn.Name.Split('_')[2];
             now_Compensate = int.Parse(ID) - 1;
             //讀取溫升補償檔案
-            while (!sr_axial.EndOfStream){
+            while (!sr_axial.EndOfStream) {
                 //ex tem = 1,25.0,1.00
                 //編號(0~19),溫度,補償
                 string tem = sr_axial.ReadLine();
                 compensate_data.Add(tem);   //新增資料進暫存變數
                 int number = int.Parse(tem.Split(',')[0]);
-                if(number == now_Compensate){
+                if (number == now_Compensate) {
                     string temperature = tem.Split(',')[1];
                     string compensate = tem.Split(',')[2];
                     //將資料寫入TextBox內
-                    for(int i = 0; i < tb_Compensate.Length; i++){
-                        if (tb_Compensate[i].Text == ""){
+                    for (int i = 0; i < tb_Compensate.Length; i++) {
+                        if (tb_Compensate[i].Text == "") {
                             tb_Compensate[i].Text = "    " + pre_Compensate.Text + " 軸 , " + temperature + " ℃ , " + compensate + " mm";
                             break;
                         }
@@ -3250,18 +3248,18 @@ namespace ToolWear{
 
             //IP和輸入讀取
             StreamReader sr_set = new StreamReader(path + @"\data\thermal.cp");
-            try{
-                for (int i = 0; i <= now_Compensate; i++){
+            try {
+                for (int i = 0; i <= now_Compensate; i++) {
                     string tem = sr_set.ReadLine();
-                    if (i == now_Compensate){
+                    if (i == now_Compensate) {
                         tb_Compensate_ip.Text = tem.Split(',')[1];
                         //tb_Compensate_Channel.Text = tem.Split(',')[2];
-                        for(int j = 0; j < cb_Compensate_Channel.Items.Count; j++){
+                        for (int j = 0; j < cb_Compensate_Channel.Items.Count; j++) {
                             cb_Compensate_Channel.SelectedIndex = j;
                             if (cb_Compensate_Channel.Text.Equals(tem.Split(',')[2]))
                                 break;
                             //當搜尋完所有選項後都沒有發現符合的文字(代表設定檔被修改過)
-                            if(j == cb_Compensate_Channel.Items.Count - 1){
+                            if (j == cb_Compensate_Channel.Items.Count - 1) {
                                 cb_Compensate_Channel.SelectedIndex = 0;
                                 MessageBox.Show("輸入訊號設定檔錯誤，請重新設定！", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
@@ -3269,7 +3267,7 @@ namespace ToolWear{
                     }
                 }
             }
-            catch{
+            catch {
                 tb_Compensate_ip.Text = "";
                 cb_Compensate_Channel.SelectedIndex = 0;
             }
@@ -3281,39 +3279,39 @@ namespace ToolWear{
             //e != null表示是由使用者觸發Click事件才進入
             int tem_page = int.Parse(lb_Compensate_page.Text);
             lb_Compensate_page.Text = "1";
-            if (e == null){
+            if (e == null) {
                 for (int i = 0; i < tem_page - 1; i++)
                     btn_Compensate_down_Click(null, null);
             }
         }
         //IP和輸入 > 存檔
-        private void btn_CompensateSet_save_Click(object sender, EventArgs e){
+        private void btn_CompensateSet_save_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("確定儲存？", "存檔訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
             string tem = pre_Compensate.Text + "," + tb_Compensate_ip.Text + "," + cb_Compensate_Channel.Text;
-            try{
+            try {
                 RW_CompensateSet(tem);
                 MessageBox.Show("IP與訊號輸入設定完成！", "儲存成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch(Exception ex) {
+            catch (Exception ex) {
                 MessageBox.Show("儲存失敗。\n\nbtn_CompensateSet_save_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //IP和輸入 > 刪除
-        private void btn_CompensateSet_delete_Click(object sender, EventArgs e){
+        private void btn_CompensateSet_delete_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("確定要刪除此軸向之設定資料嗎？", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
             string tem = ((Button)pre_Compensate).Text + ", , ";
-            try{
+            try {
                 RW_CompensateSet(tem);
                 MessageBox.Show("IP與訊號輸入刪除成功！");
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("刪除失敗。\n\nbtn_CompensateSet_delete_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //IP和輸入 > 讀檔+寫檔
-        private void RW_CompensateSet(string s){
+        private void RW_CompensateSet(string s) {
             StreamReader sr_set = new StreamReader(path + @"\data\thermal.cp");
             List<string> tem_read = new List<string>();
             while (!sr_set.EndOfStream) tem_read.Add(sr_set.ReadLine());
@@ -3335,47 +3333,47 @@ namespace ToolWear{
         int tb_Compensate_Select = -1;
         //紀錄上一個點選的TextBox
         TextBox pre_Compensate_tb;
-        private void tb_Compensate_Click(object sender,EventArgs e){
+        private void tb_Compensate_Click(object sender, EventArgs e) {
             TextBox tb_Compensate = ((TextBox)sender);
             if (pre_Compensate_tb != null)
                 pre_Compensate_tb.BackColor = Color.WhiteSmoke;
             tb_Compensate.BackColor = Color.CadetBlue;
             pre_Compensate_tb = tb_Compensate;
             //如果選擇的TextBox是空的那就顯示預設值
-            if (tb_Compensate.Text.Equals("")){
+            if (tb_Compensate.Text.Equals("")) {
                 tb_Compensate_Select = -1;
                 numeric_Temperature.Value = 25.0M;
                 numeric_Compensate.Value = 1.00M;
             }
-            else{
+            else {
                 tb_Compensate_Select = int.Parse(tb_Compensate.Name.Split('_')[2]);
                 numeric_Temperature.Value = decimal.Parse(tb_Compensate.Text.Split(',')[1].Split(' ')[1]);
                 numeric_Compensate.Value = decimal.Parse(tb_Compensate.Text.Split(',')[2].Split(' ')[1]);
             }
         }
         //清除溫補選取
-        private void tb_Compensate_Clear(){
+        private void tb_Compensate_Clear() {
             tb_Compensate_Select = -1;
             numeric_Temperature.Value = 25.0M;
             numeric_Compensate.Value = 1.00M;
-            if (pre_Compensate_tb != null){
+            if (pre_Compensate_tb != null) {
                 pre_Compensate_tb.BackColor = Color.WhiteSmoke;
                 pre_Compensate_tb = null;
             }
         }
         //溫補 > 上一頁
-        private void btn_Compensate_up_Click(object sender, EventArgs e){
-            if (!lb_Compensate_page.Text.Equals("1")){
+        private void btn_Compensate_up_Click(object sender, EventArgs e) {
+            if (!lb_Compensate_page.Text.Equals("1")) {
                 //宣告溫升補償顯示TextBox欄位
                 TextBox[] tb_Compensate = new TextBox[7] { tb_Compensate_01 , tb_Compensate_02 , tb_Compensate_03 ,
                 tb_Compensate_04,tb_Compensate_05,tb_Compensate_06,tb_Compensate_07};
                 //先暫存陣列內此按鈕的補償資料
                 List<string> now_Data = new List<string>();
-                for (int i = 0; i < compensate_data.Count; i++){
+                for (int i = 0; i < compensate_data.Count; i++) {
                     if (int.Parse(compensate_data[i].Split(',')[0]) == now_Compensate)
                         now_Data.Add(compensate_data[i]);
                 }
-                for(int i = 0; i < tb_Compensate.Length; i++){
+                for (int i = 0; i < tb_Compensate.Length; i++) {
                     string tem = now_Data[((int.Parse(lb_Compensate_page.Text) - 2) * tb_Compensate.Length) + i];
                     int number = int.Parse(tem.Split(',')[0]);
                     string temperature = tem.Split(',')[1];
@@ -3388,21 +3386,21 @@ namespace ToolWear{
             else MessageBox.Show("已經在第一頁了！");
         }
         //溫補 > 下一頁
-        private void btn_Compensate_down_Click(object sender, EventArgs e){
+        private void btn_Compensate_down_Click(object sender, EventArgs e) {
             //宣告溫升補償顯示TextBox欄位
             TextBox[] tb_Compensate = new TextBox[7] { tb_Compensate_01 , tb_Compensate_02 , tb_Compensate_03 ,
             tb_Compensate_04,tb_Compensate_05,tb_Compensate_06,tb_Compensate_07};
             //先判斷暫存陣列內有幾個此按鈕的補償資料
             List<string> now_Data = new List<string>();
-            for(int i = 0;i< compensate_data.Count; i++){
+            for (int i = 0; i < compensate_data.Count; i++) {
                 if (int.Parse(compensate_data[i].Split(',')[0]) == now_Compensate)
                     now_Data.Add(compensate_data[i]);
             }
             //當暫存數量大於第N頁 * 7個TextBox 的時候才可以按下一頁
-            if (now_Data.Count > int.Parse(lb_Compensate_page.Text) * tb_Compensate.Length){
-                for (int i = 0; i < tb_Compensate.Length; i++){
+            if (now_Data.Count > int.Parse(lb_Compensate_page.Text) * tb_Compensate.Length) {
+                for (int i = 0; i < tb_Compensate.Length; i++) {
                     //判斷是否現在讀取的項次小於總共暫存數量
-                    if (now_Data.Count > (int.Parse(lb_Compensate_page.Text) * tb_Compensate.Length) + i){
+                    if (now_Data.Count > (int.Parse(lb_Compensate_page.Text) * tb_Compensate.Length) + i) {
                         string tem = now_Data[(int.Parse(lb_Compensate_page.Text) * tb_Compensate.Length) + i];
                         int number = int.Parse(tem.Split(',')[0]);
                         string temperature = tem.Split(',')[1];
@@ -3417,27 +3415,27 @@ namespace ToolWear{
             else MessageBox.Show("已經在最末頁了！");
         }
         //溫補 > 溫度+0.1
-        private void numeric_Temperature_Up_Click(object sender,EventArgs e){
+        private void numeric_Temperature_Up_Click(object sender, EventArgs e) {
             numeric_Temperature.Value += (decimal)0.1;
         }
         //溫補 > 溫度-0.1
-        private void numeric_Temperature_Down_Click(object sender, EventArgs e){
+        private void numeric_Temperature_Down_Click(object sender, EventArgs e) {
             numeric_Temperature.Value -= (decimal)0.1;
         }
         //溫補 > 補償值+0.01
-        private void numeric_Compensate_Up_Click(object sender,EventArgs e){
+        private void numeric_Compensate_Up_Click(object sender, EventArgs e) {
             numeric_Compensate.Value += (decimal)0.01;
         }
         //溫補 > 補償值-0.01
-        private void numeric_Compensate_Down_Click(object sender, EventArgs e){
+        private void numeric_Compensate_Down_Click(object sender, EventArgs e) {
             numeric_Compensate.Value -= (decimal)0.01;
         }
         //溫補 > 新增
-        private void btn_CompensateAdd_Click(object sender, EventArgs e){
+        private void btn_CompensateAdd_Click(object sender, EventArgs e) {
             //取得button後面編號
-            string tem = (int.Parse(pre_Compensate.Name.Split('_')[2]) - 1).ToString() + "," + 
+            string tem = (int.Parse(pre_Compensate.Name.Split('_')[2]) - 1).ToString() + "," +
                 numeric_Temperature.Value + "," + numeric_Compensate.Value;
-            try{
+            try {
                 FileStream File_module = File.Open(path + @"\data\compensate.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
                 StreamWriter sw = new StreamWriter(File_module);
                 sw.WriteLine(tem);
@@ -3447,23 +3445,23 @@ namespace ToolWear{
                 Initialization();
                 btn_Compensate_Choose((object)pre_Compensate, null);
             }
-            catch(Exception ex) {
+            catch (Exception ex) {
                 MessageBox.Show("發生不可測意外。\n\nbtn_CompensateAdd_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //溫補 > 儲存
-        private void btn_CompensateSave_Click(object sender, EventArgs e){
-            if (pre_Compensate_tb == null){
+        private void btn_CompensateSave_Click(object sender, EventArgs e) {
+            if (pre_Compensate_tb == null) {
                 MessageBox.Show("尚未選取欲修改的項目，\n若您是要新增一筆資料請點選 + 按鈕。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (tb_Compensate_Select == -1){
+            if (tb_Compensate_Select == -1) {
                 string output = "";
                 if (pre_Compensate_tb.Text.Equals(""))
                     output = "您正準備存取尚未擁有初始值的項目，\n請使用 + 符號新增資料。";
                 else
                     output = "尚未選擇要儲存的項目，請點選下方空格。";
-                    MessageBox.Show(output,"儲存失敗",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(output, "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             DialogResult dialogResult = MessageBox.Show("確定儲存？", "存檔訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
@@ -3471,16 +3469,16 @@ namespace ToolWear{
             //取得button後面編號
             string tem = (int.Parse(pre_Compensate.Name.Split('_')[2]) - 1).ToString() + "," +
                 numeric_Temperature.Value + "," + numeric_Compensate.Value;
-            try{
-                RW_Compensate(tem,false);
+            try {
+                RW_Compensate(tem, false);
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("發生不可測意外。\n\nbtn_CompensateSave_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //溫補 > 移除
-        private void btn_CompensateRemove_Click(object sender, EventArgs e){
-            if (tb_Compensate_Select == -1){
+        private void btn_CompensateRemove_Click(object sender, EventArgs e) {
+            if (tb_Compensate_Select == -1) {
                 string output = "";
                 if (pre_Compensate_tb.Text.Equals(""))
                     output = "您正準備刪除尚未擁有初始值的項目。";
@@ -3493,10 +3491,10 @@ namespace ToolWear{
             if (dialogResult == DialogResult.Cancel) return;
             //取得button後面編號
             string tem = "";
-            try{
+            try {
                 RW_Compensate(tem, true);
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("發生不可測意外。\n\nbtn_CompensateRemove_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -3505,7 +3503,7 @@ namespace ToolWear{
         /// </summary>
         /// <param name="s">要修改的字串</param>
         /// <param name="remove">是否為移除模式</param>
-        private void RW_Compensate(string s,bool remove){
+        private void RW_Compensate(string s, bool remove) {
             StreamReader sr_set = new StreamReader(path + @"\data\compensate.cp");
             List<string> tem_read = new List<string>();
             while (!sr_set.EndOfStream) tem_read.Add(sr_set.ReadLine());
@@ -3517,14 +3515,14 @@ namespace ToolWear{
             //更改現在的條目
             //查詢當前頁面要修改的項次是從幾號開始
             int count = 0;
-            for(int i = 0; i < tem_read.Count; i++){
+            for (int i = 0; i < tem_read.Count; i++) {
                 //查詢是不是此軸向的資料
-                if (int.Parse(tem_read[i].Split(',')[0]) == now_Compensate){
+                if (int.Parse(tem_read[i].Split(',')[0]) == now_Compensate) {
                     //判斷是否已查詢到要修改的項次資料
-                    if (count + tb_Compensate_Select > (int.Parse(lb_Compensate_page.Text) - 1) * tb_Compensate.Length){
-                        if (count % tb_Compensate.Length == tb_Compensate_Select - 1){
+                    if (count + tb_Compensate_Select > (int.Parse(lb_Compensate_page.Text) - 1) * tb_Compensate.Length) {
+                        if (count % tb_Compensate.Length == tb_Compensate_Select - 1) {
                             //判斷是否位於移除模式
-                            if(remove == false)
+                            if (remove == false)
                                 tem_read[i] = (int.Parse(pre_Compensate.Name.Split('_')[2]) - 1).ToString() + "," +
                                         numeric_Temperature.Value + "," + numeric_Compensate.Value;
                             else
@@ -3537,7 +3535,7 @@ namespace ToolWear{
                     else
                         count++;    //表示還沒查到該頁次，將計數器+1
                 }
-                    
+
             }
             //tem_read[now_Compensate] = s;
             StreamWriter sw_set = new StreamWriter(path + @"\data\compensate.cp");
@@ -3556,7 +3554,7 @@ namespace ToolWear{
         int now_ATCSetting = 0;
         //上一個點到的button
         Button pre_ATCSetting = null;
-        private void btn_ATCSetting_Choose(object sender, EventArgs e){
+        private void btn_ATCSetting_Choose(object sender, EventArgs e) {
             Button btn = (Button)sender;
             //將上一個點到的button文字顏色改回白色
             if (pre_ATCSetting != null)
@@ -3569,52 +3567,52 @@ namespace ToolWear{
             string ID = btn.Name.Split('_')[2];
             now_ATCSetting = int.Parse(ID) - 1;
             StreamReader sr_ATC = new StreamReader(path + @"\data\ATC.cp");
-            try{
-                for (int i = 0; i < int.Parse(ID); i++){
+            try {
+                for (int i = 0; i < int.Parse(ID); i++) {
                     //初始化輸入框
                     tb_ATCsetting_Name.Text = "";
                     numeric_ATCsetting_Blade.Value = 4;
                     //ex. tem = "1,test,6" or tem = "2,,"
                     string tem = sr_ATC.ReadLine();
-                    if (i == int.Parse(ID) - 1){
+                    if (i == int.Parse(ID) - 1) {
                         tb_ATCsetting_Name.Text = tem.Split(',')[1];
                         numeric_ATCsetting_Blade.Value = decimal.Parse(tem.Split(',')[2]);
                     }
                 }
             }
-            catch{
+            catch {
             }
             sr_ATC.Close();
             sr_ATC.Dispose();
         }
         //刀庫設定 > 存檔
-        private void btn_ATCsetting_save_Click(object sender, EventArgs e){
+        private void btn_ATCsetting_save_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("確定儲存？", "存檔訊息", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Cancel) return;
             string tem = pre_ATCSetting.Text + "," + tb_ATCsetting_Name.Text + "," + numeric_ATCsetting_Blade.Value;
-            try{
+            try {
                 RW_TCsetting(tem);
                 MessageBox.Show("刀具名稱與刃數存檔成功！", "儲存成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("發生不可測意外。\n\nbtn_ATCsetting_save_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //刀庫設定 > 刪除
-        private void btn_ATCsetting_delete_Click(object sender, EventArgs e){
+        private void btn_ATCsetting_delete_Click(object sender, EventArgs e) {
             DialogResult dialogResult = MessageBox.Show("確定要刪除此刀具之設定資料嗎？", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Cancel) return;
             string tem = ((Button)pre_ATCSetting).Text + ",,";
-            try{
+            try {
                 RW_TCsetting(tem);
                 MessageBox.Show("刀具名稱與刃數刪除成功！", "刪除成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("發生不可測意外。\n\nbtn_ATCsetting_delete_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //刀庫設定 > 讀檔+寫檔
-        private void RW_TCsetting(string s){
+        private void RW_TCsetting(string s) {
             StreamReader sr_set = new StreamReader(path + @"\data\ATC.cp");
             List<string> tem_read = new List<string>();
             while (!sr_set.EndOfStream) tem_read.Add(sr_set.ReadLine());
@@ -3635,23 +3633,23 @@ namespace ToolWear{
         #endregion
         #region 下拉選單事件
         //選擇加速規
-        private void cb_ToolWearSetting_accelerometer_SelectedIndexChanged(object sender, EventArgs e){
+        private void cb_ToolWearSetting_accelerometer_SelectedIndexChanged(object sender, EventArgs e) {
             cb_ToolWearSetting_Axial.Items.Clear();
             if (cb_ToolWearSetting_accelerometer.SelectedIndex == 0)
                 cb_ToolWearSetting_Axial.Items.Add("未選擇");
             if (cb_ToolWearSetting_accelerometer.SelectedIndex == 1)
                 cb_ToolWearSetting_Axial.Items.Add("單向");
-            else if (cb_ToolWearSetting_accelerometer.SelectedIndex == 2){
+            else if (cb_ToolWearSetting_accelerometer.SelectedIndex == 2) {
                 cb_ToolWearSetting_Axial.Items.Add("X軸");
                 cb_ToolWearSetting_Axial.Items.Add("Y軸");
                 cb_ToolWearSetting_Axial.Items.Add("Z軸");
             }
         }
         //主選單 > 設定 > 選擇CNC廠牌
-        private void cb_setting_brand_SelectedIndexChanged(object sender, EventArgs e){
+        private void cb_setting_brand_SelectedIndexChanged(object sender, EventArgs e) {
             cb_setting_model.Items.Clear();
             cb_setting_model.Items.Add("選擇型號");
-            switch (cb_setting_brand.Text){
+            switch (cb_setting_brand.Text) {
                 case "Mitsubishi":
                     cb_setting_model.Items.Add("M800");
                     break;
@@ -3668,10 +3666,10 @@ namespace ToolWear{
         #region 文字變更事件
         //暫存刀號
         int ATC_num = 0;
-        private void lb_ToolWear_Tool_TextChanged(object sender, EventArgs e){
-            try{
+        private void lb_ToolWear_Tool_TextChanged(object sender, EventArgs e) {
+            try {
                 ATC_num = int.Parse(((Label)sender).Text);
-                if (ATC_num > 20){
+                if (ATC_num > 20) {
                     ATC_num = 0;
                     ((Label)sender).Text = "預設";
                     lb_ToolWear_Blade.Text = "4";
@@ -3682,9 +3680,9 @@ namespace ToolWear{
                 //會進到catch表示Text資料過大或有誤，直接return
                 return;
             }
-            try{
+            try {
                 StreamReader sr = new StreamReader(path + @"\data\ATC.cp");
-                for (int i = 0; i < ATC_num; i++){
+                for (int i = 0; i < ATC_num; i++) {
                     string tem = sr.ReadLine();
                     if (i != ATC_num - 1) continue;
                     ((Label)sender).Text = tem.Split(',')[1];
@@ -3693,27 +3691,27 @@ namespace ToolWear{
                 sr.Close();
                 sr.Dispose();
             }
-            catch(Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("讀取刀庫設定檔時發生錯誤。\n\nError code : \n" + ex.ToString());
             }
         }
-        private void lb_Learn_Tool_TextChanged(object sender, EventArgs e){
-            try{
+        private void lb_Learn_Tool_TextChanged(object sender, EventArgs e) {
+            try {
                 ATC_num = int.Parse(((Label)sender).Text);
-                if (ATC_num > 20){
+                if (ATC_num > 20) {
                     ((Label)sender).Text = "預設";
                     lb_Learn_Blade.Text = "4";
                     return;
                 }
             }
-            catch{
+            catch {
                 //會進到catch表示Text資料過大或有誤，直接return
                 return;
             }
-            try{
+            try {
                 int ATC_num = int.Parse(((Label)sender).Text);
                 StreamReader sr = new StreamReader(path + @"\data\ATC.cp");
-                for (int i = 0; i < ATC_num; i++){
+                for (int i = 0; i < ATC_num; i++) {
                     string tem = sr.ReadLine();
                     if (i != ATC_num - 1) continue;
                     ((Label)sender).Text = tem.Split(',')[1];
@@ -3722,69 +3720,86 @@ namespace ToolWear{
                 sr.Close();
                 sr.Dispose();
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 MessageBox.Show("讀取刀庫設定檔時發生錯誤。\n\nError code : \n" + ex.ToString());
             }
         }
         #endregion
         #endregion
         #region Timer事件
-        private void timer_temperature_Tick(object sender, EventArgs e){
+        private void timer_temperature_Tick(object sender, EventArgs e) {
             Thread TD_FakeData = new Thread(Thermal_FakeData);
             TD_FakeData.Start();
         }
 
-        private void timer_LNC_Tick(object sender, EventArgs e){
+        private void timer_LNC_Tick(object sender, EventArgs e) {
             LNC_GetData();
         }
-        private void timer_Current_Tick(object sender,EventArgs e){
+        private void timer_Current_Tick(object sender, EventArgs e) {
             //Current_Getdata("33");
             Current_Getdata_Schneider("1");
         }
-        //刀具磨耗預測
-        private void timer_prediction_Tick(object sender, EventArgs e){
-            PB_prediction.Value++;
-            PB_prediction.Visible = true;
-            if (Prediction_Now.Equals("ML")){
-                //讀取結果txt
-                List<string> Read_List = new List<string>();
-                StreamReader sr = new StreamReader(path + @"data\Prediction\SE_ML_R.txt");
-                string time = sr.ReadLine();    //暫存時間(2019-05-15_12_59)
-                if (!time.Equals(DateTime.Now.ToString("yyyy-MM-dd_HH_mm"))) return;    //表示背景程式還沒跑完
-                while (!sr.EndOfStream) Read_List.Add(sr.ReadLine());
+        //機器學習
+        private void timer_prediction_ML_Tick(object sender, EventArgs e){
+            if (PB_prediction_ML.Value != PB_prediction_ML.Maximum) PB_prediction_ML.Value++;
+            PB_prediction_ML.Visible = true;
+            //讀取結果txt
+            List<string> Read_List = new List<string>();
+            StreamReader sr = new StreamReader(path + @"SE_ML_R.txt");
+            string time = sr.ReadLine();    //暫存時間(2019-05-15_12_59)
+            if (!time.Equals(DateTime.Now.ToString("yyyy-MM-dd_HH_mm"))){
                 sr.Close();
                 sr.Dispose();
+                return;    //表示背景程式還沒跑完
+            }
 
-                //將結果放到TextBox
-                TextBox[] tb_prediction = new TextBox[8] { tb_prediction_Result,tb_prediction_ToolStatus,tb_prediction_Xmax,
+            while (!sr.EndOfStream) Read_List.Add(sr.ReadLine());
+            sr.Close();
+            sr.Dispose();
+
+            //將結果放到TextBox
+            TextBox[] tb_prediction = new TextBox[8] { tb_prediction_Result,tb_prediction_ToolStatus,tb_prediction_Xmax,
                         tb_prediction_Ymax,tb_prediction_Zmax,tb_prediction_Xmin,tb_prediction_Ymin,tb_prediction_Zmin};
-                for (int i = 0; i < tb_prediction.Length; i++)
-                    tb_prediction[i].Text = Read_List[i];
-                
-                btn_prediction_start.Enabled = true;
-                btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
-                btn_prediction_stop.Enabled = false;
-                btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+            for (int i = 0; i < tb_prediction.Length; i++)
+                tb_prediction[i].Text = Read_List[i];
 
-                cb_prediction_ModelName.Enabled = true;
-            }
-            else if (Prediction_Now.Equals("SL")){
-                //讀取結果txt
-                StreamReader sr = new StreamReader(path + @"data\Prediction\SE_SL_R.txt");
-                string time = sr.ReadLine();    //暫存時間(2019-05-15_12_59)
-                if (!time.Equals(DateTime.Now.ToString("yyyy-MM-dd_HH_mm"))) return;
-                string tem_s = sr.ReadLine();
-                sr.Close();
-                sr.Dispose();
+            btn_prediction_start.Enabled = true;
+            btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+            btn_prediction_stop.Enabled = false;
+            btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
 
-                //將結果放到TextBox
-                tb_prediction_Accuracy.Text = tem_s;
-            }
+            cb_prediction_ModelName.Enabled = true;
+
 
             //執行結束
-            timer_prediction.Enabled = false;
-            PB_prediction.Value = 100;
+            timer_prediction_ML.Enabled = false;
+            PB_prediction_ML.Value = 100;
         }
+        //自我學習
+        private void timer_prediction_SL_Tick(object sender, EventArgs e){
+            if (PB_prediction_SL.Value != PB_prediction_SL.Maximum) PB_prediction_SL.Value++;
+            PB_prediction_SL.Visible = true;
+            //讀取結果txt
+            StreamReader sr = new StreamReader(path + @"SE_SL_R.txt");
+            string time = sr.ReadLine();    //暫存時間(2019-05-15_12_59)
+            if (!time.Equals(DateTime.Now.ToString("yyyy-MM-dd_HH_mm"))){
+                sr.Close();
+                sr.Dispose();
+                return;
+            }
+
+            string tem_s = sr.ReadLine();
+            sr.Close();
+            sr.Dispose();
+
+            //將結果放到TextBox
+            tb_prediction_Accuracy.Text = tem_s;
+
+            //執行結束
+            timer_prediction_SL.Enabled = false;
+            PB_prediction_SL.Value = 100;
+        }
+
         //暫存上次讀取的RPM數據
         double LastReload_RPM = 0;
         private void timer_CNC_Tick(object sender,EventArgs e){

@@ -64,20 +64,20 @@
             System.Windows.Forms.DataVisualization.Charting.Series series105 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series106 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series107 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series108 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea33 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend33 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series108 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series109 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series110 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea34 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend34 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series111 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series112 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea34 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend34 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series113 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series114 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series115 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea35 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend35 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series115 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series116 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series117 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series118 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -257,10 +257,10 @@
             this.btn_ToolWear_Setting = new System.Windows.Forms.Button();
             this.btn_ToolWear_Stop = new System.Windows.Forms.Button();
             this.btn_ToolWear_Start = new System.Windows.Forms.Button();
-            this.chart_Current = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart_Blade = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_FFT = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_ToolWear = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_Current = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_Blade = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel_Home = new System.Windows.Forms.Panel();
             this.btn_shutdown = new System.Windows.Forms.Button();
             this.btn_ChangeMode3 = new System.Windows.Forms.Button();
@@ -727,10 +727,10 @@
             this.btn_prediction_start = new System.Windows.Forms.Button();
             this.btn_prediction_back = new System.Windows.Forms.Button();
             this.label87 = new System.Windows.Forms.Label();
-            this.PB_prediction = new System.Windows.Forms.ProgressBar();
+            this.PB_prediction_ML = new System.Windows.Forms.ProgressBar();
             this.lb_prediction_status = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
-            this.timer_prediction = new System.Windows.Forms.Timer(this.components);
+            this.timer_prediction_ML = new System.Windows.Forms.Timer(this.components);
             this.panel_AccCur = new System.Windows.Forms.Panel();
             this.btn_AccCur_back = new System.Windows.Forms.Button();
             this.btn_AccCur_setting = new System.Windows.Forms.Button();
@@ -767,12 +767,14 @@
             this.btn_AccCur_setting_back = new System.Windows.Forms.Button();
             this.label107 = new System.Windows.Forms.Label();
             this.panel_AE = new System.Windows.Forms.Panel();
-            this.label114 = new System.Windows.Forms.Label();
-            this.btn_AE_back = new System.Windows.Forms.Button();
-            this.label115 = new System.Windows.Forms.Label();
-            this.chart_AE = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btn_AE_stop = new System.Windows.Forms.Button();
             this.btn_AE_start = new System.Windows.Forms.Button();
+            this.chart_AE = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label115 = new System.Windows.Forms.Label();
+            this.btn_AE_back = new System.Windows.Forms.Button();
+            this.label114 = new System.Windows.Forms.Label();
+            this.PB_prediction_SL = new System.Windows.Forms.ProgressBar();
+            this.timer_prediction_SL = new System.Windows.Forms.Timer(this.components);
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -784,10 +786,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_ToolWear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_warring_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_warring_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_Current)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_Blade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_FFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ToolWear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_Current)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_Blade)).BeginInit();
             this.panel_Home.SuspendLayout();
             this.panel_Threshold.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -2079,10 +2081,10 @@
             this.btn_ToolWear_Start.UseVisualStyleBackColor = false;
             this.btn_ToolWear_Start.Click += new System.EventHandler(this.btn_ToolWear_Start_Click);
             // 
-            // chart_Current
+            // chart_FFT
             // 
-            this.chart_Current.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            this.chart_Current.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chart_FFT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            this.chart_FFT.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             chartArea32.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
             chartArea32.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
             chartArea32.AxisX.LineColor = System.Drawing.Color.White;
@@ -2110,23 +2112,21 @@
             chartArea32.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
             chartArea32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             chartArea32.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea32.CursorX.IsUserEnabled = true;
-            chartArea32.CursorX.IsUserSelectionEnabled = true;
             chartArea32.Name = "ChartArea1";
-            this.chart_Current.ChartAreas.Add(chartArea32);
-            this.chart_Current.Cursor = System.Windows.Forms.Cursors.Default;
+            this.chart_FFT.ChartAreas.Add(chartArea32);
+            this.chart_FFT.Cursor = System.Windows.Forms.Cursors.Default;
             legend32.HeaderSeparatorColor = System.Drawing.Color.White;
             legend32.ItemColumnSeparatorColor = System.Drawing.Color.White;
             legend32.Name = "Legend1";
-            this.chart_Current.Legends.Add(legend32);
-            resources.ApplyResources(this.chart_Current, "chart_Current");
-            this.chart_Current.Name = "chart_Current";
+            this.chart_FFT.Legends.Add(legend32);
+            resources.ApplyResources(this.chart_FFT, "chart_FFT");
+            this.chart_FFT.Name = "chart_FFT";
             series105.BorderWidth = 2;
             series105.ChartArea = "ChartArea1";
             series105.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series105.Color = System.Drawing.Color.Yellow;
+            series105.Color = System.Drawing.Color.LightCoral;
             series105.Legend = "Legend1";
-            series105.Name = "Series1";
+            series105.Name = "Series4";
             series106.BorderWidth = 0;
             series106.ChartArea = "ChartArea1";
             series106.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -2137,14 +2137,21 @@
             series107.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series107.Legend = "Legend1";
             series107.Name = "Series3";
-            this.chart_Current.Series.Add(series105);
-            this.chart_Current.Series.Add(series106);
-            this.chart_Current.Series.Add(series107);
+            series108.BorderWidth = 2;
+            series108.ChartArea = "ChartArea1";
+            series108.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series108.Color = System.Drawing.Color.Aqua;
+            series108.Legend = "Legend1";
+            series108.Name = "Series1";
+            this.chart_FFT.Series.Add(series105);
+            this.chart_FFT.Series.Add(series106);
+            this.chart_FFT.Series.Add(series107);
+            this.chart_FFT.Series.Add(series108);
             // 
-            // chart_Blade
+            // chart_ToolWear
             // 
-            this.chart_Blade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            this.chart_Blade.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chart_ToolWear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            this.chart_ToolWear.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             chartArea33.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
             chartArea33.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
             chartArea33.AxisX.LineColor = System.Drawing.Color.White;
@@ -2172,41 +2179,45 @@
             chartArea33.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
             chartArea33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             chartArea33.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            chartArea33.CursorX.IsUserEnabled = true;
-            chartArea33.CursorX.IsUserSelectionEnabled = true;
             chartArea33.Name = "ChartArea1";
-            this.chart_Blade.ChartAreas.Add(chartArea33);
-            this.chart_Blade.Cursor = System.Windows.Forms.Cursors.Default;
+            this.chart_ToolWear.ChartAreas.Add(chartArea33);
             legend33.HeaderSeparatorColor = System.Drawing.Color.White;
             legend33.ItemColumnSeparatorColor = System.Drawing.Color.White;
             legend33.Name = "Legend1";
-            this.chart_Blade.Legends.Add(legend33);
-            resources.ApplyResources(this.chart_Blade, "chart_Blade");
-            this.chart_Blade.Name = "chart_Blade";
-            series108.BorderWidth = 2;
-            series108.ChartArea = "ChartArea1";
-            series108.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series108.Color = System.Drawing.Color.MediumSpringGreen;
-            series108.Legend = "Legend1";
-            series108.Name = "Series1";
-            series109.BorderWidth = 0;
+            this.chart_ToolWear.Legends.Add(legend33);
+            resources.ApplyResources(this.chart_ToolWear, "chart_ToolWear");
+            this.chart_ToolWear.Name = "chart_ToolWear";
+            series109.BorderWidth = 2;
             series109.ChartArea = "ChartArea1";
             series109.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series109.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             series109.Legend = "Legend1";
-            series109.Name = "Series2";
+            series109.Name = "Series1";
             series110.BorderWidth = 0;
             series110.ChartArea = "ChartArea1";
             series110.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series110.Legend = "Legend1";
-            series110.Name = "Series3";
-            this.chart_Blade.Series.Add(series108);
-            this.chart_Blade.Series.Add(series109);
-            this.chart_Blade.Series.Add(series110);
+            series110.Name = "Series2";
+            series111.BorderWidth = 0;
+            series111.ChartArea = "ChartArea1";
+            series111.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series111.Legend = "Legend1";
+            series111.Name = "Series3";
+            series112.BorderWidth = 2;
+            series112.ChartArea = "ChartArea1";
+            series112.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series112.Color = System.Drawing.Color.Lime;
+            series112.Legend = "Legend1";
+            series112.Name = "Series4";
+            this.chart_ToolWear.Series.Add(series109);
+            this.chart_ToolWear.Series.Add(series110);
+            this.chart_ToolWear.Series.Add(series111);
+            this.chart_ToolWear.Series.Add(series112);
             // 
-            // chart_FFT
+            // chart_Current
             // 
-            this.chart_FFT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            this.chart_FFT.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chart_Current.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            this.chart_Current.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             chartArea34.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
             chartArea34.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
             chartArea34.AxisX.LineColor = System.Drawing.Color.White;
@@ -2234,46 +2245,41 @@
             chartArea34.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
             chartArea34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             chartArea34.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea34.CursorX.IsUserEnabled = true;
+            chartArea34.CursorX.IsUserSelectionEnabled = true;
             chartArea34.Name = "ChartArea1";
-            this.chart_FFT.ChartAreas.Add(chartArea34);
-            this.chart_FFT.Cursor = System.Windows.Forms.Cursors.Default;
+            this.chart_Current.ChartAreas.Add(chartArea34);
+            this.chart_Current.Cursor = System.Windows.Forms.Cursors.Default;
             legend34.HeaderSeparatorColor = System.Drawing.Color.White;
             legend34.ItemColumnSeparatorColor = System.Drawing.Color.White;
             legend34.Name = "Legend1";
-            this.chart_FFT.Legends.Add(legend34);
-            resources.ApplyResources(this.chart_FFT, "chart_FFT");
-            this.chart_FFT.Name = "chart_FFT";
-            series111.BorderWidth = 2;
-            series111.ChartArea = "ChartArea1";
-            series111.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
-            series111.Color = System.Drawing.Color.LightCoral;
-            series111.Legend = "Legend1";
-            series111.Name = "Series4";
-            series112.BorderWidth = 0;
-            series112.ChartArea = "ChartArea1";
-            series112.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series112.Legend = "Legend1";
-            series112.Name = "Series2";
-            series113.BorderWidth = 0;
+            this.chart_Current.Legends.Add(legend34);
+            resources.ApplyResources(this.chart_Current, "chart_Current");
+            this.chart_Current.Name = "chart_Current";
+            series113.BorderWidth = 2;
             series113.ChartArea = "ChartArea1";
-            series113.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series113.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series113.Color = System.Drawing.Color.Yellow;
             series113.Legend = "Legend1";
-            series113.Name = "Series3";
-            series114.BorderWidth = 2;
+            series113.Name = "Series1";
+            series114.BorderWidth = 0;
             series114.ChartArea = "ChartArea1";
             series114.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series114.Color = System.Drawing.Color.Aqua;
             series114.Legend = "Legend1";
-            series114.Name = "Series1";
-            this.chart_FFT.Series.Add(series111);
-            this.chart_FFT.Series.Add(series112);
-            this.chart_FFT.Series.Add(series113);
-            this.chart_FFT.Series.Add(series114);
+            series114.Name = "Series2";
+            series115.BorderWidth = 0;
+            series115.ChartArea = "ChartArea1";
+            series115.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series115.Legend = "Legend1";
+            series115.Name = "Series3";
+            this.chart_Current.Series.Add(series113);
+            this.chart_Current.Series.Add(series114);
+            this.chart_Current.Series.Add(series115);
             // 
-            // chart_ToolWear
+            // chart_Blade
             // 
-            this.chart_ToolWear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
-            this.chart_ToolWear.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chart_Blade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            this.chart_Blade.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             chartArea35.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
             chartArea35.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
             chartArea35.AxisX.LineColor = System.Drawing.Color.White;
@@ -2301,40 +2307,36 @@
             chartArea35.AxisY2.ScrollBar.ButtonColor = System.Drawing.Color.White;
             chartArea35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             chartArea35.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea35.CursorX.IsUserEnabled = true;
+            chartArea35.CursorX.IsUserSelectionEnabled = true;
             chartArea35.Name = "ChartArea1";
-            this.chart_ToolWear.ChartAreas.Add(chartArea35);
+            this.chart_Blade.ChartAreas.Add(chartArea35);
+            this.chart_Blade.Cursor = System.Windows.Forms.Cursors.Default;
             legend35.HeaderSeparatorColor = System.Drawing.Color.White;
             legend35.ItemColumnSeparatorColor = System.Drawing.Color.White;
             legend35.Name = "Legend1";
-            this.chart_ToolWear.Legends.Add(legend35);
-            resources.ApplyResources(this.chart_ToolWear, "chart_ToolWear");
-            this.chart_ToolWear.Name = "chart_ToolWear";
-            series115.BorderWidth = 2;
-            series115.ChartArea = "ChartArea1";
-            series115.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series115.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            series115.Legend = "Legend1";
-            series115.Name = "Series1";
-            series116.BorderWidth = 0;
+            this.chart_Blade.Legends.Add(legend35);
+            resources.ApplyResources(this.chart_Blade, "chart_Blade");
+            this.chart_Blade.Name = "chart_Blade";
+            series116.BorderWidth = 2;
             series116.ChartArea = "ChartArea1";
-            series116.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series116.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
+            series116.Color = System.Drawing.Color.MediumSpringGreen;
             series116.Legend = "Legend1";
-            series116.Name = "Series2";
+            series116.Name = "Series1";
             series117.BorderWidth = 0;
             series117.ChartArea = "ChartArea1";
-            series117.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series117.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series117.Legend = "Legend1";
-            series117.Name = "Series3";
-            series118.BorderWidth = 2;
+            series117.Name = "Series2";
+            series118.BorderWidth = 0;
             series118.ChartArea = "ChartArea1";
             series118.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series118.Color = System.Drawing.Color.Lime;
             series118.Legend = "Legend1";
-            series118.Name = "Series4";
-            this.chart_ToolWear.Series.Add(series115);
-            this.chart_ToolWear.Series.Add(series116);
-            this.chart_ToolWear.Series.Add(series117);
-            this.chart_ToolWear.Series.Add(series118);
+            series118.Name = "Series3";
+            this.chart_Blade.Series.Add(series116);
+            this.chart_Blade.Series.Add(series117);
+            this.chart_Blade.Series.Add(series118);
             // 
             // panel_Home
             // 
@@ -7068,9 +7070,10 @@
             this.panel_prediction.Controls.Add(this.btn_prediction_start);
             this.panel_prediction.Controls.Add(this.btn_prediction_back);
             this.panel_prediction.Controls.Add(this.label87);
-            this.panel_prediction.Controls.Add(this.PB_prediction);
+            this.panel_prediction.Controls.Add(this.PB_prediction_ML);
             this.panel_prediction.Controls.Add(this.lb_prediction_status);
             this.panel_prediction.Controls.Add(this.label97);
+            this.panel_prediction.Controls.Add(this.PB_prediction_SL);
             resources.ApplyResources(this.panel_prediction, "panel_prediction");
             this.panel_prediction.Name = "panel_prediction";
             // 
@@ -7510,10 +7513,10 @@
             this.label87.ForeColor = System.Drawing.Color.White;
             this.label87.Name = "label87";
             // 
-            // PB_prediction
+            // PB_prediction_ML
             // 
-            resources.ApplyResources(this.PB_prediction, "PB_prediction");
-            this.PB_prediction.Name = "PB_prediction";
+            resources.ApplyResources(this.PB_prediction_ML, "PB_prediction_ML");
+            this.PB_prediction_ML.Name = "PB_prediction_ML";
             // 
             // lb_prediction_status
             // 
@@ -7529,10 +7532,10 @@
             this.label97.ForeColor = System.Drawing.Color.White;
             this.label97.Name = "label97";
             // 
-            // timer_prediction
+            // timer_prediction_ML
             // 
-            this.timer_prediction.Interval = 1000;
-            this.timer_prediction.Tick += new System.EventHandler(this.timer_prediction_Tick);
+            this.timer_prediction_ML.Interval = 1000;
+            this.timer_prediction_ML.Tick += new System.EventHandler(this.timer_prediction_ML_Tick);
             // 
             // panel_AccCur
             // 
@@ -8047,29 +8050,25 @@
             resources.ApplyResources(this.panel_AE, "panel_AE");
             this.panel_AE.Name = "panel_AE";
             // 
-            // label114
+            // btn_AE_stop
             // 
-            resources.ApplyResources(this.label114, "label114");
-            this.label114.BackColor = System.Drawing.Color.Transparent;
-            this.label114.ForeColor = System.Drawing.Color.White;
-            this.label114.Name = "label114";
+            this.btn_AE_stop.BackColor = System.Drawing.Color.White;
+            this.btn_AE_stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
+            resources.ApplyResources(this.btn_AE_stop, "btn_AE_stop");
+            this.btn_AE_stop.FlatAppearance.BorderSize = 0;
+            this.btn_AE_stop.Name = "btn_AE_stop";
+            this.btn_AE_stop.UseVisualStyleBackColor = false;
+            this.btn_AE_stop.Click += new System.EventHandler(this.btn_AE_stop_Click);
             // 
-            // btn_AE_back
+            // btn_AE_start
             // 
-            this.btn_AE_back.BackColor = System.Drawing.Color.White;
-            this.btn_AE_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_AE_back, "btn_AE_back");
-            this.btn_AE_back.FlatAppearance.BorderSize = 0;
-            this.btn_AE_back.Name = "btn_AE_back";
-            this.btn_AE_back.UseVisualStyleBackColor = false;
-            this.btn_AE_back.Click += new System.EventHandler(this.btn_AE_back_Click);
-            // 
-            // label115
-            // 
-            resources.ApplyResources(this.label115, "label115");
-            this.label115.BackColor = System.Drawing.Color.Transparent;
-            this.label115.ForeColor = System.Drawing.Color.White;
-            this.label115.Name = "label115";
+            this.btn_AE_start.BackColor = System.Drawing.Color.White;
+            this.btn_AE_start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
+            resources.ApplyResources(this.btn_AE_start, "btn_AE_start");
+            this.btn_AE_start.FlatAppearance.BorderSize = 0;
+            this.btn_AE_start.Name = "btn_AE_start";
+            this.btn_AE_start.UseVisualStyleBackColor = false;
+            this.btn_AE_start.Click += new System.EventHandler(this.btn_AE_start_Click);
             // 
             // chart_AE
             // 
@@ -8128,25 +8127,39 @@
             this.chart_AE.Series.Add(series165);
             this.chart_AE.Series.Add(series166);
             // 
-            // btn_AE_stop
+            // label115
             // 
-            this.btn_AE_stop.BackColor = System.Drawing.Color.White;
-            this.btn_AE_stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
-            resources.ApplyResources(this.btn_AE_stop, "btn_AE_stop");
-            this.btn_AE_stop.FlatAppearance.BorderSize = 0;
-            this.btn_AE_stop.Name = "btn_AE_stop";
-            this.btn_AE_stop.UseVisualStyleBackColor = false;
-            this.btn_AE_stop.Click += new System.EventHandler(this.btn_AE_stop_Click);
+            resources.ApplyResources(this.label115, "label115");
+            this.label115.BackColor = System.Drawing.Color.Transparent;
+            this.label115.ForeColor = System.Drawing.Color.White;
+            this.label115.Name = "label115";
             // 
-            // btn_AE_start
+            // btn_AE_back
             // 
-            this.btn_AE_start.BackColor = System.Drawing.Color.White;
-            this.btn_AE_start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
-            resources.ApplyResources(this.btn_AE_start, "btn_AE_start");
-            this.btn_AE_start.FlatAppearance.BorderSize = 0;
-            this.btn_AE_start.Name = "btn_AE_start";
-            this.btn_AE_start.UseVisualStyleBackColor = false;
-            this.btn_AE_start.Click += new System.EventHandler(this.btn_AE_start_Click);
+            this.btn_AE_back.BackColor = System.Drawing.Color.White;
+            this.btn_AE_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_AE_back, "btn_AE_back");
+            this.btn_AE_back.FlatAppearance.BorderSize = 0;
+            this.btn_AE_back.Name = "btn_AE_back";
+            this.btn_AE_back.UseVisualStyleBackColor = false;
+            this.btn_AE_back.Click += new System.EventHandler(this.btn_AE_back_Click);
+            // 
+            // label114
+            // 
+            resources.ApplyResources(this.label114, "label114");
+            this.label114.BackColor = System.Drawing.Color.Transparent;
+            this.label114.ForeColor = System.Drawing.Color.White;
+            this.label114.Name = "label114";
+            // 
+            // PB_prediction_SL
+            // 
+            resources.ApplyResources(this.PB_prediction_SL, "PB_prediction_SL");
+            this.PB_prediction_SL.Name = "PB_prediction_SL";
+            // 
+            // timer_prediction_SL
+            // 
+            this.timer_prediction_SL.Interval = 1000;
+            this.timer_prediction_SL.Tick += new System.EventHandler(this.timer_prediction_SL_Tick);
             // 
             // Form1
             // 
@@ -8154,10 +8167,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
             this.ControlBox = false;
+            this.Controls.Add(this.panel_prediction);
             this.Controls.Add(this.panel_AccCur_setting);
             this.Controls.Add(this.panel_AE);
             this.Controls.Add(this.panel_AccCur);
-            this.Controls.Add(this.panel_prediction);
             this.Controls.Add(this.panel_AlarmSetting);
             this.Controls.Add(this.panel_setting);
             this.Controls.Add(this.panel_Learn);
@@ -8197,10 +8210,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_ToolWear)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_warring_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_warring_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_Current)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_Blade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_FFT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ToolWear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_Current)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_Blade)).EndInit();
             this.panel_Home.ResumeLayout(false);
             this.panel_Threshold.ResumeLayout(false);
             this.panel_Threshold.PerformLayout();
@@ -8895,8 +8908,8 @@
         private System.Windows.Forms.Label label97;
         private System.Windows.Forms.ComboBox cb_prediction_ModelName;
         private System.Windows.Forms.Button btn_prediction_self;
-        private System.Windows.Forms.Timer timer_prediction;
-        private System.Windows.Forms.ProgressBar PB_prediction;
+        private System.Windows.Forms.Timer timer_prediction_ML;
+        private System.Windows.Forms.ProgressBar PB_prediction_ML;
         private System.Windows.Forms.Panel panel_AccCur;
         private System.Windows.Forms.Label label102;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_AccCur_Current;
@@ -8939,6 +8952,8 @@
         private System.Windows.Forms.Label label115;
         private System.Windows.Forms.Button btn_AE_stop;
         private System.Windows.Forms.Button btn_AE_start;
+        private System.Windows.Forms.ProgressBar PB_prediction_SL;
+        private System.Windows.Forms.Timer timer_prediction_SL;
     }
 }
 
