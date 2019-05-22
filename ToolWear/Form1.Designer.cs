@@ -691,6 +691,10 @@
             this.label80 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.panel_prediction = new System.Windows.Forms.Panel();
+            this.cb_prediction_TrainTime = new System.Windows.Forms.ComboBox();
+            this.label118 = new System.Windows.Forms.Label();
+            this.label117 = new System.Windows.Forms.Label();
+            this.lb_prediction_TrainMode = new System.Windows.Forms.Label();
             this.btn_prediction_self = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.tb_prediction_Zmin = new System.Windows.Forms.TextBox();
@@ -730,6 +734,8 @@
             this.PB_prediction_ML = new System.Windows.Forms.ProgressBar();
             this.lb_prediction_status = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
+            this.PB_prediction_SL = new System.Windows.Forms.ProgressBar();
+            this.label116 = new System.Windows.Forms.Label();
             this.timer_prediction_ML = new System.Windows.Forms.Timer(this.components);
             this.panel_AccCur = new System.Windows.Forms.Panel();
             this.btn_AccCur_back = new System.Windows.Forms.Button();
@@ -773,8 +779,8 @@
             this.label115 = new System.Windows.Forms.Label();
             this.btn_AE_back = new System.Windows.Forms.Button();
             this.label114 = new System.Windows.Forms.Label();
-            this.PB_prediction_SL = new System.Windows.Forms.ProgressBar();
             this.timer_prediction_SL = new System.Windows.Forms.Timer(this.components);
+            this.timer_prediction = new System.Windows.Forms.Timer(this.components);
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -7060,6 +7066,10 @@
             // panel_prediction
             // 
             this.panel_prediction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
+            this.panel_prediction.Controls.Add(this.cb_prediction_TrainTime);
+            this.panel_prediction.Controls.Add(this.label118);
+            this.panel_prediction.Controls.Add(this.label117);
+            this.panel_prediction.Controls.Add(this.lb_prediction_TrainMode);
             this.panel_prediction.Controls.Add(this.btn_prediction_self);
             this.panel_prediction.Controls.Add(this.panel15);
             this.panel_prediction.Controls.Add(this.panel14);
@@ -7074,8 +7084,48 @@
             this.panel_prediction.Controls.Add(this.lb_prediction_status);
             this.panel_prediction.Controls.Add(this.label97);
             this.panel_prediction.Controls.Add(this.PB_prediction_SL);
+            this.panel_prediction.Controls.Add(this.label116);
             resources.ApplyResources(this.panel_prediction, "panel_prediction");
             this.panel_prediction.Name = "panel_prediction";
+            // 
+            // cb_prediction_TrainTime
+            // 
+            this.cb_prediction_TrainTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cb_prediction_TrainTime, "cb_prediction_TrainTime");
+            this.cb_prediction_TrainTime.Items.AddRange(new object[] {
+            resources.GetString("cb_prediction_TrainTime.Items"),
+            resources.GetString("cb_prediction_TrainTime.Items1"),
+            resources.GetString("cb_prediction_TrainTime.Items2"),
+            resources.GetString("cb_prediction_TrainTime.Items3"),
+            resources.GetString("cb_prediction_TrainTime.Items4"),
+            resources.GetString("cb_prediction_TrainTime.Items5"),
+            resources.GetString("cb_prediction_TrainTime.Items6"),
+            resources.GetString("cb_prediction_TrainTime.Items7"),
+            resources.GetString("cb_prediction_TrainTime.Items8"),
+            resources.GetString("cb_prediction_TrainTime.Items9")});
+            this.cb_prediction_TrainTime.Name = "cb_prediction_TrainTime";
+            this.cb_prediction_TrainTime.SelectedIndexChanged += new System.EventHandler(this.cb_prediction_TrainTime_SelectedIndexChanged);
+            // 
+            // label118
+            // 
+            resources.ApplyResources(this.label118, "label118");
+            this.label118.BackColor = System.Drawing.Color.Transparent;
+            this.label118.ForeColor = System.Drawing.Color.White;
+            this.label118.Name = "label118";
+            // 
+            // label117
+            // 
+            resources.ApplyResources(this.label117, "label117");
+            this.label117.BackColor = System.Drawing.Color.Transparent;
+            this.label117.ForeColor = System.Drawing.Color.White;
+            this.label117.Name = "label117";
+            // 
+            // lb_prediction_TrainMode
+            // 
+            resources.ApplyResources(this.lb_prediction_TrainMode, "lb_prediction_TrainMode");
+            this.lb_prediction_TrainMode.BackColor = System.Drawing.Color.Transparent;
+            this.lb_prediction_TrainMode.ForeColor = System.Drawing.Color.White;
+            this.lb_prediction_TrainMode.Name = "lb_prediction_TrainMode";
             // 
             // btn_prediction_self
             // 
@@ -7340,6 +7390,7 @@
             this.chart_prediction_Z.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             this.chart_prediction_Z.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             chartArea47.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea47.AxisX.IsMarginVisible = false;
             chartArea47.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
             chartArea47.AxisX.LineColor = System.Drawing.Color.White;
             chartArea47.AxisX.MajorGrid.Enabled = false;
@@ -7387,6 +7438,7 @@
             this.chart_prediction_Y.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             this.chart_prediction_Y.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             chartArea48.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea48.AxisX.IsMarginVisible = false;
             chartArea48.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
             chartArea48.AxisX.LineColor = System.Drawing.Color.White;
             chartArea48.AxisX.MajorGrid.Enabled = false;
@@ -7434,6 +7486,7 @@
             this.chart_prediction_X.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             this.chart_prediction_X.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             chartArea49.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea49.AxisX.IsMarginVisible = false;
             chartArea49.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
             chartArea49.AxisX.LineColor = System.Drawing.Color.White;
             chartArea49.AxisX.MajorGrid.Enabled = false;
@@ -7531,6 +7584,18 @@
             this.label97.BackColor = System.Drawing.Color.Transparent;
             this.label97.ForeColor = System.Drawing.Color.White;
             this.label97.Name = "label97";
+            // 
+            // PB_prediction_SL
+            // 
+            resources.ApplyResources(this.PB_prediction_SL, "PB_prediction_SL");
+            this.PB_prediction_SL.Name = "PB_prediction_SL";
+            // 
+            // label116
+            // 
+            resources.ApplyResources(this.label116, "label116");
+            this.label116.BackColor = System.Drawing.Color.Transparent;
+            this.label116.ForeColor = System.Drawing.Color.White;
+            this.label116.Name = "label116";
             // 
             // timer_prediction_ML
             // 
@@ -8151,15 +8216,15 @@
             this.label114.ForeColor = System.Drawing.Color.White;
             this.label114.Name = "label114";
             // 
-            // PB_prediction_SL
-            // 
-            resources.ApplyResources(this.PB_prediction_SL, "PB_prediction_SL");
-            this.PB_prediction_SL.Name = "PB_prediction_SL";
-            // 
             // timer_prediction_SL
             // 
             this.timer_prediction_SL.Interval = 1000;
             this.timer_prediction_SL.Tick += new System.EventHandler(this.timer_prediction_SL_Tick);
+            // 
+            // timer_prediction
+            // 
+            this.timer_prediction.Interval = 500;
+            this.timer_prediction.Tick += new System.EventHandler(this.timer_Prediction_Tick);
             // 
             // Form1
             // 
@@ -8954,6 +9019,12 @@
         private System.Windows.Forms.Button btn_AE_start;
         private System.Windows.Forms.ProgressBar PB_prediction_SL;
         private System.Windows.Forms.Timer timer_prediction_SL;
+        private System.Windows.Forms.ComboBox cb_prediction_TrainTime;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.Label lb_prediction_TrainMode;
+        private System.Windows.Forms.Label label116;
+        private System.Windows.Forms.Timer timer_prediction;
     }
 }
 

@@ -45,7 +45,7 @@ namespace ToolWear{
             InitializeComponent();
             Brother_Initialization();
             //將視窗最大化
-            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
             //隱藏工作列
             this.FormBorderStyle = FormBorderStyle.None;
             //強制置頂視窗
@@ -2440,16 +2440,21 @@ namespace ToolWear{
         }
         #endregion
         #region 刀具磨耗預測
+        //暫存訓練模式
+        string Prediction_TrainMode = "";
+        //自動模式計數器
+        int Prediction_AutoMode_Count = 0;
         //讀取刀具磨耗預測設定檔資料
         private void panle_prediction_Load() {
             //讀取設定檔內資料
             cb_prediction_ModelName.Items.Clear();
-            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\model_name\"))
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"model_name\"))
                 cb_prediction_ModelName.Items.Add(Path.GetFileNameWithoutExtension(fname));
             cb_prediction_Material.SelectedIndex = 0;
             cb_prediction_Type.SelectedIndex = 0;
             cb_prediction_work.SelectedIndex = 0;
             cb_prediction_ModelName.SelectedIndex = cb_prediction_ModelName.Items.Count - 1;
+            cb_prediction_TrainTime.SelectedIndex = 0;
 
             PB_prediction_ML.Visible = false;
             PB_prediction_SL.Visible = false;
@@ -2462,7 +2467,7 @@ namespace ToolWear{
         }
         //使用者自己打字時
         private void cb_prediction_ModelName_TextChanged(object sender, EventArgs e) {
-            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\model_name\")) {
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"model_name\")) {
                 string file_name = Path.GetFileNameWithoutExtension(fname);
                 if (file_name.Equals(cb_prediction_ModelName.Text)) {
                     cb_prediction_Material.Enabled = false;
@@ -2477,7 +2482,7 @@ namespace ToolWear{
         }
         //選擇不同的項目時讀取設定檔內資料
         private void cb_prediction_ModelName_SelectedIndexChanged(object sender, EventArgs e) {
-            StreamReader sr = new StreamReader(path + @"data\Prediction\model_name\" + cb_prediction_ModelName.Text + ".csv");
+            StreamReader sr = new StreamReader(path + @"model_name\" + cb_prediction_ModelName.Text + ".csv");
             string tem_s = sr.ReadLine();   //格式為 名稱,刀具材質,刀具種類,工件種類
             sr.Close();
             sr.Dispose();
@@ -2523,13 +2528,13 @@ namespace ToolWear{
             }
             //判斷是否為新檔案
             List<string> file_module = new List<string>();
-            foreach (string fname in Directory.GetFileSystemEntries(path + @"data\Prediction\model_name\"))
+            foreach (string fname in Directory.GetFileSystemEntries(path + @"model_name\"))
                 file_module.Add(Path.GetFileNameWithoutExtension(fname));
             for (int i = 0; i < file_module.Count; i++) {
                 if (file_module[i].Equals(cb_prediction_ModelName.Text)) break;
                 if (i == file_module.Count - 1) {
                     //將新的模型寫入新檔
-                    StreamWriter sw = new StreamWriter(path + @"data\Prediction\model_name\" + cb_prediction_ModelName.Text + ".csv");
+                    StreamWriter sw = new StreamWriter(path + @"model_name\" + cb_prediction_ModelName.Text + ".csv");
                     sw.WriteLine("x,y,z,tool_condition,date,time," + cb_prediction_Material.Text + "," +
                         cb_prediction_Type.Text + "," + cb_prediction_work.Text);
                     sw.Close();
@@ -2538,13 +2543,13 @@ namespace ToolWear{
                 }
             }
             //將現在使用的模型名稱寫入file_name.csv
-            StreamWriter sw_file_name = new StreamWriter(path + @"data\Prediction\file_name\file_name.csv");
+            StreamWriter sw_file_name = new StreamWriter(path + @"file_name\file_name.csv");
             sw_file_name.WriteLine(cb_prediction_ModelName.Text);
             sw_file_name.Close();
             sw_file_name.Dispose();
             //清空Raw_Data.csv
-            StreamWriter sw_Raw_Data = new StreamWriter(path + @"data\Prediction\Raw_Data.csv");
-            sw_Raw_Data.WriteLine("X,Y,Z");
+            StreamWriter sw_Raw_Data = new StreamWriter(path + @"Raw_Data.csv");
+            sw_Raw_Data.WriteLine("x,y,z");
             sw_Raw_Data.Close();
             sw_Raw_Data.Dispose();
 
@@ -2558,29 +2563,68 @@ namespace ToolWear{
             cb_prediction_Type.Enabled = false;
             cb_prediction_work.Enabled = false;
 
+            PB_prediction_ML.Visible = false;
+            PB_prediction_SL.Visible = false;
+
             DAQInitialize("Prediction");
         }
         //刀具磨耗預測 > 停止
         private void btn_prediction_stop_Click(object sender, EventArgs e) {
             TaskStop();
-            
+
+            //計數器+1
+            Prediction_AutoMode_Count++;
+
             //呼叫exe
-            Process.Start(path + @"/data/Prediction/SE_ML.exe");
+            Process.Start(path + @"SE_ML.exe");
 
             //歸零進度條
             PB_prediction_ML.Value = 0;
             //啟動timer讀取結果
             timer_prediction_ML.Enabled = true;
+
+            //關閉停止按鈕
+            btn_prediction_stop.Enabled = false;
+            btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+
+            //判斷是否為自動模式且已達計數標準
+            if (Prediction_TrainMode.Equals("自動") && Prediction_AutoMode_Count % int.Parse(cb_prediction_TrainTime.Text.Split('次')[0]) == 0){
+                lb_prediction_TrainMode.Text = string.Format("{0}({1},{2})", Prediction_TrainMode, Prediction_AutoMode_Count, cb_prediction_TrainTime.Text.Split('次')[0]);
+                Thread.Sleep(300);
+                btn_prediction_self_Click(null, null);
+            }
         }
         //刀具磨耗預測 > 自我學習
         private void btn_prediction_self_Click(object sender, EventArgs e) {
+            //若是由按鈕觸發而非程式觸發
+            if (sender != null){
+                //更改訓練模式字串
+                Prediction_TrainMode = "手動";
+                lb_prediction_TrainMode.Text = Prediction_TrainMode;
+            }
             //呼叫exe
-            Process.Start(path + @"/data/Prediction/SE_SL.exe");
+            Process.Start(path + @"SE_SL.exe");
 
             //歸零進度條
             PB_prediction_SL.Value = 0;
             //啟動timer讀取結果
             timer_prediction_SL.Enabled = true;
+        }
+        //刀具磨耗預測 > 自動訓練選單選取
+        private void cb_prediction_TrainTime_SelectedIndexChanged(object sender, EventArgs e){
+            if(cb_prediction_TrainTime.SelectedIndex == 0){
+                //更改為手動模式
+                Prediction_TrainMode = "手動";
+                lb_prediction_TrainMode.Text = Prediction_TrainMode;
+            }
+            else{
+                //重置計數器
+                Prediction_AutoMode_Count = 0;
+                //更改訓練模式字串
+                Prediction_TrainMode = "自動";
+                lb_prediction_TrainMode.Text = string.Format("{0} ( {1} / {2} )", Prediction_TrainMode,Prediction_AutoMode_Count,cb_prediction_TrainTime.Text.Split('次')[0]) ;
+
+            }
         }
         #endregion
         #region 磨耗偵測(三軸、電流)
@@ -3739,6 +3783,19 @@ namespace ToolWear{
             //Current_Getdata("33");
             Current_Getdata_Schneider("1");
         }
+        //開始執行磨耗預測
+        private void timer_Prediction_Tick(object sender, EventArgs e){
+            if (lb_prediction_status.Text.Equals("8")){
+                //如果已經有偵測在運行了就直接跳過程式
+                if (runningTask != null) return;
+
+            }
+            else{
+                if (runningTask == null) return;
+                runningTask = null;
+                myTask.Dispose();
+            }
+        }
         //機器學習
         private void timer_prediction_ML_Tick(object sender, EventArgs e){
             if (PB_prediction_ML.Value != PB_prediction_ML.Maximum) PB_prediction_ML.Value++;
@@ -3806,7 +3863,7 @@ namespace ToolWear{
             if (machine_type.Equals("Mitsubishi")){
                 ATC_RPM = Mitsubishi_GetFeedSpeed();
                 ATC_num = Mitsubishi_GetATCStatus();
-                lb_prediction_status.Text = Mitsubishi_GetRunStatus();
+                lb_prediction_status.Text = Mitsubishi_GetMemoryData("M4992").ToString();
             }
             else if (machine_type.Equals("Brother")){
                 ATC_RPM = double.Parse(Brother_GetFeedSpeed());
@@ -4256,13 +4313,14 @@ namespace ToolWear{
                 chart_prediction_X.Series[0].Points.Clear();
                 chart_prediction_Y.Series[0].Points.Clear();
                 chart_prediction_Z.Series[0].Points.Clear();
-                FileStream File_module = File.Open(path + @"data\Prediction\Raw_Data.csv", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+                FileStream File_module = File.Open(path + @"Raw_Data.csv", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
                 StreamWriter sw = new StreamWriter(File_module);
                 for (int i = 0;i< dataTable.Rows.Count; i++){
                     chart_prediction_X.Series[0].Points.AddXY(i, dataTable.Rows[i][0]);
                     chart_prediction_Y.Series[0].Points.AddXY(i, dataTable.Rows[i][1]);
                     chart_prediction_Z.Series[0].Points.AddXY(i, dataTable.Rows[i][2]);
-                    sw.WriteLine(dataTable.Rows[i][0] + "," + dataTable.Rows[i][1] + "," + dataTable.Rows[i][2]);
+                    if(!string.IsNullOrWhiteSpace(dataTable.Rows[i][0].ToString()))
+                        sw.WriteLine(dataTable.Rows[i][0] + "," + dataTable.Rows[i][1] + "," + dataTable.Rows[i][2]);
                 }
                 sw.Close();
                 sw.Dispose();
