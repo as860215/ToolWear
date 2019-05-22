@@ -781,6 +781,7 @@
             this.label114 = new System.Windows.Forms.Label();
             this.timer_prediction_SL = new System.Windows.Forms.Timer(this.components);
             this.timer_prediction = new System.Windows.Forms.Timer(this.components);
+            this.btn_prediction_test = new System.Windows.Forms.Button();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -7085,6 +7086,7 @@
             this.panel_prediction.Controls.Add(this.label97);
             this.panel_prediction.Controls.Add(this.PB_prediction_SL);
             this.panel_prediction.Controls.Add(this.label116);
+            this.panel_prediction.Controls.Add(this.btn_prediction_test);
             resources.ApplyResources(this.panel_prediction, "panel_prediction");
             this.panel_prediction.Name = "panel_prediction";
             // 
@@ -8226,6 +8228,15 @@
             this.timer_prediction.Interval = 500;
             this.timer_prediction.Tick += new System.EventHandler(this.timer_Prediction_Tick);
             // 
+            // btn_prediction_test
+            // 
+            this.btn_prediction_test.BackColor = System.Drawing.Color.Black;
+            this.btn_prediction_test.ForeColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btn_prediction_test, "btn_prediction_test");
+            this.btn_prediction_test.Name = "btn_prediction_test";
+            this.btn_prediction_test.UseVisualStyleBackColor = false;
+            this.btn_prediction_test.Click += new System.EventHandler(this.btn_prediction_test_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -9025,6 +9036,7 @@
         private System.Windows.Forms.Label lb_prediction_TrainMode;
         private System.Windows.Forms.Label label116;
         private System.Windows.Forms.Timer timer_prediction;
+        private System.Windows.Forms.Button btn_prediction_test;
     }
 }
 

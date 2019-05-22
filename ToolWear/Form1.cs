@@ -2547,11 +2547,6 @@ namespace ToolWear{
             sw_file_name.WriteLine(cb_prediction_ModelName.Text);
             sw_file_name.Close();
             sw_file_name.Dispose();
-            //清空Raw_Data.csv
-            StreamWriter sw_Raw_Data = new StreamWriter(path + @"Raw_Data.csv");
-            sw_Raw_Data.WriteLine("x,y,z");
-            sw_Raw_Data.Close();
-            sw_Raw_Data.Dispose();
 
             btn_prediction_start.Enabled = false;
             btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
@@ -2566,33 +2561,20 @@ namespace ToolWear{
             PB_prediction_ML.Visible = false;
             PB_prediction_SL.Visible = false;
 
-            DAQInitialize("Prediction");
+            timer_prediction.Enabled = true;
         }
         //刀具磨耗預測 > 停止
         private void btn_prediction_stop_Click(object sender, EventArgs e) {
-            TaskStop();
-
-            //計數器+1
-            Prediction_AutoMode_Count++;
-
-            //呼叫exe
-            Process.Start(path + @"SE_ML.exe");
-
-            //歸零進度條
-            PB_prediction_ML.Value = 0;
-            //啟動timer讀取結果
-            timer_prediction_ML.Enabled = true;
+            timer_prediction.Enabled = false;
 
             //關閉停止按鈕
             btn_prediction_stop.Enabled = false;
             btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
+            btn_prediction_start.Enabled = true;
+            btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
 
-            //判斷是否為自動模式且已達計數標準
-            if (Prediction_TrainMode.Equals("自動") && Prediction_AutoMode_Count % int.Parse(cb_prediction_TrainTime.Text.Split('次')[0]) == 0){
-                lb_prediction_TrainMode.Text = string.Format("{0}({1},{2})", Prediction_TrainMode, Prediction_AutoMode_Count, cb_prediction_TrainTime.Text.Split('次')[0]);
-                Thread.Sleep(300);
-                btn_prediction_self_Click(null, null);
-            }
+            cb_prediction_ModelName.Enabled = true;
+
         }
         //刀具磨耗預測 > 自我學習
         private void btn_prediction_self_Click(object sender, EventArgs e) {
@@ -2625,6 +2607,13 @@ namespace ToolWear{
                 lb_prediction_TrainMode.Text = string.Format("{0} ( {1} / {2} )", Prediction_TrainMode,Prediction_AutoMode_Count,cb_prediction_TrainTime.Text.Split('次')[0]) ;
 
             }
+        }
+        //刀具磨耗預測 > 手動修改記憶體位置
+        private void btn_prediction_test_Click(object sender,EventArgs e){
+            if (lb_prediction_status.Text.Equals("0"))
+                lb_prediction_status.Text = "8";
+            else
+                lb_prediction_status.Text = "0";
         }
         #endregion
         #region 磨耗偵測(三軸、電流)
@@ -3789,11 +3778,34 @@ namespace ToolWear{
                 //如果已經有偵測在運行了就直接跳過程式
                 if (runningTask != null) return;
 
+                //清空Raw_Data.csv
+                StreamWriter sw_Raw_Data = new StreamWriter(path + @"Raw_Data.csv");
+                sw_Raw_Data.WriteLine("x,y,z");
+                sw_Raw_Data.Close();
+                sw_Raw_Data.Dispose();
+
+                DAQInitialize("Prediction");
             }
             else{
                 if (runningTask == null) return;
-                runningTask = null;
-                myTask.Dispose();
+                TaskStop();
+                //計數器+1
+                Prediction_AutoMode_Count++;
+
+                //呼叫exe
+                Process.Start(path + @"SE_ML.exe");
+
+                //歸零進度條
+                PB_prediction_ML.Value = 0;
+                //啟動timer讀取結果
+                timer_prediction_ML.Enabled = true;
+
+                //判斷是否為自動模式且已達計數標準
+                if (Prediction_TrainMode.Equals("自動") && Prediction_AutoMode_Count % int.Parse(cb_prediction_TrainTime.Text.Split('次')[0]) == 0){
+                    lb_prediction_TrainMode.Text = string.Format("{0}({1},{2})", Prediction_TrainMode, Prediction_AutoMode_Count, cb_prediction_TrainTime.Text.Split('次')[0]);
+                    Thread.Sleep(300);
+                    btn_prediction_self_Click(null, null);
+                }
             }
         }
         //機器學習
@@ -3819,14 +3831,6 @@ namespace ToolWear{
                         tb_prediction_Ymax,tb_prediction_Zmax,tb_prediction_Xmin,tb_prediction_Ymin,tb_prediction_Zmin};
             for (int i = 0; i < tb_prediction.Length; i++)
                 tb_prediction[i].Text = Read_List[i];
-
-            btn_prediction_start.Enabled = true;
-            btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
-            btn_prediction_stop.Enabled = false;
-            btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
-
-            cb_prediction_ModelName.Enabled = true;
-
 
             //執行結束
             timer_prediction_ML.Enabled = false;
