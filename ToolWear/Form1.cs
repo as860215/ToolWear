@@ -2772,6 +2772,15 @@ namespace ToolWear{
             btn_AccCur_stop.Enabled = true;
             btn_AccCur_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
 
+            //清空先前的紀錄檔
+            string[] Acc_path = new string[4] { @"data\AccCur\X.csv", @"data\AccCur\Y.csv", @"data\AccCur\Z.csv", @"data\AccCur\Cur.csv" };
+            for (int i = 0; i < Acc_path.Length; i++){
+                StreamWriter sw = new StreamWriter(path + Acc_path[i]);
+                sw.Write("");
+                sw.Close();
+                sw.Dispose();
+            }
+
             DAQInitialize("AccCur");
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 停止
@@ -2810,6 +2819,12 @@ namespace ToolWear{
             btn_AE_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_AE_stop.Enabled = true;
             btn_AE_stop.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
+
+            //清空先前的紀錄檔
+            StreamWriter sw = new StreamWriter(path + @"data\AccCur\AE.csv");
+            sw.Write("");
+            sw.Close();
+            sw.Dispose();
 
             DAQInitialize("AE");
         }
@@ -4394,6 +4409,18 @@ namespace ToolWear{
                     chart_AccCur_Z.Series[0].Points.AddXY(i, dataTable.Rows[i][2]);
                     chart_AccCur_Current.Series[0].Points.AddXY(i, dataTable.Rows[i][3]);
                 }
+                //若有勾選紀錄資料則記錄每一個軸向資料
+                if(chb_AccCur_Record.Checked == true){
+                    string[] Acc_path = new string[4] { @"data\AccCur\X.csv", @"data\AccCur\Y.csv", @"data\AccCur\Z.csv", @"data\AccCur\Cur.csv" };
+                    for(int i = 0; i < Acc_path.Length; i++){
+                        FileStream File_module = File.Open(path + Acc_path[i], FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+                        StreamWriter sw = new StreamWriter(File_module);
+                        for(int j = 0;j<dataTable.Rows.Count;j++)
+                            sw.WriteLine(dataTable.Rows[j][i]);
+                        sw.Close();
+                        sw.Dispose();
+                    }
+                }
                 #endregion
             }
             else if (DAQ_Now.Equals("AE")){
@@ -4402,6 +4429,15 @@ namespace ToolWear{
 
                 for (int i = 0; i < dataTable.Rows.Count; i++)
                     chart_AE.Series[0].Points.AddXY(i, dataTable.Rows[i][0]);
+                //若有勾選紀錄資料則記錄軸向資料
+                if (chb_AccCur_Record.Checked == true){
+                    FileStream File_module = File.Open(path + @"data\AccCur\AE.csv", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+                    StreamWriter sw = new StreamWriter(File_module);
+                    for (int j = 0; j < dataTable.Rows.Count; j++)
+                        sw.WriteLine(dataTable.Rows[j][0]);
+                    sw.Close();
+                    sw.Dispose();
+                }
                 #endregion
             }
         }
