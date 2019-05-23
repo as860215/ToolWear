@@ -45,7 +45,7 @@ namespace ToolWear{
             InitializeComponent();
             Brother_Initialization();
             //將視窗最大化
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
             //隱藏工作列
             this.FormBorderStyle = FormBorderStyle.None;
             //強制置頂視窗
@@ -2634,8 +2634,7 @@ namespace ToolWear{
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 回上一頁
         private void btn_AccCur_setting_back_Click(object sender, EventArgs e) {
             panel_AccCur.Visible = true;
-
-
+            panel_AccCur_setting.Visible = false;
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 讀取訊號輸入
         private void btn_AccCur_setting_loadChannel(object sender, EventArgs e) {
@@ -2655,12 +2654,39 @@ namespace ToolWear{
                     cb_Channel[j].Items.Add(channel[i]);
             AccCur_setting_load();
         }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 按鈕上
+        private void btn_AccCur_setting_Up(object sender,EventArgs e){
+            Button[] btn_Channel = new Button[5] {btn_AccCur_X_up, btn_AccCur_Y_up, btn_AccCur_Z_up, btn_AccCur_Cur_up, btn_AccCur_AE_up };
+            NumericUpDown[] num_Channel = new NumericUpDown[5] { num_AccCur_X, num_AccCur_Y, num_AccCur_Z, num_AccCur_Cur, num_AccCur_AE };
+            Button now_btn = (Button)sender;
+            for(int i = 0; i < btn_Channel.Length; i++){
+                if(now_btn.Name == btn_Channel[i].Name){
+                    if (num_Channel[i].Value < num_Channel[i].Maximum)
+                        num_Channel[i].Value += (decimal)0.1;
+                }
+            }
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 按鈕下
+        private void btn_AccCur_setting_Down(object sender, EventArgs e){
+            Button[] btn_Channel = new Button[5] { btn_AccCur_X_down, btn_AccCur_Y_down, btn_AccCur_Z_down, btn_AccCur_Cur_down, btn_AccCur_AE_down };
+            NumericUpDown[] num_Channel = new NumericUpDown[5] { num_AccCur_X, num_AccCur_Y, num_AccCur_Z, num_AccCur_Cur, num_AccCur_AE };
+            Button now_btn = (Button)sender;
+            for (int i = 0; i < btn_Channel.Length; i++){
+                if (now_btn.Name == btn_Channel[i].Name){
+                    if (num_Channel[i].Value > num_Channel[i].Minimum)
+                        num_Channel[i].Value -= (decimal)0.1;
+                }
+            }
+        }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 讀取資料
         private void AccCur_setting_load() {
             //暫存頻道資訊
             List<string> Channel = new List<string>();
             ComboBox[] cb_Channel = new ComboBox[5] { cb_AccCur_setting_ChannelX, cb_AccCur_setting_ChannelY,
             cb_AccCur_setting_ChannelZ,cb_AccCur_setting_ChannelC,cb_AccCur_setting_ChannelAE};
+            NumericUpDown[] num_Channel = new NumericUpDown[5] { num_AccCur_X, num_AccCur_Y, num_AccCur_Z, num_AccCur_Cur, num_AccCur_AE };
+            System.Windows.Forms.DataVisualization.Charting.Chart[] chart_Channel = new System.Windows.Forms.DataVisualization.Charting.Chart[5]
+                {chart_AccCur_X,chart_AccCur_Y,chart_AccCur_Z,chart_AccCur_Current,chart_AE };
             //暫存是否有找到符合資料檔的頻道
             bool[] find_Channel = new bool[cb_Channel.Length];
             StreamReader sr = new StreamReader(path + @"\data\AccCur.cp");
@@ -2674,7 +2700,7 @@ namespace ToolWear{
                     //如果還沒找到該資料檔符合的頻道
                     if (find_Channel[j] == false) {
                         cb_Channel[j].SelectedIndex = i;
-                        if (Channel[j].Equals(cb_Channel[j].Text)) find_Channel[j] = true;
+                        if (Channel[j].Split(',')[0].Equals(cb_Channel[j].Text)) find_Channel[j] = true;
                     }
                 }
             }
@@ -2685,6 +2711,22 @@ namespace ToolWear{
                     cb_Channel[i].SelectedIndex = 0;
                 }
             }
+            //載入已設定警戒值
+            for (int i = 0; i < num_Channel.Length; i++){
+                try{
+                    num_Channel[i].Value = decimal.Parse(Channel[i].Split(',')[1]);
+                    chart_Channel[i].Series[2].Points.Clear();
+                    chart_Channel[i].Series[2].Points.AddXY(0, num_Channel[i].Value);
+                    //AE
+                    if (i == 4) 
+                        chart_Channel[i].Series[2].Points.AddXY(5000, num_Channel[i].Value);
+                    else
+                        chart_Channel[i].Series[2].Points.AddXY(2000, num_Channel[i].Value);
+                }
+                catch {
+                    num_Channel[i].Value = 0;
+                }
+            }
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 儲存
         private void btn_AccCur_setting_save_Click(object sender, EventArgs e) {
@@ -2693,6 +2735,7 @@ namespace ToolWear{
 
             ComboBox[] cb_Channel = new ComboBox[5] { cb_AccCur_setting_ChannelX, cb_AccCur_setting_ChannelY,
             cb_AccCur_setting_ChannelZ,cb_AccCur_setting_ChannelC,cb_AccCur_setting_ChannelAE};
+            NumericUpDown[] num_Channel = new NumericUpDown[5] { num_AccCur_X, num_AccCur_Y, num_AccCur_Z, num_AccCur_Cur, num_AccCur_AE };
 
             //先檢查有沒有選到一樣的輸入端
             for (int i = 0; i < cb_Channel.Length - 2; i++) {
@@ -2706,13 +2749,21 @@ namespace ToolWear{
 
             StreamWriter sw = new StreamWriter(path + @"\data\AccCur.cp");
             for (int i = 0; i < cb_Channel.Length; i++) {
-                if (cb_Channel[i].SelectedIndex == 0) sw.WriteLine("0");
-                else sw.WriteLine(cb_Channel[i].Text);
+                string write_s = "";
+                //訊號源
+                if (cb_Channel[i].SelectedIndex == 0) write_s = "0";
+                else write_s = cb_Channel[i].Text;
+                //警戒線
+                write_s += "," + num_Channel[i].Value;
+
+                sw.WriteLine(write_s);
             }
             sw.Close();
             sw.Dispose();
 
             MessageBox.Show("儲存成功", "儲存完畢", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            AccCur_setting_load();
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 開始
         private void btn_AccCur_start_Click(object sender, EventArgs e) {
