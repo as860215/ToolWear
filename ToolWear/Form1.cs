@@ -174,6 +174,7 @@ namespace ToolWear{
             panel_AccCur.Visible = false;
             panel_AccCur_setting.Visible = false;
             panel_AE.Visible = false;
+            panel_AccCur_parameter.Visible = false;
             //關閉所有主選單副組件
             btn_Learn.Enabled = false;
             btn_ChangeMode.Enabled = false;
@@ -2840,6 +2841,68 @@ namespace ToolWear{
             rateNumeric = 4000;
 
             TaskStop();
+        }
+        #endregion
+        #region 參數設定
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定
+        private void btn_AccCur_parameter_Click(object sender, EventArgs e){
+            panel_AccCur_parameter.Visible = true;
+            panel_AccCur_setting.Visible = false;
+            AccCur_parameter_Load();
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 初始化讀取
+        private void AccCur_parameter_Load(){
+            panel_AccCur_parameter_Add.Visible = false;
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 回上一頁
+        private void btn_AccCur_parameter_back_Click(object sender,EventArgs e){
+            panel_AccCur_parameter.Visible = false;
+            panel_AccCur_setting.Visible = true;
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 轉動撥桿
+        private void tbar_AccCur_parameter_surface_Scroll(object sender, EventArgs e){
+            tb_AccCur_parameter_surface.Text = ((float)tbar_AccCur_parameter_surface.Value / 10).ToString("0.0");
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 輸入表面精度
+        private void tb_AccCur_parameter_surface_TextChanged(object sender, EventArgs e){
+            try{
+                //先將輸入值轉型，確保不是非法字元
+                float tem = float.Parse(tb_AccCur_parameter_surface.Text);
+                if((int)(tem * 10) > tbar_AccCur_parameter_surface.Maximum){
+                    MessageBox.Show("超出預設最大值。", "超出索引", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                tbar_AccCur_parameter_surface.Value = (int)(tem * 10);
+            }
+            catch { }
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 新增工件材料
+        private void btn_AccCur_parameter_workpieceAdd_Click(object sender,EventArgs e){
+            panel_AccCur_parameter_Add.Visible = true;
+            panel_AccCur_parameter_Add.BringToFront();
+            lb_AccCur_parameter_Add.Text = "工件材料";
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 新增砂輪規格
+        private void btn_AccCur_parameter_type_Click(object sender, EventArgs e){
+            panel_AccCur_parameter_Add.Visible = true;
+            panel_AccCur_parameter_Add.BringToFront();
+            lb_AccCur_parameter_Add.Text = "砂輪規格";
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 新增 > 儲存
+        private void btn_AccCur_parameter_Add_Save_Click(object sender,EventArgs e){
+
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 新增 > 刪除
+        private void btn_AccCur_parameter_Add_Delete_Click(object sender, EventArgs e){
+
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 工件材料選擇
+        private void lb_AccCur_parameter_workpiece_SelectedIndexChanged(object sender, EventArgs e){
+
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 砂輪規格選擇
+        private void lb_AccCur_parameter_type_SelectedIndexChanged(object sender, EventArgs e){
+
         }
         #endregion
         #endregion
