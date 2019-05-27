@@ -2853,6 +2853,25 @@ namespace ToolWear{
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 初始化讀取
         private void AccCur_parameter_Load(){
             panel_AccCur_parameter_Add.Visible = false;
+
+            lb_AccCur_parameter_type.Items.Clear();
+            lb_AccCur_parameter_workpiece.Items.Clear();
+            //讀取工件和砂輪資料檔
+            StreamReader sr_workpiece = new StreamReader(path + @"data\AccCur\AccCur_workpiece.cp");
+            while (!sr_workpiece.EndOfStream)
+                lb_AccCur_parameter_workpiece.Items.Add(sr_workpiece.ReadLine());
+            sr_workpiece.Close();
+            sr_workpiece.Dispose();
+            StreamReader sr_type = new StreamReader(path + @"data\AccCur\AccCur_type.cp");
+            while (!sr_type.EndOfStream)
+                lb_AccCur_parameter_type.Items.Add(sr_type.ReadLine());
+            sr_type.Close();
+            sr_type.Dispose();
+
+            if (lb_AccCur_parameter_workpiece.Items.Count > 0)
+                lb_AccCur_parameter_workpiece.SelectedIndex = 0;
+            if (lb_AccCur_parameter_type.Items.Count > 0)
+                lb_AccCur_parameter_type.SelectedIndex = 0;
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 回上一頁
         private void btn_AccCur_parameter_back_Click(object sender,EventArgs e){
@@ -2890,11 +2909,23 @@ namespace ToolWear{
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 新增 > 儲存
         private void btn_AccCur_parameter_Add_Save_Click(object sender,EventArgs e){
+            if (string.IsNullOrWhiteSpace(lb_AccCur_parameter_Add.Text)){
+                MessageBox.Show("新增內容不得為空。", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            FileStream File_module = File.Open(path + @"\data\AccCur\AccCur_workpiece.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+            StreamWriter sw = new StreamWriter(File_module);
+            sw.WriteLine(tb_AccCur_parameter_Add.Text);
+            sw.Close();
+            sw.Dispose();
 
+            //重新讀取頁面
+            AccCur_parameter_Load();
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 新增 > 刪除
         private void btn_AccCur_parameter_Add_Delete_Click(object sender, EventArgs e){
-
+            tb_AccCur_parameter_Add.Text = "";
+            panel_AccCur_parameter_Add.Visible = false;
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 工件材料選擇
         private void lb_AccCur_parameter_workpiece_SelectedIndexChanged(object sender, EventArgs e){
