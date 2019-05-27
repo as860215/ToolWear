@@ -338,6 +338,7 @@ namespace ToolWear{
         //讀取程式計時器
         private void timer_load_Tick(object sender, EventArgs e) {
             bar_load.Value = Load_Step;
+            Thread.Sleep(50);
             void_Loading(Load_Step);
         }
         /// <summary>
@@ -400,7 +401,7 @@ namespace ToolWear{
                     break;
                 case 25:
                     //測試連線
-                    switch (cb_setting_brand.Text) {
+                    switch (cb_setting_brand.Text){
                         case "Mitsubishi":
                             long ret = Mitsubishi_Initialization();
                             if (ret != 0)
@@ -707,6 +708,9 @@ namespace ToolWear{
                 TaskStop();
                 panel_Dissable();
                 panel_AE.Visible = true;
+
+                //放入logo
+                btn_ChangeMode0.BackgroundImage = ToolWear.Properties.Resources.NCUT_logo;
             }
         }
         //主選單 > 磨耗偵測 > 切換模式0
@@ -715,6 +719,8 @@ namespace ToolWear{
             if (panel_ToolWear.Visible == true) {
                 panel_Dissable();
                 panel_AccCur.Visible = true;
+                //放入logo
+                btn_ChangeMode0.BackgroundImage = ToolWear.Properties.Resources.NCUT_logo;
 
                 //開啟子功能項
                 btn_ChangeMode.Enabled = true;
@@ -2853,7 +2859,8 @@ namespace ToolWear{
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 初始化讀取
         private void AccCur_parameter_Load(){
             panel_AccCur_parameter_Add.Visible = false;
-
+            
+            //清空ListBox
             lb_AccCur_parameter_type.Items.Clear();
             lb_AccCur_parameter_workpiece.Items.Clear();
             //讀取工件和砂輪資料檔
@@ -2955,7 +2962,7 @@ namespace ToolWear{
 
                 //找尋最接近使用者輸入的表面精度項目
                 float Surface_Max = 0f; //暫存已讀取最大值
-                int Surface_Count = 0;  //暫存已讀取最大值在陣列內的次序
+                int Surface_Count = -1;  //暫存已讀取最大值在陣列內的次序
                 for(int i = 0; i < Read_Data.Count; i++){
                     float Now_Surface = float.Parse(Read_Data[i].Split(',')[14]);
                     //先判斷讀取的值比輸入的值還要小
@@ -2968,11 +2975,20 @@ namespace ToolWear{
                     }
                 }
 
-                //讀取最大值次序的各項參數
-                tb_AccCur_parameter_WheelNumber2.Text = Read_Data[Surface_Count].Split(',')[1].Split('-')[1];
-                AccCur_parameter_WheelSpeed2.Text = Read_Data[Surface_Count].Split(',')[8];
-                tb_AccCur_parameter_WheelDown2.Text = Read_Data[Surface_Count].Split(',')[11];
-                tb_AccCur_parameter_Predict2.Text = Read_Data[Surface_Count].Split(',')[14];
+                //如果Surface_Count == -1 表示沒有找到符合的資料
+                if (Surface_Count == -1){
+                    tb_AccCur_parameter_WheelNumber2.Text = "無資料";
+                    AccCur_parameter_WheelSpeed2.Text = "無資料";
+                    tb_AccCur_parameter_WheelDown2.Text = "無資料";
+                    tb_AccCur_parameter_Predict2.Text = "無資料";
+                }
+                else{
+                    //讀取最大值次序的各項參數
+                    tb_AccCur_parameter_WheelNumber2.Text = Read_Data[Surface_Count].Split(',')[1].Split('-')[1];
+                    AccCur_parameter_WheelSpeed2.Text = Read_Data[Surface_Count].Split(',')[8];
+                    tb_AccCur_parameter_WheelDown2.Text = Read_Data[Surface_Count].Split(',')[11];
+                    tb_AccCur_parameter_Predict2.Text = Read_Data[Surface_Count].Split(',')[14];
+                }
             }
             catch{
             }

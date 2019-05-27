@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ViewModule.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -673,7 +673,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;cb_ToolWear_CurrentInput.Name" xml:space="preserve">
     <value>cb_ToolWear_CurrentInput</value>
@@ -4216,7 +4216,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Home.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="btn_shutdown.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4663,7 +4663,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;btn_Threshold_delete.Name" xml:space="preserve">
     <value>btn_Threshold_delete</value>
@@ -7219,7 +7219,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="numeric_Compensate_Down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9382,7 +9382,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btn_Thermal_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -11263,7 +11263,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lb_Learn_Blade.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -13072,7 +13072,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btn_AlarmSet.Name" xml:space="preserve">
     <value>btn_AlarmSet</value>
@@ -14011,7 +14011,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>1</value>
   </data>
   <data name="tb_Load_ProgressRate.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
@@ -14077,16 +14077,13 @@
     <value>NoControl</value>
   </data>
   <data name="bar_load.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 562</value>
+    <value>8, 524</value>
   </data>
   <data name="bar_load.Size" type="System.Drawing.Size, System.Drawing">
-    <value>934, 34</value>
+    <value>930, 34</value>
   </data>
   <data name="bar_load.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
-  </data>
-  <data name="bar_load.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;bar_load.Name" xml:space="preserve">
     <value>bar_load</value>
@@ -14533,7 +14530,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="btn_ATCsetting_30.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -16156,7 +16153,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -17092,7 +17089,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_SelectParts.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="btn_SelectParts_Add.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -19390,7 +19387,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AddParts.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="btn_AddParts_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -19768,7 +19765,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health_Setting.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;label57.Name" xml:space="preserve">
     <value>label57</value>
@@ -20602,7 +20599,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health_Result.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label75.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -21142,7 +21139,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AlarmSetting.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btn_AlarmSetting_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -22066,7 +22063,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_prediction.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="cb_prediction_TrainTime.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
@@ -23980,7 +23977,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AccCur.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btn_AccCur_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -26601,87 +26598,6 @@
   <data name="&gt;&gt;btn_AccCur_parameter_set.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_AIvalue.Name" xml:space="preserve">
-    <value>tb_AccCur_parameter_AIvalue</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_AIvalue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_AIvalue.Parent" xml:space="preserve">
-    <value>panel23</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_AIvalue.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label143.Name" xml:space="preserve">
-    <value>label143</value>
-  </data>
-  <data name="&gt;&gt;label143.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label143.Parent" xml:space="preserve">
-    <value>panel23</value>
-  </data>
-  <data name="&gt;&gt;label143.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_BestTime.Name" xml:space="preserve">
-    <value>tb_AccCur_parameter_BestTime</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_BestTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_BestTime.Parent" xml:space="preserve">
-    <value>panel23</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_BestTime.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label142.Name" xml:space="preserve">
-    <value>label142</value>
-  </data>
-  <data name="&gt;&gt;label142.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label142.Parent" xml:space="preserve">
-    <value>panel23</value>
-  </data>
-  <data name="&gt;&gt;label142.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel25.Name" xml:space="preserve">
-    <value>panel25</value>
-  </data>
-  <data name="&gt;&gt;panel25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel25.Parent" xml:space="preserve">
-    <value>panel23</value>
-  </data>
-  <data name="&gt;&gt;panel25.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel24.Name" xml:space="preserve">
-    <value>panel24</value>
-  </data>
-  <data name="&gt;&gt;panel24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel24.Parent" xml:space="preserve">
-    <value>panel23</value>
-  </data>
-  <data name="&gt;&gt;panel24.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="panel23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 433</value>
-  </data>
-  <data name="panel23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>928, 213</value>
-  </data>
-  <data name="panel23.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
   <data name="&gt;&gt;panel23.Name" xml:space="preserve">
     <value>panel23</value>
   </data>
@@ -26693,6 +26609,612 @@
   </data>
   <data name="&gt;&gt;panel23.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel22.Name" xml:space="preserve">
+    <value>panel22</value>
+  </data>
+  <data name="&gt;&gt;panel22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel22.Parent" xml:space="preserve">
+    <value>panel_AccCur_parameter</value>
+  </data>
+  <data name="&gt;&gt;panel22.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel21.Name" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;panel21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel21.Parent" xml:space="preserve">
+    <value>panel_AccCur_parameter</value>
+  </data>
+  <data name="&gt;&gt;panel21.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_AccCur_parameter_back.Name" xml:space="preserve">
+    <value>btn_AccCur_parameter_back</value>
+  </data>
+  <data name="&gt;&gt;btn_AccCur_parameter_back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AccCur_parameter_back.Parent" xml:space="preserve">
+    <value>panel_AccCur_parameter</value>
+  </data>
+  <data name="&gt;&gt;btn_AccCur_parameter_back.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label124.Name" xml:space="preserve">
+    <value>label124</value>
+  </data>
+  <data name="&gt;&gt;label124.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label124.Parent" xml:space="preserve">
+    <value>panel_AccCur_parameter</value>
+  </data>
+  <data name="&gt;&gt;label124.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panel_AccCur_parameter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 9</value>
+  </data>
+  <data name="panel_AccCur_parameter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 655</value>
+  </data>
+  <data name="panel_AccCur_parameter.TabIndex" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;panel_AccCur_parameter.Name" xml:space="preserve">
+    <value>panel_AccCur_parameter</value>
+  </data>
+  <data name="&gt;&gt;panel_AccCur_parameter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_AccCur_parameter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_AccCur_parameter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label124.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label124.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 28.2pt</value>
+  </data>
+  <data name="label124.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label124.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="label124.Size" type="System.Drawing.Size, System.Drawing">
+    <value>701, 61</value>
+  </data>
+  <data name="label124.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label124.Text" xml:space="preserve">
+    <value>磨耗偵測(三軸、電流)/參數設定</value>
+  </data>
+  <data name="&gt;&gt;label124.Name" xml:space="preserve">
+    <value>label124</value>
+  </data>
+  <data name="&gt;&gt;label124.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label124.Parent" xml:space="preserve">
+    <value>panel_AccCur_parameter</value>
+  </data>
+  <data name="&gt;&gt;label124.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_AccCur_parameter_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_AccCur_parameter_back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_AccCur_parameter_back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_AccCur_parameter_back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 9</value>
+  </data>
+  <data name="btn_AccCur_parameter_back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_AccCur_parameter_back.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;btn_AccCur_parameter_back.Name" xml:space="preserve">
+    <value>btn_AccCur_parameter_back</value>
+  </data>
+  <data name="&gt;&gt;btn_AccCur_parameter_back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_AccCur_parameter_back.Parent" xml:space="preserve">
+    <value>panel_AccCur_parameter</value>
+  </data>
+  <data name="&gt;&gt;btn_AccCur_parameter_back.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label125.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label125.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label125.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label125.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="label125.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 38</value>
+  </data>
+  <data name="label125.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="label125.Text" xml:space="preserve">
+    <value>表面精度輸入(μm)</value>
+  </data>
+  <data name="&gt;&gt;label125.Name" xml:space="preserve">
+    <value>label125</value>
+  </data>
+  <data name="&gt;&gt;label125.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label125.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label125.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;panel26.Name" xml:space="preserve">
+    <value>panel26</value>
+  </data>
+  <data name="&gt;&gt;panel26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel26.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;panel26.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label145.Name" xml:space="preserve">
+    <value>label145</value>
+  </data>
+  <data name="&gt;&gt;label145.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label145.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label145.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label144.Name" xml:space="preserve">
+    <value>label144</value>
+  </data>
+  <data name="&gt;&gt;label144.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label144.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label144.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.Name" xml:space="preserve">
+    <value>tb_AccCur_parameter_ProTime</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label129.Name" xml:space="preserve">
+    <value>label129</value>
+  </data>
+  <data name="&gt;&gt;label129.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label129.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label129.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label128.Name" xml:space="preserve">
+    <value>label128</value>
+  </data>
+  <data name="&gt;&gt;label128.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label128.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label128.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label127.Name" xml:space="preserve">
+    <value>label127</value>
+  </data>
+  <data name="&gt;&gt;label127.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label127.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label127.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_removal.Name" xml:space="preserve">
+    <value>num_AccCur_parameter_removal</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_removal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_removal.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_removal.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_width.Name" xml:space="preserve">
+    <value>num_AccCur_parameter_width</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_width.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_width.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_width.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_length.Name" xml:space="preserve">
+    <value>num_AccCur_parameter_length</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_length.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_length.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_length.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label126.Name" xml:space="preserve">
+    <value>label126</value>
+  </data>
+  <data name="&gt;&gt;label126.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label126.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label126.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tbar_AccCur_parameter_surface.Name" xml:space="preserve">
+    <value>tbar_AccCur_parameter_surface</value>
+  </data>
+  <data name="&gt;&gt;tbar_AccCur_parameter_surface.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbar_AccCur_parameter_surface.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;tbar_AccCur_parameter_surface.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_surface.Name" xml:space="preserve">
+    <value>tb_AccCur_parameter_surface</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_surface.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_surface.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_surface.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label125.Name" xml:space="preserve">
+    <value>label125</value>
+  </data>
+  <data name="&gt;&gt;label125.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label125.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label125.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="panel21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 96</value>
+  </data>
+  <data name="panel21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 332</value>
+  </data>
+  <data name="panel21.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;panel21.Name" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;panel21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel21.Parent" xml:space="preserve">
+    <value>panel_AccCur_parameter</value>
+  </data>
+  <data name="&gt;&gt;panel21.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tb_AccCur_parameter_surface.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 56</value>
+  </data>
+  <data name="tb_AccCur_parameter_surface.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 34</value>
+  </data>
+  <data name="tb_AccCur_parameter_surface.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="tb_AccCur_parameter_surface.Text" xml:space="preserve">
+    <value>0.000</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_surface.Name" xml:space="preserve">
+    <value>tb_AccCur_parameter_surface</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_surface.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_surface.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_surface.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="tbar_AccCur_parameter_surface.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 90</value>
+  </data>
+  <data name="tbar_AccCur_parameter_surface.Size" type="System.Drawing.Size, System.Drawing">
+    <value>417, 56</value>
+  </data>
+  <data name="tbar_AccCur_parameter_surface.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;tbar_AccCur_parameter_surface.Name" xml:space="preserve">
+    <value>tbar_AccCur_parameter_surface</value>
+  </data>
+  <data name="&gt;&gt;tbar_AccCur_parameter_surface.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbar_AccCur_parameter_surface.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;tbar_AccCur_parameter_surface.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label126.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label126.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label126.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label126.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 142</value>
+  </data>
+  <data name="label126.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 38</value>
+  </data>
+  <data name="label126.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="label126.Text" xml:space="preserve">
+    <value>工件尺寸(長x寬x移除厚度,mm)</value>
+  </data>
+  <data name="&gt;&gt;label126.Name" xml:space="preserve">
+    <value>label126</value>
+  </data>
+  <data name="&gt;&gt;label126.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label126.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label126.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="num_AccCur_parameter_length.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 181</value>
+  </data>
+  <data name="num_AccCur_parameter_length.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 34</value>
+  </data>
+  <data name="num_AccCur_parameter_length.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_length.Name" xml:space="preserve">
+    <value>num_AccCur_parameter_length</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_length.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_length.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_length.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="num_AccCur_parameter_width.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 181</value>
+  </data>
+  <data name="num_AccCur_parameter_width.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 34</value>
+  </data>
+  <data name="num_AccCur_parameter_width.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_width.Name" xml:space="preserve">
+    <value>num_AccCur_parameter_width</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_width.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_width.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_width.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="num_AccCur_parameter_removal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 182</value>
+  </data>
+  <data name="num_AccCur_parameter_removal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 34</value>
+  </data>
+  <data name="num_AccCur_parameter_removal.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_removal.Name" xml:space="preserve">
+    <value>num_AccCur_parameter_removal</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_removal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_removal.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;num_AccCur_parameter_removal.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label127.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label127.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 190</value>
+  </data>
+  <data name="label127.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 25</value>
+  </data>
+  <data name="label127.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="label127.Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="&gt;&gt;label127.Name" xml:space="preserve">
+    <value>label127</value>
+  </data>
+  <data name="&gt;&gt;label127.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label127.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label127.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label128.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label128.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label128.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 190</value>
+  </data>
+  <data name="label128.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 25</value>
+  </data>
+  <data name="label128.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="label128.Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="&gt;&gt;label128.Name" xml:space="preserve">
+    <value>label128</value>
+  </data>
+  <data name="&gt;&gt;label128.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label128.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label128.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label129.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label129.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 18pt</value>
+  </data>
+  <data name="label129.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label129.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 237</value>
+  </data>
+  <data name="label129.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 38</value>
+  </data>
+  <data name="label129.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="label129.Text" xml:space="preserve">
+    <value>預計加工時間(min.)</value>
+  </data>
+  <data name="&gt;&gt;label129.Name" xml:space="preserve">
+    <value>label129</value>
+  </data>
+  <data name="&gt;&gt;label129.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label129.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label129.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tb_AccCur_parameter_ProTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 277</value>
+  </data>
+  <data name="tb_AccCur_parameter_ProTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 34</value>
+  </data>
+  <data name="tb_AccCur_parameter_ProTime.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.Name" xml:space="preserve">
+    <value>tb_AccCur_parameter_ProTime</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btn_AccCur_parameter_typeAdd.Name" xml:space="preserve">
     <value>btn_AccCur_parameter_typeAdd</value>
@@ -26798,477 +27320,6 @@
   </data>
   <data name="&gt;&gt;panel22.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="panel26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 115</value>
-  </data>
-  <data name="panel26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>392, 10</value>
-  </data>
-  <data name="panel26.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
-  <data name="&gt;&gt;panel26.Name" xml:space="preserve">
-    <value>panel26</value>
-  </data>
-  <data name="&gt;&gt;panel26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel26.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;panel26.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label145.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label145.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label145.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 123</value>
-  </data>
-  <data name="label145.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 25</value>
-  </data>
-  <data name="label145.TabIndex" type="System.Int32, mscorlib">
-    <value>56</value>
-  </data>
-  <data name="label145.Text" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;label145.Name" xml:space="preserve">
-    <value>label145</value>
-  </data>
-  <data name="&gt;&gt;label145.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label145.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;label145.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label144.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label144.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label144.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 115</value>
-  </data>
-  <data name="label144.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 25</value>
-  </data>
-  <data name="label144.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="label144.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label144.Name" xml:space="preserve">
-    <value>label144</value>
-  </data>
-  <data name="&gt;&gt;label144.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label144.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;label144.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tb_AccCur_parameter_ProTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 277</value>
-  </data>
-  <data name="tb_AccCur_parameter_ProTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 34</value>
-  </data>
-  <data name="tb_AccCur_parameter_ProTime.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.Name" xml:space="preserve">
-    <value>tb_AccCur_parameter_ProTime</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_ProTime.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label129.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label129.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 18pt</value>
-  </data>
-  <data name="label129.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label129.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 237</value>
-  </data>
-  <data name="label129.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 38</value>
-  </data>
-  <data name="label129.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="label129.Text" xml:space="preserve">
-    <value>預計加工時間(min.)</value>
-  </data>
-  <data name="&gt;&gt;label129.Name" xml:space="preserve">
-    <value>label129</value>
-  </data>
-  <data name="&gt;&gt;label129.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label129.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;label129.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label128.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label128.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label128.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 190</value>
-  </data>
-  <data name="label128.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 25</value>
-  </data>
-  <data name="label128.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
-  </data>
-  <data name="label128.Text" xml:space="preserve">
-    <value>x</value>
-  </data>
-  <data name="&gt;&gt;label128.Name" xml:space="preserve">
-    <value>label128</value>
-  </data>
-  <data name="&gt;&gt;label128.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label128.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;label128.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label127.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label127.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 190</value>
-  </data>
-  <data name="label127.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 25</value>
-  </data>
-  <data name="label127.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="label127.Text" xml:space="preserve">
-    <value>x</value>
-  </data>
-  <data name="&gt;&gt;label127.Name" xml:space="preserve">
-    <value>label127</value>
-  </data>
-  <data name="&gt;&gt;label127.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label127.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;label127.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="num_AccCur_parameter_removal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 182</value>
-  </data>
-  <data name="num_AccCur_parameter_removal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 34</value>
-  </data>
-  <data name="num_AccCur_parameter_removal.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_removal.Name" xml:space="preserve">
-    <value>num_AccCur_parameter_removal</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_removal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_removal.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_removal.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="num_AccCur_parameter_width.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 181</value>
-  </data>
-  <data name="num_AccCur_parameter_width.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 34</value>
-  </data>
-  <data name="num_AccCur_parameter_width.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_width.Name" xml:space="preserve">
-    <value>num_AccCur_parameter_width</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_width.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_width.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_width.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="num_AccCur_parameter_length.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 181</value>
-  </data>
-  <data name="num_AccCur_parameter_length.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 34</value>
-  </data>
-  <data name="num_AccCur_parameter_length.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_length.Name" xml:space="preserve">
-    <value>num_AccCur_parameter_length</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_length.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_length.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;num_AccCur_parameter_length.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="label126.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label126.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 18pt</value>
-  </data>
-  <data name="label126.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label126.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 142</value>
-  </data>
-  <data name="label126.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 38</value>
-  </data>
-  <data name="label126.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="label126.Text" xml:space="preserve">
-    <value>工件尺寸(長x寬x移除厚度,mm)</value>
-  </data>
-  <data name="&gt;&gt;label126.Name" xml:space="preserve">
-    <value>label126</value>
-  </data>
-  <data name="&gt;&gt;label126.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label126.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;label126.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="tbar_AccCur_parameter_surface.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 90</value>
-  </data>
-  <data name="tbar_AccCur_parameter_surface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>417, 56</value>
-  </data>
-  <data name="tbar_AccCur_parameter_surface.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;tbar_AccCur_parameter_surface.Name" xml:space="preserve">
-    <value>tbar_AccCur_parameter_surface</value>
-  </data>
-  <data name="&gt;&gt;tbar_AccCur_parameter_surface.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbar_AccCur_parameter_surface.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;tbar_AccCur_parameter_surface.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="tb_AccCur_parameter_surface.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 56</value>
-  </data>
-  <data name="tb_AccCur_parameter_surface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 34</value>
-  </data>
-  <data name="tb_AccCur_parameter_surface.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="tb_AccCur_parameter_surface.Text" xml:space="preserve">
-    <value>0.000</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_surface.Name" xml:space="preserve">
-    <value>tb_AccCur_parameter_surface</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_surface.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_surface.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;tb_AccCur_parameter_surface.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="label125.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label125.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 18pt</value>
-  </data>
-  <data name="label125.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label125.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 17</value>
-  </data>
-  <data name="label125.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 38</value>
-  </data>
-  <data name="label125.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="label125.Text" xml:space="preserve">
-    <value>表面精度輸入(μm)</value>
-  </data>
-  <data name="&gt;&gt;label125.Name" xml:space="preserve">
-    <value>label125</value>
-  </data>
-  <data name="&gt;&gt;label125.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label125.Parent" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;label125.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="panel21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 96</value>
-  </data>
-  <data name="panel21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 332</value>
-  </data>
-  <data name="panel21.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="&gt;&gt;panel21.Name" xml:space="preserve">
-    <value>panel21</value>
-  </data>
-  <data name="&gt;&gt;panel21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel21.Parent" xml:space="preserve">
-    <value>panel_AccCur_parameter</value>
-  </data>
-  <data name="&gt;&gt;panel21.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btn_AccCur_parameter_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_AccCur_parameter_back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_AccCur_parameter_back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_AccCur_parameter_back.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 9</value>
-  </data>
-  <data name="btn_AccCur_parameter_back.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_AccCur_parameter_back.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;btn_AccCur_parameter_back.Name" xml:space="preserve">
-    <value>btn_AccCur_parameter_back</value>
-  </data>
-  <data name="&gt;&gt;btn_AccCur_parameter_back.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_AccCur_parameter_back.Parent" xml:space="preserve">
-    <value>panel_AccCur_parameter</value>
-  </data>
-  <data name="&gt;&gt;btn_AccCur_parameter_back.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label124.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label124.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 28.2pt</value>
-  </data>
-  <data name="label124.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label124.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 17</value>
-  </data>
-  <data name="label124.Size" type="System.Drawing.Size, System.Drawing">
-    <value>701, 61</value>
-  </data>
-  <data name="label124.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="label124.Text" xml:space="preserve">
-    <value>磨耗偵測(三軸、電流)/參數設定</value>
-  </data>
-  <data name="&gt;&gt;label124.Name" xml:space="preserve">
-    <value>label124</value>
-  </data>
-  <data name="&gt;&gt;label124.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label124.Parent" xml:space="preserve">
-    <value>panel_AccCur_parameter</value>
-  </data>
-  <data name="&gt;&gt;label124.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panel_AccCur_parameter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>269, 9</value>
-  </data>
-  <data name="panel_AccCur_parameter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>974, 655</value>
-  </data>
-  <data name="panel_AccCur_parameter.TabIndex" type="System.Int32, mscorlib">
-    <value>120</value>
-  </data>
-  <data name="&gt;&gt;panel_AccCur_parameter.Name" xml:space="preserve">
-    <value>panel_AccCur_parameter</value>
-  </data>
-  <data name="&gt;&gt;panel_AccCur_parameter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_AccCur_parameter.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_AccCur_parameter.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="lb_AccCur_parameter_workpiece.ItemHeight" type="System.Int32, mscorlib">
     <value>25</value>
@@ -27442,6 +27493,99 @@
     <value>panel22</value>
   </data>
   <data name="&gt;&gt;btn_AccCur_parameter_typeAdd.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_AIvalue.Name" xml:space="preserve">
+    <value>tb_AccCur_parameter_AIvalue</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_AIvalue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_AIvalue.Parent" xml:space="preserve">
+    <value>panel23</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_AIvalue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label143.Name" xml:space="preserve">
+    <value>label143</value>
+  </data>
+  <data name="&gt;&gt;label143.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label143.Parent" xml:space="preserve">
+    <value>panel23</value>
+  </data>
+  <data name="&gt;&gt;label143.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_BestTime.Name" xml:space="preserve">
+    <value>tb_AccCur_parameter_BestTime</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_BestTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_BestTime.Parent" xml:space="preserve">
+    <value>panel23</value>
+  </data>
+  <data name="&gt;&gt;tb_AccCur_parameter_BestTime.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label142.Name" xml:space="preserve">
+    <value>label142</value>
+  </data>
+  <data name="&gt;&gt;label142.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label142.Parent" xml:space="preserve">
+    <value>panel23</value>
+  </data>
+  <data name="&gt;&gt;label142.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel25.Name" xml:space="preserve">
+    <value>panel25</value>
+  </data>
+  <data name="&gt;&gt;panel25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel25.Parent" xml:space="preserve">
+    <value>panel23</value>
+  </data>
+  <data name="&gt;&gt;panel25.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel24.Name" xml:space="preserve">
+    <value>panel24</value>
+  </data>
+  <data name="&gt;&gt;panel24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel24.Parent" xml:space="preserve">
+    <value>panel23</value>
+  </data>
+  <data name="&gt;&gt;panel24.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 433</value>
+  </data>
+  <data name="panel23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 213</value>
+  </data>
+  <data name="panel23.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;panel23.Name" xml:space="preserve">
+    <value>panel23</value>
+  </data>
+  <data name="&gt;&gt;panel23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel23.Parent" xml:space="preserve">
+    <value>panel_AccCur_parameter</value>
+  </data>
+  <data name="&gt;&gt;panel23.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;tb_AccCur_parameter_Predict1.Name" xml:space="preserve">
@@ -28332,6 +28476,66 @@
   <data name="&gt;&gt;tb_AccCur_parameter_AIvalue.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="label144.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label144.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label144.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 115</value>
+  </data>
+  <data name="label144.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 25</value>
+  </data>
+  <data name="label144.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="label144.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label144.Name" xml:space="preserve">
+    <value>label144</value>
+  </data>
+  <data name="&gt;&gt;label144.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label144.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label144.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label145.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label145.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label145.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 123</value>
+  </data>
+  <data name="label145.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 25</value>
+  </data>
+  <data name="label145.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="label145.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label145.Name" xml:space="preserve">
+    <value>label145</value>
+  </data>
+  <data name="&gt;&gt;label145.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label145.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;label145.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;btn_AccCur_parameter_Add_Delete.Name" xml:space="preserve">
     <value>btn_AccCur_parameter_Add_Delete</value>
   </data>
@@ -28594,6 +28798,27 @@
     <value>panel_AccCur_setting</value>
   </data>
   <data name="&gt;&gt;label147.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 115</value>
+  </data>
+  <data name="panel26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 10</value>
+  </data>
+  <data name="panel26.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;panel26.Name" xml:space="preserve">
+    <value>panel26</value>
+  </data>
+  <data name="&gt;&gt;panel26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel26.Parent" xml:space="preserve">
+    <value>panel21</value>
+  </data>
+  <data name="&gt;&gt;panel26.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

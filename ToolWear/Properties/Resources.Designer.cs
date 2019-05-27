@@ -193,6 +193,16 @@ namespace ToolWear.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap NCUT_logo {
+            get {
+                object obj = ResourceManager.GetObject("NCUT_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap SE_logo {
             get {
                 object obj = ResourceManager.GetObject("SE_logo", resourceCulture);
