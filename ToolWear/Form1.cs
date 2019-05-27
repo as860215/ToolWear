@@ -2880,18 +2880,19 @@ namespace ToolWear{
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 轉動撥桿
         private void tbar_AccCur_parameter_surface_Scroll(object sender, EventArgs e){
-            tb_AccCur_parameter_surface.Text = ((float)tbar_AccCur_parameter_surface.Value / 10).ToString("0.0");
+            tb_AccCur_parameter_surface.Text = ((float)tbar_AccCur_parameter_surface.Value / 1000).ToString("0.000");
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 輸入表面精度
         private void tb_AccCur_parameter_surface_TextChanged(object sender, EventArgs e){
             try{
                 //先將輸入值轉型，確保不是非法字元
                 float tem = float.Parse(tb_AccCur_parameter_surface.Text);
-                if((int)(tem * 10) > tbar_AccCur_parameter_surface.Maximum){
+                if((int)(tem * 1000) > tbar_AccCur_parameter_surface.Maximum){
                     MessageBox.Show("超出預設最大值。", "超出索引", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                tbar_AccCur_parameter_surface.Value = (int)(tem * 10);
+                tbar_AccCur_parameter_surface.Value = (int)(tem * 1000);
+                AccCur_parameter_LoadData();
             }
             catch { }
         }
@@ -2929,11 +2930,52 @@ namespace ToolWear{
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 工件材料選擇
         private void lb_AccCur_parameter_workpiece_SelectedIndexChanged(object sender, EventArgs e){
-
+            AccCur_parameter_LoadData();
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 砂輪規格選擇
         private void lb_AccCur_parameter_type_SelectedIndexChanged(object sender, EventArgs e){
+            AccCur_parameter_LoadData();
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 讀取各項加工參數
+        private void AccCur_parameter_LoadData(){
+            try{
+                //精加工資料
 
+                List<string> Read_Data = new List<string>();    //暫存讀取資料
+                StreamReader sr = new StreamReader(string.Format(@"{0}\data\AccCur\database\{1}_{2}.csv", path, lb_AccCur_parameter_type.Text, lb_AccCur_parameter_workpiece.Text));
+                sr.ReadLine();  //第一行為中文標題欄
+                sr.ReadLine();  //第二行為英文標題欄
+                while (!sr.EndOfStream)
+                    Read_Data.Add(sr.ReadLine());
+                sr.Close();
+                sr.Dispose();
+
+                //字串說明
+                //1:砂輪號數(WA-??) 8:轉數 11:每次下降量 14:實際表面精度
+
+                //找尋最接近使用者輸入的表面精度項目
+                float Surface_Max = 0f; //暫存已讀取最大值
+                int Surface_Count = 0;  //暫存已讀取最大值在陣列內的次序
+                for(int i = 0; i < Read_Data.Count; i++){
+                    float Now_Surface = float.Parse(Read_Data[i].Split(',')[14]);
+                    //先判斷讀取的值比輸入的值還要小
+                    if(Now_Surface < float.Parse(tb_AccCur_parameter_surface.Text)){
+                        //判斷是否有比已讀取的最大值還要大
+                        if (Now_Surface > Surface_Max){
+                            Surface_Count = i;
+                            Surface_Max = Now_Surface;
+                        }
+                    }
+                }
+
+                //讀取最大值次序的各項參數
+                tb_AccCur_parameter_WheelNumber2.Text = Read_Data[Surface_Count].Split(',')[1].Split('-')[1];
+                AccCur_parameter_WheelSpeed2.Text = Read_Data[Surface_Count].Split(',')[8];
+                tb_AccCur_parameter_WheelDown2.Text = Read_Data[Surface_Count].Split(',')[11];
+                tb_AccCur_parameter_Predict2.Text = Read_Data[Surface_Count].Split(',')[14];
+            }
+            catch{
+            }
         }
         #endregion
         #endregion
@@ -3200,7 +3242,7 @@ namespace ToolWear{
             for (int i = 0; i < 20; i++) {
                 if (ToolWear_bool[i] == true) {
                     //MessageBox.Show("Beta階段只允許單軸偵測，請先關閉當前正在偵測的軸向再點選其他按鈕。", "嘗試選取多軸向", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    Write_Log("緊急", "目前只允許單軸偵測，請先關閉當前正在偵測的軸向再點選其他按鈕。");
+                    Write_Log("系統", "目前只允許單軸偵測，請先關閉當前正在偵測的軸向再點選其他按鈕。");
                     return;
                 }
             }
