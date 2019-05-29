@@ -3978,14 +3978,16 @@ namespace ToolWear{
         #endregion
         #endregion
         #region Timer事件
+        //溫度感測
         private void timer_temperature_Tick(object sender, EventArgs e) {
             Thread TD_FakeData = new Thread(Thermal_FakeData);
             TD_FakeData.Start();
         }
-
+        //擷取寶元訊號
         private void timer_LNC_Tick(object sender, EventArgs e) {
             LNC_GetData();
         }
+        //電流擷取
         private void timer_Current_Tick(object sender, EventArgs e) {
             //Current_Getdata("33");
             Current_Getdata_Schneider("1");
@@ -4078,9 +4080,9 @@ namespace ToolWear{
             timer_prediction_SL.Enabled = false;
             PB_prediction_SL.Value = 100;
         }
-
         //暫存上次讀取的RPM數據
         double LastReload_RPM = 0;
+        //讀取CNC資料
         private void timer_CNC_Tick(object sender,EventArgs e){
             if (machine_type.Equals("Mitsubishi")){
                 ATC_RPM = Mitsubishi_GetFeedSpeed();
