@@ -4995,7 +4995,11 @@ namespace ToolWear{
                         CatchLog(1002, Bro_lRet);
                     return Bro_lRet;
                 case "Fanuc":
-                    break;
+                    Focas1.ODBST FStatusInfo = new Focas1.ODBST();
+                    Fanuc_lRet = Focas1.cnc_statinfo(FFlibHndl, FStatusInfo);
+                    if (FStatusInfo.alarm == 1) return "Alarm";
+                    else if (FStatusInfo.run == 1) return "Run";
+                    else return "Start";
             }
             return "";
         }
