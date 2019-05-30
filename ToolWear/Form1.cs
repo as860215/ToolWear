@@ -4084,8 +4084,11 @@ namespace ToolWear{
         double LastReload_RPM = 0;
         //讀取CNC資料
         private void timer_CNC_Tick(object sender,EventArgs e){
+            //取得轉速
             ATC_RPM = CNC_GetFeedSpeed();
+            //取得刀號
             ATC_num = CNC_GetATCStatus();
+            //讀取記憶體位置
             if (machine_type.Equals("Mitsubishi")){
                 lb_prediction_status.Text = CNC_GetMemoryData("M4992").ToString();
             }
@@ -4148,6 +4151,7 @@ namespace ToolWear{
                 //進到例外表示沒有當前轉速/刀號的學習紀錄檔，可忽略
             }
         }
+        //假資料方法
         private void timer_FakeData_Tick(object sender,EventArgs e){
             machine_connect = true;
             Random ran = new Random();
@@ -4934,6 +4938,7 @@ namespace ToolWear{
         }
         #endregion
         #region 控制器讀取
+        #region 控制器取值方法
         //暫存轉速
         double ATC_RPM = 0;
         /// <summary>
@@ -5169,6 +5174,7 @@ namespace ToolWear{
             }
             return "";
         }
+        #endregion
         #region 三菱初始化
         long lRet;
         DispEZNcCommunication EZNcCom = new DispEZNcCommunication();
