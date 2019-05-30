@@ -4093,6 +4093,9 @@ namespace ToolWear{
                 ATC_RPM = double.Parse(Brother_GetFeedSpeed());
                 ATC_num = int.Parse(Brother_GetATCStatus());
             }
+            else if (machine_type.Equals("Fanuc")){
+                ATC_RPM = FANUC_GetFeedSpeed();
+            }
             lb_ToolWear_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
             lb_Learn_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
             lb_ToolWear_Tool.Text = ATC_num.ToString();
@@ -4741,7 +4744,7 @@ namespace ToolWear{
         //暫存LNC資料
         DataTable dt_LNC = new DataTable();
         //取得LNC資料
-        private void LNC_GetData(){
+            private void LNC_GetData(){
             ushort i = 0;
             short rc = 0;
             byte commSts = 0, sensorSTS = 0;
@@ -5170,7 +5173,7 @@ namespace ToolWear{
         ushort FFlibHndl;
         //String FileName;
         /// <summary>
-        /// Fanuc控制器初始化
+        /// Fanuc控制器 > 初始化
         /// </summary>
         private short FANUC_Initialization(){
             Fanuc_lRet = Focas1.cnc_allclibhndl3(tb_setting_ip.Text, 8193, 1, out FFlibHndl);
@@ -5182,6 +5185,19 @@ namespace ToolWear{
                 timer_CNC.Enabled = true;
             }
             return Fanuc_lRet;
+        }
+        /// <summary>
+        /// Fanuc控制器 > 取得轉速
+        /// </summary>
+        /// <returns></returns>
+        private long FANUC_GetFeedSpeed(){
+            Focas1.ODBACT speed = new Focas1.ODBACT();
+            Fanuc_lRet = Focas1.cnc_acts(FFlibHndl, speed);
+            if (Fanuc_lRet == 0)
+                return speed.dummy[1];
+            else
+                CatchLog(1003, lRet.ToString());
+            return 0;
         }
         #endregion
         #endregion
