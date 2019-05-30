@@ -4084,17 +4084,10 @@ namespace ToolWear{
         double LastReload_RPM = 0;
         //讀取CNC資料
         private void timer_CNC_Tick(object sender,EventArgs e){
+            ATC_RPM = CNC_GetFeedSpeed();
+            ATC_num = CNC_GetATCStatus();
             if (machine_type.Equals("Mitsubishi")){
-                ATC_RPM = Mitsubishi_GetFeedSpeed();
-                ATC_num = Mitsubishi_GetATCStatus();
-                lb_prediction_status.Text = Mitsubishi_GetMemoryData("M4992").ToString();
-            }
-            else if (machine_type.Equals("Brother")){
-                ATC_RPM = double.Parse(Brother_GetFeedSpeed());
-                ATC_num = int.Parse(Brother_GetATCStatus());
-            }
-            else if (machine_type.Equals("Fanuc")){
-                ATC_RPM = FANUC_GetFeedSpeed();
+                lb_prediction_status.Text = CNC_GetMemoryData("M4992").ToString();
             }
             lb_ToolWear_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
             lb_Learn_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
@@ -4943,7 +4936,240 @@ namespace ToolWear{
         #region 控制器讀取
         //暫存轉速
         double ATC_RPM = 0;
-        #region 三菱
+        /// <summary>
+        /// 控制器讀取 > 取得目前使用刀號
+        /// </summary>
+        /// <returns>目前刀號</returns>
+        private int CNC_GetATCStatus(){
+            switch (machine_type){
+                case "Mitsubishi":
+                    if (machine_connect == false) return -1;
+                    int ATC_NUM = 0;
+                    if (lRet == 0){
+                        //取得目前使用刀號
+                        lRet = EZNcCom.ATC_GetMGNReady(0, out ATC_NUM);
+                        if (lRet == 0)
+                            return ATC_NUM;
+                        else
+                            CatchLog(1001, lRet.ToString());
+                    }
+                    return 0;
+                case "Brother":
+                    Brother br = new Brother(tb_setting_ip.Text, 10000);
+                    Bro_lRet = br.ATC_Number();
+                    if (Bro_lRet.Equals(""))
+                        CatchLog(1001, Bro_lRet);
+                    return int.Parse(Bro_lRet);
+                case "Fanuc":
+                    break;
+            }
+            return 0;
+        }
+        /// <summary>
+        /// 控制器讀取 > 取得機台狀態
+        /// </summary>
+        /// <returns>目前狀態</returns>
+        private string CNC_GetRunStatus(){
+            switch (machine_type){
+                case "Mitsubishi":
+                    if (machine_connect == false) return "NotConnect";
+                    string[] s_status = new string[3] { "Run", "Start", "Alarm" };
+                    int status = 0;
+                    if (lRet == 0){
+                        lRet = EZNcCom.Status_GetRunStatus(2, out status);
+                        if (lRet == 0)
+                            return s_status[status];
+                        else
+                            CatchLog(1002, lRet.ToString());
+                    }
+                    return "";
+                case "Brother":
+                    Brother br = new Brother(tb_setting_ip.Text, 10000);
+                    Bro_lRet = br.CNC_Status();
+                    if (Bro_lRet.Equals(""))
+                        CatchLog(1002, Bro_lRet);
+                    return Bro_lRet;
+                case "Fanuc":
+                    break;
+            }
+            return "";
+        }
+        /// <summary>
+        /// 控制器讀取 > 取得轉速
+        /// </summary>
+        /// <returns>轉速(RPM)</returns>
+        private int CNC_GetFeedSpeed(){
+            switch (machine_type){
+                case "Mitsubishi":
+                    if (machine_connect == false) return -1;
+                    int lIndex = 2, lspindle = 1, plData = 0;
+                    string buffer = "";
+                    if (lRet == 0){
+                        lRet = EZNcCom.Monitor_GetSpindleMonitor(lIndex, lspindle, out plData, out buffer);
+                        //補正轉速偏差
+                        if (plData % 10 == 9) plData++;
+                        else if (plData % 10 == 1) plData--;
+                        return plData;
+                    }
+                    else
+                        CatchLog(1003, lRet.ToString());
+                    return 0;
+                case "Brother":
+                    Brother br = new Brother(tb_setting_ip.Text, 10000);
+                    Bro_lRet = br.Rotating();
+                    if (Bro_lRet.Equals(""))
+                        CatchLog(1003, Bro_lRet);
+                    return int.Parse(Bro_lRet);
+                case "Fanuc":
+                    Focas1.ODBACT speed = new Focas1.ODBACT();
+                    Fanuc_lRet = Focas1.cnc_acts(FFlibHndl, speed);
+                    if (Fanuc_lRet == 0)
+                        return speed.dummy[1];
+                    else
+                        CatchLog(1003, lRet.ToString());
+                    return 0;
+            }
+            return 0;
+        }
+        /// <summary>
+        /// 控制器讀取 > 取得輸入記憶體位置資料
+        /// </summary>
+        /// <param name="Address">記憶體位置</param>
+        /// <returns>記憶體資料(-1為失敗)</returns>
+        private int CNC_GetMemoryData(string Address){
+            switch (machine_type){
+                case "Mitsubishi":
+                    if (machine_connect == false) return -1;
+                    object vValues = null;
+                    lRet = EZNcCom.Device_ReadBlock(2, Address, 2, out vValues);
+                    if (lRet == 0){
+                        int tem_value = ((int[])vValues)[0];
+                        return tem_value;
+                    }
+                    else
+                        CatchLog(1004, lRet.ToString());
+                    return -1;
+                case "Brother":
+                    break;
+                case "Fanuc":
+                    break;
+            }
+            return -1;
+        }
+        /// <summary>
+        /// 控制器讀取 > 將數值寫入指定的記憶體位置
+        /// </summary>
+        /// <param name="address">記憶體位置</param>
+        /// <param name="value">數值</param>
+        /// <returns>是否成功改寫記憶體</returns>
+        private bool CNC_WriteMemoryData(string address, string value){
+            switch (machine_type){
+                case "Mitsubishi":
+                    if (machine_connect == false) return false;
+                    object vValue = value;
+                    lRet = EZNcCom.Device_WriteBlock(2, address, 2, vValue);
+                    if (lRet == 0)
+                        return true;
+                    else
+                        CatchLog(1005, lRet.ToString());
+                    return false;
+                case "Brother":
+                    break;
+                case "Fanuc":
+                    break;
+            }
+            return false;
+        }
+        /// <summary>
+        /// 控制器讀取 > 緊急停止
+        /// </summary>
+        /// <returns>是否成功</returns>
+        private bool CNC_Stop(){
+            switch (machine_type){
+                case "Mitsubishi":
+                    if (machine_connect == false) return false;
+                    lRet = EZNcCom.Operation_Stop();
+                    if (lRet == 0)
+                        return true;
+                    else
+                        CatchLog(1006, lRet.ToString());
+                    return false;
+                case "Brother":
+                    break;
+                case "Fanuc":
+                    break;
+            }
+            return false;
+        }
+        /// <summary>
+        /// 重置急停
+        /// </summary>
+        /// <returns>是否成功</returns>
+        private bool CNC_Run(){
+            switch (machine_type){
+                case "Mitsubishi":
+                    if (machine_connect == false) return false;
+                    lRet = EZNcCom.Operation_Run();
+                    if (lRet == 0)
+                        return true;
+                    return false;
+                case "Brother":
+                    break;
+                case "Fanuc":
+                    break;
+            }
+            return false;
+        }
+        /// <summary>
+        /// 取得機台Alarm狀態
+        /// </summary>
+        /// <returns>Alarm訊號</returns>
+        private string CNC_GetAlarm(){
+            switch (machine_type){
+                case "Mitsubishi":
+                    if (machine_connect == false) return "NotConnect";
+                    string sBuffer = "";
+                    lRet = EZNcCom.System_GetAlarm(10, 0, out sBuffer);
+                    if (lRet == 0)
+                        return sBuffer;
+                    else
+                        CatchLog(1007, lRet.ToString());
+                    return "";
+                case "Brother":
+                    break;
+                case "Fanuc":
+                    break;
+            }
+            return "";
+        }
+        /// <summary>
+        /// 取得機台指定軸向負載
+        /// </summary>
+        /// <param name="Axis">軸向(從1開始)</param>
+        /// <returns>負載量(%)</returns>
+        private string CNC_GetLoad(int Axis){
+            switch (machine_type){
+                case "Mitsubishi":
+                    int lAxisNo = Axis;
+                    int lIndex = 3;
+                    //軸負載(0%為0，1%為65535，2%為65534，以此類推)
+                    lRet = EZNcCom.Monitor_GetServoMonitor(lAxisNo, lIndex, out int plData, out string pbstrBuffer);
+                    if (lRet == 0){
+                        if (plData != 0)
+                            plData = 65536 - plData;
+                        return plData.ToString();
+                    }
+                    else
+                        CatchLog(1008, lRet.ToString());
+                    return "";
+                case "Brother":
+                    break;
+                case "Fanuc":
+                    break;
+            }
+            return "";
+        }
+        #region 三菱初始化
         long lRet;
         DispEZNcCommunication EZNcCom = new DispEZNcCommunication();
         /// <summary>
@@ -4965,159 +5191,8 @@ namespace ToolWear{
                 machine_connect = false;
             return lRet;
         }
-        /// <summary>
-        /// 三菱控制器 > 取得自動換刀裝置目前使用刀號
-        /// </summary>
-        /// <returns>目前刀號</returns>
-        private int Mitsubishi_GetATCStatus(){
-            if (machine_connect == false) return -1;
-            int ATC_NUM = 0;
-            if (lRet == 0){
-                //取得目前使用刀號
-                lRet = EZNcCom.ATC_GetMGNReady(0, out ATC_NUM);
-                if (lRet == 0)
-                    return ATC_NUM;
-                else
-                    CatchLog(1001, lRet.ToString());
-            }
-            //lRet = EZNcCom.Close();
-            //EZNcCom = null;
-            return 0;
-        }
-        /// <summary>
-        /// 三菱控制器 > 取得機台狀態
-        /// </summary>
-        /// <returns>目前狀態</returns>
-        private string Mitsubishi_GetRunStatus(){
-            if (machine_connect == false) return "NotConnect";
-            string[] s_status = new string[3] { "Run", "Start", "Alarm" };
-            int status = 0;
-            if(lRet == 0){
-                lRet = EZNcCom.Status_GetRunStatus(2, out status);
-                if (lRet == 0)
-                    return s_status[status];
-                else
-                    CatchLog(1002, lRet.ToString());
-            }
-            //lRet = EZNcCom.Close();
-            //EZNcCom = null;
-            return "";
-        }
-        /// <summary>
-        /// 取得目前轉速
-        /// </summary>
-        /// <returns>轉速(RPM)</returns>
-        private int Mitsubishi_GetFeedSpeed(){
-            if (machine_connect == false) return -1;
-            int lIndex = 2, lspindle = 1, plData = 0;
-            string buffer = "";
-            if (lRet == 0){
-                lRet = EZNcCom.Monitor_GetSpindleMonitor(lIndex, lspindle, out plData, out buffer);
-                if (lRet == 0){
-                    //補正轉速偏差
-                    if (plData % 10 == 9) plData++;
-                    else if (plData % 10 == 1) plData--;
-                    return plData;
-                }
-                else
-                    CatchLog(1003, lRet.ToString());
-            }
-            //lRet = EZNcCom.Close();
-            //EZNcCom = null;
-            return 0;
-        }
-        /// <summary>
-        /// 取得輸入的記憶體位置資料
-        /// </summary>
-        /// <param name="Address">記憶體位置</param>
-        /// <returns>記憶體資料(-1為失敗)</returns>
-        private int Mitsubishi_GetMemoryData(string Address){
-            if (machine_connect == false) return -1;
-            object vValues = null;
-            lRet = EZNcCom.Device_ReadBlock(2, Address, 2, out vValues);
-            if(lRet == 0){
-                int tem_value = ((int[])vValues)[0];
-                return tem_value;
-            }
-            else
-                CatchLog(1004, lRet.ToString());
-            return -1;
-        }
-        /// <summary>
-        /// 將數值寫入指定的記憶體位置
-        /// </summary>
-        /// <param name="address">記憶體位置</param>
-        /// <param name="value">數值</param>
-        /// <returns>是否成功改寫記憶體</returns>
-        private bool Mitsubishi_WriteMemoryData(string address,string value){
-            if (machine_connect == false) return false;
-            object vValue = value;
-            lRet = EZNcCom.Device_WriteBlock(2, address, 2, vValue);
-            if (lRet == 0)
-                return true;
-            else
-                CatchLog(1005,lRet.ToString());
-            return false;
-        }
-        /// <summary>
-        /// 緊急停止
-        /// </summary>
-        /// <returns>是否成功</returns>
-        private bool Mitsubishi_Stop(){
-            if (machine_connect == false) return false;
-            lRet = EZNcCom.Operation_Stop();
-            if (lRet == 0)
-                return true;
-            else
-                CatchLog(1006, lRet.ToString());
-            return false;
-        }
-        /// <summary>
-        /// 重置急停
-        /// </summary>
-        /// <returns>是否成功</returns>
-        private bool Mitsubishi_Run(){
-            if (machine_connect == false) return false;
-            lRet = EZNcCom.Operation_Run();
-            if (lRet == 0)
-                return true;
-            return false;
-        }
-        /// <summary>
-        /// 取得機台Alarm狀態
-        /// </summary>
-        /// <returns>Alarm訊號</returns>
-        private string Mitsubishi_GetAlarm(){
-            if (machine_connect == false) return "NotConnect";
-            string sBuffer = "";
-            lRet = EZNcCom.System_GetAlarm(10, 0,out sBuffer);
-            if (lRet == 0)
-                return sBuffer;
-            else
-                CatchLog(1007, lRet.ToString());
-            return "";
-        }
-        /// <summary>
-        /// 取得機台指定軸向負載
-        /// </summary>
-        /// <param name="Axis">軸向(從1開始)</param>
-        /// <returns>負載量(%)</returns>
-        private string Mitsubishi_GetLoad(int Axis){
-            int lAxisNo = Axis;
-            int lIndex = 3;
-            //軸負載(0%為0，1%為65535，2%為65534，以此類推)
-            lRet = EZNcCom.Monitor_GetServoMonitor(lAxisNo, lIndex, out int plData, out string pbstrBuffer);
-            if (lRet == 0){
-                if(plData != 0)
-                    plData = 65536 - plData;
-                return plData.ToString();
-            }
-            else
-                CatchLog(1008, lRet.ToString());
-            return "";
-        }
         #endregion
-        #region Brother
+        #region Brother初始化
         string Bro_lRet = "";
         /// <summary>
         /// Brother控制器初始化
@@ -5134,41 +5209,8 @@ namespace ToolWear{
             }
             return Bro_lRet;
         }
-        /// <summary>
-        /// Brother控制器 > 取得自動換刀裝置目前使用刀號
-        /// </summary>
-        /// <returns>目前刀號</returns>
-        private string Brother_GetATCStatus(){
-            Brother br = new Brother(tb_setting_ip.Text, 10000);
-            Bro_lRet = br.ATC_Number();
-            if (Bro_lRet.Equals(""))
-                CatchLog(1001,Bro_lRet);
-            return Bro_lRet;
-        }
-        /// <summary>
-        /// Brother控制器 > 取得機台狀態
-        /// </summary>
-        /// <returns>目前狀態</returns>
-        private string Brother_GetRunStatus(){
-            Brother br = new Brother(tb_setting_ip.Text, 10000);
-            Bro_lRet = br.CNC_Status();
-            if (Bro_lRet.Equals(""))
-                CatchLog(1002, Bro_lRet);
-            return Bro_lRet;
-        }
-        /// <summary>
-        /// 取得目前轉速
-        /// </summary>
-        /// <returns>轉速(RPM)</returns>
-        private string Brother_GetFeedSpeed(){
-            Brother br = new Brother(tb_setting_ip.Text, 10000);
-            Bro_lRet = br.Rotating();
-            if (Bro_lRet.Equals(""))
-                CatchLog(1003, Bro_lRet);
-            return Bro_lRet;
-        }
         #endregion
-        #region 發那科
+        #region Fanuc初始化
         short Fanuc_lRet = 0;
         ushort FFlibHndl;
         //String FileName;
@@ -5185,19 +5227,6 @@ namespace ToolWear{
                 timer_CNC.Enabled = true;
             }
             return Fanuc_lRet;
-        }
-        /// <summary>
-        /// Fanuc控制器 > 取得轉速
-        /// </summary>
-        /// <returns></returns>
-        private long FANUC_GetFeedSpeed(){
-            Focas1.ODBACT speed = new Focas1.ODBACT();
-            Fanuc_lRet = Focas1.cnc_acts(FFlibHndl, speed);
-            if (Fanuc_lRet == 0)
-                return speed.dummy[1];
-            else
-                CatchLog(1003, lRet.ToString());
-            return 0;
         }
         #endregion
         #endregion
