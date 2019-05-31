@@ -3084,7 +3084,7 @@ namespace ToolWear{
                 //如果Surface_Count == -1 表示沒有找到符合的資料
                 if (Surface_Count == -1){
                     tb_AccCur_parameter_WheelNumber.Text = "無資料";
-                    AccCur_parameter_WheelSpeed.Text = "無資料";
+                    tb_AccCur_parameter_WheelSpeed.Text = "無資料";
                     tb_AccCur_parameter_WheelDown.Text = "無資料";
                     tb_AccCur_parameter_Speed.Text = "無資料";
                     tb_AccCur_parameter_Pitch.Text = "無資料";
@@ -3096,13 +3096,13 @@ namespace ToolWear{
                     tb_AccCur_parameter_WheelDown.Text = Read_Data[Surface_Count].Split(',')[11];
                     tb_AccCur_parameter_Pitch.Text = Read_Data[Surface_Count].Split(',')[13];
                     tb_AccCur_parameter_Predict.Text = Read_Data[Surface_Count].Split(',')[14];
-                    AccCur_parameter_WheelSpeed.Text = Read_Data[Surface_Count].Split(',')[8];
+                    tb_AccCur_parameter_WheelSpeed.Text = Read_Data[Surface_Count].Split(',')[8];
                     tb_AccCur_parameter_Speed.Text = Read_Data[Surface_Count].Split(',')[9];
                 }
             }
             catch{
                 tb_AccCur_parameter_WheelNumber.Text = "無資料";
-                AccCur_parameter_WheelSpeed.Text = "無資料";
+                tb_AccCur_parameter_WheelSpeed.Text = "無資料";
                 tb_AccCur_parameter_WheelDown.Text = "無資料";
                 tb_AccCur_parameter_Speed.Text = "無資料";
                 tb_AccCur_parameter_Pitch.Text = "無資料";
@@ -4694,14 +4694,39 @@ namespace ToolWear{
                 chart_AccCur_Z.Series[0].Points.Clear();
                 chart_AccCur_Current.Series[0].Points.Clear();
 
-                for (int i = 0; i < dataTable.Rows.Count; i++){
-                    chart_AccCur_X.Series[0].Points.AddXY(i, dataTable.Rows[i][0]);
-                    chart_AccCur_Y.Series[0].Points.AddXY(i, dataTable.Rows[i][1]);
-                    chart_AccCur_Z.Series[0].Points.AddXY(i, dataTable.Rows[i][2]);
-                    chart_AccCur_Current.Series[0].Points.AddXY(i, dataTable.Rows[i][3]);
+                //繪圖
+                NumericUpDown[] num_Channel = new NumericUpDown[3] { num_AccCur_X, num_AccCur_Y, num_AccCur_Z};
+                System.Windows.Forms.DataVisualization.Charting.Chart[] chart_Channel = 
+                    new System.Windows.Forms.DataVisualization.Charting.Chart[3] {chart_AccCur_X,chart_AccCur_Y,chart_AccCur_Z};
+                //判斷是否執行FFT轉換
+                if (cb_AccCur_FFT.Checked == true){
+                    //將警戒線調整為0~5000
+                    for(int i = 0;i< num_Channel.Length; i++) {
+                        chart_Channel[i].Series[2].Points.Clear();
+                        chart_Channel[i].Series[2].Points.AddXY(0, num_Channel[i].Value);
+                        chart_Channel[i].Series[2].Points.AddXY(5000, num_Channel[i].Value);
+                    }
+                    FFT("AccCur", dataTable, 2000, 10000);
                 }
-                //若有勾選紀錄資料則記錄每一個軸向資料
-                if(chb_AccCur_Record.Checked == true){
+                else{
+                    //將警戒線調整為0~2000
+                    for (int i = 0; i < num_Channel.Length; i++){
+                        chart_Channel[i].Series[2].Points.Clear();
+                        chart_Channel[i].Series[2].Points.AddXY(0, num_Channel[i].Value);
+                        chart_Channel[i].Series[2].Points.AddXY(2000, num_Channel[i].Value);
+                    }
+                    //繪圖
+                    for (int i = 0; i < dataTable.Rows.Count; i++){
+                        chart_AccCur_X.Series[0].Points.AddXY(i, dataTable.Rows[i][0]);
+                        chart_AccCur_Y.Series[0].Points.AddXY(i, dataTable.Rows[i][1]);
+                        chart_AccCur_Z.Series[0].Points.AddXY(i, dataTable.Rows[i][2]);
+                    }
+                }
+                //繪製電流圖
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                    chart_AccCur_Current.Series[0].Points.AddXY(i, dataTable.Rows[i][3]);
+                //若有勾選紀錄資料則記錄每一個軸向資料(原始資料)
+                if (chb_AccCur_Record.Checked == true){
                     string[] Acc_path = new string[4] { @"data\AccCur\X.csv", @"data\AccCur\Y.csv", @"data\AccCur\Z.csv", @"data\AccCur\Cur.csv" };
                     for(int i = 0; i < Acc_path.Length; i++){
                         FileStream File_module = File.Open(path + Acc_path[i], FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
@@ -4747,93 +4772,127 @@ namespace ToolWear{
         /// <summary>
         /// 傅立葉轉換
         /// </summary>
+        /// <param name="mode">現在的執行模式</param>
+        /// <param name="dt">轉換資料</param>
+        /// <param name="sample">頻率</param>
+        /// <param name="rate">取樣</param>
         private void FFT(string mode,DataTable dt,double sample, double rate){
-            //
-            // Simple example to compute a forward 1D real 1024 point FFT
-            //
-            
-            try{
-                chart_FFT.Series[3].Points.Clear();
-                chart_LearnFFT.Series[0].Points.Clear();
-            }
-            catch (Exception ex){
-                MessageBox.Show("發生不可測意外。\n\nFFT\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            #region 偵測/學習模式
+            if (mode.Equals("Learn") || mode.Equals("Match")){
+                try{
+                    chart_FFT.Series[3].Points.Clear();
+                    chart_LearnFFT.Series[0].Points.Clear();
+                }
+                catch (Exception ex){
+                    MessageBox.Show("發生不可測意外。\n\nFFT\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                
+                Complex[] samples = new Complex[(int)sample];
+                for (int i = 0; i < sample; i++)
+                    samples[i] = new Complex(double.Parse(dt.Rows[i][0].ToString()), 0);
+                Fourier.Forward(samples, FourierOptions.NoScaling);
+                //判斷轉速(如果機台未連線或為0，設為預設2500)
+                if (machine_connect == false || ATC_RPM == 0)
+                    ATC_RPM = 2500;
+                //判斷模式
+                string tem_path = "";
 
-            //double[] fund = Generate.Sinusoidal((int)samplesPerChannelNumeric_base, (int)rateNumeric_base, 60, 10, 0);
-            Complex[] samples = new Complex[(int)sample];
-            for (int i = 0; i < sample; i++)
-                samples[i] = new Complex(double.Parse(dt.Rows[i][0].ToString()), 0);
-            Fourier.Forward(samples, FourierOptions.NoScaling);
-            //判斷轉速(如果機台未連線或為0，設為預設2500)
-            if (machine_connect == false || ATC_RPM == 0)
-                ATC_RPM = 2500;
-            //判斷模式
-            string tem_path = "";
-
-            if (mode.Equals("Learn")) {
-                //判斷檔案是否存在
-                tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
-                //若沒有存在則使用預設0刀號
-                //if (!File.Exists(tem_path))
-                //    tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + "0" + "_" + (int)ATC_RPM + ".cp";
-            }
-            else if (mode.Equals("Match")){
-                for (int i = 0; i < ToolWear_bool.Length; i++)
-                    if (ToolWear_bool[i] == true){
-                        //判斷檔案是否存在
-                        tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
+                if (mode.Equals("Learn")){
+                    //判斷檔案是否存在
+                    tem_path = path + @"\data\FFT\L-" + lb_Learn_WorkName.Text + Learn_Axial + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
+                }
+                else if (mode.Equals("Match")){
+                    for (int i = 0; i < ToolWear_bool.Length; i++)
+                        if (ToolWear_bool[i] == true)
+                        {
+                            //判斷檔案是否存在
+                            tem_path = path + @"\data\FFT\M-" + lb_ToolWear_Parts.Text + (i + 1).ToString("00") + "-" + ATC_num + "_" + (int)ATC_RPM + ".cp";
+                        }
+                }
+                //先讀取目前刀具的最大值檔案
+                try{
+                    StreamReader sr = new StreamReader(tem_path);
+                    int count = 0;
+                    //sr.ReadLine();  //先將第一行設定檔讀出來
+                    while (!sr.EndOfStream){
+                        List_FFT_Max[count] = sr.ReadLine();
+                        count++;
                     }
-            }
-            //先讀取目前刀具的最大值檔案
-            try{
-                StreamReader sr = new StreamReader(tem_path);
-                int count = 0;
-                //sr.ReadLine();  //先將第一行設定檔讀出來
-                while (!sr.EndOfStream){
-                    List_FFT_Max[count] = sr.ReadLine();
-                    count++;
+                    sr.Close();
+                    sr.Dispose();
                 }
-                sr.Close();
-                sr.Dispose();
-            }
-            catch {
-                //如果進到catch就表示目前沒有此刀具的檔案
-            }
-            for (int i = 0; i < sample / 2; i++){
-                double mag = (4.0 / sample) * (Math.Abs(Math.Sqrt(Math.Pow(samples[i].Real, 2) +
-                    Math.Pow(samples[i].Imaginary, 2))));
+                catch{
+                    //如果進到catch就表示目前沒有此刀具的檔案
+                }
                 double hz = rate / sample;
-                //if (mag < 0.5) mag *= 0.2f;
-                //在2000hz以下才畫圖
-                if(hz * (i + 1) < 2000){
-                    if (mode.Equals("Match")) chart_FFT.Series[3].Points.AddXY(hz * (i + 1), mag);
-                    else if (mode.Equals("Learn")) chart_LearnFFT.Series[0].Points.AddXY(hz * (i + 1), mag);
-                    //chart_FFT.Series[3].Points.AddXY(i + 1, fftresult.DataBlock.Data[i] / 100);
+                for (int i = 0; i < sample / 2; i++){
+                    double mag = (4.0 / sample) * (Math.Abs(Math.Sqrt(Math.Pow(samples[i].Real, 2) +
+                        Math.Pow(samples[i].Imaginary, 2))));
+                    //if (mag < 0.5) mag *= 0.2f;
+                    //在2000hz以下才畫圖
+                    if (hz * (i + 1) < 2000){
+                        if (mode.Equals("Match")) chart_FFT.Series[3].Points.AddXY(hz * (i + 1), mag);
+                        else if (mode.Equals("Learn")) chart_LearnFFT.Series[0].Points.AddXY(hz * (i + 1), mag);
+                        //chart_FFT.Series[3].Points.AddXY(i + 1, fftresult.DataBlock.Data[i] / 100);
+                    }
+                    //找尋最大值
+                    if (mag > double.Parse(List_FFT_Max[i]))
+                        List_FFT_Max[i] = mag.ToString();
                 }
-                //找尋最大值
-                if (mag > double.Parse(List_FFT_Max[i]))
-                    List_FFT_Max[i] = mag.ToString();
-            }
-            //寫檔
-            StreamWriter sw_Max = new StreamWriter(tem_path);
-            for (int i = 0; i < List_FFT_Max.Count; i++){
-                if(!List_FFT_Max[i].Equals("-99"))
-                    sw_Max.WriteLine(List_FFT_Max[i]);
-            }
-            sw_Max.Close();
-            sw_Max.Dispose();
-            
-            //在偵測模式下才進行判斷
-            if (mode.Equals("Match")){
-                //刃數比對
-                Blade_Comparison(sample, rate);
+                //寫檔
+                StreamWriter sw_Max = new StreamWriter(tem_path);
+                for (int i = 0; i < List_FFT_Max.Count; i++){
+                    if (!List_FFT_Max[i].Equals("-99"))
+                        sw_Max.WriteLine(List_FFT_Max[i]);
+                }
+                sw_Max.Close();
+                sw_Max.Dispose();
 
-                //警戒值判斷
-                ToolWear_Log(dt, sample, rate);
+                //在偵測模式下才進行判斷
+                if (mode.Equals("Match")){
+                    //刃數比對
+                    Blade_Comparison(sample, rate);
 
+                    //警戒值判斷
+                    ToolWear_Log(dt, sample, rate);
+                }
             }
+            #endregion
+            #region 磨耗偵測(三軸、電流)
+            if (mode.Equals("AccCur")){
+                //轉傅立葉
+                Complex[] samples_x = new Complex[(int)sample];
+                Complex[] samples_y = new Complex[(int)sample];
+                Complex[] samples_z = new Complex[(int)sample];
+                for (int i = 0; i < sample; i++){
+                    samples_x[i] = new Complex(double.Parse(dt.Rows[i][0].ToString()), 0);
+                    samples_y[i] = new Complex(double.Parse(dt.Rows[i][1].ToString()), 0);
+                    samples_z[i] = new Complex(double.Parse(dt.Rows[i][2].ToString()), 0);
+                }
+                Fourier.Forward(samples_x, FourierOptions.NoScaling);
+                Fourier.Forward(samples_y, FourierOptions.NoScaling);
+                Fourier.Forward(samples_z, FourierOptions.NoScaling);
+                //繪圖
+                chart_AccCur_X.Series[0].Points.Clear();
+                double hz = rate / sample;
+                for (int i = 0; i < sample / 2; i++){
+                    //取樣數太多，嘗試減少
+                    if (i % 2 == 0) continue;
+                    //震幅加權值
+                    double mag_x = (4.0 / sample) * (Math.Abs(Math.Sqrt(Math.Pow(samples_x[i].Real, 2) +
+                        Math.Pow(samples_x[i].Imaginary, 2))));
+                    double mag_y = (4.0 / sample) * (Math.Abs(Math.Sqrt(Math.Pow(samples_y[i].Real, 2) +
+                        Math.Pow(samples_y[i].Imaginary, 2))));
+                    double mag_z = (4.0 / sample) * (Math.Abs(Math.Sqrt(Math.Pow(samples_z[i].Real, 2) +
+                        Math.Pow(samples_z[i].Imaginary, 2))));
+
+                    chart_AccCur_X.Series[0].Points.AddXY(hz * (i + 1), mag_x);
+                    chart_AccCur_Y.Series[0].Points.AddXY(hz * (i + 1), mag_y);
+                    chart_AccCur_Z.Series[0].Points.AddXY(hz * (i + 1), mag_z);
+                }
+            }
+            #endregion
         }
         #endregion
         #region 寶元資料讀取
