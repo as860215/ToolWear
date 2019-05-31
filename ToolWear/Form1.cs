@@ -2879,6 +2879,27 @@ namespace ToolWear{
                 lb_AccCur_parameter_workpiece.SelectedIndex = 0;
             if (lb_AccCur_parameter_type.Items.Count > 0)
                 lb_AccCur_parameter_type.SelectedIndex = 0;
+
+            Panel[] Sep_workpiece = new Panel[7] { Sep_AccCur_parameter_workpiece1, Sep_AccCur_parameter_workpiece2,
+            Sep_AccCur_parameter_workpiece3,Sep_AccCur_parameter_workpiece4,Sep_AccCur_parameter_workpiece5,
+            Sep_AccCur_parameter_workpiece6,Sep_AccCur_parameter_workpiece7};
+            Panel[] Sep_type = new Panel[7] { Sep_AccCur_parameter_type1, Sep_AccCur_parameter_type2,
+            Sep_AccCur_parameter_type3,Sep_AccCur_parameter_type4,Sep_AccCur_parameter_type5,
+            Sep_AccCur_parameter_type6,Sep_AccCur_parameter_type7};
+            //如果listbox超過顯示數量(即顯示卷軸)，必須將分隔線縮短
+            for (int i = 0; i < Sep_workpiece.Length; i++){
+                if (lb_AccCur_parameter_workpiece.Items.Count > 7)
+                    Sep_workpiece[i].Size = new System.Drawing.Size(168, 1);
+                else
+                    Sep_workpiece[i].Size = new System.Drawing.Size(184, 1);
+            }
+
+            for (int i = 0; i < Sep_type.Length; i++){
+                if (lb_AccCur_parameter_type.Items.Count > 7)
+                    Sep_type[i].Size = new System.Drawing.Size(168, 1);
+                else
+                    Sep_type[i].Size = new System.Drawing.Size(184, 1);
+            }
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 回上一頁
         private void btn_AccCur_parameter_back_Click(object sender,EventArgs e){
@@ -2908,12 +2929,58 @@ namespace ToolWear{
             panel_AccCur_parameter_Add.Visible = true;
             panel_AccCur_parameter_Add.BringToFront();
             lb_AccCur_parameter_Add.Text = "工件材料";
+            tb_AccCur_parameter_Add.Text = "";
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 刪除工件材料
+        private void btn_AccCur_parameter_workpieceDelete_Click(object sender,EventArgs e){
+            DialogResult dialogResult = MessageBox.Show(string.Format("確定要刪除工件材料\n{0}？", lb_AccCur_parameter_workpiece.Text), "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Cancel) return;
+            int tem_Index = lb_AccCur_parameter_workpiece.SelectedIndex;  //暫存現在選取的位置
+            lb_AccCur_parameter_workpiece.Items.RemoveAt(tem_Index);
+            StreamWriter sw = new StreamWriter(path + @"data\AccCur\AccCur_workpiece.cp");
+            for (int i = 0; i < lb_AccCur_parameter_workpiece.Items.Count; i++){
+                lb_AccCur_parameter_workpiece.SelectedIndex = i;
+                sw.WriteLine(lb_AccCur_parameter_workpiece.Text);
+            }
+            sw.Close();
+            sw.Dispose();
+            //暫存砂輪目前選擇的位置
+            int tem_typeIndex = lb_AccCur_parameter_type.SelectedIndex;
+            //重新讀取
+            AccCur_parameter_Load();
+            //選擇預設值
+            lb_AccCur_parameter_type.SelectedIndex = tem_typeIndex;
+            try { lb_AccCur_parameter_workpiece.SelectedIndex = tem_Index; }
+            catch { lb_AccCur_parameter_workpiece.SelectedIndex = tem_Index - 1; };
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 新增砂輪規格
         private void btn_AccCur_parameter_type_Click(object sender, EventArgs e){
             panel_AccCur_parameter_Add.Visible = true;
             panel_AccCur_parameter_Add.BringToFront();
             lb_AccCur_parameter_Add.Text = "砂輪規格";
+            tb_AccCur_parameter_Add.Text = "";
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 刪除砂輪規格
+        private void btn_AccCur_parameter_typeDelete_Click(object sender, EventArgs e){
+            DialogResult dialogResult = MessageBox.Show(string.Format("確定要刪除砂輪規格\n{0}？", lb_AccCur_parameter_type.Text), "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Cancel) return;
+            int tem_Index = lb_AccCur_parameter_type.SelectedIndex;  //暫存現在選取的位置
+            lb_AccCur_parameter_type.Items.RemoveAt(tem_Index);
+            StreamWriter sw = new StreamWriter(path + @"data\AccCur\AccCur_type.cp");
+            for (int i = 0; i < lb_AccCur_parameter_type.Items.Count; i++){
+                lb_AccCur_parameter_type.SelectedIndex = i;
+                sw.WriteLine(lb_AccCur_parameter_type.Text);
+            }
+            sw.Close();
+            sw.Dispose();
+            //重新讀取
+            AccCur_parameter_Load();
+            //暫存工件材料選擇的位置
+            int tem_workpieceIndex = lb_AccCur_parameter_workpiece.SelectedIndex;
+            //選擇預設值
+            lb_AccCur_parameter_workpiece.SelectedIndex = tem_workpieceIndex;
+            try { lb_AccCur_parameter_type.SelectedIndex = tem_Index; }
+            catch { lb_AccCur_parameter_type.SelectedIndex = tem_Index - 1; };
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 新增 > 儲存
         private void btn_AccCur_parameter_Add_Save_Click(object sender,EventArgs e){
@@ -2921,14 +2988,31 @@ namespace ToolWear{
                 MessageBox.Show("新增內容不得為空。", "儲存失敗", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            FileStream File_module = File.Open(path + @"\data\AccCur\AccCur_workpiece.cp", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+            string save_path = "";
+            if (lb_AccCur_parameter_Add.Text.Equals("工件材料")) save_path = path + @"\data\AccCur\AccCur_workpiece.cp";
+            else save_path = path + @"\data\AccCur\AccCur_type.cp";
+            FileStream File_module = File.Open(save_path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
             StreamWriter sw = new StreamWriter(File_module);
             sw.WriteLine(tb_AccCur_parameter_Add.Text);
             sw.Close();
             sw.Dispose();
 
+            //暫存工件材料和砂輪材質選擇的位置
+            int tem_workpieceIndex = lb_AccCur_parameter_workpiece.SelectedIndex;
+            int tem_typeIndex = lb_AccCur_parameter_type.SelectedIndex;
+
             //重新讀取頁面
             AccCur_parameter_Load();
+
+            //設定預設選項
+            if (lb_AccCur_parameter_Add.Text.Equals("工件材料")){
+                lb_AccCur_parameter_workpiece.SelectedIndex = lb_AccCur_parameter_workpiece.Items.Count - 1;
+                lb_AccCur_parameter_type.SelectedIndex = tem_typeIndex;
+            }
+            else{
+                lb_AccCur_parameter_workpiece.SelectedIndex = tem_workpieceIndex;
+                lb_AccCur_parameter_type.SelectedIndex = lb_AccCur_parameter_type.Items.Count - 1;
+            }
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 新增 > 刪除
         private void btn_AccCur_parameter_Add_Delete_Click(object sender, EventArgs e){
@@ -2958,7 +3042,7 @@ namespace ToolWear{
                 sr.Dispose();
 
                 //字串說明
-                //1:砂輪號數(WA-??) 8:轉數 11:每次下降量 14:實際表面精度
+                //1:砂輪號數(WA-??) 8:轉數 11:每次下降量 13:研磨間距 14:實際表面精度
 
                 //找尋最接近使用者輸入的表面精度項目
                 float Surface_Max = 0f; //暫存已讀取最大值
@@ -2977,17 +3061,19 @@ namespace ToolWear{
 
                 //如果Surface_Count == -1 表示沒有找到符合的資料
                 if (Surface_Count == -1){
-                    tb_AccCur_parameter_WheelNumber2.Text = "無資料";
-                    AccCur_parameter_WheelSpeed2.Text = "無資料";
-                    tb_AccCur_parameter_WheelDown2.Text = "無資料";
-                    tb_AccCur_parameter_Predict2.Text = "無資料";
+                    tb_AccCur_parameter_WheelNumber.Text = "無資料";
+                    AccCur_parameter_WheelSpeed.Text = "無資料";
+                    tb_AccCur_parameter_WheelDown.Text = "無資料";
+                    tb_AccCur_parameter_Pitch.Text = "無資料";
+                    tb_AccCur_parameter_Predict.Text = "無資料";
                 }
                 else{
                     //讀取最大值次序的各項參數
-                    tb_AccCur_parameter_WheelNumber2.Text = Read_Data[Surface_Count].Split(',')[1].Split('-')[1];
-                    AccCur_parameter_WheelSpeed2.Text = Read_Data[Surface_Count].Split(',')[8];
-                    tb_AccCur_parameter_WheelDown2.Text = Read_Data[Surface_Count].Split(',')[11];
-                    tb_AccCur_parameter_Predict2.Text = Read_Data[Surface_Count].Split(',')[14];
+                    tb_AccCur_parameter_WheelNumber.Text = Read_Data[Surface_Count].Split(',')[1].Split('-')[1];
+                    AccCur_parameter_WheelSpeed.Text = Read_Data[Surface_Count].Split(',')[8];
+                    tb_AccCur_parameter_WheelDown.Text = Read_Data[Surface_Count].Split(',')[11];
+                    tb_AccCur_parameter_Pitch.Text = Read_Data[Surface_Count].Split(',')[13];
+                    tb_AccCur_parameter_Predict.Text = Read_Data[Surface_Count].Split(',')[14];
                 }
             }
             catch{

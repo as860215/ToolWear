@@ -188,6 +188,7 @@
             this.label50 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
+            this.btn_ToolWearSetting_Research = new System.Windows.Forms.Button();
             this.physicalChannelComboBox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -196,7 +197,30 @@
             this.cb_ToolWearSetting_accelerometer = new System.Windows.Forms.ComboBox();
             this.btn_ToolWearSetting_ViewModule = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.btn_ToolWearSetting_save = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_delete = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_20 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_19 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_18 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_17 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_16 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_15 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_14 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_13 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_12 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_11 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_10 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_09 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_08 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_07 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_06 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_05 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_04 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_03 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_02 = new System.Windows.Forms.Button();
+            this.btn_ToolWearSetting_01 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
+            this.btn_ToolWearSetting_Back = new System.Windows.Forms.Button();
             this.panel_ToolWear = new System.Windows.Forms.Panel();
             this.lb_ToolWear_warring_2 = new System.Windows.Forms.Label();
             this.lb_ToolWear_warring_1 = new System.Windows.Forms.Label();
@@ -208,17 +232,56 @@
             this.lb_ToolWear_FeedSpeed = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.panel_ToolWear_Parts = new System.Windows.Forms.Panel();
+            this.pb_ToolWear = new System.Windows.Forms.PictureBox();
             this.lb_ToolWear_Parts = new System.Windows.Forms.Label();
+            this.btn_Threshold = new System.Windows.Forms.Button();
             this.chart_warring_2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_warring_1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btn_ToolWear_20 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_19 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_18 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_17 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_16 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_15 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_14 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_13 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_12 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_11 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_10 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_09 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_08 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_07 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_06 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_05 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_04 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_03 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_02 = new System.Windows.Forms.Button();
+            this.btn_ToolWear_01 = new System.Windows.Forms.Button();
             this.lb_ToolWear_Title = new System.Windows.Forms.Label();
+            this.btn_ToolWear_Change = new System.Windows.Forms.Button();
+            this.btn_ToolWear_Setting = new System.Windows.Forms.Button();
+            this.btn_ToolWear_Stop = new System.Windows.Forms.Button();
+            this.btn_ToolWear_Start = new System.Windows.Forms.Button();
             this.chart_FFT = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_ToolWear = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_Current = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_Blade = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel_Home = new System.Windows.Forms.Panel();
+            this.btn_shutdown = new System.Windows.Forms.Button();
+            this.btn_ChangeMode3 = new System.Windows.Forms.Button();
+            this.btn_ChangeMode = new System.Windows.Forms.Button();
+            this.btn_ChangeMode2 = new System.Windows.Forms.Button();
+            this.btn_ChangeMode0 = new System.Windows.Forms.Button();
+            this.btn_Learn = new System.Windows.Forms.Button();
+            this.btn_logo = new System.Windows.Forms.Button();
+            this.btn_ATCsetting = new System.Windows.Forms.Button();
+            this.btn_Health = new System.Windows.Forms.Button();
+            this.btn_Thermal = new System.Windows.Forms.Button();
+            this.btn_ToolWear = new System.Windows.Forms.Button();
+            this.btn_setting = new System.Windows.Forms.Button();
             this.panel_Threshold = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_Threshold_delete = new System.Windows.Forms.Button();
             this.panel_Mark = new System.Windows.Forms.Panel();
             this.label49 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -248,6 +311,7 @@
             this.lb_Threshold_ATC = new System.Windows.Forms.Label();
             this.lb_Threshold_rate = new System.Windows.Forms.Label();
             this.lb_Threshold_sethz01 = new System.Windows.Forms.Label();
+            this.btn_Threshold_save = new System.Windows.Forms.Button();
             this.chart_Threshold = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lb_Threshold_page = new System.Windows.Forms.Label();
@@ -264,14 +328,49 @@
             this.tb_Threshold_04 = new System.Windows.Forms.TextBox();
             this.tb_Threshold_03 = new System.Windows.Forms.TextBox();
             this.tb_Threshold_02 = new System.Windows.Forms.TextBox();
+            this.btn_Threshold_down = new System.Windows.Forms.Button();
+            this.btn_Threshold_up = new System.Windows.Forms.Button();
             this.tb_Threshold_01 = new System.Windows.Forms.TextBox();
+            this.btn_Threshold_Back = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.panel_ThermalSetting = new System.Windows.Forms.Panel();
+            this.numeric_Compensate_Down = new System.Windows.Forms.Button();
+            this.numeric_Compensate_Up = new System.Windows.Forms.Button();
+            this.numeric_Temperature_Down = new System.Windows.Forms.Button();
+            this.numeric_Temperature_Up = new System.Windows.Forms.Button();
+            this.btn_CompensateSave = new System.Windows.Forms.Button();
+            this.btn_Compensate_20 = new System.Windows.Forms.Button();
+            this.btn_Compensate_19 = new System.Windows.Forms.Button();
+            this.btn_Compensate_18 = new System.Windows.Forms.Button();
+            this.btn_Compensate_17 = new System.Windows.Forms.Button();
+            this.btn_Compensate_16 = new System.Windows.Forms.Button();
+            this.btn_Compensate_15 = new System.Windows.Forms.Button();
+            this.btn_Compensate_14 = new System.Windows.Forms.Button();
+            this.btn_Compensate_13 = new System.Windows.Forms.Button();
+            this.btn_Compensate_12 = new System.Windows.Forms.Button();
+            this.btn_Compensate_11 = new System.Windows.Forms.Button();
+            this.btn_Compensate_10 = new System.Windows.Forms.Button();
+            this.btn_Compensate_09 = new System.Windows.Forms.Button();
+            this.btn_Compensate_08 = new System.Windows.Forms.Button();
+            this.btn_CompensateRemove = new System.Windows.Forms.Button();
+            this.btn_Compensate_07 = new System.Windows.Forms.Button();
+            this.btn_CompensateAdd = new System.Windows.Forms.Button();
+            this.btn_Compensate_06 = new System.Windows.Forms.Button();
+            this.btn_Compensate_05 = new System.Windows.Forms.Button();
+            this.btn_Compensate_04 = new System.Windows.Forms.Button();
+            this.btn_Compensate_03 = new System.Windows.Forms.Button();
+            this.btn_Compensate_02 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.btn_Compensate_01 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
+            this.btn_ThermalSetting_Back = new System.Windows.Forms.Button();
             this.panel_Compensate = new System.Windows.Forms.Panel();
             this.cb_Compensate_Channel = new System.Windows.Forms.ComboBox();
             this.lb_Compensate_page = new System.Windows.Forms.Label();
+            this.btn_Compensate_down = new System.Windows.Forms.Button();
+            this.btn_Compensate_up = new System.Windows.Forms.Button();
+            this.btn_CompensateSet_delete = new System.Windows.Forms.Button();
+            this.btn_CompensateSet_save = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.tb_Compensate_ip = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -289,9 +388,34 @@
             this.numeric_Compensate = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.panel_Thermal = new System.Windows.Forms.Panel();
+            this.btn_Thermal_stop = new System.Windows.Forms.Button();
+            this.btn_Thermal_start = new System.Windows.Forms.Button();
+            this.btn_Thermal_20 = new System.Windows.Forms.Button();
+            this.btn_Thermal_19 = new System.Windows.Forms.Button();
+            this.btn_Thermal_18 = new System.Windows.Forms.Button();
+            this.btn_Thermal_17 = new System.Windows.Forms.Button();
+            this.btn_Thermal_16 = new System.Windows.Forms.Button();
+            this.btn_Thermal_15 = new System.Windows.Forms.Button();
+            this.btn_Thermal_14 = new System.Windows.Forms.Button();
+            this.btn_Thermal_13 = new System.Windows.Forms.Button();
+            this.btn_Thermal_12 = new System.Windows.Forms.Button();
+            this.btn_Thermal_11 = new System.Windows.Forms.Button();
+            this.btn_Thermal_10 = new System.Windows.Forms.Button();
+            this.btn_Thermal_09 = new System.Windows.Forms.Button();
+            this.btn_Thermal_08 = new System.Windows.Forms.Button();
+            this.btn_Thermal_07 = new System.Windows.Forms.Button();
+            this.btn_Thermal_06 = new System.Windows.Forms.Button();
+            this.btn_Thermal_05 = new System.Windows.Forms.Button();
+            this.btn_Thermal_04 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_ThermalSetting = new System.Windows.Forms.Button();
+            this.btn_Thermal_03 = new System.Windows.Forms.Button();
+            this.btn_Thermal_02 = new System.Windows.Forms.Button();
+            this.btn_Thermal_01 = new System.Windows.Forms.Button();
             this.panel_Thermal_Mutile = new System.Windows.Forms.Panel();
             this.lb_Thermal_page = new System.Windows.Forms.Label();
+            this.btn_Thermal_down = new System.Windows.Forms.Button();
+            this.btn_Thermal_up = new System.Windows.Forms.Button();
             this.lb_Thermal_M2_Now = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -312,12 +436,42 @@
             this.label37 = new System.Windows.Forms.Label();
             this.lb_Learn_FeedSpeed = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
+            this.btn_Learn_20 = new System.Windows.Forms.Button();
+            this.btn_Learn_19 = new System.Windows.Forms.Button();
+            this.btn_Learn_18 = new System.Windows.Forms.Button();
+            this.btn_Learn_17 = new System.Windows.Forms.Button();
+            this.btn_Learn_16 = new System.Windows.Forms.Button();
+            this.btn_Learn_15 = new System.Windows.Forms.Button();
+            this.btn_Learn_14 = new System.Windows.Forms.Button();
+            this.btn_Learn_13 = new System.Windows.Forms.Button();
+            this.btn_Learn_12 = new System.Windows.Forms.Button();
+            this.btn_Learn_11 = new System.Windows.Forms.Button();
+            this.btn_Learn_10 = new System.Windows.Forms.Button();
+            this.btn_Learn_09 = new System.Windows.Forms.Button();
+            this.btn_Learn_08 = new System.Windows.Forms.Button();
+            this.btn_Learn_07 = new System.Windows.Forms.Button();
+            this.btn_Learn_06 = new System.Windows.Forms.Button();
+            this.btn_Learn_05 = new System.Windows.Forms.Button();
+            this.btn_Learn_04 = new System.Windows.Forms.Button();
+            this.btn_Learn_03 = new System.Windows.Forms.Button();
+            this.btn_Learn_02 = new System.Windows.Forms.Button();
+            this.btn_Learn_01 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
+            this.btn_Learn_Back = new System.Windows.Forms.Button();
+            this.btn_Learn_OK = new System.Windows.Forms.Button();
+            this.btn_Learn_Start = new System.Windows.Forms.Button();
             this.panel_Learn_Parts = new System.Windows.Forms.Panel();
+            this.pb_Learn = new System.Windows.Forms.PictureBox();
             this.lb_Learn_WorkName = new System.Windows.Forms.Label();
             this.chart_LearnFFT = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_Learn = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel_log = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tb_logTitle_04 = new System.Windows.Forms.TextBox();
             this.tb_logTitle_03 = new System.Windows.Forms.TextBox();
             this.tb_logTitle_02 = new System.Windows.Forms.TextBox();
@@ -328,10 +482,14 @@
             this.tb_logDetail_01 = new System.Windows.Forms.TextBox();
             this.panel_setting = new System.Windows.Forms.Panel();
             this.panel_AlarmSet = new System.Windows.Forms.Panel();
+            this.btn_AlarmSet = new System.Windows.Forms.Button();
             this.label78 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tb_setting_System = new System.Windows.Forms.TextBox();
             this.lb_setting_Reconnection = new System.Windows.Forms.Label();
+            this.btn_setting_Reconnection = new System.Windows.Forms.Button();
+            this.btn_setting_save = new System.Windows.Forms.Button();
+            this.btn_setting_delete = new System.Windows.Forms.Button();
             this.tb_setting_ip = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.cb_setting_model = new System.Windows.Forms.ComboBox();
@@ -341,25 +499,64 @@
             this.label14 = new System.Windows.Forms.Label();
             this.Bar_setting = new System.Windows.Forms.ProgressBar();
             this.panel_ImportProfile = new System.Windows.Forms.Panel();
+            this.btn_ImportProfile = new System.Windows.Forms.Button();
             this.label77 = new System.Windows.Forms.Label();
             this.panel_ExportProfile = new System.Windows.Forms.Panel();
             this.label76 = new System.Windows.Forms.Label();
+            this.btn_ExportProfile = new System.Windows.Forms.Button();
             this.panel_Loading = new System.Windows.Forms.Panel();
             this.tb_Load_ProgressRate = new System.Windows.Forms.TextBox();
             this.tb_Load_log = new System.Windows.Forms.TextBox();
             this.bar_load = new System.Windows.Forms.ProgressBar();
             this.tb_Loading = new System.Windows.Forms.TextBox();
             this.panel_ATCsetting = new System.Windows.Forms.Panel();
+            this.btn_ATCsetting_30 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_29 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_28 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_27 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_26 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_25 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_24 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_23 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_22 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_21 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_ATCsetting_BladeDown = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_BladeUp = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_save = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_delete = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.tb_ATCsetting_Name = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.numeric_ATCsetting_Blade = new System.Windows.Forms.NumericUpDown();
+            this.btn_ATCsetting_20 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_19 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_18 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_17 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_16 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_15 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_14 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_13 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_12 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_11 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_10 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_09 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_08 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_07 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_06 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_05 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_04 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_03 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_02 = new System.Windows.Forms.Button();
+            this.btn_ATCsetting_01 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_Health = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.lb_Health_Machine = new System.Windows.Forms.Label();
+            this.btn_Health_Setting = new System.Windows.Forms.Button();
+            this.btn_Health_Stop = new System.Windows.Forms.Button();
+            this.btn_Health_Start = new System.Windows.Forms.Button();
             this.lb_Health_Title = new System.Windows.Forms.Label();
             this.panel_Health_AfterSale = new System.Windows.Forms.Panel();
             this.label69 = new System.Windows.Forms.Label();
@@ -377,29 +574,70 @@
             this.chart_Health = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.timer_temperature = new System.Windows.Forms.Timer(this.components);
             this.panel_SelectParts = new System.Windows.Forms.Panel();
+            this.btn_SelectParts_Add = new System.Windows.Forms.Button();
             this.panel_SelectParts_01 = new System.Windows.Forms.Panel();
+            this.btn_SelectParts_remove01 = new System.Windows.Forms.Button();
             this.lb_SelectParts_01 = new System.Windows.Forms.Label();
+            this.pb_SelectParts_01 = new System.Windows.Forms.PictureBox();
+            this.btn_SelectParts_01 = new System.Windows.Forms.Button();
+            this.panel_SelectParts_01Add = new System.Windows.Forms.Panel();
             this.lb_SelectParts_Page = new System.Windows.Forms.Label();
             this.panel_SelectParts_06 = new System.Windows.Forms.Panel();
+            this.btn_SelectParts_remove06 = new System.Windows.Forms.Button();
             this.lb_SelectParts_06 = new System.Windows.Forms.Label();
+            this.pb_SelectParts_06 = new System.Windows.Forms.PictureBox();
+            this.btn_SelectParts_06 = new System.Windows.Forms.Button();
+            this.panel_SelectParts_06Add = new System.Windows.Forms.Panel();
             this.panel_SelectParts_08 = new System.Windows.Forms.Panel();
+            this.btn_SelectParts_remove08 = new System.Windows.Forms.Button();
             this.lb_SelectParts_08 = new System.Windows.Forms.Label();
+            this.pb_SelectParts_08 = new System.Windows.Forms.PictureBox();
+            this.btn_SelectParts_08 = new System.Windows.Forms.Button();
+            this.panel_SelectParts_08Add = new System.Windows.Forms.Panel();
             this.panel_SelectParts_05 = new System.Windows.Forms.Panel();
+            this.btn_SelectParts_remove05 = new System.Windows.Forms.Button();
             this.lb_SelectParts_05 = new System.Windows.Forms.Label();
+            this.pb_SelectParts_05 = new System.Windows.Forms.PictureBox();
+            this.btn_SelectParts_05 = new System.Windows.Forms.Button();
+            this.panel_SelectParts_05Add = new System.Windows.Forms.Panel();
             this.panel_SelectParts_04 = new System.Windows.Forms.Panel();
+            this.btn_SelectParts_remove04 = new System.Windows.Forms.Button();
             this.lb_SelectParts_04 = new System.Windows.Forms.Label();
+            this.pb_SelectParts_04 = new System.Windows.Forms.PictureBox();
+            this.btn_SelectParts_04 = new System.Windows.Forms.Button();
+            this.panel_SelectParts_04Add = new System.Windows.Forms.Panel();
             this.panel_SelectParts_07 = new System.Windows.Forms.Panel();
+            this.btn_SelectParts_remove07 = new System.Windows.Forms.Button();
             this.lb_SelectParts_07 = new System.Windows.Forms.Label();
+            this.pb_SelectParts_07 = new System.Windows.Forms.PictureBox();
+            this.btn_SelectParts_07 = new System.Windows.Forms.Button();
+            this.panel_SelectParts_07Add = new System.Windows.Forms.Panel();
             this.panel_SelectParts_02 = new System.Windows.Forms.Panel();
+            this.btn_SelectParts_remove02 = new System.Windows.Forms.Button();
             this.lb_SelectParts_02 = new System.Windows.Forms.Label();
+            this.pb_SelectParts_02 = new System.Windows.Forms.PictureBox();
+            this.btn_SelectParts_02 = new System.Windows.Forms.Button();
+            this.panel_SelectParts_02Add = new System.Windows.Forms.Panel();
             this.panel_SelectParts_03 = new System.Windows.Forms.Panel();
+            this.btn_SelectParts_remove03 = new System.Windows.Forms.Button();
             this.lb_SelectParts_03 = new System.Windows.Forms.Label();
+            this.pb_SelectParts_03 = new System.Windows.Forms.PictureBox();
+            this.btn_SelectParts_03 = new System.Windows.Forms.Button();
+            this.panel_SelectParts_03Add = new System.Windows.Forms.Panel();
+            this.btn_SelectParts_down = new System.Windows.Forms.Button();
+            this.btn_SelectParts_up = new System.Windows.Forms.Button();
+            this.btn_SelectParts_Back = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.panel_AddParts = new System.Windows.Forms.Panel();
+            this.btn_AddParts_back = new System.Windows.Forms.Button();
             this.tb_AddParts_Name = new System.Windows.Forms.TextBox();
+            this.btn_AddParts_save = new System.Windows.Forms.Button();
+            this.btn_AddParts_delete = new System.Windows.Forms.Button();
+            this.btn_AddParts_Path = new System.Windows.Forms.Button();
             this.tb_AddParts_Path = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.pb_AddParts = new System.Windows.Forms.PictureBox();
             this.label30 = new System.Windows.Forms.Label();
             this.timer_load = new System.Windows.Forms.Timer(this.components);
             this.timer_LNC = new System.Windows.Forms.Timer(this.components);
@@ -409,13 +647,19 @@
             this.panel_Health_Setting = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label57 = new System.Windows.Forms.Label();
+            this.btn_HealthSetting_Refresh = new System.Windows.Forms.Button();
+            this.btn_HealthSetting_Down = new System.Windows.Forms.Button();
+            this.btn_HealthSetting_Up = new System.Windows.Forms.Button();
             this.cb_HealthSetting_Channel = new System.Windows.Forms.ComboBox();
             this.cb_HealthSetting_Machine = new System.Windows.Forms.ComboBox();
+            this.btn_HealthSetting_save = new System.Windows.Forms.Button();
+            this.btn_HealthSetting_delete = new System.Windows.Forms.Button();
             this.label56 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.numeric_HealthSetting_Range = new System.Windows.Forms.NumericUpDown();
+            this.btn_HealthSetting_Back = new System.Windows.Forms.Button();
             this.label53 = new System.Windows.Forms.Label();
             this.panel_Health_Result = new System.Windows.Forms.Panel();
             this.label75 = new System.Windows.Forms.Label();
@@ -431,9 +675,12 @@
             this.chart_HealthResult_Factory = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label58 = new System.Windows.Forms.Label();
             this.lb_HealthResult_Machine = new System.Windows.Forms.Label();
+            this.btn_HealthResult_Back = new System.Windows.Forms.Button();
             this.label52 = new System.Windows.Forms.Label();
             this.panel_AlarmSetting = new System.Windows.Forms.Panel();
+            this.btn_AlarmSetting_Back = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.panel_AlarmSetting_save = new System.Windows.Forms.Button();
             this.label86 = new System.Windows.Forms.Label();
             this.tb_AlarmMethod_IP = new System.Windows.Forms.TextBox();
             this.btn_AlarmMethod_Schneider = new System.Windows.Forms.Button();
@@ -485,6 +732,9 @@
             this.chart_prediction_Z = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_prediction_Y = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_prediction_X = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btn_prediction_stop = new System.Windows.Forms.Button();
+            this.btn_prediction_start = new System.Windows.Forms.Button();
+            this.btn_prediction_back = new System.Windows.Forms.Button();
             this.label87 = new System.Windows.Forms.Label();
             this.PB_prediction_ML = new System.Windows.Forms.ProgressBar();
             this.lb_prediction_status = new System.Windows.Forms.Label();
@@ -494,6 +744,10 @@
             this.btn_prediction_test = new System.Windows.Forms.Button();
             this.timer_prediction_ML = new System.Windows.Forms.Timer(this.components);
             this.panel_AccCur = new System.Windows.Forms.Panel();
+            this.btn_AccCur_back = new System.Windows.Forms.Button();
+            this.btn_AccCur_setting = new System.Windows.Forms.Button();
+            this.btn_AccCur_stop = new System.Windows.Forms.Button();
+            this.btn_AccCur_start = new System.Windows.Forms.Button();
             this.label106 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
@@ -504,9 +758,14 @@
             this.chart_AccCur_X = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label102 = new System.Windows.Forms.Label();
             this.panel_AccCur_setting = new System.Windows.Forms.Panel();
+            this.label147 = new System.Windows.Forms.Label();
+            this.btn_AccCur_parameter_set = new System.Windows.Forms.Button();
             this.chb_AccCur_Record = new System.Windows.Forms.CheckBox();
+            this.btn_AccCur_setting_save = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btn_AccCur_AE_down = new System.Windows.Forms.Button();
             this.label123 = new System.Windows.Forms.Label();
+            this.btn_AccCur_AE_up = new System.Windows.Forms.Button();
             this.cb_AccCur_setting_ChannelAE = new System.Windows.Forms.ComboBox();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label112 = new System.Windows.Forms.Label();
@@ -514,363 +773,112 @@
             this.label111 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label122 = new System.Windows.Forms.Label();
+            this.btn_AccCur_Cur_down = new System.Windows.Forms.Button();
+            this.btn_AccCur_Cur_up = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
             this.num_AccCur_Cur = new System.Windows.Forms.NumericUpDown();
             this.cb_AccCur_setting_ChannelC = new System.Windows.Forms.ComboBox();
             this.label108 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_AccCur_Z_down = new System.Windows.Forms.Button();
             this.label121 = new System.Windows.Forms.Label();
+            this.btn_AccCur_Z_up = new System.Windows.Forms.Button();
             this.cb_AccCur_setting_ChannelZ = new System.Windows.Forms.ComboBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label113 = new System.Windows.Forms.Label();
             this.num_AccCur_Z = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_AccCur_Y_down = new System.Windows.Forms.Button();
             this.label120 = new System.Windows.Forms.Label();
+            this.btn_AccCur_Y_up = new System.Windows.Forms.Button();
             this.cb_AccCur_setting_ChannelY = new System.Windows.Forms.ComboBox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label109 = new System.Windows.Forms.Label();
             this.num_AccCur_Y = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_AccCur_X_down = new System.Windows.Forms.Button();
+            this.btn_AccCur_X_up = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label119 = new System.Windows.Forms.Label();
             this.cb_AccCur_setting_ChannelX = new System.Windows.Forms.ComboBox();
             this.label110 = new System.Windows.Forms.Label();
             this.num_AccCur_X = new System.Windows.Forms.NumericUpDown();
+            this.btn_AccCur_setting_Reflash = new System.Windows.Forms.Button();
+            this.btn_AccCur_setting_back = new System.Windows.Forms.Button();
             this.label107 = new System.Windows.Forms.Label();
             this.panel_AE = new System.Windows.Forms.Panel();
+            this.btn_AE_stop = new System.Windows.Forms.Button();
+            this.btn_AE_start = new System.Windows.Forms.Button();
             this.chart_AE = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label115 = new System.Windows.Forms.Label();
+            this.btn_AE_back = new System.Windows.Forms.Button();
             this.label114 = new System.Windows.Forms.Label();
             this.timer_prediction_SL = new System.Windows.Forms.Timer(this.components);
             this.timer_prediction = new System.Windows.Forms.Timer(this.components);
             this.panel_AccCur_parameter = new System.Windows.Forms.Panel();
-            this.label124 = new System.Windows.Forms.Label();
-            this.label125 = new System.Windows.Forms.Label();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.tb_AccCur_parameter_surface = new System.Windows.Forms.TextBox();
-            this.tbar_AccCur_parameter_surface = new System.Windows.Forms.TrackBar();
-            this.label126 = new System.Windows.Forms.Label();
-            this.num_AccCur_parameter_length = new System.Windows.Forms.NumericUpDown();
-            this.num_AccCur_parameter_width = new System.Windows.Forms.NumericUpDown();
-            this.num_AccCur_parameter_removal = new System.Windows.Forms.NumericUpDown();
-            this.label127 = new System.Windows.Forms.Label();
-            this.label128 = new System.Windows.Forms.Label();
-            this.label129 = new System.Windows.Forms.Label();
-            this.tb_AccCur_parameter_ProTime = new System.Windows.Forms.TextBox();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.lb_AccCur_parameter_workpiece = new System.Windows.Forms.ListBox();
-            this.label130 = new System.Windows.Forms.Label();
-            this.label131 = new System.Windows.Forms.Label();
-            this.lb_AccCur_parameter_type = new System.Windows.Forms.ListBox();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.label132 = new System.Windows.Forms.Label();
-            this.label133 = new System.Windows.Forms.Label();
-            this.label134 = new System.Windows.Forms.Label();
-            this.label135 = new System.Windows.Forms.Label();
-            this.label136 = new System.Windows.Forms.Label();
-            this.tb_AccCur_parameter_WheelNumber1 = new System.Windows.Forms.TextBox();
-            this.AccCur_parameter_WheelSpeed1 = new System.Windows.Forms.TextBox();
-            this.tb_AccCur_parameter_WheelDown1 = new System.Windows.Forms.TextBox();
-            this.tb_AccCur_parameter_Predict1 = new System.Windows.Forms.TextBox();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.tb_AccCur_parameter_Predict2 = new System.Windows.Forms.TextBox();
-            this.tb_AccCur_parameter_WheelDown2 = new System.Windows.Forms.TextBox();
-            this.AccCur_parameter_WheelSpeed2 = new System.Windows.Forms.TextBox();
-            this.tb_AccCur_parameter_WheelNumber2 = new System.Windows.Forms.TextBox();
+            this.tb_AccCur_parameter_AIvalue = new System.Windows.Forms.TextBox();
+            this.label143 = new System.Windows.Forms.Label();
+            this.tb_AccCur_parameter_BestTime = new System.Windows.Forms.TextBox();
+            this.label142 = new System.Windows.Forms.Label();
+            this.tb_AccCur_parameter_Predict = new System.Windows.Forms.TextBox();
+            this.tb_AccCur_parameter_WheelDown = new System.Windows.Forms.TextBox();
+            this.AccCur_parameter_WheelSpeed = new System.Windows.Forms.TextBox();
+            this.tb_AccCur_parameter_WheelNumber = new System.Windows.Forms.TextBox();
             this.label137 = new System.Windows.Forms.Label();
             this.label138 = new System.Windows.Forms.Label();
             this.label139 = new System.Windows.Forms.Label();
             this.label140 = new System.Windows.Forms.Label();
-            this.label141 = new System.Windows.Forms.Label();
-            this.label142 = new System.Windows.Forms.Label();
-            this.tb_AccCur_parameter_BestTime = new System.Windows.Forms.TextBox();
-            this.label143 = new System.Windows.Forms.Label();
-            this.tb_AccCur_parameter_AIvalue = new System.Windows.Forms.TextBox();
-            this.label144 = new System.Windows.Forms.Label();
-            this.label145 = new System.Windows.Forms.Label();
-            this.panel_AccCur_parameter_Add = new System.Windows.Forms.Panel();
-            this.label146 = new System.Windows.Forms.Label();
-            this.tb_AccCur_parameter_Add = new System.Windows.Forms.TextBox();
-            this.lb_AccCur_parameter_Add = new System.Windows.Forms.Label();
-            this.label147 = new System.Windows.Forms.Label();
-            this.panel26 = new System.Windows.Forms.Panel();
+            this.panel22 = new System.Windows.Forms.Panel();
             this.btn_AccCur_parameter_typeAdd = new System.Windows.Forms.Button();
             this.btn_AccCur_parameter_workpieceAdd = new System.Windows.Forms.Button();
+            this.lb_AccCur_parameter_type = new System.Windows.Forms.ListBox();
+            this.label131 = new System.Windows.Forms.Label();
+            this.label130 = new System.Windows.Forms.Label();
+            this.lb_AccCur_parameter_workpiece = new System.Windows.Forms.ListBox();
+            this.panel_AccCur_parameter_Add = new System.Windows.Forms.Panel();
             this.btn_AccCur_parameter_Add_Delete = new System.Windows.Forms.Button();
+            this.lb_AccCur_parameter_Add = new System.Windows.Forms.Label();
             this.btn_AccCur_parameter_Add_Save = new System.Windows.Forms.Button();
+            this.tb_AccCur_parameter_Add = new System.Windows.Forms.TextBox();
+            this.label146 = new System.Windows.Forms.Label();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label145 = new System.Windows.Forms.Label();
+            this.label144 = new System.Windows.Forms.Label();
+            this.tb_AccCur_parameter_ProTime = new System.Windows.Forms.TextBox();
+            this.label129 = new System.Windows.Forms.Label();
+            this.label128 = new System.Windows.Forms.Label();
+            this.label127 = new System.Windows.Forms.Label();
+            this.num_AccCur_parameter_removal = new System.Windows.Forms.NumericUpDown();
+            this.num_AccCur_parameter_width = new System.Windows.Forms.NumericUpDown();
+            this.num_AccCur_parameter_length = new System.Windows.Forms.NumericUpDown();
+            this.label126 = new System.Windows.Forms.Label();
+            this.tbar_AccCur_parameter_surface = new System.Windows.Forms.TrackBar();
+            this.tb_AccCur_parameter_surface = new System.Windows.Forms.TextBox();
+            this.label125 = new System.Windows.Forms.Label();
             this.btn_AccCur_parameter_back = new System.Windows.Forms.Button();
-            this.btn_AccCur_back = new System.Windows.Forms.Button();
-            this.btn_AccCur_setting = new System.Windows.Forms.Button();
-            this.btn_AccCur_stop = new System.Windows.Forms.Button();
-            this.btn_AccCur_start = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_Research = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_save = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_delete = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_20 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_19 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_18 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_17 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_16 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_15 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_14 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_13 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_12 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_11 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_10 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_09 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_08 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_07 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_06 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_05 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_04 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_03 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_02 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_01 = new System.Windows.Forms.Button();
-            this.btn_ToolWearSetting_Back = new System.Windows.Forms.Button();
-            this.pb_ToolWear = new System.Windows.Forms.PictureBox();
-            this.btn_Threshold = new System.Windows.Forms.Button();
-            this.btn_ToolWear_20 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_19 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_18 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_17 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_16 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_15 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_14 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_13 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_12 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_11 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_10 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_09 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_08 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_07 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_06 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_05 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_04 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_03 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_02 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_01 = new System.Windows.Forms.Button();
-            this.btn_ToolWear_Change = new System.Windows.Forms.Button();
-            this.btn_ToolWear_Setting = new System.Windows.Forms.Button();
-            this.btn_ToolWear_Stop = new System.Windows.Forms.Button();
-            this.btn_ToolWear_Start = new System.Windows.Forms.Button();
-            this.btn_shutdown = new System.Windows.Forms.Button();
-            this.btn_ChangeMode3 = new System.Windows.Forms.Button();
-            this.btn_ChangeMode = new System.Windows.Forms.Button();
-            this.btn_ChangeMode2 = new System.Windows.Forms.Button();
-            this.btn_ChangeMode0 = new System.Windows.Forms.Button();
-            this.btn_Learn = new System.Windows.Forms.Button();
-            this.btn_logo = new System.Windows.Forms.Button();
-            this.btn_ATCsetting = new System.Windows.Forms.Button();
-            this.btn_Health = new System.Windows.Forms.Button();
-            this.btn_Thermal = new System.Windows.Forms.Button();
-            this.btn_ToolWear = new System.Windows.Forms.Button();
-            this.btn_setting = new System.Windows.Forms.Button();
-            this.btn_Threshold_delete = new System.Windows.Forms.Button();
-            this.btn_Threshold_save = new System.Windows.Forms.Button();
-            this.btn_Threshold_down = new System.Windows.Forms.Button();
-            this.btn_Threshold_up = new System.Windows.Forms.Button();
-            this.btn_Threshold_Back = new System.Windows.Forms.Button();
-            this.numeric_Compensate_Down = new System.Windows.Forms.Button();
-            this.numeric_Compensate_Up = new System.Windows.Forms.Button();
-            this.numeric_Temperature_Down = new System.Windows.Forms.Button();
-            this.numeric_Temperature_Up = new System.Windows.Forms.Button();
-            this.btn_CompensateSave = new System.Windows.Forms.Button();
-            this.btn_Compensate_20 = new System.Windows.Forms.Button();
-            this.btn_Compensate_19 = new System.Windows.Forms.Button();
-            this.btn_Compensate_18 = new System.Windows.Forms.Button();
-            this.btn_Compensate_17 = new System.Windows.Forms.Button();
-            this.btn_Compensate_16 = new System.Windows.Forms.Button();
-            this.btn_Compensate_15 = new System.Windows.Forms.Button();
-            this.btn_Compensate_14 = new System.Windows.Forms.Button();
-            this.btn_Compensate_13 = new System.Windows.Forms.Button();
-            this.btn_Compensate_12 = new System.Windows.Forms.Button();
-            this.btn_Compensate_11 = new System.Windows.Forms.Button();
-            this.btn_Compensate_10 = new System.Windows.Forms.Button();
-            this.btn_Compensate_09 = new System.Windows.Forms.Button();
-            this.btn_Compensate_08 = new System.Windows.Forms.Button();
-            this.btn_CompensateRemove = new System.Windows.Forms.Button();
-            this.btn_Compensate_07 = new System.Windows.Forms.Button();
-            this.btn_CompensateAdd = new System.Windows.Forms.Button();
-            this.btn_Compensate_06 = new System.Windows.Forms.Button();
-            this.btn_Compensate_05 = new System.Windows.Forms.Button();
-            this.btn_Compensate_04 = new System.Windows.Forms.Button();
-            this.btn_Compensate_03 = new System.Windows.Forms.Button();
-            this.btn_Compensate_02 = new System.Windows.Forms.Button();
-            this.btn_Compensate_01 = new System.Windows.Forms.Button();
-            this.btn_ThermalSetting_Back = new System.Windows.Forms.Button();
-            this.btn_Compensate_down = new System.Windows.Forms.Button();
-            this.btn_Compensate_up = new System.Windows.Forms.Button();
-            this.btn_CompensateSet_delete = new System.Windows.Forms.Button();
-            this.btn_CompensateSet_save = new System.Windows.Forms.Button();
-            this.btn_Thermal_stop = new System.Windows.Forms.Button();
-            this.btn_Thermal_start = new System.Windows.Forms.Button();
-            this.btn_Thermal_20 = new System.Windows.Forms.Button();
-            this.btn_Thermal_19 = new System.Windows.Forms.Button();
-            this.btn_Thermal_18 = new System.Windows.Forms.Button();
-            this.btn_Thermal_17 = new System.Windows.Forms.Button();
-            this.btn_Thermal_16 = new System.Windows.Forms.Button();
-            this.btn_Thermal_15 = new System.Windows.Forms.Button();
-            this.btn_Thermal_14 = new System.Windows.Forms.Button();
-            this.btn_Thermal_13 = new System.Windows.Forms.Button();
-            this.btn_Thermal_12 = new System.Windows.Forms.Button();
-            this.btn_Thermal_11 = new System.Windows.Forms.Button();
-            this.btn_Thermal_10 = new System.Windows.Forms.Button();
-            this.btn_Thermal_09 = new System.Windows.Forms.Button();
-            this.btn_Thermal_08 = new System.Windows.Forms.Button();
-            this.btn_Thermal_07 = new System.Windows.Forms.Button();
-            this.btn_Thermal_06 = new System.Windows.Forms.Button();
-            this.btn_Thermal_05 = new System.Windows.Forms.Button();
-            this.btn_Thermal_04 = new System.Windows.Forms.Button();
-            this.btn_ThermalSetting = new System.Windows.Forms.Button();
-            this.btn_Thermal_03 = new System.Windows.Forms.Button();
-            this.btn_Thermal_02 = new System.Windows.Forms.Button();
-            this.btn_Thermal_01 = new System.Windows.Forms.Button();
-            this.btn_Thermal_down = new System.Windows.Forms.Button();
-            this.btn_Thermal_up = new System.Windows.Forms.Button();
-            this.btn_Learn_20 = new System.Windows.Forms.Button();
-            this.btn_Learn_19 = new System.Windows.Forms.Button();
-            this.btn_Learn_18 = new System.Windows.Forms.Button();
-            this.btn_Learn_17 = new System.Windows.Forms.Button();
-            this.btn_Learn_16 = new System.Windows.Forms.Button();
-            this.btn_Learn_15 = new System.Windows.Forms.Button();
-            this.btn_Learn_14 = new System.Windows.Forms.Button();
-            this.btn_Learn_13 = new System.Windows.Forms.Button();
-            this.btn_Learn_12 = new System.Windows.Forms.Button();
-            this.btn_Learn_11 = new System.Windows.Forms.Button();
-            this.btn_Learn_10 = new System.Windows.Forms.Button();
-            this.btn_Learn_09 = new System.Windows.Forms.Button();
-            this.btn_Learn_08 = new System.Windows.Forms.Button();
-            this.btn_Learn_07 = new System.Windows.Forms.Button();
-            this.btn_Learn_06 = new System.Windows.Forms.Button();
-            this.btn_Learn_05 = new System.Windows.Forms.Button();
-            this.btn_Learn_04 = new System.Windows.Forms.Button();
-            this.btn_Learn_03 = new System.Windows.Forms.Button();
-            this.btn_Learn_02 = new System.Windows.Forms.Button();
-            this.btn_Learn_01 = new System.Windows.Forms.Button();
-            this.btn_Learn_Back = new System.Windows.Forms.Button();
-            this.btn_Learn_OK = new System.Windows.Forms.Button();
-            this.btn_Learn_Start = new System.Windows.Forms.Button();
-            this.pb_Learn = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_AlarmSet = new System.Windows.Forms.Button();
-            this.btn_setting_Reconnection = new System.Windows.Forms.Button();
-            this.btn_setting_save = new System.Windows.Forms.Button();
-            this.btn_setting_delete = new System.Windows.Forms.Button();
-            this.btn_ImportProfile = new System.Windows.Forms.Button();
-            this.btn_ExportProfile = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_30 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_29 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_28 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_27 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_26 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_25 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_24 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_23 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_22 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_21 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_BladeDown = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_BladeUp = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_save = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_delete = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_20 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_19 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_18 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_17 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_16 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_15 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_14 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_13 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_12 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_11 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_10 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_09 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_08 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_07 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_06 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_05 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_04 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_03 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_02 = new System.Windows.Forms.Button();
-            this.btn_ATCsetting_01 = new System.Windows.Forms.Button();
-            this.btn_Health_Setting = new System.Windows.Forms.Button();
-            this.btn_Health_Stop = new System.Windows.Forms.Button();
-            this.btn_Health_Start = new System.Windows.Forms.Button();
-            this.btn_SelectParts_Add = new System.Windows.Forms.Button();
-            this.btn_SelectParts_remove01 = new System.Windows.Forms.Button();
-            this.pb_SelectParts_01 = new System.Windows.Forms.PictureBox();
-            this.btn_SelectParts_01 = new System.Windows.Forms.Button();
-            this.panel_SelectParts_01Add = new System.Windows.Forms.Panel();
-            this.btn_SelectParts_remove06 = new System.Windows.Forms.Button();
-            this.pb_SelectParts_06 = new System.Windows.Forms.PictureBox();
-            this.btn_SelectParts_06 = new System.Windows.Forms.Button();
-            this.panel_SelectParts_06Add = new System.Windows.Forms.Panel();
-            this.btn_SelectParts_remove08 = new System.Windows.Forms.Button();
-            this.pb_SelectParts_08 = new System.Windows.Forms.PictureBox();
-            this.btn_SelectParts_08 = new System.Windows.Forms.Button();
-            this.panel_SelectParts_08Add = new System.Windows.Forms.Panel();
-            this.btn_SelectParts_remove05 = new System.Windows.Forms.Button();
-            this.pb_SelectParts_05 = new System.Windows.Forms.PictureBox();
-            this.btn_SelectParts_05 = new System.Windows.Forms.Button();
-            this.panel_SelectParts_05Add = new System.Windows.Forms.Panel();
-            this.btn_SelectParts_remove04 = new System.Windows.Forms.Button();
-            this.pb_SelectParts_04 = new System.Windows.Forms.PictureBox();
-            this.btn_SelectParts_04 = new System.Windows.Forms.Button();
-            this.panel_SelectParts_04Add = new System.Windows.Forms.Panel();
-            this.btn_SelectParts_remove07 = new System.Windows.Forms.Button();
-            this.pb_SelectParts_07 = new System.Windows.Forms.PictureBox();
-            this.btn_SelectParts_07 = new System.Windows.Forms.Button();
-            this.panel_SelectParts_07Add = new System.Windows.Forms.Panel();
-            this.btn_SelectParts_remove02 = new System.Windows.Forms.Button();
-            this.pb_SelectParts_02 = new System.Windows.Forms.PictureBox();
-            this.btn_SelectParts_02 = new System.Windows.Forms.Button();
-            this.panel_SelectParts_02Add = new System.Windows.Forms.Panel();
-            this.btn_SelectParts_remove03 = new System.Windows.Forms.Button();
-            this.pb_SelectParts_03 = new System.Windows.Forms.PictureBox();
-            this.btn_SelectParts_03 = new System.Windows.Forms.Button();
-            this.panel_SelectParts_03Add = new System.Windows.Forms.Panel();
-            this.btn_SelectParts_down = new System.Windows.Forms.Button();
-            this.btn_SelectParts_up = new System.Windows.Forms.Button();
-            this.btn_SelectParts_Back = new System.Windows.Forms.Button();
-            this.btn_AddParts_back = new System.Windows.Forms.Button();
-            this.btn_AddParts_save = new System.Windows.Forms.Button();
-            this.btn_AddParts_delete = new System.Windows.Forms.Button();
-            this.btn_AddParts_Path = new System.Windows.Forms.Button();
-            this.pb_AddParts = new System.Windows.Forms.PictureBox();
-            this.btn_HealthSetting_Refresh = new System.Windows.Forms.Button();
-            this.btn_HealthSetting_Down = new System.Windows.Forms.Button();
-            this.btn_HealthSetting_Up = new System.Windows.Forms.Button();
-            this.btn_HealthSetting_save = new System.Windows.Forms.Button();
-            this.btn_HealthSetting_delete = new System.Windows.Forms.Button();
-            this.btn_HealthSetting_Back = new System.Windows.Forms.Button();
-            this.btn_HealthResult_Back = new System.Windows.Forms.Button();
-            this.btn_AlarmSetting_Back = new System.Windows.Forms.Button();
-            this.panel_AlarmSetting_save = new System.Windows.Forms.Button();
-            this.btn_prediction_stop = new System.Windows.Forms.Button();
-            this.btn_prediction_start = new System.Windows.Forms.Button();
-            this.btn_prediction_back = new System.Windows.Forms.Button();
-            this.btn_AccCur_setting_save = new System.Windows.Forms.Button();
-            this.btn_AccCur_AE_down = new System.Windows.Forms.Button();
-            this.btn_AccCur_AE_up = new System.Windows.Forms.Button();
-            this.btn_AccCur_Cur_down = new System.Windows.Forms.Button();
-            this.btn_AccCur_Cur_up = new System.Windows.Forms.Button();
-            this.btn_AccCur_Z_down = new System.Windows.Forms.Button();
-            this.btn_AccCur_Z_up = new System.Windows.Forms.Button();
-            this.btn_AccCur_Y_down = new System.Windows.Forms.Button();
-            this.btn_AccCur_Y_up = new System.Windows.Forms.Button();
-            this.btn_AccCur_X_down = new System.Windows.Forms.Button();
-            this.btn_AccCur_X_up = new System.Windows.Forms.Button();
-            this.btn_AccCur_setting_Reflash = new System.Windows.Forms.Button();
-            this.btn_AccCur_setting_back = new System.Windows.Forms.Button();
-            this.btn_AE_stop = new System.Windows.Forms.Button();
-            this.btn_AE_start = new System.Windows.Forms.Button();
-            this.btn_AE_back = new System.Windows.Forms.Button();
-            this.btn_AccCur_parameter_set = new System.Windows.Forms.Button();
+            this.label124 = new System.Windows.Forms.Label();
+            this.tb_AccCur_parameter_Mistake = new System.Windows.Forms.TextBox();
+            this.label132 = new System.Windows.Forms.Label();
+            this.tb_AccCur_parameter_Pitch = new System.Windows.Forms.TextBox();
+            this.label133 = new System.Windows.Forms.Label();
+            this.Sep_AccCur_parameter_workpiece1 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_workpiece2 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_workpiece3 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_workpiece4 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_workpiece5 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_workpiece6 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_type6 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_type5 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_type4 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_type3 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_type2 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_type1 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_type7 = new System.Windows.Forms.Panel();
+            this.Sep_AccCur_parameter_workpiece7 = new System.Windows.Forms.Panel();
+            this.btn_AccCur_parameter_workpieceDelete = new System.Windows.Forms.Button();
+            this.btn_AccCur_parameter_typeDelete = new System.Windows.Forms.Button();
+            this.label134 = new System.Windows.Forms.Label();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -879,6 +887,7 @@
             this.panel5.SuspendLayout();
             this.panel_ToolWear.SuspendLayout();
             this.panel_ToolWear_Parts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_ToolWear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_warring_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_warring_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_FFT)).BeginInit();
@@ -902,9 +911,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart_Thermal)).BeginInit();
             this.panel_Learn.SuspendLayout();
             this.panel_Learn_Parts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Learn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_LearnFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Learn)).BeginInit();
             this.panel_log.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_setting.SuspendLayout();
             this.panel_AlarmSet.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -922,14 +938,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart_Health)).BeginInit();
             this.panel_SelectParts.SuspendLayout();
             this.panel_SelectParts_01.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_01)).BeginInit();
             this.panel_SelectParts_06.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_06)).BeginInit();
             this.panel_SelectParts_08.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_08)).BeginInit();
             this.panel_SelectParts_05.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_05)).BeginInit();
             this.panel_SelectParts_04.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_04)).BeginInit();
             this.panel_SelectParts_07.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_07)).BeginInit();
             this.panel_SelectParts_02.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_02)).BeginInit();
             this.panel_SelectParts_03.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_03)).BeginInit();
             this.panel_AddParts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AddParts)).BeginInit();
             this.panel_Health_Setting.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_HealthSetting_Range)).BeginInit();
@@ -964,33 +989,14 @@
             this.panel_AE.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_AE)).BeginInit();
             this.panel_AccCur_parameter.SuspendLayout();
-            this.panel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbar_AccCur_parameter_surface)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_length)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_width)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_removal)).BeginInit();
-            this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
+            this.panel22.SuspendLayout();
             this.panel_AccCur_parameter_Add.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_ToolWear)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Learn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_07)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_AddParts)).BeginInit();
+            this.panel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_removal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_width)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_length)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbar_AccCur_parameter_surface)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_ViewModule
@@ -1316,6 +1322,18 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Name = "label13";
             // 
+            // btn_ToolWearSetting_Research
+            // 
+            this.btn_ToolWearSetting_Research.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ToolWearSetting_Research.BackgroundImage = global::ToolWear.Properties.Resources.wds_icon_refresh;
+            resources.ApplyResources(this.btn_ToolWearSetting_Research, "btn_ToolWearSetting_Research");
+            this.btn_ToolWearSetting_Research.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_Research.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_ToolWearSetting_Research.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_ToolWearSetting_Research.Name = "btn_ToolWearSetting_Research";
+            this.btn_ToolWearSetting_Research.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_Research.Click += new System.EventHandler(this.btn_ToolWearSetting_Research_Click);
+            // 
             // physicalChannelComboBox
             // 
             this.physicalChannelComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1377,12 +1395,262 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Name = "label6";
             // 
+            // btn_ToolWearSetting_save
+            // 
+            this.btn_ToolWearSetting_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ToolWearSetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.btn_ToolWearSetting_save, "btn_ToolWearSetting_save");
+            this.btn_ToolWearSetting_save.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_save.Name = "btn_ToolWearSetting_save";
+            this.btn_ToolWearSetting_save.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_save.Click += new System.EventHandler(this.btn_ToolWearSetting_save_Click);
+            // 
+            // btn_ToolWearSetting_delete
+            // 
+            this.btn_ToolWearSetting_delete.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
+            resources.ApplyResources(this.btn_ToolWearSetting_delete, "btn_ToolWearSetting_delete");
+            this.btn_ToolWearSetting_delete.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_delete.Name = "btn_ToolWearSetting_delete";
+            this.btn_ToolWearSetting_delete.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_delete.Click += new System.EventHandler(this.btn_ToolWearSetting_delete_Click);
+            // 
+            // btn_ToolWearSetting_20
+            // 
+            this.btn_ToolWearSetting_20.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_20, "btn_ToolWearSetting_20");
+            this.btn_ToolWearSetting_20.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_20.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_20.Name = "btn_ToolWearSetting_20";
+            this.btn_ToolWearSetting_20.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_20.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_19
+            // 
+            this.btn_ToolWearSetting_19.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_19, "btn_ToolWearSetting_19");
+            this.btn_ToolWearSetting_19.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_19.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_19.Name = "btn_ToolWearSetting_19";
+            this.btn_ToolWearSetting_19.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_19.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_18
+            // 
+            this.btn_ToolWearSetting_18.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_18, "btn_ToolWearSetting_18");
+            this.btn_ToolWearSetting_18.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_18.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_18.Name = "btn_ToolWearSetting_18";
+            this.btn_ToolWearSetting_18.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_18.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_17
+            // 
+            this.btn_ToolWearSetting_17.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_17, "btn_ToolWearSetting_17");
+            this.btn_ToolWearSetting_17.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_17.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_17.Name = "btn_ToolWearSetting_17";
+            this.btn_ToolWearSetting_17.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_17.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_16
+            // 
+            this.btn_ToolWearSetting_16.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_16, "btn_ToolWearSetting_16");
+            this.btn_ToolWearSetting_16.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_16.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_16.Name = "btn_ToolWearSetting_16";
+            this.btn_ToolWearSetting_16.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_16.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_15
+            // 
+            this.btn_ToolWearSetting_15.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_15, "btn_ToolWearSetting_15");
+            this.btn_ToolWearSetting_15.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_15.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_15.Name = "btn_ToolWearSetting_15";
+            this.btn_ToolWearSetting_15.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_15.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_14
+            // 
+            this.btn_ToolWearSetting_14.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_14, "btn_ToolWearSetting_14");
+            this.btn_ToolWearSetting_14.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_14.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_14.Name = "btn_ToolWearSetting_14";
+            this.btn_ToolWearSetting_14.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_14.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_13
+            // 
+            this.btn_ToolWearSetting_13.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_13, "btn_ToolWearSetting_13");
+            this.btn_ToolWearSetting_13.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_13.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_13.Name = "btn_ToolWearSetting_13";
+            this.btn_ToolWearSetting_13.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_13.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_12
+            // 
+            this.btn_ToolWearSetting_12.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_12, "btn_ToolWearSetting_12");
+            this.btn_ToolWearSetting_12.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_12.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_12.Name = "btn_ToolWearSetting_12";
+            this.btn_ToolWearSetting_12.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_12.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_11
+            // 
+            this.btn_ToolWearSetting_11.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_11, "btn_ToolWearSetting_11");
+            this.btn_ToolWearSetting_11.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_11.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_11.Name = "btn_ToolWearSetting_11";
+            this.btn_ToolWearSetting_11.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_11.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_10
+            // 
+            this.btn_ToolWearSetting_10.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_10, "btn_ToolWearSetting_10");
+            this.btn_ToolWearSetting_10.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_10.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_10.Name = "btn_ToolWearSetting_10";
+            this.btn_ToolWearSetting_10.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_10.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_09
+            // 
+            this.btn_ToolWearSetting_09.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_09, "btn_ToolWearSetting_09");
+            this.btn_ToolWearSetting_09.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_09.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_09.Name = "btn_ToolWearSetting_09";
+            this.btn_ToolWearSetting_09.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_09.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_08
+            // 
+            this.btn_ToolWearSetting_08.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_08, "btn_ToolWearSetting_08");
+            this.btn_ToolWearSetting_08.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_08.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_08.Name = "btn_ToolWearSetting_08";
+            this.btn_ToolWearSetting_08.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_08.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_07
+            // 
+            this.btn_ToolWearSetting_07.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_07, "btn_ToolWearSetting_07");
+            this.btn_ToolWearSetting_07.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_07.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_07.Name = "btn_ToolWearSetting_07";
+            this.btn_ToolWearSetting_07.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_07.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_06
+            // 
+            this.btn_ToolWearSetting_06.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_06, "btn_ToolWearSetting_06");
+            this.btn_ToolWearSetting_06.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_06.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_06.Name = "btn_ToolWearSetting_06";
+            this.btn_ToolWearSetting_06.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_06.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_05
+            // 
+            this.btn_ToolWearSetting_05.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_05, "btn_ToolWearSetting_05");
+            this.btn_ToolWearSetting_05.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_05.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_05.Name = "btn_ToolWearSetting_05";
+            this.btn_ToolWearSetting_05.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_05.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_04
+            // 
+            this.btn_ToolWearSetting_04.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_04, "btn_ToolWearSetting_04");
+            this.btn_ToolWearSetting_04.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_04.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_04.Name = "btn_ToolWearSetting_04";
+            this.btn_ToolWearSetting_04.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_04.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_03
+            // 
+            this.btn_ToolWearSetting_03.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_03, "btn_ToolWearSetting_03");
+            this.btn_ToolWearSetting_03.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_03.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_03.Name = "btn_ToolWearSetting_03";
+            this.btn_ToolWearSetting_03.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_03.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_02
+            // 
+            this.btn_ToolWearSetting_02.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_02, "btn_ToolWearSetting_02");
+            this.btn_ToolWearSetting_02.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_02.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_02.Name = "btn_ToolWearSetting_02";
+            this.btn_ToolWearSetting_02.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_02.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
+            // btn_ToolWearSetting_01
+            // 
+            this.btn_ToolWearSetting_01.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWearSetting_01, "btn_ToolWearSetting_01");
+            this.btn_ToolWearSetting_01.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_01.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_01.Name = "btn_ToolWearSetting_01";
+            this.btn_ToolWearSetting_01.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_01.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            // 
             // label20
             // 
             resources.ApplyResources(this.label20, "label20");
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Name = "label20";
+            // 
+            // btn_ToolWearSetting_Back
+            // 
+            this.btn_ToolWearSetting_Back.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWearSetting_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_ToolWearSetting_Back, "btn_ToolWearSetting_Back");
+            this.btn_ToolWearSetting_Back.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWearSetting_Back.Name = "btn_ToolWearSetting_Back";
+            this.btn_ToolWearSetting_Back.UseVisualStyleBackColor = false;
+            this.btn_ToolWearSetting_Back.Click += new System.EventHandler(this.btn_ToolWearSetting_Back_Click);
             // 
             // panel_ToolWear
             // 
@@ -1504,6 +1772,15 @@
             this.panel_ToolWear_Parts.Name = "panel_ToolWear_Parts";
             this.panel_ToolWear_Parts.Click += new System.EventHandler(this.pb_ToolWear_Click);
             // 
+            // pb_ToolWear
+            // 
+            this.pb_ToolWear.BackColor = System.Drawing.Color.Transparent;
+            this.pb_ToolWear.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
+            resources.ApplyResources(this.pb_ToolWear, "pb_ToolWear");
+            this.pb_ToolWear.Name = "pb_ToolWear";
+            this.pb_ToolWear.TabStop = false;
+            this.pb_ToolWear.Click += new System.EventHandler(this.pb_ToolWear_Click);
+            // 
             // lb_ToolWear_Parts
             // 
             this.lb_ToolWear_Parts.BackColor = System.Drawing.Color.Transparent;
@@ -1511,6 +1788,16 @@
             this.lb_ToolWear_Parts.ForeColor = System.Drawing.Color.White;
             this.lb_ToolWear_Parts.Name = "lb_ToolWear_Parts";
             this.lb_ToolWear_Parts.Click += new System.EventHandler(this.pb_ToolWear_Click);
+            // 
+            // btn_Threshold
+            // 
+            this.btn_Threshold.BackColor = System.Drawing.Color.White;
+            this.btn_Threshold.BackgroundImage = global::ToolWear.Properties.Resources.wd_btn_threshold;
+            resources.ApplyResources(this.btn_Threshold, "btn_Threshold");
+            this.btn_Threshold.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold.Name = "btn_Threshold";
+            this.btn_Threshold.UseVisualStyleBackColor = false;
+            this.btn_Threshold.Click += new System.EventHandler(this.btn_ToolWear_Threshold_Click);
             // 
             // chart_warring_2
             // 
@@ -1645,12 +1932,272 @@
             this.chart_warring_1.Series.Add(series108);
             this.chart_warring_1.Series.Add(series109);
             // 
+            // btn_ToolWear_20
+            // 
+            this.btn_ToolWear_20.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_20, "btn_ToolWear_20");
+            this.btn_ToolWear_20.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_20.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_20.Name = "btn_ToolWear_20";
+            this.btn_ToolWear_20.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_20.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_19
+            // 
+            this.btn_ToolWear_19.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_19, "btn_ToolWear_19");
+            this.btn_ToolWear_19.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_19.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_19.Name = "btn_ToolWear_19";
+            this.btn_ToolWear_19.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_19.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_18
+            // 
+            this.btn_ToolWear_18.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_18, "btn_ToolWear_18");
+            this.btn_ToolWear_18.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_18.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_18.Name = "btn_ToolWear_18";
+            this.btn_ToolWear_18.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_18.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_17
+            // 
+            this.btn_ToolWear_17.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_17, "btn_ToolWear_17");
+            this.btn_ToolWear_17.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_17.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_17.Name = "btn_ToolWear_17";
+            this.btn_ToolWear_17.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_17.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_16
+            // 
+            this.btn_ToolWear_16.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_16, "btn_ToolWear_16");
+            this.btn_ToolWear_16.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_16.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_16.Name = "btn_ToolWear_16";
+            this.btn_ToolWear_16.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_16.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_15
+            // 
+            this.btn_ToolWear_15.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_15, "btn_ToolWear_15");
+            this.btn_ToolWear_15.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_15.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_15.Name = "btn_ToolWear_15";
+            this.btn_ToolWear_15.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_15.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_14
+            // 
+            this.btn_ToolWear_14.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_14, "btn_ToolWear_14");
+            this.btn_ToolWear_14.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_14.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_14.Name = "btn_ToolWear_14";
+            this.btn_ToolWear_14.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_14.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_13
+            // 
+            this.btn_ToolWear_13.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_13, "btn_ToolWear_13");
+            this.btn_ToolWear_13.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_13.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_13.Name = "btn_ToolWear_13";
+            this.btn_ToolWear_13.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_13.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_12
+            // 
+            this.btn_ToolWear_12.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_12, "btn_ToolWear_12");
+            this.btn_ToolWear_12.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_12.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_12.Name = "btn_ToolWear_12";
+            this.btn_ToolWear_12.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_12.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_11
+            // 
+            this.btn_ToolWear_11.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_11, "btn_ToolWear_11");
+            this.btn_ToolWear_11.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_11.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_11.Name = "btn_ToolWear_11";
+            this.btn_ToolWear_11.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_11.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_10
+            // 
+            this.btn_ToolWear_10.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_10, "btn_ToolWear_10");
+            this.btn_ToolWear_10.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_10.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_10.Name = "btn_ToolWear_10";
+            this.btn_ToolWear_10.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_10.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_09
+            // 
+            this.btn_ToolWear_09.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_09, "btn_ToolWear_09");
+            this.btn_ToolWear_09.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_09.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_09.Name = "btn_ToolWear_09";
+            this.btn_ToolWear_09.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_09.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_08
+            // 
+            this.btn_ToolWear_08.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_08, "btn_ToolWear_08");
+            this.btn_ToolWear_08.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_08.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_08.Name = "btn_ToolWear_08";
+            this.btn_ToolWear_08.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_08.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_07
+            // 
+            this.btn_ToolWear_07.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_07, "btn_ToolWear_07");
+            this.btn_ToolWear_07.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_07.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_07.Name = "btn_ToolWear_07";
+            this.btn_ToolWear_07.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_07.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_06
+            // 
+            this.btn_ToolWear_06.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_06, "btn_ToolWear_06");
+            this.btn_ToolWear_06.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_06.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_06.Name = "btn_ToolWear_06";
+            this.btn_ToolWear_06.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_06.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_05
+            // 
+            this.btn_ToolWear_05.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_05, "btn_ToolWear_05");
+            this.btn_ToolWear_05.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_05.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_05.Name = "btn_ToolWear_05";
+            this.btn_ToolWear_05.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_05.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_04
+            // 
+            this.btn_ToolWear_04.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_04, "btn_ToolWear_04");
+            this.btn_ToolWear_04.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_04.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_04.Name = "btn_ToolWear_04";
+            this.btn_ToolWear_04.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_04.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_03
+            // 
+            this.btn_ToolWear_03.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_03, "btn_ToolWear_03");
+            this.btn_ToolWear_03.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_03.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_03.Name = "btn_ToolWear_03";
+            this.btn_ToolWear_03.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_03.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_02
+            // 
+            this.btn_ToolWear_02.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_02, "btn_ToolWear_02");
+            this.btn_ToolWear_02.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_02.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_02.Name = "btn_ToolWear_02";
+            this.btn_ToolWear_02.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_02.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
+            // btn_ToolWear_01
+            // 
+            this.btn_ToolWear_01.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ToolWear_01, "btn_ToolWear_01");
+            this.btn_ToolWear_01.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_01.ForeColor = System.Drawing.Color.White;
+            this.btn_ToolWear_01.Name = "btn_ToolWear_01";
+            this.btn_ToolWear_01.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_01.Click += new System.EventHandler(this.btn_ToolWear_Choose);
+            // 
             // lb_ToolWear_Title
             // 
             resources.ApplyResources(this.lb_ToolWear_Title, "lb_ToolWear_Title");
             this.lb_ToolWear_Title.BackColor = System.Drawing.Color.Transparent;
             this.lb_ToolWear_Title.ForeColor = System.Drawing.Color.White;
             this.lb_ToolWear_Title.Name = "lb_ToolWear_Title";
+            // 
+            // btn_ToolWear_Change
+            // 
+            this.btn_ToolWear_Change.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_Change.BackgroundImage = global::ToolWear.Properties.Resources.wd_btn_chart;
+            resources.ApplyResources(this.btn_ToolWear_Change, "btn_ToolWear_Change");
+            this.btn_ToolWear_Change.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_Change.Name = "btn_ToolWear_Change";
+            this.btn_ToolWear_Change.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_Change.Click += new System.EventHandler(this.btn_ToolWear_Change_Click);
+            // 
+            // btn_ToolWear_Setting
+            // 
+            this.btn_ToolWear_Setting.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_Setting.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_setting;
+            resources.ApplyResources(this.btn_ToolWear_Setting, "btn_ToolWear_Setting");
+            this.btn_ToolWear_Setting.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_Setting.Name = "btn_ToolWear_Setting";
+            this.btn_ToolWear_Setting.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_Setting.Click += new System.EventHandler(this.btn_ToolWear_Setting_Click);
+            // 
+            // btn_ToolWear_Stop
+            // 
+            this.btn_ToolWear_Stop.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_Stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
+            resources.ApplyResources(this.btn_ToolWear_Stop, "btn_ToolWear_Stop");
+            this.btn_ToolWear_Stop.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_Stop.Name = "btn_ToolWear_Stop";
+            this.btn_ToolWear_Stop.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_Stop.Click += new System.EventHandler(this.btn_ToolWear_Stop_Click);
+            // 
+            // btn_ToolWear_Start
+            // 
+            this.btn_ToolWear_Start.BackColor = System.Drawing.Color.White;
+            this.btn_ToolWear_Start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
+            resources.ApplyResources(this.btn_ToolWear_Start, "btn_ToolWear_Start");
+            this.btn_ToolWear_Start.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear_Start.Name = "btn_ToolWear_Start";
+            this.btn_ToolWear_Start.UseVisualStyleBackColor = false;
+            this.btn_ToolWear_Start.Click += new System.EventHandler(this.btn_ToolWear_Start_Click);
             // 
             // chart_FFT
             // 
@@ -1927,6 +2474,127 @@
             this.panel_Home.Controls.Add(this.btn_setting);
             this.panel_Home.Name = "panel_Home";
             // 
+            // btn_shutdown
+            // 
+            this.btn_shutdown.BackColor = System.Drawing.Color.Transparent;
+            this.btn_shutdown.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_shutdown;
+            resources.ApplyResources(this.btn_shutdown, "btn_shutdown");
+            this.btn_shutdown.FlatAppearance.BorderSize = 0;
+            this.btn_shutdown.Name = "btn_shutdown";
+            this.btn_shutdown.UseVisualStyleBackColor = false;
+            this.btn_shutdown.Click += new System.EventHandler(this.btn_shutdown_Click);
+            // 
+            // btn_ChangeMode3
+            // 
+            this.btn_ChangeMode3.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ChangeMode3.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_blank;
+            resources.ApplyResources(this.btn_ChangeMode3, "btn_ChangeMode3");
+            this.btn_ChangeMode3.FlatAppearance.BorderSize = 0;
+            this.btn_ChangeMode3.Name = "btn_ChangeMode3";
+            this.btn_ChangeMode3.UseVisualStyleBackColor = false;
+            this.btn_ChangeMode3.Click += new System.EventHandler(this.btn_ChangeMode3_Click);
+            // 
+            // btn_ChangeMode
+            // 
+            this.btn_ChangeMode.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ChangeMode.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_blank;
+            resources.ApplyResources(this.btn_ChangeMode, "btn_ChangeMode");
+            this.btn_ChangeMode.FlatAppearance.BorderSize = 0;
+            this.btn_ChangeMode.Name = "btn_ChangeMode";
+            this.btn_ChangeMode.UseVisualStyleBackColor = false;
+            this.btn_ChangeMode.Click += new System.EventHandler(this.btn_ChangeMode_Click);
+            // 
+            // btn_ChangeMode2
+            // 
+            this.btn_ChangeMode2.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ChangeMode2.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_blank;
+            resources.ApplyResources(this.btn_ChangeMode2, "btn_ChangeMode2");
+            this.btn_ChangeMode2.FlatAppearance.BorderSize = 0;
+            this.btn_ChangeMode2.Name = "btn_ChangeMode2";
+            this.btn_ChangeMode2.UseVisualStyleBackColor = false;
+            // 
+            // btn_ChangeMode0
+            // 
+            this.btn_ChangeMode0.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ChangeMode0.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_blank;
+            resources.ApplyResources(this.btn_ChangeMode0, "btn_ChangeMode0");
+            this.btn_ChangeMode0.FlatAppearance.BorderSize = 0;
+            this.btn_ChangeMode0.Name = "btn_ChangeMode0";
+            this.btn_ChangeMode0.UseVisualStyleBackColor = false;
+            this.btn_ChangeMode0.Click += new System.EventHandler(this.btn_ChangeMode0_Click);
+            // 
+            // btn_Learn
+            // 
+            this.btn_Learn.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Learn.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_blank;
+            resources.ApplyResources(this.btn_Learn, "btn_Learn");
+            this.btn_Learn.FlatAppearance.BorderSize = 0;
+            this.btn_Learn.Name = "btn_Learn";
+            this.btn_Learn.UseVisualStyleBackColor = false;
+            this.btn_Learn.Click += new System.EventHandler(this.btn_Learn_Click);
+            // 
+            // btn_logo
+            // 
+            this.btn_logo.BackColor = System.Drawing.Color.Transparent;
+            this.btn_logo.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_camprologo;
+            resources.ApplyResources(this.btn_logo, "btn_logo");
+            this.btn_logo.FlatAppearance.BorderSize = 0;
+            this.btn_logo.Name = "btn_logo";
+            this.btn_logo.UseVisualStyleBackColor = false;
+            this.btn_logo.Click += new System.EventHandler(this.FormBorderMode);
+            // 
+            // btn_ATCsetting
+            // 
+            this.btn_ATCsetting.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ATCsetting.BackgroundImage = global::ToolWear.Properties.Resources.menubtn_th;
+            resources.ApplyResources(this.btn_ATCsetting, "btn_ATCsetting");
+            this.btn_ATCsetting.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting.Name = "btn_ATCsetting";
+            this.btn_ATCsetting.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting.Click += new System.EventHandler(this.btn_ATCsetting_Click);
+            // 
+            // btn_Health
+            // 
+            this.btn_Health.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Health.BackgroundImage = global::ToolWear.Properties.Resources.menubtn_health;
+            resources.ApplyResources(this.btn_Health, "btn_Health");
+            this.btn_Health.FlatAppearance.BorderSize = 0;
+            this.btn_Health.Name = "btn_Health";
+            this.btn_Health.UseVisualStyleBackColor = false;
+            this.btn_Health.Click += new System.EventHandler(this.btn_Health_Click);
+            // 
+            // btn_Thermal
+            // 
+            this.btn_Thermal.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Thermal.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_tc;
+            resources.ApplyResources(this.btn_Thermal, "btn_Thermal");
+            this.btn_Thermal.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Thermal.Name = "btn_Thermal";
+            this.btn_Thermal.UseVisualStyleBackColor = false;
+            this.btn_Thermal.Click += new System.EventHandler(this.btn_Thermal_Click);
+            // 
+            // btn_ToolWear
+            // 
+            this.btn_ToolWear.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ToolWear.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_wd;
+            resources.ApplyResources(this.btn_ToolWear, "btn_ToolWear");
+            this.btn_ToolWear.FlatAppearance.BorderSize = 0;
+            this.btn_ToolWear.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_ToolWear.Name = "btn_ToolWear";
+            this.btn_ToolWear.UseVisualStyleBackColor = false;
+            this.btn_ToolWear.Click += new System.EventHandler(this.btn_ToolWear_Click);
+            // 
+            // btn_setting
+            // 
+            this.btn_setting.BackColor = System.Drawing.Color.Transparent;
+            this.btn_setting.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_setting;
+            resources.ApplyResources(this.btn_setting, "btn_setting");
+            this.btn_setting.FlatAppearance.BorderSize = 0;
+            this.btn_setting.Name = "btn_setting";
+            this.btn_setting.UseVisualStyleBackColor = false;
+            this.btn_setting.Click += new System.EventHandler(this.btn_setting_Click);
+            // 
             // panel_Threshold
             // 
             this.panel_Threshold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
@@ -1974,6 +2642,16 @@
             this.panel4.Controls.Add(this.chart_Threshold);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
+            // 
+            // btn_Threshold_delete
+            // 
+            this.btn_Threshold_delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Threshold_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_t_delete;
+            resources.ApplyResources(this.btn_Threshold_delete, "btn_Threshold_delete");
+            this.btn_Threshold_delete.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold_delete.Name = "btn_Threshold_delete";
+            this.btn_Threshold_delete.UseVisualStyleBackColor = false;
+            this.btn_Threshold_delete.Click += new System.EventHandler(this.btn_Threshold_delete_Click);
             // 
             // panel_Mark
             // 
@@ -2175,6 +2853,16 @@
             resources.ApplyResources(this.lb_Threshold_sethz01, "lb_Threshold_sethz01");
             this.lb_Threshold_sethz01.ForeColor = System.Drawing.Color.White;
             this.lb_Threshold_sethz01.Name = "lb_Threshold_sethz01";
+            // 
+            // btn_Threshold_save
+            // 
+            this.btn_Threshold_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Threshold_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_t_save;
+            resources.ApplyResources(this.btn_Threshold_save, "btn_Threshold_save");
+            this.btn_Threshold_save.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold_save.Name = "btn_Threshold_save";
+            this.btn_Threshold_save.UseVisualStyleBackColor = false;
+            this.btn_Threshold_save.Click += new System.EventHandler(this.btn_Threshold_save_Click);
             // 
             // chart_Threshold
             // 
@@ -2394,6 +3082,26 @@
             this.tb_Threshold_02.ReadOnly = true;
             this.tb_Threshold_02.Click += new System.EventHandler(this.Threshold_LoadBlade);
             // 
+            // btn_Threshold_down
+            // 
+            this.btn_Threshold_down.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Threshold_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_Threshold_down, "btn_Threshold_down");
+            this.btn_Threshold_down.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold_down.Name = "btn_Threshold_down";
+            this.btn_Threshold_down.UseVisualStyleBackColor = false;
+            this.btn_Threshold_down.Click += new System.EventHandler(this.btn_Threshold_Down_Click);
+            // 
+            // btn_Threshold_up
+            // 
+            this.btn_Threshold_up.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Threshold_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_Threshold_up, "btn_Threshold_up");
+            this.btn_Threshold_up.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold_up.Name = "btn_Threshold_up";
+            this.btn_Threshold_up.UseVisualStyleBackColor = false;
+            this.btn_Threshold_up.Click += new System.EventHandler(this.btn_Threshold_Up_Click);
+            // 
             // tb_Threshold_01
             // 
             this.tb_Threshold_01.Cursor = System.Windows.Forms.Cursors.Default;
@@ -2401,6 +3109,16 @@
             this.tb_Threshold_01.Name = "tb_Threshold_01";
             this.tb_Threshold_01.ReadOnly = true;
             this.tb_Threshold_01.Click += new System.EventHandler(this.Threshold_LoadBlade);
+            // 
+            // btn_Threshold_Back
+            // 
+            this.btn_Threshold_Back.BackColor = System.Drawing.Color.White;
+            this.btn_Threshold_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_Threshold_Back, "btn_Threshold_Back");
+            this.btn_Threshold_Back.FlatAppearance.BorderSize = 0;
+            this.btn_Threshold_Back.Name = "btn_Threshold_Back";
+            this.btn_Threshold_Back.UseVisualStyleBackColor = false;
+            this.btn_Threshold_Back.Click += new System.EventHandler(this.btn_Threshold_Back_Click);
             // 
             // label22
             // 
@@ -2452,11 +3170,311 @@
             this.panel_ThermalSetting.Controls.Add(this.label10);
             this.panel_ThermalSetting.Name = "panel_ThermalSetting";
             // 
+            // numeric_Compensate_Down
+            // 
+            this.numeric_Compensate_Down.BackColor = System.Drawing.Color.White;
+            this.numeric_Compensate_Down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.numeric_Compensate_Down, "numeric_Compensate_Down");
+            this.numeric_Compensate_Down.FlatAppearance.BorderSize = 0;
+            this.numeric_Compensate_Down.ForeColor = System.Drawing.Color.White;
+            this.numeric_Compensate_Down.Name = "numeric_Compensate_Down";
+            this.numeric_Compensate_Down.UseVisualStyleBackColor = false;
+            this.numeric_Compensate_Down.Click += new System.EventHandler(this.numeric_Compensate_Down_Click);
+            // 
+            // numeric_Compensate_Up
+            // 
+            this.numeric_Compensate_Up.BackColor = System.Drawing.Color.White;
+            this.numeric_Compensate_Up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.numeric_Compensate_Up, "numeric_Compensate_Up");
+            this.numeric_Compensate_Up.FlatAppearance.BorderSize = 0;
+            this.numeric_Compensate_Up.ForeColor = System.Drawing.Color.White;
+            this.numeric_Compensate_Up.Name = "numeric_Compensate_Up";
+            this.numeric_Compensate_Up.UseVisualStyleBackColor = false;
+            this.numeric_Compensate_Up.Click += new System.EventHandler(this.numeric_Compensate_Up_Click);
+            // 
+            // numeric_Temperature_Down
+            // 
+            this.numeric_Temperature_Down.BackColor = System.Drawing.Color.White;
+            this.numeric_Temperature_Down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.numeric_Temperature_Down, "numeric_Temperature_Down");
+            this.numeric_Temperature_Down.FlatAppearance.BorderSize = 0;
+            this.numeric_Temperature_Down.ForeColor = System.Drawing.Color.White;
+            this.numeric_Temperature_Down.Name = "numeric_Temperature_Down";
+            this.numeric_Temperature_Down.UseVisualStyleBackColor = false;
+            this.numeric_Temperature_Down.Click += new System.EventHandler(this.numeric_Temperature_Down_Click);
+            // 
+            // numeric_Temperature_Up
+            // 
+            this.numeric_Temperature_Up.BackColor = System.Drawing.Color.White;
+            this.numeric_Temperature_Up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.numeric_Temperature_Up, "numeric_Temperature_Up");
+            this.numeric_Temperature_Up.FlatAppearance.BorderSize = 0;
+            this.numeric_Temperature_Up.ForeColor = System.Drawing.Color.White;
+            this.numeric_Temperature_Up.Name = "numeric_Temperature_Up";
+            this.numeric_Temperature_Up.UseVisualStyleBackColor = false;
+            this.numeric_Temperature_Up.Click += new System.EventHandler(this.numeric_Temperature_Up_Click);
+            // 
+            // btn_CompensateSave
+            // 
+            this.btn_CompensateSave.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSave.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_save;
+            resources.ApplyResources(this.btn_CompensateSave, "btn_CompensateSave");
+            this.btn_CompensateSave.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSave.Name = "btn_CompensateSave";
+            this.btn_CompensateSave.UseVisualStyleBackColor = false;
+            this.btn_CompensateSave.Click += new System.EventHandler(this.btn_CompensateSave_Click);
+            // 
+            // btn_Compensate_20
+            // 
+            this.btn_Compensate_20.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_20, "btn_Compensate_20");
+            this.btn_Compensate_20.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_20.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_20.Name = "btn_Compensate_20";
+            this.btn_Compensate_20.UseVisualStyleBackColor = false;
+            this.btn_Compensate_20.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_19
+            // 
+            this.btn_Compensate_19.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_19, "btn_Compensate_19");
+            this.btn_Compensate_19.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_19.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_19.Name = "btn_Compensate_19";
+            this.btn_Compensate_19.UseVisualStyleBackColor = false;
+            this.btn_Compensate_19.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_18
+            // 
+            this.btn_Compensate_18.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_18, "btn_Compensate_18");
+            this.btn_Compensate_18.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_18.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_18.Name = "btn_Compensate_18";
+            this.btn_Compensate_18.UseVisualStyleBackColor = false;
+            this.btn_Compensate_18.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_17
+            // 
+            this.btn_Compensate_17.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_17, "btn_Compensate_17");
+            this.btn_Compensate_17.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_17.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_17.Name = "btn_Compensate_17";
+            this.btn_Compensate_17.UseVisualStyleBackColor = false;
+            this.btn_Compensate_17.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_16
+            // 
+            this.btn_Compensate_16.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_16, "btn_Compensate_16");
+            this.btn_Compensate_16.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_16.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_16.Name = "btn_Compensate_16";
+            this.btn_Compensate_16.UseVisualStyleBackColor = false;
+            this.btn_Compensate_16.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_15
+            // 
+            this.btn_Compensate_15.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_15, "btn_Compensate_15");
+            this.btn_Compensate_15.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_15.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_15.Name = "btn_Compensate_15";
+            this.btn_Compensate_15.UseVisualStyleBackColor = false;
+            this.btn_Compensate_15.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_14
+            // 
+            this.btn_Compensate_14.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_14, "btn_Compensate_14");
+            this.btn_Compensate_14.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_14.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_14.Name = "btn_Compensate_14";
+            this.btn_Compensate_14.UseVisualStyleBackColor = false;
+            this.btn_Compensate_14.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_13
+            // 
+            this.btn_Compensate_13.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_13, "btn_Compensate_13");
+            this.btn_Compensate_13.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_13.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_13.Name = "btn_Compensate_13";
+            this.btn_Compensate_13.UseVisualStyleBackColor = false;
+            this.btn_Compensate_13.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_12
+            // 
+            this.btn_Compensate_12.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_12, "btn_Compensate_12");
+            this.btn_Compensate_12.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_12.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_12.Name = "btn_Compensate_12";
+            this.btn_Compensate_12.UseVisualStyleBackColor = false;
+            this.btn_Compensate_12.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_11
+            // 
+            this.btn_Compensate_11.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_11, "btn_Compensate_11");
+            this.btn_Compensate_11.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_11.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_11.Name = "btn_Compensate_11";
+            this.btn_Compensate_11.UseVisualStyleBackColor = false;
+            this.btn_Compensate_11.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_10
+            // 
+            this.btn_Compensate_10.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_10, "btn_Compensate_10");
+            this.btn_Compensate_10.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_10.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_10.Name = "btn_Compensate_10";
+            this.btn_Compensate_10.UseVisualStyleBackColor = false;
+            this.btn_Compensate_10.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_09
+            // 
+            this.btn_Compensate_09.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_09, "btn_Compensate_09");
+            this.btn_Compensate_09.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_09.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_09.Name = "btn_Compensate_09";
+            this.btn_Compensate_09.UseVisualStyleBackColor = false;
+            this.btn_Compensate_09.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_08
+            // 
+            this.btn_Compensate_08.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_08, "btn_Compensate_08");
+            this.btn_Compensate_08.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_08.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_08.Name = "btn_Compensate_08";
+            this.btn_Compensate_08.UseVisualStyleBackColor = false;
+            this.btn_Compensate_08.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_CompensateRemove
+            // 
+            this.btn_CompensateRemove.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateRemove.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_delete;
+            resources.ApplyResources(this.btn_CompensateRemove, "btn_CompensateRemove");
+            this.btn_CompensateRemove.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateRemove.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateRemove.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateRemove.Name = "btn_CompensateRemove";
+            this.btn_CompensateRemove.UseVisualStyleBackColor = false;
+            this.btn_CompensateRemove.Click += new System.EventHandler(this.btn_CompensateRemove_Click);
+            // 
+            // btn_Compensate_07
+            // 
+            this.btn_Compensate_07.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_07, "btn_Compensate_07");
+            this.btn_Compensate_07.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_07.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_07.Name = "btn_Compensate_07";
+            this.btn_Compensate_07.UseVisualStyleBackColor = false;
+            this.btn_Compensate_07.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_CompensateAdd
+            // 
+            this.btn_CompensateAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateAdd.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_new;
+            resources.ApplyResources(this.btn_CompensateAdd, "btn_CompensateAdd");
+            this.btn_CompensateAdd.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateAdd.Name = "btn_CompensateAdd";
+            this.btn_CompensateAdd.UseVisualStyleBackColor = false;
+            this.btn_CompensateAdd.Click += new System.EventHandler(this.btn_CompensateAdd_Click);
+            // 
+            // btn_Compensate_06
+            // 
+            this.btn_Compensate_06.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_06, "btn_Compensate_06");
+            this.btn_Compensate_06.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_06.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_06.Name = "btn_Compensate_06";
+            this.btn_Compensate_06.UseVisualStyleBackColor = false;
+            this.btn_Compensate_06.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_05
+            // 
+            this.btn_Compensate_05.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_05, "btn_Compensate_05");
+            this.btn_Compensate_05.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_05.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_05.Name = "btn_Compensate_05";
+            this.btn_Compensate_05.UseVisualStyleBackColor = false;
+            this.btn_Compensate_05.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_04
+            // 
+            this.btn_Compensate_04.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_04, "btn_Compensate_04");
+            this.btn_Compensate_04.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_04.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_04.Name = "btn_Compensate_04";
+            this.btn_Compensate_04.UseVisualStyleBackColor = false;
+            this.btn_Compensate_04.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_03
+            // 
+            this.btn_Compensate_03.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_03, "btn_Compensate_03");
+            this.btn_Compensate_03.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_03.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_03.Name = "btn_Compensate_03";
+            this.btn_Compensate_03.UseVisualStyleBackColor = false;
+            this.btn_Compensate_03.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
+            // btn_Compensate_02
+            // 
+            this.btn_Compensate_02.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_02, "btn_Compensate_02");
+            this.btn_Compensate_02.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_02.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_02.Name = "btn_Compensate_02";
+            this.btn_Compensate_02.UseVisualStyleBackColor = false;
+            this.btn_Compensate_02.Click += new System.EventHandler(this.btn_Compensate_Choose);
+            // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Name = "label7";
+            // 
+            // btn_Compensate_01
+            // 
+            this.btn_Compensate_01.BackColor = System.Drawing.Color.White;
+            this.btn_Compensate_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Compensate_01, "btn_Compensate_01");
+            this.btn_Compensate_01.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_01.ForeColor = System.Drawing.Color.White;
+            this.btn_Compensate_01.Name = "btn_Compensate_01";
+            this.btn_Compensate_01.UseVisualStyleBackColor = false;
+            this.btn_Compensate_01.Click += new System.EventHandler(this.btn_Compensate_Choose);
             // 
             // label23
             // 
@@ -2464,6 +3482,16 @@
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Name = "label23";
+            // 
+            // btn_ThermalSetting_Back
+            // 
+            this.btn_ThermalSetting_Back.BackColor = System.Drawing.Color.White;
+            this.btn_ThermalSetting_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_ThermalSetting_Back, "btn_ThermalSetting_Back");
+            this.btn_ThermalSetting_Back.FlatAppearance.BorderSize = 0;
+            this.btn_ThermalSetting_Back.Name = "btn_ThermalSetting_Back";
+            this.btn_ThermalSetting_Back.UseVisualStyleBackColor = false;
+            this.btn_ThermalSetting_Back.Click += new System.EventHandler(this.btn_ThermalSetting_Back_Click);
             // 
             // panel_Compensate
             // 
@@ -2509,6 +3537,49 @@
             resources.ApplyResources(this.lb_Compensate_page, "lb_Compensate_page");
             this.lb_Compensate_page.ForeColor = System.Drawing.Color.White;
             this.lb_Compensate_page.Name = "lb_Compensate_page";
+            // 
+            // btn_Compensate_down
+            // 
+            this.btn_Compensate_down.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Compensate_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_Compensate_down, "btn_Compensate_down");
+            this.btn_Compensate_down.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_down.Name = "btn_Compensate_down";
+            this.btn_Compensate_down.UseVisualStyleBackColor = false;
+            this.btn_Compensate_down.Click += new System.EventHandler(this.btn_Compensate_down_Click);
+            // 
+            // btn_Compensate_up
+            // 
+            this.btn_Compensate_up.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Compensate_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_Compensate_up, "btn_Compensate_up");
+            this.btn_Compensate_up.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_up.Name = "btn_Compensate_up";
+            this.btn_Compensate_up.UseVisualStyleBackColor = false;
+            this.btn_Compensate_up.Click += new System.EventHandler(this.btn_Compensate_up_Click);
+            // 
+            // btn_CompensateSet_delete
+            // 
+            this.btn_CompensateSet_delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_delete.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_delete;
+            resources.ApplyResources(this.btn_CompensateSet_delete, "btn_CompensateSet_delete");
+            this.btn_CompensateSet_delete.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateSet_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_delete.Name = "btn_CompensateSet_delete";
+            this.btn_CompensateSet_delete.UseVisualStyleBackColor = false;
+            // 
+            // btn_CompensateSet_save
+            // 
+            this.btn_CompensateSet_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_save.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_save;
+            resources.ApplyResources(this.btn_CompensateSet_save, "btn_CompensateSet_save");
+            this.btn_CompensateSet_save.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateSet_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_save.Name = "btn_CompensateSet_save";
+            this.btn_CompensateSet_save.UseVisualStyleBackColor = false;
+            this.btn_CompensateSet_save.Click += new System.EventHandler(this.btn_CompensateSet_save_Click);
             // 
             // label12
             // 
@@ -2687,12 +3758,262 @@
             this.panel_Thermal.Controls.Add(this.panel_Thermal_single);
             this.panel_Thermal.Name = "panel_Thermal";
             // 
+            // btn_Thermal_stop
+            // 
+            this.btn_Thermal_stop.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
+            resources.ApplyResources(this.btn_Thermal_stop, "btn_Thermal_stop");
+            this.btn_Thermal_stop.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_stop.Name = "btn_Thermal_stop";
+            this.btn_Thermal_stop.UseVisualStyleBackColor = false;
+            this.btn_Thermal_stop.Click += new System.EventHandler(this.btn_Thermal_stop_Click);
+            // 
+            // btn_Thermal_start
+            // 
+            this.btn_Thermal_start.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_start.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_ply;
+            resources.ApplyResources(this.btn_Thermal_start, "btn_Thermal_start");
+            this.btn_Thermal_start.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_start.Name = "btn_Thermal_start";
+            this.btn_Thermal_start.UseVisualStyleBackColor = false;
+            this.btn_Thermal_start.Click += new System.EventHandler(this.btn_Thermal_start_Click);
+            // 
+            // btn_Thermal_20
+            // 
+            this.btn_Thermal_20.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_20, "btn_Thermal_20");
+            this.btn_Thermal_20.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_20.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_20.Name = "btn_Thermal_20";
+            this.btn_Thermal_20.UseVisualStyleBackColor = false;
+            this.btn_Thermal_20.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_19
+            // 
+            this.btn_Thermal_19.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_19, "btn_Thermal_19");
+            this.btn_Thermal_19.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_19.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_19.Name = "btn_Thermal_19";
+            this.btn_Thermal_19.UseVisualStyleBackColor = false;
+            this.btn_Thermal_19.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_18
+            // 
+            this.btn_Thermal_18.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_18, "btn_Thermal_18");
+            this.btn_Thermal_18.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_18.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_18.Name = "btn_Thermal_18";
+            this.btn_Thermal_18.UseVisualStyleBackColor = false;
+            this.btn_Thermal_18.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_17
+            // 
+            this.btn_Thermal_17.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_17, "btn_Thermal_17");
+            this.btn_Thermal_17.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_17.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_17.Name = "btn_Thermal_17";
+            this.btn_Thermal_17.UseVisualStyleBackColor = false;
+            this.btn_Thermal_17.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_16
+            // 
+            this.btn_Thermal_16.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_16, "btn_Thermal_16");
+            this.btn_Thermal_16.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_16.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_16.Name = "btn_Thermal_16";
+            this.btn_Thermal_16.UseVisualStyleBackColor = false;
+            this.btn_Thermal_16.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_15
+            // 
+            this.btn_Thermal_15.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_15, "btn_Thermal_15");
+            this.btn_Thermal_15.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_15.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_15.Name = "btn_Thermal_15";
+            this.btn_Thermal_15.UseVisualStyleBackColor = false;
+            this.btn_Thermal_15.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_14
+            // 
+            this.btn_Thermal_14.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_14, "btn_Thermal_14");
+            this.btn_Thermal_14.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_14.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_14.Name = "btn_Thermal_14";
+            this.btn_Thermal_14.UseVisualStyleBackColor = false;
+            this.btn_Thermal_14.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_13
+            // 
+            this.btn_Thermal_13.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_13, "btn_Thermal_13");
+            this.btn_Thermal_13.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_13.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_13.Name = "btn_Thermal_13";
+            this.btn_Thermal_13.UseVisualStyleBackColor = false;
+            this.btn_Thermal_13.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_12
+            // 
+            this.btn_Thermal_12.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_12, "btn_Thermal_12");
+            this.btn_Thermal_12.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_12.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_12.Name = "btn_Thermal_12";
+            this.btn_Thermal_12.UseVisualStyleBackColor = false;
+            this.btn_Thermal_12.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_11
+            // 
+            this.btn_Thermal_11.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_11, "btn_Thermal_11");
+            this.btn_Thermal_11.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_11.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_11.Name = "btn_Thermal_11";
+            this.btn_Thermal_11.UseVisualStyleBackColor = false;
+            this.btn_Thermal_11.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_10
+            // 
+            this.btn_Thermal_10.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_10, "btn_Thermal_10");
+            this.btn_Thermal_10.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_10.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_10.Name = "btn_Thermal_10";
+            this.btn_Thermal_10.UseVisualStyleBackColor = false;
+            this.btn_Thermal_10.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_09
+            // 
+            this.btn_Thermal_09.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_09, "btn_Thermal_09");
+            this.btn_Thermal_09.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_09.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_09.Name = "btn_Thermal_09";
+            this.btn_Thermal_09.UseVisualStyleBackColor = false;
+            this.btn_Thermal_09.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_08
+            // 
+            this.btn_Thermal_08.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_08, "btn_Thermal_08");
+            this.btn_Thermal_08.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_08.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_08.Name = "btn_Thermal_08";
+            this.btn_Thermal_08.UseVisualStyleBackColor = false;
+            this.btn_Thermal_08.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_07
+            // 
+            this.btn_Thermal_07.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_07, "btn_Thermal_07");
+            this.btn_Thermal_07.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_07.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_07.Name = "btn_Thermal_07";
+            this.btn_Thermal_07.UseVisualStyleBackColor = false;
+            this.btn_Thermal_07.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_06
+            // 
+            this.btn_Thermal_06.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_06, "btn_Thermal_06");
+            this.btn_Thermal_06.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_06.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_06.Name = "btn_Thermal_06";
+            this.btn_Thermal_06.UseVisualStyleBackColor = false;
+            this.btn_Thermal_06.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_05
+            // 
+            this.btn_Thermal_05.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_05, "btn_Thermal_05");
+            this.btn_Thermal_05.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_05.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_05.Name = "btn_Thermal_05";
+            this.btn_Thermal_05.UseVisualStyleBackColor = false;
+            this.btn_Thermal_05.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_04
+            // 
+            this.btn_Thermal_04.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_04, "btn_Thermal_04");
+            this.btn_Thermal_04.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_04.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_04.Name = "btn_Thermal_04";
+            this.btn_Thermal_04.UseVisualStyleBackColor = false;
+            this.btn_Thermal_04.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
+            // 
+            // btn_ThermalSetting
+            // 
+            this.btn_ThermalSetting.BackColor = System.Drawing.Color.White;
+            this.btn_ThermalSetting.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_setting;
+            resources.ApplyResources(this.btn_ThermalSetting, "btn_ThermalSetting");
+            this.btn_ThermalSetting.FlatAppearance.BorderSize = 0;
+            this.btn_ThermalSetting.Name = "btn_ThermalSetting";
+            this.btn_ThermalSetting.UseVisualStyleBackColor = false;
+            this.btn_ThermalSetting.Click += new System.EventHandler(this.btn_ThermalSetting_Click);
+            // 
+            // btn_Thermal_03
+            // 
+            this.btn_Thermal_03.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_03, "btn_Thermal_03");
+            this.btn_Thermal_03.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_03.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_03.Name = "btn_Thermal_03";
+            this.btn_Thermal_03.UseVisualStyleBackColor = false;
+            this.btn_Thermal_03.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_02
+            // 
+            this.btn_Thermal_02.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_02, "btn_Thermal_02");
+            this.btn_Thermal_02.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_02.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_02.Name = "btn_Thermal_02";
+            this.btn_Thermal_02.UseVisualStyleBackColor = false;
+            this.btn_Thermal_02.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
+            // 
+            // btn_Thermal_01
+            // 
+            this.btn_Thermal_01.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Thermal_01, "btn_Thermal_01");
+            this.btn_Thermal_01.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_01.ForeColor = System.Drawing.Color.White;
+            this.btn_Thermal_01.Name = "btn_Thermal_01";
+            this.btn_Thermal_01.UseVisualStyleBackColor = false;
+            this.btn_Thermal_01.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
             // 
             // panel_Thermal_Mutile
             // 
@@ -2716,6 +4037,26 @@
             resources.ApplyResources(this.lb_Thermal_page, "lb_Thermal_page");
             this.lb_Thermal_page.ForeColor = System.Drawing.Color.White;
             this.lb_Thermal_page.Name = "lb_Thermal_page";
+            // 
+            // btn_Thermal_down
+            // 
+            this.btn_Thermal_down.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_Thermal_down, "btn_Thermal_down");
+            this.btn_Thermal_down.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_down.Name = "btn_Thermal_down";
+            this.btn_Thermal_down.UseVisualStyleBackColor = false;
+            this.btn_Thermal_down.Click += new System.EventHandler(this.btn_Thermal_down_Click);
+            // 
+            // btn_Thermal_up
+            // 
+            this.btn_Thermal_up.BackColor = System.Drawing.Color.White;
+            this.btn_Thermal_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_Thermal_up, "btn_Thermal_up");
+            this.btn_Thermal_up.FlatAppearance.BorderSize = 0;
+            this.btn_Thermal_up.Name = "btn_Thermal_up";
+            this.btn_Thermal_up.UseVisualStyleBackColor = false;
+            this.btn_Thermal_up.Click += new System.EventHandler(this.btn_Thermal_up_Click);
             // 
             // lb_Thermal_M2_Now
             // 
@@ -3051,6 +4392,226 @@
             this.label40.ForeColor = System.Drawing.Color.White;
             this.label40.Name = "label40";
             // 
+            // btn_Learn_20
+            // 
+            this.btn_Learn_20.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_20, "btn_Learn_20");
+            this.btn_Learn_20.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_20.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_20.Name = "btn_Learn_20";
+            this.btn_Learn_20.UseVisualStyleBackColor = false;
+            this.btn_Learn_20.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_19
+            // 
+            this.btn_Learn_19.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_19, "btn_Learn_19");
+            this.btn_Learn_19.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_19.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_19.Name = "btn_Learn_19";
+            this.btn_Learn_19.UseVisualStyleBackColor = false;
+            this.btn_Learn_19.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_18
+            // 
+            this.btn_Learn_18.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_18, "btn_Learn_18");
+            this.btn_Learn_18.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_18.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_18.Name = "btn_Learn_18";
+            this.btn_Learn_18.UseVisualStyleBackColor = false;
+            this.btn_Learn_18.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_17
+            // 
+            this.btn_Learn_17.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_17, "btn_Learn_17");
+            this.btn_Learn_17.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_17.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_17.Name = "btn_Learn_17";
+            this.btn_Learn_17.UseVisualStyleBackColor = false;
+            this.btn_Learn_17.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_16
+            // 
+            this.btn_Learn_16.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_16, "btn_Learn_16");
+            this.btn_Learn_16.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_16.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_16.Name = "btn_Learn_16";
+            this.btn_Learn_16.UseVisualStyleBackColor = false;
+            this.btn_Learn_16.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_15
+            // 
+            this.btn_Learn_15.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_15, "btn_Learn_15");
+            this.btn_Learn_15.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_15.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_15.Name = "btn_Learn_15";
+            this.btn_Learn_15.UseVisualStyleBackColor = false;
+            this.btn_Learn_15.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_14
+            // 
+            this.btn_Learn_14.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_14, "btn_Learn_14");
+            this.btn_Learn_14.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_14.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_14.Name = "btn_Learn_14";
+            this.btn_Learn_14.UseVisualStyleBackColor = false;
+            this.btn_Learn_14.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_13
+            // 
+            this.btn_Learn_13.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_13, "btn_Learn_13");
+            this.btn_Learn_13.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_13.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_13.Name = "btn_Learn_13";
+            this.btn_Learn_13.UseVisualStyleBackColor = false;
+            this.btn_Learn_13.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_12
+            // 
+            this.btn_Learn_12.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_12, "btn_Learn_12");
+            this.btn_Learn_12.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_12.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_12.Name = "btn_Learn_12";
+            this.btn_Learn_12.UseVisualStyleBackColor = false;
+            this.btn_Learn_12.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_11
+            // 
+            this.btn_Learn_11.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_11, "btn_Learn_11");
+            this.btn_Learn_11.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_11.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_11.Name = "btn_Learn_11";
+            this.btn_Learn_11.UseVisualStyleBackColor = false;
+            this.btn_Learn_11.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_10
+            // 
+            this.btn_Learn_10.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_10, "btn_Learn_10");
+            this.btn_Learn_10.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_10.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_10.Name = "btn_Learn_10";
+            this.btn_Learn_10.UseVisualStyleBackColor = false;
+            this.btn_Learn_10.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_09
+            // 
+            this.btn_Learn_09.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_09, "btn_Learn_09");
+            this.btn_Learn_09.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_09.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_09.Name = "btn_Learn_09";
+            this.btn_Learn_09.UseVisualStyleBackColor = false;
+            this.btn_Learn_09.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_08
+            // 
+            this.btn_Learn_08.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_08, "btn_Learn_08");
+            this.btn_Learn_08.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_08.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_08.Name = "btn_Learn_08";
+            this.btn_Learn_08.UseVisualStyleBackColor = false;
+            this.btn_Learn_08.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_07
+            // 
+            this.btn_Learn_07.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_07, "btn_Learn_07");
+            this.btn_Learn_07.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_07.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_07.Name = "btn_Learn_07";
+            this.btn_Learn_07.UseVisualStyleBackColor = false;
+            this.btn_Learn_07.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_06
+            // 
+            this.btn_Learn_06.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_06, "btn_Learn_06");
+            this.btn_Learn_06.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_06.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_06.Name = "btn_Learn_06";
+            this.btn_Learn_06.UseVisualStyleBackColor = false;
+            this.btn_Learn_06.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_05
+            // 
+            this.btn_Learn_05.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_05, "btn_Learn_05");
+            this.btn_Learn_05.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_05.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_05.Name = "btn_Learn_05";
+            this.btn_Learn_05.UseVisualStyleBackColor = false;
+            this.btn_Learn_05.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_04
+            // 
+            this.btn_Learn_04.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_04, "btn_Learn_04");
+            this.btn_Learn_04.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_04.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_04.Name = "btn_Learn_04";
+            this.btn_Learn_04.UseVisualStyleBackColor = false;
+            this.btn_Learn_04.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_03
+            // 
+            this.btn_Learn_03.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_03, "btn_Learn_03");
+            this.btn_Learn_03.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_03.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_03.Name = "btn_Learn_03";
+            this.btn_Learn_03.UseVisualStyleBackColor = false;
+            this.btn_Learn_03.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_02
+            // 
+            this.btn_Learn_02.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_02, "btn_Learn_02");
+            this.btn_Learn_02.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_02.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_02.Name = "btn_Learn_02";
+            this.btn_Learn_02.UseVisualStyleBackColor = false;
+            this.btn_Learn_02.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
+            // btn_Learn_01
+            // 
+            this.btn_Learn_01.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_Learn_01, "btn_Learn_01");
+            this.btn_Learn_01.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_01.ForeColor = System.Drawing.Color.White;
+            this.btn_Learn_01.Name = "btn_Learn_01";
+            this.btn_Learn_01.UseVisualStyleBackColor = false;
+            this.btn_Learn_01.Click += new System.EventHandler(this.btn_Learn_Choose);
+            // 
             // label19
             // 
             resources.ApplyResources(this.label19, "label19");
@@ -3058,12 +4619,50 @@
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Name = "label19";
             // 
+            // btn_Learn_Back
+            // 
+            this.btn_Learn_Back.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_Learn_Back, "btn_Learn_Back");
+            this.btn_Learn_Back.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_Back.Name = "btn_Learn_Back";
+            this.btn_Learn_Back.UseVisualStyleBackColor = false;
+            this.btn_Learn_Back.Click += new System.EventHandler(this.btn_Learn_Cancel_Click);
+            // 
+            // btn_Learn_OK
+            // 
+            this.btn_Learn_OK.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_OK.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
+            resources.ApplyResources(this.btn_Learn_OK, "btn_Learn_OK");
+            this.btn_Learn_OK.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_OK.Name = "btn_Learn_OK";
+            this.btn_Learn_OK.UseVisualStyleBackColor = false;
+            this.btn_Learn_OK.Click += new System.EventHandler(this.btn_Learn_OK_Click);
+            // 
+            // btn_Learn_Start
+            // 
+            this.btn_Learn_Start.BackColor = System.Drawing.Color.White;
+            this.btn_Learn_Start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
+            resources.ApplyResources(this.btn_Learn_Start, "btn_Learn_Start");
+            this.btn_Learn_Start.FlatAppearance.BorderSize = 0;
+            this.btn_Learn_Start.Name = "btn_Learn_Start";
+            this.btn_Learn_Start.UseVisualStyleBackColor = false;
+            this.btn_Learn_Start.Click += new System.EventHandler(this.btn_Learn_Start_Click);
+            // 
             // panel_Learn_Parts
             // 
             this.panel_Learn_Parts.Controls.Add(this.pb_Learn);
             this.panel_Learn_Parts.Controls.Add(this.lb_Learn_WorkName);
             resources.ApplyResources(this.panel_Learn_Parts, "panel_Learn_Parts");
             this.panel_Learn_Parts.Name = "panel_Learn_Parts";
+            // 
+            // pb_Learn
+            // 
+            this.pb_Learn.BackColor = System.Drawing.Color.Transparent;
+            this.pb_Learn.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
+            resources.ApplyResources(this.pb_Learn, "pb_Learn");
+            this.pb_Learn.Name = "pb_Learn";
+            this.pb_Learn.TabStop = false;
             // 
             // lb_Learn_WorkName
             // 
@@ -3211,6 +4810,48 @@
             resources.ApplyResources(this.panel_log, "panel_log");
             this.panel_log.Name = "panel_log";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // tb_logTitle_04
             // 
             this.tb_logTitle_04.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
@@ -3293,6 +4934,18 @@
             this.panel_AlarmSet.Name = "panel_AlarmSet";
             this.panel_AlarmSet.Click += new System.EventHandler(this.btn_AlarmSet_Click);
             // 
+            // btn_AlarmSet
+            // 
+            this.btn_AlarmSet.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AlarmSet.BackgroundImage = global::ToolWear.Properties.Resources.alarm;
+            resources.ApplyResources(this.btn_AlarmSet, "btn_AlarmSet");
+            this.btn_AlarmSet.FlatAppearance.BorderSize = 0;
+            this.btn_AlarmSet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_AlarmSet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_AlarmSet.Name = "btn_AlarmSet";
+            this.btn_AlarmSet.UseVisualStyleBackColor = false;
+            this.btn_AlarmSet.Click += new System.EventHandler(this.btn_AlarmSet_Click);
+            // 
             // label78
             // 
             this.label78.BackColor = System.Drawing.Color.Transparent;
@@ -3331,6 +4984,38 @@
             resources.ApplyResources(this.lb_setting_Reconnection, "lb_setting_Reconnection");
             this.lb_setting_Reconnection.ForeColor = System.Drawing.Color.White;
             this.lb_setting_Reconnection.Name = "lb_setting_Reconnection";
+            // 
+            // btn_setting_Reconnection
+            // 
+            this.btn_setting_Reconnection.BackColor = System.Drawing.Color.White;
+            this.btn_setting_Reconnection.BackgroundImage = global::ToolWear.Properties.Resources.wds_icon_reconnect;
+            resources.ApplyResources(this.btn_setting_Reconnection, "btn_setting_Reconnection");
+            this.btn_setting_Reconnection.FlatAppearance.BorderSize = 0;
+            this.btn_setting_Reconnection.Name = "btn_setting_Reconnection";
+            this.btn_setting_Reconnection.UseVisualStyleBackColor = false;
+            this.btn_setting_Reconnection.Click += new System.EventHandler(this.btn_setting_Reconnection_Click);
+            // 
+            // btn_setting_save
+            // 
+            this.btn_setting_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_setting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.btn_setting_save, "btn_setting_save");
+            this.btn_setting_save.FlatAppearance.BorderSize = 0;
+            this.btn_setting_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_setting_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_setting_save.Name = "btn_setting_save";
+            this.btn_setting_save.UseVisualStyleBackColor = false;
+            this.btn_setting_save.Click += new System.EventHandler(this.btn_setting_save_Click);
+            // 
+            // btn_setting_delete
+            // 
+            this.btn_setting_delete.BackColor = System.Drawing.Color.White;
+            this.btn_setting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
+            resources.ApplyResources(this.btn_setting_delete, "btn_setting_delete");
+            this.btn_setting_delete.FlatAppearance.BorderSize = 0;
+            this.btn_setting_delete.Name = "btn_setting_delete";
+            this.btn_setting_delete.UseVisualStyleBackColor = false;
+            this.btn_setting_delete.Click += new System.EventHandler(this.btn_setting_delete_Click);
             // 
             // tb_setting_ip
             // 
@@ -3394,6 +5079,18 @@
             this.panel_ImportProfile.Name = "panel_ImportProfile";
             this.panel_ImportProfile.Click += new System.EventHandler(this.Import_Profile);
             // 
+            // btn_ImportProfile
+            // 
+            this.btn_ImportProfile.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ImportProfile.BackgroundImage = global::ToolWear.Properties.Resources.Import_Profile;
+            resources.ApplyResources(this.btn_ImportProfile, "btn_ImportProfile");
+            this.btn_ImportProfile.FlatAppearance.BorderSize = 0;
+            this.btn_ImportProfile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_ImportProfile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_ImportProfile.Name = "btn_ImportProfile";
+            this.btn_ImportProfile.UseVisualStyleBackColor = false;
+            this.btn_ImportProfile.Click += new System.EventHandler(this.Import_Profile);
+            // 
             // label77
             // 
             this.label77.BackColor = System.Drawing.Color.Transparent;
@@ -3417,6 +5114,18 @@
             this.label76.ForeColor = System.Drawing.Color.White;
             this.label76.Name = "label76";
             this.label76.Click += new System.EventHandler(this.Export_Profile);
+            // 
+            // btn_ExportProfile
+            // 
+            this.btn_ExportProfile.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ExportProfile.BackgroundImage = global::ToolWear.Properties.Resources.Export_Profile;
+            resources.ApplyResources(this.btn_ExportProfile, "btn_ExportProfile");
+            this.btn_ExportProfile.FlatAppearance.BorderSize = 0;
+            this.btn_ExportProfile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_ExportProfile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_ExportProfile.Name = "btn_ExportProfile";
+            this.btn_ExportProfile.UseVisualStyleBackColor = false;
+            this.btn_ExportProfile.Click += new System.EventHandler(this.Export_Profile);
             // 
             // panel_Loading
             // 
@@ -3495,6 +5204,116 @@
             resources.ApplyResources(this.panel_ATCsetting, "panel_ATCsetting");
             this.panel_ATCsetting.Name = "panel_ATCsetting";
             // 
+            // btn_ATCsetting_30
+            // 
+            this.btn_ATCsetting_30.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_30.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_30, "btn_ATCsetting_30");
+            this.btn_ATCsetting_30.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_30.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_30.Name = "btn_ATCsetting_30";
+            this.btn_ATCsetting_30.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_30.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_29
+            // 
+            this.btn_ATCsetting_29.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_29.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_29, "btn_ATCsetting_29");
+            this.btn_ATCsetting_29.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_29.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_29.Name = "btn_ATCsetting_29";
+            this.btn_ATCsetting_29.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_29.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_28
+            // 
+            this.btn_ATCsetting_28.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_28.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_28, "btn_ATCsetting_28");
+            this.btn_ATCsetting_28.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_28.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_28.Name = "btn_ATCsetting_28";
+            this.btn_ATCsetting_28.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_28.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_27
+            // 
+            this.btn_ATCsetting_27.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_27.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_27, "btn_ATCsetting_27");
+            this.btn_ATCsetting_27.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_27.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_27.Name = "btn_ATCsetting_27";
+            this.btn_ATCsetting_27.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_27.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_26
+            // 
+            this.btn_ATCsetting_26.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_26.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_26, "btn_ATCsetting_26");
+            this.btn_ATCsetting_26.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_26.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_26.Name = "btn_ATCsetting_26";
+            this.btn_ATCsetting_26.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_26.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_25
+            // 
+            this.btn_ATCsetting_25.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_25.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_25, "btn_ATCsetting_25");
+            this.btn_ATCsetting_25.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_25.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_25.Name = "btn_ATCsetting_25";
+            this.btn_ATCsetting_25.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_25.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_24
+            // 
+            this.btn_ATCsetting_24.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_24.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_24, "btn_ATCsetting_24");
+            this.btn_ATCsetting_24.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_24.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_24.Name = "btn_ATCsetting_24";
+            this.btn_ATCsetting_24.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_24.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_23
+            // 
+            this.btn_ATCsetting_23.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_23.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_23, "btn_ATCsetting_23");
+            this.btn_ATCsetting_23.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_23.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_23.Name = "btn_ATCsetting_23";
+            this.btn_ATCsetting_23.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_23.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_22
+            // 
+            this.btn_ATCsetting_22.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_22.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_22, "btn_ATCsetting_22");
+            this.btn_ATCsetting_22.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_22.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_22.Name = "btn_ATCsetting_22";
+            this.btn_ATCsetting_22.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_22.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_21
+            // 
+            this.btn_ATCsetting_21.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_21.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_21, "btn_ATCsetting_21");
+            this.btn_ATCsetting_21.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_21.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_21.Name = "btn_ATCsetting_21";
+            this.btn_ATCsetting_21.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_21.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
@@ -3509,6 +5328,48 @@
             this.panel1.Controls.Add(this.numeric_ATCsetting_Blade);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // btn_ATCsetting_BladeDown
+            // 
+            this.btn_ATCsetting_BladeDown.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_BladeDown.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_ATCsetting_BladeDown, "btn_ATCsetting_BladeDown");
+            this.btn_ATCsetting_BladeDown.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_BladeDown.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_BladeDown.Name = "btn_ATCsetting_BladeDown";
+            this.btn_ATCsetting_BladeDown.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_BladeDown.Click += new System.EventHandler(this.btn_ATCsetting_BladeDown_Click);
+            // 
+            // btn_ATCsetting_BladeUp
+            // 
+            this.btn_ATCsetting_BladeUp.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_BladeUp.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_ATCsetting_BladeUp, "btn_ATCsetting_BladeUp");
+            this.btn_ATCsetting_BladeUp.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_BladeUp.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_BladeUp.Name = "btn_ATCsetting_BladeUp";
+            this.btn_ATCsetting_BladeUp.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_BladeUp.Click += new System.EventHandler(this.btn_ATCsetting_BladeUp_Click);
+            // 
+            // btn_ATCsetting_save
+            // 
+            this.btn_ATCsetting_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ATCsetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.btn_ATCsetting_save, "btn_ATCsetting_save");
+            this.btn_ATCsetting_save.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_save.Name = "btn_ATCsetting_save";
+            this.btn_ATCsetting_save.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_save.Click += new System.EventHandler(this.btn_ATCsetting_save_Click);
+            // 
+            // btn_ATCsetting_delete
+            // 
+            this.btn_ATCsetting_delete.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
+            resources.ApplyResources(this.btn_ATCsetting_delete, "btn_ATCsetting_delete");
+            this.btn_ATCsetting_delete.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_delete.Name = "btn_ATCsetting_delete";
+            this.btn_ATCsetting_delete.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_delete.Click += new System.EventHandler(this.btn_ATCsetting_delete_Click);
             // 
             // label25
             // 
@@ -3553,6 +5414,226 @@
             0,
             0});
             // 
+            // btn_ATCsetting_20
+            // 
+            this.btn_ATCsetting_20.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_20, "btn_ATCsetting_20");
+            this.btn_ATCsetting_20.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_20.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_20.Name = "btn_ATCsetting_20";
+            this.btn_ATCsetting_20.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_20.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_19
+            // 
+            this.btn_ATCsetting_19.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_19, "btn_ATCsetting_19");
+            this.btn_ATCsetting_19.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_19.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_19.Name = "btn_ATCsetting_19";
+            this.btn_ATCsetting_19.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_19.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_18
+            // 
+            this.btn_ATCsetting_18.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_18, "btn_ATCsetting_18");
+            this.btn_ATCsetting_18.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_18.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_18.Name = "btn_ATCsetting_18";
+            this.btn_ATCsetting_18.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_18.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_17
+            // 
+            this.btn_ATCsetting_17.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_17, "btn_ATCsetting_17");
+            this.btn_ATCsetting_17.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_17.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_17.Name = "btn_ATCsetting_17";
+            this.btn_ATCsetting_17.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_17.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_16
+            // 
+            this.btn_ATCsetting_16.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_16, "btn_ATCsetting_16");
+            this.btn_ATCsetting_16.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_16.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_16.Name = "btn_ATCsetting_16";
+            this.btn_ATCsetting_16.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_16.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_15
+            // 
+            this.btn_ATCsetting_15.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_15, "btn_ATCsetting_15");
+            this.btn_ATCsetting_15.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_15.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_15.Name = "btn_ATCsetting_15";
+            this.btn_ATCsetting_15.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_15.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_14
+            // 
+            this.btn_ATCsetting_14.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_14, "btn_ATCsetting_14");
+            this.btn_ATCsetting_14.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_14.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_14.Name = "btn_ATCsetting_14";
+            this.btn_ATCsetting_14.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_14.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_13
+            // 
+            this.btn_ATCsetting_13.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_13, "btn_ATCsetting_13");
+            this.btn_ATCsetting_13.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_13.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_13.Name = "btn_ATCsetting_13";
+            this.btn_ATCsetting_13.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_13.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_12
+            // 
+            this.btn_ATCsetting_12.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_12, "btn_ATCsetting_12");
+            this.btn_ATCsetting_12.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_12.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_12.Name = "btn_ATCsetting_12";
+            this.btn_ATCsetting_12.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_12.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_11
+            // 
+            this.btn_ATCsetting_11.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_11, "btn_ATCsetting_11");
+            this.btn_ATCsetting_11.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_11.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_11.Name = "btn_ATCsetting_11";
+            this.btn_ATCsetting_11.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_11.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_10
+            // 
+            this.btn_ATCsetting_10.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_10, "btn_ATCsetting_10");
+            this.btn_ATCsetting_10.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_10.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_10.Name = "btn_ATCsetting_10";
+            this.btn_ATCsetting_10.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_10.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_09
+            // 
+            this.btn_ATCsetting_09.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_09, "btn_ATCsetting_09");
+            this.btn_ATCsetting_09.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_09.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_09.Name = "btn_ATCsetting_09";
+            this.btn_ATCsetting_09.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_09.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_08
+            // 
+            this.btn_ATCsetting_08.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_08, "btn_ATCsetting_08");
+            this.btn_ATCsetting_08.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_08.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_08.Name = "btn_ATCsetting_08";
+            this.btn_ATCsetting_08.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_08.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_07
+            // 
+            this.btn_ATCsetting_07.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_07, "btn_ATCsetting_07");
+            this.btn_ATCsetting_07.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_07.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_07.Name = "btn_ATCsetting_07";
+            this.btn_ATCsetting_07.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_07.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_06
+            // 
+            this.btn_ATCsetting_06.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_06, "btn_ATCsetting_06");
+            this.btn_ATCsetting_06.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_06.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_06.Name = "btn_ATCsetting_06";
+            this.btn_ATCsetting_06.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_06.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_05
+            // 
+            this.btn_ATCsetting_05.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_05, "btn_ATCsetting_05");
+            this.btn_ATCsetting_05.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_05.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_05.Name = "btn_ATCsetting_05";
+            this.btn_ATCsetting_05.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_05.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_04
+            // 
+            this.btn_ATCsetting_04.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_04, "btn_ATCsetting_04");
+            this.btn_ATCsetting_04.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_04.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_04.Name = "btn_ATCsetting_04";
+            this.btn_ATCsetting_04.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_04.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_03
+            // 
+            this.btn_ATCsetting_03.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_03, "btn_ATCsetting_03");
+            this.btn_ATCsetting_03.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_03.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_03.Name = "btn_ATCsetting_03";
+            this.btn_ATCsetting_03.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_03.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_02
+            // 
+            this.btn_ATCsetting_02.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_02, "btn_ATCsetting_02");
+            this.btn_ATCsetting_02.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_02.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_02.Name = "btn_ATCsetting_02";
+            this.btn_ATCsetting_02.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_02.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
+            // btn_ATCsetting_01
+            // 
+            this.btn_ATCsetting_01.BackColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
+            resources.ApplyResources(this.btn_ATCsetting_01, "btn_ATCsetting_01");
+            this.btn_ATCsetting_01.FlatAppearance.BorderSize = 0;
+            this.btn_ATCsetting_01.ForeColor = System.Drawing.Color.White;
+            this.btn_ATCsetting_01.Name = "btn_ATCsetting_01";
+            this.btn_ATCsetting_01.UseVisualStyleBackColor = false;
+            this.btn_ATCsetting_01.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
+            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
@@ -3587,6 +5668,36 @@
             this.lb_Health_Machine.BackColor = System.Drawing.Color.Transparent;
             this.lb_Health_Machine.ForeColor = System.Drawing.Color.White;
             this.lb_Health_Machine.Name = "lb_Health_Machine";
+            // 
+            // btn_Health_Setting
+            // 
+            this.btn_Health_Setting.BackColor = System.Drawing.Color.White;
+            this.btn_Health_Setting.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_setting;
+            resources.ApplyResources(this.btn_Health_Setting, "btn_Health_Setting");
+            this.btn_Health_Setting.FlatAppearance.BorderSize = 0;
+            this.btn_Health_Setting.Name = "btn_Health_Setting";
+            this.btn_Health_Setting.UseVisualStyleBackColor = false;
+            this.btn_Health_Setting.Click += new System.EventHandler(this.btn_Health_Setting_Click);
+            // 
+            // btn_Health_Stop
+            // 
+            this.btn_Health_Stop.BackColor = System.Drawing.Color.White;
+            this.btn_Health_Stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
+            resources.ApplyResources(this.btn_Health_Stop, "btn_Health_Stop");
+            this.btn_Health_Stop.FlatAppearance.BorderSize = 0;
+            this.btn_Health_Stop.Name = "btn_Health_Stop";
+            this.btn_Health_Stop.UseVisualStyleBackColor = false;
+            this.btn_Health_Stop.Click += new System.EventHandler(this.Health_Stop);
+            // 
+            // btn_Health_Start
+            // 
+            this.btn_Health_Start.BackColor = System.Drawing.Color.White;
+            this.btn_Health_Start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
+            resources.ApplyResources(this.btn_Health_Start, "btn_Health_Start");
+            this.btn_Health_Start.FlatAppearance.BorderSize = 0;
+            this.btn_Health_Start.Name = "btn_Health_Start";
+            this.btn_Health_Start.UseVisualStyleBackColor = false;
+            this.btn_Health_Start.Click += new System.EventHandler(this.Health_Start);
             // 
             // lb_Health_Title
             // 
@@ -3891,6 +6002,16 @@
             resources.ApplyResources(this.panel_SelectParts, "panel_SelectParts");
             this.panel_SelectParts.Name = "panel_SelectParts";
             // 
+            // btn_SelectParts_Add
+            // 
+            this.btn_SelectParts_Add.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_Add.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_plus;
+            resources.ApplyResources(this.btn_SelectParts_Add, "btn_SelectParts_Add");
+            this.btn_SelectParts_Add.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_Add.Name = "btn_SelectParts_Add";
+            this.btn_SelectParts_Add.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
+            // 
             // panel_SelectParts_01
             // 
             this.panel_SelectParts_01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
@@ -3902,12 +6023,49 @@
             resources.ApplyResources(this.panel_SelectParts_01, "panel_SelectParts_01");
             this.panel_SelectParts_01.Name = "panel_SelectParts_01";
             // 
+            // btn_SelectParts_remove01
+            // 
+            this.btn_SelectParts_remove01.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove01.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
+            resources.ApplyResources(this.btn_SelectParts_remove01, "btn_SelectParts_remove01");
+            this.btn_SelectParts_remove01.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_remove01.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove01.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove01.Name = "btn_SelectParts_remove01";
+            this.btn_SelectParts_remove01.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_remove01.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
+            // 
             // lb_SelectParts_01
             // 
             this.lb_SelectParts_01.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lb_SelectParts_01, "lb_SelectParts_01");
             this.lb_SelectParts_01.ForeColor = System.Drawing.Color.White;
             this.lb_SelectParts_01.Name = "lb_SelectParts_01";
+            // 
+            // pb_SelectParts_01
+            // 
+            this.pb_SelectParts_01.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
+            resources.ApplyResources(this.pb_SelectParts_01, "pb_SelectParts_01");
+            this.pb_SelectParts_01.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pb_SelectParts_01.Name = "pb_SelectParts_01";
+            this.pb_SelectParts_01.TabStop = false;
+            // 
+            // btn_SelectParts_01
+            // 
+            this.btn_SelectParts_01.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_01.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
+            resources.ApplyResources(this.btn_SelectParts_01, "btn_SelectParts_01");
+            this.btn_SelectParts_01.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_01.Name = "btn_SelectParts_01";
+            this.btn_SelectParts_01.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_01.Click += new System.EventHandler(this.btn_SelectParts);
+            // 
+            // panel_SelectParts_01Add
+            // 
+            this.panel_SelectParts_01Add.BackgroundImage = global::ToolWear.Properties.Resources.wdps_formplus;
+            resources.ApplyResources(this.panel_SelectParts_01Add, "panel_SelectParts_01Add");
+            this.panel_SelectParts_01Add.Name = "panel_SelectParts_01Add";
+            this.panel_SelectParts_01Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
             // 
             // lb_SelectParts_Page
             // 
@@ -3927,12 +6085,48 @@
             resources.ApplyResources(this.panel_SelectParts_06, "panel_SelectParts_06");
             this.panel_SelectParts_06.Name = "panel_SelectParts_06";
             // 
+            // btn_SelectParts_remove06
+            // 
+            this.btn_SelectParts_remove06.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove06.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
+            resources.ApplyResources(this.btn_SelectParts_remove06, "btn_SelectParts_remove06");
+            this.btn_SelectParts_remove06.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_remove06.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove06.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove06.Name = "btn_SelectParts_remove06";
+            this.btn_SelectParts_remove06.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_remove06.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
+            // 
             // lb_SelectParts_06
             // 
             this.lb_SelectParts_06.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lb_SelectParts_06, "lb_SelectParts_06");
             this.lb_SelectParts_06.ForeColor = System.Drawing.Color.White;
             this.lb_SelectParts_06.Name = "lb_SelectParts_06";
+            // 
+            // pb_SelectParts_06
+            // 
+            this.pb_SelectParts_06.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
+            resources.ApplyResources(this.pb_SelectParts_06, "pb_SelectParts_06");
+            this.pb_SelectParts_06.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pb_SelectParts_06.Name = "pb_SelectParts_06";
+            this.pb_SelectParts_06.TabStop = false;
+            // 
+            // btn_SelectParts_06
+            // 
+            this.btn_SelectParts_06.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_06.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
+            resources.ApplyResources(this.btn_SelectParts_06, "btn_SelectParts_06");
+            this.btn_SelectParts_06.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_06.Name = "btn_SelectParts_06";
+            this.btn_SelectParts_06.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_06.Click += new System.EventHandler(this.btn_SelectParts);
+            // 
+            // panel_SelectParts_06Add
+            // 
+            resources.ApplyResources(this.panel_SelectParts_06Add, "panel_SelectParts_06Add");
+            this.panel_SelectParts_06Add.Name = "panel_SelectParts_06Add";
+            this.panel_SelectParts_06Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
             // 
             // panel_SelectParts_08
             // 
@@ -3945,12 +6139,48 @@
             resources.ApplyResources(this.panel_SelectParts_08, "panel_SelectParts_08");
             this.panel_SelectParts_08.Name = "panel_SelectParts_08";
             // 
+            // btn_SelectParts_remove08
+            // 
+            this.btn_SelectParts_remove08.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove08.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
+            resources.ApplyResources(this.btn_SelectParts_remove08, "btn_SelectParts_remove08");
+            this.btn_SelectParts_remove08.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_remove08.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove08.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove08.Name = "btn_SelectParts_remove08";
+            this.btn_SelectParts_remove08.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_remove08.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
+            // 
             // lb_SelectParts_08
             // 
             this.lb_SelectParts_08.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lb_SelectParts_08, "lb_SelectParts_08");
             this.lb_SelectParts_08.ForeColor = System.Drawing.Color.White;
             this.lb_SelectParts_08.Name = "lb_SelectParts_08";
+            // 
+            // pb_SelectParts_08
+            // 
+            this.pb_SelectParts_08.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
+            resources.ApplyResources(this.pb_SelectParts_08, "pb_SelectParts_08");
+            this.pb_SelectParts_08.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pb_SelectParts_08.Name = "pb_SelectParts_08";
+            this.pb_SelectParts_08.TabStop = false;
+            // 
+            // btn_SelectParts_08
+            // 
+            this.btn_SelectParts_08.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_08.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
+            resources.ApplyResources(this.btn_SelectParts_08, "btn_SelectParts_08");
+            this.btn_SelectParts_08.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_08.Name = "btn_SelectParts_08";
+            this.btn_SelectParts_08.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_08.Click += new System.EventHandler(this.btn_SelectParts);
+            // 
+            // panel_SelectParts_08Add
+            // 
+            resources.ApplyResources(this.panel_SelectParts_08Add, "panel_SelectParts_08Add");
+            this.panel_SelectParts_08Add.Name = "panel_SelectParts_08Add";
+            this.panel_SelectParts_08Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
             // 
             // panel_SelectParts_05
             // 
@@ -3963,12 +6193,48 @@
             resources.ApplyResources(this.panel_SelectParts_05, "panel_SelectParts_05");
             this.panel_SelectParts_05.Name = "panel_SelectParts_05";
             // 
+            // btn_SelectParts_remove05
+            // 
+            this.btn_SelectParts_remove05.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove05.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
+            resources.ApplyResources(this.btn_SelectParts_remove05, "btn_SelectParts_remove05");
+            this.btn_SelectParts_remove05.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_remove05.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove05.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove05.Name = "btn_SelectParts_remove05";
+            this.btn_SelectParts_remove05.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_remove05.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
+            // 
             // lb_SelectParts_05
             // 
             this.lb_SelectParts_05.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lb_SelectParts_05, "lb_SelectParts_05");
             this.lb_SelectParts_05.ForeColor = System.Drawing.Color.White;
             this.lb_SelectParts_05.Name = "lb_SelectParts_05";
+            // 
+            // pb_SelectParts_05
+            // 
+            this.pb_SelectParts_05.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
+            resources.ApplyResources(this.pb_SelectParts_05, "pb_SelectParts_05");
+            this.pb_SelectParts_05.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pb_SelectParts_05.Name = "pb_SelectParts_05";
+            this.pb_SelectParts_05.TabStop = false;
+            // 
+            // btn_SelectParts_05
+            // 
+            this.btn_SelectParts_05.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_05.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
+            resources.ApplyResources(this.btn_SelectParts_05, "btn_SelectParts_05");
+            this.btn_SelectParts_05.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_05.Name = "btn_SelectParts_05";
+            this.btn_SelectParts_05.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_05.Click += new System.EventHandler(this.btn_SelectParts);
+            // 
+            // panel_SelectParts_05Add
+            // 
+            resources.ApplyResources(this.panel_SelectParts_05Add, "panel_SelectParts_05Add");
+            this.panel_SelectParts_05Add.Name = "panel_SelectParts_05Add";
+            this.panel_SelectParts_05Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
             // 
             // panel_SelectParts_04
             // 
@@ -3981,12 +6247,48 @@
             resources.ApplyResources(this.panel_SelectParts_04, "panel_SelectParts_04");
             this.panel_SelectParts_04.Name = "panel_SelectParts_04";
             // 
+            // btn_SelectParts_remove04
+            // 
+            this.btn_SelectParts_remove04.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove04.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
+            resources.ApplyResources(this.btn_SelectParts_remove04, "btn_SelectParts_remove04");
+            this.btn_SelectParts_remove04.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_remove04.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove04.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove04.Name = "btn_SelectParts_remove04";
+            this.btn_SelectParts_remove04.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_remove04.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
+            // 
             // lb_SelectParts_04
             // 
             this.lb_SelectParts_04.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lb_SelectParts_04, "lb_SelectParts_04");
             this.lb_SelectParts_04.ForeColor = System.Drawing.Color.White;
             this.lb_SelectParts_04.Name = "lb_SelectParts_04";
+            // 
+            // pb_SelectParts_04
+            // 
+            this.pb_SelectParts_04.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
+            resources.ApplyResources(this.pb_SelectParts_04, "pb_SelectParts_04");
+            this.pb_SelectParts_04.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pb_SelectParts_04.Name = "pb_SelectParts_04";
+            this.pb_SelectParts_04.TabStop = false;
+            // 
+            // btn_SelectParts_04
+            // 
+            this.btn_SelectParts_04.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_04.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
+            resources.ApplyResources(this.btn_SelectParts_04, "btn_SelectParts_04");
+            this.btn_SelectParts_04.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_04.Name = "btn_SelectParts_04";
+            this.btn_SelectParts_04.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_04.Click += new System.EventHandler(this.btn_SelectParts);
+            // 
+            // panel_SelectParts_04Add
+            // 
+            resources.ApplyResources(this.panel_SelectParts_04Add, "panel_SelectParts_04Add");
+            this.panel_SelectParts_04Add.Name = "panel_SelectParts_04Add";
+            this.panel_SelectParts_04Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
             // 
             // panel_SelectParts_07
             // 
@@ -3999,12 +6301,48 @@
             resources.ApplyResources(this.panel_SelectParts_07, "panel_SelectParts_07");
             this.panel_SelectParts_07.Name = "panel_SelectParts_07";
             // 
+            // btn_SelectParts_remove07
+            // 
+            this.btn_SelectParts_remove07.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove07.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
+            resources.ApplyResources(this.btn_SelectParts_remove07, "btn_SelectParts_remove07");
+            this.btn_SelectParts_remove07.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_remove07.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove07.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove07.Name = "btn_SelectParts_remove07";
+            this.btn_SelectParts_remove07.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_remove07.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
+            // 
             // lb_SelectParts_07
             // 
             this.lb_SelectParts_07.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lb_SelectParts_07, "lb_SelectParts_07");
             this.lb_SelectParts_07.ForeColor = System.Drawing.Color.White;
             this.lb_SelectParts_07.Name = "lb_SelectParts_07";
+            // 
+            // pb_SelectParts_07
+            // 
+            this.pb_SelectParts_07.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
+            resources.ApplyResources(this.pb_SelectParts_07, "pb_SelectParts_07");
+            this.pb_SelectParts_07.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pb_SelectParts_07.Name = "pb_SelectParts_07";
+            this.pb_SelectParts_07.TabStop = false;
+            // 
+            // btn_SelectParts_07
+            // 
+            this.btn_SelectParts_07.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_07.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
+            resources.ApplyResources(this.btn_SelectParts_07, "btn_SelectParts_07");
+            this.btn_SelectParts_07.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_07.Name = "btn_SelectParts_07";
+            this.btn_SelectParts_07.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_07.Click += new System.EventHandler(this.btn_SelectParts);
+            // 
+            // panel_SelectParts_07Add
+            // 
+            resources.ApplyResources(this.panel_SelectParts_07Add, "panel_SelectParts_07Add");
+            this.panel_SelectParts_07Add.Name = "panel_SelectParts_07Add";
+            this.panel_SelectParts_07Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
             // 
             // panel_SelectParts_02
             // 
@@ -4017,12 +6355,49 @@
             resources.ApplyResources(this.panel_SelectParts_02, "panel_SelectParts_02");
             this.panel_SelectParts_02.Name = "panel_SelectParts_02";
             // 
+            // btn_SelectParts_remove02
+            // 
+            this.btn_SelectParts_remove02.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove02.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
+            resources.ApplyResources(this.btn_SelectParts_remove02, "btn_SelectParts_remove02");
+            this.btn_SelectParts_remove02.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_remove02.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove02.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove02.Name = "btn_SelectParts_remove02";
+            this.btn_SelectParts_remove02.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_remove02.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
+            // 
             // lb_SelectParts_02
             // 
             this.lb_SelectParts_02.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lb_SelectParts_02, "lb_SelectParts_02");
             this.lb_SelectParts_02.ForeColor = System.Drawing.Color.White;
             this.lb_SelectParts_02.Name = "lb_SelectParts_02";
+            // 
+            // pb_SelectParts_02
+            // 
+            this.pb_SelectParts_02.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
+            resources.ApplyResources(this.pb_SelectParts_02, "pb_SelectParts_02");
+            this.pb_SelectParts_02.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pb_SelectParts_02.Name = "pb_SelectParts_02";
+            this.pb_SelectParts_02.TabStop = false;
+            // 
+            // btn_SelectParts_02
+            // 
+            this.btn_SelectParts_02.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_02.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
+            resources.ApplyResources(this.btn_SelectParts_02, "btn_SelectParts_02");
+            this.btn_SelectParts_02.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_02.Name = "btn_SelectParts_02";
+            this.btn_SelectParts_02.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_02.Click += new System.EventHandler(this.btn_SelectParts);
+            // 
+            // panel_SelectParts_02Add
+            // 
+            this.panel_SelectParts_02Add.BackgroundImage = global::ToolWear.Properties.Resources.wdps_formplus;
+            resources.ApplyResources(this.panel_SelectParts_02Add, "panel_SelectParts_02Add");
+            this.panel_SelectParts_02Add.Name = "panel_SelectParts_02Add";
+            this.panel_SelectParts_02Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
             // 
             // panel_SelectParts_03
             // 
@@ -4035,12 +6410,78 @@
             resources.ApplyResources(this.panel_SelectParts_03, "panel_SelectParts_03");
             this.panel_SelectParts_03.Name = "panel_SelectParts_03";
             // 
+            // btn_SelectParts_remove03
+            // 
+            this.btn_SelectParts_remove03.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove03.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
+            resources.ApplyResources(this.btn_SelectParts_remove03, "btn_SelectParts_remove03");
+            this.btn_SelectParts_remove03.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_remove03.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove03.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectParts_remove03.Name = "btn_SelectParts_remove03";
+            this.btn_SelectParts_remove03.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_remove03.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
+            // 
             // lb_SelectParts_03
             // 
             this.lb_SelectParts_03.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lb_SelectParts_03, "lb_SelectParts_03");
             this.lb_SelectParts_03.ForeColor = System.Drawing.Color.White;
             this.lb_SelectParts_03.Name = "lb_SelectParts_03";
+            // 
+            // pb_SelectParts_03
+            // 
+            this.pb_SelectParts_03.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
+            resources.ApplyResources(this.pb_SelectParts_03, "pb_SelectParts_03");
+            this.pb_SelectParts_03.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pb_SelectParts_03.Name = "pb_SelectParts_03";
+            this.pb_SelectParts_03.TabStop = false;
+            // 
+            // btn_SelectParts_03
+            // 
+            this.btn_SelectParts_03.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_03.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
+            resources.ApplyResources(this.btn_SelectParts_03, "btn_SelectParts_03");
+            this.btn_SelectParts_03.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_03.Name = "btn_SelectParts_03";
+            this.btn_SelectParts_03.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_03.Click += new System.EventHandler(this.btn_SelectParts);
+            // 
+            // panel_SelectParts_03Add
+            // 
+            resources.ApplyResources(this.panel_SelectParts_03Add, "panel_SelectParts_03Add");
+            this.panel_SelectParts_03Add.Name = "panel_SelectParts_03Add";
+            this.panel_SelectParts_03Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
+            // 
+            // btn_SelectParts_down
+            // 
+            this.btn_SelectParts_down.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_SelectParts_down, "btn_SelectParts_down");
+            this.btn_SelectParts_down.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_down.Name = "btn_SelectParts_down";
+            this.btn_SelectParts_down.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_down.Click += new System.EventHandler(this.btn_SelectParts_down_Click);
+            // 
+            // btn_SelectParts_up
+            // 
+            this.btn_SelectParts_up.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_SelectParts_up, "btn_SelectParts_up");
+            this.btn_SelectParts_up.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_up.Name = "btn_SelectParts_up";
+            this.btn_SelectParts_up.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_up.Click += new System.EventHandler(this.btn_SelectParts_up_Click);
+            // 
+            // btn_SelectParts_Back
+            // 
+            this.btn_SelectParts_Back.BackColor = System.Drawing.Color.White;
+            this.btn_SelectParts_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_SelectParts_Back, "btn_SelectParts_Back");
+            this.btn_SelectParts_Back.FlatAppearance.BorderSize = 0;
+            this.btn_SelectParts_Back.Name = "btn_SelectParts_Back";
+            this.btn_SelectParts_Back.UseVisualStyleBackColor = false;
+            this.btn_SelectParts_Back.Click += new System.EventHandler(this.btn_SelectParts_Back_Click);
             // 
             // label27
             // 
@@ -4064,6 +6505,16 @@
             resources.ApplyResources(this.panel_AddParts, "panel_AddParts");
             this.panel_AddParts.Name = "panel_AddParts";
             // 
+            // btn_AddParts_back
+            // 
+            this.btn_AddParts_back.BackColor = System.Drawing.Color.White;
+            this.btn_AddParts_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_AddParts_back, "btn_AddParts_back");
+            this.btn_AddParts_back.FlatAppearance.BorderSize = 0;
+            this.btn_AddParts_back.Name = "btn_AddParts_back";
+            this.btn_AddParts_back.UseVisualStyleBackColor = false;
+            this.btn_AddParts_back.Click += new System.EventHandler(this.btn_AddParts_delete_Click);
+            // 
             // tb_AddParts_Name
             // 
             this.tb_AddParts_Name.BackColor = System.Drawing.SystemColors.Window;
@@ -4071,6 +6522,40 @@
             resources.ApplyResources(this.tb_AddParts_Name, "tb_AddParts_Name");
             this.tb_AddParts_Name.Name = "tb_AddParts_Name";
             this.tb_AddParts_Name.Enter += new System.EventHandler(this.ShowInputPanel_Click);
+            // 
+            // btn_AddParts_save
+            // 
+            this.btn_AddParts_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AddParts_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.btn_AddParts_save, "btn_AddParts_save");
+            this.btn_AddParts_save.FlatAppearance.BorderSize = 0;
+            this.btn_AddParts_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_AddParts_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_AddParts_save.Name = "btn_AddParts_save";
+            this.btn_AddParts_save.UseVisualStyleBackColor = false;
+            this.btn_AddParts_save.Click += new System.EventHandler(this.btn_AddParts_save_Click);
+            // 
+            // btn_AddParts_delete
+            // 
+            this.btn_AddParts_delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AddParts_delete.BackgroundImage = global::ToolWear.Properties.Resources.wdpsn_btn_cancel;
+            resources.ApplyResources(this.btn_AddParts_delete, "btn_AddParts_delete");
+            this.btn_AddParts_delete.FlatAppearance.BorderSize = 0;
+            this.btn_AddParts_delete.Name = "btn_AddParts_delete";
+            this.btn_AddParts_delete.UseVisualStyleBackColor = false;
+            this.btn_AddParts_delete.Click += new System.EventHandler(this.btn_AddParts_delete_Click);
+            // 
+            // btn_AddParts_Path
+            // 
+            this.btn_AddParts_Path.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AddParts_Path.BackgroundImage = global::ToolWear.Properties.Resources.wdpsn_btn_search;
+            resources.ApplyResources(this.btn_AddParts_Path, "btn_AddParts_Path");
+            this.btn_AddParts_Path.FlatAppearance.BorderSize = 0;
+            this.btn_AddParts_Path.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_AddParts_Path.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_AddParts_Path.Name = "btn_AddParts_Path";
+            this.btn_AddParts_Path.UseVisualStyleBackColor = false;
+            this.btn_AddParts_Path.Click += new System.EventHandler(this.btn_AddParts_Path_Click);
             // 
             // tb_AddParts_Path
             // 
@@ -4094,6 +6579,13 @@
             this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.ForeColor = System.Drawing.Color.White;
             this.label33.Name = "label33";
+            // 
+            // pb_AddParts
+            // 
+            this.pb_AddParts.BackgroundImage = global::ToolWear.Properties.Resources.wdpsn_img_blank;
+            resources.ApplyResources(this.pb_AddParts, "pb_AddParts");
+            this.pb_AddParts.Name = "pb_AddParts";
+            this.pb_AddParts.TabStop = false;
             // 
             // label30
             // 
@@ -4159,6 +6651,39 @@
             this.label57.ForeColor = System.Drawing.Color.White;
             this.label57.Name = "label57";
             // 
+            // btn_HealthSetting_Refresh
+            // 
+            this.btn_HealthSetting_Refresh.BackColor = System.Drawing.Color.White;
+            this.btn_HealthSetting_Refresh.BackgroundImage = global::ToolWear.Properties.Resources.wds_icon_refresh;
+            resources.ApplyResources(this.btn_HealthSetting_Refresh, "btn_HealthSetting_Refresh");
+            this.btn_HealthSetting_Refresh.FlatAppearance.BorderSize = 0;
+            this.btn_HealthSetting_Refresh.ForeColor = System.Drawing.Color.White;
+            this.btn_HealthSetting_Refresh.Name = "btn_HealthSetting_Refresh";
+            this.btn_HealthSetting_Refresh.UseVisualStyleBackColor = false;
+            this.btn_HealthSetting_Refresh.Click += new System.EventHandler(this.Health_ChannelLoad);
+            // 
+            // btn_HealthSetting_Down
+            // 
+            this.btn_HealthSetting_Down.BackColor = System.Drawing.Color.White;
+            this.btn_HealthSetting_Down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_HealthSetting_Down, "btn_HealthSetting_Down");
+            this.btn_HealthSetting_Down.FlatAppearance.BorderSize = 0;
+            this.btn_HealthSetting_Down.ForeColor = System.Drawing.Color.White;
+            this.btn_HealthSetting_Down.Name = "btn_HealthSetting_Down";
+            this.btn_HealthSetting_Down.UseVisualStyleBackColor = false;
+            this.btn_HealthSetting_Down.Click += new System.EventHandler(this.btn_HealthSetting_Down_Click);
+            // 
+            // btn_HealthSetting_Up
+            // 
+            this.btn_HealthSetting_Up.BackColor = System.Drawing.Color.White;
+            this.btn_HealthSetting_Up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_HealthSetting_Up, "btn_HealthSetting_Up");
+            this.btn_HealthSetting_Up.FlatAppearance.BorderSize = 0;
+            this.btn_HealthSetting_Up.ForeColor = System.Drawing.Color.White;
+            this.btn_HealthSetting_Up.Name = "btn_HealthSetting_Up";
+            this.btn_HealthSetting_Up.UseVisualStyleBackColor = false;
+            this.btn_HealthSetting_Up.Click += new System.EventHandler(this.btn_HealthSetting_Up_Click);
+            // 
             // cb_HealthSetting_Channel
             // 
             this.cb_HealthSetting_Channel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -4175,6 +6700,28 @@
             resources.GetString("cb_HealthSetting_Machine.Items"),
             resources.GetString("cb_HealthSetting_Machine.Items1")});
             this.cb_HealthSetting_Machine.Name = "cb_HealthSetting_Machine";
+            // 
+            // btn_HealthSetting_save
+            // 
+            this.btn_HealthSetting_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_HealthSetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.btn_HealthSetting_save, "btn_HealthSetting_save");
+            this.btn_HealthSetting_save.FlatAppearance.BorderSize = 0;
+            this.btn_HealthSetting_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_HealthSetting_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_HealthSetting_save.Name = "btn_HealthSetting_save";
+            this.btn_HealthSetting_save.UseVisualStyleBackColor = false;
+            this.btn_HealthSetting_save.Click += new System.EventHandler(this.HealthSetting_save);
+            // 
+            // btn_HealthSetting_delete
+            // 
+            this.btn_HealthSetting_delete.BackColor = System.Drawing.Color.White;
+            this.btn_HealthSetting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
+            resources.ApplyResources(this.btn_HealthSetting_delete, "btn_HealthSetting_delete");
+            this.btn_HealthSetting_delete.FlatAppearance.BorderSize = 0;
+            this.btn_HealthSetting_delete.Name = "btn_HealthSetting_delete";
+            this.btn_HealthSetting_delete.UseVisualStyleBackColor = false;
+            this.btn_HealthSetting_delete.Click += new System.EventHandler(this.HealthSetting_delete);
             // 
             // label56
             // 
@@ -4213,6 +6760,16 @@
             0,
             0,
             0});
+            // 
+            // btn_HealthSetting_Back
+            // 
+            this.btn_HealthSetting_Back.BackColor = System.Drawing.Color.White;
+            this.btn_HealthSetting_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_HealthSetting_Back, "btn_HealthSetting_Back");
+            this.btn_HealthSetting_Back.FlatAppearance.BorderSize = 0;
+            this.btn_HealthSetting_Back.Name = "btn_HealthSetting_Back";
+            this.btn_HealthSetting_Back.UseVisualStyleBackColor = false;
+            this.btn_HealthSetting_Back.Click += new System.EventHandler(this.btn_HealthSetting_Back_Click);
             // 
             // label53
             // 
@@ -4441,6 +6998,16 @@
             this.lb_HealthResult_Machine.ForeColor = System.Drawing.Color.White;
             this.lb_HealthResult_Machine.Name = "lb_HealthResult_Machine";
             // 
+            // btn_HealthResult_Back
+            // 
+            this.btn_HealthResult_Back.BackColor = System.Drawing.Color.White;
+            this.btn_HealthResult_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_HealthResult_Back, "btn_HealthResult_Back");
+            this.btn_HealthResult_Back.FlatAppearance.BorderSize = 0;
+            this.btn_HealthResult_Back.Name = "btn_HealthResult_Back";
+            this.btn_HealthResult_Back.UseVisualStyleBackColor = false;
+            this.btn_HealthResult_Back.Click += new System.EventHandler(this.btn_HealthSetting_Back_Click);
+            // 
             // label52
             // 
             resources.ApplyResources(this.label52, "label52");
@@ -4458,6 +7025,16 @@
             resources.ApplyResources(this.panel_AlarmSetting, "panel_AlarmSetting");
             this.panel_AlarmSetting.Name = "panel_AlarmSetting";
             // 
+            // btn_AlarmSetting_Back
+            // 
+            this.btn_AlarmSetting_Back.BackColor = System.Drawing.Color.White;
+            this.btn_AlarmSetting_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_AlarmSetting_Back, "btn_AlarmSetting_Back");
+            this.btn_AlarmSetting_Back.FlatAppearance.BorderSize = 0;
+            this.btn_AlarmSetting_Back.Name = "btn_AlarmSetting_Back";
+            this.btn_AlarmSetting_Back.UseVisualStyleBackColor = false;
+            this.btn_AlarmSetting_Back.Click += new System.EventHandler(this.btn_AlarmSetting_Back_Click);
+            // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
@@ -4469,6 +7046,18 @@
             this.panel13.Controls.Add(this.label85);
             resources.ApplyResources(this.panel13, "panel13");
             this.panel13.Name = "panel13";
+            // 
+            // panel_AlarmSetting_save
+            // 
+            this.panel_AlarmSetting_save.BackColor = System.Drawing.Color.Transparent;
+            this.panel_AlarmSetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.panel_AlarmSetting_save, "panel_AlarmSetting_save");
+            this.panel_AlarmSetting_save.FlatAppearance.BorderSize = 0;
+            this.panel_AlarmSetting_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.panel_AlarmSetting_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.panel_AlarmSetting_save.Name = "panel_AlarmSetting_save";
+            this.panel_AlarmSetting_save.UseVisualStyleBackColor = false;
+            this.panel_AlarmSetting_save.Click += new System.EventHandler(this.panel_AlarmSetting_save_Click);
             // 
             // label86
             // 
@@ -5054,6 +7643,36 @@
             series161.Name = "Series1";
             this.chart_prediction_X.Series.Add(series161);
             // 
+            // btn_prediction_stop
+            // 
+            this.btn_prediction_stop.BackColor = System.Drawing.Color.White;
+            this.btn_prediction_stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
+            resources.ApplyResources(this.btn_prediction_stop, "btn_prediction_stop");
+            this.btn_prediction_stop.FlatAppearance.BorderSize = 0;
+            this.btn_prediction_stop.Name = "btn_prediction_stop";
+            this.btn_prediction_stop.UseVisualStyleBackColor = false;
+            this.btn_prediction_stop.Click += new System.EventHandler(this.btn_prediction_stop_Click);
+            // 
+            // btn_prediction_start
+            // 
+            this.btn_prediction_start.BackColor = System.Drawing.Color.White;
+            this.btn_prediction_start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
+            resources.ApplyResources(this.btn_prediction_start, "btn_prediction_start");
+            this.btn_prediction_start.FlatAppearance.BorderSize = 0;
+            this.btn_prediction_start.Name = "btn_prediction_start";
+            this.btn_prediction_start.UseVisualStyleBackColor = false;
+            this.btn_prediction_start.Click += new System.EventHandler(this.btn_prediction_start_Click);
+            // 
+            // btn_prediction_back
+            // 
+            this.btn_prediction_back.BackColor = System.Drawing.Color.White;
+            this.btn_prediction_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_prediction_back, "btn_prediction_back");
+            this.btn_prediction_back.FlatAppearance.BorderSize = 0;
+            this.btn_prediction_back.Name = "btn_prediction_back";
+            this.btn_prediction_back.UseVisualStyleBackColor = false;
+            this.btn_prediction_back.Click += new System.EventHandler(this.btn_prediction_back_Click);
+            // 
             // label87
             // 
             resources.ApplyResources(this.label87, "label87");
@@ -5124,6 +7743,46 @@
             this.panel_AccCur.Controls.Add(this.label102);
             resources.ApplyResources(this.panel_AccCur, "panel_AccCur");
             this.panel_AccCur.Name = "panel_AccCur";
+            // 
+            // btn_AccCur_back
+            // 
+            this.btn_AccCur_back.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_AccCur_back, "btn_AccCur_back");
+            this.btn_AccCur_back.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_back.Name = "btn_AccCur_back";
+            this.btn_AccCur_back.UseVisualStyleBackColor = false;
+            this.btn_AccCur_back.Click += new System.EventHandler(this.btn_AccCur_back_Click);
+            // 
+            // btn_AccCur_setting
+            // 
+            this.btn_AccCur_setting.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_setting.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_setting;
+            resources.ApplyResources(this.btn_AccCur_setting, "btn_AccCur_setting");
+            this.btn_AccCur_setting.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_setting.Name = "btn_AccCur_setting";
+            this.btn_AccCur_setting.UseVisualStyleBackColor = false;
+            this.btn_AccCur_setting.Click += new System.EventHandler(this.btn_AccCur_setting_Click);
+            // 
+            // btn_AccCur_stop
+            // 
+            this.btn_AccCur_stop.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
+            resources.ApplyResources(this.btn_AccCur_stop, "btn_AccCur_stop");
+            this.btn_AccCur_stop.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_stop.Name = "btn_AccCur_stop";
+            this.btn_AccCur_stop.UseVisualStyleBackColor = false;
+            this.btn_AccCur_stop.Click += new System.EventHandler(this.btn_AccCur_stop_Click);
+            // 
+            // btn_AccCur_start
+            // 
+            this.btn_AccCur_start.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
+            resources.ApplyResources(this.btn_AccCur_start, "btn_AccCur_start");
+            this.btn_AccCur_start.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_start.Name = "btn_AccCur_start";
+            this.btn_AccCur_start.UseVisualStyleBackColor = false;
+            this.btn_AccCur_start.Click += new System.EventHandler(this.btn_AccCur_start_Click);
             // 
             // label106
             // 
@@ -5435,11 +8094,40 @@
             resources.ApplyResources(this.panel_AccCur_setting, "panel_AccCur_setting");
             this.panel_AccCur_setting.Name = "panel_AccCur_setting";
             // 
+            // label147
+            // 
+            resources.ApplyResources(this.label147, "label147");
+            this.label147.BackColor = System.Drawing.Color.Transparent;
+            this.label147.ForeColor = System.Drawing.Color.White;
+            this.label147.Name = "label147";
+            // 
+            // btn_AccCur_parameter_set
+            // 
+            this.btn_AccCur_parameter_set.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_parameter_set.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
+            resources.ApplyResources(this.btn_AccCur_parameter_set, "btn_AccCur_parameter_set");
+            this.btn_AccCur_parameter_set.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_parameter_set.Name = "btn_AccCur_parameter_set";
+            this.btn_AccCur_parameter_set.UseVisualStyleBackColor = false;
+            this.btn_AccCur_parameter_set.Click += new System.EventHandler(this.btn_AccCur_parameter_Click);
+            // 
             // chb_AccCur_Record
             // 
             resources.ApplyResources(this.chb_AccCur_Record, "chb_AccCur_Record");
             this.chb_AccCur_Record.Name = "chb_AccCur_Record";
             this.chb_AccCur_Record.UseVisualStyleBackColor = true;
+            // 
+            // btn_AccCur_setting_save
+            // 
+            this.btn_AccCur_setting_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AccCur_setting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
+            resources.ApplyResources(this.btn_AccCur_setting_save, "btn_AccCur_setting_save");
+            this.btn_AccCur_setting_save.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_setting_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_AccCur_setting_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_AccCur_setting_save.Name = "btn_AccCur_setting_save";
+            this.btn_AccCur_setting_save.UseVisualStyleBackColor = false;
+            this.btn_AccCur_setting_save.Click += new System.EventHandler(this.btn_AccCur_setting_save_Click);
             // 
             // groupBox5
             // 
@@ -5456,12 +8144,34 @@
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 
+            // btn_AccCur_AE_down
+            // 
+            this.btn_AccCur_AE_down.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_AE_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_AccCur_AE_down, "btn_AccCur_AE_down");
+            this.btn_AccCur_AE_down.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_AE_down.ForeColor = System.Drawing.Color.White;
+            this.btn_AccCur_AE_down.Name = "btn_AccCur_AE_down";
+            this.btn_AccCur_AE_down.UseVisualStyleBackColor = false;
+            this.btn_AccCur_AE_down.Click += new System.EventHandler(this.btn_AccCur_setting_Down);
+            // 
             // label123
             // 
             resources.ApplyResources(this.label123, "label123");
             this.label123.BackColor = System.Drawing.Color.Transparent;
             this.label123.ForeColor = System.Drawing.Color.White;
             this.label123.Name = "label123";
+            // 
+            // btn_AccCur_AE_up
+            // 
+            this.btn_AccCur_AE_up.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_AE_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_AccCur_AE_up, "btn_AccCur_AE_up");
+            this.btn_AccCur_AE_up.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_AE_up.ForeColor = System.Drawing.Color.White;
+            this.btn_AccCur_AE_up.Name = "btn_AccCur_AE_up";
+            this.btn_AccCur_AE_up.UseVisualStyleBackColor = false;
+            this.btn_AccCur_AE_up.Click += new System.EventHandler(this.btn_AccCur_setting_Up);
             // 
             // cb_AccCur_setting_ChannelAE
             // 
@@ -5531,6 +8241,28 @@
             this.label122.ForeColor = System.Drawing.Color.White;
             this.label122.Name = "label122";
             // 
+            // btn_AccCur_Cur_down
+            // 
+            this.btn_AccCur_Cur_down.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_Cur_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_AccCur_Cur_down, "btn_AccCur_Cur_down");
+            this.btn_AccCur_Cur_down.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_Cur_down.ForeColor = System.Drawing.Color.White;
+            this.btn_AccCur_Cur_down.Name = "btn_AccCur_Cur_down";
+            this.btn_AccCur_Cur_down.UseVisualStyleBackColor = false;
+            this.btn_AccCur_Cur_down.Click += new System.EventHandler(this.btn_AccCur_setting_Down);
+            // 
+            // btn_AccCur_Cur_up
+            // 
+            this.btn_AccCur_Cur_up.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_Cur_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_AccCur_Cur_up, "btn_AccCur_Cur_up");
+            this.btn_AccCur_Cur_up.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_Cur_up.ForeColor = System.Drawing.Color.White;
+            this.btn_AccCur_Cur_up.Name = "btn_AccCur_Cur_up";
+            this.btn_AccCur_Cur_up.UseVisualStyleBackColor = false;
+            this.btn_AccCur_Cur_up.Click += new System.EventHandler(this.btn_AccCur_setting_Up);
+            // 
             // panel19
             // 
             resources.ApplyResources(this.panel19, "panel19");
@@ -5585,12 +8317,34 @@
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
+            // btn_AccCur_Z_down
+            // 
+            this.btn_AccCur_Z_down.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_Z_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_AccCur_Z_down, "btn_AccCur_Z_down");
+            this.btn_AccCur_Z_down.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_Z_down.ForeColor = System.Drawing.Color.White;
+            this.btn_AccCur_Z_down.Name = "btn_AccCur_Z_down";
+            this.btn_AccCur_Z_down.UseVisualStyleBackColor = false;
+            this.btn_AccCur_Z_down.Click += new System.EventHandler(this.btn_AccCur_setting_Down);
+            // 
             // label121
             // 
             resources.ApplyResources(this.label121, "label121");
             this.label121.BackColor = System.Drawing.Color.Transparent;
             this.label121.ForeColor = System.Drawing.Color.White;
             this.label121.Name = "label121";
+            // 
+            // btn_AccCur_Z_up
+            // 
+            this.btn_AccCur_Z_up.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_Z_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_AccCur_Z_up, "btn_AccCur_Z_up");
+            this.btn_AccCur_Z_up.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_Z_up.ForeColor = System.Drawing.Color.White;
+            this.btn_AccCur_Z_up.Name = "btn_AccCur_Z_up";
+            this.btn_AccCur_Z_up.UseVisualStyleBackColor = false;
+            this.btn_AccCur_Z_up.Click += new System.EventHandler(this.btn_AccCur_setting_Up);
             // 
             // cb_AccCur_setting_ChannelZ
             // 
@@ -5646,12 +8400,34 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
+            // btn_AccCur_Y_down
+            // 
+            this.btn_AccCur_Y_down.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_Y_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_AccCur_Y_down, "btn_AccCur_Y_down");
+            this.btn_AccCur_Y_down.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_Y_down.ForeColor = System.Drawing.Color.White;
+            this.btn_AccCur_Y_down.Name = "btn_AccCur_Y_down";
+            this.btn_AccCur_Y_down.UseVisualStyleBackColor = false;
+            this.btn_AccCur_Y_down.Click += new System.EventHandler(this.btn_AccCur_setting_Down);
+            // 
             // label120
             // 
             resources.ApplyResources(this.label120, "label120");
             this.label120.BackColor = System.Drawing.Color.Transparent;
             this.label120.ForeColor = System.Drawing.Color.White;
             this.label120.Name = "label120";
+            // 
+            // btn_AccCur_Y_up
+            // 
+            this.btn_AccCur_Y_up.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_Y_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_AccCur_Y_up, "btn_AccCur_Y_up");
+            this.btn_AccCur_Y_up.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_Y_up.ForeColor = System.Drawing.Color.White;
+            this.btn_AccCur_Y_up.Name = "btn_AccCur_Y_up";
+            this.btn_AccCur_Y_up.UseVisualStyleBackColor = false;
+            this.btn_AccCur_Y_up.Click += new System.EventHandler(this.btn_AccCur_setting_Up);
             // 
             // cb_AccCur_setting_ChannelY
             // 
@@ -5707,6 +8483,28 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // btn_AccCur_X_down
+            // 
+            this.btn_AccCur_X_down.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_X_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_AccCur_X_down, "btn_AccCur_X_down");
+            this.btn_AccCur_X_down.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_X_down.ForeColor = System.Drawing.Color.White;
+            this.btn_AccCur_X_down.Name = "btn_AccCur_X_down";
+            this.btn_AccCur_X_down.UseVisualStyleBackColor = false;
+            this.btn_AccCur_X_down.Click += new System.EventHandler(this.btn_AccCur_setting_Down);
+            // 
+            // btn_AccCur_X_up
+            // 
+            this.btn_AccCur_X_up.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_X_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_AccCur_X_up, "btn_AccCur_X_up");
+            this.btn_AccCur_X_up.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_X_up.ForeColor = System.Drawing.Color.White;
+            this.btn_AccCur_X_up.Name = "btn_AccCur_X_up";
+            this.btn_AccCur_X_up.UseVisualStyleBackColor = false;
+            this.btn_AccCur_X_up.Click += new System.EventHandler(this.btn_AccCur_setting_Up);
+            // 
             // panel16
             // 
             resources.ApplyResources(this.panel16, "panel16");
@@ -5753,6 +8551,28 @@
             -2147483648});
             this.num_AccCur_X.Name = "num_AccCur_X";
             // 
+            // btn_AccCur_setting_Reflash
+            // 
+            this.btn_AccCur_setting_Reflash.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AccCur_setting_Reflash.BackgroundImage = global::ToolWear.Properties.Resources.wds_icon_refresh;
+            resources.ApplyResources(this.btn_AccCur_setting_Reflash, "btn_AccCur_setting_Reflash");
+            this.btn_AccCur_setting_Reflash.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_setting_Reflash.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_AccCur_setting_Reflash.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_AccCur_setting_Reflash.Name = "btn_AccCur_setting_Reflash";
+            this.btn_AccCur_setting_Reflash.UseVisualStyleBackColor = false;
+            this.btn_AccCur_setting_Reflash.Click += new System.EventHandler(this.btn_AccCur_setting_loadChannel);
+            // 
+            // btn_AccCur_setting_back
+            // 
+            this.btn_AccCur_setting_back.BackColor = System.Drawing.Color.White;
+            this.btn_AccCur_setting_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_AccCur_setting_back, "btn_AccCur_setting_back");
+            this.btn_AccCur_setting_back.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_setting_back.Name = "btn_AccCur_setting_back";
+            this.btn_AccCur_setting_back.UseVisualStyleBackColor = false;
+            this.btn_AccCur_setting_back.Click += new System.EventHandler(this.btn_AccCur_setting_back_Click);
+            // 
             // label107
             // 
             resources.ApplyResources(this.label107, "label107");
@@ -5771,6 +8591,26 @@
             this.panel_AE.Controls.Add(this.label114);
             resources.ApplyResources(this.panel_AE, "panel_AE");
             this.panel_AE.Name = "panel_AE";
+            // 
+            // btn_AE_stop
+            // 
+            this.btn_AE_stop.BackColor = System.Drawing.Color.White;
+            this.btn_AE_stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
+            resources.ApplyResources(this.btn_AE_stop, "btn_AE_stop");
+            this.btn_AE_stop.FlatAppearance.BorderSize = 0;
+            this.btn_AE_stop.Name = "btn_AE_stop";
+            this.btn_AE_stop.UseVisualStyleBackColor = false;
+            this.btn_AE_stop.Click += new System.EventHandler(this.btn_AE_stop_Click);
+            // 
+            // btn_AE_start
+            // 
+            this.btn_AE_start.BackColor = System.Drawing.Color.White;
+            this.btn_AE_start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
+            resources.ApplyResources(this.btn_AE_start, "btn_AE_start");
+            this.btn_AE_start.FlatAppearance.BorderSize = 0;
+            this.btn_AE_start.Name = "btn_AE_start";
+            this.btn_AE_start.UseVisualStyleBackColor = false;
+            this.btn_AE_start.Click += new System.EventHandler(this.btn_AE_start_Click);
             // 
             // chart_AE
             // 
@@ -5843,6 +8683,16 @@
             this.label115.ForeColor = System.Drawing.Color.White;
             this.label115.Name = "label115";
             // 
+            // btn_AE_back
+            // 
+            this.btn_AE_back.BackColor = System.Drawing.Color.White;
+            this.btn_AE_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
+            resources.ApplyResources(this.btn_AE_back, "btn_AE_back");
+            this.btn_AE_back.FlatAppearance.BorderSize = 0;
+            this.btn_AE_back.Name = "btn_AE_back";
+            this.btn_AE_back.UseVisualStyleBackColor = false;
+            this.btn_AE_back.Click += new System.EventHandler(this.btn_AE_back_Click);
+            // 
             // label114
             // 
             resources.ApplyResources(this.label114, "label114");
@@ -5871,306 +8721,75 @@
             resources.ApplyResources(this.panel_AccCur_parameter, "panel_AccCur_parameter");
             this.panel_AccCur_parameter.Name = "panel_AccCur_parameter";
             // 
-            // label124
-            // 
-            resources.ApplyResources(this.label124, "label124");
-            this.label124.BackColor = System.Drawing.Color.Transparent;
-            this.label124.ForeColor = System.Drawing.Color.White;
-            this.label124.Name = "label124";
-            // 
-            // label125
-            // 
-            resources.ApplyResources(this.label125, "label125");
-            this.label125.BackColor = System.Drawing.Color.Transparent;
-            this.label125.ForeColor = System.Drawing.Color.White;
-            this.label125.Name = "label125";
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
-            this.panel21.Controls.Add(this.panel26);
-            this.panel21.Controls.Add(this.label145);
-            this.panel21.Controls.Add(this.label144);
-            this.panel21.Controls.Add(this.tb_AccCur_parameter_ProTime);
-            this.panel21.Controls.Add(this.label129);
-            this.panel21.Controls.Add(this.label128);
-            this.panel21.Controls.Add(this.label127);
-            this.panel21.Controls.Add(this.num_AccCur_parameter_removal);
-            this.panel21.Controls.Add(this.num_AccCur_parameter_width);
-            this.panel21.Controls.Add(this.num_AccCur_parameter_length);
-            this.panel21.Controls.Add(this.label126);
-            this.panel21.Controls.Add(this.tbar_AccCur_parameter_surface);
-            this.panel21.Controls.Add(this.tb_AccCur_parameter_surface);
-            this.panel21.Controls.Add(this.label125);
-            resources.ApplyResources(this.panel21, "panel21");
-            this.panel21.Name = "panel21";
-            // 
-            // tb_AccCur_parameter_surface
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_surface, "tb_AccCur_parameter_surface");
-            this.tb_AccCur_parameter_surface.Name = "tb_AccCur_parameter_surface";
-            this.tb_AccCur_parameter_surface.TextChanged += new System.EventHandler(this.tb_AccCur_parameter_surface_TextChanged);
-            // 
-            // tbar_AccCur_parameter_surface
-            // 
-            resources.ApplyResources(this.tbar_AccCur_parameter_surface, "tbar_AccCur_parameter_surface");
-            this.tbar_AccCur_parameter_surface.LargeChange = 500;
-            this.tbar_AccCur_parameter_surface.Maximum = 5000;
-            this.tbar_AccCur_parameter_surface.Name = "tbar_AccCur_parameter_surface";
-            this.tbar_AccCur_parameter_surface.Scroll += new System.EventHandler(this.tbar_AccCur_parameter_surface_Scroll);
-            // 
-            // label126
-            // 
-            resources.ApplyResources(this.label126, "label126");
-            this.label126.BackColor = System.Drawing.Color.Transparent;
-            this.label126.ForeColor = System.Drawing.Color.White;
-            this.label126.Name = "label126";
-            // 
-            // num_AccCur_parameter_length
-            // 
-            resources.ApplyResources(this.num_AccCur_parameter_length, "num_AccCur_parameter_length");
-            this.num_AccCur_parameter_length.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.num_AccCur_parameter_length.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.num_AccCur_parameter_length.Name = "num_AccCur_parameter_length";
-            this.num_AccCur_parameter_length.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // num_AccCur_parameter_width
-            // 
-            resources.ApplyResources(this.num_AccCur_parameter_width, "num_AccCur_parameter_width");
-            this.num_AccCur_parameter_width.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.num_AccCur_parameter_width.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.num_AccCur_parameter_width.Name = "num_AccCur_parameter_width";
-            this.num_AccCur_parameter_width.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // num_AccCur_parameter_removal
-            // 
-            resources.ApplyResources(this.num_AccCur_parameter_removal, "num_AccCur_parameter_removal");
-            this.num_AccCur_parameter_removal.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.num_AccCur_parameter_removal.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.num_AccCur_parameter_removal.Name = "num_AccCur_parameter_removal";
-            this.num_AccCur_parameter_removal.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label127
-            // 
-            resources.ApplyResources(this.label127, "label127");
-            this.label127.Name = "label127";
-            // 
-            // label128
-            // 
-            resources.ApplyResources(this.label128, "label128");
-            this.label128.Name = "label128";
-            // 
-            // label129
-            // 
-            resources.ApplyResources(this.label129, "label129");
-            this.label129.BackColor = System.Drawing.Color.Transparent;
-            this.label129.ForeColor = System.Drawing.Color.White;
-            this.label129.Name = "label129";
-            // 
-            // tb_AccCur_parameter_ProTime
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_ProTime, "tb_AccCur_parameter_ProTime");
-            this.tb_AccCur_parameter_ProTime.Name = "tb_AccCur_parameter_ProTime";
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
-            this.panel22.Controls.Add(this.btn_AccCur_parameter_typeAdd);
-            this.panel22.Controls.Add(this.btn_AccCur_parameter_workpieceAdd);
-            this.panel22.Controls.Add(this.lb_AccCur_parameter_type);
-            this.panel22.Controls.Add(this.label131);
-            this.panel22.Controls.Add(this.label130);
-            this.panel22.Controls.Add(this.lb_AccCur_parameter_workpiece);
-            this.panel22.Controls.Add(this.panel_AccCur_parameter_Add);
-            resources.ApplyResources(this.panel22, "panel22");
-            this.panel22.Name = "panel22";
-            // 
-            // lb_AccCur_parameter_workpiece
-            // 
-            this.lb_AccCur_parameter_workpiece.FormattingEnabled = true;
-            resources.ApplyResources(this.lb_AccCur_parameter_workpiece, "lb_AccCur_parameter_workpiece");
-            this.lb_AccCur_parameter_workpiece.Name = "lb_AccCur_parameter_workpiece";
-            this.lb_AccCur_parameter_workpiece.SelectedIndexChanged += new System.EventHandler(this.lb_AccCur_parameter_workpiece_SelectedIndexChanged);
-            // 
-            // label130
-            // 
-            resources.ApplyResources(this.label130, "label130");
-            this.label130.BackColor = System.Drawing.Color.Transparent;
-            this.label130.ForeColor = System.Drawing.Color.White;
-            this.label130.Name = "label130";
-            // 
-            // label131
-            // 
-            resources.ApplyResources(this.label131, "label131");
-            this.label131.BackColor = System.Drawing.Color.Transparent;
-            this.label131.ForeColor = System.Drawing.Color.White;
-            this.label131.Name = "label131";
-            // 
-            // lb_AccCur_parameter_type
-            // 
-            this.lb_AccCur_parameter_type.FormattingEnabled = true;
-            resources.ApplyResources(this.lb_AccCur_parameter_type, "lb_AccCur_parameter_type");
-            this.lb_AccCur_parameter_type.Name = "lb_AccCur_parameter_type";
-            this.lb_AccCur_parameter_type.SelectedIndexChanged += new System.EventHandler(this.lb_AccCur_parameter_type_SelectedIndexChanged);
-            // 
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel23.Controls.Add(this.tb_AccCur_parameter_Pitch);
+            this.panel23.Controls.Add(this.label133);
+            this.panel23.Controls.Add(this.tb_AccCur_parameter_Mistake);
+            this.panel23.Controls.Add(this.label132);
+            this.panel23.Controls.Add(this.tb_AccCur_parameter_Predict);
             this.panel23.Controls.Add(this.tb_AccCur_parameter_AIvalue);
+            this.panel23.Controls.Add(this.tb_AccCur_parameter_WheelDown);
             this.panel23.Controls.Add(this.label143);
+            this.panel23.Controls.Add(this.AccCur_parameter_WheelSpeed);
             this.panel23.Controls.Add(this.tb_AccCur_parameter_BestTime);
+            this.panel23.Controls.Add(this.tb_AccCur_parameter_WheelNumber);
             this.panel23.Controls.Add(this.label142);
-            this.panel23.Controls.Add(this.panel25);
-            this.panel23.Controls.Add(this.panel24);
+            this.panel23.Controls.Add(this.label137);
+            this.panel23.Controls.Add(this.label138);
+            this.panel23.Controls.Add(this.label140);
+            this.panel23.Controls.Add(this.label139);
             resources.ApplyResources(this.panel23, "panel23");
             this.panel23.Name = "panel23";
             // 
-            // panel24
+            // tb_AccCur_parameter_AIvalue
             // 
-            this.panel24.Controls.Add(this.tb_AccCur_parameter_Predict1);
-            this.panel24.Controls.Add(this.tb_AccCur_parameter_WheelDown1);
-            this.panel24.Controls.Add(this.AccCur_parameter_WheelSpeed1);
-            this.panel24.Controls.Add(this.tb_AccCur_parameter_WheelNumber1);
-            this.panel24.Controls.Add(this.label136);
-            this.panel24.Controls.Add(this.label135);
-            this.panel24.Controls.Add(this.label134);
-            this.panel24.Controls.Add(this.label133);
-            this.panel24.Controls.Add(this.label132);
-            resources.ApplyResources(this.panel24, "panel24");
-            this.panel24.Name = "panel24";
+            resources.ApplyResources(this.tb_AccCur_parameter_AIvalue, "tb_AccCur_parameter_AIvalue");
+            this.tb_AccCur_parameter_AIvalue.Name = "tb_AccCur_parameter_AIvalue";
             // 
-            // label132
+            // label143
             // 
-            resources.ApplyResources(this.label132, "label132");
-            this.label132.BackColor = System.Drawing.Color.Transparent;
-            this.label132.ForeColor = System.Drawing.Color.White;
-            this.label132.Name = "label132";
+            resources.ApplyResources(this.label143, "label143");
+            this.label143.BackColor = System.Drawing.Color.Transparent;
+            this.label143.ForeColor = System.Drawing.Color.White;
+            this.label143.Name = "label143";
             // 
-            // label133
+            // tb_AccCur_parameter_BestTime
             // 
-            resources.ApplyResources(this.label133, "label133");
-            this.label133.BackColor = System.Drawing.Color.Transparent;
-            this.label133.ForeColor = System.Drawing.Color.White;
-            this.label133.Name = "label133";
+            resources.ApplyResources(this.tb_AccCur_parameter_BestTime, "tb_AccCur_parameter_BestTime");
+            this.tb_AccCur_parameter_BestTime.Name = "tb_AccCur_parameter_BestTime";
             // 
-            // label134
+            // label142
             // 
-            resources.ApplyResources(this.label134, "label134");
-            this.label134.BackColor = System.Drawing.Color.Transparent;
-            this.label134.ForeColor = System.Drawing.Color.White;
-            this.label134.Name = "label134";
+            resources.ApplyResources(this.label142, "label142");
+            this.label142.BackColor = System.Drawing.Color.Transparent;
+            this.label142.ForeColor = System.Drawing.Color.White;
+            this.label142.Name = "label142";
             // 
-            // label135
+            // tb_AccCur_parameter_Predict
             // 
-            resources.ApplyResources(this.label135, "label135");
-            this.label135.BackColor = System.Drawing.Color.Transparent;
-            this.label135.ForeColor = System.Drawing.Color.White;
-            this.label135.Name = "label135";
+            resources.ApplyResources(this.tb_AccCur_parameter_Predict, "tb_AccCur_parameter_Predict");
+            this.tb_AccCur_parameter_Predict.Name = "tb_AccCur_parameter_Predict";
+            this.tb_AccCur_parameter_Predict.ReadOnly = true;
             // 
-            // label136
+            // tb_AccCur_parameter_WheelDown
             // 
-            resources.ApplyResources(this.label136, "label136");
-            this.label136.BackColor = System.Drawing.Color.Transparent;
-            this.label136.ForeColor = System.Drawing.Color.White;
-            this.label136.Name = "label136";
+            resources.ApplyResources(this.tb_AccCur_parameter_WheelDown, "tb_AccCur_parameter_WheelDown");
+            this.tb_AccCur_parameter_WheelDown.Name = "tb_AccCur_parameter_WheelDown";
+            this.tb_AccCur_parameter_WheelDown.ReadOnly = true;
             // 
-            // tb_AccCur_parameter_WheelNumber1
+            // AccCur_parameter_WheelSpeed
             // 
-            resources.ApplyResources(this.tb_AccCur_parameter_WheelNumber1, "tb_AccCur_parameter_WheelNumber1");
-            this.tb_AccCur_parameter_WheelNumber1.Name = "tb_AccCur_parameter_WheelNumber1";
-            this.tb_AccCur_parameter_WheelNumber1.ReadOnly = true;
+            resources.ApplyResources(this.AccCur_parameter_WheelSpeed, "AccCur_parameter_WheelSpeed");
+            this.AccCur_parameter_WheelSpeed.Name = "AccCur_parameter_WheelSpeed";
+            this.AccCur_parameter_WheelSpeed.ReadOnly = true;
             // 
-            // AccCur_parameter_WheelSpeed1
+            // tb_AccCur_parameter_WheelNumber
             // 
-            resources.ApplyResources(this.AccCur_parameter_WheelSpeed1, "AccCur_parameter_WheelSpeed1");
-            this.AccCur_parameter_WheelSpeed1.Name = "AccCur_parameter_WheelSpeed1";
-            this.AccCur_parameter_WheelSpeed1.ReadOnly = true;
-            // 
-            // tb_AccCur_parameter_WheelDown1
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_WheelDown1, "tb_AccCur_parameter_WheelDown1");
-            this.tb_AccCur_parameter_WheelDown1.Name = "tb_AccCur_parameter_WheelDown1";
-            this.tb_AccCur_parameter_WheelDown1.ReadOnly = true;
-            // 
-            // tb_AccCur_parameter_Predict1
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_Predict1, "tb_AccCur_parameter_Predict1");
-            this.tb_AccCur_parameter_Predict1.Name = "tb_AccCur_parameter_Predict1";
-            this.tb_AccCur_parameter_Predict1.ReadOnly = true;
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.tb_AccCur_parameter_Predict2);
-            this.panel25.Controls.Add(this.tb_AccCur_parameter_WheelDown2);
-            this.panel25.Controls.Add(this.AccCur_parameter_WheelSpeed2);
-            this.panel25.Controls.Add(this.tb_AccCur_parameter_WheelNumber2);
-            this.panel25.Controls.Add(this.label137);
-            this.panel25.Controls.Add(this.label138);
-            this.panel25.Controls.Add(this.label139);
-            this.panel25.Controls.Add(this.label140);
-            this.panel25.Controls.Add(this.label141);
-            resources.ApplyResources(this.panel25, "panel25");
-            this.panel25.Name = "panel25";
-            // 
-            // tb_AccCur_parameter_Predict2
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_Predict2, "tb_AccCur_parameter_Predict2");
-            this.tb_AccCur_parameter_Predict2.Name = "tb_AccCur_parameter_Predict2";
-            this.tb_AccCur_parameter_Predict2.ReadOnly = true;
-            // 
-            // tb_AccCur_parameter_WheelDown2
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_WheelDown2, "tb_AccCur_parameter_WheelDown2");
-            this.tb_AccCur_parameter_WheelDown2.Name = "tb_AccCur_parameter_WheelDown2";
-            this.tb_AccCur_parameter_WheelDown2.ReadOnly = true;
-            // 
-            // AccCur_parameter_WheelSpeed2
-            // 
-            resources.ApplyResources(this.AccCur_parameter_WheelSpeed2, "AccCur_parameter_WheelSpeed2");
-            this.AccCur_parameter_WheelSpeed2.Name = "AccCur_parameter_WheelSpeed2";
-            this.AccCur_parameter_WheelSpeed2.ReadOnly = true;
-            // 
-            // tb_AccCur_parameter_WheelNumber2
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_WheelNumber2, "tb_AccCur_parameter_WheelNumber2");
-            this.tb_AccCur_parameter_WheelNumber2.Name = "tb_AccCur_parameter_WheelNumber2";
-            this.tb_AccCur_parameter_WheelNumber2.ReadOnly = true;
+            resources.ApplyResources(this.tb_AccCur_parameter_WheelNumber, "tb_AccCur_parameter_WheelNumber");
+            this.tb_AccCur_parameter_WheelNumber.Name = "tb_AccCur_parameter_WheelNumber";
+            this.tb_AccCur_parameter_WheelNumber.ReadOnly = true;
             // 
             // label137
             // 
@@ -6200,87 +8819,34 @@
             this.label140.ForeColor = System.Drawing.Color.White;
             this.label140.Name = "label140";
             // 
-            // label141
+            // panel22
             // 
-            resources.ApplyResources(this.label141, "label141");
-            this.label141.BackColor = System.Drawing.Color.Transparent;
-            this.label141.ForeColor = System.Drawing.Color.White;
-            this.label141.Name = "label141";
-            // 
-            // label142
-            // 
-            resources.ApplyResources(this.label142, "label142");
-            this.label142.BackColor = System.Drawing.Color.Transparent;
-            this.label142.ForeColor = System.Drawing.Color.White;
-            this.label142.Name = "label142";
-            // 
-            // tb_AccCur_parameter_BestTime
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_BestTime, "tb_AccCur_parameter_BestTime");
-            this.tb_AccCur_parameter_BestTime.Name = "tb_AccCur_parameter_BestTime";
-            // 
-            // label143
-            // 
-            resources.ApplyResources(this.label143, "label143");
-            this.label143.BackColor = System.Drawing.Color.Transparent;
-            this.label143.ForeColor = System.Drawing.Color.White;
-            this.label143.Name = "label143";
-            // 
-            // tb_AccCur_parameter_AIvalue
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_AIvalue, "tb_AccCur_parameter_AIvalue");
-            this.tb_AccCur_parameter_AIvalue.Name = "tb_AccCur_parameter_AIvalue";
-            // 
-            // label144
-            // 
-            resources.ApplyResources(this.label144, "label144");
-            this.label144.Name = "label144";
-            // 
-            // label145
-            // 
-            resources.ApplyResources(this.label145, "label145");
-            this.label145.Name = "label145";
-            // 
-            // panel_AccCur_parameter_Add
-            // 
-            this.panel_AccCur_parameter_Add.Controls.Add(this.btn_AccCur_parameter_Add_Delete);
-            this.panel_AccCur_parameter_Add.Controls.Add(this.lb_AccCur_parameter_Add);
-            this.panel_AccCur_parameter_Add.Controls.Add(this.btn_AccCur_parameter_Add_Save);
-            this.panel_AccCur_parameter_Add.Controls.Add(this.tb_AccCur_parameter_Add);
-            this.panel_AccCur_parameter_Add.Controls.Add(this.label146);
-            resources.ApplyResources(this.panel_AccCur_parameter_Add, "panel_AccCur_parameter_Add");
-            this.panel_AccCur_parameter_Add.Name = "panel_AccCur_parameter_Add";
-            // 
-            // label146
-            // 
-            resources.ApplyResources(this.label146, "label146");
-            this.label146.BackColor = System.Drawing.Color.Transparent;
-            this.label146.ForeColor = System.Drawing.Color.White;
-            this.label146.Name = "label146";
-            // 
-            // tb_AccCur_parameter_Add
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_Add, "tb_AccCur_parameter_Add");
-            this.tb_AccCur_parameter_Add.Name = "tb_AccCur_parameter_Add";
-            // 
-            // lb_AccCur_parameter_Add
-            // 
-            resources.ApplyResources(this.lb_AccCur_parameter_Add, "lb_AccCur_parameter_Add");
-            this.lb_AccCur_parameter_Add.BackColor = System.Drawing.Color.Transparent;
-            this.lb_AccCur_parameter_Add.ForeColor = System.Drawing.Color.White;
-            this.lb_AccCur_parameter_Add.Name = "lb_AccCur_parameter_Add";
-            // 
-            // label147
-            // 
-            resources.ApplyResources(this.label147, "label147");
-            this.label147.BackColor = System.Drawing.Color.Transparent;
-            this.label147.ForeColor = System.Drawing.Color.White;
-            this.label147.Name = "label147";
-            // 
-            // panel26
-            // 
-            resources.ApplyResources(this.panel26, "panel26");
-            this.panel26.Name = "panel26";
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel22.Controls.Add(this.btn_AccCur_parameter_typeDelete);
+            this.panel22.Controls.Add(this.btn_AccCur_parameter_workpieceDelete);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_type7);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_workpiece7);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_type6);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_workpiece6);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_type5);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_workpiece5);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_type4);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_workpiece4);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_type3);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_workpiece3);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_type2);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_workpiece2);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_type1);
+            this.panel22.Controls.Add(this.Sep_AccCur_parameter_workpiece1);
+            this.panel22.Controls.Add(this.btn_AccCur_parameter_typeAdd);
+            this.panel22.Controls.Add(this.btn_AccCur_parameter_workpieceAdd);
+            this.panel22.Controls.Add(this.lb_AccCur_parameter_type);
+            this.panel22.Controls.Add(this.label131);
+            this.panel22.Controls.Add(this.label130);
+            this.panel22.Controls.Add(this.lb_AccCur_parameter_workpiece);
+            this.panel22.Controls.Add(this.panel_AccCur_parameter_Add);
+            resources.ApplyResources(this.panel22, "panel22");
+            this.panel22.Name = "panel22";
             // 
             // btn_AccCur_parameter_typeAdd
             // 
@@ -6302,6 +8868,44 @@
             this.btn_AccCur_parameter_workpieceAdd.UseVisualStyleBackColor = false;
             this.btn_AccCur_parameter_workpieceAdd.Click += new System.EventHandler(this.btn_AccCur_parameter_workpieceAdd_Click);
             // 
+            // lb_AccCur_parameter_type
+            // 
+            this.lb_AccCur_parameter_type.FormattingEnabled = true;
+            resources.ApplyResources(this.lb_AccCur_parameter_type, "lb_AccCur_parameter_type");
+            this.lb_AccCur_parameter_type.Name = "lb_AccCur_parameter_type";
+            this.lb_AccCur_parameter_type.SelectedIndexChanged += new System.EventHandler(this.lb_AccCur_parameter_type_SelectedIndexChanged);
+            // 
+            // label131
+            // 
+            resources.ApplyResources(this.label131, "label131");
+            this.label131.BackColor = System.Drawing.Color.Transparent;
+            this.label131.ForeColor = System.Drawing.Color.White;
+            this.label131.Name = "label131";
+            // 
+            // label130
+            // 
+            resources.ApplyResources(this.label130, "label130");
+            this.label130.BackColor = System.Drawing.Color.Transparent;
+            this.label130.ForeColor = System.Drawing.Color.White;
+            this.label130.Name = "label130";
+            // 
+            // lb_AccCur_parameter_workpiece
+            // 
+            this.lb_AccCur_parameter_workpiece.FormattingEnabled = true;
+            resources.ApplyResources(this.lb_AccCur_parameter_workpiece, "lb_AccCur_parameter_workpiece");
+            this.lb_AccCur_parameter_workpiece.Name = "lb_AccCur_parameter_workpiece";
+            this.lb_AccCur_parameter_workpiece.SelectedIndexChanged += new System.EventHandler(this.lb_AccCur_parameter_workpiece_SelectedIndexChanged);
+            // 
+            // panel_AccCur_parameter_Add
+            // 
+            this.panel_AccCur_parameter_Add.Controls.Add(this.btn_AccCur_parameter_Add_Delete);
+            this.panel_AccCur_parameter_Add.Controls.Add(this.lb_AccCur_parameter_Add);
+            this.panel_AccCur_parameter_Add.Controls.Add(this.btn_AccCur_parameter_Add_Save);
+            this.panel_AccCur_parameter_Add.Controls.Add(this.tb_AccCur_parameter_Add);
+            this.panel_AccCur_parameter_Add.Controls.Add(this.label146);
+            resources.ApplyResources(this.panel_AccCur_parameter_Add, "panel_AccCur_parameter_Add");
+            this.panel_AccCur_parameter_Add.Name = "panel_AccCur_parameter_Add";
+            // 
             // btn_AccCur_parameter_Add_Delete
             // 
             this.btn_AccCur_parameter_Add_Delete.BackColor = System.Drawing.Color.Transparent;
@@ -6313,6 +8917,13 @@
             this.btn_AccCur_parameter_Add_Delete.Name = "btn_AccCur_parameter_Add_Delete";
             this.btn_AccCur_parameter_Add_Delete.UseVisualStyleBackColor = false;
             this.btn_AccCur_parameter_Add_Delete.Click += new System.EventHandler(this.btn_AccCur_parameter_Add_Delete_Click);
+            // 
+            // lb_AccCur_parameter_Add
+            // 
+            resources.ApplyResources(this.lb_AccCur_parameter_Add, "lb_AccCur_parameter_Add");
+            this.lb_AccCur_parameter_Add.BackColor = System.Drawing.Color.Transparent;
+            this.lb_AccCur_parameter_Add.ForeColor = System.Drawing.Color.White;
+            this.lb_AccCur_parameter_Add.Name = "lb_AccCur_parameter_Add";
             // 
             // btn_AccCur_parameter_Add_Save
             // 
@@ -6326,6 +8937,159 @@
             this.btn_AccCur_parameter_Add_Save.UseVisualStyleBackColor = false;
             this.btn_AccCur_parameter_Add_Save.Click += new System.EventHandler(this.btn_AccCur_parameter_Add_Save_Click);
             // 
+            // tb_AccCur_parameter_Add
+            // 
+            resources.ApplyResources(this.tb_AccCur_parameter_Add, "tb_AccCur_parameter_Add");
+            this.tb_AccCur_parameter_Add.Name = "tb_AccCur_parameter_Add";
+            // 
+            // label146
+            // 
+            resources.ApplyResources(this.label146, "label146");
+            this.label146.BackColor = System.Drawing.Color.Transparent;
+            this.label146.ForeColor = System.Drawing.Color.White;
+            this.label146.Name = "label146";
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel21.Controls.Add(this.label134);
+            this.panel21.Controls.Add(this.label145);
+            this.panel21.Controls.Add(this.label144);
+            this.panel21.Controls.Add(this.tb_AccCur_parameter_ProTime);
+            this.panel21.Controls.Add(this.label129);
+            this.panel21.Controls.Add(this.label128);
+            this.panel21.Controls.Add(this.label127);
+            this.panel21.Controls.Add(this.num_AccCur_parameter_removal);
+            this.panel21.Controls.Add(this.num_AccCur_parameter_width);
+            this.panel21.Controls.Add(this.num_AccCur_parameter_length);
+            this.panel21.Controls.Add(this.label126);
+            this.panel21.Controls.Add(this.tbar_AccCur_parameter_surface);
+            this.panel21.Controls.Add(this.tb_AccCur_parameter_surface);
+            this.panel21.Controls.Add(this.label125);
+            resources.ApplyResources(this.panel21, "panel21");
+            this.panel21.Name = "panel21";
+            // 
+            // label145
+            // 
+            resources.ApplyResources(this.label145, "label145");
+            this.label145.Name = "label145";
+            // 
+            // label144
+            // 
+            resources.ApplyResources(this.label144, "label144");
+            this.label144.Name = "label144";
+            // 
+            // tb_AccCur_parameter_ProTime
+            // 
+            resources.ApplyResources(this.tb_AccCur_parameter_ProTime, "tb_AccCur_parameter_ProTime");
+            this.tb_AccCur_parameter_ProTime.Name = "tb_AccCur_parameter_ProTime";
+            // 
+            // label129
+            // 
+            resources.ApplyResources(this.label129, "label129");
+            this.label129.BackColor = System.Drawing.Color.Transparent;
+            this.label129.ForeColor = System.Drawing.Color.White;
+            this.label129.Name = "label129";
+            // 
+            // label128
+            // 
+            resources.ApplyResources(this.label128, "label128");
+            this.label128.Name = "label128";
+            // 
+            // label127
+            // 
+            resources.ApplyResources(this.label127, "label127");
+            this.label127.Name = "label127";
+            // 
+            // num_AccCur_parameter_removal
+            // 
+            resources.ApplyResources(this.num_AccCur_parameter_removal, "num_AccCur_parameter_removal");
+            this.num_AccCur_parameter_removal.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.num_AccCur_parameter_removal.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.num_AccCur_parameter_removal.Name = "num_AccCur_parameter_removal";
+            this.num_AccCur_parameter_removal.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // num_AccCur_parameter_width
+            // 
+            resources.ApplyResources(this.num_AccCur_parameter_width, "num_AccCur_parameter_width");
+            this.num_AccCur_parameter_width.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.num_AccCur_parameter_width.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.num_AccCur_parameter_width.Name = "num_AccCur_parameter_width";
+            this.num_AccCur_parameter_width.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // num_AccCur_parameter_length
+            // 
+            resources.ApplyResources(this.num_AccCur_parameter_length, "num_AccCur_parameter_length");
+            this.num_AccCur_parameter_length.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.num_AccCur_parameter_length.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.num_AccCur_parameter_length.Name = "num_AccCur_parameter_length";
+            this.num_AccCur_parameter_length.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label126
+            // 
+            resources.ApplyResources(this.label126, "label126");
+            this.label126.BackColor = System.Drawing.Color.Transparent;
+            this.label126.ForeColor = System.Drawing.Color.White;
+            this.label126.Name = "label126";
+            // 
+            // tbar_AccCur_parameter_surface
+            // 
+            resources.ApplyResources(this.tbar_AccCur_parameter_surface, "tbar_AccCur_parameter_surface");
+            this.tbar_AccCur_parameter_surface.LargeChange = 100;
+            this.tbar_AccCur_parameter_surface.Maximum = 2000;
+            this.tbar_AccCur_parameter_surface.Name = "tbar_AccCur_parameter_surface";
+            this.tbar_AccCur_parameter_surface.TickFrequency = 200;
+            this.tbar_AccCur_parameter_surface.Scroll += new System.EventHandler(this.tbar_AccCur_parameter_surface_Scroll);
+            // 
+            // tb_AccCur_parameter_surface
+            // 
+            resources.ApplyResources(this.tb_AccCur_parameter_surface, "tb_AccCur_parameter_surface");
+            this.tb_AccCur_parameter_surface.Name = "tb_AccCur_parameter_surface";
+            this.tb_AccCur_parameter_surface.TextChanged += new System.EventHandler(this.tb_AccCur_parameter_surface_TextChanged);
+            // 
+            // label125
+            // 
+            resources.ApplyResources(this.label125, "label125");
+            this.label125.BackColor = System.Drawing.Color.Transparent;
+            this.label125.ForeColor = System.Drawing.Color.White;
+            this.label125.Name = "label125";
+            // 
             // btn_AccCur_parameter_back
             // 
             this.btn_AccCur_parameter_back.BackColor = System.Drawing.Color.White;
@@ -6336,2842 +9100,147 @@
             this.btn_AccCur_parameter_back.UseVisualStyleBackColor = false;
             this.btn_AccCur_parameter_back.Click += new System.EventHandler(this.btn_AccCur_parameter_back_Click);
             // 
-            // btn_AccCur_back
+            // label124
             // 
-            this.btn_AccCur_back.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_AccCur_back, "btn_AccCur_back");
-            this.btn_AccCur_back.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_back.Name = "btn_AccCur_back";
-            this.btn_AccCur_back.UseVisualStyleBackColor = false;
-            this.btn_AccCur_back.Click += new System.EventHandler(this.btn_AccCur_back_Click);
+            resources.ApplyResources(this.label124, "label124");
+            this.label124.BackColor = System.Drawing.Color.Transparent;
+            this.label124.ForeColor = System.Drawing.Color.White;
+            this.label124.Name = "label124";
             // 
-            // btn_AccCur_setting
+            // tb_AccCur_parameter_Mistake
             // 
-            this.btn_AccCur_setting.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_setting.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_setting;
-            resources.ApplyResources(this.btn_AccCur_setting, "btn_AccCur_setting");
-            this.btn_AccCur_setting.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_setting.Name = "btn_AccCur_setting";
-            this.btn_AccCur_setting.UseVisualStyleBackColor = false;
-            this.btn_AccCur_setting.Click += new System.EventHandler(this.btn_AccCur_setting_Click);
+            resources.ApplyResources(this.tb_AccCur_parameter_Mistake, "tb_AccCur_parameter_Mistake");
+            this.tb_AccCur_parameter_Mistake.Name = "tb_AccCur_parameter_Mistake";
+            this.tb_AccCur_parameter_Mistake.ReadOnly = true;
             // 
-            // btn_AccCur_stop
+            // label132
             // 
-            this.btn_AccCur_stop.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
-            resources.ApplyResources(this.btn_AccCur_stop, "btn_AccCur_stop");
-            this.btn_AccCur_stop.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_stop.Name = "btn_AccCur_stop";
-            this.btn_AccCur_stop.UseVisualStyleBackColor = false;
-            this.btn_AccCur_stop.Click += new System.EventHandler(this.btn_AccCur_stop_Click);
+            resources.ApplyResources(this.label132, "label132");
+            this.label132.BackColor = System.Drawing.Color.Transparent;
+            this.label132.ForeColor = System.Drawing.Color.White;
+            this.label132.Name = "label132";
             // 
-            // btn_AccCur_start
+            // tb_AccCur_parameter_Pitch
             // 
-            this.btn_AccCur_start.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
-            resources.ApplyResources(this.btn_AccCur_start, "btn_AccCur_start");
-            this.btn_AccCur_start.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_start.Name = "btn_AccCur_start";
-            this.btn_AccCur_start.UseVisualStyleBackColor = false;
-            this.btn_AccCur_start.Click += new System.EventHandler(this.btn_AccCur_start_Click);
+            resources.ApplyResources(this.tb_AccCur_parameter_Pitch, "tb_AccCur_parameter_Pitch");
+            this.tb_AccCur_parameter_Pitch.Name = "tb_AccCur_parameter_Pitch";
+            this.tb_AccCur_parameter_Pitch.ReadOnly = true;
             // 
-            // btn_ToolWearSetting_Research
+            // label133
             // 
-            this.btn_ToolWearSetting_Research.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ToolWearSetting_Research.BackgroundImage = global::ToolWear.Properties.Resources.wds_icon_refresh;
-            resources.ApplyResources(this.btn_ToolWearSetting_Research, "btn_ToolWearSetting_Research");
-            this.btn_ToolWearSetting_Research.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_Research.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_ToolWearSetting_Research.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_ToolWearSetting_Research.Name = "btn_ToolWearSetting_Research";
-            this.btn_ToolWearSetting_Research.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_Research.Click += new System.EventHandler(this.btn_ToolWearSetting_Research_Click);
+            resources.ApplyResources(this.label133, "label133");
+            this.label133.BackColor = System.Drawing.Color.Transparent;
+            this.label133.ForeColor = System.Drawing.Color.White;
+            this.label133.Name = "label133";
             // 
-            // btn_ToolWearSetting_save
+            // Sep_AccCur_parameter_workpiece1
             // 
-            this.btn_ToolWearSetting_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ToolWearSetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
-            resources.ApplyResources(this.btn_ToolWearSetting_save, "btn_ToolWearSetting_save");
-            this.btn_ToolWearSetting_save.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_save.Name = "btn_ToolWearSetting_save";
-            this.btn_ToolWearSetting_save.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_save.Click += new System.EventHandler(this.btn_ToolWearSetting_save_Click);
+            this.Sep_AccCur_parameter_workpiece1.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_workpiece1, "Sep_AccCur_parameter_workpiece1");
+            this.Sep_AccCur_parameter_workpiece1.Name = "Sep_AccCur_parameter_workpiece1";
             // 
-            // btn_ToolWearSetting_delete
+            // Sep_AccCur_parameter_workpiece2
             // 
-            this.btn_ToolWearSetting_delete.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
-            resources.ApplyResources(this.btn_ToolWearSetting_delete, "btn_ToolWearSetting_delete");
-            this.btn_ToolWearSetting_delete.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_delete.Name = "btn_ToolWearSetting_delete";
-            this.btn_ToolWearSetting_delete.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_delete.Click += new System.EventHandler(this.btn_ToolWearSetting_delete_Click);
+            this.Sep_AccCur_parameter_workpiece2.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_workpiece2, "Sep_AccCur_parameter_workpiece2");
+            this.Sep_AccCur_parameter_workpiece2.Name = "Sep_AccCur_parameter_workpiece2";
             // 
-            // btn_ToolWearSetting_20
+            // Sep_AccCur_parameter_workpiece3
             // 
-            this.btn_ToolWearSetting_20.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_20, "btn_ToolWearSetting_20");
-            this.btn_ToolWearSetting_20.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_20.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_20.Name = "btn_ToolWearSetting_20";
-            this.btn_ToolWearSetting_20.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_20.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_workpiece3.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_workpiece3, "Sep_AccCur_parameter_workpiece3");
+            this.Sep_AccCur_parameter_workpiece3.Name = "Sep_AccCur_parameter_workpiece3";
             // 
-            // btn_ToolWearSetting_19
+            // Sep_AccCur_parameter_workpiece4
             // 
-            this.btn_ToolWearSetting_19.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_19, "btn_ToolWearSetting_19");
-            this.btn_ToolWearSetting_19.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_19.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_19.Name = "btn_ToolWearSetting_19";
-            this.btn_ToolWearSetting_19.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_19.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_workpiece4.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_workpiece4, "Sep_AccCur_parameter_workpiece4");
+            this.Sep_AccCur_parameter_workpiece4.Name = "Sep_AccCur_parameter_workpiece4";
             // 
-            // btn_ToolWearSetting_18
+            // Sep_AccCur_parameter_workpiece5
             // 
-            this.btn_ToolWearSetting_18.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_18, "btn_ToolWearSetting_18");
-            this.btn_ToolWearSetting_18.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_18.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_18.Name = "btn_ToolWearSetting_18";
-            this.btn_ToolWearSetting_18.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_18.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_workpiece5.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_workpiece5, "Sep_AccCur_parameter_workpiece5");
+            this.Sep_AccCur_parameter_workpiece5.Name = "Sep_AccCur_parameter_workpiece5";
             // 
-            // btn_ToolWearSetting_17
+            // Sep_AccCur_parameter_workpiece6
             // 
-            this.btn_ToolWearSetting_17.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_17, "btn_ToolWearSetting_17");
-            this.btn_ToolWearSetting_17.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_17.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_17.Name = "btn_ToolWearSetting_17";
-            this.btn_ToolWearSetting_17.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_17.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_workpiece6.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_workpiece6, "Sep_AccCur_parameter_workpiece6");
+            this.Sep_AccCur_parameter_workpiece6.Name = "Sep_AccCur_parameter_workpiece6";
             // 
-            // btn_ToolWearSetting_16
+            // Sep_AccCur_parameter_type6
             // 
-            this.btn_ToolWearSetting_16.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_16, "btn_ToolWearSetting_16");
-            this.btn_ToolWearSetting_16.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_16.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_16.Name = "btn_ToolWearSetting_16";
-            this.btn_ToolWearSetting_16.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_16.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_type6.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_type6, "Sep_AccCur_parameter_type6");
+            this.Sep_AccCur_parameter_type6.Name = "Sep_AccCur_parameter_type6";
             // 
-            // btn_ToolWearSetting_15
+            // Sep_AccCur_parameter_type5
             // 
-            this.btn_ToolWearSetting_15.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_15, "btn_ToolWearSetting_15");
-            this.btn_ToolWearSetting_15.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_15.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_15.Name = "btn_ToolWearSetting_15";
-            this.btn_ToolWearSetting_15.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_15.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_type5.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_type5, "Sep_AccCur_parameter_type5");
+            this.Sep_AccCur_parameter_type5.Name = "Sep_AccCur_parameter_type5";
             // 
-            // btn_ToolWearSetting_14
+            // Sep_AccCur_parameter_type4
             // 
-            this.btn_ToolWearSetting_14.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_14, "btn_ToolWearSetting_14");
-            this.btn_ToolWearSetting_14.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_14.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_14.Name = "btn_ToolWearSetting_14";
-            this.btn_ToolWearSetting_14.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_14.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_type4.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_type4, "Sep_AccCur_parameter_type4");
+            this.Sep_AccCur_parameter_type4.Name = "Sep_AccCur_parameter_type4";
             // 
-            // btn_ToolWearSetting_13
+            // Sep_AccCur_parameter_type3
             // 
-            this.btn_ToolWearSetting_13.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_13, "btn_ToolWearSetting_13");
-            this.btn_ToolWearSetting_13.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_13.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_13.Name = "btn_ToolWearSetting_13";
-            this.btn_ToolWearSetting_13.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_13.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_type3.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_type3, "Sep_AccCur_parameter_type3");
+            this.Sep_AccCur_parameter_type3.Name = "Sep_AccCur_parameter_type3";
             // 
-            // btn_ToolWearSetting_12
+            // Sep_AccCur_parameter_type2
             // 
-            this.btn_ToolWearSetting_12.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_12, "btn_ToolWearSetting_12");
-            this.btn_ToolWearSetting_12.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_12.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_12.Name = "btn_ToolWearSetting_12";
-            this.btn_ToolWearSetting_12.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_12.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_type2.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_type2, "Sep_AccCur_parameter_type2");
+            this.Sep_AccCur_parameter_type2.Name = "Sep_AccCur_parameter_type2";
             // 
-            // btn_ToolWearSetting_11
+            // Sep_AccCur_parameter_type1
             // 
-            this.btn_ToolWearSetting_11.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_11, "btn_ToolWearSetting_11");
-            this.btn_ToolWearSetting_11.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_11.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_11.Name = "btn_ToolWearSetting_11";
-            this.btn_ToolWearSetting_11.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_11.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_type1.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_type1, "Sep_AccCur_parameter_type1");
+            this.Sep_AccCur_parameter_type1.Name = "Sep_AccCur_parameter_type1";
             // 
-            // btn_ToolWearSetting_10
+            // Sep_AccCur_parameter_type7
             // 
-            this.btn_ToolWearSetting_10.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_10, "btn_ToolWearSetting_10");
-            this.btn_ToolWearSetting_10.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_10.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_10.Name = "btn_ToolWearSetting_10";
-            this.btn_ToolWearSetting_10.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_10.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_type7.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_type7, "Sep_AccCur_parameter_type7");
+            this.Sep_AccCur_parameter_type7.Name = "Sep_AccCur_parameter_type7";
             // 
-            // btn_ToolWearSetting_09
+            // Sep_AccCur_parameter_workpiece7
             // 
-            this.btn_ToolWearSetting_09.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_09, "btn_ToolWearSetting_09");
-            this.btn_ToolWearSetting_09.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_09.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_09.Name = "btn_ToolWearSetting_09";
-            this.btn_ToolWearSetting_09.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_09.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.Sep_AccCur_parameter_workpiece7.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Sep_AccCur_parameter_workpiece7, "Sep_AccCur_parameter_workpiece7");
+            this.Sep_AccCur_parameter_workpiece7.Name = "Sep_AccCur_parameter_workpiece7";
             // 
-            // btn_ToolWearSetting_08
+            // btn_AccCur_parameter_workpieceDelete
             // 
-            this.btn_ToolWearSetting_08.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_08, "btn_ToolWearSetting_08");
-            this.btn_ToolWearSetting_08.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_08.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_08.Name = "btn_ToolWearSetting_08";
-            this.btn_ToolWearSetting_08.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_08.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.btn_AccCur_parameter_workpieceDelete.BackColor = System.Drawing.Color.Red;
+            this.btn_AccCur_parameter_workpieceDelete.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_delete;
+            resources.ApplyResources(this.btn_AccCur_parameter_workpieceDelete, "btn_AccCur_parameter_workpieceDelete");
+            this.btn_AccCur_parameter_workpieceDelete.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_parameter_workpieceDelete.Name = "btn_AccCur_parameter_workpieceDelete";
+            this.btn_AccCur_parameter_workpieceDelete.UseVisualStyleBackColor = false;
+            this.btn_AccCur_parameter_workpieceDelete.Click += new System.EventHandler(this.btn_AccCur_parameter_workpieceDelete_Click);
             // 
-            // btn_ToolWearSetting_07
+            // btn_AccCur_parameter_typeDelete
             // 
-            this.btn_ToolWearSetting_07.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_07, "btn_ToolWearSetting_07");
-            this.btn_ToolWearSetting_07.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_07.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_07.Name = "btn_ToolWearSetting_07";
-            this.btn_ToolWearSetting_07.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_07.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
+            this.btn_AccCur_parameter_typeDelete.BackColor = System.Drawing.Color.Red;
+            this.btn_AccCur_parameter_typeDelete.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_delete;
+            resources.ApplyResources(this.btn_AccCur_parameter_typeDelete, "btn_AccCur_parameter_typeDelete");
+            this.btn_AccCur_parameter_typeDelete.FlatAppearance.BorderSize = 0;
+            this.btn_AccCur_parameter_typeDelete.Name = "btn_AccCur_parameter_typeDelete";
+            this.btn_AccCur_parameter_typeDelete.UseVisualStyleBackColor = false;
+            this.btn_AccCur_parameter_typeDelete.Click += new System.EventHandler(this.btn_AccCur_parameter_typeDelete_Click);
             // 
-            // btn_ToolWearSetting_06
+            // label134
             // 
-            this.btn_ToolWearSetting_06.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_06, "btn_ToolWearSetting_06");
-            this.btn_ToolWearSetting_06.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_06.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_06.Name = "btn_ToolWearSetting_06";
-            this.btn_ToolWearSetting_06.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_06.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_05
-            // 
-            this.btn_ToolWearSetting_05.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_05, "btn_ToolWearSetting_05");
-            this.btn_ToolWearSetting_05.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_05.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_05.Name = "btn_ToolWearSetting_05";
-            this.btn_ToolWearSetting_05.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_05.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_04
-            // 
-            this.btn_ToolWearSetting_04.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_04, "btn_ToolWearSetting_04");
-            this.btn_ToolWearSetting_04.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_04.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_04.Name = "btn_ToolWearSetting_04";
-            this.btn_ToolWearSetting_04.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_04.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_03
-            // 
-            this.btn_ToolWearSetting_03.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_03, "btn_ToolWearSetting_03");
-            this.btn_ToolWearSetting_03.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_03.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_03.Name = "btn_ToolWearSetting_03";
-            this.btn_ToolWearSetting_03.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_03.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_02
-            // 
-            this.btn_ToolWearSetting_02.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_02, "btn_ToolWearSetting_02");
-            this.btn_ToolWearSetting_02.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_02.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_02.Name = "btn_ToolWearSetting_02";
-            this.btn_ToolWearSetting_02.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_02.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_01
-            // 
-            this.btn_ToolWearSetting_01.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWearSetting_01, "btn_ToolWearSetting_01");
-            this.btn_ToolWearSetting_01.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_01.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_01.Name = "btn_ToolWearSetting_01";
-            this.btn_ToolWearSetting_01.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_01.Click += new System.EventHandler(this.btn_ToolWearSetting_Choose);
-            // 
-            // btn_ToolWearSetting_Back
-            // 
-            this.btn_ToolWearSetting_Back.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWearSetting_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_ToolWearSetting_Back, "btn_ToolWearSetting_Back");
-            this.btn_ToolWearSetting_Back.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWearSetting_Back.Name = "btn_ToolWearSetting_Back";
-            this.btn_ToolWearSetting_Back.UseVisualStyleBackColor = false;
-            this.btn_ToolWearSetting_Back.Click += new System.EventHandler(this.btn_ToolWearSetting_Back_Click);
-            // 
-            // pb_ToolWear
-            // 
-            this.pb_ToolWear.BackColor = System.Drawing.Color.Transparent;
-            this.pb_ToolWear.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
-            resources.ApplyResources(this.pb_ToolWear, "pb_ToolWear");
-            this.pb_ToolWear.Name = "pb_ToolWear";
-            this.pb_ToolWear.TabStop = false;
-            this.pb_ToolWear.Click += new System.EventHandler(this.pb_ToolWear_Click);
-            // 
-            // btn_Threshold
-            // 
-            this.btn_Threshold.BackColor = System.Drawing.Color.White;
-            this.btn_Threshold.BackgroundImage = global::ToolWear.Properties.Resources.wd_btn_threshold;
-            resources.ApplyResources(this.btn_Threshold, "btn_Threshold");
-            this.btn_Threshold.FlatAppearance.BorderSize = 0;
-            this.btn_Threshold.Name = "btn_Threshold";
-            this.btn_Threshold.UseVisualStyleBackColor = false;
-            this.btn_Threshold.Click += new System.EventHandler(this.btn_ToolWear_Threshold_Click);
-            // 
-            // btn_ToolWear_20
-            // 
-            this.btn_ToolWear_20.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_20, "btn_ToolWear_20");
-            this.btn_ToolWear_20.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_20.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_20.Name = "btn_ToolWear_20";
-            this.btn_ToolWear_20.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_20.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_19
-            // 
-            this.btn_ToolWear_19.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_19, "btn_ToolWear_19");
-            this.btn_ToolWear_19.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_19.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_19.Name = "btn_ToolWear_19";
-            this.btn_ToolWear_19.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_19.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_18
-            // 
-            this.btn_ToolWear_18.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_18, "btn_ToolWear_18");
-            this.btn_ToolWear_18.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_18.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_18.Name = "btn_ToolWear_18";
-            this.btn_ToolWear_18.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_18.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_17
-            // 
-            this.btn_ToolWear_17.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_17, "btn_ToolWear_17");
-            this.btn_ToolWear_17.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_17.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_17.Name = "btn_ToolWear_17";
-            this.btn_ToolWear_17.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_17.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_16
-            // 
-            this.btn_ToolWear_16.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_16, "btn_ToolWear_16");
-            this.btn_ToolWear_16.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_16.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_16.Name = "btn_ToolWear_16";
-            this.btn_ToolWear_16.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_16.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_15
-            // 
-            this.btn_ToolWear_15.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_15, "btn_ToolWear_15");
-            this.btn_ToolWear_15.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_15.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_15.Name = "btn_ToolWear_15";
-            this.btn_ToolWear_15.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_15.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_14
-            // 
-            this.btn_ToolWear_14.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_14, "btn_ToolWear_14");
-            this.btn_ToolWear_14.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_14.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_14.Name = "btn_ToolWear_14";
-            this.btn_ToolWear_14.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_14.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_13
-            // 
-            this.btn_ToolWear_13.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_13, "btn_ToolWear_13");
-            this.btn_ToolWear_13.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_13.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_13.Name = "btn_ToolWear_13";
-            this.btn_ToolWear_13.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_13.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_12
-            // 
-            this.btn_ToolWear_12.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_12, "btn_ToolWear_12");
-            this.btn_ToolWear_12.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_12.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_12.Name = "btn_ToolWear_12";
-            this.btn_ToolWear_12.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_12.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_11
-            // 
-            this.btn_ToolWear_11.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_11, "btn_ToolWear_11");
-            this.btn_ToolWear_11.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_11.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_11.Name = "btn_ToolWear_11";
-            this.btn_ToolWear_11.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_11.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_10
-            // 
-            this.btn_ToolWear_10.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_10, "btn_ToolWear_10");
-            this.btn_ToolWear_10.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_10.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_10.Name = "btn_ToolWear_10";
-            this.btn_ToolWear_10.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_10.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_09
-            // 
-            this.btn_ToolWear_09.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_09, "btn_ToolWear_09");
-            this.btn_ToolWear_09.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_09.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_09.Name = "btn_ToolWear_09";
-            this.btn_ToolWear_09.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_09.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_08
-            // 
-            this.btn_ToolWear_08.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_08, "btn_ToolWear_08");
-            this.btn_ToolWear_08.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_08.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_08.Name = "btn_ToolWear_08";
-            this.btn_ToolWear_08.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_08.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_07
-            // 
-            this.btn_ToolWear_07.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_07, "btn_ToolWear_07");
-            this.btn_ToolWear_07.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_07.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_07.Name = "btn_ToolWear_07";
-            this.btn_ToolWear_07.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_07.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_06
-            // 
-            this.btn_ToolWear_06.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_06, "btn_ToolWear_06");
-            this.btn_ToolWear_06.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_06.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_06.Name = "btn_ToolWear_06";
-            this.btn_ToolWear_06.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_06.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_05
-            // 
-            this.btn_ToolWear_05.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_05, "btn_ToolWear_05");
-            this.btn_ToolWear_05.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_05.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_05.Name = "btn_ToolWear_05";
-            this.btn_ToolWear_05.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_05.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_04
-            // 
-            this.btn_ToolWear_04.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_04, "btn_ToolWear_04");
-            this.btn_ToolWear_04.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_04.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_04.Name = "btn_ToolWear_04";
-            this.btn_ToolWear_04.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_04.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_03
-            // 
-            this.btn_ToolWear_03.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_03, "btn_ToolWear_03");
-            this.btn_ToolWear_03.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_03.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_03.Name = "btn_ToolWear_03";
-            this.btn_ToolWear_03.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_03.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_02
-            // 
-            this.btn_ToolWear_02.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_02, "btn_ToolWear_02");
-            this.btn_ToolWear_02.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_02.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_02.Name = "btn_ToolWear_02";
-            this.btn_ToolWear_02.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_02.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_01
-            // 
-            this.btn_ToolWear_01.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ToolWear_01, "btn_ToolWear_01");
-            this.btn_ToolWear_01.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_01.ForeColor = System.Drawing.Color.White;
-            this.btn_ToolWear_01.Name = "btn_ToolWear_01";
-            this.btn_ToolWear_01.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_01.Click += new System.EventHandler(this.btn_ToolWear_Choose);
-            // 
-            // btn_ToolWear_Change
-            // 
-            this.btn_ToolWear_Change.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_Change.BackgroundImage = global::ToolWear.Properties.Resources.wd_btn_chart;
-            resources.ApplyResources(this.btn_ToolWear_Change, "btn_ToolWear_Change");
-            this.btn_ToolWear_Change.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_Change.Name = "btn_ToolWear_Change";
-            this.btn_ToolWear_Change.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_Change.Click += new System.EventHandler(this.btn_ToolWear_Change_Click);
-            // 
-            // btn_ToolWear_Setting
-            // 
-            this.btn_ToolWear_Setting.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_Setting.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_setting;
-            resources.ApplyResources(this.btn_ToolWear_Setting, "btn_ToolWear_Setting");
-            this.btn_ToolWear_Setting.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_Setting.Name = "btn_ToolWear_Setting";
-            this.btn_ToolWear_Setting.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_Setting.Click += new System.EventHandler(this.btn_ToolWear_Setting_Click);
-            // 
-            // btn_ToolWear_Stop
-            // 
-            this.btn_ToolWear_Stop.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_Stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
-            resources.ApplyResources(this.btn_ToolWear_Stop, "btn_ToolWear_Stop");
-            this.btn_ToolWear_Stop.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_Stop.Name = "btn_ToolWear_Stop";
-            this.btn_ToolWear_Stop.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_Stop.Click += new System.EventHandler(this.btn_ToolWear_Stop_Click);
-            // 
-            // btn_ToolWear_Start
-            // 
-            this.btn_ToolWear_Start.BackColor = System.Drawing.Color.White;
-            this.btn_ToolWear_Start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
-            resources.ApplyResources(this.btn_ToolWear_Start, "btn_ToolWear_Start");
-            this.btn_ToolWear_Start.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear_Start.Name = "btn_ToolWear_Start";
-            this.btn_ToolWear_Start.UseVisualStyleBackColor = false;
-            this.btn_ToolWear_Start.Click += new System.EventHandler(this.btn_ToolWear_Start_Click);
-            // 
-            // btn_shutdown
-            // 
-            this.btn_shutdown.BackColor = System.Drawing.Color.Transparent;
-            this.btn_shutdown.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_shutdown;
-            resources.ApplyResources(this.btn_shutdown, "btn_shutdown");
-            this.btn_shutdown.FlatAppearance.BorderSize = 0;
-            this.btn_shutdown.Name = "btn_shutdown";
-            this.btn_shutdown.UseVisualStyleBackColor = false;
-            this.btn_shutdown.Click += new System.EventHandler(this.btn_shutdown_Click);
-            // 
-            // btn_ChangeMode3
-            // 
-            this.btn_ChangeMode3.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ChangeMode3.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_blank;
-            resources.ApplyResources(this.btn_ChangeMode3, "btn_ChangeMode3");
-            this.btn_ChangeMode3.FlatAppearance.BorderSize = 0;
-            this.btn_ChangeMode3.Name = "btn_ChangeMode3";
-            this.btn_ChangeMode3.UseVisualStyleBackColor = false;
-            this.btn_ChangeMode3.Click += new System.EventHandler(this.btn_ChangeMode3_Click);
-            // 
-            // btn_ChangeMode
-            // 
-            this.btn_ChangeMode.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ChangeMode.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_blank;
-            resources.ApplyResources(this.btn_ChangeMode, "btn_ChangeMode");
-            this.btn_ChangeMode.FlatAppearance.BorderSize = 0;
-            this.btn_ChangeMode.Name = "btn_ChangeMode";
-            this.btn_ChangeMode.UseVisualStyleBackColor = false;
-            this.btn_ChangeMode.Click += new System.EventHandler(this.btn_ChangeMode_Click);
-            // 
-            // btn_ChangeMode2
-            // 
-            this.btn_ChangeMode2.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ChangeMode2.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_blank;
-            resources.ApplyResources(this.btn_ChangeMode2, "btn_ChangeMode2");
-            this.btn_ChangeMode2.FlatAppearance.BorderSize = 0;
-            this.btn_ChangeMode2.Name = "btn_ChangeMode2";
-            this.btn_ChangeMode2.UseVisualStyleBackColor = false;
-            // 
-            // btn_ChangeMode0
-            // 
-            this.btn_ChangeMode0.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ChangeMode0.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_blank;
-            resources.ApplyResources(this.btn_ChangeMode0, "btn_ChangeMode0");
-            this.btn_ChangeMode0.FlatAppearance.BorderSize = 0;
-            this.btn_ChangeMode0.Name = "btn_ChangeMode0";
-            this.btn_ChangeMode0.UseVisualStyleBackColor = false;
-            this.btn_ChangeMode0.Click += new System.EventHandler(this.btn_ChangeMode0_Click);
-            // 
-            // btn_Learn
-            // 
-            this.btn_Learn.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Learn.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_blank;
-            resources.ApplyResources(this.btn_Learn, "btn_Learn");
-            this.btn_Learn.FlatAppearance.BorderSize = 0;
-            this.btn_Learn.Name = "btn_Learn";
-            this.btn_Learn.UseVisualStyleBackColor = false;
-            this.btn_Learn.Click += new System.EventHandler(this.btn_Learn_Click);
-            // 
-            // btn_logo
-            // 
-            this.btn_logo.BackColor = System.Drawing.Color.Transparent;
-            this.btn_logo.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_camprologo;
-            resources.ApplyResources(this.btn_logo, "btn_logo");
-            this.btn_logo.FlatAppearance.BorderSize = 0;
-            this.btn_logo.Name = "btn_logo";
-            this.btn_logo.UseVisualStyleBackColor = false;
-            this.btn_logo.Click += new System.EventHandler(this.FormBorderMode);
-            // 
-            // btn_ATCsetting
-            // 
-            this.btn_ATCsetting.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ATCsetting.BackgroundImage = global::ToolWear.Properties.Resources.menubtn_th;
-            resources.ApplyResources(this.btn_ATCsetting, "btn_ATCsetting");
-            this.btn_ATCsetting.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting.Name = "btn_ATCsetting";
-            this.btn_ATCsetting.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting.Click += new System.EventHandler(this.btn_ATCsetting_Click);
-            // 
-            // btn_Health
-            // 
-            this.btn_Health.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Health.BackgroundImage = global::ToolWear.Properties.Resources.menubtn_health;
-            resources.ApplyResources(this.btn_Health, "btn_Health");
-            this.btn_Health.FlatAppearance.BorderSize = 0;
-            this.btn_Health.Name = "btn_Health";
-            this.btn_Health.UseVisualStyleBackColor = false;
-            this.btn_Health.Click += new System.EventHandler(this.btn_Health_Click);
-            // 
-            // btn_Thermal
-            // 
-            this.btn_Thermal.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Thermal.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_tc;
-            resources.ApplyResources(this.btn_Thermal, "btn_Thermal");
-            this.btn_Thermal.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Thermal.Name = "btn_Thermal";
-            this.btn_Thermal.UseVisualStyleBackColor = false;
-            this.btn_Thermal.Click += new System.EventHandler(this.btn_Thermal_Click);
-            // 
-            // btn_ToolWear
-            // 
-            this.btn_ToolWear.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ToolWear.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_wd;
-            resources.ApplyResources(this.btn_ToolWear, "btn_ToolWear");
-            this.btn_ToolWear.FlatAppearance.BorderSize = 0;
-            this.btn_ToolWear.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_ToolWear.Name = "btn_ToolWear";
-            this.btn_ToolWear.UseVisualStyleBackColor = false;
-            this.btn_ToolWear.Click += new System.EventHandler(this.btn_ToolWear_Click);
-            // 
-            // btn_setting
-            // 
-            this.btn_setting.BackColor = System.Drawing.Color.Transparent;
-            this.btn_setting.BackgroundImage = global::ToolWear.Properties.Resources.tc_menubtn_setting;
-            resources.ApplyResources(this.btn_setting, "btn_setting");
-            this.btn_setting.FlatAppearance.BorderSize = 0;
-            this.btn_setting.Name = "btn_setting";
-            this.btn_setting.UseVisualStyleBackColor = false;
-            this.btn_setting.Click += new System.EventHandler(this.btn_setting_Click);
-            // 
-            // btn_Threshold_delete
-            // 
-            this.btn_Threshold_delete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Threshold_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_t_delete;
-            resources.ApplyResources(this.btn_Threshold_delete, "btn_Threshold_delete");
-            this.btn_Threshold_delete.FlatAppearance.BorderSize = 0;
-            this.btn_Threshold_delete.Name = "btn_Threshold_delete";
-            this.btn_Threshold_delete.UseVisualStyleBackColor = false;
-            this.btn_Threshold_delete.Click += new System.EventHandler(this.btn_Threshold_delete_Click);
-            // 
-            // btn_Threshold_save
-            // 
-            this.btn_Threshold_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Threshold_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_t_save;
-            resources.ApplyResources(this.btn_Threshold_save, "btn_Threshold_save");
-            this.btn_Threshold_save.FlatAppearance.BorderSize = 0;
-            this.btn_Threshold_save.Name = "btn_Threshold_save";
-            this.btn_Threshold_save.UseVisualStyleBackColor = false;
-            this.btn_Threshold_save.Click += new System.EventHandler(this.btn_Threshold_save_Click);
-            // 
-            // btn_Threshold_down
-            // 
-            this.btn_Threshold_down.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Threshold_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_Threshold_down, "btn_Threshold_down");
-            this.btn_Threshold_down.FlatAppearance.BorderSize = 0;
-            this.btn_Threshold_down.Name = "btn_Threshold_down";
-            this.btn_Threshold_down.UseVisualStyleBackColor = false;
-            this.btn_Threshold_down.Click += new System.EventHandler(this.btn_Threshold_Down_Click);
-            // 
-            // btn_Threshold_up
-            // 
-            this.btn_Threshold_up.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Threshold_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_Threshold_up, "btn_Threshold_up");
-            this.btn_Threshold_up.FlatAppearance.BorderSize = 0;
-            this.btn_Threshold_up.Name = "btn_Threshold_up";
-            this.btn_Threshold_up.UseVisualStyleBackColor = false;
-            this.btn_Threshold_up.Click += new System.EventHandler(this.btn_Threshold_Up_Click);
-            // 
-            // btn_Threshold_Back
-            // 
-            this.btn_Threshold_Back.BackColor = System.Drawing.Color.White;
-            this.btn_Threshold_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_Threshold_Back, "btn_Threshold_Back");
-            this.btn_Threshold_Back.FlatAppearance.BorderSize = 0;
-            this.btn_Threshold_Back.Name = "btn_Threshold_Back";
-            this.btn_Threshold_Back.UseVisualStyleBackColor = false;
-            this.btn_Threshold_Back.Click += new System.EventHandler(this.btn_Threshold_Back_Click);
-            // 
-            // numeric_Compensate_Down
-            // 
-            this.numeric_Compensate_Down.BackColor = System.Drawing.Color.White;
-            this.numeric_Compensate_Down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.numeric_Compensate_Down, "numeric_Compensate_Down");
-            this.numeric_Compensate_Down.FlatAppearance.BorderSize = 0;
-            this.numeric_Compensate_Down.ForeColor = System.Drawing.Color.White;
-            this.numeric_Compensate_Down.Name = "numeric_Compensate_Down";
-            this.numeric_Compensate_Down.UseVisualStyleBackColor = false;
-            this.numeric_Compensate_Down.Click += new System.EventHandler(this.numeric_Compensate_Down_Click);
-            // 
-            // numeric_Compensate_Up
-            // 
-            this.numeric_Compensate_Up.BackColor = System.Drawing.Color.White;
-            this.numeric_Compensate_Up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.numeric_Compensate_Up, "numeric_Compensate_Up");
-            this.numeric_Compensate_Up.FlatAppearance.BorderSize = 0;
-            this.numeric_Compensate_Up.ForeColor = System.Drawing.Color.White;
-            this.numeric_Compensate_Up.Name = "numeric_Compensate_Up";
-            this.numeric_Compensate_Up.UseVisualStyleBackColor = false;
-            this.numeric_Compensate_Up.Click += new System.EventHandler(this.numeric_Compensate_Up_Click);
-            // 
-            // numeric_Temperature_Down
-            // 
-            this.numeric_Temperature_Down.BackColor = System.Drawing.Color.White;
-            this.numeric_Temperature_Down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.numeric_Temperature_Down, "numeric_Temperature_Down");
-            this.numeric_Temperature_Down.FlatAppearance.BorderSize = 0;
-            this.numeric_Temperature_Down.ForeColor = System.Drawing.Color.White;
-            this.numeric_Temperature_Down.Name = "numeric_Temperature_Down";
-            this.numeric_Temperature_Down.UseVisualStyleBackColor = false;
-            this.numeric_Temperature_Down.Click += new System.EventHandler(this.numeric_Temperature_Down_Click);
-            // 
-            // numeric_Temperature_Up
-            // 
-            this.numeric_Temperature_Up.BackColor = System.Drawing.Color.White;
-            this.numeric_Temperature_Up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.numeric_Temperature_Up, "numeric_Temperature_Up");
-            this.numeric_Temperature_Up.FlatAppearance.BorderSize = 0;
-            this.numeric_Temperature_Up.ForeColor = System.Drawing.Color.White;
-            this.numeric_Temperature_Up.Name = "numeric_Temperature_Up";
-            this.numeric_Temperature_Up.UseVisualStyleBackColor = false;
-            this.numeric_Temperature_Up.Click += new System.EventHandler(this.numeric_Temperature_Up_Click);
-            // 
-            // btn_CompensateSave
-            // 
-            this.btn_CompensateSave.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSave.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_save;
-            resources.ApplyResources(this.btn_CompensateSave, "btn_CompensateSave");
-            this.btn_CompensateSave.FlatAppearance.BorderSize = 0;
-            this.btn_CompensateSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSave.Name = "btn_CompensateSave";
-            this.btn_CompensateSave.UseVisualStyleBackColor = false;
-            this.btn_CompensateSave.Click += new System.EventHandler(this.btn_CompensateSave_Click);
-            // 
-            // btn_Compensate_20
-            // 
-            this.btn_Compensate_20.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_20, "btn_Compensate_20");
-            this.btn_Compensate_20.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_20.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_20.Name = "btn_Compensate_20";
-            this.btn_Compensate_20.UseVisualStyleBackColor = false;
-            this.btn_Compensate_20.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_19
-            // 
-            this.btn_Compensate_19.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_19, "btn_Compensate_19");
-            this.btn_Compensate_19.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_19.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_19.Name = "btn_Compensate_19";
-            this.btn_Compensate_19.UseVisualStyleBackColor = false;
-            this.btn_Compensate_19.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_18
-            // 
-            this.btn_Compensate_18.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_18, "btn_Compensate_18");
-            this.btn_Compensate_18.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_18.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_18.Name = "btn_Compensate_18";
-            this.btn_Compensate_18.UseVisualStyleBackColor = false;
-            this.btn_Compensate_18.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_17
-            // 
-            this.btn_Compensate_17.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_17, "btn_Compensate_17");
-            this.btn_Compensate_17.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_17.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_17.Name = "btn_Compensate_17";
-            this.btn_Compensate_17.UseVisualStyleBackColor = false;
-            this.btn_Compensate_17.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_16
-            // 
-            this.btn_Compensate_16.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_16, "btn_Compensate_16");
-            this.btn_Compensate_16.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_16.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_16.Name = "btn_Compensate_16";
-            this.btn_Compensate_16.UseVisualStyleBackColor = false;
-            this.btn_Compensate_16.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_15
-            // 
-            this.btn_Compensate_15.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_15, "btn_Compensate_15");
-            this.btn_Compensate_15.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_15.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_15.Name = "btn_Compensate_15";
-            this.btn_Compensate_15.UseVisualStyleBackColor = false;
-            this.btn_Compensate_15.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_14
-            // 
-            this.btn_Compensate_14.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_14, "btn_Compensate_14");
-            this.btn_Compensate_14.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_14.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_14.Name = "btn_Compensate_14";
-            this.btn_Compensate_14.UseVisualStyleBackColor = false;
-            this.btn_Compensate_14.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_13
-            // 
-            this.btn_Compensate_13.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_13, "btn_Compensate_13");
-            this.btn_Compensate_13.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_13.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_13.Name = "btn_Compensate_13";
-            this.btn_Compensate_13.UseVisualStyleBackColor = false;
-            this.btn_Compensate_13.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_12
-            // 
-            this.btn_Compensate_12.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_12, "btn_Compensate_12");
-            this.btn_Compensate_12.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_12.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_12.Name = "btn_Compensate_12";
-            this.btn_Compensate_12.UseVisualStyleBackColor = false;
-            this.btn_Compensate_12.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_11
-            // 
-            this.btn_Compensate_11.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_11, "btn_Compensate_11");
-            this.btn_Compensate_11.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_11.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_11.Name = "btn_Compensate_11";
-            this.btn_Compensate_11.UseVisualStyleBackColor = false;
-            this.btn_Compensate_11.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_10
-            // 
-            this.btn_Compensate_10.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_10, "btn_Compensate_10");
-            this.btn_Compensate_10.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_10.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_10.Name = "btn_Compensate_10";
-            this.btn_Compensate_10.UseVisualStyleBackColor = false;
-            this.btn_Compensate_10.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_09
-            // 
-            this.btn_Compensate_09.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_09, "btn_Compensate_09");
-            this.btn_Compensate_09.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_09.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_09.Name = "btn_Compensate_09";
-            this.btn_Compensate_09.UseVisualStyleBackColor = false;
-            this.btn_Compensate_09.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_08
-            // 
-            this.btn_Compensate_08.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_08, "btn_Compensate_08");
-            this.btn_Compensate_08.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_08.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_08.Name = "btn_Compensate_08";
-            this.btn_Compensate_08.UseVisualStyleBackColor = false;
-            this.btn_Compensate_08.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_CompensateRemove
-            // 
-            this.btn_CompensateRemove.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateRemove.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_delete;
-            resources.ApplyResources(this.btn_CompensateRemove, "btn_CompensateRemove");
-            this.btn_CompensateRemove.FlatAppearance.BorderSize = 0;
-            this.btn_CompensateRemove.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateRemove.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateRemove.Name = "btn_CompensateRemove";
-            this.btn_CompensateRemove.UseVisualStyleBackColor = false;
-            this.btn_CompensateRemove.Click += new System.EventHandler(this.btn_CompensateRemove_Click);
-            // 
-            // btn_Compensate_07
-            // 
-            this.btn_Compensate_07.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_07, "btn_Compensate_07");
-            this.btn_Compensate_07.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_07.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_07.Name = "btn_Compensate_07";
-            this.btn_Compensate_07.UseVisualStyleBackColor = false;
-            this.btn_Compensate_07.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_CompensateAdd
-            // 
-            this.btn_CompensateAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateAdd.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_new;
-            resources.ApplyResources(this.btn_CompensateAdd, "btn_CompensateAdd");
-            this.btn_CompensateAdd.FlatAppearance.BorderSize = 0;
-            this.btn_CompensateAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateAdd.Name = "btn_CompensateAdd";
-            this.btn_CompensateAdd.UseVisualStyleBackColor = false;
-            this.btn_CompensateAdd.Click += new System.EventHandler(this.btn_CompensateAdd_Click);
-            // 
-            // btn_Compensate_06
-            // 
-            this.btn_Compensate_06.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_06, "btn_Compensate_06");
-            this.btn_Compensate_06.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_06.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_06.Name = "btn_Compensate_06";
-            this.btn_Compensate_06.UseVisualStyleBackColor = false;
-            this.btn_Compensate_06.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_05
-            // 
-            this.btn_Compensate_05.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_05, "btn_Compensate_05");
-            this.btn_Compensate_05.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_05.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_05.Name = "btn_Compensate_05";
-            this.btn_Compensate_05.UseVisualStyleBackColor = false;
-            this.btn_Compensate_05.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_04
-            // 
-            this.btn_Compensate_04.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_04, "btn_Compensate_04");
-            this.btn_Compensate_04.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_04.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_04.Name = "btn_Compensate_04";
-            this.btn_Compensate_04.UseVisualStyleBackColor = false;
-            this.btn_Compensate_04.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_03
-            // 
-            this.btn_Compensate_03.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_03, "btn_Compensate_03");
-            this.btn_Compensate_03.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_03.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_03.Name = "btn_Compensate_03";
-            this.btn_Compensate_03.UseVisualStyleBackColor = false;
-            this.btn_Compensate_03.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_02
-            // 
-            this.btn_Compensate_02.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_02, "btn_Compensate_02");
-            this.btn_Compensate_02.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_02.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_02.Name = "btn_Compensate_02";
-            this.btn_Compensate_02.UseVisualStyleBackColor = false;
-            this.btn_Compensate_02.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_Compensate_01
-            // 
-            this.btn_Compensate_01.BackColor = System.Drawing.Color.White;
-            this.btn_Compensate_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Compensate_01, "btn_Compensate_01");
-            this.btn_Compensate_01.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_01.ForeColor = System.Drawing.Color.White;
-            this.btn_Compensate_01.Name = "btn_Compensate_01";
-            this.btn_Compensate_01.UseVisualStyleBackColor = false;
-            this.btn_Compensate_01.Click += new System.EventHandler(this.btn_Compensate_Choose);
-            // 
-            // btn_ThermalSetting_Back
-            // 
-            this.btn_ThermalSetting_Back.BackColor = System.Drawing.Color.White;
-            this.btn_ThermalSetting_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_ThermalSetting_Back, "btn_ThermalSetting_Back");
-            this.btn_ThermalSetting_Back.FlatAppearance.BorderSize = 0;
-            this.btn_ThermalSetting_Back.Name = "btn_ThermalSetting_Back";
-            this.btn_ThermalSetting_Back.UseVisualStyleBackColor = false;
-            this.btn_ThermalSetting_Back.Click += new System.EventHandler(this.btn_ThermalSetting_Back_Click);
-            // 
-            // btn_Compensate_down
-            // 
-            this.btn_Compensate_down.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Compensate_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_Compensate_down, "btn_Compensate_down");
-            this.btn_Compensate_down.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_down.Name = "btn_Compensate_down";
-            this.btn_Compensate_down.UseVisualStyleBackColor = false;
-            this.btn_Compensate_down.Click += new System.EventHandler(this.btn_Compensate_down_Click);
-            // 
-            // btn_Compensate_up
-            // 
-            this.btn_Compensate_up.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Compensate_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_Compensate_up, "btn_Compensate_up");
-            this.btn_Compensate_up.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_up.Name = "btn_Compensate_up";
-            this.btn_Compensate_up.UseVisualStyleBackColor = false;
-            this.btn_Compensate_up.Click += new System.EventHandler(this.btn_Compensate_up_Click);
-            // 
-            // btn_CompensateSet_delete
-            // 
-            this.btn_CompensateSet_delete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_delete.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_delete;
-            resources.ApplyResources(this.btn_CompensateSet_delete, "btn_CompensateSet_delete");
-            this.btn_CompensateSet_delete.FlatAppearance.BorderSize = 0;
-            this.btn_CompensateSet_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_delete.Name = "btn_CompensateSet_delete";
-            this.btn_CompensateSet_delete.UseVisualStyleBackColor = false;
-            // 
-            // btn_CompensateSet_save
-            // 
-            this.btn_CompensateSet_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_save.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_save;
-            resources.ApplyResources(this.btn_CompensateSet_save, "btn_CompensateSet_save");
-            this.btn_CompensateSet_save.FlatAppearance.BorderSize = 0;
-            this.btn_CompensateSet_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_save.Name = "btn_CompensateSet_save";
-            this.btn_CompensateSet_save.UseVisualStyleBackColor = false;
-            this.btn_CompensateSet_save.Click += new System.EventHandler(this.btn_CompensateSet_save_Click);
-            // 
-            // btn_Thermal_stop
-            // 
-            this.btn_Thermal_stop.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
-            resources.ApplyResources(this.btn_Thermal_stop, "btn_Thermal_stop");
-            this.btn_Thermal_stop.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_stop.Name = "btn_Thermal_stop";
-            this.btn_Thermal_stop.UseVisualStyleBackColor = false;
-            this.btn_Thermal_stop.Click += new System.EventHandler(this.btn_Thermal_stop_Click);
-            // 
-            // btn_Thermal_start
-            // 
-            this.btn_Thermal_start.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_start.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_ply;
-            resources.ApplyResources(this.btn_Thermal_start, "btn_Thermal_start");
-            this.btn_Thermal_start.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_start.Name = "btn_Thermal_start";
-            this.btn_Thermal_start.UseVisualStyleBackColor = false;
-            this.btn_Thermal_start.Click += new System.EventHandler(this.btn_Thermal_start_Click);
-            // 
-            // btn_Thermal_20
-            // 
-            this.btn_Thermal_20.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_20, "btn_Thermal_20");
-            this.btn_Thermal_20.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_20.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_20.Name = "btn_Thermal_20";
-            this.btn_Thermal_20.UseVisualStyleBackColor = false;
-            this.btn_Thermal_20.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_19
-            // 
-            this.btn_Thermal_19.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_19, "btn_Thermal_19");
-            this.btn_Thermal_19.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_19.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_19.Name = "btn_Thermal_19";
-            this.btn_Thermal_19.UseVisualStyleBackColor = false;
-            this.btn_Thermal_19.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_18
-            // 
-            this.btn_Thermal_18.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_18, "btn_Thermal_18");
-            this.btn_Thermal_18.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_18.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_18.Name = "btn_Thermal_18";
-            this.btn_Thermal_18.UseVisualStyleBackColor = false;
-            this.btn_Thermal_18.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_17
-            // 
-            this.btn_Thermal_17.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_17, "btn_Thermal_17");
-            this.btn_Thermal_17.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_17.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_17.Name = "btn_Thermal_17";
-            this.btn_Thermal_17.UseVisualStyleBackColor = false;
-            this.btn_Thermal_17.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_16
-            // 
-            this.btn_Thermal_16.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_16, "btn_Thermal_16");
-            this.btn_Thermal_16.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_16.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_16.Name = "btn_Thermal_16";
-            this.btn_Thermal_16.UseVisualStyleBackColor = false;
-            this.btn_Thermal_16.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_15
-            // 
-            this.btn_Thermal_15.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_15, "btn_Thermal_15");
-            this.btn_Thermal_15.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_15.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_15.Name = "btn_Thermal_15";
-            this.btn_Thermal_15.UseVisualStyleBackColor = false;
-            this.btn_Thermal_15.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_14
-            // 
-            this.btn_Thermal_14.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_14, "btn_Thermal_14");
-            this.btn_Thermal_14.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_14.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_14.Name = "btn_Thermal_14";
-            this.btn_Thermal_14.UseVisualStyleBackColor = false;
-            this.btn_Thermal_14.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_13
-            // 
-            this.btn_Thermal_13.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_13, "btn_Thermal_13");
-            this.btn_Thermal_13.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_13.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_13.Name = "btn_Thermal_13";
-            this.btn_Thermal_13.UseVisualStyleBackColor = false;
-            this.btn_Thermal_13.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_12
-            // 
-            this.btn_Thermal_12.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_12, "btn_Thermal_12");
-            this.btn_Thermal_12.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_12.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_12.Name = "btn_Thermal_12";
-            this.btn_Thermal_12.UseVisualStyleBackColor = false;
-            this.btn_Thermal_12.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_11
-            // 
-            this.btn_Thermal_11.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_11, "btn_Thermal_11");
-            this.btn_Thermal_11.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_11.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_11.Name = "btn_Thermal_11";
-            this.btn_Thermal_11.UseVisualStyleBackColor = false;
-            this.btn_Thermal_11.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_10
-            // 
-            this.btn_Thermal_10.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_10, "btn_Thermal_10");
-            this.btn_Thermal_10.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_10.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_10.Name = "btn_Thermal_10";
-            this.btn_Thermal_10.UseVisualStyleBackColor = false;
-            this.btn_Thermal_10.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_09
-            // 
-            this.btn_Thermal_09.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_09, "btn_Thermal_09");
-            this.btn_Thermal_09.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_09.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_09.Name = "btn_Thermal_09";
-            this.btn_Thermal_09.UseVisualStyleBackColor = false;
-            this.btn_Thermal_09.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_08
-            // 
-            this.btn_Thermal_08.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_08, "btn_Thermal_08");
-            this.btn_Thermal_08.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_08.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_08.Name = "btn_Thermal_08";
-            this.btn_Thermal_08.UseVisualStyleBackColor = false;
-            this.btn_Thermal_08.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_07
-            // 
-            this.btn_Thermal_07.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_07, "btn_Thermal_07");
-            this.btn_Thermal_07.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_07.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_07.Name = "btn_Thermal_07";
-            this.btn_Thermal_07.UseVisualStyleBackColor = false;
-            this.btn_Thermal_07.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_06
-            // 
-            this.btn_Thermal_06.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_06, "btn_Thermal_06");
-            this.btn_Thermal_06.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_06.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_06.Name = "btn_Thermal_06";
-            this.btn_Thermal_06.UseVisualStyleBackColor = false;
-            this.btn_Thermal_06.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_05
-            // 
-            this.btn_Thermal_05.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_05, "btn_Thermal_05");
-            this.btn_Thermal_05.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_05.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_05.Name = "btn_Thermal_05";
-            this.btn_Thermal_05.UseVisualStyleBackColor = false;
-            this.btn_Thermal_05.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_04
-            // 
-            this.btn_Thermal_04.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_04, "btn_Thermal_04");
-            this.btn_Thermal_04.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_04.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_04.Name = "btn_Thermal_04";
-            this.btn_Thermal_04.UseVisualStyleBackColor = false;
-            this.btn_Thermal_04.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_ThermalSetting
-            // 
-            this.btn_ThermalSetting.BackColor = System.Drawing.Color.White;
-            this.btn_ThermalSetting.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_setting;
-            resources.ApplyResources(this.btn_ThermalSetting, "btn_ThermalSetting");
-            this.btn_ThermalSetting.FlatAppearance.BorderSize = 0;
-            this.btn_ThermalSetting.Name = "btn_ThermalSetting";
-            this.btn_ThermalSetting.UseVisualStyleBackColor = false;
-            this.btn_ThermalSetting.Click += new System.EventHandler(this.btn_ThermalSetting_Click);
-            // 
-            // btn_Thermal_03
-            // 
-            this.btn_Thermal_03.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_03, "btn_Thermal_03");
-            this.btn_Thermal_03.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_03.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_03.Name = "btn_Thermal_03";
-            this.btn_Thermal_03.UseVisualStyleBackColor = false;
-            this.btn_Thermal_03.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_02
-            // 
-            this.btn_Thermal_02.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_02, "btn_Thermal_02");
-            this.btn_Thermal_02.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_02.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_02.Name = "btn_Thermal_02";
-            this.btn_Thermal_02.UseVisualStyleBackColor = false;
-            this.btn_Thermal_02.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_01
-            // 
-            this.btn_Thermal_01.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Thermal_01, "btn_Thermal_01");
-            this.btn_Thermal_01.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_01.ForeColor = System.Drawing.Color.White;
-            this.btn_Thermal_01.Name = "btn_Thermal_01";
-            this.btn_Thermal_01.UseVisualStyleBackColor = false;
-            this.btn_Thermal_01.Click += new System.EventHandler(this.btn_Thermal_Axial_Click);
-            // 
-            // btn_Thermal_down
-            // 
-            this.btn_Thermal_down.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_Thermal_down, "btn_Thermal_down");
-            this.btn_Thermal_down.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_down.Name = "btn_Thermal_down";
-            this.btn_Thermal_down.UseVisualStyleBackColor = false;
-            this.btn_Thermal_down.Click += new System.EventHandler(this.btn_Thermal_down_Click);
-            // 
-            // btn_Thermal_up
-            // 
-            this.btn_Thermal_up.BackColor = System.Drawing.Color.White;
-            this.btn_Thermal_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_Thermal_up, "btn_Thermal_up");
-            this.btn_Thermal_up.FlatAppearance.BorderSize = 0;
-            this.btn_Thermal_up.Name = "btn_Thermal_up";
-            this.btn_Thermal_up.UseVisualStyleBackColor = false;
-            this.btn_Thermal_up.Click += new System.EventHandler(this.btn_Thermal_up_Click);
-            // 
-            // btn_Learn_20
-            // 
-            this.btn_Learn_20.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_20, "btn_Learn_20");
-            this.btn_Learn_20.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_20.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_20.Name = "btn_Learn_20";
-            this.btn_Learn_20.UseVisualStyleBackColor = false;
-            this.btn_Learn_20.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_19
-            // 
-            this.btn_Learn_19.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_19, "btn_Learn_19");
-            this.btn_Learn_19.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_19.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_19.Name = "btn_Learn_19";
-            this.btn_Learn_19.UseVisualStyleBackColor = false;
-            this.btn_Learn_19.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_18
-            // 
-            this.btn_Learn_18.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_18, "btn_Learn_18");
-            this.btn_Learn_18.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_18.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_18.Name = "btn_Learn_18";
-            this.btn_Learn_18.UseVisualStyleBackColor = false;
-            this.btn_Learn_18.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_17
-            // 
-            this.btn_Learn_17.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_17, "btn_Learn_17");
-            this.btn_Learn_17.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_17.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_17.Name = "btn_Learn_17";
-            this.btn_Learn_17.UseVisualStyleBackColor = false;
-            this.btn_Learn_17.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_16
-            // 
-            this.btn_Learn_16.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_16, "btn_Learn_16");
-            this.btn_Learn_16.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_16.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_16.Name = "btn_Learn_16";
-            this.btn_Learn_16.UseVisualStyleBackColor = false;
-            this.btn_Learn_16.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_15
-            // 
-            this.btn_Learn_15.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_15, "btn_Learn_15");
-            this.btn_Learn_15.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_15.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_15.Name = "btn_Learn_15";
-            this.btn_Learn_15.UseVisualStyleBackColor = false;
-            this.btn_Learn_15.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_14
-            // 
-            this.btn_Learn_14.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_14, "btn_Learn_14");
-            this.btn_Learn_14.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_14.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_14.Name = "btn_Learn_14";
-            this.btn_Learn_14.UseVisualStyleBackColor = false;
-            this.btn_Learn_14.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_13
-            // 
-            this.btn_Learn_13.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_13, "btn_Learn_13");
-            this.btn_Learn_13.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_13.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_13.Name = "btn_Learn_13";
-            this.btn_Learn_13.UseVisualStyleBackColor = false;
-            this.btn_Learn_13.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_12
-            // 
-            this.btn_Learn_12.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_12, "btn_Learn_12");
-            this.btn_Learn_12.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_12.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_12.Name = "btn_Learn_12";
-            this.btn_Learn_12.UseVisualStyleBackColor = false;
-            this.btn_Learn_12.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_11
-            // 
-            this.btn_Learn_11.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_11, "btn_Learn_11");
-            this.btn_Learn_11.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_11.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_11.Name = "btn_Learn_11";
-            this.btn_Learn_11.UseVisualStyleBackColor = false;
-            this.btn_Learn_11.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_10
-            // 
-            this.btn_Learn_10.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_10, "btn_Learn_10");
-            this.btn_Learn_10.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_10.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_10.Name = "btn_Learn_10";
-            this.btn_Learn_10.UseVisualStyleBackColor = false;
-            this.btn_Learn_10.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_09
-            // 
-            this.btn_Learn_09.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_09, "btn_Learn_09");
-            this.btn_Learn_09.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_09.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_09.Name = "btn_Learn_09";
-            this.btn_Learn_09.UseVisualStyleBackColor = false;
-            this.btn_Learn_09.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_08
-            // 
-            this.btn_Learn_08.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_08, "btn_Learn_08");
-            this.btn_Learn_08.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_08.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_08.Name = "btn_Learn_08";
-            this.btn_Learn_08.UseVisualStyleBackColor = false;
-            this.btn_Learn_08.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_07
-            // 
-            this.btn_Learn_07.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_07, "btn_Learn_07");
-            this.btn_Learn_07.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_07.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_07.Name = "btn_Learn_07";
-            this.btn_Learn_07.UseVisualStyleBackColor = false;
-            this.btn_Learn_07.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_06
-            // 
-            this.btn_Learn_06.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_06, "btn_Learn_06");
-            this.btn_Learn_06.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_06.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_06.Name = "btn_Learn_06";
-            this.btn_Learn_06.UseVisualStyleBackColor = false;
-            this.btn_Learn_06.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_05
-            // 
-            this.btn_Learn_05.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_05, "btn_Learn_05");
-            this.btn_Learn_05.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_05.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_05.Name = "btn_Learn_05";
-            this.btn_Learn_05.UseVisualStyleBackColor = false;
-            this.btn_Learn_05.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_04
-            // 
-            this.btn_Learn_04.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_04, "btn_Learn_04");
-            this.btn_Learn_04.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_04.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_04.Name = "btn_Learn_04";
-            this.btn_Learn_04.UseVisualStyleBackColor = false;
-            this.btn_Learn_04.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_03
-            // 
-            this.btn_Learn_03.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_03, "btn_Learn_03");
-            this.btn_Learn_03.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_03.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_03.Name = "btn_Learn_03";
-            this.btn_Learn_03.UseVisualStyleBackColor = false;
-            this.btn_Learn_03.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_02
-            // 
-            this.btn_Learn_02.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_02, "btn_Learn_02");
-            this.btn_Learn_02.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_02.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_02.Name = "btn_Learn_02";
-            this.btn_Learn_02.UseVisualStyleBackColor = false;
-            this.btn_Learn_02.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_01
-            // 
-            this.btn_Learn_01.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_Learn_01, "btn_Learn_01");
-            this.btn_Learn_01.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_01.ForeColor = System.Drawing.Color.White;
-            this.btn_Learn_01.Name = "btn_Learn_01";
-            this.btn_Learn_01.UseVisualStyleBackColor = false;
-            this.btn_Learn_01.Click += new System.EventHandler(this.btn_Learn_Choose);
-            // 
-            // btn_Learn_Back
-            // 
-            this.btn_Learn_Back.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_Learn_Back, "btn_Learn_Back");
-            this.btn_Learn_Back.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_Back.Name = "btn_Learn_Back";
-            this.btn_Learn_Back.UseVisualStyleBackColor = false;
-            this.btn_Learn_Back.Click += new System.EventHandler(this.btn_Learn_Cancel_Click);
-            // 
-            // btn_Learn_OK
-            // 
-            this.btn_Learn_OK.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_OK.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
-            resources.ApplyResources(this.btn_Learn_OK, "btn_Learn_OK");
-            this.btn_Learn_OK.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_OK.Name = "btn_Learn_OK";
-            this.btn_Learn_OK.UseVisualStyleBackColor = false;
-            this.btn_Learn_OK.Click += new System.EventHandler(this.btn_Learn_OK_Click);
-            // 
-            // btn_Learn_Start
-            // 
-            this.btn_Learn_Start.BackColor = System.Drawing.Color.White;
-            this.btn_Learn_Start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
-            resources.ApplyResources(this.btn_Learn_Start, "btn_Learn_Start");
-            this.btn_Learn_Start.FlatAppearance.BorderSize = 0;
-            this.btn_Learn_Start.Name = "btn_Learn_Start";
-            this.btn_Learn_Start.UseVisualStyleBackColor = false;
-            this.btn_Learn_Start.Click += new System.EventHandler(this.btn_Learn_Start_Click);
-            // 
-            // pb_Learn
-            // 
-            this.pb_Learn.BackColor = System.Drawing.Color.Transparent;
-            this.pb_Learn.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
-            resources.ApplyResources(this.pb_Learn, "pb_Learn");
-            this.pb_Learn.Name = "pb_Learn";
-            this.pb_Learn.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_AlarmSet
-            // 
-            this.btn_AlarmSet.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AlarmSet.BackgroundImage = global::ToolWear.Properties.Resources.alarm;
-            resources.ApplyResources(this.btn_AlarmSet, "btn_AlarmSet");
-            this.btn_AlarmSet.FlatAppearance.BorderSize = 0;
-            this.btn_AlarmSet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_AlarmSet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_AlarmSet.Name = "btn_AlarmSet";
-            this.btn_AlarmSet.UseVisualStyleBackColor = false;
-            this.btn_AlarmSet.Click += new System.EventHandler(this.btn_AlarmSet_Click);
-            // 
-            // btn_setting_Reconnection
-            // 
-            this.btn_setting_Reconnection.BackColor = System.Drawing.Color.White;
-            this.btn_setting_Reconnection.BackgroundImage = global::ToolWear.Properties.Resources.wds_icon_reconnect;
-            resources.ApplyResources(this.btn_setting_Reconnection, "btn_setting_Reconnection");
-            this.btn_setting_Reconnection.FlatAppearance.BorderSize = 0;
-            this.btn_setting_Reconnection.Name = "btn_setting_Reconnection";
-            this.btn_setting_Reconnection.UseVisualStyleBackColor = false;
-            this.btn_setting_Reconnection.Click += new System.EventHandler(this.btn_setting_Reconnection_Click);
-            // 
-            // btn_setting_save
-            // 
-            this.btn_setting_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_setting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
-            resources.ApplyResources(this.btn_setting_save, "btn_setting_save");
-            this.btn_setting_save.FlatAppearance.BorderSize = 0;
-            this.btn_setting_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_setting_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_setting_save.Name = "btn_setting_save";
-            this.btn_setting_save.UseVisualStyleBackColor = false;
-            this.btn_setting_save.Click += new System.EventHandler(this.btn_setting_save_Click);
-            // 
-            // btn_setting_delete
-            // 
-            this.btn_setting_delete.BackColor = System.Drawing.Color.White;
-            this.btn_setting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
-            resources.ApplyResources(this.btn_setting_delete, "btn_setting_delete");
-            this.btn_setting_delete.FlatAppearance.BorderSize = 0;
-            this.btn_setting_delete.Name = "btn_setting_delete";
-            this.btn_setting_delete.UseVisualStyleBackColor = false;
-            this.btn_setting_delete.Click += new System.EventHandler(this.btn_setting_delete_Click);
-            // 
-            // btn_ImportProfile
-            // 
-            this.btn_ImportProfile.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ImportProfile.BackgroundImage = global::ToolWear.Properties.Resources.Import_Profile;
-            resources.ApplyResources(this.btn_ImportProfile, "btn_ImportProfile");
-            this.btn_ImportProfile.FlatAppearance.BorderSize = 0;
-            this.btn_ImportProfile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_ImportProfile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_ImportProfile.Name = "btn_ImportProfile";
-            this.btn_ImportProfile.UseVisualStyleBackColor = false;
-            this.btn_ImportProfile.Click += new System.EventHandler(this.Import_Profile);
-            // 
-            // btn_ExportProfile
-            // 
-            this.btn_ExportProfile.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ExportProfile.BackgroundImage = global::ToolWear.Properties.Resources.Export_Profile;
-            resources.ApplyResources(this.btn_ExportProfile, "btn_ExportProfile");
-            this.btn_ExportProfile.FlatAppearance.BorderSize = 0;
-            this.btn_ExportProfile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_ExportProfile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_ExportProfile.Name = "btn_ExportProfile";
-            this.btn_ExportProfile.UseVisualStyleBackColor = false;
-            this.btn_ExportProfile.Click += new System.EventHandler(this.Export_Profile);
-            // 
-            // btn_ATCsetting_30
-            // 
-            this.btn_ATCsetting_30.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_30.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_30, "btn_ATCsetting_30");
-            this.btn_ATCsetting_30.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_30.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_30.Name = "btn_ATCsetting_30";
-            this.btn_ATCsetting_30.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_30.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_29
-            // 
-            this.btn_ATCsetting_29.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_29.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_29, "btn_ATCsetting_29");
-            this.btn_ATCsetting_29.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_29.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_29.Name = "btn_ATCsetting_29";
-            this.btn_ATCsetting_29.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_29.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_28
-            // 
-            this.btn_ATCsetting_28.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_28.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_28, "btn_ATCsetting_28");
-            this.btn_ATCsetting_28.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_28.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_28.Name = "btn_ATCsetting_28";
-            this.btn_ATCsetting_28.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_28.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_27
-            // 
-            this.btn_ATCsetting_27.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_27.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_27, "btn_ATCsetting_27");
-            this.btn_ATCsetting_27.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_27.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_27.Name = "btn_ATCsetting_27";
-            this.btn_ATCsetting_27.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_27.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_26
-            // 
-            this.btn_ATCsetting_26.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_26.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_26, "btn_ATCsetting_26");
-            this.btn_ATCsetting_26.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_26.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_26.Name = "btn_ATCsetting_26";
-            this.btn_ATCsetting_26.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_26.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_25
-            // 
-            this.btn_ATCsetting_25.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_25.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_25, "btn_ATCsetting_25");
-            this.btn_ATCsetting_25.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_25.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_25.Name = "btn_ATCsetting_25";
-            this.btn_ATCsetting_25.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_25.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_24
-            // 
-            this.btn_ATCsetting_24.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_24.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_24, "btn_ATCsetting_24");
-            this.btn_ATCsetting_24.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_24.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_24.Name = "btn_ATCsetting_24";
-            this.btn_ATCsetting_24.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_24.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_23
-            // 
-            this.btn_ATCsetting_23.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_23.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_23, "btn_ATCsetting_23");
-            this.btn_ATCsetting_23.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_23.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_23.Name = "btn_ATCsetting_23";
-            this.btn_ATCsetting_23.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_23.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_22
-            // 
-            this.btn_ATCsetting_22.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_22.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_22, "btn_ATCsetting_22");
-            this.btn_ATCsetting_22.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_22.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_22.Name = "btn_ATCsetting_22";
-            this.btn_ATCsetting_22.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_22.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_21
-            // 
-            this.btn_ATCsetting_21.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_21.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_21, "btn_ATCsetting_21");
-            this.btn_ATCsetting_21.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_21.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_21.Name = "btn_ATCsetting_21";
-            this.btn_ATCsetting_21.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_21.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_BladeDown
-            // 
-            this.btn_ATCsetting_BladeDown.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_BladeDown.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_ATCsetting_BladeDown, "btn_ATCsetting_BladeDown");
-            this.btn_ATCsetting_BladeDown.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_BladeDown.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_BladeDown.Name = "btn_ATCsetting_BladeDown";
-            this.btn_ATCsetting_BladeDown.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_BladeDown.Click += new System.EventHandler(this.btn_ATCsetting_BladeDown_Click);
-            // 
-            // btn_ATCsetting_BladeUp
-            // 
-            this.btn_ATCsetting_BladeUp.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_BladeUp.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_ATCsetting_BladeUp, "btn_ATCsetting_BladeUp");
-            this.btn_ATCsetting_BladeUp.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_BladeUp.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_BladeUp.Name = "btn_ATCsetting_BladeUp";
-            this.btn_ATCsetting_BladeUp.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_BladeUp.Click += new System.EventHandler(this.btn_ATCsetting_BladeUp_Click);
-            // 
-            // btn_ATCsetting_save
-            // 
-            this.btn_ATCsetting_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ATCsetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
-            resources.ApplyResources(this.btn_ATCsetting_save, "btn_ATCsetting_save");
-            this.btn_ATCsetting_save.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_save.Name = "btn_ATCsetting_save";
-            this.btn_ATCsetting_save.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_save.Click += new System.EventHandler(this.btn_ATCsetting_save_Click);
-            // 
-            // btn_ATCsetting_delete
-            // 
-            this.btn_ATCsetting_delete.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
-            resources.ApplyResources(this.btn_ATCsetting_delete, "btn_ATCsetting_delete");
-            this.btn_ATCsetting_delete.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_delete.Name = "btn_ATCsetting_delete";
-            this.btn_ATCsetting_delete.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_delete.Click += new System.EventHandler(this.btn_ATCsetting_delete_Click);
-            // 
-            // btn_ATCsetting_20
-            // 
-            this.btn_ATCsetting_20.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_20.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_20, "btn_ATCsetting_20");
-            this.btn_ATCsetting_20.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_20.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_20.Name = "btn_ATCsetting_20";
-            this.btn_ATCsetting_20.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_20.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_19
-            // 
-            this.btn_ATCsetting_19.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_19.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_19, "btn_ATCsetting_19");
-            this.btn_ATCsetting_19.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_19.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_19.Name = "btn_ATCsetting_19";
-            this.btn_ATCsetting_19.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_19.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_18
-            // 
-            this.btn_ATCsetting_18.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_18.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_18, "btn_ATCsetting_18");
-            this.btn_ATCsetting_18.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_18.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_18.Name = "btn_ATCsetting_18";
-            this.btn_ATCsetting_18.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_18.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_17
-            // 
-            this.btn_ATCsetting_17.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_17.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_17, "btn_ATCsetting_17");
-            this.btn_ATCsetting_17.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_17.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_17.Name = "btn_ATCsetting_17";
-            this.btn_ATCsetting_17.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_17.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_16
-            // 
-            this.btn_ATCsetting_16.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_16.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_16, "btn_ATCsetting_16");
-            this.btn_ATCsetting_16.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_16.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_16.Name = "btn_ATCsetting_16";
-            this.btn_ATCsetting_16.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_16.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_15
-            // 
-            this.btn_ATCsetting_15.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_15.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_15, "btn_ATCsetting_15");
-            this.btn_ATCsetting_15.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_15.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_15.Name = "btn_ATCsetting_15";
-            this.btn_ATCsetting_15.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_15.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_14
-            // 
-            this.btn_ATCsetting_14.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_14.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_14, "btn_ATCsetting_14");
-            this.btn_ATCsetting_14.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_14.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_14.Name = "btn_ATCsetting_14";
-            this.btn_ATCsetting_14.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_14.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_13
-            // 
-            this.btn_ATCsetting_13.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_13.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_13, "btn_ATCsetting_13");
-            this.btn_ATCsetting_13.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_13.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_13.Name = "btn_ATCsetting_13";
-            this.btn_ATCsetting_13.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_13.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_12
-            // 
-            this.btn_ATCsetting_12.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_12.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_12, "btn_ATCsetting_12");
-            this.btn_ATCsetting_12.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_12.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_12.Name = "btn_ATCsetting_12";
-            this.btn_ATCsetting_12.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_12.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_11
-            // 
-            this.btn_ATCsetting_11.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_11.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_11, "btn_ATCsetting_11");
-            this.btn_ATCsetting_11.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_11.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_11.Name = "btn_ATCsetting_11";
-            this.btn_ATCsetting_11.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_11.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_10
-            // 
-            this.btn_ATCsetting_10.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_10.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_10, "btn_ATCsetting_10");
-            this.btn_ATCsetting_10.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_10.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_10.Name = "btn_ATCsetting_10";
-            this.btn_ATCsetting_10.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_10.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_09
-            // 
-            this.btn_ATCsetting_09.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_09.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_09, "btn_ATCsetting_09");
-            this.btn_ATCsetting_09.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_09.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_09.Name = "btn_ATCsetting_09";
-            this.btn_ATCsetting_09.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_09.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_08
-            // 
-            this.btn_ATCsetting_08.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_08.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_08, "btn_ATCsetting_08");
-            this.btn_ATCsetting_08.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_08.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_08.Name = "btn_ATCsetting_08";
-            this.btn_ATCsetting_08.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_08.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_07
-            // 
-            this.btn_ATCsetting_07.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_07.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_07, "btn_ATCsetting_07");
-            this.btn_ATCsetting_07.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_07.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_07.Name = "btn_ATCsetting_07";
-            this.btn_ATCsetting_07.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_07.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_06
-            // 
-            this.btn_ATCsetting_06.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_06.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_06, "btn_ATCsetting_06");
-            this.btn_ATCsetting_06.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_06.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_06.Name = "btn_ATCsetting_06";
-            this.btn_ATCsetting_06.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_06.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_05
-            // 
-            this.btn_ATCsetting_05.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_05.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_05, "btn_ATCsetting_05");
-            this.btn_ATCsetting_05.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_05.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_05.Name = "btn_ATCsetting_05";
-            this.btn_ATCsetting_05.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_05.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_04
-            // 
-            this.btn_ATCsetting_04.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_04.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_04, "btn_ATCsetting_04");
-            this.btn_ATCsetting_04.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_04.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_04.Name = "btn_ATCsetting_04";
-            this.btn_ATCsetting_04.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_04.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_03
-            // 
-            this.btn_ATCsetting_03.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_03.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_03, "btn_ATCsetting_03");
-            this.btn_ATCsetting_03.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_03.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_03.Name = "btn_ATCsetting_03";
-            this.btn_ATCsetting_03.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_03.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_02
-            // 
-            this.btn_ATCsetting_02.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_02.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_02, "btn_ATCsetting_02");
-            this.btn_ATCsetting_02.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_02.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_02.Name = "btn_ATCsetting_02";
-            this.btn_ATCsetting_02.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_02.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_ATCsetting_01
-            // 
-            this.btn_ATCsetting_01.BackColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_01.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_axiabtn;
-            resources.ApplyResources(this.btn_ATCsetting_01, "btn_ATCsetting_01");
-            this.btn_ATCsetting_01.FlatAppearance.BorderSize = 0;
-            this.btn_ATCsetting_01.ForeColor = System.Drawing.Color.White;
-            this.btn_ATCsetting_01.Name = "btn_ATCsetting_01";
-            this.btn_ATCsetting_01.UseVisualStyleBackColor = false;
-            this.btn_ATCsetting_01.Click += new System.EventHandler(this.btn_ATCSetting_Choose);
-            // 
-            // btn_Health_Setting
-            // 
-            this.btn_Health_Setting.BackColor = System.Drawing.Color.White;
-            this.btn_Health_Setting.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_setting;
-            resources.ApplyResources(this.btn_Health_Setting, "btn_Health_Setting");
-            this.btn_Health_Setting.FlatAppearance.BorderSize = 0;
-            this.btn_Health_Setting.Name = "btn_Health_Setting";
-            this.btn_Health_Setting.UseVisualStyleBackColor = false;
-            this.btn_Health_Setting.Click += new System.EventHandler(this.btn_Health_Setting_Click);
-            // 
-            // btn_Health_Stop
-            // 
-            this.btn_Health_Stop.BackColor = System.Drawing.Color.White;
-            this.btn_Health_Stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
-            resources.ApplyResources(this.btn_Health_Stop, "btn_Health_Stop");
-            this.btn_Health_Stop.FlatAppearance.BorderSize = 0;
-            this.btn_Health_Stop.Name = "btn_Health_Stop";
-            this.btn_Health_Stop.UseVisualStyleBackColor = false;
-            this.btn_Health_Stop.Click += new System.EventHandler(this.Health_Stop);
-            // 
-            // btn_Health_Start
-            // 
-            this.btn_Health_Start.BackColor = System.Drawing.Color.White;
-            this.btn_Health_Start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
-            resources.ApplyResources(this.btn_Health_Start, "btn_Health_Start");
-            this.btn_Health_Start.FlatAppearance.BorderSize = 0;
-            this.btn_Health_Start.Name = "btn_Health_Start";
-            this.btn_Health_Start.UseVisualStyleBackColor = false;
-            this.btn_Health_Start.Click += new System.EventHandler(this.Health_Start);
-            // 
-            // btn_SelectParts_Add
-            // 
-            this.btn_SelectParts_Add.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_Add.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_plus;
-            resources.ApplyResources(this.btn_SelectParts_Add, "btn_SelectParts_Add");
-            this.btn_SelectParts_Add.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_Add.Name = "btn_SelectParts_Add";
-            this.btn_SelectParts_Add.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
-            // 
-            // btn_SelectParts_remove01
-            // 
-            this.btn_SelectParts_remove01.BackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove01.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
-            resources.ApplyResources(this.btn_SelectParts_remove01, "btn_SelectParts_remove01");
-            this.btn_SelectParts_remove01.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_remove01.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove01.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove01.Name = "btn_SelectParts_remove01";
-            this.btn_SelectParts_remove01.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_remove01.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
-            // 
-            // pb_SelectParts_01
-            // 
-            this.pb_SelectParts_01.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
-            resources.ApplyResources(this.pb_SelectParts_01, "pb_SelectParts_01");
-            this.pb_SelectParts_01.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pb_SelectParts_01.Name = "pb_SelectParts_01";
-            this.pb_SelectParts_01.TabStop = false;
-            // 
-            // btn_SelectParts_01
-            // 
-            this.btn_SelectParts_01.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_01.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
-            resources.ApplyResources(this.btn_SelectParts_01, "btn_SelectParts_01");
-            this.btn_SelectParts_01.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_01.Name = "btn_SelectParts_01";
-            this.btn_SelectParts_01.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_01.Click += new System.EventHandler(this.btn_SelectParts);
-            // 
-            // panel_SelectParts_01Add
-            // 
-            this.panel_SelectParts_01Add.BackgroundImage = global::ToolWear.Properties.Resources.wdps_formplus;
-            resources.ApplyResources(this.panel_SelectParts_01Add, "panel_SelectParts_01Add");
-            this.panel_SelectParts_01Add.Name = "panel_SelectParts_01Add";
-            this.panel_SelectParts_01Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
-            // 
-            // btn_SelectParts_remove06
-            // 
-            this.btn_SelectParts_remove06.BackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove06.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
-            resources.ApplyResources(this.btn_SelectParts_remove06, "btn_SelectParts_remove06");
-            this.btn_SelectParts_remove06.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_remove06.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove06.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove06.Name = "btn_SelectParts_remove06";
-            this.btn_SelectParts_remove06.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_remove06.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
-            // 
-            // pb_SelectParts_06
-            // 
-            this.pb_SelectParts_06.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
-            resources.ApplyResources(this.pb_SelectParts_06, "pb_SelectParts_06");
-            this.pb_SelectParts_06.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pb_SelectParts_06.Name = "pb_SelectParts_06";
-            this.pb_SelectParts_06.TabStop = false;
-            // 
-            // btn_SelectParts_06
-            // 
-            this.btn_SelectParts_06.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_06.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
-            resources.ApplyResources(this.btn_SelectParts_06, "btn_SelectParts_06");
-            this.btn_SelectParts_06.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_06.Name = "btn_SelectParts_06";
-            this.btn_SelectParts_06.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_06.Click += new System.EventHandler(this.btn_SelectParts);
-            // 
-            // panel_SelectParts_06Add
-            // 
-            resources.ApplyResources(this.panel_SelectParts_06Add, "panel_SelectParts_06Add");
-            this.panel_SelectParts_06Add.Name = "panel_SelectParts_06Add";
-            this.panel_SelectParts_06Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
-            // 
-            // btn_SelectParts_remove08
-            // 
-            this.btn_SelectParts_remove08.BackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove08.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
-            resources.ApplyResources(this.btn_SelectParts_remove08, "btn_SelectParts_remove08");
-            this.btn_SelectParts_remove08.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_remove08.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove08.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove08.Name = "btn_SelectParts_remove08";
-            this.btn_SelectParts_remove08.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_remove08.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
-            // 
-            // pb_SelectParts_08
-            // 
-            this.pb_SelectParts_08.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
-            resources.ApplyResources(this.pb_SelectParts_08, "pb_SelectParts_08");
-            this.pb_SelectParts_08.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pb_SelectParts_08.Name = "pb_SelectParts_08";
-            this.pb_SelectParts_08.TabStop = false;
-            // 
-            // btn_SelectParts_08
-            // 
-            this.btn_SelectParts_08.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_08.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
-            resources.ApplyResources(this.btn_SelectParts_08, "btn_SelectParts_08");
-            this.btn_SelectParts_08.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_08.Name = "btn_SelectParts_08";
-            this.btn_SelectParts_08.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_08.Click += new System.EventHandler(this.btn_SelectParts);
-            // 
-            // panel_SelectParts_08Add
-            // 
-            resources.ApplyResources(this.panel_SelectParts_08Add, "panel_SelectParts_08Add");
-            this.panel_SelectParts_08Add.Name = "panel_SelectParts_08Add";
-            this.panel_SelectParts_08Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
-            // 
-            // btn_SelectParts_remove05
-            // 
-            this.btn_SelectParts_remove05.BackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove05.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
-            resources.ApplyResources(this.btn_SelectParts_remove05, "btn_SelectParts_remove05");
-            this.btn_SelectParts_remove05.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_remove05.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove05.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove05.Name = "btn_SelectParts_remove05";
-            this.btn_SelectParts_remove05.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_remove05.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
-            // 
-            // pb_SelectParts_05
-            // 
-            this.pb_SelectParts_05.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
-            resources.ApplyResources(this.pb_SelectParts_05, "pb_SelectParts_05");
-            this.pb_SelectParts_05.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pb_SelectParts_05.Name = "pb_SelectParts_05";
-            this.pb_SelectParts_05.TabStop = false;
-            // 
-            // btn_SelectParts_05
-            // 
-            this.btn_SelectParts_05.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_05.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
-            resources.ApplyResources(this.btn_SelectParts_05, "btn_SelectParts_05");
-            this.btn_SelectParts_05.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_05.Name = "btn_SelectParts_05";
-            this.btn_SelectParts_05.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_05.Click += new System.EventHandler(this.btn_SelectParts);
-            // 
-            // panel_SelectParts_05Add
-            // 
-            resources.ApplyResources(this.panel_SelectParts_05Add, "panel_SelectParts_05Add");
-            this.panel_SelectParts_05Add.Name = "panel_SelectParts_05Add";
-            this.panel_SelectParts_05Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
-            // 
-            // btn_SelectParts_remove04
-            // 
-            this.btn_SelectParts_remove04.BackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove04.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
-            resources.ApplyResources(this.btn_SelectParts_remove04, "btn_SelectParts_remove04");
-            this.btn_SelectParts_remove04.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_remove04.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove04.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove04.Name = "btn_SelectParts_remove04";
-            this.btn_SelectParts_remove04.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_remove04.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
-            // 
-            // pb_SelectParts_04
-            // 
-            this.pb_SelectParts_04.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
-            resources.ApplyResources(this.pb_SelectParts_04, "pb_SelectParts_04");
-            this.pb_SelectParts_04.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pb_SelectParts_04.Name = "pb_SelectParts_04";
-            this.pb_SelectParts_04.TabStop = false;
-            // 
-            // btn_SelectParts_04
-            // 
-            this.btn_SelectParts_04.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_04.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
-            resources.ApplyResources(this.btn_SelectParts_04, "btn_SelectParts_04");
-            this.btn_SelectParts_04.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_04.Name = "btn_SelectParts_04";
-            this.btn_SelectParts_04.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_04.Click += new System.EventHandler(this.btn_SelectParts);
-            // 
-            // panel_SelectParts_04Add
-            // 
-            resources.ApplyResources(this.panel_SelectParts_04Add, "panel_SelectParts_04Add");
-            this.panel_SelectParts_04Add.Name = "panel_SelectParts_04Add";
-            this.panel_SelectParts_04Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
-            // 
-            // btn_SelectParts_remove07
-            // 
-            this.btn_SelectParts_remove07.BackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove07.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
-            resources.ApplyResources(this.btn_SelectParts_remove07, "btn_SelectParts_remove07");
-            this.btn_SelectParts_remove07.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_remove07.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove07.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove07.Name = "btn_SelectParts_remove07";
-            this.btn_SelectParts_remove07.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_remove07.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
-            // 
-            // pb_SelectParts_07
-            // 
-            this.pb_SelectParts_07.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
-            resources.ApplyResources(this.pb_SelectParts_07, "pb_SelectParts_07");
-            this.pb_SelectParts_07.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pb_SelectParts_07.Name = "pb_SelectParts_07";
-            this.pb_SelectParts_07.TabStop = false;
-            // 
-            // btn_SelectParts_07
-            // 
-            this.btn_SelectParts_07.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_07.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
-            resources.ApplyResources(this.btn_SelectParts_07, "btn_SelectParts_07");
-            this.btn_SelectParts_07.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_07.Name = "btn_SelectParts_07";
-            this.btn_SelectParts_07.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_07.Click += new System.EventHandler(this.btn_SelectParts);
-            // 
-            // panel_SelectParts_07Add
-            // 
-            resources.ApplyResources(this.panel_SelectParts_07Add, "panel_SelectParts_07Add");
-            this.panel_SelectParts_07Add.Name = "panel_SelectParts_07Add";
-            this.panel_SelectParts_07Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
-            // 
-            // btn_SelectParts_remove02
-            // 
-            this.btn_SelectParts_remove02.BackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove02.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
-            resources.ApplyResources(this.btn_SelectParts_remove02, "btn_SelectParts_remove02");
-            this.btn_SelectParts_remove02.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_remove02.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove02.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove02.Name = "btn_SelectParts_remove02";
-            this.btn_SelectParts_remove02.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_remove02.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
-            // 
-            // pb_SelectParts_02
-            // 
-            this.pb_SelectParts_02.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
-            resources.ApplyResources(this.pb_SelectParts_02, "pb_SelectParts_02");
-            this.pb_SelectParts_02.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pb_SelectParts_02.Name = "pb_SelectParts_02";
-            this.pb_SelectParts_02.TabStop = false;
-            // 
-            // btn_SelectParts_02
-            // 
-            this.btn_SelectParts_02.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_02.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
-            resources.ApplyResources(this.btn_SelectParts_02, "btn_SelectParts_02");
-            this.btn_SelectParts_02.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_02.Name = "btn_SelectParts_02";
-            this.btn_SelectParts_02.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_02.Click += new System.EventHandler(this.btn_SelectParts);
-            // 
-            // panel_SelectParts_02Add
-            // 
-            this.panel_SelectParts_02Add.BackgroundImage = global::ToolWear.Properties.Resources.wdps_formplus;
-            resources.ApplyResources(this.panel_SelectParts_02Add, "panel_SelectParts_02Add");
-            this.panel_SelectParts_02Add.Name = "panel_SelectParts_02Add";
-            this.panel_SelectParts_02Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
-            // 
-            // btn_SelectParts_remove03
-            // 
-            this.btn_SelectParts_remove03.BackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove03.BackgroundImage = global::ToolWear.Properties.Resources.wdps_icon_delete;
-            resources.ApplyResources(this.btn_SelectParts_remove03, "btn_SelectParts_remove03");
-            this.btn_SelectParts_remove03.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_remove03.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove03.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_SelectParts_remove03.Name = "btn_SelectParts_remove03";
-            this.btn_SelectParts_remove03.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_remove03.Click += new System.EventHandler(this.btn_SelectParts_remove_Click);
-            // 
-            // pb_SelectParts_03
-            // 
-            this.pb_SelectParts_03.BackgroundImage = global::ToolWear.Properties.Resources.wd_img_blank;
-            resources.ApplyResources(this.pb_SelectParts_03, "pb_SelectParts_03");
-            this.pb_SelectParts_03.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pb_SelectParts_03.Name = "pb_SelectParts_03";
-            this.pb_SelectParts_03.TabStop = false;
-            // 
-            // btn_SelectParts_03
-            // 
-            this.btn_SelectParts_03.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_03.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
-            resources.ApplyResources(this.btn_SelectParts_03, "btn_SelectParts_03");
-            this.btn_SelectParts_03.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_03.Name = "btn_SelectParts_03";
-            this.btn_SelectParts_03.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_03.Click += new System.EventHandler(this.btn_SelectParts);
-            // 
-            // panel_SelectParts_03Add
-            // 
-            resources.ApplyResources(this.panel_SelectParts_03Add, "panel_SelectParts_03Add");
-            this.panel_SelectParts_03Add.Name = "panel_SelectParts_03Add";
-            this.panel_SelectParts_03Add.Click += new System.EventHandler(this.btn_SelectParts_Add_Click);
-            // 
-            // btn_SelectParts_down
-            // 
-            this.btn_SelectParts_down.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_SelectParts_down, "btn_SelectParts_down");
-            this.btn_SelectParts_down.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_down.Name = "btn_SelectParts_down";
-            this.btn_SelectParts_down.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_down.Click += new System.EventHandler(this.btn_SelectParts_down_Click);
-            // 
-            // btn_SelectParts_up
-            // 
-            this.btn_SelectParts_up.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_SelectParts_up, "btn_SelectParts_up");
-            this.btn_SelectParts_up.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_up.Name = "btn_SelectParts_up";
-            this.btn_SelectParts_up.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_up.Click += new System.EventHandler(this.btn_SelectParts_up_Click);
-            // 
-            // btn_SelectParts_Back
-            // 
-            this.btn_SelectParts_Back.BackColor = System.Drawing.Color.White;
-            this.btn_SelectParts_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_SelectParts_Back, "btn_SelectParts_Back");
-            this.btn_SelectParts_Back.FlatAppearance.BorderSize = 0;
-            this.btn_SelectParts_Back.Name = "btn_SelectParts_Back";
-            this.btn_SelectParts_Back.UseVisualStyleBackColor = false;
-            this.btn_SelectParts_Back.Click += new System.EventHandler(this.btn_SelectParts_Back_Click);
-            // 
-            // btn_AddParts_back
-            // 
-            this.btn_AddParts_back.BackColor = System.Drawing.Color.White;
-            this.btn_AddParts_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_AddParts_back, "btn_AddParts_back");
-            this.btn_AddParts_back.FlatAppearance.BorderSize = 0;
-            this.btn_AddParts_back.Name = "btn_AddParts_back";
-            this.btn_AddParts_back.UseVisualStyleBackColor = false;
-            this.btn_AddParts_back.Click += new System.EventHandler(this.btn_AddParts_delete_Click);
-            // 
-            // btn_AddParts_save
-            // 
-            this.btn_AddParts_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AddParts_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
-            resources.ApplyResources(this.btn_AddParts_save, "btn_AddParts_save");
-            this.btn_AddParts_save.FlatAppearance.BorderSize = 0;
-            this.btn_AddParts_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_AddParts_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_AddParts_save.Name = "btn_AddParts_save";
-            this.btn_AddParts_save.UseVisualStyleBackColor = false;
-            this.btn_AddParts_save.Click += new System.EventHandler(this.btn_AddParts_save_Click);
-            // 
-            // btn_AddParts_delete
-            // 
-            this.btn_AddParts_delete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AddParts_delete.BackgroundImage = global::ToolWear.Properties.Resources.wdpsn_btn_cancel;
-            resources.ApplyResources(this.btn_AddParts_delete, "btn_AddParts_delete");
-            this.btn_AddParts_delete.FlatAppearance.BorderSize = 0;
-            this.btn_AddParts_delete.Name = "btn_AddParts_delete";
-            this.btn_AddParts_delete.UseVisualStyleBackColor = false;
-            this.btn_AddParts_delete.Click += new System.EventHandler(this.btn_AddParts_delete_Click);
-            // 
-            // btn_AddParts_Path
-            // 
-            this.btn_AddParts_Path.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AddParts_Path.BackgroundImage = global::ToolWear.Properties.Resources.wdpsn_btn_search;
-            resources.ApplyResources(this.btn_AddParts_Path, "btn_AddParts_Path");
-            this.btn_AddParts_Path.FlatAppearance.BorderSize = 0;
-            this.btn_AddParts_Path.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_AddParts_Path.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_AddParts_Path.Name = "btn_AddParts_Path";
-            this.btn_AddParts_Path.UseVisualStyleBackColor = false;
-            this.btn_AddParts_Path.Click += new System.EventHandler(this.btn_AddParts_Path_Click);
-            // 
-            // pb_AddParts
-            // 
-            this.pb_AddParts.BackgroundImage = global::ToolWear.Properties.Resources.wdpsn_img_blank;
-            resources.ApplyResources(this.pb_AddParts, "pb_AddParts");
-            this.pb_AddParts.Name = "pb_AddParts";
-            this.pb_AddParts.TabStop = false;
-            // 
-            // btn_HealthSetting_Refresh
-            // 
-            this.btn_HealthSetting_Refresh.BackColor = System.Drawing.Color.White;
-            this.btn_HealthSetting_Refresh.BackgroundImage = global::ToolWear.Properties.Resources.wds_icon_refresh;
-            resources.ApplyResources(this.btn_HealthSetting_Refresh, "btn_HealthSetting_Refresh");
-            this.btn_HealthSetting_Refresh.FlatAppearance.BorderSize = 0;
-            this.btn_HealthSetting_Refresh.ForeColor = System.Drawing.Color.White;
-            this.btn_HealthSetting_Refresh.Name = "btn_HealthSetting_Refresh";
-            this.btn_HealthSetting_Refresh.UseVisualStyleBackColor = false;
-            this.btn_HealthSetting_Refresh.Click += new System.EventHandler(this.Health_ChannelLoad);
-            // 
-            // btn_HealthSetting_Down
-            // 
-            this.btn_HealthSetting_Down.BackColor = System.Drawing.Color.White;
-            this.btn_HealthSetting_Down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_HealthSetting_Down, "btn_HealthSetting_Down");
-            this.btn_HealthSetting_Down.FlatAppearance.BorderSize = 0;
-            this.btn_HealthSetting_Down.ForeColor = System.Drawing.Color.White;
-            this.btn_HealthSetting_Down.Name = "btn_HealthSetting_Down";
-            this.btn_HealthSetting_Down.UseVisualStyleBackColor = false;
-            this.btn_HealthSetting_Down.Click += new System.EventHandler(this.btn_HealthSetting_Down_Click);
-            // 
-            // btn_HealthSetting_Up
-            // 
-            this.btn_HealthSetting_Up.BackColor = System.Drawing.Color.White;
-            this.btn_HealthSetting_Up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_HealthSetting_Up, "btn_HealthSetting_Up");
-            this.btn_HealthSetting_Up.FlatAppearance.BorderSize = 0;
-            this.btn_HealthSetting_Up.ForeColor = System.Drawing.Color.White;
-            this.btn_HealthSetting_Up.Name = "btn_HealthSetting_Up";
-            this.btn_HealthSetting_Up.UseVisualStyleBackColor = false;
-            this.btn_HealthSetting_Up.Click += new System.EventHandler(this.btn_HealthSetting_Up_Click);
-            // 
-            // btn_HealthSetting_save
-            // 
-            this.btn_HealthSetting_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_HealthSetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
-            resources.ApplyResources(this.btn_HealthSetting_save, "btn_HealthSetting_save");
-            this.btn_HealthSetting_save.FlatAppearance.BorderSize = 0;
-            this.btn_HealthSetting_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_HealthSetting_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_HealthSetting_save.Name = "btn_HealthSetting_save";
-            this.btn_HealthSetting_save.UseVisualStyleBackColor = false;
-            this.btn_HealthSetting_save.Click += new System.EventHandler(this.HealthSetting_save);
-            // 
-            // btn_HealthSetting_delete
-            // 
-            this.btn_HealthSetting_delete.BackColor = System.Drawing.Color.White;
-            this.btn_HealthSetting_delete.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_delete;
-            resources.ApplyResources(this.btn_HealthSetting_delete, "btn_HealthSetting_delete");
-            this.btn_HealthSetting_delete.FlatAppearance.BorderSize = 0;
-            this.btn_HealthSetting_delete.Name = "btn_HealthSetting_delete";
-            this.btn_HealthSetting_delete.UseVisualStyleBackColor = false;
-            this.btn_HealthSetting_delete.Click += new System.EventHandler(this.HealthSetting_delete);
-            // 
-            // btn_HealthSetting_Back
-            // 
-            this.btn_HealthSetting_Back.BackColor = System.Drawing.Color.White;
-            this.btn_HealthSetting_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_HealthSetting_Back, "btn_HealthSetting_Back");
-            this.btn_HealthSetting_Back.FlatAppearance.BorderSize = 0;
-            this.btn_HealthSetting_Back.Name = "btn_HealthSetting_Back";
-            this.btn_HealthSetting_Back.UseVisualStyleBackColor = false;
-            this.btn_HealthSetting_Back.Click += new System.EventHandler(this.btn_HealthSetting_Back_Click);
-            // 
-            // btn_HealthResult_Back
-            // 
-            this.btn_HealthResult_Back.BackColor = System.Drawing.Color.White;
-            this.btn_HealthResult_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_HealthResult_Back, "btn_HealthResult_Back");
-            this.btn_HealthResult_Back.FlatAppearance.BorderSize = 0;
-            this.btn_HealthResult_Back.Name = "btn_HealthResult_Back";
-            this.btn_HealthResult_Back.UseVisualStyleBackColor = false;
-            this.btn_HealthResult_Back.Click += new System.EventHandler(this.btn_HealthSetting_Back_Click);
-            // 
-            // btn_AlarmSetting_Back
-            // 
-            this.btn_AlarmSetting_Back.BackColor = System.Drawing.Color.White;
-            this.btn_AlarmSetting_Back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_AlarmSetting_Back, "btn_AlarmSetting_Back");
-            this.btn_AlarmSetting_Back.FlatAppearance.BorderSize = 0;
-            this.btn_AlarmSetting_Back.Name = "btn_AlarmSetting_Back";
-            this.btn_AlarmSetting_Back.UseVisualStyleBackColor = false;
-            this.btn_AlarmSetting_Back.Click += new System.EventHandler(this.btn_AlarmSetting_Back_Click);
-            // 
-            // panel_AlarmSetting_save
-            // 
-            this.panel_AlarmSetting_save.BackColor = System.Drawing.Color.Transparent;
-            this.panel_AlarmSetting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
-            resources.ApplyResources(this.panel_AlarmSetting_save, "panel_AlarmSetting_save");
-            this.panel_AlarmSetting_save.FlatAppearance.BorderSize = 0;
-            this.panel_AlarmSetting_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.panel_AlarmSetting_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.panel_AlarmSetting_save.Name = "panel_AlarmSetting_save";
-            this.panel_AlarmSetting_save.UseVisualStyleBackColor = false;
-            this.panel_AlarmSetting_save.Click += new System.EventHandler(this.panel_AlarmSetting_save_Click);
-            // 
-            // btn_prediction_stop
-            // 
-            this.btn_prediction_stop.BackColor = System.Drawing.Color.White;
-            this.btn_prediction_stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
-            resources.ApplyResources(this.btn_prediction_stop, "btn_prediction_stop");
-            this.btn_prediction_stop.FlatAppearance.BorderSize = 0;
-            this.btn_prediction_stop.Name = "btn_prediction_stop";
-            this.btn_prediction_stop.UseVisualStyleBackColor = false;
-            this.btn_prediction_stop.Click += new System.EventHandler(this.btn_prediction_stop_Click);
-            // 
-            // btn_prediction_start
-            // 
-            this.btn_prediction_start.BackColor = System.Drawing.Color.White;
-            this.btn_prediction_start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
-            resources.ApplyResources(this.btn_prediction_start, "btn_prediction_start");
-            this.btn_prediction_start.FlatAppearance.BorderSize = 0;
-            this.btn_prediction_start.Name = "btn_prediction_start";
-            this.btn_prediction_start.UseVisualStyleBackColor = false;
-            this.btn_prediction_start.Click += new System.EventHandler(this.btn_prediction_start_Click);
-            // 
-            // btn_prediction_back
-            // 
-            this.btn_prediction_back.BackColor = System.Drawing.Color.White;
-            this.btn_prediction_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_prediction_back, "btn_prediction_back");
-            this.btn_prediction_back.FlatAppearance.BorderSize = 0;
-            this.btn_prediction_back.Name = "btn_prediction_back";
-            this.btn_prediction_back.UseVisualStyleBackColor = false;
-            this.btn_prediction_back.Click += new System.EventHandler(this.btn_prediction_back_Click);
-            // 
-            // btn_AccCur_setting_save
-            // 
-            this.btn_AccCur_setting_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AccCur_setting_save.BackgroundImage = global::ToolWear.Properties.Resources.wd_s_btn_save;
-            resources.ApplyResources(this.btn_AccCur_setting_save, "btn_AccCur_setting_save");
-            this.btn_AccCur_setting_save.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_setting_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_AccCur_setting_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_AccCur_setting_save.Name = "btn_AccCur_setting_save";
-            this.btn_AccCur_setting_save.UseVisualStyleBackColor = false;
-            this.btn_AccCur_setting_save.Click += new System.EventHandler(this.btn_AccCur_setting_save_Click);
-            // 
-            // btn_AccCur_AE_down
-            // 
-            this.btn_AccCur_AE_down.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_AE_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_AccCur_AE_down, "btn_AccCur_AE_down");
-            this.btn_AccCur_AE_down.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_AE_down.ForeColor = System.Drawing.Color.White;
-            this.btn_AccCur_AE_down.Name = "btn_AccCur_AE_down";
-            this.btn_AccCur_AE_down.UseVisualStyleBackColor = false;
-            this.btn_AccCur_AE_down.Click += new System.EventHandler(this.btn_AccCur_setting_Down);
-            // 
-            // btn_AccCur_AE_up
-            // 
-            this.btn_AccCur_AE_up.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_AE_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_AccCur_AE_up, "btn_AccCur_AE_up");
-            this.btn_AccCur_AE_up.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_AE_up.ForeColor = System.Drawing.Color.White;
-            this.btn_AccCur_AE_up.Name = "btn_AccCur_AE_up";
-            this.btn_AccCur_AE_up.UseVisualStyleBackColor = false;
-            this.btn_AccCur_AE_up.Click += new System.EventHandler(this.btn_AccCur_setting_Up);
-            // 
-            // btn_AccCur_Cur_down
-            // 
-            this.btn_AccCur_Cur_down.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_Cur_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_AccCur_Cur_down, "btn_AccCur_Cur_down");
-            this.btn_AccCur_Cur_down.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_Cur_down.ForeColor = System.Drawing.Color.White;
-            this.btn_AccCur_Cur_down.Name = "btn_AccCur_Cur_down";
-            this.btn_AccCur_Cur_down.UseVisualStyleBackColor = false;
-            this.btn_AccCur_Cur_down.Click += new System.EventHandler(this.btn_AccCur_setting_Down);
-            // 
-            // btn_AccCur_Cur_up
-            // 
-            this.btn_AccCur_Cur_up.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_Cur_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_AccCur_Cur_up, "btn_AccCur_Cur_up");
-            this.btn_AccCur_Cur_up.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_Cur_up.ForeColor = System.Drawing.Color.White;
-            this.btn_AccCur_Cur_up.Name = "btn_AccCur_Cur_up";
-            this.btn_AccCur_Cur_up.UseVisualStyleBackColor = false;
-            this.btn_AccCur_Cur_up.Click += new System.EventHandler(this.btn_AccCur_setting_Up);
-            // 
-            // btn_AccCur_Z_down
-            // 
-            this.btn_AccCur_Z_down.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_Z_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_AccCur_Z_down, "btn_AccCur_Z_down");
-            this.btn_AccCur_Z_down.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_Z_down.ForeColor = System.Drawing.Color.White;
-            this.btn_AccCur_Z_down.Name = "btn_AccCur_Z_down";
-            this.btn_AccCur_Z_down.UseVisualStyleBackColor = false;
-            this.btn_AccCur_Z_down.Click += new System.EventHandler(this.btn_AccCur_setting_Down);
-            // 
-            // btn_AccCur_Z_up
-            // 
-            this.btn_AccCur_Z_up.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_Z_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_AccCur_Z_up, "btn_AccCur_Z_up");
-            this.btn_AccCur_Z_up.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_Z_up.ForeColor = System.Drawing.Color.White;
-            this.btn_AccCur_Z_up.Name = "btn_AccCur_Z_up";
-            this.btn_AccCur_Z_up.UseVisualStyleBackColor = false;
-            this.btn_AccCur_Z_up.Click += new System.EventHandler(this.btn_AccCur_setting_Up);
-            // 
-            // btn_AccCur_Y_down
-            // 
-            this.btn_AccCur_Y_down.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_Y_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_AccCur_Y_down, "btn_AccCur_Y_down");
-            this.btn_AccCur_Y_down.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_Y_down.ForeColor = System.Drawing.Color.White;
-            this.btn_AccCur_Y_down.Name = "btn_AccCur_Y_down";
-            this.btn_AccCur_Y_down.UseVisualStyleBackColor = false;
-            this.btn_AccCur_Y_down.Click += new System.EventHandler(this.btn_AccCur_setting_Down);
-            // 
-            // btn_AccCur_Y_up
-            // 
-            this.btn_AccCur_Y_up.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_Y_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_AccCur_Y_up, "btn_AccCur_Y_up");
-            this.btn_AccCur_Y_up.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_Y_up.ForeColor = System.Drawing.Color.White;
-            this.btn_AccCur_Y_up.Name = "btn_AccCur_Y_up";
-            this.btn_AccCur_Y_up.UseVisualStyleBackColor = false;
-            this.btn_AccCur_Y_up.Click += new System.EventHandler(this.btn_AccCur_setting_Up);
-            // 
-            // btn_AccCur_X_down
-            // 
-            this.btn_AccCur_X_down.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_X_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_AccCur_X_down, "btn_AccCur_X_down");
-            this.btn_AccCur_X_down.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_X_down.ForeColor = System.Drawing.Color.White;
-            this.btn_AccCur_X_down.Name = "btn_AccCur_X_down";
-            this.btn_AccCur_X_down.UseVisualStyleBackColor = false;
-            this.btn_AccCur_X_down.Click += new System.EventHandler(this.btn_AccCur_setting_Down);
-            // 
-            // btn_AccCur_X_up
-            // 
-            this.btn_AccCur_X_up.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_X_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_AccCur_X_up, "btn_AccCur_X_up");
-            this.btn_AccCur_X_up.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_X_up.ForeColor = System.Drawing.Color.White;
-            this.btn_AccCur_X_up.Name = "btn_AccCur_X_up";
-            this.btn_AccCur_X_up.UseVisualStyleBackColor = false;
-            this.btn_AccCur_X_up.Click += new System.EventHandler(this.btn_AccCur_setting_Up);
-            // 
-            // btn_AccCur_setting_Reflash
-            // 
-            this.btn_AccCur_setting_Reflash.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AccCur_setting_Reflash.BackgroundImage = global::ToolWear.Properties.Resources.wds_icon_refresh;
-            resources.ApplyResources(this.btn_AccCur_setting_Reflash, "btn_AccCur_setting_Reflash");
-            this.btn_AccCur_setting_Reflash.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_setting_Reflash.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_AccCur_setting_Reflash.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_AccCur_setting_Reflash.Name = "btn_AccCur_setting_Reflash";
-            this.btn_AccCur_setting_Reflash.UseVisualStyleBackColor = false;
-            this.btn_AccCur_setting_Reflash.Click += new System.EventHandler(this.btn_AccCur_setting_loadChannel);
-            // 
-            // btn_AccCur_setting_back
-            // 
-            this.btn_AccCur_setting_back.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_setting_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_AccCur_setting_back, "btn_AccCur_setting_back");
-            this.btn_AccCur_setting_back.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_setting_back.Name = "btn_AccCur_setting_back";
-            this.btn_AccCur_setting_back.UseVisualStyleBackColor = false;
-            this.btn_AccCur_setting_back.Click += new System.EventHandler(this.btn_AccCur_setting_back_Click);
-            // 
-            // btn_AE_stop
-            // 
-            this.btn_AE_stop.BackColor = System.Drawing.Color.White;
-            this.btn_AE_stop.BackgroundImage = global::ToolWear.Properties.Resources.tc_btn_stop;
-            resources.ApplyResources(this.btn_AE_stop, "btn_AE_stop");
-            this.btn_AE_stop.FlatAppearance.BorderSize = 0;
-            this.btn_AE_stop.Name = "btn_AE_stop";
-            this.btn_AE_stop.UseVisualStyleBackColor = false;
-            this.btn_AE_stop.Click += new System.EventHandler(this.btn_AE_stop_Click);
-            // 
-            // btn_AE_start
-            // 
-            this.btn_AE_start.BackColor = System.Drawing.Color.White;
-            this.btn_AE_start.BackgroundImage = global::ToolWear.Properties.Resources.btn_start_selected;
-            resources.ApplyResources(this.btn_AE_start, "btn_AE_start");
-            this.btn_AE_start.FlatAppearance.BorderSize = 0;
-            this.btn_AE_start.Name = "btn_AE_start";
-            this.btn_AE_start.UseVisualStyleBackColor = false;
-            this.btn_AE_start.Click += new System.EventHandler(this.btn_AE_start_Click);
-            // 
-            // btn_AE_back
-            // 
-            this.btn_AE_back.BackColor = System.Drawing.Color.White;
-            this.btn_AE_back.BackgroundImage = global::ToolWear.Properties.Resources.btn_back;
-            resources.ApplyResources(this.btn_AE_back, "btn_AE_back");
-            this.btn_AE_back.FlatAppearance.BorderSize = 0;
-            this.btn_AE_back.Name = "btn_AE_back";
-            this.btn_AE_back.UseVisualStyleBackColor = false;
-            this.btn_AE_back.Click += new System.EventHandler(this.btn_AE_back_Click);
-            // 
-            // btn_AccCur_parameter_set
-            // 
-            this.btn_AccCur_parameter_set.BackColor = System.Drawing.Color.White;
-            this.btn_AccCur_parameter_set.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_select;
-            resources.ApplyResources(this.btn_AccCur_parameter_set, "btn_AccCur_parameter_set");
-            this.btn_AccCur_parameter_set.FlatAppearance.BorderSize = 0;
-            this.btn_AccCur_parameter_set.Name = "btn_AccCur_parameter_set";
-            this.btn_AccCur_parameter_set.UseVisualStyleBackColor = false;
-            this.btn_AccCur_parameter_set.Click += new System.EventHandler(this.btn_AccCur_parameter_Click);
+            resources.ApplyResources(this.label134, "label134");
+            this.label134.Name = "label134";
             // 
             // Form1
             // 
@@ -9179,8 +9248,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
             this.ControlBox = false;
-            this.Controls.Add(this.panel_prediction);
             this.Controls.Add(this.panel_AccCur_parameter);
+            this.Controls.Add(this.panel_prediction);
             this.Controls.Add(this.panel_Loading);
             this.Controls.Add(this.panel_AccCur);
             this.Controls.Add(this.panel_AlarmSetting);
@@ -9220,6 +9289,7 @@
             this.panel_ToolWear.ResumeLayout(false);
             this.panel_ToolWear.PerformLayout();
             this.panel_ToolWear_Parts.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_ToolWear)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_warring_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_warring_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_FFT)).EndInit();
@@ -9252,10 +9322,17 @@
             this.panel_Learn.ResumeLayout(false);
             this.panel_Learn.PerformLayout();
             this.panel_Learn_Parts.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Learn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_LearnFFT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Learn)).EndInit();
             this.panel_log.ResumeLayout(false);
             this.panel_log.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_setting.ResumeLayout(false);
             this.panel_setting.PerformLayout();
             this.panel_AlarmSet.ResumeLayout(false);
@@ -9282,15 +9359,24 @@
             this.panel_SelectParts.ResumeLayout(false);
             this.panel_SelectParts.PerformLayout();
             this.panel_SelectParts_01.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_01)).EndInit();
             this.panel_SelectParts_06.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_06)).EndInit();
             this.panel_SelectParts_08.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_08)).EndInit();
             this.panel_SelectParts_05.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_05)).EndInit();
             this.panel_SelectParts_04.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_04)).EndInit();
             this.panel_SelectParts_07.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_07)).EndInit();
             this.panel_SelectParts_02.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_02)).EndInit();
             this.panel_SelectParts_03.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_03)).EndInit();
             this.panel_AddParts.ResumeLayout(false);
             this.panel_AddParts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AddParts)).EndInit();
             this.panel_Health_Setting.ResumeLayout(false);
             this.panel_Health_Setting.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -9343,39 +9429,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart_AE)).EndInit();
             this.panel_AccCur_parameter.ResumeLayout(false);
             this.panel_AccCur_parameter.PerformLayout();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbar_AccCur_parameter_surface)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_length)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_width)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_removal)).EndInit();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
             this.panel_AccCur_parameter_Add.ResumeLayout(false);
             this.panel_AccCur_parameter_Add.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_ToolWear)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Learn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_07)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_SelectParts_03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_AddParts)).EndInit();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_removal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_width)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_AccCur_parameter_length)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbar_AccCur_parameter_surface)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10047,30 +10112,18 @@
         private System.Windows.Forms.Button btn_AccCur_parameter_typeAdd;
         private System.Windows.Forms.Button btn_AccCur_parameter_workpieceAdd;
         private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.TextBox tb_AccCur_parameter_Predict1;
-        private System.Windows.Forms.TextBox tb_AccCur_parameter_WheelDown1;
-        private System.Windows.Forms.TextBox AccCur_parameter_WheelSpeed1;
-        private System.Windows.Forms.TextBox tb_AccCur_parameter_WheelNumber1;
-        private System.Windows.Forms.Label label136;
-        private System.Windows.Forms.Label label135;
-        private System.Windows.Forms.Label label134;
-        private System.Windows.Forms.Label label133;
-        private System.Windows.Forms.Label label132;
         private System.Windows.Forms.TextBox tb_AccCur_parameter_AIvalue;
         private System.Windows.Forms.Label label143;
         private System.Windows.Forms.TextBox tb_AccCur_parameter_BestTime;
         private System.Windows.Forms.Label label142;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.TextBox tb_AccCur_parameter_Predict2;
-        private System.Windows.Forms.TextBox tb_AccCur_parameter_WheelDown2;
-        private System.Windows.Forms.TextBox AccCur_parameter_WheelSpeed2;
-        private System.Windows.Forms.TextBox tb_AccCur_parameter_WheelNumber2;
+        private System.Windows.Forms.TextBox tb_AccCur_parameter_Predict;
+        private System.Windows.Forms.TextBox tb_AccCur_parameter_WheelDown;
+        private System.Windows.Forms.TextBox AccCur_parameter_WheelSpeed;
+        private System.Windows.Forms.TextBox tb_AccCur_parameter_WheelNumber;
         private System.Windows.Forms.Label label137;
         private System.Windows.Forms.Label label138;
         private System.Windows.Forms.Label label139;
         private System.Windows.Forms.Label label140;
-        private System.Windows.Forms.Label label141;
         private System.Windows.Forms.Label label145;
         private System.Windows.Forms.Label label144;
         private System.Windows.Forms.Panel panel_AccCur_parameter_Add;
@@ -10080,7 +10133,27 @@
         private System.Windows.Forms.Label lb_AccCur_parameter_Add;
         private System.Windows.Forms.Button btn_AccCur_parameter_Add_Delete;
         private System.Windows.Forms.Label label147;
-        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.TextBox tb_AccCur_parameter_Mistake;
+        private System.Windows.Forms.Label label132;
+        private System.Windows.Forms.TextBox tb_AccCur_parameter_Pitch;
+        private System.Windows.Forms.Label label133;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_type6;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_workpiece6;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_type5;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_workpiece5;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_type4;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_workpiece4;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_type3;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_workpiece3;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_type2;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_workpiece2;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_type1;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_workpiece1;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_type7;
+        private System.Windows.Forms.Panel Sep_AccCur_parameter_workpiece7;
+        private System.Windows.Forms.Button btn_AccCur_parameter_typeDelete;
+        private System.Windows.Forms.Button btn_AccCur_parameter_workpieceDelete;
+        private System.Windows.Forms.Label label134;
     }
 }
 
