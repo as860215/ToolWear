@@ -2858,7 +2858,7 @@ namespace ToolWear{
 
             TaskStop();
         }
-        #endregion磨耗偵測(三軸、電流)
+        #endregion
         #region 參數設定
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定
         private void btn_AccCur_parameter_Click(object sender, EventArgs e){
