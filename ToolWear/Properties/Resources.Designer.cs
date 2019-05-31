@@ -63,6 +63,26 @@ namespace ToolWear.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap AccCur {
+            get {
+                object obj = ResourceManager.GetObject("AccCur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap AE {
+            get {
+                object obj = ResourceManager.GetObject("AE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap alarm {
             get {
                 object obj = ResourceManager.GetObject("alarm", resourceCulture);
@@ -196,6 +216,26 @@ namespace ToolWear.Properties {
         internal static System.Drawing.Bitmap NCUT_logo {
             get {
                 object obj = ResourceManager.GetObject("NCUT_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Parameter {
+            get {
+                object obj = ResourceManager.GetObject("Parameter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Prediction {
+            get {
+                object obj = ResourceManager.GetObject("Prediction", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

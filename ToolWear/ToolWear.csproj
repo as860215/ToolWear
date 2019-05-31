@@ -318,5 +318,17 @@
   <ItemGroup>
     <None Include="Resources\NCUT_logo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccCur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parameter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prediction.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

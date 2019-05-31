@@ -478,8 +478,10 @@ namespace ToolWear{
             btn_ChangeMode_Click(null, null);
             //刀具磨耗預測按鈕啟動
             btn_ChangeMode3.Enabled = true;
+            btn_ChangeMode3.BackgroundImage = ToolWear.Properties.Resources.Prediction;
             //磨耗偵測(三軸、電流)按鈕啟動
             btn_ChangeMode0.Enabled = true;
+            btn_ChangeMode0.BackgroundImage = ToolWear.Properties.Resources.AccCur;
 
             //預設選擇第一個按鈕
             if (pre_ToolWear == null)
@@ -724,7 +726,7 @@ namespace ToolWear{
 
                 //開啟子功能項
                 btn_ChangeMode.Enabled = true;
-                btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
+                btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.AE;
             }
         }
         #endregion
@@ -2638,11 +2640,17 @@ namespace ToolWear{
         private void btn_AccCur_setting_Click(object sender, EventArgs e) {
             panel_AccCur.Visible = false;
             panel_AccCur_setting.Visible = true;
+            //關閉子功能項
+            btn_ChangeMode.Enabled = false;
+            btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 回上一頁
         private void btn_AccCur_setting_back_Click(object sender, EventArgs e) {
             panel_AccCur.Visible = true;
             panel_AccCur_setting.Visible = false;
+            //關閉子功能項
+            btn_ChangeMode.Enabled = true;
+            btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.AE;
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 設定 > 讀取訊號輸入
         private void btn_AccCur_setting_loadChannel(object sender, EventArgs e) {
@@ -2820,7 +2828,7 @@ namespace ToolWear{
 
             //開啟子功能項
             btn_ChangeMode.Enabled = true;
-            btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.tc_menubtn_blank;
+            btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.AE;
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 音頻偵測 > 開始
         private void btn_AE_start_Click(object sender, EventArgs e) {
@@ -3030,7 +3038,7 @@ namespace ToolWear{
             AccCur_parameter_LoadData();
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 修改工件尺寸
-        private void num_AccCur_parameter_length_ValueChanged(object sender, EventArgs e){
+        private void num_AccCur_parameter_length_ValueChanged(object senderㄒ, EventArgs e){
             AccCur_parameter_ComputeBestTime();
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 每次移除量變更
