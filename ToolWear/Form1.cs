@@ -2624,6 +2624,7 @@ namespace ToolWear{
         }
         #endregion
         #region 磨耗偵測(三軸、電流)
+        #region 主頁面
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 回上一頁
         private void btn_AccCur_back_Click(object sender, EventArgs e) {
             panel_Dissable();
@@ -2803,6 +2804,7 @@ namespace ToolWear{
 
             TaskStop();
         }
+        #endregion
         #region 音頻偵測
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 音頻偵測 > 回上一頁
         private void btn_AE_back_Click(object sender, EventArgs e) {
@@ -3027,6 +3029,14 @@ namespace ToolWear{
         private void lb_AccCur_parameter_type_SelectedIndexChanged(object sender, EventArgs e){
             AccCur_parameter_LoadData();
         }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 修改工件尺寸
+        private void num_AccCur_parameter_length_ValueChanged(object sender, EventArgs e){
+            AccCur_parameter_ComputeBestTime();
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 每次移除量變更
+        private void tb_AccCur_parameter_WheelDown_TextChanged(object sender, EventArgs e){
+            AccCur_parameter_ComputeBestTime();
+        }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 讀取各項加工參數
         private void AccCur_parameter_LoadData(){
             try{
@@ -3042,7 +3052,7 @@ namespace ToolWear{
                 sr.Dispose();
 
                 //字串說明
-                //1:砂輪號數(WA-??) 8:轉數 11:每次下降量 13:研磨間距 14:實際表面精度
+                //1:砂輪號數(WA-??) 8:轉數 9:左右移動速度 11:每次下降量 13:研磨間距 14:實際表面精度
 
                 //找尋最接近使用者輸入的表面精度項目
                 float Surface_Max = 0f; //暫存已讀取最大值
@@ -3064,6 +3074,7 @@ namespace ToolWear{
                     tb_AccCur_parameter_WheelNumber.Text = "無資料";
                     AccCur_parameter_WheelSpeed.Text = "無資料";
                     tb_AccCur_parameter_WheelDown.Text = "無資料";
+                    tb_AccCur_parameter_Speed.Text = "無資料";
                     tb_AccCur_parameter_Pitch.Text = "無資料";
                     tb_AccCur_parameter_Predict.Text = "無資料";
                 }
@@ -3071,12 +3082,33 @@ namespace ToolWear{
                     //讀取最大值次序的各項參數
                     tb_AccCur_parameter_WheelNumber.Text = Read_Data[Surface_Count].Split(',')[1].Split('-')[1];
                     AccCur_parameter_WheelSpeed.Text = Read_Data[Surface_Count].Split(',')[8];
+                    tb_AccCur_parameter_Speed.Text = Read_Data[Surface_Count].Split(',')[9];
                     tb_AccCur_parameter_WheelDown.Text = Read_Data[Surface_Count].Split(',')[11];
                     tb_AccCur_parameter_Pitch.Text = Read_Data[Surface_Count].Split(',')[13];
                     tb_AccCur_parameter_Predict.Text = Read_Data[Surface_Count].Split(',')[14];
                 }
             }
             catch{
+            }
+        }
+        //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 計算最佳加工時間
+        private void AccCur_parameter_ComputeBestTime(){
+            var Length = num_AccCur_parameter_length.Value;
+            var Width = num_AccCur_parameter_width.Value;
+            var Removal = num_AccCur_parameter_removal.Value;
+            var WheelDown = tb_AccCur_parameter_WheelDown.Text;
+            var Pitch = tb_AccCur_parameter_Pitch.Text;
+            try{
+                double BestTime = 0.1 + (double)Length / double.Parse(Pitch) * (double)Width / 1000 * ((double)Removal/ double.Parse(WheelDown));
+
+                //將數字轉成時間
+                int Hour = int.Parse(BestTime.ToString().Split('.')[0]);
+                double Minute = (BestTime - Hour) * 60;
+
+                tb_AccCur_parameter_BestTime.Text = string.Format("{0} h {1} m", Hour, Minute.ToString("0.00"));
+            }
+            catch {
+                tb_AccCur_parameter_BestTime.Text = "參數錯誤";
             }
         }
         #endregion
