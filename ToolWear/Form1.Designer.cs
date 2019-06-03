@@ -334,6 +334,23 @@
             this.btn_Threshold_Back = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.panel_ThermalSetting = new System.Windows.Forms.Panel();
+            this.panel_Compensate = new System.Windows.Forms.Panel();
+            this.cb_Compensate_Channel = new System.Windows.Forms.ComboBox();
+            this.lb_Compensate_page = new System.Windows.Forms.Label();
+            this.btn_Compensate_down = new System.Windows.Forms.Button();
+            this.btn_Compensate_up = new System.Windows.Forms.Button();
+            this.btn_CompensateSet_delete = new System.Windows.Forms.Button();
+            this.btn_CompensateSet_save = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tb_Compensate_ip = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tb_Compensate_07 = new System.Windows.Forms.TextBox();
+            this.tb_Compensate_06 = new System.Windows.Forms.TextBox();
+            this.tb_Compensate_05 = new System.Windows.Forms.TextBox();
+            this.tb_Compensate_04 = new System.Windows.Forms.TextBox();
+            this.tb_Compensate_03 = new System.Windows.Forms.TextBox();
+            this.tb_Compensate_02 = new System.Windows.Forms.TextBox();
+            this.tb_Compensate_01 = new System.Windows.Forms.TextBox();
             this.numeric_Compensate_Down = new System.Windows.Forms.Button();
             this.numeric_Compensate_Up = new System.Windows.Forms.Button();
             this.numeric_Temperature_Down = new System.Windows.Forms.Button();
@@ -364,23 +381,6 @@
             this.btn_Compensate_01 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.btn_ThermalSetting_Back = new System.Windows.Forms.Button();
-            this.panel_Compensate = new System.Windows.Forms.Panel();
-            this.cb_Compensate_Channel = new System.Windows.Forms.ComboBox();
-            this.lb_Compensate_page = new System.Windows.Forms.Label();
-            this.btn_Compensate_down = new System.Windows.Forms.Button();
-            this.btn_Compensate_up = new System.Windows.Forms.Button();
-            this.btn_CompensateSet_delete = new System.Windows.Forms.Button();
-            this.btn_CompensateSet_save = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tb_Compensate_ip = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tb_Compensate_07 = new System.Windows.Forms.TextBox();
-            this.tb_Compensate_06 = new System.Windows.Forms.TextBox();
-            this.tb_Compensate_05 = new System.Windows.Forms.TextBox();
-            this.tb_Compensate_04 = new System.Windows.Forms.TextBox();
-            this.tb_Compensate_03 = new System.Windows.Forms.TextBox();
-            this.tb_Compensate_02 = new System.Windows.Forms.TextBox();
-            this.tb_Compensate_01 = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.numeric_Temperature = new System.Windows.Forms.NumericUpDown();
@@ -721,6 +721,7 @@
             this.label92 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.btn_prediction_add = new System.Windows.Forms.Button();
             this.cb_prediction_ModelName = new System.Windows.Forms.ComboBox();
             this.label88 = new System.Windows.Forms.Label();
             this.cb_prediction_work = new System.Windows.Forms.ComboBox();
@@ -744,6 +745,7 @@
             this.btn_prediction_test = new System.Windows.Forms.Button();
             this.timer_prediction_ML = new System.Windows.Forms.Timer(this.components);
             this.panel_AccCur = new System.Windows.Forms.Panel();
+            this.cb_AccCur_FFT = new System.Windows.Forms.CheckBox();
             this.btn_AccCur_back = new System.Windows.Forms.Button();
             this.btn_AccCur_setting = new System.Windows.Forms.Button();
             this.btn_AccCur_stop = new System.Windows.Forms.Button();
@@ -883,7 +885,6 @@
             this.label126 = new System.Windows.Forms.Label();
             this.btn_AccCur_parameter_back = new System.Windows.Forms.Button();
             this.label124 = new System.Windows.Forms.Label();
-            this.cb_AccCur_FFT = new System.Windows.Forms.CheckBox();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -3136,6 +3137,7 @@
             // 
             this.panel_ThermalSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(60)))), ((int)(((byte)(96)))));
             resources.ApplyResources(this.panel_ThermalSetting, "panel_ThermalSetting");
+            this.panel_ThermalSetting.Controls.Add(this.panel_Compensate);
             this.panel_ThermalSetting.Controls.Add(this.numeric_Compensate_Down);
             this.panel_ThermalSetting.Controls.Add(this.numeric_Compensate_Up);
             this.panel_ThermalSetting.Controls.Add(this.numeric_Temperature_Down);
@@ -3166,7 +3168,6 @@
             this.panel_ThermalSetting.Controls.Add(this.btn_Compensate_01);
             this.panel_ThermalSetting.Controls.Add(this.label23);
             this.panel_ThermalSetting.Controls.Add(this.btn_ThermalSetting_Back);
-            this.panel_ThermalSetting.Controls.Add(this.panel_Compensate);
             this.panel_ThermalSetting.Controls.Add(this.panel8);
             this.panel_ThermalSetting.Controls.Add(this.panel9);
             this.panel_ThermalSetting.Controls.Add(this.numeric_Temperature);
@@ -3174,6 +3175,175 @@
             this.panel_ThermalSetting.Controls.Add(this.numeric_Compensate);
             this.panel_ThermalSetting.Controls.Add(this.label10);
             this.panel_ThermalSetting.Name = "panel_ThermalSetting";
+            // 
+            // panel_Compensate
+            // 
+            this.panel_Compensate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel_Compensate.Controls.Add(this.cb_Compensate_Channel);
+            this.panel_Compensate.Controls.Add(this.lb_Compensate_page);
+            this.panel_Compensate.Controls.Add(this.btn_Compensate_down);
+            this.panel_Compensate.Controls.Add(this.btn_Compensate_up);
+            this.panel_Compensate.Controls.Add(this.btn_CompensateSet_delete);
+            this.panel_Compensate.Controls.Add(this.btn_CompensateSet_save);
+            this.panel_Compensate.Controls.Add(this.label12);
+            this.panel_Compensate.Controls.Add(this.tb_Compensate_ip);
+            this.panel_Compensate.Controls.Add(this.label11);
+            this.panel_Compensate.Controls.Add(this.tb_Compensate_07);
+            this.panel_Compensate.Controls.Add(this.tb_Compensate_06);
+            this.panel_Compensate.Controls.Add(this.tb_Compensate_05);
+            this.panel_Compensate.Controls.Add(this.tb_Compensate_04);
+            this.panel_Compensate.Controls.Add(this.tb_Compensate_03);
+            this.panel_Compensate.Controls.Add(this.tb_Compensate_02);
+            this.panel_Compensate.Controls.Add(this.tb_Compensate_01);
+            resources.ApplyResources(this.panel_Compensate, "panel_Compensate");
+            this.panel_Compensate.Name = "panel_Compensate";
+            // 
+            // cb_Compensate_Channel
+            // 
+            this.cb_Compensate_Channel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cb_Compensate_Channel, "cb_Compensate_Channel");
+            this.cb_Compensate_Channel.Items.AddRange(new object[] {
+            resources.GetString("cb_Compensate_Channel.Items"),
+            resources.GetString("cb_Compensate_Channel.Items1"),
+            resources.GetString("cb_Compensate_Channel.Items2"),
+            resources.GetString("cb_Compensate_Channel.Items3"),
+            resources.GetString("cb_Compensate_Channel.Items4"),
+            resources.GetString("cb_Compensate_Channel.Items5"),
+            resources.GetString("cb_Compensate_Channel.Items6"),
+            resources.GetString("cb_Compensate_Channel.Items7"),
+            resources.GetString("cb_Compensate_Channel.Items8"),
+            resources.GetString("cb_Compensate_Channel.Items9")});
+            this.cb_Compensate_Channel.Name = "cb_Compensate_Channel";
+            // 
+            // lb_Compensate_page
+            // 
+            resources.ApplyResources(this.lb_Compensate_page, "lb_Compensate_page");
+            this.lb_Compensate_page.ForeColor = System.Drawing.Color.White;
+            this.lb_Compensate_page.Name = "lb_Compensate_page";
+            // 
+            // btn_Compensate_down
+            // 
+            this.btn_Compensate_down.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Compensate_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
+            resources.ApplyResources(this.btn_Compensate_down, "btn_Compensate_down");
+            this.btn_Compensate_down.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_down.Name = "btn_Compensate_down";
+            this.btn_Compensate_down.UseVisualStyleBackColor = false;
+            this.btn_Compensate_down.Click += new System.EventHandler(this.btn_Compensate_down_Click);
+            // 
+            // btn_Compensate_up
+            // 
+            this.btn_Compensate_up.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Compensate_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
+            resources.ApplyResources(this.btn_Compensate_up, "btn_Compensate_up");
+            this.btn_Compensate_up.FlatAppearance.BorderSize = 0;
+            this.btn_Compensate_up.Name = "btn_Compensate_up";
+            this.btn_Compensate_up.UseVisualStyleBackColor = false;
+            this.btn_Compensate_up.Click += new System.EventHandler(this.btn_Compensate_up_Click);
+            // 
+            // btn_CompensateSet_delete
+            // 
+            this.btn_CompensateSet_delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_delete.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_delete;
+            resources.ApplyResources(this.btn_CompensateSet_delete, "btn_CompensateSet_delete");
+            this.btn_CompensateSet_delete.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateSet_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_delete.Name = "btn_CompensateSet_delete";
+            this.btn_CompensateSet_delete.UseVisualStyleBackColor = false;
+            // 
+            // btn_CompensateSet_save
+            // 
+            this.btn_CompensateSet_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_save.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_save;
+            resources.ApplyResources(this.btn_CompensateSet_save, "btn_CompensateSet_save");
+            this.btn_CompensateSet_save.FlatAppearance.BorderSize = 0;
+            this.btn_CompensateSet_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_CompensateSet_save.Name = "btn_CompensateSet_save";
+            this.btn_CompensateSet_save.UseVisualStyleBackColor = false;
+            this.btn_CompensateSet_save.Click += new System.EventHandler(this.btn_CompensateSet_save_Click);
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Name = "label12";
+            // 
+            // tb_Compensate_ip
+            // 
+            resources.ApplyResources(this.tb_Compensate_ip, "tb_Compensate_ip");
+            this.tb_Compensate_ip.Name = "tb_Compensate_ip";
+            this.tb_Compensate_ip.Enter += new System.EventHandler(this.ShowInputPanel_Click);
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Name = "label11";
+            // 
+            // tb_Compensate_07
+            // 
+            this.tb_Compensate_07.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Compensate_07.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.tb_Compensate_07, "tb_Compensate_07");
+            this.tb_Compensate_07.Name = "tb_Compensate_07";
+            this.tb_Compensate_07.ReadOnly = true;
+            this.tb_Compensate_07.Click += new System.EventHandler(this.tb_Compensate_Click);
+            // 
+            // tb_Compensate_06
+            // 
+            this.tb_Compensate_06.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Compensate_06.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.tb_Compensate_06, "tb_Compensate_06");
+            this.tb_Compensate_06.Name = "tb_Compensate_06";
+            this.tb_Compensate_06.ReadOnly = true;
+            this.tb_Compensate_06.Click += new System.EventHandler(this.tb_Compensate_Click);
+            // 
+            // tb_Compensate_05
+            // 
+            this.tb_Compensate_05.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Compensate_05.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.tb_Compensate_05, "tb_Compensate_05");
+            this.tb_Compensate_05.Name = "tb_Compensate_05";
+            this.tb_Compensate_05.ReadOnly = true;
+            this.tb_Compensate_05.Click += new System.EventHandler(this.tb_Compensate_Click);
+            // 
+            // tb_Compensate_04
+            // 
+            this.tb_Compensate_04.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Compensate_04.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.tb_Compensate_04, "tb_Compensate_04");
+            this.tb_Compensate_04.Name = "tb_Compensate_04";
+            this.tb_Compensate_04.ReadOnly = true;
+            this.tb_Compensate_04.Click += new System.EventHandler(this.tb_Compensate_Click);
+            // 
+            // tb_Compensate_03
+            // 
+            this.tb_Compensate_03.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Compensate_03.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.tb_Compensate_03, "tb_Compensate_03");
+            this.tb_Compensate_03.Name = "tb_Compensate_03";
+            this.tb_Compensate_03.ReadOnly = true;
+            this.tb_Compensate_03.Click += new System.EventHandler(this.tb_Compensate_Click);
+            // 
+            // tb_Compensate_02
+            // 
+            this.tb_Compensate_02.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Compensate_02.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.tb_Compensate_02, "tb_Compensate_02");
+            this.tb_Compensate_02.Name = "tb_Compensate_02";
+            this.tb_Compensate_02.ReadOnly = true;
+            this.tb_Compensate_02.Click += new System.EventHandler(this.tb_Compensate_Click);
+            // 
+            // tb_Compensate_01
+            // 
+            this.tb_Compensate_01.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Compensate_01.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.tb_Compensate_01, "tb_Compensate_01");
+            this.tb_Compensate_01.Name = "tb_Compensate_01";
+            this.tb_Compensate_01.ReadOnly = true;
+            this.tb_Compensate_01.Click += new System.EventHandler(this.tb_Compensate_Click);
             // 
             // numeric_Compensate_Down
             // 
@@ -3497,175 +3667,6 @@
             this.btn_ThermalSetting_Back.Name = "btn_ThermalSetting_Back";
             this.btn_ThermalSetting_Back.UseVisualStyleBackColor = false;
             this.btn_ThermalSetting_Back.Click += new System.EventHandler(this.btn_ThermalSetting_Back_Click);
-            // 
-            // panel_Compensate
-            // 
-            this.panel_Compensate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
-            this.panel_Compensate.Controls.Add(this.cb_Compensate_Channel);
-            this.panel_Compensate.Controls.Add(this.lb_Compensate_page);
-            this.panel_Compensate.Controls.Add(this.btn_Compensate_down);
-            this.panel_Compensate.Controls.Add(this.btn_Compensate_up);
-            this.panel_Compensate.Controls.Add(this.btn_CompensateSet_delete);
-            this.panel_Compensate.Controls.Add(this.btn_CompensateSet_save);
-            this.panel_Compensate.Controls.Add(this.label12);
-            this.panel_Compensate.Controls.Add(this.tb_Compensate_ip);
-            this.panel_Compensate.Controls.Add(this.label11);
-            this.panel_Compensate.Controls.Add(this.tb_Compensate_07);
-            this.panel_Compensate.Controls.Add(this.tb_Compensate_06);
-            this.panel_Compensate.Controls.Add(this.tb_Compensate_05);
-            this.panel_Compensate.Controls.Add(this.tb_Compensate_04);
-            this.panel_Compensate.Controls.Add(this.tb_Compensate_03);
-            this.panel_Compensate.Controls.Add(this.tb_Compensate_02);
-            this.panel_Compensate.Controls.Add(this.tb_Compensate_01);
-            resources.ApplyResources(this.panel_Compensate, "panel_Compensate");
-            this.panel_Compensate.Name = "panel_Compensate";
-            // 
-            // cb_Compensate_Channel
-            // 
-            this.cb_Compensate_Channel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cb_Compensate_Channel, "cb_Compensate_Channel");
-            this.cb_Compensate_Channel.Items.AddRange(new object[] {
-            resources.GetString("cb_Compensate_Channel.Items"),
-            resources.GetString("cb_Compensate_Channel.Items1"),
-            resources.GetString("cb_Compensate_Channel.Items2"),
-            resources.GetString("cb_Compensate_Channel.Items3"),
-            resources.GetString("cb_Compensate_Channel.Items4"),
-            resources.GetString("cb_Compensate_Channel.Items5"),
-            resources.GetString("cb_Compensate_Channel.Items6"),
-            resources.GetString("cb_Compensate_Channel.Items7"),
-            resources.GetString("cb_Compensate_Channel.Items8"),
-            resources.GetString("cb_Compensate_Channel.Items9")});
-            this.cb_Compensate_Channel.Name = "cb_Compensate_Channel";
-            // 
-            // lb_Compensate_page
-            // 
-            resources.ApplyResources(this.lb_Compensate_page, "lb_Compensate_page");
-            this.lb_Compensate_page.ForeColor = System.Drawing.Color.White;
-            this.lb_Compensate_page.Name = "lb_Compensate_page";
-            // 
-            // btn_Compensate_down
-            // 
-            this.btn_Compensate_down.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Compensate_down.BackgroundImage = global::ToolWear.Properties.Resources.btn_down;
-            resources.ApplyResources(this.btn_Compensate_down, "btn_Compensate_down");
-            this.btn_Compensate_down.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_down.Name = "btn_Compensate_down";
-            this.btn_Compensate_down.UseVisualStyleBackColor = false;
-            this.btn_Compensate_down.Click += new System.EventHandler(this.btn_Compensate_down_Click);
-            // 
-            // btn_Compensate_up
-            // 
-            this.btn_Compensate_up.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Compensate_up.BackgroundImage = global::ToolWear.Properties.Resources.btn_up;
-            resources.ApplyResources(this.btn_Compensate_up, "btn_Compensate_up");
-            this.btn_Compensate_up.FlatAppearance.BorderSize = 0;
-            this.btn_Compensate_up.Name = "btn_Compensate_up";
-            this.btn_Compensate_up.UseVisualStyleBackColor = false;
-            this.btn_Compensate_up.Click += new System.EventHandler(this.btn_Compensate_up_Click);
-            // 
-            // btn_CompensateSet_delete
-            // 
-            this.btn_CompensateSet_delete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_delete.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_delete;
-            resources.ApplyResources(this.btn_CompensateSet_delete, "btn_CompensateSet_delete");
-            this.btn_CompensateSet_delete.FlatAppearance.BorderSize = 0;
-            this.btn_CompensateSet_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_delete.Name = "btn_CompensateSet_delete";
-            this.btn_CompensateSet_delete.UseVisualStyleBackColor = false;
-            // 
-            // btn_CompensateSet_save
-            // 
-            this.btn_CompensateSet_save.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_save.BackgroundImage = global::ToolWear.Properties.Resources.tc_s_icon_save;
-            resources.ApplyResources(this.btn_CompensateSet_save, "btn_CompensateSet_save");
-            this.btn_CompensateSet_save.FlatAppearance.BorderSize = 0;
-            this.btn_CompensateSet_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_CompensateSet_save.Name = "btn_CompensateSet_save";
-            this.btn_CompensateSet_save.UseVisualStyleBackColor = false;
-            this.btn_CompensateSet_save.Click += new System.EventHandler(this.btn_CompensateSet_save_Click);
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Name = "label12";
-            // 
-            // tb_Compensate_ip
-            // 
-            resources.ApplyResources(this.tb_Compensate_ip, "tb_Compensate_ip");
-            this.tb_Compensate_ip.Name = "tb_Compensate_ip";
-            this.tb_Compensate_ip.Enter += new System.EventHandler(this.ShowInputPanel_Click);
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Name = "label11";
-            // 
-            // tb_Compensate_07
-            // 
-            this.tb_Compensate_07.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Compensate_07.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.tb_Compensate_07, "tb_Compensate_07");
-            this.tb_Compensate_07.Name = "tb_Compensate_07";
-            this.tb_Compensate_07.ReadOnly = true;
-            this.tb_Compensate_07.Click += new System.EventHandler(this.tb_Compensate_Click);
-            // 
-            // tb_Compensate_06
-            // 
-            this.tb_Compensate_06.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Compensate_06.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.tb_Compensate_06, "tb_Compensate_06");
-            this.tb_Compensate_06.Name = "tb_Compensate_06";
-            this.tb_Compensate_06.ReadOnly = true;
-            this.tb_Compensate_06.Click += new System.EventHandler(this.tb_Compensate_Click);
-            // 
-            // tb_Compensate_05
-            // 
-            this.tb_Compensate_05.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Compensate_05.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.tb_Compensate_05, "tb_Compensate_05");
-            this.tb_Compensate_05.Name = "tb_Compensate_05";
-            this.tb_Compensate_05.ReadOnly = true;
-            this.tb_Compensate_05.Click += new System.EventHandler(this.tb_Compensate_Click);
-            // 
-            // tb_Compensate_04
-            // 
-            this.tb_Compensate_04.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Compensate_04.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.tb_Compensate_04, "tb_Compensate_04");
-            this.tb_Compensate_04.Name = "tb_Compensate_04";
-            this.tb_Compensate_04.ReadOnly = true;
-            this.tb_Compensate_04.Click += new System.EventHandler(this.tb_Compensate_Click);
-            // 
-            // tb_Compensate_03
-            // 
-            this.tb_Compensate_03.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Compensate_03.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.tb_Compensate_03, "tb_Compensate_03");
-            this.tb_Compensate_03.Name = "tb_Compensate_03";
-            this.tb_Compensate_03.ReadOnly = true;
-            this.tb_Compensate_03.Click += new System.EventHandler(this.tb_Compensate_Click);
-            // 
-            // tb_Compensate_02
-            // 
-            this.tb_Compensate_02.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Compensate_02.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.tb_Compensate_02, "tb_Compensate_02");
-            this.tb_Compensate_02.Name = "tb_Compensate_02";
-            this.tb_Compensate_02.ReadOnly = true;
-            this.tb_Compensate_02.Click += new System.EventHandler(this.tb_Compensate_Click);
-            // 
-            // tb_Compensate_01
-            // 
-            this.tb_Compensate_01.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Compensate_01.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.tb_Compensate_01, "tb_Compensate_01");
-            this.tb_Compensate_01.Name = "tb_Compensate_01";
-            this.tb_Compensate_01.ReadOnly = true;
-            this.tb_Compensate_01.Click += new System.EventHandler(this.tb_Compensate_Click);
             // 
             // panel8
             // 
@@ -7408,6 +7409,7 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(46)))), ((int)(((byte)(74)))));
+            this.panel14.Controls.Add(this.btn_prediction_add);
             this.panel14.Controls.Add(this.cb_prediction_ModelName);
             this.panel14.Controls.Add(this.label88);
             this.panel14.Controls.Add(this.cb_prediction_work);
@@ -7418,6 +7420,16 @@
             this.panel14.Controls.Add(this.label90);
             resources.ApplyResources(this.panel14, "panel14");
             this.panel14.Name = "panel14";
+            // 
+            // btn_prediction_add
+            // 
+            this.btn_prediction_add.BackColor = System.Drawing.Color.Transparent;
+            this.btn_prediction_add.BackgroundImage = global::ToolWear.Properties.Resources.wdps_btn_plus;
+            resources.ApplyResources(this.btn_prediction_add, "btn_prediction_add");
+            this.btn_prediction_add.FlatAppearance.BorderSize = 0;
+            this.btn_prediction_add.Name = "btn_prediction_add";
+            this.btn_prediction_add.UseVisualStyleBackColor = false;
+            this.btn_prediction_add.Click += new System.EventHandler(this.btn_prediction_add_Click);
             // 
             // cb_prediction_ModelName
             // 
@@ -7749,6 +7761,12 @@
             this.panel_AccCur.Controls.Add(this.label102);
             resources.ApplyResources(this.panel_AccCur, "panel_AccCur");
             this.panel_AccCur.Name = "panel_AccCur";
+            // 
+            // cb_AccCur_FFT
+            // 
+            resources.ApplyResources(this.cb_AccCur_FFT, "cb_AccCur_FFT");
+            this.cb_AccCur_FFT.Name = "cb_AccCur_FFT";
+            this.cb_AccCur_FFT.UseVisualStyleBackColor = true;
             // 
             // btn_AccCur_back
             // 
@@ -9279,30 +9297,26 @@
             this.label124.ForeColor = System.Drawing.Color.White;
             this.label124.Name = "label124";
             // 
-            // cb_AccCur_FFT
-            // 
-            resources.ApplyResources(this.cb_AccCur_FFT, "cb_AccCur_FFT");
-            this.cb_AccCur_FFT.Name = "cb_AccCur_FFT";
-            this.cb_AccCur_FFT.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
             this.ControlBox = false;
+            this.Controls.Add(this.panel_prediction);
+            this.Controls.Add(this.panel_ToolWearSetting);
+            this.Controls.Add(this.panel_ToolWear);
+            this.Controls.Add(this.panel_ThermalSetting);
+            this.Controls.Add(this.panel_Thermal);
+            this.Controls.Add(this.panel_log);
             this.Controls.Add(this.panel_AccCur);
             this.Controls.Add(this.panel_AccCur_parameter);
             this.Controls.Add(this.panel_AccCur_setting);
-            this.Controls.Add(this.panel_prediction);
             this.Controls.Add(this.panel_Loading);
             this.Controls.Add(this.panel_AlarmSetting);
             this.Controls.Add(this.panel_setting);
             this.Controls.Add(this.panel_Learn);
-            this.Controls.Add(this.panel_Thermal);
-            this.Controls.Add(this.panel_ThermalSetting);
             this.Controls.Add(this.panel_ATCsetting);
-            this.Controls.Add(this.panel_ToolWearSetting);
             this.Controls.Add(this.panel_Threshold);
             this.Controls.Add(this.panel_Health_Setting);
             this.Controls.Add(this.panel_Health_Result);
@@ -9311,8 +9325,6 @@
             this.Controls.Add(this.panel_SelectParts);
             this.Controls.Add(this.panel_ViewModule);
             this.Controls.Add(this.panel_Home);
-            this.Controls.Add(this.panel_log);
-            this.Controls.Add(this.panel_ToolWear);
             this.Controls.Add(this.panel_AE);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -10202,6 +10214,7 @@
         private System.Windows.Forms.Label label141;
         private System.Windows.Forms.Label label136;
         private System.Windows.Forms.CheckBox cb_AccCur_FFT;
+        private System.Windows.Forms.Button btn_prediction_add;
     }
 }
 

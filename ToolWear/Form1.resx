@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ViewModule.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="panel_ToolWearSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1627,7 +1627,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWearSetting.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>1</value>
   </data>
   <data name="panel_ToolWear.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3040,7 +3040,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>2</value>
   </data>
   <data name="panel_Home.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3439,7 +3439,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Home.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="panel_Threshold.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -4963,994 +4963,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Threshold.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="panel_ThermalSetting.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="numeric_Compensate_Down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="numeric_Compensate_Down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="numeric_Compensate_Down.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="numeric_Compensate_Down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="numeric_Compensate_Down.Location" type="System.Drawing.Point, System.Drawing">
-    <value>734, 276</value>
-  </data>
-  <data name="numeric_Compensate_Down.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 35</value>
-  </data>
-  <data name="numeric_Compensate_Down.TabIndex" type="System.Int32, mscorlib">
-    <value>110</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate_Down.Name" xml:space="preserve">
-    <value>numeric_Compensate_Down</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate_Down.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate_Down.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate_Down.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="numeric_Compensate_Up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="numeric_Compensate_Up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="numeric_Compensate_Up.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="numeric_Compensate_Up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="numeric_Compensate_Up.Location" type="System.Drawing.Point, System.Drawing">
-    <value>688, 276</value>
-  </data>
-  <data name="numeric_Compensate_Up.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 35</value>
-  </data>
-  <data name="numeric_Compensate_Up.TabIndex" type="System.Int32, mscorlib">
-    <value>109</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate_Up.Name" xml:space="preserve">
-    <value>numeric_Compensate_Up</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate_Up.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate_Up.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;numeric_Compensate_Up.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="numeric_Temperature_Down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="numeric_Temperature_Down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="numeric_Temperature_Down.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="numeric_Temperature_Down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="numeric_Temperature_Down.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 276</value>
-  </data>
-  <data name="numeric_Temperature_Down.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 35</value>
-  </data>
-  <data name="numeric_Temperature_Down.TabIndex" type="System.Int32, mscorlib">
-    <value>108</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature_Down.Name" xml:space="preserve">
-    <value>numeric_Temperature_Down</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature_Down.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature_Down.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature_Down.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="numeric_Temperature_Up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="numeric_Temperature_Up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="numeric_Temperature_Up.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="numeric_Temperature_Up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="numeric_Temperature_Up.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 276</value>
-  </data>
-  <data name="numeric_Temperature_Up.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 35</value>
-  </data>
-  <data name="numeric_Temperature_Up.TabIndex" type="System.Int32, mscorlib">
-    <value>107</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature_Up.Name" xml:space="preserve">
-    <value>numeric_Temperature_Up</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature_Up.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature_Up.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;numeric_Temperature_Up.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btn_CompensateSave.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_CompensateSave.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_CompensateSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_CompensateSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>839, 273</value>
-  </data>
-  <data name="btn_CompensateSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 33</value>
-  </data>
-  <data name="btn_CompensateSave.TabIndex" type="System.Int32, mscorlib">
-    <value>56</value>
-  </data>
-  <data name="btn_CompensateSave.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateSave.Name" xml:space="preserve">
-    <value>btn_CompensateSave</value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateSave.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateSave.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btn_Compensate_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_20.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 179</value>
-  </data>
-  <data name="btn_Compensate_20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_20.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_20.Name" xml:space="preserve">
-    <value>btn_Compensate_20</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_20.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_20.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btn_Compensate_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_19.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 180</value>
-  </data>
-  <data name="btn_Compensate_19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_19.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_19.Name" xml:space="preserve">
-    <value>btn_Compensate_19</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_19.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_19.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="btn_Compensate_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_18.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 179</value>
-  </data>
-  <data name="btn_Compensate_18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_18.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_18.Name" xml:space="preserve">
-    <value>btn_Compensate_18</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_18.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_18.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="btn_Compensate_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_17.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 179</value>
-  </data>
-  <data name="btn_Compensate_17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_17.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_17.Name" xml:space="preserve">
-    <value>btn_Compensate_17</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_17.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_17.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="btn_Compensate_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_16.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 180</value>
-  </data>
-  <data name="btn_Compensate_16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_16.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_16.Name" xml:space="preserve">
-    <value>btn_Compensate_16</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_16.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_16.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="btn_Compensate_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_15.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 180</value>
-  </data>
-  <data name="btn_Compensate_15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_15.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_15.Name" xml:space="preserve">
-    <value>btn_Compensate_15</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_15.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_15.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="btn_Compensate_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_14.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 179</value>
-  </data>
-  <data name="btn_Compensate_14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_14.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_14.Name" xml:space="preserve">
-    <value>btn_Compensate_14</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_14.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_14.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="btn_Compensate_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_13.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 179</value>
-  </data>
-  <data name="btn_Compensate_13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_13.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_13.Name" xml:space="preserve">
-    <value>btn_Compensate_13</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_13.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_13.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="btn_Compensate_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_12.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 179</value>
-  </data>
-  <data name="btn_Compensate_12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_12.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_12.Name" xml:space="preserve">
-    <value>btn_Compensate_12</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_12.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_12.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="btn_Compensate_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_11.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 179</value>
-  </data>
-  <data name="btn_Compensate_11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_11.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_11.Name" xml:space="preserve">
-    <value>btn_Compensate_11</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_11.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_11.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="btn_Compensate_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_10.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 93</value>
-  </data>
-  <data name="btn_Compensate_10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_10.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_10.Name" xml:space="preserve">
-    <value>btn_Compensate_10</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_10.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_10.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="btn_Compensate_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_09.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_09.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_09.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_09.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 94</value>
-  </data>
-  <data name="btn_Compensate_09.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_09.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_09.Name" xml:space="preserve">
-    <value>btn_Compensate_09</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_09.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_09.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_09.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="btn_Compensate_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_08.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_08.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_08.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 93</value>
-  </data>
-  <data name="btn_Compensate_08.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_08.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_08.Name" xml:space="preserve">
-    <value>btn_Compensate_08</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_08.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_08.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_08.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="btn_CompensateRemove.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_CompensateRemove.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_CompensateRemove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_CompensateRemove.Location" type="System.Drawing.Point, System.Drawing">
-    <value>896, 271</value>
-  </data>
-  <data name="btn_CompensateRemove.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 33</value>
-  </data>
-  <data name="btn_CompensateRemove.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateRemove.Name" xml:space="preserve">
-    <value>btn_CompensateRemove</value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateRemove.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateRemove.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateRemove.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="btn_Compensate_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_07.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_07.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_07.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_07.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 93</value>
-  </data>
-  <data name="btn_Compensate_07.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_07.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_07.Name" xml:space="preserve">
-    <value>btn_Compensate_07</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_07.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_07.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_07.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="btn_CompensateAdd.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_CompensateAdd.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btn_CompensateAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_CompensateAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>781, 273</value>
-  </data>
-  <data name="btn_CompensateAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 33</value>
-  </data>
-  <data name="btn_CompensateAdd.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="btn_CompensateAdd.Text" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateAdd.Name" xml:space="preserve">
-    <value>btn_CompensateAdd</value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateAdd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateAdd.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_CompensateAdd.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="btn_Compensate_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_06.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_06.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_06.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_06.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 94</value>
-  </data>
-  <data name="btn_Compensate_06.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_06.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_06.Name" xml:space="preserve">
-    <value>btn_Compensate_06</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_06.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_06.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_06.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="btn_Compensate_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_05.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_05.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_05.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 94</value>
-  </data>
-  <data name="btn_Compensate_05.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_05.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_05.Name" xml:space="preserve">
-    <value>btn_Compensate_05</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_05.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_05.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_05.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="btn_Compensate_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_04.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_04.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_04.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_04.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 93</value>
-  </data>
-  <data name="btn_Compensate_04.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_04.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_04.Name" xml:space="preserve">
-    <value>btn_Compensate_04</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_04.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_04.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_04.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="btn_Compensate_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_03.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_03.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_03.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_03.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 93</value>
-  </data>
-  <data name="btn_Compensate_03.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_03.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_03.Name" xml:space="preserve">
-    <value>btn_Compensate_03</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_03.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_03.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_03.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="btn_Compensate_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_02.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_02.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_02.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_02.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 93</value>
-  </data>
-  <data name="btn_Compensate_02.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_02.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_02.Name" xml:space="preserve">
-    <value>btn_Compensate_02</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_02.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_02.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_02.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 22.2pt</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 265</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 48</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>溫補</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="btn_Compensate_01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_Compensate_01.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_Compensate_01.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 19.8000011pt</value>
-  </data>
-  <data name="btn_Compensate_01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_Compensate_01.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 93</value>
-  </data>
-  <data name="btn_Compensate_01.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_Compensate_01.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_01.Name" xml:space="preserve">
-    <value>btn_Compensate_01</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_01.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_01.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_Compensate_01.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 28.2pt</value>
-  </data>
-  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 17</value>
-  </data>
-  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 61</value>
-  </data>
-  <data name="label23.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="label23.Text" xml:space="preserve">
-    <value>熱補償/設定</value>
-  </data>
-  <data name="&gt;&gt;label23.Name" xml:space="preserve">
-    <value>label23</value>
-  </data>
-  <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="btn_ThermalSetting_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btn_ThermalSetting_Back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="btn_ThermalSetting_Back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btn_ThermalSetting_Back.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 9</value>
-  </data>
-  <data name="btn_ThermalSetting_Back.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 73</value>
-  </data>
-  <data name="btn_ThermalSetting_Back.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btn_ThermalSetting_Back.Name" xml:space="preserve">
-    <value>btn_ThermalSetting_Back</value>
-  </data>
-  <data name="&gt;&gt;btn_ThermalSetting_Back.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_ThermalSetting_Back.Parent" xml:space="preserve">
-    <value>panel_ThermalSetting</value>
-  </data>
-  <data name="&gt;&gt;btn_ThermalSetting_Back.ZOrder" xml:space="preserve">
-    <value>29</value>
   </data>
   <data name="cb_Compensate_Channel.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 13.8pt</value>
@@ -6445,6 +5461,990 @@
     <value>panel_ThermalSetting</value>
   </data>
   <data name="&gt;&gt;panel_Compensate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numeric_Compensate_Down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="numeric_Compensate_Down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="numeric_Compensate_Down.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="numeric_Compensate_Down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="numeric_Compensate_Down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>734, 276</value>
+  </data>
+  <data name="numeric_Compensate_Down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 35</value>
+  </data>
+  <data name="numeric_Compensate_Down.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.Name" xml:space="preserve">
+    <value>numeric_Compensate_Down</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Down.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="numeric_Compensate_Up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="numeric_Compensate_Up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="numeric_Compensate_Up.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="numeric_Compensate_Up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="numeric_Compensate_Up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>688, 276</value>
+  </data>
+  <data name="numeric_Compensate_Up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 35</value>
+  </data>
+  <data name="numeric_Compensate_Up.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.Name" xml:space="preserve">
+    <value>numeric_Compensate_Up</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Compensate_Up.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="numeric_Temperature_Down.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="numeric_Temperature_Down.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="numeric_Temperature_Down.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="numeric_Temperature_Down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="numeric_Temperature_Down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 276</value>
+  </data>
+  <data name="numeric_Temperature_Down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 35</value>
+  </data>
+  <data name="numeric_Temperature_Down.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.Name" xml:space="preserve">
+    <value>numeric_Temperature_Down</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Down.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="numeric_Temperature_Up.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="numeric_Temperature_Up.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="numeric_Temperature_Up.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="numeric_Temperature_Up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="numeric_Temperature_Up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 276</value>
+  </data>
+  <data name="numeric_Temperature_Up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 35</value>
+  </data>
+  <data name="numeric_Temperature_Up.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.Name" xml:space="preserve">
+    <value>numeric_Temperature_Up</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;numeric_Temperature_Up.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_CompensateSave.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_CompensateSave.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_CompensateSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_CompensateSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>839, 273</value>
+  </data>
+  <data name="btn_CompensateSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 33</value>
+  </data>
+  <data name="btn_CompensateSave.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="btn_CompensateSave.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSave.Name" xml:space="preserve">
+    <value>btn_CompensateSave</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSave.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateSave.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btn_Compensate_20.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 179</value>
+  </data>
+  <data name="btn_Compensate_20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_20.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_20.Name" xml:space="preserve">
+    <value>btn_Compensate_20</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_20.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_20.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btn_Compensate_19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 180</value>
+  </data>
+  <data name="btn_Compensate_19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_19.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_19.Name" xml:space="preserve">
+    <value>btn_Compensate_19</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_19.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_19.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btn_Compensate_18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_18.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 179</value>
+  </data>
+  <data name="btn_Compensate_18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_18.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_18.Name" xml:space="preserve">
+    <value>btn_Compensate_18</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_18.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_18.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btn_Compensate_17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_17.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 179</value>
+  </data>
+  <data name="btn_Compensate_17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_17.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_17.Name" xml:space="preserve">
+    <value>btn_Compensate_17</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_17.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_17.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btn_Compensate_16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_16.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 180</value>
+  </data>
+  <data name="btn_Compensate_16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_16.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_16.Name" xml:space="preserve">
+    <value>btn_Compensate_16</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_16.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_16.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btn_Compensate_15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_15.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 180</value>
+  </data>
+  <data name="btn_Compensate_15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_15.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_15.Name" xml:space="preserve">
+    <value>btn_Compensate_15</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_15.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_15.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btn_Compensate_14.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_14.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 179</value>
+  </data>
+  <data name="btn_Compensate_14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_14.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_14.Name" xml:space="preserve">
+    <value>btn_Compensate_14</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_14.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_14.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btn_Compensate_13.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_13.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 179</value>
+  </data>
+  <data name="btn_Compensate_13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_13.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_13.Name" xml:space="preserve">
+    <value>btn_Compensate_13</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_13.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_13.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btn_Compensate_12.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_12.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 179</value>
+  </data>
+  <data name="btn_Compensate_12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_12.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_12.Name" xml:space="preserve">
+    <value>btn_Compensate_12</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_12.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_12.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btn_Compensate_11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_11.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 179</value>
+  </data>
+  <data name="btn_Compensate_11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_11.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_11.Name" xml:space="preserve">
+    <value>btn_Compensate_11</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_11.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_11.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btn_Compensate_10.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_10.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 93</value>
+  </data>
+  <data name="btn_Compensate_10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_10.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_10.Name" xml:space="preserve">
+    <value>btn_Compensate_10</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_10.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_10.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btn_Compensate_09.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_09.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_09.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_09.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_09.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 94</value>
+  </data>
+  <data name="btn_Compensate_09.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_09.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_09.Name" xml:space="preserve">
+    <value>btn_Compensate_09</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_09.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_09.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_09.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="btn_Compensate_08.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_08.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_08.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_08.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 93</value>
+  </data>
+  <data name="btn_Compensate_08.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_08.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_08.Name" xml:space="preserve">
+    <value>btn_Compensate_08</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_08.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_08.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_08.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="btn_CompensateRemove.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_CompensateRemove.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_CompensateRemove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_CompensateRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>896, 271</value>
+  </data>
+  <data name="btn_CompensateRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 33</value>
+  </data>
+  <data name="btn_CompensateRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateRemove.Name" xml:space="preserve">
+    <value>btn_CompensateRemove</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateRemove.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateRemove.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="btn_Compensate_07.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_07.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_07.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_07.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_07.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 93</value>
+  </data>
+  <data name="btn_Compensate_07.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_07.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_07.Name" xml:space="preserve">
+    <value>btn_Compensate_07</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_07.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_07.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_07.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="btn_CompensateAdd.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_CompensateAdd.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_CompensateAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_CompensateAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>781, 273</value>
+  </data>
+  <data name="btn_CompensateAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 33</value>
+  </data>
+  <data name="btn_CompensateAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="btn_CompensateAdd.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateAdd.Name" xml:space="preserve">
+    <value>btn_CompensateAdd</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateAdd.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_CompensateAdd.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="btn_Compensate_06.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_06.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_06.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_06.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_06.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 94</value>
+  </data>
+  <data name="btn_Compensate_06.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_06.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_06.Name" xml:space="preserve">
+    <value>btn_Compensate_06</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_06.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_06.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_06.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="btn_Compensate_05.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_05.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_05.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_05.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 94</value>
+  </data>
+  <data name="btn_Compensate_05.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_05.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_05.Name" xml:space="preserve">
+    <value>btn_Compensate_05</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_05.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_05.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_05.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="btn_Compensate_04.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_04.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_04.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_04.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_04.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 93</value>
+  </data>
+  <data name="btn_Compensate_04.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_04.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_04.Name" xml:space="preserve">
+    <value>btn_Compensate_04</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_04.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_04.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_04.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="btn_Compensate_03.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_03.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_03.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_03.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_03.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 93</value>
+  </data>
+  <data name="btn_Compensate_03.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_03.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_03.Name" xml:space="preserve">
+    <value>btn_Compensate_03</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_03.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_03.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_03.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="btn_Compensate_02.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_02.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_02.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_02.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_02.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 93</value>
+  </data>
+  <data name="btn_Compensate_02.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_02.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_02.Name" xml:space="preserve">
+    <value>btn_Compensate_02</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_02.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_02.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_02.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 22.2pt</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 265</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 48</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>溫補</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="btn_Compensate_01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_Compensate_01.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_Compensate_01.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 19.8000011pt</value>
+  </data>
+  <data name="btn_Compensate_01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Compensate_01.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 93</value>
+  </data>
+  <data name="btn_Compensate_01.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_Compensate_01.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_01.Name" xml:space="preserve">
+    <value>btn_Compensate_01</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_01.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_01.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_Compensate_01.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 28.2pt</value>
+  </data>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 61</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>熱補償/設定</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="btn_ThermalSetting_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_ThermalSetting_Back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_ThermalSetting_Back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_ThermalSetting_Back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 9</value>
+  </data>
+  <data name="btn_ThermalSetting_Back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 73</value>
+  </data>
+  <data name="btn_ThermalSetting_Back.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting_Back.Name" xml:space="preserve">
+    <value>btn_ThermalSetting_Back</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting_Back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting_Back.Parent" xml:space="preserve">
+    <value>panel_ThermalSetting</value>
+  </data>
+  <data name="&gt;&gt;btn_ThermalSetting_Back.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
   <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
@@ -6622,7 +6622,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ThermalSetting.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>3</value>
   </data>
   <data name="panel_Thermal.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -7927,7 +7927,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Thermal.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>4</value>
   </data>
   <data name="panel_Learn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9082,7 +9082,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Learn.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>12</value>
   </data>
   <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -9475,7 +9475,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_log.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>5</value>
   </data>
   <data name="btn_AlarmSet.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -10162,7 +10162,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>11</value>
   </data>
   <data name="tb_Load_ProgressRate.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
@@ -10297,7 +10297,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Loading.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>9</value>
   </data>
   <data name="btn_ATCsetting_30.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -11716,7 +11716,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ATCsetting.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -12337,7 +12337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <metadata name="timer_temperature.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -14038,7 +14038,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_SelectParts.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="btn_AddParts_back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -14365,7 +14365,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AddParts.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <metadata name="timer_load.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>210, 17</value>
@@ -14878,7 +14878,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health_Setting.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="label75.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -15370,7 +15370,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_Health_Result.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="btn_AlarmSetting_Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -15898,7 +15898,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AlarmSetting.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>10</value>
   </data>
   <data name="cb_prediction_TrainTime.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
@@ -16617,6 +16617,36 @@
   <data name="&gt;&gt;panel15.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="btn_prediction_add.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_prediction_add.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btn_prediction_add.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_prediction_add.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 213</value>
+  </data>
+  <data name="btn_prediction_add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 36</value>
+  </data>
+  <data name="btn_prediction_add.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="&gt;&gt;btn_prediction_add.Name" xml:space="preserve">
+    <value>btn_prediction_add</value>
+  </data>
+  <data name="&gt;&gt;btn_prediction_add.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_prediction_add.Parent" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;btn_prediction_add.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="cb_prediction_ModelName.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
   </data>
@@ -16639,7 +16669,7 @@
     <value>panel14</value>
   </data>
   <data name="&gt;&gt;cb_prediction_ModelName.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label88.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -16672,7 +16702,7 @@
     <value>panel14</value>
   </data>
   <data name="&gt;&gt;label88.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="cb_prediction_work.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
@@ -16738,7 +16768,7 @@
     <value>纖維</value>
   </data>
   <data name="cb_prediction_work.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 209</value>
+    <value>161, 175</value>
   </data>
   <data name="cb_prediction_work.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 33</value>
@@ -16756,7 +16786,7 @@
     <value>panel14</value>
   </data>
   <data name="&gt;&gt;cb_prediction_work.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label91.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -16768,7 +16798,7 @@
     <value>NoControl</value>
   </data>
   <data name="label91.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 208</value>
+    <value>13, 174</value>
   </data>
   <data name="label91.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 35</value>
@@ -16789,7 +16819,7 @@
     <value>panel14</value>
   </data>
   <data name="&gt;&gt;label91.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label89.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -16801,7 +16831,7 @@
     <value>NoControl</value>
   </data>
   <data name="label89.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 77</value>
+    <value>13, 70</value>
   </data>
   <data name="label89.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 35</value>
@@ -16822,7 +16852,7 @@
     <value>panel14</value>
   </data>
   <data name="&gt;&gt;label89.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="cb_prediction_Type.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
@@ -16846,7 +16876,7 @@
     <value>金屬縫銑刀</value>
   </data>
   <data name="cb_prediction_Type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 143</value>
+    <value>162, 124</value>
   </data>
   <data name="cb_prediction_Type.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 33</value>
@@ -16864,7 +16894,7 @@
     <value>panel14</value>
   </data>
   <data name="&gt;&gt;cb_prediction_Type.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="cb_prediction_Material.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>
@@ -16879,7 +16909,7 @@
     <value>鎢鋼(細加工)</value>
   </data>
   <data name="cb_prediction_Material.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 78</value>
+    <value>161, 71</value>
   </data>
   <data name="cb_prediction_Material.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 33</value>
@@ -16897,7 +16927,7 @@
     <value>panel14</value>
   </data>
   <data name="&gt;&gt;cb_prediction_Material.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label90.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -16909,7 +16939,7 @@
     <value>NoControl</value>
   </data>
   <data name="label90.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 142</value>
+    <value>14, 123</value>
   </data>
   <data name="label90.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 35</value>
@@ -16930,7 +16960,7 @@
     <value>panel14</value>
   </data>
   <data name="&gt;&gt;label90.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="panel14.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 142</value>
@@ -17319,6 +17349,9 @@
   <data name="btn_prediction_test.Text" xml:space="preserve">
     <value>更改記憶體資料</value>
   </data>
+  <data name="btn_prediction_test.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;btn_prediction_test.Name" xml:space="preserve">
     <value>btn_prediction_test</value>
   </data>
@@ -17350,7 +17383,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_prediction.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
   <metadata name="timer_prediction_ML.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>911, 18</value>
@@ -17785,7 +17818,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AccCur.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>6</value>
   </data>
   <data name="btn_AccCur_parameter_set.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -19165,7 +19198,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AccCur_setting.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>8</value>
   </data>
   <data name="btn_AE_stop.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -21202,10 +21235,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_AccCur_parameter.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>82</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>12, 25</value>
@@ -21214,7 +21250,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1250, 702</value>
+    <value>1270, 790</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>

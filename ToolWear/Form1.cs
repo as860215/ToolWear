@@ -2528,6 +2528,53 @@ namespace ToolWear{
                     MessageBox.Show("「工件種類」未讀取到匹配項目，請確定設定檔是否被更動。", "讀取失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        //刀具磨耗預測 > 新增模型
+        private void btn_prediction_add_Click(object sender,EventArgs e){
+            DialogResult dialogResult = MessageBox.Show(string.Format("您即將儲存\n模型名稱：{0}\n刀具材質：{1}\n刀具種類：{2}\n工件種類：{3}\n\n請問是否要使用預設模型？\n(是：導入預設模型；否：建立空白模型)"
+                , cb_prediction_ModelName.Text, cb_prediction_Material.Text, cb_prediction_Type.Text, cb_prediction_work.Text), "選擇是否使用預設模型", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Cancel) return;
+            //將新的模型寫入新檔
+            StreamWriter sw = new StreamWriter(path + @"model_name\" + cb_prediction_ModelName.Text + ".csv");
+            sw.WriteLine("x,y,z,tool_condition,date,time," + cb_prediction_Material.Text + "," +
+                cb_prediction_Type.Text + "," + cb_prediction_work.Text);
+            if(dialogResult == DialogResult.Yes){
+                StreamReader sr = new StreamReader(path + @"Model_Default.csv");
+                while(!sr.EndOfStream)
+                    sw.WriteLine(sr.ReadLine());
+                sr.Close();
+                sr.Dispose();
+            }
+            sw.Close();
+            sw.Dispose();
+            cb_prediction_ModelName.Items.Add(cb_prediction_ModelName.Text);
+
+            //顯示儲存成功提示訊息
+            string show_s = "您建立了模型\n" + cb_prediction_ModelName.Text;
+            if (dialogResult == DialogResult.Yes) show_s += "\n(導入預設模型)\n\n按下確定後將執行第一次模型建檔\n請稍待進度條執行完畢後再開始偵測。";
+            else show_s += "\n(建立空白模型)";
+            MessageBox.Show(show_s, "儲存成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //如果使用導入預設模型，執行ML進行第一次建模
+            if(dialogResult == DialogResult.Yes){
+                StreamWriter sw_file_name = new StreamWriter(path + @"file_name\file_name.csv");
+                sw_file_name.WriteLine(cb_prediction_ModelName.Text);
+                sw_file_name.Close();
+                sw_file_name.Dispose();
+
+                //清空原先的Textbox內容
+                tb_prediction_Accuracy.Text = "";
+                //關閉按鈕
+                btn_prediction_self.Enabled = false;
+
+                //呼叫exe
+                Process.Start(path + @"SE_SL.exe");
+
+                //歸零進度條
+                PB_prediction_SL.Value = 0;
+                //啟動timer讀取結果
+                timer_prediction_SL.Enabled = true;
+            }
+        }
         //刀具磨耗預測 > 開始
         private void btn_prediction_start_Click(object sender, EventArgs e) {
             //首先判斷名稱是否已填寫
@@ -2540,15 +2587,12 @@ namespace ToolWear{
             foreach (string fname in Directory.GetFileSystemEntries(path + @"model_name\"))
                 file_module.Add(Path.GetFileNameWithoutExtension(fname));
             for (int i = 0; i < file_module.Count; i++) {
+                //如果是舊檔
                 if (file_module[i].Equals(cb_prediction_ModelName.Text)) break;
                 if (i == file_module.Count - 1) {
-                    //將新的模型寫入新檔
-                    StreamWriter sw = new StreamWriter(path + @"model_name\" + cb_prediction_ModelName.Text + ".csv");
-                    sw.WriteLine("x,y,z,tool_condition,date,time," + cb_prediction_Material.Text + "," +
-                        cb_prediction_Type.Text + "," + cb_prediction_work.Text);
-                    sw.Close();
-                    sw.Dispose();
-                    cb_prediction_ModelName.Items.Add(cb_prediction_ModelName.Text);
+                    //新的檔案且還未儲存，導引使用者先儲存資料
+                    MessageBox.Show("您使用了新建立的模型名稱，請先按下模型選單中的 '+' 號以新增模型。", "尚未建立模型", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             }
             //將現在使用的模型名稱寫入file_name.csv
@@ -2556,6 +2600,12 @@ namespace ToolWear{
             sw_file_name.WriteLine(cb_prediction_ModelName.Text);
             sw_file_name.Close();
             sw_file_name.Dispose();
+
+            //清空TextBox內容
+            TextBox[] tb_prediction = new TextBox[8] { tb_prediction_Result,tb_prediction_ToolStatus,tb_prediction_Xmax,
+                        tb_prediction_Ymax,tb_prediction_Zmax,tb_prediction_Xmin,tb_prediction_Ymin,tb_prediction_Zmin};
+            for (int i = 0; i < tb_prediction.Length; i++)
+                tb_prediction[i].Text = "";
 
             btn_prediction_start.Enabled = false;
             btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
@@ -2587,6 +2637,10 @@ namespace ToolWear{
         }
         //刀具磨耗預測 > 自我學習
         private void btn_prediction_self_Click(object sender, EventArgs e) {
+            //清空原先的Textbox內容
+            tb_prediction_Accuracy.Text = "";
+            //關閉按鈕
+            btn_prediction_self.Enabled = false;
             //若是由按鈕觸發而非程式觸發
             if (sender != null){
                 //更改訓練模式字串
@@ -3111,14 +3165,23 @@ namespace ToolWear{
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 計算最佳加工時間
         private void AccCur_parameter_ComputeBestTime(){
-            var Length = num_AccCur_parameter_length.Value;
-            var Width = num_AccCur_parameter_width.Value;
-            var Removal = num_AccCur_parameter_removal.Value;
-            var WheelDown = tb_AccCur_parameter_WheelDown.Text;
-            var Speed = tb_AccCur_parameter_Speed.Text;
-            var Pitch = tb_AccCur_parameter_Pitch.Text;
             try{
-                double BestTime = 0.1 + (double)Length / double.Parse(Pitch) * (double)Width / 1000 / double.Parse(Speed) * ((double)Removal / double.Parse(WheelDown));
+
+                var Length = (int)num_AccCur_parameter_length.Value;
+
+                //長度200內取200 201~400取400 401~600取600mm
+                if (Length < 200) Length = 200;
+                else if (Length >= 201 && Length <= 400) Length = 400;
+                else if (Length >= 401 && Length <= 600) Length = 600;
+
+                var Width = (int)num_AccCur_parameter_width.Value;
+                var Removal = (int)num_AccCur_parameter_removal.Value;
+                var WheelDown = int.Parse(tb_AccCur_parameter_WheelDown.Text);
+                var Speed = int.Parse(tb_AccCur_parameter_Speed.Text);
+                var Pitch = int.Parse(tb_AccCur_parameter_Pitch.Text);
+
+                double BestTime = 0.1f + ((Width + 50) / Pitch) * ((float)Length / (float)(Speed * 1000) / 60f) * ((float)(10 + Removal) / (float)WheelDown);
+                //double BestTime = 0.1 + (double)Length / double.Parse(Pitch) * (double)Width / 1000 / double.Parse(Speed) * ((double)Removal / double.Parse(WheelDown));
 
                 //將數字轉成時間
                 int Hour = int.Parse(BestTime.ToString().Split('.')[0]);
@@ -4216,6 +4279,7 @@ namespace ToolWear{
             //執行結束
             timer_prediction_SL.Enabled = false;
             PB_prediction_SL.Value = 100;
+            btn_prediction_self.Enabled = true;
         }
         //暫存上次讀取的RPM數據
         double LastReload_RPM = 0;
