@@ -1085,8 +1085,8 @@ namespace ToolWear{
         }
         #endregion
         #region 學習模式
-        //判斷是否正處於學習模式
-        bool On_Learn = false;
+        //判斷正處於何者模式
+        string what_mode = "Match";
         //存放現在學習的軸向
         string Learn_Axial = "";
         //模型學習開始
@@ -1098,7 +1098,7 @@ namespace ToolWear{
             btn_Learn_Start.BackgroundImage = ToolWear.Properties.Resources.tc_btn_ply;
             btn_Learn_OK.BackgroundImage = ToolWear.Properties.Resources.btn_stop_selected;
             Learn_Axial = int.Parse(pre_learn.Name.Split('_')[2]).ToString("00");
-            On_Learn = true;
+            what_mode = "Learn";
             StreamWriter sw = new StreamWriter(path + @"\data\module.cp");
             sw.WriteLine();
             sw.Close();
@@ -1154,7 +1154,7 @@ namespace ToolWear{
             btn_Learn_OK.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
             btn_Learn_Start.Enabled = true;
             btn_Learn_OK.Enabled = false;
-            On_Learn = false;
+            what_mode = "Match";
 
             //如果sender == null，表示非按下按鈕後進入function，為例外事件所進入，因此不顯示臨界值
             if (sender == null) return;
@@ -2464,6 +2464,7 @@ namespace ToolWear{
             cb_prediction_work.SelectedIndex = 0;
             cb_prediction_ModelName.SelectedIndex = cb_prediction_ModelName.Items.Count - 1;
             cb_prediction_TrainTime.SelectedIndex = 0;
+            cb_prediction_signal.SelectedIndex = 0;
 
             PB_prediction_ML.Visible = false;
             PB_prediction_SL.Visible = false;
@@ -2620,6 +2621,8 @@ namespace ToolWear{
             PB_prediction_ML.Visible = false;
             PB_prediction_SL.Visible = false;
 
+            cb_prediction_signal.Enabled = false;
+
             timer_prediction.Enabled = true;
         }
         //刀具磨耗預測 > 停止
@@ -2631,6 +2634,8 @@ namespace ToolWear{
             btn_prediction_stop.BackgroundImage = ToolWear.Properties.Resources.tc_btn_stop;
             btn_prediction_start.Enabled = true;
             btn_prediction_start.BackgroundImage = ToolWear.Properties.Resources.btn_start_selected;
+
+            cb_prediction_signal.Enabled = true;
 
             cb_prediction_ModelName.Enabled = true;
 
@@ -3214,13 +3219,14 @@ namespace ToolWear{
             }
             int read_count = 0;
             while (!sr.EndOfStream) {
-                //tem讀取範例：名稱,C:\Users\user\Desktop\Campro\ToolWear\ToolWear\bin\Debug\data\Image\IMG_3494.JPG
+                //tem讀取範例：名稱,data\Image\IMG_3494.JPG
                 string tem = sr.ReadLine();
                 try {
                     if (read_count >= (int.Parse(lb_SelectParts_Page.Text) - 1) * 8 && read_count < int.Parse(lb_SelectParts_Page.Text) * 8) {
                         panel_Parts[read_count % 8].Visible = true;
                         lb_Parts[read_count % 8].Text = tem.Split(',')[0];
                         if (!tem.Split(',')[1].Equals("null")) {
+                            tem.Split(',')[1] = path + tem.Split(',')[1];
                             using (var tem_img = Image.FromFile(tem.Split(',')[1])) {
                                 Image img = new Bitmap(tem_img);
                                 pb_Parts[read_count % 8].BackgroundImage = img;
@@ -3294,11 +3300,11 @@ namespace ToolWear{
             while (!sr.EndOfStream) {
                 string tem = sr.ReadLine();
                 //如果資料檔內的工件名稱 = 本次要刪除的名稱 > 不暫存此資料(意即等等要重新改寫cp檔的時候會忽略之)
-                if (!tem.Split(',')[0].Equals(Parts_Name)) {
+                if (!tem.Split(',')[0].Equals(Parts_Name))
                     tem_Read.Add(tem);
+                else
                     //暫存圖片檔路徑
-                    Delete_Path = tem.Split(',')[1];
-                }
+                    Delete_Path = path + tem.Split(',')[1];
             }
             sr.Close();
             sr.Close();
@@ -3316,7 +3322,7 @@ namespace ToolWear{
             pb_ToolWear_Click(null, null);
             //刪除data內圖片檔案
             try {
-                File.Delete(path + @"\data\Image\" + Parts_Name);
+                File.Delete(Delete_Path);
             }
             catch (Exception ex) {
                 MessageBox.Show("刪除data圖片檔案時發生錯誤。\n\nbtn_SelectParts_remove_Click\n\n" + ex.ToString());
@@ -3397,8 +3403,10 @@ namespace ToolWear{
                 StreamWriter sw = new StreamWriter(File_module);
                 //有選圖片的話
                 if (!string.IsNullOrWhiteSpace(tb_AddParts_Path.Text)) {
-                    sw.WriteLine(tb_AddParts_Name.Text + "," + path + @"data\Image\" + tb_AddParts_Name.Text);
-                    File.Copy(tb_AddParts_Path.Text, path + @"\data\Image\" + tb_AddParts_Name.Text);
+                    string[] File_Split = tb_AddParts_Path.Text.Split('.');
+                    string File_SubName = File_Split[File_Split.Length - 1];    //副檔名
+                    sw.WriteLine(tb_AddParts_Name.Text + "," + @"data\Image\" + tb_AddParts_Name.Text + "." + File_SubName);
+                    File.Copy(tb_AddParts_Path.Text, path + @"\data\Image\" + tb_AddParts_Name.Text + "." + File_SubName);
                 }
                 //沒選圖片的話
                 else
@@ -3501,7 +3509,7 @@ namespace ToolWear{
         Button pre_learn = null;
         private void btn_Learn_Choose(object sender, EventArgs e) {
             //如果正在學習中，不允許切換數據
-            if (On_Learn == true) {
+            if (what_mode.Equals("Learn")) {
                 MessageBox.Show("目前正處於學習階段，不允許切換軸向。", "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -4196,7 +4204,8 @@ namespace ToolWear{
         private void timer_Prediction_Tick(object sender, EventArgs e){
             if (lb_prediction_status.Text.Equals("8")){
                 //如果已經有偵測在運行了就直接跳過程式
-                if (runningTask != null) return;
+                if (cb_prediction_signal.Text.Equals("NI") && runningTask != null) return;
+                else if (cb_prediction_signal.Text.Equals("LNC") && timer_LNC.Enabled == true) return;
 
                 //清空Raw_Data.csv
                 StreamWriter sw_Raw_Data = new StreamWriter(path + @"Raw_Data.csv");
@@ -4204,11 +4213,24 @@ namespace ToolWear{
                 sw_Raw_Data.Close();
                 sw_Raw_Data.Dispose();
 
-                DAQInitialize("Prediction");
+                if (cb_prediction_signal.Text.Equals("NI DAQ"))
+                    DAQInitialize("Prediction");
+                else if (cb_prediction_signal.Text.Equals("LNC")){
+                    what_mode = "Prediction";
+                    short rc = 0;
+                    rc = CLNCc.lnc_svi_enable(gNid, 1);
+                    dt_LNC = new DataTable();
+                    dt_LNC.Columns.Add("X");
+                    dt_LNC.Columns.Add("Y");
+                    dt_LNC.Columns.Add("Z");
+                    timer_LNC.Enabled = true;
+                }
             }
             else{
-                if (runningTask == null) return;
+                if (cb_prediction_signal.Text.Equals("NI") && runningTask == null) return;
+                else if (cb_prediction_signal.Text.Equals("LNC") && timer_LNC.Enabled == false) return;
                 TaskStop();
+                timer_LNC.Enabled = false;
                 //計數器+1
                 Prediction_AutoMode_Count++;
 
@@ -4300,7 +4322,7 @@ namespace ToolWear{
 
             //以下未測試
             //判斷當處於磨耗偵測模式時才重新讀取FFT圖形
-            if (On_Learn == false){
+            if (what_mode.Equals("Match")){
                 //查詢是否有軸向正在偵測
                 bool On_ToolWear = false;
                 for (int i = 0; i < 20; i++){
@@ -4891,6 +4913,9 @@ namespace ToolWear{
                 }
                 double hz = rate / sample;
                 for (int i = 0; i < sample / 2; i++){
+                    //寶元的感測器忽略第一項低頻
+                    if (timer_LNC.Enabled == true && i == 0) continue; 
+
                     double mag = (4.0 / sample) * (Math.Abs(Math.Sqrt(Math.Pow(samples[i].Real, 2) +
                         Math.Pow(samples[i].Imaginary, 2))));
                     //if (mag < 0.5) mag *= 0.2f;
@@ -5001,7 +5026,7 @@ namespace ToolWear{
         //暫存LNC資料
         DataTable dt_LNC = new DataTable();
         //取得LNC資料
-            private void LNC_GetData(){
+        private void LNC_GetData(){
             ushort i = 0;
             short rc = 0;
             byte commSts = 0, sensorSTS = 0;
@@ -5018,23 +5043,40 @@ namespace ToolWear{
                     //如果存值>1660筆資料，重置Datatable
                     if(dt_LNC.Rows.Count >= 1660){
                         dt_LNC = new DataTable();
+                        //如果是磨耗預測(加入三軸的資料)
+                        if (what_mode.Equals("Prediction")){
+                            dt_LNC.Columns.Add("X");
+                            dt_LNC.Columns.Add("Y");
+                        }
                         dt_LNC.Columns.Add("Z");
                     }
                     
-                    short[] parrTDData = new short[TDLength];
+                    short[] parrTDData = new short[TDLength + 2];
 
                     rc = CLNCc.lnc_svi_get_td_data(gNid, TDLength, ref parrTDData[0], ref numTD);
                     
                     while(LNC_Data.Count >= Chart_max){
                         LNC_Data.RemoveRange(0, 500);
                     }
-                    for (i = 0;  i < numTD; i += 3){
-                        if (i > 3000) break;
-                        dt_LNC.Rows.Add(parrTDData[i].ToString());
-                        LNC_Data.Add(parrTDData[i].ToString());
+                    //取得資料
+                    //磨耗偵測與學習模式(單軸)
+                    if(what_mode.Equals("Learn") || what_mode.Equals("Match")){
+                        for (i = 0; i < numTD; i += 3){
+                            if (i > 3000) break;
+                            dt_LNC.Rows.Add(parrTDData[i].ToString());
+                            LNC_Data.Add(parrTDData[i].ToString());
+                        }
+                    }
+                    //磨耗預測模式(三軸)
+                    else if (what_mode.Equals("Prediction")){
+                        for (i = 0; i < numTD; i += 3){
+                            //if (i > 3000) break;
+                            dt_LNC.Rows.Add(parrTDData[i].ToString(), parrTDData[i + 1].ToString(), parrTDData[i + 2].ToString());
+                            //LNC_Data.Add(parrTDData[i].ToString());
+                        }
                     }
                     //學習模式
-                    if(On_Learn == true){
+                    if(what_mode.Equals("Learn")){
                         chart_Learn.Series[0].Points.Clear();
                         for (i = 0; i < LNC_Data.Count; i++)
                             chart_Learn.Series[0].Points.AddXY((i + 1), LNC_Data[i]);
@@ -5043,7 +5085,7 @@ namespace ToolWear{
                             FFT("Learn", dt_LNC, 166, 1660);
                     }
                     //偵測模式
-                    else{
+                    else if(what_mode.Equals("Match")){
                         chart_ToolWear.Series[0].Points.Clear();
                         for (i = 0; i < LNC_Data.Count; i++)
                             chart_ToolWear.Series[0].Points.AddXY((i + 1), LNC_Data[i]);
@@ -5051,33 +5093,24 @@ namespace ToolWear{
                         if (dt_LNC.Rows.Count >= 1660)
                             FFT("Match", dt_LNC, 166, 1660);
                     }
+                    //磨耗預測模式
+                    else if (what_mode.Equals("Prediction")){
+                        chart_prediction_X.Series[0].Points.Clear();
+                        chart_prediction_Y.Series[0].Points.Clear();
+                        chart_prediction_Z.Series[0].Points.Clear();
+                        FileStream File_module = File.Open(path + @"Raw_Data.csv", FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
+                        StreamWriter sw = new StreamWriter(File_module);
+                        for (i = 0; i < dt_LNC.Rows.Count; i++){
+                            chart_prediction_X.Series[0].Points.AddXY((i + 1), dt_LNC.Rows[i][0]);
+                            chart_prediction_Y.Series[0].Points.AddXY((i + 1), dt_LNC.Rows[i][1]);
+                            chart_prediction_Z.Series[0].Points.AddXY((i + 1), dt_LNC.Rows[i][2]);
+                            if (!string.IsNullOrWhiteSpace(dt_LNC.Rows[i][0].ToString()))
+                                sw.WriteLine(dt_LNC.Rows[i][0] + "," + dt_LNC.Rows[i][1] + "," + dt_LNC.Rows[i][2]);
+                        }
+                        sw.Close();
+                        sw.Dispose();
+                    }
                 }
-
-                //float max = 0;
-                //int maxFq = 0;
-                //float[] arrFDData;
-                //int fdLength = 0;
-
-                //fdLength = CLNCc.LNC_FD_DATA_LENGTH_1D66K;
-
-                //arrFDData = new float[fdLength];
-
-                //rc = CLNCc.lnc_svi_get_fd_data(gNid, ref arrFDData[0]);
-
-                //if (rc == CLNCc.LNC_ERR_NO_ERROR)
-                //{
-                //    chart_FFT.Series[0].Points.Clear();
-
-                //    for (i = 0; i < fdLength; i++)
-                //    {
-                //        if (arrFDData[i] > max)
-                //        {
-                //            max = arrFDData[i];
-                //            maxFq = i + 1;
-                //        }
-                //        chart_FFT.Series[0].Points.AddXY((i + 1), arrFDData[i]);
-                //    }
-                //}
             }
         }
         #endregion
