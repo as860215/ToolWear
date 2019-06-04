@@ -1129,6 +1129,17 @@ namespace ToolWear{
                 return;
             }
 
+            //判斷輸入裝置然後給予頻率
+            double rate = 0, sample = 0;
+            if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")){
+                rate = 1660;
+                sample = 166;
+            }
+            else{
+                rate = rateNumeric_base;
+                sample = samplesPerChannelNumeric_base;
+            }
+
             //判斷訊號輸入
             //寶元
             if (physicalChannelComboBox.Text.Split('-')[0].Equals("LNC")) {
