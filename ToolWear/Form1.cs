@@ -45,7 +45,7 @@ namespace ToolWear{
             InitializeComponent();
             Brother_Initialization();
             //將視窗最大化
-            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
             //隱藏工作列
             this.FormBorderStyle = FormBorderStyle.None;
             //強制置頂視窗
@@ -1557,6 +1557,29 @@ namespace ToolWear{
             tb_setting_ip.Text = set.Split(',')[2];
             sr_setting.Close();
             sr_setting.Dispose();
+        }
+        //主畫面 > 設定 > 清除歷史資料
+        private void btn_LogClear_Click(object sender,EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("這操作將會刪除所有的Log檔案，\n請問要繼續嗎？", "刪除警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            try{
+                //刪除Log目錄內的所有檔案
+                foreach (string s in Directory.GetFiles(path + @"data\Log"))
+                    File.Delete(s);
+                //重新讀取Log檔案
+                TextBox[] TB_LogTitle = new TextBox[4] { tb_logTitle_01, tb_logTitle_02, tb_logTitle_03, tb_logTitle_04 };
+                TextBox[] TB_LogDetial = new TextBox[4] { tb_logDetail_01, tb_logDetail_02, tb_logDetail_03, tb_logDetail_04 };
+                for (int i = 0; i < TB_LogTitle.Length; i++){
+                    TB_LogTitle[i].Text = "";
+                    TB_LogDetial[i].Text = "";
+                }
+                Read_Log(DateTime.Now.ToString("yyyyMMdd"));
+
+                MessageBox.Show("刪除成功！", "操作成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch(Exception ex) {
+                MessageBox.Show("刪除失敗\n\nbtn_LogClear_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         #endregion
         #region Alarm設定
@@ -3592,8 +3615,9 @@ namespace ToolWear{
                             //如果j已搜尋到最後都找不到匹配的輸入(代表原先設定的訊號不見了)
                             if (j == physicalChannelComboBox.Items.Count - 1) {
                                 physicalChannelComboBox.SelectedIndex = 0;
-                                MessageBox.Show("搜尋不到此軸向原先設定的訊號輸入，請確認輸入訊號接頭是否脫落。\n重新連接設備並使用重新整理按鈕搜尋訊號輸入。" +
-                                    "\n若依然找不到訊號輸入，請重新選擇並儲存。", "找不到訊號輸入", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                if(panel_ToolWearSetting.Visible == false)
+                                    MessageBox.Show("搜尋不到此軸向原先設定的訊號輸入，請確認輸入訊號接頭是否脫落。\n重新連接設備並使用重新整理按鈕搜尋訊號輸入。" +
+                                        "\n若依然找不到訊號輸入，請重新選擇並儲存。", "找不到訊號輸入", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                         string ip = tem.Split(',')[4];
@@ -4210,6 +4234,25 @@ namespace ToolWear{
         private void timer_Current_Tick(object sender, EventArgs e) {
             //Current_Getdata("33");
             Current_Getdata_Schneider("1");
+        }
+        //檢查控制器現在的連線狀態
+        private void timer_CheckCNC_Connect_Tick(object sender,EventArgs e){
+            if (machine_connect == true){
+                lb_Learn_ConnectFail.Visible = false;
+                lb_ToolWear_ConnectFail.Visible = false;
+            }
+            else{
+                lb_Learn_ConnectFail.Visible = true;
+                lb_ToolWear_ConnectFail.Visible = true;
+                if(lb_Learn_ConnectFail.BackColor == Color.Red){
+                    lb_Learn_ConnectFail.BackColor = Color.DeepPink;
+                    lb_ToolWear_ConnectFail.BackColor = Color.DeepPink;
+                }
+                else{
+                    lb_Learn_ConnectFail.BackColor = Color.Red;
+                    lb_ToolWear_ConnectFail.BackColor = Color.Red;
+                }
+            }
         }
         //開始執行磨耗預測
         private void timer_Prediction_Tick(object sender, EventArgs e){
@@ -5161,7 +5204,8 @@ namespace ToolWear{
                 modbusClient.Connect();     //Connect to Server
             }
             catch (Exception ex) {
-                MessageBox.Show("電流連線失敗。\n請放心，這不會影響您的震動偵測。\n\nCurrent_Connect\n\nError code:\n" + ex.ToString(), "連線失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Write_Log("系統","電流連線失敗。 請放心，這不會影響您的震動偵測。");
+                //MessageBox.Show("電流連線失敗。\n請放心，這不會影響您的震動偵測。\n\nCurrent_Connect\n\nError code:\n" + ex.ToString(), "連線失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         //電流 > 取得資料(施耐德)
@@ -5540,8 +5584,11 @@ namespace ToolWear{
         /// Fanuc控制器 > 初始化
         /// </summary>
         private short FANUC_Initialization(){
-            Fanuc_lRet = Focas1.cnc_allclibhndl3(tb_setting_ip.Text, 8193, 1, out FFlibHndl);
-            if (Fanuc_lRet == 0)
+            try{
+                Fanuc_lRet = Focas1.cnc_allclibhndl3(tb_setting_ip.Text, 8193, 1, out FFlibHndl);
+            }
+            catch { }
+            if (Fanuc_lRet != 0)
                 machine_connect = false;
             else{
                 machine_connect = true;
