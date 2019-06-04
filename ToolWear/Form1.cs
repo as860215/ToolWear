@@ -2689,10 +2689,10 @@ namespace ToolWear{
         }
         //刀具磨耗預測 > 手動修改記憶體位置
         private void btn_prediction_test_Click(object sender,EventArgs e){
-            if (lb_prediction_status.Text.Equals("0"))
-                lb_prediction_status.Text = "8";
+            if (lb_prediction_status.Text.Equals("START"))
+                lb_prediction_status.Text = "RUN";
             else
-                lb_prediction_status.Text = "0";
+                lb_prediction_status.Text = "START";
         }
         #endregion
         #region 磨耗偵測(三軸、電流)
@@ -4213,7 +4213,7 @@ namespace ToolWear{
         }
         //開始執行磨耗預測
         private void timer_Prediction_Tick(object sender, EventArgs e){
-            if (lb_prediction_status.Text.Equals("8")){
+            if (lb_prediction_status.Text.Equals("RUN")){
                 //如果已經有偵測在運行了就直接跳過程式
                 if (cb_prediction_signal.Text.Equals("NI") && runningTask != null) return;
                 else if (cb_prediction_signal.Text.Equals("LNC") && timer_LNC.Enabled == true) return;
@@ -4224,7 +4224,7 @@ namespace ToolWear{
                 sw_Raw_Data.Close();
                 sw_Raw_Data.Dispose();
 
-                if (cb_prediction_signal.Text.Equals("NI DAQ"))
+                if (cb_prediction_signal.Text.Equals("NI"))
                     DAQInitialize("Prediction");
                 else if (cb_prediction_signal.Text.Equals("LNC")){
                     what_mode = "Prediction";
@@ -4324,7 +4324,14 @@ namespace ToolWear{
             ATC_num = CNC_GetATCStatus();
             //讀取記憶體位置
             if (machine_type.Equals("Mitsubishi")){
-                lb_prediction_status.Text = CNC_GetMemoryData("M4992").ToString();
+                string s_memory = CNC_GetMemoryData("M4992").ToString();
+                if (s_memory.Equals("8")) s_memory = "RUN";
+                else if (s_memory.Equals("0")) s_memory = "START";
+                else if (s_memory.Equals("16")) s_memory = "ALARM";
+                lb_prediction_status.Text = s_memory;
+            }
+            else if (machine_type.Equals("Fanuc")){
+                lb_prediction_status.Text = CNC_GetRunStatus().ToString();
             }
             lb_ToolWear_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";
             lb_Learn_FeedSpeed.Text = ATC_RPM.ToString() + " RPM";

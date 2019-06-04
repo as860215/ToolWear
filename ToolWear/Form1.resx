@@ -22600,7 +22600,7 @@
     <value>NoControl</value>
   </data>
   <data name="lb_prediction_status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>576, 31</value>
+    <value>558, 31</value>
   </data>
   <data name="lb_prediction_status.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 35</value>
@@ -22636,13 +22636,13 @@
     <value>404, 31</value>
   </data>
   <data name="label97.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 35</value>
+    <value>155, 35</value>
   </data>
   <data name="label97.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
   </data>
   <data name="label97.Text" xml:space="preserve">
-    <value>記憶體狀態：</value>
+    <value>機台狀態：</value>
   </data>
   <data name="&gt;&gt;label97.Name" xml:space="preserve">
     <value>label97</value>
