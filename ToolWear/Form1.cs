@@ -5586,7 +5586,12 @@ namespace ToolWear{
                     catch_log = "錯誤碼未定義";
                     break;
             }
-            MessageBox.Show(catch_log + "\n錯誤代碼：" + code + "\n資訊：" + detail);
+            Write_Log("系統", string.Format("{0}，錯誤代碼：{1}，資訊：{2}", catch_log, code, detail));
+            Write_Log("系統", "已停止控制器自動讀取功能。");
+            //如果是連線中斷，把計時器關掉
+            timer_CNC.Enabled = false;
+
+            //MessageBox.Show(catch_log + "\n錯誤代碼：" + code + "\n資訊：" + detail);
         }
         #endregion
         #region Log事件表
