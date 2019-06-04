@@ -4285,6 +4285,7 @@ namespace ToolWear{
             for (int i = 0; i < tb_prediction.Length; i++)
                 tb_prediction[i].Text = Read_List[i];
 
+            Write_Log("系統", tb_prediction_ToolStatus.Text);
             //執行結束
             timer_prediction_ML.Enabled = false;
             PB_prediction_ML.Value = 100;
