@@ -144,6 +144,7 @@ namespace ToolWear{
             //音頻偵測
             for (int i = 0; i < 2000; i++)
                 chart_AE.Series[1].Points.AddXY(i + 1, 0);
+            
 
             //Panel
             panel_Home.Visible = true;
@@ -1081,6 +1082,24 @@ namespace ToolWear{
                     sum = 0;
                 }
                 if (Blade_Hz_Mag > 5) break;   //頻率倍率取樣數
+            }
+        }
+        //磨耗偵測 > 設定 > 初始化設定檔
+        private void ToolWearSetting_ResetProfile_Click(object sender,EventArgs e){
+            DialogResult dialogResult = MessageBox.Show("※注意※\n\n此操作將會將軸向設定檔全部清除。\n確定要清空設定檔嗎？", "初始化警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Cancel) return;
+            try{
+                string[] write_s = new string[20] { "X", "Y", "Z", "S1", "S2", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"};
+                StreamWriter sw = new StreamWriter(path + @"data\axial.cp");
+                foreach (string s in write_s)
+                    sw.WriteLine(s);
+                sw.Close();
+                sw.Dispose();
+                btn_ToolWearSetting_Choose(pre_ToolWearSetting, null);
+                MessageBox.Show("初始化完畢。", "清除成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch(Exception ex) {
+                MessageBox.Show("發生不可測意外。\n\nToolWearSetting_ResetProfile_Click\n\n" + ex.ToString(), "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         #endregion
@@ -4248,6 +4267,10 @@ namespace ToolWear{
                     lb_Learn_ConnectFail.BackColor = Color.DeepPink;
                     lb_ToolWear_ConnectFail.BackColor = Color.DeepPink;
                 }
+                else if (lb_Learn_ConnectFail.BackColor == Color.DeepPink){
+                    lb_Learn_ConnectFail.BackColor = Color.Magenta;
+                    lb_ToolWear_ConnectFail.BackColor = Color.Magenta;
+                }
                 else{
                     lb_Learn_ConnectFail.BackColor = Color.Red;
                     lb_ToolWear_ConnectFail.BackColor = Color.Red;
@@ -5584,10 +5607,7 @@ namespace ToolWear{
         /// Fanuc控制器 > 初始化
         /// </summary>
         private short FANUC_Initialization(){
-            try{
-                Fanuc_lRet = Focas1.cnc_allclibhndl3(tb_setting_ip.Text, 8193, 1, out FFlibHndl);
-            }
-            catch { }
+            Fanuc_lRet = Focas1.cnc_allclibhndl3(tb_setting_ip.Text, 8193, 1, out FFlibHndl);
             if (Fanuc_lRet != 0)
                 machine_connect = false;
             else{

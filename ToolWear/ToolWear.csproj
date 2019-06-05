@@ -304,15 +304,6 @@
     <None Include="Resources\menubtn_th.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Import_Profile.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Export_Profile.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\alarm.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\SE_logo.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -332,6 +323,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SE_logo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export_Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Import_Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResetProfile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
