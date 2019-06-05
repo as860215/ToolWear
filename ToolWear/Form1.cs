@@ -176,6 +176,7 @@ namespace ToolWear{
             panel_AccCur_setting.Visible = false;
             panel_AE.Visible = false;
             panel_AccCur_parameter.Visible = false;
+            panel_ShowLog.Visible = false;
             //關閉所有主選單副組件
             btn_Learn.Enabled = false;
             btn_ChangeMode.Enabled = false;
@@ -512,6 +513,12 @@ namespace ToolWear{
             //開啟模式切換按鈕
             btn_ChangeMode.Enabled = true;
             btn_ChangeMode.BackgroundImage = ToolWear.Properties.Resources.wd_menubtn_current;
+        }
+        //主畫面 > 設定 > 顯示所有Log訊息
+        private void btn_ShowLog_Click(object sender, EventArgs e){
+            panel_Dissable();
+            panel_ShowLog.Visible = true;
+            ShowLog_Load();
         }
         //磨耗偵測 > 選擇工件 > 回上一頁
         private void btn_SelectParts_Back_Click(object sender, EventArgs e) {
@@ -1574,6 +1581,17 @@ namespace ToolWear{
             }
             //讀取設定檔ip
             tb_setting_ip.Text = set.Split(',')[2];
+            //搜尋語言
+            for (int i = 0; i < cb_setting_language.Items.Count; i++){
+                cb_setting_language.SelectedIndex = i;
+                if (cb_setting_model.Text.Equals(set.Split(',')[3])) break;
+                //當搜尋到最後一筆廠牌資料都沒有搜尋到時(因為如果有搜尋到就已經break了)
+                if (i == cb_setting_model.Items.Count - 1){
+                    cb_setting_language.SelectedIndex = 0;
+                    if (OnRemove == false)
+                        MessageBox.Show("設定檔錯誤。\n查無語系！\n請確認設定檔資料是否正確，或是前往設定頁面重新選擇資料並儲存。", "設定檔錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
             sr_setting.Close();
             sr_setting.Dispose();
         }
@@ -1600,18 +1618,50 @@ namespace ToolWear{
                 MessageBox.Show("刪除失敗\n\nbtn_LogClear_Click\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+        //主畫面 > 設定 > 顯示所有Log訊息 > 載入
+        private void ShowLog_Load(){
+            cb_ShowLog_Date.Items.Clear();
+            //找尋Log目錄內所有檔案
+            foreach (string s in Directory.GetFiles(path + @"data\Log"))
+                cb_ShowLog_Date.Items.Add(Path.GetFileNameWithoutExtension(s));
+            cb_ShowLog_Date.SelectedIndex = 0;
+        }
+        //主畫面 > 設定 > 顯示所有Log訊息 > 選擇日期
+        private void cb_ShowLog_Date_SelectedIndexChanged(object sender, EventArgs e){
+            ltb_ShowLog.Items.Clear();
+            //讀取該日期的Log檔
+            StreamReader sr = new StreamReader(path + @"data\Log\" + cb_ShowLog_Date.Text + ".cp");
+            while (!sr.EndOfStream)
+                ltb_ShowLog.Items.Add(sr.ReadLine());
+            sr.Close();
+            sr.Dispose();
+        }
+        //主畫面 > 設定 > 顯示所有Log訊息 > 回上一頁
+        private void btn_ShowLog_Back_Click(object sender,EventArgs e){
+            panel_Dissable();
+            panel_setting.Visible = true;
+        }
         #endregion
         #region Alarm設定
         //設定 > Alarm設定 > 停止模式 > 瞬間
         private void btn_AlarmMode_Flash_Click(object sender, EventArgs e) {
+            btn_AlarmMode_Flash.BackgroundImage = ToolWear.Properties.Resources.check;
+            btn_AlarmMode_Delay.BackgroundImage = ToolWear.Properties.Resources.check_none_;
+            btn_AlarmMode_None.BackgroundImage = ToolWear.Properties.Resources.check_none_;
             Alarm = Alarm_Mode.Flash;
         }
         //設定 > Alarm設定 > 停止模式 > 作業後停止
         private void btn_AlarmMode_Delay_Click(object sender, EventArgs e) {
+            btn_AlarmMode_Flash.BackgroundImage = ToolWear.Properties.Resources.check_none_;
+            btn_AlarmMode_Delay.BackgroundImage = ToolWear.Properties.Resources.check;
+            btn_AlarmMode_None.BackgroundImage = ToolWear.Properties.Resources.check_none_;
             Alarm = Alarm_Mode.Delay;
         }
         //設定 > Alarm設定 > 停止模式 > 不處理
         private void btn_AlarmMode_None_Click(object sender, EventArgs e) {
+            btn_AlarmMode_Flash.BackgroundImage = ToolWear.Properties.Resources.check_none_;
+            btn_AlarmMode_Delay.BackgroundImage = ToolWear.Properties.Resources.check_none_;
+            btn_AlarmMode_None.BackgroundImage = ToolWear.Properties.Resources.check;
             Alarm = Alarm_Mode.None;
         }
         //設定 > Alarm設定 > 上一頁
@@ -3238,7 +3288,7 @@ namespace ToolWear{
                 var Speed = int.Parse(tb_AccCur_parameter_Speed.Text);
                 var Pitch = int.Parse(tb_AccCur_parameter_Pitch.Text);
 
-                double BestTime = 0.1f + ((Width + 50) / Pitch) * ((float)Length / (float)(Speed * 1000) / 60f) * ((float)(10 + Removal) / (float)WheelDown);
+                double BestTime = 0.1f + ((Width + 50) / Pitch) * (60f / (float)Length / (float)(Speed * 1000)) * ((float)(10 + Removal) / (float)WheelDown);
                 //double BestTime = 0.1 + (double)Length / double.Parse(Pitch) * (double)Width / 1000 / double.Parse(Speed) * ((double)Removal / double.Parse(WheelDown));
 
                 //將數字轉成時間
@@ -5227,7 +5277,7 @@ namespace ToolWear{
                 modbusClient.Connect();     //Connect to Server
             }
             catch (Exception ex) {
-                Write_Log("系統","電流連線失敗。 請放心，這不會影響您的震動偵測。");
+                Write_Log("緊急","電流連線失敗。 請放心，這不會影響您的震動偵測。");
                 //MessageBox.Show("電流連線失敗。\n請放心，這不會影響您的震動偵測。\n\nCurrent_Connect\n\nError code:\n" + ex.ToString(), "連線失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
@@ -5963,6 +6013,7 @@ namespace ToolWear{
         private void ShowInputPanel_Click(object sender,EventArgs e){
             ShowInputPanel();
         }
+
         //關閉鍵盤觸發方法
         private void CloseInputPanel_Click(object sender, EventArgs e){
             CloseInputPanel();
