@@ -771,6 +771,7 @@ namespace ToolWear{
                 return;
             }
 
+            what_mode = "Match";
 
             //判斷是否要讀取電流資訊
             if (!string.IsNullOrWhiteSpace(tb_ToolWear_CurrentIP.Text)) {
@@ -778,9 +779,7 @@ namespace ToolWear{
                 if (modbusClient.Connected == true) timer_Current.Enabled = true;
             }
             else {
-                DialogResult dialogResult = MessageBox.Show("此軸向並未設定電流IP，繼續操作將不會對電流量進行數據探勘。\n請問要繼續嗎？",
-                    "電流尚未設定", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                if (dialogResult == DialogResult.Cancel) return;
+                Write_Log("警告", "此軸向並未設定電流IP，將不會對電流量進行數據探勘。");
             }
 
             //判斷輸入裝置然後給予頻率
@@ -1584,7 +1583,11 @@ namespace ToolWear{
             //搜尋語言
             for (int i = 0; i < cb_setting_language.Items.Count; i++){
                 cb_setting_language.SelectedIndex = i;
-                if (cb_setting_model.Text.Equals(set.Split(',')[3])) break;
+                if (cb_setting_model.Text.Equals(set.Split(',')[3])){
+                    //查詢到該語言後執行的動作(未完成)
+
+                    break;
+                }
                 //當搜尋到最後一筆廠牌資料都沒有搜尋到時(因為如果有搜尋到就已經break了)
                 if (i == cb_setting_model.Items.Count - 1){
                     cb_setting_language.SelectedIndex = 0;
