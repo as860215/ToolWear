@@ -1590,7 +1590,7 @@ namespace ToolWear{
             //搜尋語言
             for (int i = 0; i < cb_setting_language.Items.Count; i++){
                 cb_setting_language.SelectedIndex = i;
-                if (cb_setting_model.Text.Equals(set.Split(',')[3])){
+                if (cb_setting_language.Text.Equals(set.Split(',')[3])){
                     //查詢到該語言後執行的動作(未完成)
 
                     break;
@@ -3236,13 +3236,13 @@ namespace ToolWear{
                 sr.Dispose();
 
                 //字串說明
-                //1:砂輪號數(WA-??) 8:轉數 9:左右移動速度 11:每次下降量 13:研磨間距 14:實際表面精度
+                //1:砂輪號數(WA-??) 5:精加工移除量 9:轉數 10:左右移動速度 11:單次衝程 12:粗加工每次下降量 13:精加工每次下降量 15:研磨間距 16:實際表面精度
 
                 //找尋最接近使用者輸入的表面精度項目
                 float Surface_Max = 0f; //暫存已讀取最大值
                 int Surface_Count = -1;  //暫存已讀取最大值在陣列內的次序
                 for(int i = 0; i < Read_Data.Count; i++){
-                    float Now_Surface = float.Parse(Read_Data[i].Split(',')[14]);
+                    float Now_Surface = float.Parse(Read_Data[i].Split(',')[16]);
                     //先判斷讀取的值比輸入的值還要小
                     if(Now_Surface < float.Parse(tb_AccCur_parameter_surface.Text)){
                         //判斷是否有比已讀取的最大值還要大
@@ -3257,6 +3257,9 @@ namespace ToolWear{
                 if (Surface_Count == -1){
                     tb_AccCur_parameter_WheelNumber.Text = "無資料";
                     tb_AccCur_parameter_WheelSpeed.Text = "無資料";
+                    tb_AccCur_parameter_Removal_Fin.Text = "無資料";
+                    tb_AccCur_parameter_workpiece.Text = "無資料";
+                    tb_AccCur_parameter_WheelDown_Fin.Text = "無資料";
                     tb_AccCur_parameter_WheelDown.Text = "無資料";
                     tb_AccCur_parameter_Speed.Text = "無資料";
                     tb_AccCur_parameter_Pitch.Text = "無資料";
@@ -3265,16 +3268,22 @@ namespace ToolWear{
                 else{
                     //讀取最大值次序的各項參數
                     tb_AccCur_parameter_WheelNumber.Text = Read_Data[Surface_Count].Split(',')[1].Split('-')[1];
-                    tb_AccCur_parameter_WheelDown.Text = Read_Data[Surface_Count].Split(',')[11];
-                    tb_AccCur_parameter_Pitch.Text = Read_Data[Surface_Count].Split(',')[13];
-                    tb_AccCur_parameter_Predict.Text = Read_Data[Surface_Count].Split(',')[14];
-                    tb_AccCur_parameter_WheelSpeed.Text = Read_Data[Surface_Count].Split(',')[8];
-                    tb_AccCur_parameter_Speed.Text = Read_Data[Surface_Count].Split(',')[9];
+                    tb_AccCur_parameter_Removal_Fin.Text = Read_Data[Surface_Count].Split(',')[5];
+                    tb_AccCur_parameter_WheelDown.Text = Read_Data[Surface_Count].Split(',')[12];
+                    tb_AccCur_parameter_workpiece.Text = Read_Data[Surface_Count].Split(',')[11];
+                    tb_AccCur_parameter_WheelDown_Fin.Text = Read_Data[Surface_Count].Split(',')[13];
+                    tb_AccCur_parameter_Pitch.Text = Read_Data[Surface_Count].Split(',')[15];
+                    tb_AccCur_parameter_Predict.Text = Read_Data[Surface_Count].Split(',')[16];
+                    tb_AccCur_parameter_WheelSpeed.Text = Read_Data[Surface_Count].Split(',')[9];
+                    tb_AccCur_parameter_Speed.Text = Read_Data[Surface_Count].Split(',')[10];
                 }
             }
             catch{
                 tb_AccCur_parameter_WheelNumber.Text = "無資料";
                 tb_AccCur_parameter_WheelSpeed.Text = "無資料";
+                tb_AccCur_parameter_Removal_Fin.Text = "無資料";
+                tb_AccCur_parameter_workpiece.Text = "無資料";
+                tb_AccCur_parameter_WheelDown_Fin.Text = "無資料";
                 tb_AccCur_parameter_WheelDown.Text = "無資料";
                 tb_AccCur_parameter_Speed.Text = "無資料";
                 tb_AccCur_parameter_Pitch.Text = "無資料";
@@ -3285,27 +3294,29 @@ namespace ToolWear{
         private void AccCur_parameter_ComputeBestTime(){
             try{
 
-                var Length = (int)num_AccCur_parameter_length.Value;
+                var Length = (float)num_AccCur_parameter_length.Value;
 
                 //長度200內取200 201~400取400 401~600取600mm
                 if (Length < 200) Length = 200;
                 else if (Length >= 201 && Length <= 400) Length = 400;
                 else if (Length >= 401 && Length <= 600) Length = 600;
 
-                var Width = (int)num_AccCur_parameter_width.Value;
-                var Removal = (int)num_AccCur_parameter_removal.Value;
-                var WheelDown = int.Parse(tb_AccCur_parameter_WheelDown.Text);
-                var Speed = int.Parse(tb_AccCur_parameter_Speed.Text);
-                var Pitch = int.Parse(tb_AccCur_parameter_Pitch.Text);
-
-                double BestTime = 0.1f + ((Width + 50) / Pitch) * (60f / (float)Length / (float)(Speed * 1000)) * ((float)(10 + Removal) / (float)WheelDown);
-                //double BestTime = 0.1 + (double)Length / double.Parse(Pitch) * (double)Width / 1000 / double.Parse(Speed) * ((double)Removal / double.Parse(WheelDown));
+                var Width = (float)num_AccCur_parameter_width.Value;
+                var Removal = (float)num_AccCur_parameter_removal.Value;
+                var Removal_Fin = float.Parse(tb_AccCur_parameter_Removal_Fin.Text);
+                var WheelDown = float.Parse(tb_AccCur_parameter_WheelDown.Text);
+                var WheelDown_Fin = float.Parse(tb_AccCur_parameter_WheelDown_Fin.Text);
+                var workpiece = float.Parse(tb_AccCur_parameter_workpiece.Text);
+                var Speed = float.Parse(tb_AccCur_parameter_Speed.Text);
+                var Pitch = float.Parse(tb_AccCur_parameter_Pitch.Text);
+                
+                double BestTime = ((((Width + 50) / Pitch) + 0) * ((60 / (Speed / (workpiece / 1000))) * (((10 + Removal - Removal_Fin) / WheelDown) + (Removal_Fin / WheelDown_Fin))) + 360) / 60 ;
 
                 //將數字轉成時間
-                int Hour = int.Parse(BestTime.ToString().Split('.')[0]);
-                double Minute = (BestTime - Hour) * 60;
+                int Minute = int.Parse(BestTime.ToString().Split('.')[0]);
+                double Second = (BestTime - Minute) * 60;
 
-                tb_AccCur_parameter_BestTime.Text = string.Format("{0} h {1} m", Hour, Minute.ToString("0"));
+                tb_AccCur_parameter_BestTime.Text = string.Format("{0} m {1} s", Minute, Second.ToString("0"));
             }
             catch {
                 tb_AccCur_parameter_BestTime.Text = "參數錯誤";
