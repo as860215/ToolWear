@@ -822,6 +822,10 @@
             this.timer_prediction = new System.Windows.Forms.Timer(this.components);
             this.panel_AccCur_parameter = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.tb_AccCur_parameter_workpiece = new System.Windows.Forms.TextBox();
+            this.label150 = new System.Windows.Forms.Label();
+            this.label149 = new System.Windows.Forms.Label();
+            this.tb_AccCur_parameter_WheelDown_Fin = new System.Windows.Forms.TextBox();
             this.tb_AccCur_parameter_Removal_Fin = new System.Windows.Forms.TextBox();
             this.label147 = new System.Windows.Forms.Label();
             this.label135 = new System.Windows.Forms.Label();
@@ -898,10 +902,6 @@
             this.cb_ShowLog_Date = new System.Windows.Forms.ComboBox();
             this.label77 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.label149 = new System.Windows.Forms.Label();
-            this.tb_AccCur_parameter_WheelDown_Fin = new System.Windows.Forms.TextBox();
-            this.tb_AccCur_parameter_workpiece = new System.Windows.Forms.TextBox();
-            this.label150 = new System.Windows.Forms.Label();
             this.panel_ViewModule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewFFT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_ViewModule)).BeginInit();
@@ -8836,6 +8836,32 @@
             resources.ApplyResources(this.panel23, "panel23");
             this.panel23.Name = "panel23";
             // 
+            // tb_AccCur_parameter_workpiece
+            // 
+            resources.ApplyResources(this.tb_AccCur_parameter_workpiece, "tb_AccCur_parameter_workpiece");
+            this.tb_AccCur_parameter_workpiece.Name = "tb_AccCur_parameter_workpiece";
+            this.tb_AccCur_parameter_workpiece.ReadOnly = true;
+            // 
+            // label150
+            // 
+            resources.ApplyResources(this.label150, "label150");
+            this.label150.BackColor = System.Drawing.Color.Transparent;
+            this.label150.ForeColor = System.Drawing.Color.White;
+            this.label150.Name = "label150";
+            // 
+            // label149
+            // 
+            resources.ApplyResources(this.label149, "label149");
+            this.label149.BackColor = System.Drawing.Color.Transparent;
+            this.label149.ForeColor = System.Drawing.Color.White;
+            this.label149.Name = "label149";
+            // 
+            // tb_AccCur_parameter_WheelDown_Fin
+            // 
+            resources.ApplyResources(this.tb_AccCur_parameter_WheelDown_Fin, "tb_AccCur_parameter_WheelDown_Fin");
+            this.tb_AccCur_parameter_WheelDown_Fin.Name = "tb_AccCur_parameter_WheelDown_Fin";
+            this.tb_AccCur_parameter_WheelDown_Fin.ReadOnly = true;
+            // 
             // tb_AccCur_parameter_Removal_Fin
             // 
             resources.ApplyResources(this.tb_AccCur_parameter_Removal_Fin, "tb_AccCur_parameter_Removal_Fin");
@@ -9443,41 +9469,15 @@
             this.label76.ForeColor = System.Drawing.Color.White;
             this.label76.Name = "label76";
             // 
-            // label149
-            // 
-            resources.ApplyResources(this.label149, "label149");
-            this.label149.BackColor = System.Drawing.Color.Transparent;
-            this.label149.ForeColor = System.Drawing.Color.White;
-            this.label149.Name = "label149";
-            // 
-            // tb_AccCur_parameter_WheelDown_Fin
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_WheelDown_Fin, "tb_AccCur_parameter_WheelDown_Fin");
-            this.tb_AccCur_parameter_WheelDown_Fin.Name = "tb_AccCur_parameter_WheelDown_Fin";
-            this.tb_AccCur_parameter_WheelDown_Fin.ReadOnly = true;
-            // 
-            // tb_AccCur_parameter_workpiece
-            // 
-            resources.ApplyResources(this.tb_AccCur_parameter_workpiece, "tb_AccCur_parameter_workpiece");
-            this.tb_AccCur_parameter_workpiece.Name = "tb_AccCur_parameter_workpiece";
-            this.tb_AccCur_parameter_workpiece.ReadOnly = true;
-            // 
-            // label150
-            // 
-            resources.ApplyResources(this.label150, "label150");
-            this.label150.BackColor = System.Drawing.Color.Transparent;
-            this.label150.ForeColor = System.Drawing.Color.White;
-            this.label150.Name = "label150";
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(69)))), ((int)(((byte)(107)))));
             this.ControlBox = false;
+            this.Controls.Add(this.panel_setting);
             this.Controls.Add(this.panel_prediction);
             this.Controls.Add(this.panel_ToolWear);
-            this.Controls.Add(this.panel_setting);
             this.Controls.Add(this.panel_AccCur_parameter);
             this.Controls.Add(this.panel_log);
             this.Controls.Add(this.panel_ToolWearSetting);

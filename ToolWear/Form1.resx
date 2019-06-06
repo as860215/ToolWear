@@ -3109,7 +3109,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_ToolWear.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="panel_Home.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -9753,6 +9753,9 @@
   <data name="cb_setting_language.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
   </data>
+  <data name="cb_setting_language.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;cb_setting_language.Name" xml:space="preserve">
     <value>cb_setting_language</value>
   </data>
@@ -9785,6 +9788,9 @@
   </data>
   <data name="label78.Text" xml:space="preserve">
     <value>語系</value>
+  </data>
+  <data name="label78.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label78.Name" xml:space="preserve">
     <value>label78</value>
@@ -10231,7 +10237,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_setting.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="tb_Load_ProgressRate.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 16.2pt</value>
@@ -17533,7 +17539,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel_prediction.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="timer_prediction_ML.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>911, 18</value>
@@ -21742,7 +21748,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1262, 782</value>
+    <value>1258, 778</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>微軟正黑體, 12pt</value>

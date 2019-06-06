@@ -1634,7 +1634,7 @@ namespace ToolWear{
             //找尋Log目錄內所有檔案
             foreach (string s in Directory.GetFiles(path + @"data\Log"))
                 cb_ShowLog_Date.Items.Add(Path.GetFileNameWithoutExtension(s));
-            cb_ShowLog_Date.SelectedIndex = 0;
+            cb_ShowLog_Date.SelectedIndex = cb_ShowLog_Date.Items.Count - 1 ;
         }
         //主畫面 > 設定 > 顯示所有Log訊息 > 選擇日期
         private void cb_ShowLog_Date_SelectedIndexChanged(object sender, EventArgs e){
