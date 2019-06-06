@@ -1651,6 +1651,10 @@ namespace ToolWear{
             panel_Dissable();
             panel_setting.Visible = true;
         }
+        //主畫面 > 設定 > 切換語系
+        private void cb_setting_language_SelectedIndexChanged(object sender, EventArgs e){
+            Language_PlaceElement(cb_setting_language.Text);
+        }
         #endregion
         #region Alarm設定
         //設定 > Alarm設定 > 停止模式 > 瞬間
@@ -3264,6 +3268,7 @@ namespace ToolWear{
                     tb_AccCur_parameter_Speed.Text = "無資料";
                     tb_AccCur_parameter_Pitch.Text = "無資料";
                     tb_AccCur_parameter_Predict.Text = "無資料";
+                    tb_AccCur_parameter_Mistake.Text = "無資料";
                 }
                 else{
                     //讀取最大值次序的各項參數
@@ -3276,6 +3281,7 @@ namespace ToolWear{
                     tb_AccCur_parameter_Predict.Text = Read_Data[Surface_Count].Split(',')[16];
                     tb_AccCur_parameter_WheelSpeed.Text = Read_Data[Surface_Count].Split(',')[9];
                     tb_AccCur_parameter_Speed.Text = Read_Data[Surface_Count].Split(',')[10];
+                    tb_AccCur_parameter_Mistake.Text = Math.Abs(float.Parse(tb_AccCur_parameter_surface.Text) / float.Parse(tb_AccCur_parameter_Predict.Text)).ToString("0.000");
                 }
             }
             catch{
@@ -3288,6 +3294,7 @@ namespace ToolWear{
                 tb_AccCur_parameter_Speed.Text = "無資料";
                 tb_AccCur_parameter_Pitch.Text = "無資料";
                 tb_AccCur_parameter_Predict.Text = "無資料";
+                tb_AccCur_parameter_Mistake.Text = "無資料";
             }
         }
         //磨耗偵測 > 磨耗偵測(三軸、電流) > 參數設定 > 計算最佳加工時間
@@ -6092,158 +6099,168 @@ namespace ToolWear{
             string Language = sr.ReadLine().Split(',')[3];
             sr.Close();
             sr.Dispose();
-
+            //置入語系資料
+            Language_PlaceElement(Language);
+        }
+        //置入語系資料
+        private void Language_PlaceElement(string Language){
             //讀取語系資料
             List<string> s_Language = new List<string>();   //用以暫存語系內資料
-            StreamReader sr_language = new StreamReader(path + @"data\Language\Chinese.cp");
+            StreamReader sr_language = new StreamReader(path + @"data\Language\" + Language + ".cp");
             while (!sr_language.EndOfStream)
                 s_Language.Add(sr_language.ReadLine());
             sr_language.Close();
             sr_language.Dispose();
+            try{
+                #region 置入變數
+                btn_Blade.Text = s_Language[0];
+                btn_prediction_self.Text = s_Language[1];
+                btn_prediction_test.Text = s_Language[2];
+                btn_ViewChartChange.Text = s_Language[3];
+                btn_ViewModule_ChartReset.Text = s_Language[4];
+                chb_AccCur_Record.Text = s_Language[5];
+                groupBox1.Text = s_Language[6];
+                groupBox2.Text = s_Language[7];
+                groupBox3.Text = s_Language[8];
+                groupBox4.Text = s_Language[9];
+                groupBox5.Text = s_Language[10];
+                label1.Text = s_Language[11];
+                label10.Text = s_Language[12];
+                label101.Text = s_Language[13];
+                label102.Text = s_Language[14];
+                label103.Text = s_Language[15];
+                label104.Text = s_Language[16];
+                label105.Text = s_Language[17];
+                label106.Text = s_Language[18];
+                label107.Text = s_Language[19];
+                label108.Text = s_Language[20];
+                label109.Text = s_Language[21];
+                label110.Text = s_Language[22];
+                label111.Text = s_Language[23];
+                label112.Text = s_Language[24];
+                label113.Text = s_Language[25];
+                label114.Text = s_Language[26];
+                label115.Text = s_Language[27];
+                label116.Text = s_Language[28];
+                label117.Text = s_Language[29];
+                label118.Text = s_Language[30];
+                label119.Text = s_Language[31];
+                label12.Text = s_Language[32];
+                label120.Text = s_Language[33];
+                label121.Text = s_Language[34];
+                label122.Text = s_Language[35];
+                label123.Text = s_Language[36];
+                label124.Text = s_Language[37];
+                label125.Text = s_Language[38];
+                label126.Text = s_Language[39];
+                label129.Text = s_Language[40];
+                label13.Text = s_Language[41];
+                label130.Text = s_Language[42];
+                label131.Text = s_Language[43];
+                label132.Text = s_Language[44];
+                label133.Text = s_Language[45];
+                label135.Text = s_Language[46];
+                label136.Text = s_Language[47];
+                label137.Text = s_Language[48];
+                label138.Text = s_Language[49];
+                label139.Text = s_Language[50];
+                label139.Text = s_Language[51];
+                label140.Text = s_Language[52];
+                label141.Text = s_Language[53];
+                label142.Text = s_Language[54];
+                label143.Text = s_Language[55];
+                label146.Text = s_Language[56];
+                label148.Text = s_Language[57];
+                label15.Text = s_Language[58];
+                label16.Text = s_Language[59];
+                label17.Text = s_Language[60];
+                label18.Text = s_Language[61];
+                label19.Text = s_Language[62];
+                label2.Text = s_Language[63];
+                label20.Text = s_Language[64];
+                label22.Text = s_Language[65];
+                label23.Text = s_Language[66];
+                label24.Text = s_Language[67];
+                label25.Text = s_Language[68];
+                label27.Text = s_Language[69];
+                label28.Text = s_Language[70];
+                label3.Text = s_Language[71];
+                label30.Text = s_Language[72];
+                label31.Text = s_Language[73];
+                label33.Text = s_Language[74];
+                label34.Text = s_Language[75];
+                label35.Text = s_Language[76];
+                label37.Text = s_Language[77];
+                label38.Text = s_Language[78];
+                label39.Text = s_Language[79];
+                label4.Text = s_Language[80];
+                label40.Text = s_Language[81];
+                label45.Text = s_Language[82];
+                label46.Text = s_Language[83];
+                label47.Text = s_Language[84];
+                label48.Text = s_Language[85];
+                label50.Text = s_Language[86];
+                label51.Text = s_Language[87];
+                label52.Text = s_Language[88];
+                label53.Text = s_Language[89];
+                label54.Text = s_Language[90];
+                label55.Text = s_Language[91];
+                label56.Text = s_Language[92];
+                label58.Text = s_Language[93];
+                label59.Text = s_Language[94];
+                label6.Text = s_Language[95];
+                label60.Text = s_Language[96];
+                label7.Text = s_Language[97];
+                label76.Text = s_Language[98];
+                label77.Text = s_Language[99];
+                label78.Text = s_Language[100];
+                label79.Text = s_Language[101];
+                label8.Text = s_Language[102];
+                label80.Text = s_Language[103];
+                label81.Text = s_Language[104];
+                label82.Text = s_Language[105];
+                label83.Text = s_Language[106];
+                label84.Text = s_Language[107];
+                label85.Text = s_Language[108];
+                label86.Text = s_Language[109];
+                label87.Text = s_Language[110];
+                label88.Text = s_Language[111];
+                label89.Text = s_Language[112];
+                label9.Text = s_Language[113];
+                label90.Text = s_Language[114];
+                label91.Text = s_Language[115];
+                label92.Text = s_Language[116];
+                label93.Text = s_Language[117];
+                label97.Text = s_Language[118];
+                lb_AccCur_parameter_Add.Text = s_Language[119];
+                lb_Health_Title.Text = s_Language[120];
+                lb_Learn_ConnectFail.Text = s_Language[121];
+                lb_Learn_WorkName.Text = s_Language[122];
+                lb_prediction_TrainMode.Text = s_Language[123];
+                lb_SelectParts_01.Text = s_Language[124];
+                lb_SelectParts_02.Text = s_Language[125];
+                lb_SelectParts_03.Text = s_Language[126];
+                lb_SelectParts_04.Text = s_Language[127];
+                lb_SelectParts_05.Text = s_Language[128];
+                lb_SelectParts_06.Text = s_Language[129];
+                lb_SelectParts_07.Text = s_Language[130];
+                lb_SelectParts_08.Text = s_Language[131];
+                lb_Threshold_ATC.Text = s_Language[132];
+                lb_Threshold_Blade.Text = s_Language[133];
+                lb_Threshold_rate.Text = s_Language[134];
+                lb_ToolWear_ChartStatus.Text = s_Language[135];
+                lb_ToolWear_ConnectFail.Text = s_Language[136];
+                lb_ToolWear_Parts.Text = s_Language[137];
+                lb_ToolWear_Title.Text = s_Language[138];
+                label147.Text = s_Language[139];
+                label149.Text = s_Language[140];
+                label150.Text = s_Language[141];
 
-            //置入語系資料
-            #region 置入變數
-            btn_Blade.Text = s_Language[0];
-            btn_prediction_self.Text = s_Language[1];
-            btn_prediction_test.Text = s_Language[2];
-            btn_ViewChartChange.Text = s_Language[3];
-            btn_ViewModule_ChartReset.Text = s_Language[4];
-            chb_AccCur_Record.Text = s_Language[5];
-            groupBox1.Text = s_Language[6];
-            groupBox2.Text = s_Language[7];
-            groupBox3.Text = s_Language[8];
-            groupBox4.Text = s_Language[9];
-            groupBox5.Text = s_Language[10];
-            label1.Text = s_Language[11];
-            label10.Text = s_Language[12];
-            label101.Text = s_Language[13];
-            label102.Text = s_Language[14];
-            label103.Text = s_Language[15];
-            label104.Text = s_Language[16];
-            label105.Text = s_Language[17];
-            label106.Text = s_Language[18];
-            label107.Text = s_Language[19];
-            label108.Text = s_Language[20];
-            label109.Text = s_Language[21];
-            label110.Text = s_Language[22];
-            label111.Text = s_Language[23];
-            label112.Text = s_Language[24];
-            label113.Text = s_Language[25];
-            label114.Text = s_Language[26];
-            label115.Text = s_Language[27];
-            label116.Text = s_Language[28];
-            label117.Text = s_Language[29];
-            label118.Text = s_Language[30];
-            label119.Text = s_Language[31];
-            label12.Text = s_Language[32];
-            label120.Text = s_Language[33];
-            label121.Text = s_Language[34];
-            label122.Text = s_Language[35];
-            label123.Text = s_Language[36];
-            label124.Text = s_Language[37];
-            label125.Text = s_Language[38];
-            label126.Text = s_Language[39];
-            label129.Text = s_Language[40];
-            label13.Text = s_Language[41];
-            label130.Text = s_Language[42];
-            label131.Text = s_Language[43];
-            label132.Text = s_Language[44];
-            label133.Text = s_Language[45];
-            label135.Text = s_Language[46];
-            label136.Text = s_Language[47];
-            label137.Text = s_Language[48];
-            label138.Text = s_Language[49];
-            label139.Text = s_Language[50];
-            label139.Text = s_Language[51];
-            label140.Text = s_Language[52];
-            label141.Text = s_Language[53];
-            label142.Text = s_Language[54];
-            label143.Text = s_Language[55];
-            label146.Text = s_Language[56];
-            label148.Text = s_Language[57];
-            label15.Text = s_Language[58];
-            label16.Text = s_Language[59];
-            label17.Text = s_Language[60];
-            label18.Text = s_Language[61];
-            label19.Text = s_Language[62];
-            label2.Text = s_Language[63];
-            label20.Text = s_Language[64];
-            label22.Text = s_Language[65];
-            label23.Text = s_Language[66];
-            label24.Text = s_Language[67];
-            label25.Text = s_Language[68];
-            label27.Text = s_Language[69];
-            label28.Text = s_Language[70];
-            label3.Text = s_Language[71];
-            label30.Text = s_Language[72];
-            label31.Text = s_Language[73];
-            label33.Text = s_Language[74];
-            label34.Text = s_Language[75];
-            label35.Text = s_Language[76];
-            label37.Text = s_Language[77];
-            label38.Text = s_Language[78];
-            label39.Text = s_Language[79];
-            label4.Text = s_Language[80];
-            label40.Text = s_Language[81];
-            label45.Text = s_Language[82];
-            label46.Text = s_Language[83];
-            label47.Text = s_Language[84];
-            label48.Text = s_Language[85];
-            label50.Text = s_Language[86];
-            label51.Text = s_Language[87];
-            label52.Text = s_Language[88];
-            label53.Text = s_Language[89];
-            label54.Text = s_Language[90];
-            label55.Text = s_Language[91];
-            label56.Text = s_Language[92];
-            label58.Text = s_Language[93];
-            label59.Text = s_Language[94];
-            label6.Text = s_Language[95];
-            label60.Text = s_Language[96];
-            label7.Text = s_Language[97];
-            label76.Text = s_Language[98];
-            label77.Text = s_Language[99];
-            label78.Text = s_Language[100];
-            label79.Text = s_Language[101];
-            label8.Text = s_Language[102];
-            label80.Text = s_Language[103];
-            label81.Text = s_Language[104];
-            label82.Text = s_Language[105];
-            label83.Text = s_Language[106];
-            label84.Text = s_Language[107];
-            label85.Text = s_Language[108];
-            label86.Text = s_Language[109];
-            label87.Text = s_Language[110];
-            label88.Text = s_Language[111];
-            label89.Text = s_Language[112];
-            label9.Text = s_Language[113];
-            label90.Text = s_Language[114];
-            label91.Text = s_Language[115];
-            label92.Text = s_Language[116];
-            label93.Text = s_Language[117];
-            label97.Text = s_Language[118];
-            lb_AccCur_parameter_Add.Text = s_Language[119];
-            lb_Health_Title.Text = s_Language[120];
-            lb_Learn_ConnectFail.Text = s_Language[121];
-            lb_Learn_WorkName.Text = s_Language[122];
-            lb_prediction_TrainMode.Text = s_Language[123];
-            lb_SelectParts_01.Text = s_Language[124];
-            lb_SelectParts_02.Text = s_Language[125];
-            lb_SelectParts_03.Text = s_Language[126];
-            lb_SelectParts_04.Text = s_Language[127];
-            lb_SelectParts_05.Text = s_Language[128];
-            lb_SelectParts_06.Text = s_Language[129];
-            lb_SelectParts_07.Text = s_Language[130];
-            lb_SelectParts_08.Text = s_Language[131];
-            lb_Threshold_ATC.Text = s_Language[132];
-            lb_Threshold_Blade.Text = s_Language[133];
-            lb_Threshold_rate.Text = s_Language[134];
-            lb_ToolWear_ChartStatus.Text = s_Language[135];
-            lb_ToolWear_ConnectFail.Text = s_Language[136];
-            lb_ToolWear_Parts.Text = s_Language[137];
-            lb_ToolWear_Title.Text = s_Language[138];
-
-            #endregion
+                #endregion
+            }
+            catch(Exception ex) {
+                MessageBox.Show("置入變數失敗，可能是設定檔有損壞。\n\nLanguage_PlaceElement\n\n" + ex.ToString(), "操作失敗", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         #endregion
     }
